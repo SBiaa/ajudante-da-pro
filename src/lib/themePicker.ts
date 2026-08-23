@@ -75,6 +75,31 @@ function normalize(text: string): string {
     .toLowerCase();
 }
 
+/** Tamanho do maior prefixo comum entre duas strings. */
+function commonPrefixLength(a: string, b: string): number {
+  let i = 0;
+  while (i < a.length && i < b.length && a[i] === b[i]) i++;
+  return i;
+}
+
+/**
+ * Verdadeiro se `normTerm` aparece em `text`, tolerando variações de gênero/número/sufixo do
+ * português (ex.: buscar "geometria" deve encontrar "geométricas", "geométrico" etc.), já que
+ * comparação por substring simples perde esses casos. A tolerância só entra em ação para termos
+ * com pelo menos 5 letras, para não gerar falsos positivos com palavras curtas.
+ */
+function matchesText(text: string, normTerm: string): boolean {
+  const normText = normalize(text);
+  if (normText.includes(normTerm)) return true;
+  if (normTerm.length < 5) return false;
+  const words = normText.split(/[^a-z0-9]+/).filter(Boolean);
+  return words.some((word) => {
+    const shared = commonPrefixLength(word, normTerm);
+    const threshold = Math.max(5, Math.min(word.length, normTerm.length) - 2);
+    return shared >= threshold;
+  });
+}
+
 function pickFrom<T extends { theme: string; description: string; genre?: string }>(
   bank: T[],
   recentThemes: string[],
@@ -89,9 +114,9 @@ function pickFrom<T extends { theme: string; description: string; genre?: string
     const normTerm = normalize(term);
     candidates = bank.filter(
       (entry) =>
-        normalize(entry.theme).includes(normTerm) ||
-        normalize(entry.description).includes(normTerm) ||
-        (entry.genre && normalize(entry.genre).includes(normTerm))
+        matchesText(entry.theme, normTerm) ||
+        matchesText(entry.description, normTerm) ||
+        (entry.genre && matchesText(entry.genre, normTerm))
     );
     if (candidates.length === 0) return EMPTY_PICK;
   }

@@ -377,6 +377,116 @@ export const THEME_BANK: Record<OwnSubject, BankEntry[]> = {
         "Pedir que os alunos copiem as palavras no caderno.",
         "Fazer um ditado curto com algumas dessas palavras para conferir."
       ]
+    },
+    {
+      "theme": "Roda de notícias e reportagens da turma",
+      "curriculumCode": "EF02LP07",
+      "description": "Escuta de textos (reportagens, notícias, contos modernos) que abordem a temática de diferentes representações sociais.",
+      "materials": [
+        "Uma notícia ou reportagem curta, impressa ou lida em voz alta"
+      ],
+      "steps": [
+        "Selecionar uma notícia ou reportagem curta e apropriada para a idade.",
+        "Ler o texto em voz alta para a turma.",
+        "Perguntar quem são as pessoas retratadas na notícia e como elas são representadas.",
+        "Roda de conversa sobre diferentes realidades sociais mostradas no texto."
+      ]
+    },
+    {
+      "theme": "Escrevendo listas com letras móveis",
+      "curriculumCode": "EF02LP10",
+      "description": "Escrita de listas de palavras, títulos de livros, parlendas, quadrinhas e trava-línguas com letras móveis, justificando as decisões sobre as letras utilizadas.",
+      "materials": [
+        "Kit de letras móveis (alfabeto móvel) ou letras recortadas"
+      ],
+      "steps": [
+        "Distribuir letras móveis para os alunos ou duplas.",
+        "Propor que montem uma lista de palavras conhecidas (títulos de livros, parlendas).",
+        "Pedir que expliquem por que escolheram cada letra.",
+        "Comparar a escrita montada com a escrita convencional."
+      ]
+    },
+    {
+      "theme": "Escrevendo indicações literárias e verbetes de curiosidades",
+      "curriculumCode": "EF02LP14",
+      "description": "Escrita de indicações literárias de livros, legendas e verbetes de curiosidades sobre temas estudados, ditando ao professor.",
+      "materials": [
+        "Um livro já lido pela turma"
+      ],
+      "steps": [
+        "Escolher, com a turma, um livro que já leram e gostaram.",
+        "Ditar ao professor os motivos pelos quais recomendam o livro.",
+        "Registrar a indicação literária em um cartaz ou mural da sala.",
+        "Repetir o processo com um verbete de curiosidade sobre um tema estudado."
+      ]
+    },
+    {
+      "theme": "Revisando textos: cortando o que não combina",
+      "curriculumCode": "EF02LP25",
+      "description": "Eliminação de organizadores textuais não adequados ao registro linguístico do texto, em revisão coletiva.",
+      "materials": [],
+      "steps": [
+        "Escrever coletivamente um pequeno texto na lousa, incluindo organizadores informais (tipo 'aí', 'daí', 'e tal').",
+        "Ler o texto em voz alta e identificar essas palavras junto com a turma.",
+        "Substituir cada organizador por uma opção mais adequada ao registro do texto.",
+        "Reler o texto revisado e comparar com a versão original."
+      ]
+    },
+    {
+      "theme": "Reescrevendo com o mesmo narrador",
+      "curriculumCode": "EF02LP27",
+      "description": "Emprego, em situação de reescrita, do mesmo tipo de narrador (1ª ou 3ª pessoa) do texto de referência.",
+      "materials": [
+        "Um conto curto conhecido pela turma"
+      ],
+      "steps": [
+        "Ler um conto curto e identificar se é contado em 1ª ou 3ª pessoa.",
+        "Explicar a diferença entre narrador que participa da história (eu) e o que só observa (ele/ela).",
+        "Propor a reescrita (ditando ao professor) de um trecho, mantendo o mesmo tipo de narrador do texto original.",
+        "Comparar o texto reescrito com o original."
+      ]
+    },
+    {
+      "theme": "Comparando coisas nas histórias",
+      "curriculumCode": "EF02LP29",
+      "description": "Identificação, em textos lidos, da comparação entre dois termos, reconhecendo os efeitos de sentido provocados pelo uso dessa figura de linguagem.",
+      "materials": [
+        "Um texto com comparações, ex.: 'os olhos brilhavam como estrelas'"
+      ],
+      "steps": [
+        "Ler um trecho de texto que contenha uma comparação (ex.: 'rápido como um raio').",
+        "Perguntar o que está sendo comparado e por quê.",
+        "Pedir que a turma pense em outras comparações parecidas.",
+        "Registrar coletivamente as comparações encontradas ou inventadas."
+      ]
+    },
+    {
+      "theme": "O que as imagens do livro nos contam",
+      "curriculumCode": "EF02LP30",
+      "description": "Análise de aspectos gráficos que compõem o material lido, reconhecendo os efeitos de sentido provocados pelo uso de cores, imagens e outros recursos.",
+      "materials": [
+        "Um livro ilustrado ou álbum"
+      ],
+      "steps": [
+        "Mostrar as ilustrações de um livro antes de ler o texto.",
+        "Perguntar o que as cores e imagens sugerem sobre a história.",
+        "Ler o texto e comparar com o que foi imaginado a partir das imagens.",
+        "Conversar sobre como as ilustrações ajudam a contar a história."
+      ]
+    },
+    {
+      "theme": "Palavras que soam parecido: M, N, NH e til",
+      "curriculumCode": "EF02LP32",
+      "description": "Análise de palavras classificadas como regulares contextuais para compreender que o contexto determina diferenças no modo de grafar a nasalidade (M, N, NH, til) e o uso do G/Gu, C/Qu.",
+      "materials": [
+        "Lista de palavras com nasalização (campo, cantiga, manhã, mãe)"
+      ],
+      "steps": [
+        "Escrever na lousa palavras com sons nasais escritos de formas diferentes (M, N, NH, til).",
+        "Pedir que a turma perceba em que posição da palavra aparece cada forma.",
+        "Separar as palavras em grupos conforme a regra usada.",
+        "Praticar escrevendo novas palavras seguindo a mesma regra."
+      ]
     }
   ],
   "matematica": [
@@ -790,6 +900,34 @@ export const THEME_BANK: Record<OwnSubject, BankEntry[]> = {
         "Pedir que a turma invente uma pergunta matemática para essa situação.",
         "Resolver juntos a pergunta criada.",
         "Verificar se a resposta faz sentido com a situação apresentada."
+      ]
+    },
+    {
+      "theme": "Quantificando coleções de jeitos diferentes",
+      "curriculumCode": "EF02M05",
+      "description": "Exploração de diferentes estratégias para quantificar elementos de uma coleção: contagem um a um, formação de pares, agrupamentos e estimativas.",
+      "materials": [
+        "Uma coleção de objetos pequenos (tampinhas, botões, feijões)"
+      ],
+      "steps": [
+        "Espalhar uma coleção de objetos sobre a mesa.",
+        "Pedir que a turma estime quantos objetos existem, sem contar.",
+        "Contar em conjunto, testando diferentes estratégias (um a um, em pares, em grupos de 10).",
+        "Comparar qual estratégia foi mais rápida e por quê."
+      ]
+    },
+    {
+      "theme": "Continuando o padrão da sequência",
+      "curriculumCode": "EF02M15",
+      "description": "Descrição de elementos ausentes em sequências numéricas ou figurais, repetitivas ou recursivas, e continuação da sequência a partir de um padrão.",
+      "materials": [
+        "Sequência de figuras ou números com lacunas (cartaz ou lousa)"
+      ],
+      "steps": [
+        "Apresentar uma sequência com um padrão claro e uma lacuna (ex.: círculo, quadrado, círculo, ___).",
+        "Pedir que a turma descreva o padrão em voz alta.",
+        "Completar juntos o elemento que falta.",
+        "Propor que a turma continue a sequência por mais alguns elementos."
       ]
     }
   ],
