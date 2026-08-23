@@ -1006,6 +1006,34 @@ export const THEME_BANK: Record<OwnSubject, BankEntry[]> = {
         "Completar juntos o elemento que falta.",
         "Propor que a turma continue a sequência por mais alguns elementos."
       ]
+    },
+    {
+      "theme": "Decompondo números para calcular",
+      "curriculumCode": "EF02M07",
+      "description": "Exploração da decomposição de escritas numéricas para a realização de cálculos (mentais ou escritos) que envolvam adição e subtração.",
+      "materials": [
+        "Material dourado ou palitos agrupados de 10 em 10 (opcional)"
+      ],
+      "steps": [
+        "Escrever um número na lousa (ex.: 45) e perguntar como pode ser decomposto (40 + 5).",
+        "Praticar decompor outros números em dezenas e unidades.",
+        "Usar a decomposição para resolver uma conta de adição ou subtração (ex.: 45 + 23 = 40+20 + 5+3).",
+        "Comparar o resultado com o cálculo feito da forma tradicional."
+      ]
+    },
+    {
+      "theme": "Investigando a poluição perto de nós",
+      "curriculumCode": "EF02M35",
+      "description": "Desenvolvimento de um projeto envolvendo contaminação do solo, da água ou do ar, relacionando-o com a Matemática.",
+      "materials": [
+        "Fotos ou reportagens sobre poluição local (opcional)"
+      ],
+      "steps": [
+        "Conversar com a turma sobre o que é poluição do ar, da água ou do solo.",
+        "Escolher, com a turma, um tipo de poluição para investigar no bairro.",
+        "Fazer uma pesquisa simples (contagem de lixo encontrado, entrevistas) e registrar os dados em números.",
+        "Organizar os dados coletados em uma lista ou gráfico simples e apresentar as conclusões."
+      ]
     }
   ],
   "ciencias": [
