@@ -487,6 +487,82 @@ export const THEME_BANK: Record<OwnSubject, BankEntry[]> = {
         "Separar as palavras em grupos conforme a regra usada.",
         "Praticar escrevendo novas palavras seguindo a mesma regra."
       ]
+    },
+    {
+      "theme": "Para quem e para quê vou escrever?",
+      "curriculumCode": "EFCALFLP13",
+      "description": "Reconhecimento das características do contexto de produção de um texto (finalidade, interlocutor, gênero), utilizadas para tomar decisões durante a produção e a revisão do texto.",
+      "materials": [],
+      "steps": [
+        "Antes de escrever, perguntar à turma: para quem é esse texto? Qual é o objetivo dele?",
+        "Anotar coletivamente as respostas (destinatário, finalidade, gênero do texto).",
+        "Relembrar essas decisões enquanto o texto é produzido.",
+        "Ao final, conferir se o texto atendeu à finalidade combinada."
+      ]
+    },
+    {
+      "theme": "De onde vem o assunto do texto",
+      "curriculumCode": "EFCALFLP14",
+      "description": "Recuperação, criação ou pesquisa do conteúdo temático de um texto que será escrito na produção de texto, seja em reescrita ou em criação.",
+      "materials": [
+        "Fonte de pesquisa: livro, verbete ou conversa com a turma"
+      ],
+      "steps": [
+        "Escolher o tema do texto que será produzido.",
+        "Pesquisar ou relembrar, com a turma, o que já sabem sobre o assunto.",
+        "Anotar as ideias principais que poderão entrar no texto.",
+        "Organizar essas ideias antes de começar a escrever."
+      ]
+    },
+    {
+      "theme": "Fazendo o plano do texto",
+      "curriculumCode": "EFCALFLP15",
+      "description": "Elaboração do plano do texto a ser produzido na produção textual, considerando o contexto de produção definido e o conteúdo temático já planejado.",
+      "materials": [],
+      "steps": [
+        "Relembrar o tema e a finalidade do texto definidos em atividade anterior.",
+        "Organizar coletivamente as partes que o texto vai ter (começo, meio e fim, por exemplo).",
+        "Registrar esse plano na lousa como roteiro para a escrita.",
+        "Escrever o texto seguindo o plano combinado."
+      ]
+    },
+    {
+      "theme": "Revisando o texto: a primeira versão não é a última",
+      "curriculumCode": "EFCALFLP17",
+      "description": "Revisão do texto durante e depois de produzido, considerando o contexto de produção de texto e realizando ajustes para garantir legibilidade e efeitos de sentido.",
+      "materials": [
+        "Texto produzido anteriormente pela turma"
+      ],
+      "steps": [
+        "Reler em voz alta o texto produzido pela turma.",
+        "Perguntar se ficou claro para quem for ler, e se falta alguma informação.",
+        "Marcar coletivamente trechos que precisam de ajuste.",
+        "Reescrever esses trechos e comparar com a versão anterior."
+      ]
+    },
+    {
+      "theme": "Combinando como vai ser o texto antes de escrever",
+      "curriculumCode": "EFCALFLP18",
+      "description": "Participação nas atividades de definição da situação comunicativa dos textos a serem produzidos na produção textual, considerando as diferentes opiniões da turma.",
+      "materials": [],
+      "steps": [
+        "Propor à turma que decida coletivamente qual texto será produzido e para qual ocasião.",
+        "Ouvir diferentes opiniões sobre como o texto deveria ser (tamanho, tom, formato).",
+        "Registrar as decisões combinadas pela turma.",
+        "Usar essas decisões como guia durante a produção do texto."
+      ]
+    },
+    {
+      "theme": "Compartilhando o texto para melhorar",
+      "curriculumCode": "EFCALFLP19",
+      "description": "Submissão dos textos produzidos à apreciação de outras pessoas, realizando os ajustes necessários a partir do retorno recebido sobre a produção de texto.",
+      "materials": [],
+      "steps": [
+        "Trocar os textos produzidos entre duplas ou grupos da turma.",
+        "Pedir que leiam o texto do colega e digam o que entenderam e o que gostaram.",
+        "Anotar as sugestões recebidas.",
+        "Fazer os ajustes no texto a partir do retorno dos colegas."
+      ]
     }
   ],
   "matematica": [
@@ -599,15 +675,16 @@ export const THEME_BANK: Record<OwnSubject, BankEntry[]> = {
       ]
     },
     {
-      "theme": "Problemas de multiplicar",
+      "theme": "Problemas de multiplicar e de dividir",
       "curriculumCode": "EF02M11",
-      "description": "Análise e resolução de problemas envolvendo proporcionalidade (campo multiplicativo).",
+      "description": "Análise e resolução de problemas de multiplicação ou de divisão envolvendo proporcionalidade (campo multiplicativo), com os significados de formação de grupos iguais, dobro, metade, triplo ou terça parte.",
       "materials": [
         "tampinhas ou palitos"
       ],
       "steps": [
         "Contar um problema de multiplicar (ex: 3 grupos com 2 lápis cada, quantos ao todo).",
-        "Usar tampinhas para representar os grupos e contar o total juntos.",
+        "Contar também um problema de dividir (ex: 6 lápis repartidos em 3 grupos iguais, quantos em cada grupo).",
+        "Usar tampinhas para representar os grupos e contar o total ou repartir igualmente.",
         "Propor outro problema parecido para os alunos resolverem em duplas com material manipulável.",
         "Registrar a solução no caderno com desenho e número."
       ]

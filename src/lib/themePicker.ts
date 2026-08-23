@@ -83,21 +83,29 @@ function commonPrefixLength(a: string, b: string): number {
 }
 
 /**
- * Verdadeiro se `normTerm` aparece em `text`, tolerando variações de gênero/número/sufixo do
- * português (ex.: buscar "geometria" deve encontrar "geométricas", "geométrico" etc.), já que
- * comparação por substring simples perde esses casos. A tolerância só entra em ação para termos
- * com pelo menos 5 letras, para não gerar falsos positivos com palavras curtas.
+ * Verdadeiro se a palavra `normWord` aparece em `text`, tolerando variações de gênero/número/
+ * sufixo do português (ex.: buscar "geometria" deve encontrar "geométricas", "geométrico" etc.),
+ * já que comparação por substring simples perde esses casos. A tolerância só entra em ação para
+ * palavras com pelo menos 5 letras, para não gerar falsos positivos com palavras curtas.
  */
-function matchesText(text: string, normTerm: string): boolean {
+function matchesWord(text: string, normWord: string): boolean {
   const normText = normalize(text);
-  if (normText.includes(normTerm)) return true;
-  if (normTerm.length < 5) return false;
+  if (normText.includes(normWord)) return true;
+  if (normWord.length < 5) return false;
   const words = normText.split(/[^a-z0-9]+/).filter(Boolean);
   return words.some((word) => {
-    const shared = commonPrefixLength(word, normTerm);
-    const threshold = Math.max(5, Math.min(word.length, normTerm.length) - 2);
+    const shared = commonPrefixLength(word, normWord);
+    const threshold = Math.max(4, Math.min(word.length, normWord.length) - 2);
     return shared >= threshold;
   });
+}
+
+/** Verdadeiro se cada palavra de `normTerm` (busca com espaço, ex.: "produção textual") aparece
+ * em algum lugar do texto combinado da entrada — não precisa ser a frase exata nem estar no
+ * mesmo campo. */
+function matchesEntry(haystack: string, normTerm: string): boolean {
+  const words = normTerm.split(/\s+/).filter(Boolean);
+  return words.every((word) => matchesWord(haystack, word));
 }
 
 function pickFrom<T extends { theme: string; description: string; genre?: string }>(
@@ -112,11 +120,8 @@ function pickFrom<T extends { theme: string; description: string; genre?: string
   const term = keyword.trim();
   if (term) {
     const normTerm = normalize(term);
-    candidates = bank.filter(
-      (entry) =>
-        matchesText(entry.theme, normTerm) ||
-        matchesText(entry.description, normTerm) ||
-        (entry.genre && matchesText(entry.genre, normTerm))
+    candidates = bank.filter((entry) =>
+      matchesEntry([entry.theme, entry.description, entry.genre ?? ""].join(" "), normTerm)
     );
     if (candidates.length === 0) return EMPTY_PICK;
   }
