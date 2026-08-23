@@ -1034,6 +1034,118 @@ export const THEME_BANK: Record<OwnSubject, BankEntry[]> = {
         "Fazer uma pesquisa simples (contagem de lixo encontrado, entrevistas) e registrar os dados em números.",
         "Organizar os dados coletados em uma lista ou gráfico simples e apresentar as conclusões."
       ]
+    },
+    {
+      "theme": "Batalha de cartas: quem tem o maior número?",
+      "curriculumCode": "EF02M02",
+      "description": "Comparação de números naturais pela posição na sequência escrita ou pela quantidade de algarismos, em um jogo de cartas.",
+      "materials": [
+        "Baralho comum ou cartas numeradas feitas pela turma"
+      ],
+      "steps": [
+        "Dividir a turma em duplas, cada uma com um baralho de cartas numeradas.",
+        "Cada jogador vira uma carta ao mesmo tempo; quem tiver o maior número leva as duas cartas.",
+        "Perguntar como sabem qual número é maior, sem contar um a um.",
+        "Ao final, contar quem ficou com mais cartas."
+      ]
+    },
+    {
+      "theme": "Quantas figurinhas eu tenho a mais?",
+      "curriculumCode": "EF02M09",
+      "description": "Exploração de relações de comparação entre coleções (ser maior que, ser menor que, ser igual a), utilizando a diferença entre as quantidades.",
+      "materials": [
+        "Duas coleções de objetos pequenos (tampinhas, figurinhas, botões)"
+      ],
+      "steps": [
+        "Formar duplas e dar a cada aluno uma quantidade diferente de objetos.",
+        "Pedir que comparem: quem tem mais? Quantos a mais?",
+        "Registrar a comparação usando os sinais >, < ou =.",
+        "Trocar objetos e repetir a comparação."
+      ]
+    },
+    {
+      "theme": "Quanto pesa cada bicho de estimação?",
+      "curriculumCode": "EF02M26",
+      "description": "Estimativa, medição e comparação de massas de objetos, usando uma balança e unidades de medida padronizadas.",
+      "materials": [
+        "Balança simples (de cozinha ou brinquedo), objetos variados"
+      ],
+      "steps": [
+        "Mostrar fotos ou brinquedos representando animais de estimação de tamanhos diferentes.",
+        "Pesar objetos que representem esses animais (ou os próprios materiais da sala) na balança.",
+        "Comparar os pesos: qual é mais pesado, qual é mais leve.",
+        "Registrar os pesos encontrados em uma tabela simples."
+      ]
+    },
+    {
+      "theme": "Fazendo compras na feirinha da sala",
+      "curriculumCode": "EF02M28",
+      "description": "Estabelecimento da equivalência de valores entre moedas e cédulas do sistema monetário brasileiro, em uma situação de compra e venda simulada.",
+      "materials": [
+        "Cédulas e moedas de brinquedo, objetos ou desenhos com preços"
+      ],
+      "steps": [
+        "Montar uma barraquinha com objetos etiquetados com preços simples.",
+        "Dar a cada aluno um valor em dinheiro de brinquedo para 'fazer compras'.",
+        "Pedir que decidam quais notas e moedas usar para pagar cada item.",
+        "Verificar juntos se o pagamento e o troco (quando houver) estão corretos."
+      ]
+    },
+    {
+      "theme": "Qual é a mais provável de acontecer?",
+      "curriculumCode": "EF02M22",
+      "description": "Classificação de resultados de eventos cotidianos aleatórios como pouco prováveis, muito prováveis, improváveis ou impossíveis, em um jogo de sorteio.",
+      "materials": [
+        "Saquinho com bolinhas ou papéis coloridos em quantidades desiguais"
+      ],
+      "steps": [
+        "Colocar numa sacola muitas bolinhas de uma cor e poucas de outra.",
+        "Perguntar à turma qual cor é mais provável de ser sorteada, e por quê.",
+        "Fazer alguns sorteios e registrar os resultados.",
+        "Comparar o que a turma previu com o que realmente aconteceu."
+      ]
+    },
+    {
+      "theme": "Pesquisa: qual é o animal de estimação preferido da turma?",
+      "curriculumCode": "EF02M24",
+      "description": "Realização de pesquisa sobre assuntos de interesse das crianças, organizando os dados coletados em listas, tabelas ou gráficos de colunas, comunicando-os oralmente.",
+      "materials": [
+        "Cartolina ou lousa para montar o gráfico"
+      ],
+      "steps": [
+        "Perguntar a cada aluno qual é seu animal de estimação preferido (ou o que gostaria de ter).",
+        "Anotar as respostas em uma lista na lousa.",
+        "Organizar os dados em um gráfico de colunas simples, com a turma.",
+        "Analisar juntos qual foi o animal mais votado."
+      ]
+    },
+    {
+      "theme": "Seguindo o padrão das profissões",
+      "curriculumCode": "EF02M14",
+      "description": "Descrição oral de um padrão (ou regularidade) de sequências figurais, repetitivas ou recursivas, usando figuras relacionadas a profissões ou objetos do cotidiano.",
+      "materials": [
+        "Figuras ou desenhos de profissões/objetos repetidos em sequência"
+      ],
+      "steps": [
+        "Apresentar uma sequência de figuras (ex.: estetoscópio, seringa, estetoscópio, seringa...).",
+        "Pedir que a turma descreva em voz alta o padrão que se repete.",
+        "Perguntar qual seria a próxima figura da sequência.",
+        "Propor que a turma crie sua própria sequência com objetos ou desenhos."
+      ]
+    },
+    {
+      "theme": "Números que são código: a etiqueta da vacina",
+      "curriculumCode": "EF02M01",
+      "description": "Exploração de números no contexto diário como indicadores de código (não de quantidade), como em numeração de itens organizados em um armário ou prateleira.",
+      "materials": [
+        "Objetos numerados ou etiquetas com números (caixas, potes)"
+      ],
+      "steps": [
+        "Mostrar objetos com números que servem como código, não como contagem (ex.: número em uma caixa organizadora, em uma ficha).",
+        "Perguntar à turma o que esse número está indicando ali (não é 'quantidade', é identificação).",
+        "Comparar com outro número que representa quantidade (ex.: 'tem 5 lápis').",
+        "Propor que a turma numere e organize objetos da sala usando números como código."
+      ]
     }
   ],
   "ciencias": [
