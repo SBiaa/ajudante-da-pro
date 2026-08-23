@@ -2330,6 +2330,17 @@ export const READING_BANK: ReadingBankEntry[] = [
     ]
   },
   {
+    "theme": "Karú-Sakaibê e a Origem do Povo (Mito do povo Munduruku - releitura simplificada)",
+    "genre": "mito",
+    "description": "Leitura em voz alta de mito de origem do povo indígena Munduruku, em versão simplificada, seguida de roda de conversa sobre a diversidade dos povos indígenas do Brasil.",
+    "text": "Os avós do povo Munduruku contam que, há muito tempo, as pessoas não viviam no mundo de cima — elas moravam bem no fundo, no centro da terra.\n\nUm menino chamado Rairu, que era amigo do grande criador Karú-Sakaibê, gostava de brincar fazendo desenhos com folhas, gravetos e cipós. Um dia, ele fez o desenho de um tatu tão bonito que quis grudá-lo com cera de mel de abelha, para que nunca mais desaparecesse. Para a cera secar, Rairu enterrou o tatu na terra, deixando só o rabinho pra fora — e ficou ali, segurando.\n\nSó que, quando tentou soltar a mão, não conseguiu: ela tinha grudado no rabo do tatu! Como Rairu era um menino poderoso, o desenho ganhou vida. Só que, em vez de sair do buraco, o tatu foi cavando cada vez mais fundo, puxando Rairu junto, até chegar bem no centro da terra.\n\nLá embaixo, Rairu encontrou um monte de gente vivendo: gente alegre, gente preguiçosa, gente de todo jeito! Maravilhado, ele saiu correndo para contar a novidade para Karú-Sakaibê.\n\nQuando ouviu a história, Karú-Sakaibê decidiu trazer todo aquele povo para o mundo de cima. Ele fez uma bolinha de algodão, transformou em corda bem comprida, amarrou na cintura de Rairu e mandou o menino voltar ao centro da terra para buscar as pessoas.\n\nUm por um, o povo foi subindo pela corda. Mas, quando os últimos estavam quase chegando ao topo, a corda arrebentou! Por isso, contam os mais velhos, uma parte do povo ficou para sempre morando no centro da terra.\n\nKarú-Sakaibê deu um nome diferente para cada grupo que conseguiu subir, e para cada um deu uma cor — verde, vermelho, amarelo, preto. Depois, semeou um campo e mandou a chuva cair, e da terra molhada nasceram a mandioca, o milho, a batata-doce e muitas outras plantas para alimentar aquele povo novo.\n\nAté hoje, os Munduruku contam essa história de avô para neto, para que ninguém esqueça de onde vieram.",
+    "steps": [
+      "Perguntar à turma se conhecem alguma história sobre como o mundo ou um povo surgiu.",
+      "Ler o mito em voz alta.",
+      "Conversar sobre a diversidade de povos indígenas no Brasil — o Munduruku é um deles, entre muitos outros, cada um com suas próprias histórias e línguas."
+    ]
+  },
+  {
     "theme": "Tirinha: O Dia em que o Guarda-Chuva Sumiu",
     "genre": "tirinha/HQ",
     "description": "Leitura dramatizada de tirinha original em formato de diálogo, seguida de roda de conversa sobre humor e histórias em quadrinhos.",
