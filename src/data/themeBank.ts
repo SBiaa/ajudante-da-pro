@@ -1657,6 +1657,20 @@ export const THEME_BANK: Record<OwnSubject, BankEntry[]> = {
         "Pedir que desenhem uma construção e apontem os materiais usados nela.",
         "Fechar com roda de conversa sobre como a natureza fornece materiais para construir."
       ]
+    },
+    {
+      "theme": "Desenhando de cima: o primeiro passo para ler mapas",
+      "curriculumCode": "EF02G07",
+      "description": "Exploração de diferentes perspectivas de observação (de cima, de lado) por meio de desenhos, como preparação para compreender mapas.",
+      "materials": [
+        "Papel e lápis para desenhar"
+      ],
+      "steps": [
+        "Organizar a turma em duplas no pátio: um aluno se deita e o outro desenha seu contorno visto de cima.",
+        "Escolher um objeto da sala e desenhá-lo visto de cima e visto de lado, comparando as duas formas.",
+        "Perguntar por que um mapa é sempre desenhado como se estivéssemos vendo de cima.",
+        "Fazer o desenho, visto de cima, de um objeto simples da sala (a mesa do professor, por exemplo)."
+      ]
     }
   ],
   "historia": [
@@ -1861,6 +1875,20 @@ export const THEME_BANK: Record<OwnSubject, BankEntry[]> = {
         "Professora propõe que cada aluno escolha uma brincadeira diferente da sua para brincar naquele dia.",
         "Turma vai ao pátio brincar em pequenos grupos das brincadeiras escolhidas.",
         "Professora fecha com roda de conversa sobre a importância de valorizar brincadeiras diferentes das nossas."
+      ]
+    },
+    {
+      "theme": "Investigando um brinquedo como objeto de cultura",
+      "curriculumCode": "EF02H03",
+      "description": "Investigação de um brinquedo como objeto de cultura material, levantando informações sobre seus materiais, construção, uso, decoração e valor, para descobrir sua história.",
+      "materials": [
+        "Um brinquedo artesanal (atual ou antigo) trazido pela turma ou pelo professor"
+      ],
+      "steps": [
+        "Levar um brinquedo artesanal (de qualquer época ou cultura) para a roda.",
+        "Fazer perguntas de investigação: do que é feito? Como foi construído? Para que serve? É decorado? Tem algum valor especial?",
+        "Registrar as respostas em um quadro simples com essas colunas.",
+        "Comparar o brinquedo investigado com os brinquedos industrializados que a turma costuma usar hoje."
       ]
     }
   ]
