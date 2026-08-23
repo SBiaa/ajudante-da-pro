@@ -1,26 +1,206 @@
 @import "tailwindcss";
 
+/* ---------------------------------------------------------------------- */
+/* Ace Design System tokens (colors, type, spacing, effects)              */
+/* ---------------------------------------------------------------------- */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Plum — primary */
+  --plum-900: #37125f;
+  --plum-800: #431873;
+  --plum-700: #4e1c82;
+  --plum-600: #5d2698;
+  --plum-500: #6b32a8;
+  --plum-400: #8a5cc0;
+  --plum-300: #b396d8;
+  --plum-200: #d9cceb;
+  --plum-100: #efe9f5;
+  --plum-50: #f8f5fb;
+  /* Crimson — the single accent, used sparingly */
+  --crimson-700: #8e1822;
+  --crimson-600: #ac1e2a;
+  --crimson-500: #c4303c;
+  --crimson-300: #e39aa1;
+  --crimson-100: #f7e5e7;
+  /* Neutrals — warm-cool paper greys */
+  --ink-900: #14101a;
+  --ink-800: #241e2e;
+  --ink-700: #3a3345;
+  --ink-600: #5b5364;
+  --ink-500: #7c7488;
+  --ink-400: #9c95a6;
+  --ink-300: #c6c1ce;
+  --ink-200: #dedae2;
+  --ink-100: #f1eff3;
+  --ink-50: #faf9fb;
+  --white: #ffffff;
+  /* Semantic status */
+  --green-600: #1f7a5c;
+  --green-100: #e3f1ec;
+  --amber-600: #b5761a;
+  --amber-100: #fbf0de;
+  --red-600: #ac1e2a;
+  --red-100: #f7e5e7;
+  /* Semantic aliases */
+  --text-strong: var(--ink-900);
+  --text-body: var(--ink-700);
+  --text-muted: var(--ink-500);
+  --text-onbrand: var(--white);
+  --text-brand: var(--plum-900);
+  --text-accent: var(--crimson-600);
+  --surface-page: var(--white);
+  --surface-subtle: var(--ink-50);
+  --surface-card: var(--white);
+  --surface-brand: var(--plum-900);
+  --surface-brand-soft: var(--plum-100);
+  --surface-accent-soft: var(--crimson-100);
+  --surface-inverse: var(--ink-900);
+  --surface-black: var(--ink-900);
+  --surface-brand-gradient: linear-gradient(135deg, var(--plum-600) 0%, var(--plum-900) 45%, var(--ink-900) 100%);
+  --border-subtle: var(--ink-200);
+  --border-strong: var(--ink-300);
+  --border-brand: var(--plum-900);
+  --action-primary: var(--plum-900);
+  --action-primary-hover: var(--plum-700);
+  --action-primary-press: var(--plum-800);
+  --action-accent: var(--crimson-600);
+  --action-accent-hover: var(--crimson-500);
+  --action-black: var(--ink-900);
+  --action-black-hover: var(--ink-800);
+  --focus-ring: var(--plum-400);
+
+  /* Type */
+  --text-h1: 44px;
+  --text-h2: 32px;
+  --text-h3: 24px;
+  --text-h4: 20px;
+  --text-body-lg: 18px;
+  --text-body-md: 16px;
+  --text-body-sm: 14px;
+  --text-caption: 13px;
+  --text-micro: 11px;
+  --leading-tight: 1.06;
+  --leading-snug: 1.2;
+  --leading-normal: 1.55;
+  --tracking-display: -0.02em;
+  --tracking-wide: 0.06em;
+  --tracking-eyebrow: 0.22em;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --measure-prose: 62ch;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --gutter: 24px;
+  --container-max: 1200px;
+
+  /* Effects */
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 1px 2px rgba(20, 16, 26, 0.05);
+  --shadow-md: 0 4px 16px rgba(20, 16, 26, 0.06);
+  --shadow-lg: 0 18px 48px rgba(20, 16, 26, 0.09);
+  --shadow-brand: 0 18px 48px rgba(55, 18, 95, 0.16);
+  --ease-standard: cubic-bezier(0.2, 0.6, 0.2, 1);
+  --dur-fast: 120ms;
+  --dur-base: 220ms;
+
+  --background: var(--surface-subtle);
+  --foreground: var(--text-body);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-body);
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, monospace;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), "Helvetica Neue", Arial, sans-serif;
+  font-size: var(--text-body-md);
+  line-height: var(--leading-normal);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display), Georgia, "Times New Roman", serif;
+  color: var(--text-strong);
+  font-weight: var(--weight-regular);
+  letter-spacing: var(--tracking-display);
+  line-height: var(--leading-snug);
+  margin: 0;
+}
+
+a {
+  color: var(--plum-700);
+  text-decoration: none;
+  border-bottom: 1px solid var(--plum-200);
+  transition: color var(--dur-fast) var(--ease-standard), border-color var(--dur-fast) var(--ease-standard);
+}
+a:hover {
+  color: var(--crimson-600);
+  border-bottom-color: var(--crimson-300);
+}
+
+::selection {
+  background: var(--plum-100);
+  color: var(--plum-900);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ink-200);
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
+
+  :root {
+    --background: #ffffff;
+    --foreground: #111111;
+  }
+
+  body {
+    background: #ffffff !important;
+  }
+
+  input,
+  textarea,
+  select {
+    border-color: var(--ink-300) !important;
+    color: #111111 !important;
+  }
+
+  /* Impressão de uma única atividade (ActivitySheetModal): esconde tudo, menos a folha. */
+  body.has-print-target * {
+    visibility: hidden;
+  }
+  body.has-print-target .activity-print-target,
+  body.has-print-target .activity-print-target * {
+    visibility: visible;
+  }
+  body.has-print-target .activity-print-target {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+  }
 }
