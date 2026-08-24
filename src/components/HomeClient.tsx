@@ -22,25 +22,57 @@ import { WeekGrid } from "@/components/WeekGrid";
 import { EmptyWeekPrompt } from "@/components/EmptyWeekPrompt";
 import { AppHeader } from "@/components/AppHeader";
 import { SubjectColorEditor } from "@/components/SubjectColorEditor";
+import { ThemeHistoryPanel } from "@/components/ThemeHistoryPanel";
+import { CurriculumCoveragePanel } from "@/components/CurriculumCoveragePanel";
+import { PeriodOverviewPanel } from "@/components/PeriodOverviewPanel";
 import { ConfirmModal } from "@/components/ConfirmModal";
-import { saveStoredTimetableAction } from "@/app/actions";
+import { ShareModal } from "@/components/ShareModal";
+import { saveStoredTimetableAction, createShareLinkAction } from "@/app/actions";
 
 type Props = {
   initialTimetable: WeeklyTimetable | null;
+  gradeLabel: string;
 };
 
-export default function HomeClient({ initialTimetable }: Props) {
+export default function HomeClient({ initialTimetable, gradeLabel }: Props) {
   const { state, setState, hydrated } = useAppState();
   const [viewedMonday, setViewedMonday] = useState(() => getMondayISO());
   const [showTimetableEditor, setShowTimetableEditor] = useState(false);
   const [showColorEditor, setShowColorEditor] = useState(false);
+  const [showThemeHistory, setShowThemeHistory] = useState(false);
+  const [showCoverage, setShowCoverage] = useState(false);
+  const [showPeriodOverview, setShowPeriodOverview] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [pendingGenerateWeekCount, setPendingGenerateWeekCount] = useState<number | null>(null);
+  const [shareState, setShareState] = useState<
+    { status: "loading" } | { status: "ready"; url: string } | { status: "error"; message: string } | null
+  >(null);
 
   const weekId = useMemo(() => getWeekId(viewedMonday), [viewedMonday]);
   const currentWeek = state.weeks[weekId];
   const previousMonday = useMemo(() => addWeeksISO(viewedMonday, -1), [viewedMonday]);
   const previousWeek = state.weeks[getWeekId(previousMonday)];
+  const savedWeeks = useMemo(
+    () =>
+      Object.values(state.weeks)
+        .map((w) => ({ weekId: w.id, weekStartDate: w.weekStartDate }))
+        .sort((a, b) => (a.weekStartDate < b.weekStartDate ? -1 : 1)),
+    [state.weeks]
+  );
+  const weekStartDates = useMemo(
+    () => Object.fromEntries(Object.values(state.weeks).map((w) => [w.id, w.weekStartDate])),
+    [state.weeks]
+  );
+  const menuItems = useMemo(
+    () => [
+      { label: "Editar grade fixa", onClick: () => setShowTimetableEditor(true) },
+      { label: "Cores das matérias", onClick: () => setShowColorEditor(true) },
+      { label: "Temas já dados", onClick: () => setShowThemeHistory(true) },
+      { label: "Cobertura curricular", onClick: () => setShowCoverage(true) },
+      { label: "Visão geral", onClick: () => setShowPeriodOverview(true) },
+    ],
+    []
+  );
 
   // Se o localStorage deste dispositivo ainda não tem grade fixa, adota a que já está
   // salva no banco (outro dispositivo/sessão anterior), evitando pedir pra configurar de novo.
@@ -62,7 +94,7 @@ export default function HomeClient({ initialTimetable }: Props) {
   if (!state.timetable) {
     return (
       <main className="max-w-4xl w-full mx-auto px-4 py-8">
-        <AppHeader />
+        <AppHeader gradeLabel={gradeLabel} />
         <p className="text-[var(--text-muted)] mb-6 max-w-[62ch]">
           Antes de começar, configure a grade fixa: qual matéria cai em cada horário, de segunda a sexta.
         </p>
@@ -125,7 +157,7 @@ export default function HomeClient({ initialTimetable }: Props) {
     if (!plan) {
       setError(
         keyword.trim()
-          ? `Nenhum tema encontrado para "${keyword.trim()}". Tente outra palavra ou deixe em branco para sortear livremente.`
+          ? `Nenhum tema encontrado para "${keyword.trim()}". Tente outra palavra ou deixe em branco para gerar livremente.`
           : "O banco de temas dessa matéria ainda está vazio. Preencha manualmente por enquanto."
       );
       return;
@@ -244,9 +276,40 @@ export default function HomeClient({ initialTimetable }: Props) {
     window.print();
   }
 
+  function handleJumpToWeek(weekStartDate: string) {
+    setViewedMonday(weekStartDate);
+    setShowThemeHistory(false);
+    setShowCoverage(false);
+    setShowPeriodOverview(false);
+  }
+
+  function handleDeleteThemeHistoryEntry(index: number) {
+    setState((s) => ({ ...s, themeHistory: s.themeHistory.filter((_, i) => i !== index) }));
+  }
+
+  function handleGoToday() {
+    setViewedMonday(getMondayISO());
+  }
+
+  function handleJumpToDate(isoDate: string) {
+    setViewedMonday(getMondayISO(new Date(`${isoDate}T00:00:00`)));
+  }
+
+  async function handleShareWeek() {
+    if (!currentWeek) return;
+    setShareState({ status: "loading" });
+    try {
+      const token = await createShareLinkAction(currentWeek, state.subjectColorOverrides);
+      setShareState({ status: "ready", url: `${window.location.origin}/compartilhado/${token}` });
+    } catch (err) {
+      console.error("Falha ao gerar link de compartilhamento:", err);
+      setShareState({ status: "error", message: "Não foi possível gerar o link. Tente novamente." });
+    }
+  }
+
   return (
     <main className="max-w-6xl w-full mx-auto px-4 py-8 flex-1">
-      <AppHeader />
+      <AppHeader gradeLabel={gradeLabel} menuItems={menuItems} />
 
       {showTimetableEditor ? (
         <TimetableEditor
@@ -267,6 +330,23 @@ export default function HomeClient({ initialTimetable }: Props) {
           }}
           onCancel={() => setShowColorEditor(false)}
         />
+      ) : showThemeHistory ? (
+        <ThemeHistoryPanel
+          history={state.themeHistory}
+          weekStartDates={weekStartDates}
+          onClose={() => setShowThemeHistory(false)}
+          onJumpToWeek={handleJumpToWeek}
+          onDeleteEntry={handleDeleteThemeHistoryEntry}
+        />
+      ) : showCoverage ? (
+        <CurriculumCoveragePanel weeks={state.weeks} onClose={() => setShowCoverage(false)} onJumpToWeek={handleJumpToWeek} />
+      ) : showPeriodOverview ? (
+        <PeriodOverviewPanel
+          weeks={state.weeks}
+          currentWeekId={weekId}
+          onClose={() => setShowPeriodOverview(false)}
+          onJumpToWeek={handleJumpToWeek}
+        />
       ) : (
         <>
           <WeekNav
@@ -275,8 +355,10 @@ export default function HomeClient({ initialTimetable }: Props) {
             hasSavedWeek={Boolean(currentWeek)}
             onPrevWeek={() => setViewedMonday((d) => addWeeksISO(d, -1))}
             onNextWeek={() => setViewedMonday((d) => addWeeksISO(d, 1))}
-            onOpenTimetable={() => setShowTimetableEditor(true)}
-            onOpenColorEditor={() => setShowColorEditor(true)}
+            onGoToday={handleGoToday}
+            onJumpToDate={handleJumpToDate}
+            savedWeeks={savedWeeks}
+            onJumpToWeek={setViewedMonday}
           />
 
           {error && (
@@ -293,6 +375,8 @@ export default function HomeClient({ initialTimetable }: Props) {
               onGenerateCell={generateCell}
               onGenerateWeek={requestGenerateWeek}
               onExportPdf={handleExportPdf}
+              onShare={handleShareWeek}
+              shareLoading={shareState?.status === "loading"}
             />
           ) : (
             <EmptyWeekPrompt
@@ -306,16 +390,26 @@ export default function HomeClient({ initialTimetable }: Props) {
 
       {pendingGenerateWeekCount !== null && (
         <ConfirmModal
-          title="Sortear semana inteira?"
-          message={`Isso vai sortear um novo tema para ${pendingGenerateWeekCount} aula${
+          title="Gerar semana inteira?"
+          message={`Isso vai gerar um novo tema para ${pendingGenerateWeekCount} aula${
             pendingGenerateWeekCount === 1 ? "" : "s"
           } desta semana, substituindo o conteúdo já preenchido nelas.`}
-          confirmLabel="Sortear semana"
+          confirmLabel="Gerar semana"
           onConfirm={() => {
             setPendingGenerateWeekCount(null);
             generateWeek();
           }}
           onCancel={() => setPendingGenerateWeekCount(null)}
+        />
+      )}
+
+      {shareState && (
+        <ShareModal
+          status={shareState.status}
+          url={shareState.status === "ready" ? shareState.url : undefined}
+          errorMessage={shareState.status === "error" ? shareState.message : undefined}
+          onClose={() => setShareState(null)}
+          onRetry={handleShareWeek}
         />
       )}
     </main>

@@ -17,9 +17,11 @@ type Props = {
   subjectKey: OwnSubject | "leitura-diaria";
   plan: GeneratedLessonPlan;
   isReading: boolean;
-  onChange: (plan: GeneratedLessonPlan) => void;
-  onGenerate: (keyword?: string) => void;
+  onChange?: (plan: GeneratedLessonPlan) => void;
+  onGenerate?: (keyword?: string) => void;
   onClose: () => void;
+  /** true na página pública de compartilhamento: some a busca/sorteio e o botão "Editar". */
+  readOnly?: boolean;
 };
 
 function linesToArray(text: string): string[] {
@@ -42,6 +44,7 @@ export function LessonDetailModal({
   onChange,
   onGenerate,
   onClose,
+  readOnly = false,
 }: Props) {
   const [editing, setEditing] = useState(false);
   const [showActivity, setShowActivity] = useState(false);
@@ -87,32 +90,34 @@ export function LessonDetailModal({
           </button>
         </div>
 
-        <div className="flex flex-wrap items-end gap-2 rounded-[var(--radius-md)] bg-[var(--surface-subtle)] p-3 mb-5">
-          <div className="flex-1 min-w-[180px]">
-            <div className="text-xs font-medium text-[var(--text-muted)] mb-1">Buscar tema (opcional)</div>
-            <input
-              value={keyword}
-              onChange={(e) => setKeyword(e.target.value)}
-              placeholder='Ex.: "notícia", "divisão"...'
-              className={fieldClass}
-            />
+        {!readOnly && (
+          <div className="flex flex-wrap items-end gap-2 rounded-[var(--radius-md)] bg-[var(--surface-subtle)] p-3 mb-5">
+            <div className="flex-1 min-w-[180px]">
+              <div className="text-xs font-medium text-[var(--text-muted)] mb-1">Buscar tema (opcional)</div>
+              <input
+                value={keyword}
+                onChange={(e) => setKeyword(e.target.value)}
+                placeholder='Ex.: "notícia", "divisão"...'
+                className={fieldClass}
+              />
+            </div>
+            <button
+              type="button"
+              onClick={() => onGenerate?.(keyword)}
+              className="text-sm px-4 py-1.5 rounded-full bg-[var(--action-primary)] text-white transition-colors hover:bg-[var(--action-primary-hover)] active:scale-[0.975] whitespace-nowrap"
+            >
+              {plan.theme ? "Gerar de novo" : "Gerar"}
+            </button>
           </div>
-          <button
-            type="button"
-            onClick={() => onGenerate(keyword)}
-            className="text-sm px-4 py-1.5 rounded-full bg-[var(--action-primary)] text-white transition-colors hover:bg-[var(--action-primary-hover)] active:scale-[0.975] whitespace-nowrap"
-          >
-            {plan.theme ? "Sortear de novo" : "Sortear"}
-          </button>
-        </div>
+        )}
 
-        {editing ? (
+        {editing && !readOnly ? (
           <div className="space-y-4">
             <div>
               <div className="text-xs font-medium text-[var(--text-muted)] mb-1">{isReading ? "Título" : "Tema / assunto"}</div>
               <input
                 value={plan.theme}
-                onChange={(e) => onChange({ ...plan, theme: e.target.value, editedManually: true })}
+                onChange={(e) => onChange?.({ ...plan, theme: e.target.value, editedManually: true })}
                 className={fieldClass}
               />
             </div>
@@ -122,7 +127,7 @@ export function LessonDetailModal({
                 <div className="text-xs font-medium text-[var(--text-muted)] mb-1">Código do currículo</div>
                 <input
                   value={plan.curriculumCode}
-                  onChange={(e) => onChange({ ...plan, curriculumCode: e.target.value, editedManually: true })}
+                  onChange={(e) => onChange?.({ ...plan, curriculumCode: e.target.value, editedManually: true })}
                   className={`${fieldClass} font-mono`}
                 />
               </div>
@@ -132,7 +137,7 @@ export function LessonDetailModal({
               <div className="text-xs font-medium text-[var(--text-muted)] mb-1">Descrição da atividade (SGP)</div>
               <textarea
                 value={plan.description}
-                onChange={(e) => onChange({ ...plan, description: e.target.value, editedManually: true })}
+                onChange={(e) => onChange?.({ ...plan, description: e.target.value, editedManually: true })}
                 rows={2}
                 className={fieldClass}
               />
@@ -143,7 +148,7 @@ export function LessonDetailModal({
                 <div className="text-xs font-medium text-[var(--text-muted)] mb-1">Texto para ler em voz alta</div>
                 <textarea
                   value={plan.readingText}
-                  onChange={(e) => onChange({ ...plan, readingText: e.target.value, editedManually: true })}
+                  onChange={(e) => onChange?.({ ...plan, readingText: e.target.value, editedManually: true })}
                   rows={16}
                   className={`${fieldClass} whitespace-pre-wrap`}
                 />
@@ -154,7 +159,7 @@ export function LessonDetailModal({
               <div className="text-xs font-medium text-[var(--text-muted)] mb-1">Materiais (um por linha)</div>
               <textarea
                 value={plan.materials.join("\n")}
-                onChange={(e) => onChange({ ...plan, materials: linesToArray(e.target.value), editedManually: true })}
+                onChange={(e) => onChange?.({ ...plan, materials: linesToArray(e.target.value), editedManually: true })}
                 placeholder="Nenhum material especial"
                 rows={2}
                 className={fieldClass}
@@ -165,7 +170,7 @@ export function LessonDetailModal({
               <div className="text-xs font-medium text-[var(--text-muted)] mb-1">Passo a passo da aula (um por linha)</div>
               <textarea
                 value={plan.steps.join("\n")}
-                onChange={(e) => onChange({ ...plan, steps: linesToArray(e.target.value), editedManually: true })}
+                onChange={(e) => onChange?.({ ...plan, steps: linesToArray(e.target.value), editedManually: true })}
                 placeholder="Ainda sem passo a passo"
                 rows={6}
                 className={fieldClass}
@@ -290,17 +295,19 @@ export function LessonDetailModal({
             )}
 
             {plan.editedManually && (
-              <div className="text-xs text-[var(--amber-600)]">Editado manualmente depois do sorteio.</div>
+              <div className="text-xs text-[var(--amber-600)]">Editado manualmente depois de gerado.</div>
             )}
 
             <div className="flex flex-wrap justify-end gap-2 pt-2">
-              <button
-                type="button"
-                onClick={() => setEditing(true)}
-                className="text-sm px-4 py-1.5 rounded-full border border-[var(--plum-900)] text-[var(--plum-900)] transition-colors hover:bg-[var(--plum-900)] hover:text-white"
-              >
-                Editar
-              </button>
+              {!readOnly && (
+                <button
+                  type="button"
+                  onClick={() => setEditing(true)}
+                  className="text-sm px-4 py-1.5 rounded-full border border-[var(--plum-900)] text-[var(--plum-900)] transition-colors hover:bg-[var(--plum-900)] hover:text-white"
+                >
+                  Editar
+                </button>
+              )}
               <CopyButton text={sgpText} label="Copiar p/ SGP" />
               {activity && (
                 <button

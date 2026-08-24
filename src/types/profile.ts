@@ -31,3 +31,10 @@ export const THEME_OPTIONS: ThemeOption[] = [
 ];
 
 export const DEFAULT_THEME = "default";
+
+/** Rótulo de exibição do ano/série (ex.: cabeçalho do app) — cai no padrão se o valor salvo
+ * não corresponder a nenhuma opção conhecida (perfil nunca configurado, dado antigo/inválido). */
+export function getGradeLabel(gradeYear: string): string {
+  const option = GRADE_OPTIONS.find((g) => g.value === gradeYear);
+  return option?.label ?? GRADE_OPTIONS.find((g) => g.value === DEFAULT_GRADE)!.label;
+}

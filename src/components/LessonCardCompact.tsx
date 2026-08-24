@@ -35,7 +35,7 @@ export function LessonCardCompact({ title, subjectKey, color, plan, onViewDetail
       {plan.theme ? (
         <span className="text-sm font-medium text-[var(--text-strong)] line-clamp-2">{plan.theme}</span>
       ) : (
-        <span className="text-sm italic text-[var(--text-muted)]">Sem tema ainda — clique para sortear</span>
+        <span className="text-sm italic text-[var(--text-muted)]">Sem tema ainda — clique para gerar</span>
       )}
 
       {plan.description && <span className="text-xs text-[var(--text-muted)] line-clamp-2">{plan.description}</span>}

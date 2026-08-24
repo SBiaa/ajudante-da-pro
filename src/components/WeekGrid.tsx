@@ -22,10 +22,15 @@ type GridMode = "view" | "edit";
 type Props = {
   week: WeekPlan;
   colorOverrides: SubjectColorOverrides;
-  onCellChange: (day: Weekday, slot: SlotNumber, cell: WeekCell) => void;
-  onGenerateCell: (day: Weekday, slot: SlotNumber, keyword?: string) => void;
-  onGenerateWeek: () => void;
+  onCellChange?: (day: Weekday, slot: SlotNumber, cell: WeekCell) => void;
+  onGenerateCell?: (day: Weekday, slot: SlotNumber, keyword?: string) => void;
+  onGenerateWeek?: () => void;
   onExportPdf: () => void;
+  onShare?: () => void;
+  shareLoading?: boolean;
+  /** true na página pública de compartilhamento: sem toggle de edição, gerar ou compartilhar
+   * de novo — só visualizar e exportar PDF. */
+  readOnly?: boolean;
 };
 
 function colorKeyFor(cell: WeekCell): ColorKey {
@@ -34,51 +39,78 @@ function colorKeyFor(cell: WeekCell): ColorKey {
   return "externa";
 }
 
-export function WeekGrid({ week, colorOverrides, onCellChange, onGenerateCell, onGenerateWeek, onExportPdf }: Props) {
+export function WeekGrid({
+  week,
+  colorOverrides,
+  onCellChange,
+  onGenerateCell,
+  onGenerateWeek,
+  onExportPdf,
+  onShare,
+  shareLoading = false,
+  readOnly = false,
+}: Props) {
   const [detailKey, setDetailKey] = useState<{ day: Weekday; slot: SlotNumber } | null>(null);
   const [mode, setMode] = useState<GridMode>("view");
+  const effectiveMode: GridMode = readOnly ? "view" : mode;
   const detailCell = detailKey ? week.days[detailKey.day][detailKey.slot] : null;
 
   return (
     <div>
       <div className="print:hidden flex flex-wrap items-center justify-between gap-2 mb-3">
-        <div
-          role="radiogroup"
-          aria-label="Modo de exibição da grade"
-          className="inline-flex rounded-full border border-[var(--border-subtle)] bg-white p-0.5"
-        >
-          <button
-            type="button"
-            role="radio"
-            aria-checked={mode === "view"}
-            onClick={() => setMode("view")}
-            className={`text-sm px-3.5 py-1 rounded-full transition-colors ${
-              mode === "view" ? "bg-[var(--action-primary)] text-white" : "text-[var(--text-body)] hover:bg-[var(--surface-subtle)]"
-            }`}
+        {readOnly ? (
+          <span className="text-sm text-[var(--text-muted)]">Somente leitura</span>
+        ) : (
+          <div
+            role="radiogroup"
+            aria-label="Modo de exibição da grade"
+            className="inline-flex rounded-full border border-[var(--border-subtle)] bg-white p-0.5"
           >
-            Visualizar
-          </button>
-          <button
-            type="button"
-            role="radio"
-            aria-checked={mode === "edit"}
-            onClick={() => setMode("edit")}
-            className={`text-sm px-3.5 py-1 rounded-full transition-colors ${
-              mode === "edit" ? "bg-[var(--action-primary)] text-white" : "text-[var(--text-body)] hover:bg-[var(--surface-subtle)]"
-            }`}
-          >
-            Editar
-          </button>
-        </div>
+            <button
+              type="button"
+              role="radio"
+              aria-checked={mode === "view"}
+              onClick={() => setMode("view")}
+              className={`text-sm px-3.5 py-1 rounded-full transition-colors ${
+                mode === "view" ? "bg-[var(--action-primary)] text-white" : "text-[var(--text-body)] hover:bg-[var(--surface-subtle)]"
+              }`}
+            >
+              Visualizar
+            </button>
+            <button
+              type="button"
+              role="radio"
+              aria-checked={mode === "edit"}
+              onClick={() => setMode("edit")}
+              className={`text-sm px-3.5 py-1 rounded-full transition-colors ${
+                mode === "edit" ? "bg-[var(--action-primary)] text-white" : "text-[var(--text-body)] hover:bg-[var(--surface-subtle)]"
+              }`}
+            >
+              Editar
+            </button>
+          </div>
+        )}
 
         <div className="flex gap-2">
-          <button
-            onClick={onGenerateWeek}
-            type="button"
-            className="text-sm px-4 py-1.5 rounded-full bg-[var(--action-primary)] text-white transition-colors hover:bg-[var(--action-primary-hover)] active:scale-[0.975]"
-          >
-            Sortear semana inteira
-          </button>
+          {!readOnly && onGenerateWeek && (
+            <button
+              onClick={onGenerateWeek}
+              type="button"
+              className="text-sm px-4 py-1.5 rounded-full bg-[var(--action-primary)] text-white transition-colors hover:bg-[var(--action-primary-hover)] active:scale-[0.975]"
+            >
+              Gerar semana inteira
+            </button>
+          )}
+          {!readOnly && onShare && (
+            <button
+              onClick={onShare}
+              type="button"
+              disabled={shareLoading}
+              className="text-sm px-4 py-1.5 rounded-full border border-[var(--plum-900)] text-[var(--plum-900)] transition-colors hover:bg-[var(--plum-900)] hover:text-white disabled:opacity-[0.5] disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-[var(--plum-900)]"
+            >
+              {shareLoading ? "Gerando link…" : "Compartilhar semana"}
+            </button>
+          )}
           <button
             onClick={onExportPdf}
             type="button"
@@ -118,15 +150,16 @@ export function WeekGrid({ week, colorOverrides, onCellChange, onGenerateCell, o
                       label={cell.label}
                       color={color}
                       activity={cell.activity}
-                      onChange={(activity) => onCellChange(day, slot, { ...cell, activity })}
+                      readOnly={readOnly}
+                      onChange={onCellChange ? (activity) => onCellChange(day, slot, { ...cell, activity }) : undefined}
                     />
-                  ) : mode === "edit" ? (
+                  ) : effectiveMode === "edit" ? (
                     <LessonCard
                       title={cell.kind === "leitura-diaria" ? "Leitura Diária" : OWN_SUBJECT_LABELS[cell.subject]}
                       subjectKey={colorKeyFor(cell)}
                       color={color}
                       plan={cell.plan}
-                      onChange={(plan) => onCellChange(day, slot, { ...cell, plan })}
+                      onChange={(plan) => onCellChange?.(day, slot, { ...cell, plan })}
                       onViewDetails={() => setDetailKey({ day, slot })}
                     />
                   ) : (
@@ -153,9 +186,10 @@ export function WeekGrid({ week, colorOverrides, onCellChange, onGenerateCell, o
           subjectKey={detailCell.kind === "leitura-diaria" ? "leitura-diaria" : detailCell.subject}
           plan={detailCell.plan}
           isReading={detailCell.kind === "leitura-diaria"}
-          onChange={(plan) => onCellChange(detailKey.day, detailKey.slot, { ...detailCell, plan })}
-          onGenerate={(keyword) => onGenerateCell(detailKey.day, detailKey.slot, keyword)}
+          onChange={(plan) => onCellChange?.(detailKey.day, detailKey.slot, { ...detailCell, plan })}
+          onGenerate={(keyword) => onGenerateCell?.(detailKey.day, detailKey.slot, keyword)}
           onClose={() => setDetailKey(null)}
+          readOnly={readOnly}
         />
       )}
     </div>

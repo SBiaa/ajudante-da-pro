@@ -12,5 +12,7 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!login|_next/static|_next/image|favicon.ico|brand/).*)"],
+  // "compartilhado/" fica de fora: é a página pública (somente leitura) que abre pra quem
+  // recebe um link compartilhado, sem exigir login.
+  matcher: ["/((?!login|compartilhado/|_next/static|_next/image|favicon.ico|brand/).*)"],
 };

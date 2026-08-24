@@ -55,3 +55,17 @@ export function formatFullDate(isoDate: string): string {
     new Date(`${isoDate}T00:00:00`)
   );
 }
+
+/** Lista as segundas-feiras (ISO date) de cada semana entre `fromMonday` e `toMonday`, inclusive.
+ * Assume que ambas as datas já são segundas-feiras (ver `getMondayISO`). */
+export function listMondaysBetween(fromMonday: string, toMonday: string): string[] {
+  const result: string[] = [];
+  let cursor = fromMonday;
+  let guard = 0;
+  while (cursor <= toMonday && guard < 520) {
+    result.push(cursor);
+    cursor = addWeeksISO(cursor, 1);
+    guard++;
+  }
+  return result;
+}
