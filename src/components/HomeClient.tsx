@@ -27,6 +27,7 @@ import { CurriculumCoveragePanel } from "@/components/CurriculumCoveragePanel";
 import { PeriodOverviewPanel } from "@/components/PeriodOverviewPanel";
 import { ConfirmModal } from "@/components/ConfirmModal";
 import { ShareModal } from "@/components/ShareModal";
+import { LoadingScreen } from "@/components/LoadingScreen";
 import { saveStoredTimetableAction, createShareLinkAction } from "@/app/actions";
 
 type Props = {
@@ -88,7 +89,7 @@ export default function HomeClient({ initialTimetable, gradeLabel }: Props) {
   }
 
   if (!hydrated) {
-    return <div className="flex-1 flex items-center justify-center text-[var(--text-muted)]">Carregando...</div>;
+    return <LoadingScreen />;
   }
 
   if (!state.timetable) {

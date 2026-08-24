@@ -5,6 +5,7 @@ import Link from "next/link";
 import { GRADE_OPTIONS, THEME_OPTIONS } from "@/types/profile";
 import { logoutAction } from "@/lib/auth/actions";
 import { saveProfileAction, SaveProfileState } from "@/app/perfil/actions";
+import { CatSpinner } from "@/components/CatSpinner";
 
 type Props = {
   currentGrade: string;
@@ -99,8 +100,9 @@ export function PerfilForm({ currentGrade, currentTheme }: Props) {
           <button
             type="submit"
             disabled={pending}
-            className="text-sm px-4 py-1.5 rounded-full bg-[var(--action-primary)] text-white transition-colors hover:bg-[var(--action-primary-hover)] active:scale-[0.975] disabled:opacity-60"
+            className="flex items-center gap-2 text-sm px-4 py-1.5 rounded-full bg-[var(--action-primary)] text-white transition-colors hover:bg-[var(--action-primary-hover)] active:scale-[0.975] disabled:opacity-60"
           >
+            {pending && <CatSpinner />}
             {pending ? "Salvando..." : "Salvar"}
           </button>
           <Link href="/" className="text-sm">

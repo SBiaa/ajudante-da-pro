@@ -13,6 +13,7 @@ import {
 } from "@/types/plano";
 import { LessonCardCompact } from "./LessonCardCompact";
 import { ExternalCard } from "./ExternalCard";
+import { CatSpinner } from "./CatSpinner";
 import { LessonDetailModal } from "./LessonDetailModal";
 import { ColorKey, SubjectColorOverrides, resolveSubjectColor } from "@/lib/subjectColors";
 import { toISODate, addDaysISO } from "@/lib/date";
@@ -118,8 +119,9 @@ export function WeekGrid({
               onClick={onShare}
               type="button"
               disabled={shareLoading}
-              className="text-sm px-4 py-1.5 rounded-full border border-[var(--plum-900)] text-[var(--plum-900)] transition-colors hover:bg-[var(--plum-900)] hover:text-white disabled:opacity-[0.5] disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-[var(--plum-900)]"
+              className="flex items-center gap-2 text-sm px-4 py-1.5 rounded-full border border-[var(--plum-900)] text-[var(--plum-900)] transition-colors hover:bg-[var(--plum-900)] hover:text-white disabled:opacity-[0.5] disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-[var(--plum-900)]"
             >
+              {shareLoading && <CatSpinner />}
               {shareLoading ? "Gerando link…" : "Compartilhar semana"}
             </button>
           )}

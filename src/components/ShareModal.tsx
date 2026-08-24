@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { CopyButton } from "./CopyButton";
+import { CatSpinner } from "./CatSpinner";
 
 type Props = {
   status: "loading" | "ready" | "error";
@@ -32,7 +33,12 @@ export function ShareModal({ status, url, errorMessage, onClose, onRetry }: Prop
       >
         <h3 className="text-[20px] mb-2">Compartilhar semana</h3>
 
-        {status === "loading" && <p className="text-sm text-[var(--text-body)] mb-5">Gerando o link…</p>}
+        {status === "loading" && (
+          <p className="flex items-center gap-2 text-sm text-[var(--text-body)] mb-5">
+            <CatSpinner className="text-[var(--plum-900)]" />
+            Gerando o link…
+          </p>
+        )}
 
         {status === "error" && (
           <>

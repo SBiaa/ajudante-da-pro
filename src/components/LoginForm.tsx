@@ -2,6 +2,7 @@
 
 import { useActionState } from "react";
 import { loginAction, LoginState } from "@/lib/auth/actions";
+import { CatSpinner } from "@/components/CatSpinner";
 
 const initialState: LoginState = { error: null };
 
@@ -31,8 +32,9 @@ export function LoginForm() {
       <button
         type="submit"
         disabled={pending}
-        className="w-full text-sm px-4 py-2 rounded-full bg-[var(--action-primary)] text-white transition-colors hover:bg-[var(--action-primary-hover)] active:scale-[0.975] disabled:opacity-60"
+        className="w-full flex items-center justify-center gap-2 text-sm px-4 py-2 rounded-full bg-[var(--action-primary)] text-white transition-colors hover:bg-[var(--action-primary-hover)] active:scale-[0.975] disabled:opacity-60"
       >
+        {pending && <CatSpinner />}
         {pending ? "Entrando..." : "Entrar"}
       </button>
     </form>
