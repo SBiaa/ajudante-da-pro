@@ -105,7 +105,7 @@ export default function HomeClient({ userId, initialTimetable, gradeLabel, initi
   }, [hydrated, initialTimetable, initialAppData, setState]);
 
   function saveTimetable(t: WeeklyTimetable) {
-    setState((s) => ({ ...s, timetable: t, weeks: syncWeeksWithTimetable(s.weeks, t) }));
+    setState((s) => ({ ...s, timetable: t, weeks: syncWeeksWithTimetable(s.weeks, t, weekId) }));
     saveStoredTimetableAction(t).catch((err) => console.error("Falha ao sincronizar grade horária:", err));
   }
 

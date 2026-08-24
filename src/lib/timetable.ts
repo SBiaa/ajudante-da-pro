@@ -58,16 +58,21 @@ function sameShape(cell: WeekCell, entry: TimetableEntry): boolean {
   return true;
 }
 
-/** Aplica uma grade fixa recém-editada às semanas já criadas, mas só nos horários ainda vazios —
- * preserva qualquer plano já sorteado ou editado à mão, mesmo que a matéria daquele horário
- * tenha mudado no molde. Retorna o mesmo objeto `weeks` (sem clonar) se nada precisou mudar. */
+/** Aplica uma grade fixa recém-editada às semanas já criadas. Por padrão só mexe nos horários
+ * ainda vazios — preserva qualquer plano já sorteado ou editado à mão. Na semana indicada por
+ * `forceWeekId` (a que está na tela ao editar a grade), todo horário que mudou de matéria no
+ * molde é sobrescrito mesmo com conteúdo já gerado — é a semana em que a professora está
+ * trabalhando agora, então ela espera ver a mudança refletida na hora, mesmo perdendo o que
+ * tinha ali. Retorna o mesmo objeto `weeks` (sem clonar) se nada precisou mudar. */
 export function syncWeeksWithTimetable(
   weeks: Record<string, WeekPlan>,
-  timetable: WeeklyTimetable
+  timetable: WeeklyTimetable,
+  forceWeekId?: string
 ): Record<string, WeekPlan> {
   let anyChanged = false;
   const nextWeeks: Record<string, WeekPlan> = {};
   for (const [weekId, week] of Object.entries(weeks)) {
+    const force = weekId === forceWeekId;
     let weekChanged = false;
     const days = {} as WeekPlan["days"];
     for (const day of WEEKDAYS) {
@@ -75,7 +80,7 @@ export function syncWeeksWithTimetable(
       for (const slot of SLOT_NUMBERS) {
         const cell = week.days[day][slot];
         const entry = timetable.grid[day][slot];
-        if (isCellEmpty(cell) && !sameShape(cell, entry)) {
+        if (!sameShape(cell, entry) && (force || isCellEmpty(cell))) {
           dayCells[slot] = cellFromEntry(entry);
           weekChanged = true;
         } else {
