@@ -21,28 +21,28 @@ export function AppHeader({ showProfileLink = true, gradeLabel = getGradeLabel(D
       <div className="absolute inset-0 overflow-hidden rounded-[var(--radius-lg)] pointer-events-none">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/brand/star-white.png"
+          src="/brand/logo-mark.svg"
           alt=""
           aria-hidden="true"
-          className="brand-mark-corner select-none absolute -top-10 -right-10 w-[220px] h-[220px] opacity-[0.08]"
+          className="brand-mark-corner select-none absolute -top-10 -right-10 w-[220px] h-[220px] opacity-[0.1]"
         />
         <span aria-hidden="true" className="brand-mark-corner-emoji select-none absolute -top-2 right-1" />
       </div>
 
-      <div className="relative flex items-center justify-between gap-3">
-        <div className="flex items-center gap-3">
+      <div className="relative flex items-start justify-between gap-3">
+        <div className="flex items-start gap-2.5 min-w-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/brand/star-crimson.png" alt="" aria-hidden="true" className="brand-mark-icon w-6 h-6 flex-none" />
+          <img src="/brand/logo-mark.svg" alt="" aria-hidden="true" className="brand-mark-icon w-7 h-7 flex-none mt-0.5" />
           <span aria-hidden="true" className="brand-mark-icon-emoji hidden flex-none" />
-          <div>
-            <h1 className="app-header-title text-[28px] leading-tight">Plano de Aula Semanal</h1>
-            <p className="mt-1 text-[11px] font-medium uppercase tracking-[0.22em] text-[var(--plum-200)]">
+          <div className="min-w-0">
+            <h1 className="app-header-title text-[22px] sm:text-[28px] leading-tight">Plano de Aula Semanal</h1>
+            <p className="mt-1 text-[11px] font-medium uppercase tracking-[0.22em] text-[var(--crimson-200)]">
               {gradeLabel} · Ensino Fundamental 1 · SME-SP
             </p>
           </div>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 flex-none mt-1">
           {menuItems && menuItems.length > 0 && (
             <details className="relative">
               <summary className="app-header-link list-none [&::-webkit-details-marker]:hidden cursor-pointer text-xs font-medium uppercase tracking-[0.1em] transition-colors flex items-center gap-1">

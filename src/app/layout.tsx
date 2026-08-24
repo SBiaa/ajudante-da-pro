@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Playfair_Display, DM_Sans } from "next/font/google";
+import { Baloo_2, Inter } from "next/font/google";
 import { getProfile } from "@/lib/db/profile";
 import { DEFAULT_THEME } from "@/types/profile";
 import { ThemeEffects } from "@/components/ThemeEffects";
 import "./globals.css";
 
-const playfairDisplay = Playfair_Display({
+const baloo2 = Baloo_2({
   variable: "--font-display",
   subsets: ["latin"],
-  style: ["normal", "italic"],
+  weight: ["500", "600", "700", "800"],
 });
 
-const dmSans = DM_Sans({
+const inter = Inter({
   variable: "--font-body",
   subsets: ["latin"],
 });
@@ -34,7 +34,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="pt-BR"
       data-theme={theme}
-      className={`${playfairDisplay.variable} ${dmSans.variable} h-full antialiased`}
+      className={`${baloo2.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         {children}

@@ -23,10 +23,10 @@ export type ThemeOption = {
   enabled: boolean;
 };
 
-/** Tema visual do app (cores, ícones). "default" é a identidade Ace; os demais são
+/** Tema visual do app (cores, ícones). "default" é a identidade Claudia; os demais são
  * variações divertidas para a sala de aula, escolhidas no Perfil. */
 export const THEME_OPTIONS: ThemeOption[] = [
-  { value: "default", label: "Ace (padrão)", emoji: "⭐", enabled: true },
+  { value: "default", label: "Claudia (padrão)", emoji: "🐈", enabled: true },
   { value: "gatinho", label: "Gatinho", emoji: "🐱", enabled: true },
 ];
 
