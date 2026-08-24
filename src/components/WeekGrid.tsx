@@ -12,9 +12,12 @@ import {
   SlotNumber,
 } from "@/types/plano";
 import { LessonCard } from "./LessonCard";
+import { LessonCardCompact } from "./LessonCardCompact";
 import { ExternalCard } from "./ExternalCard";
 import { LessonDetailModal } from "./LessonDetailModal";
 import { ColorKey, SubjectColorOverrides, resolveSubjectColor } from "@/lib/subjectColors";
+
+type GridMode = "view" | "edit";
 
 type Props = {
   week: WeekPlan;
@@ -33,25 +36,57 @@ function colorKeyFor(cell: WeekCell): ColorKey {
 
 export function WeekGrid({ week, colorOverrides, onCellChange, onGenerateCell, onGenerateWeek, onExportPdf }: Props) {
   const [detailKey, setDetailKey] = useState<{ day: Weekday; slot: SlotNumber } | null>(null);
+  const [mode, setMode] = useState<GridMode>("view");
   const detailCell = detailKey ? week.days[detailKey.day][detailKey.slot] : null;
 
   return (
     <div>
-      <div className="print:hidden flex justify-end gap-2 mb-3">
-        <button
-          onClick={onGenerateWeek}
-          type="button"
-          className="text-sm px-4 py-1.5 rounded-full bg-[var(--action-primary)] text-white transition-colors hover:bg-[var(--action-primary-hover)] active:scale-[0.975]"
+      <div className="print:hidden flex flex-wrap items-center justify-between gap-2 mb-3">
+        <div
+          role="radiogroup"
+          aria-label="Modo de exibição da grade"
+          className="inline-flex rounded-full border border-[var(--border-subtle)] bg-white p-0.5"
         >
-          Sortear semana inteira
-        </button>
-        <button
-          onClick={onExportPdf}
-          type="button"
-          className="text-sm px-4 py-1.5 rounded-full border border-[var(--plum-900)] text-[var(--plum-900)] transition-colors hover:bg-[var(--plum-900)] hover:text-white"
-        >
-          Exportar PDF
-        </button>
+          <button
+            type="button"
+            role="radio"
+            aria-checked={mode === "view"}
+            onClick={() => setMode("view")}
+            className={`text-sm px-3.5 py-1 rounded-full transition-colors ${
+              mode === "view" ? "bg-[var(--action-primary)] text-white" : "text-[var(--text-body)] hover:bg-[var(--surface-subtle)]"
+            }`}
+          >
+            Visualizar
+          </button>
+          <button
+            type="button"
+            role="radio"
+            aria-checked={mode === "edit"}
+            onClick={() => setMode("edit")}
+            className={`text-sm px-3.5 py-1 rounded-full transition-colors ${
+              mode === "edit" ? "bg-[var(--action-primary)] text-white" : "text-[var(--text-body)] hover:bg-[var(--surface-subtle)]"
+            }`}
+          >
+            Editar
+          </button>
+        </div>
+
+        <div className="flex gap-2">
+          <button
+            onClick={onGenerateWeek}
+            type="button"
+            className="text-sm px-4 py-1.5 rounded-full bg-[var(--action-primary)] text-white transition-colors hover:bg-[var(--action-primary-hover)] active:scale-[0.975]"
+          >
+            Sortear semana inteira
+          </button>
+          <button
+            onClick={onExportPdf}
+            type="button"
+            className="text-sm px-4 py-1.5 rounded-full border border-[var(--plum-900)] text-[var(--plum-900)] transition-colors hover:bg-[var(--plum-900)] hover:text-white"
+          >
+            Exportar PDF
+          </button>
+        </div>
       </div>
 
       <div className="grid gap-2" style={{ gridTemplateColumns: "44px repeat(5, minmax(0, 1fr))" }}>
@@ -76,7 +111,7 @@ export function WeekGrid({ week, colorOverrides, onCellChange, onGenerateCell, o
                 <div
                   key={key}
                   style={{ borderLeftColor: color.text, background: color.bg }}
-                  className="rounded-[var(--radius-lg)] border border-[var(--border-subtle)] border-l-4 p-2 min-h-[150px] shadow-[var(--shadow-sm)]"
+                  className="week-cell-card relative rounded-[var(--radius-lg)] border border-[var(--border-subtle)] border-l-4 p-2 min-h-[150px] shadow-[var(--shadow-sm)]"
                 >
                   {cell.kind === "materia-externa" ? (
                     <ExternalCard
@@ -85,12 +120,21 @@ export function WeekGrid({ week, colorOverrides, onCellChange, onGenerateCell, o
                       activity={cell.activity}
                       onChange={(activity) => onCellChange(day, slot, { ...cell, activity })}
                     />
-                  ) : (
+                  ) : mode === "edit" ? (
                     <LessonCard
                       title={cell.kind === "leitura-diaria" ? "Leitura Diária" : OWN_SUBJECT_LABELS[cell.subject]}
+                      subjectKey={colorKeyFor(cell)}
                       color={color}
                       plan={cell.plan}
                       onChange={(plan) => onCellChange(day, slot, { ...cell, plan })}
+                      onViewDetails={() => setDetailKey({ day, slot })}
+                    />
+                  ) : (
+                    <LessonCardCompact
+                      title={cell.kind === "leitura-diaria" ? "Leitura Diária" : OWN_SUBJECT_LABELS[cell.subject]}
+                      subjectKey={colorKeyFor(cell)}
+                      color={color}
+                      plan={cell.plan}
                       onViewDetails={() => setDetailKey({ day, slot })}
                     />
                   )}

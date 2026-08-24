@@ -8,14 +8,19 @@ export function AppHeader() {
         src="/brand/star-white.png"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none select-none absolute -top-10 -right-10 w-[220px] h-[220px] opacity-[0.08]"
+        className="brand-mark-corner pointer-events-none select-none absolute -top-10 -right-10 w-[220px] h-[220px] opacity-[0.08]"
+      />
+      <span
+        aria-hidden="true"
+        className="brand-mark-corner-emoji pointer-events-none select-none absolute -top-2 right-1"
       />
       <div className="relative flex items-center justify-between gap-3">
         <div className="flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/brand/star-crimson.png" alt="" aria-hidden="true" className="w-6 h-6 flex-none" />
+          <img src="/brand/star-crimson.png" alt="" aria-hidden="true" className="brand-mark-icon w-6 h-6 flex-none" />
+          <span aria-hidden="true" className="brand-mark-icon-emoji hidden flex-none" />
           <div>
-            <h1 className="text-[28px] leading-tight text-white">Plano de Aula Semanal</h1>
+            <h1 className="app-header-title text-[28px] leading-tight">Plano de Aula Semanal</h1>
             <p className="mt-1 text-[11px] font-medium uppercase tracking-[0.22em] text-[var(--plum-200)]">
               2º ano · Ensino Fundamental 1 · SME-SP
             </p>
@@ -23,7 +28,7 @@ export function AppHeader() {
         </div>
         <Link
           href="/perfil"
-          className="text-xs font-medium uppercase tracking-[0.1em] text-[var(--plum-200)] hover:text-white transition-colors"
+          className="app-header-link text-xs font-medium uppercase tracking-[0.1em] transition-colors"
         >
           Perfil
         </Link>

@@ -1,18 +1,26 @@
 "use client";
 
-import { useActionState } from "react";
-import { GRADE_OPTIONS } from "@/types/profile";
+import { useActionState, useState } from "react";
+import Link from "next/link";
+import { GRADE_OPTIONS, THEME_OPTIONS } from "@/types/profile";
 import { logoutAction } from "@/lib/auth/actions";
 import { saveProfileAction, SaveProfileState } from "@/app/perfil/actions";
 
 type Props = {
   currentGrade: string;
+  currentTheme: string;
 };
 
 const initialState: SaveProfileState = { error: null, saved: false };
 
-export function PerfilForm({ currentGrade }: Props) {
+const THEME_SWATCHES: Record<string, string[]> = {
+  default: ["#37125f", "#6b32a8", "#c4303c"],
+  gatinho: ["#7a3b12", "#d16f2b", "#d9546e"],
+};
+
+export function PerfilForm({ currentGrade, currentTheme }: Props) {
   const [state, formAction, pending] = useActionState(saveProfileAction, initialState);
+  const [theme, setTheme] = useState(currentTheme);
 
   return (
     <div className="rounded-[var(--radius-lg)] border border-[var(--border-subtle)] bg-white p-6 shadow-[var(--shadow-sm)] max-w-md">
@@ -39,6 +47,43 @@ export function PerfilForm({ currentGrade }: Props) {
           ))}
         </select>
 
+        <span className="block text-sm font-medium text-[var(--text-body)] mb-1.5">Tema visual</span>
+        <input type="hidden" name="theme" value={theme} />
+        <div className="grid grid-cols-2 gap-2 mb-3">
+          {THEME_OPTIONS.map((option) => (
+            <button
+              key={option.value}
+              type="button"
+              onClick={() => setTheme(option.value)}
+              disabled={!option.enabled}
+              aria-pressed={theme === option.value}
+              className="flex items-center gap-2.5 rounded-[var(--radius-md)] border px-3 py-2.5 text-left transition-colors disabled:opacity-50"
+              style={{
+                borderColor: theme === option.value ? "var(--action-primary)" : "var(--border-subtle)",
+                borderWidth: theme === option.value ? 2 : 1,
+                background: theme === option.value ? "var(--surface-brand-soft)" : "white",
+              }}
+            >
+              <span className="text-xl leading-none flex-none">{option.emoji}</span>
+              <span className="flex-1 min-w-0">
+                <span className="block text-sm font-medium truncate">
+                  {option.label}
+                  {!option.enabled ? " (em breve)" : ""}
+                </span>
+                <span className="mt-1 flex gap-1">
+                  {(THEME_SWATCHES[option.value] ?? []).map((hex, i) => (
+                    <span
+                      key={i}
+                      className="w-3 h-3 rounded-full flex-none"
+                      style={{ background: hex }}
+                    />
+                  ))}
+                </span>
+              </span>
+            </button>
+          ))}
+        </div>
+
         {state.error && (
           <div className="mb-3 text-sm text-[var(--red-600)] bg-[var(--red-100)] rounded-[var(--radius-md)] px-3 py-2">
             {state.error}
@@ -50,13 +95,18 @@ export function PerfilForm({ currentGrade }: Props) {
           </div>
         )}
 
-        <button
-          type="submit"
-          disabled={pending}
-          className="text-sm px-4 py-1.5 rounded-full bg-[var(--action-primary)] text-white transition-colors hover:bg-[var(--action-primary-hover)] active:scale-[0.975] disabled:opacity-60"
-        >
-          {pending ? "Salvando..." : "Salvar"}
-        </button>
+        <div className="flex items-center gap-4">
+          <button
+            type="submit"
+            disabled={pending}
+            className="text-sm px-4 py-1.5 rounded-full bg-[var(--action-primary)] text-white transition-colors hover:bg-[var(--action-primary-hover)] active:scale-[0.975] disabled:opacity-60"
+          >
+            {pending ? "Salvando..." : "Salvar"}
+          </button>
+          <Link href="/" className="text-sm">
+            ← Voltar para o plano de aula
+          </Link>
+        </div>
       </form>
 
       <form action={logoutAction} className="mt-4 pt-4 border-t border-[var(--border-subtle)]">

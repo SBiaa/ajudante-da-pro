@@ -8,7 +8,7 @@ import { ACTIVITY_BANK } from "@/data/activityBank";
  * tema foi editado manualmente e não bate mais com nenhuma entrada.
  */
 export function findActivity(subjectKey: OwnSubject | "leitura-diaria", theme: string): ActivityEntry | null {
-  if (subjectKey === "leitura-diaria" || !theme) return null;
+  if (!theme) return null;
   const list = ACTIVITY_BANK[subjectKey];
   return list.find((entry) => entry.theme === theme) ?? null;
 }

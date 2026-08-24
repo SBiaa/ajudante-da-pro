@@ -4,9 +4,11 @@ import { useEffect, useState } from "react";
 import { GeneratedLessonPlan, OwnSubject } from "@/types/plano";
 import { SubjectColor } from "@/lib/subjectColors";
 import { findActivity } from "@/lib/activityPicker";
+import { findHomework } from "@/lib/homeworkPicker";
 import { FREE_BOOK_LINKS } from "@/data/freeBookLinks";
 import { CopyButton } from "./CopyButton";
 import { ActivitySheetModal } from "./ActivitySheetModal";
+import { SubjectIcon } from "./SubjectIcon";
 
 type Props = {
   title: string;
@@ -43,31 +45,34 @@ export function LessonDetailModal({
 }: Props) {
   const [editing, setEditing] = useState(false);
   const [showActivity, setShowActivity] = useState(false);
+  const [showHomework, setShowHomework] = useState(false);
   const [keyword, setKeyword] = useState("");
   const activity = findActivity(subjectKey, plan.theme);
+  const homework = findHomework(subjectKey, plan.theme);
 
   useEffect(() => {
     function handleKey(e: KeyboardEvent) {
-      if (e.key === "Escape" && !showActivity) onClose();
+      if (e.key === "Escape" && !showActivity && !showHomework) onClose();
     }
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-  }, [onClose, showActivity]);
+  }, [onClose, showActivity, showHomework]);
 
   const sgpText = [plan.curriculumCode, plan.description].filter(Boolean).join(" — ");
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-[var(--ink-900)]/50 p-4" onClick={onClose}>
       <div
-        className="w-full max-w-2xl max-h-[85vh] overflow-y-auto rounded-[var(--radius-lg)] bg-white p-6 sm:p-8 shadow-[var(--shadow-lg)]"
+        className="modal-card relative w-full max-w-2xl max-h-[85vh] overflow-y-auto rounded-[var(--radius-lg)] bg-white p-6 sm:p-8 shadow-[var(--shadow-lg)]"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-start justify-between gap-4 mb-5">
           <div>
             <span
               style={{ background: color.bg, color: color.text }}
-              className="inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-medium uppercase tracking-[0.14em]"
+              className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-medium uppercase tracking-[0.14em]"
             >
+              <SubjectIcon subjectKey={subjectKey} className="w-3.5 h-3.5" />
               {title}
             </span>
             <div className="text-xs text-[var(--text-muted)] mt-1.5">{context}</div>
@@ -306,6 +311,15 @@ export function LessonDetailModal({
                   Criar atividade
                 </button>
               )}
+              {homework && (
+                <button
+                  type="button"
+                  onClick={() => setShowHomework(true)}
+                  className="text-sm px-4 py-1.5 rounded-full bg-[var(--action-primary)] text-white transition-colors hover:bg-[var(--action-primary-hover)]"
+                >
+                  Criar lição de casa
+                </button>
+              )}
               <button
                 type="button"
                 onClick={onClose}
@@ -326,6 +340,18 @@ export function LessonDetailModal({
           color={color}
           entry={activity}
           onClose={() => setShowActivity(false)}
+        />
+      )}
+
+      {showHomework && homework && (
+        <ActivitySheetModal
+          subjectLabel={title}
+          theme={plan.theme}
+          curriculumCode={plan.curriculumCode}
+          color={color}
+          entry={homework}
+          kind="licao-de-casa"
+          onClose={() => setShowHomework(false)}
         />
       )}
     </div>

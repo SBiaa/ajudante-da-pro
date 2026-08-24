@@ -7,6 +7,7 @@ type Props = {
   curriculumCode: string;
   color: SubjectColor;
   entry: ActivityEntry;
+  kind?: "atividade" | "licao-de-casa";
 };
 
 const kidFont = "'Comic Sans MS', 'Segoe Print', 'Trebuchet MS', sans-serif";
@@ -78,7 +79,8 @@ function ExerciseBlock({ exercise, index, color }: { exercise: ActivityExercise;
   );
 }
 
-export function ActivityWorksheet({ subjectLabel, theme, curriculumCode, color, entry }: Props) {
+export function ActivityWorksheet({ subjectLabel, theme, curriculumCode, color, entry, kind = "atividade" }: Props) {
+  const heading = kind === "licao-de-casa" ? "Lição de Casa" : "Atividade";
   return (
     <div
       style={{ fontFamily: kidFont, color: "#2d2d2d", textTransform: "uppercase" }}
@@ -86,7 +88,7 @@ export function ActivityWorksheet({ subjectLabel, theme, curriculumCode, color, 
     >
       <div className="text-center border-b-4 border-dashed pb-3.5 mb-6" style={{ borderColor: color.text }}>
         <h1 style={{ color: color.text, fontFamily: kidFont }} className="text-[26px] mb-2">
-          Atividade — {subjectLabel}
+          {heading} — {subjectLabel}
         </h1>
         <div className="flex flex-wrap justify-center gap-2 text-sm normal-case">
           <span className="border-b border-[#999] px-2 py-0.5 min-w-[160px]">Nome: ________________________</span>

@@ -3,6 +3,7 @@
 import { ManualActivity } from "@/types/plano";
 import { CopyButton } from "./CopyButton";
 import { SUBJECT_COLORS, SubjectColor } from "@/lib/subjectColors";
+import { SubjectIcon } from "./SubjectIcon";
 
 type Props = {
   label: string;
@@ -16,8 +17,9 @@ export function ExternalCard({ label, activity, color = SUBJECT_COLORS.externa, 
     <div className="flex flex-col gap-1.5 h-full">
       <span
         style={{ background: color.text, color: "#ffffff" }}
-        className="inline-flex items-center self-start rounded-full px-2 py-0.5 text-[10px] font-medium uppercase tracking-[0.14em] whitespace-nowrap"
+        className="inline-flex items-center gap-1 self-start rounded-full px-2 py-0.5 text-[10px] font-medium uppercase tracking-[0.14em] whitespace-nowrap"
       >
+        <SubjectIcon subjectKey="externa" />
         {label || "Outra atividade"}
       </span>
       <textarea

@@ -11,10 +11,12 @@ type Props = {
   curriculumCode: string;
   color: SubjectColor;
   entry: ActivityEntry;
+  kind?: "atividade" | "licao-de-casa";
   onClose: () => void;
 };
 
-export function ActivitySheetModal({ subjectLabel, theme, curriculumCode, color, entry, onClose }: Props) {
+export function ActivitySheetModal({ subjectLabel, theme, curriculumCode, color, entry, kind = "atividade", onClose }: Props) {
+  const previewLabel = kind === "licao-de-casa" ? "Pré-visualização da lição de casa" : "Pré-visualização da atividade";
   useEffect(() => {
     document.body.classList.add("has-print-target");
     function handleKey(e: KeyboardEvent) {
@@ -36,11 +38,11 @@ export function ActivitySheetModal({ subjectLabel, theme, curriculumCode, color,
       }}
     >
       <div
-        className="w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-[var(--radius-lg)] bg-[var(--surface-subtle)] shadow-[var(--shadow-lg)]"
+        className="modal-card relative w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-[var(--radius-lg)] bg-[var(--surface-subtle)] shadow-[var(--shadow-lg)]"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="print:hidden sticky top-0 z-10 flex items-center justify-between gap-3 bg-white border-b border-[var(--border-subtle)] px-5 py-3">
-          <div className="text-sm text-[var(--text-muted)]">Pré-visualização da atividade</div>
+          <div className="text-sm text-[var(--text-muted)]">{previewLabel}</div>
           <div className="flex gap-2">
             <button
               type="button"
@@ -60,7 +62,7 @@ export function ActivitySheetModal({ subjectLabel, theme, curriculumCode, color,
         </div>
 
         <div className="activity-print-target bg-white p-4 sm:p-6">
-          <ActivityWorksheet subjectLabel={subjectLabel} theme={theme} curriculumCode={curriculumCode} color={color} entry={entry} />
+          <ActivityWorksheet subjectLabel={subjectLabel} theme={theme} curriculumCode={curriculumCode} color={color} entry={entry} kind={kind} />
         </div>
       </div>
     </div>

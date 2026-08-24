@@ -2,10 +2,12 @@
 
 import { GeneratedLessonPlan } from "@/types/plano";
 import { CopyButton } from "./CopyButton";
-import { SubjectColor } from "@/lib/subjectColors";
+import { ColorKey, SubjectColor } from "@/lib/subjectColors";
+import { SubjectIcon } from "./SubjectIcon";
 
 type Props = {
   title: string;
+  subjectKey: ColorKey;
   color: SubjectColor;
   plan: GeneratedLessonPlan;
   onChange: (plan: GeneratedLessonPlan) => void;
@@ -15,7 +17,7 @@ type Props = {
 const fieldClass =
   "text-sm border border-[var(--border-subtle)] rounded-[var(--radius-md)] px-2 py-1 focus:outline-none focus:ring-2 focus:ring-[var(--focus-ring)] focus:ring-offset-1";
 
-export function LessonCard({ title, color, plan, onChange, onViewDetails }: Props) {
+export function LessonCard({ title, subjectKey, color, plan, onChange, onViewDetails }: Props) {
   const sgpText = [plan.curriculumCode, plan.description].filter(Boolean).join(" — ");
   // Selo em cor sólida (não color.bg): o card inteiro já usa color.bg de fundo,
   // então o selo precisa de contraste próprio para não se misturar com o card.
@@ -28,8 +30,9 @@ export function LessonCard({ title, color, plan, onChange, onViewDetails }: Prop
         onClick={onViewDetails}
         title="Ver detalhes"
         style={badgeStyle}
-        className="print:pointer-events-none self-start inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium uppercase tracking-[0.14em] hover:opacity-80 text-left whitespace-nowrap"
+        className="print:pointer-events-none self-start inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-medium uppercase tracking-[0.14em] hover:opacity-80 text-left whitespace-nowrap"
       >
+        <SubjectIcon subjectKey={subjectKey} />
         {title}
       </button>
 

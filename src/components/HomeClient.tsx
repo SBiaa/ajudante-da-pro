@@ -22,6 +22,7 @@ import { WeekGrid } from "@/components/WeekGrid";
 import { EmptyWeekPrompt } from "@/components/EmptyWeekPrompt";
 import { AppHeader } from "@/components/AppHeader";
 import { SubjectColorEditor } from "@/components/SubjectColorEditor";
+import { ConfirmModal } from "@/components/ConfirmModal";
 import { saveStoredTimetableAction } from "@/app/actions";
 
 type Props = {
@@ -34,6 +35,7 @@ export default function HomeClient({ initialTimetable }: Props) {
   const [showTimetableEditor, setShowTimetableEditor] = useState(false);
   const [showColorEditor, setShowColorEditor] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [pendingGenerateWeekCount, setPendingGenerateWeekCount] = useState<number | null>(null);
 
   const weekId = useMemo(() => getWeekId(viewedMonday), [viewedMonday]);
   const currentWeek = state.weeks[weekId];
@@ -154,6 +156,19 @@ export default function HomeClient({ initialTimetable }: Props) {
     });
   }
 
+  function requestGenerateWeek() {
+    const week = currentWeek;
+    if (!week) return;
+    let count = 0;
+    for (const day of WEEKDAYS) {
+      for (const slot of SLOT_NUMBERS) {
+        if (week.days[day][slot].kind !== "materia-externa") count++;
+      }
+    }
+    if (count === 0) return;
+    setPendingGenerateWeekCount(count);
+  }
+
   function generateWeek() {
     const week = currentWeek;
     if (!week) return;
@@ -164,10 +179,6 @@ export default function HomeClient({ initialTimetable }: Props) {
       }
     }
     if (targets.length === 0) return;
-    const confirmed = window.confirm(
-      `Sortear tema para ${targets.length} aulas desta semana? Isso substitui o conteúdo já preenchido nelas.`
-    );
-    if (!confirmed) return;
     setError(null);
 
     const pickedPerSubject: Partial<Record<OwnSubject | "leitura-diaria", string[]>> = {};
@@ -280,7 +291,7 @@ export default function HomeClient({ initialTimetable }: Props) {
               colorOverrides={state.subjectColorOverrides}
               onCellChange={handleCellChange}
               onGenerateCell={generateCell}
-              onGenerateWeek={generateWeek}
+              onGenerateWeek={requestGenerateWeek}
               onExportPdf={handleExportPdf}
             />
           ) : (
@@ -291,6 +302,21 @@ export default function HomeClient({ initialTimetable }: Props) {
             />
           )}
         </>
+      )}
+
+      {pendingGenerateWeekCount !== null && (
+        <ConfirmModal
+          title="Sortear semana inteira?"
+          message={`Isso vai sortear um novo tema para ${pendingGenerateWeekCount} aula${
+            pendingGenerateWeekCount === 1 ? "" : "s"
+          } desta semana, substituindo o conteúdo já preenchido nelas.`}
+          confirmLabel="Sortear semana"
+          onConfirm={() => {
+            setPendingGenerateWeekCount(null);
+            generateWeek();
+          }}
+          onCancel={() => setPendingGenerateWeekCount(null)}
+        />
       )}
     </main>
   );

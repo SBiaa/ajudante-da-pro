@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { requireSession } from "@/lib/auth/requireSession";
 import { saveProfile } from "@/lib/db/profile";
-import { GRADE_OPTIONS } from "@/types/profile";
+import { GRADE_OPTIONS, THEME_OPTIONS, DEFAULT_THEME } from "@/types/profile";
 
 export type SaveProfileState = { error: string | null; saved: boolean };
 
@@ -19,7 +19,14 @@ export async function saveProfileAction(
     return { error: "Esse ano ainda não está disponível.", saved: false };
   }
 
-  await saveProfile(gradeYear);
+  const theme = String(formData.get("theme") ?? DEFAULT_THEME);
+  const themeOption = THEME_OPTIONS.find((t) => t.value === theme);
+  if (!themeOption || !themeOption.enabled) {
+    return { error: "Esse tema ainda não está disponível.", saved: false };
+  }
+
+  await saveProfile(gradeYear, theme);
   revalidatePath("/perfil");
+  revalidatePath("/");
   return { error: null, saved: true };
 }
