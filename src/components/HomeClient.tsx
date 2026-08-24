@@ -15,7 +15,7 @@ import {
 } from "@/types/plano";
 import { useAppState } from "@/hooks/useAppState";
 import { getMondayISO, getWeekId, addWeeksISO } from "@/lib/date";
-import { createEmptyTimetable, buildWeekPlan, duplicateWeekPlan } from "@/lib/timetable";
+import { createEmptyTimetable, buildWeekPlan, duplicateWeekPlan, syncWeeksWithTimetable } from "@/lib/timetable";
 import { pickThemeEntry } from "@/lib/themePicker";
 import { TimetableEditor } from "@/components/TimetableEditor";
 import { WeekNav } from "@/components/WeekNav";
@@ -105,7 +105,7 @@ export default function HomeClient({ userId, initialTimetable, gradeLabel, initi
   }, [hydrated, initialTimetable, initialAppData, setState]);
 
   function saveTimetable(t: WeeklyTimetable) {
-    setState((s) => ({ ...s, timetable: t }));
+    setState((s) => ({ ...s, timetable: t, weeks: syncWeeksWithTimetable(s.weeks, t) }));
     saveStoredTimetableAction(t).catch((err) => console.error("Falha ao sincronizar grade horária:", err));
   }
 
