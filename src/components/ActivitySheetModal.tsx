@@ -31,14 +31,14 @@ export function ActivitySheetModal({ subjectLabel, theme, curriculumCode, color,
 
   return (
     <div
-      className="print:hidden fixed inset-0 z-50 flex items-center justify-center bg-[var(--ink-900)]/50 p-4"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-[var(--ink-900)]/50 p-4 print:static print:inset-auto print:bg-transparent print:p-0"
       onClick={(e) => {
         e.stopPropagation();
         onClose();
       }}
     >
       <div
-        className="modal-card relative w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-[var(--radius-lg)] bg-[var(--surface-subtle)] shadow-[var(--shadow-lg)]"
+        className="modal-card relative w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-[var(--radius-lg)] bg-[var(--surface-subtle)] shadow-[var(--shadow-lg)] print:static print:max-h-none print:w-auto print:max-w-none print:overflow-visible print:rounded-none print:shadow-none"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="print:hidden sticky top-0 z-10 flex items-center justify-between gap-3 bg-white border-b border-[var(--border-subtle)] px-5 py-3">
