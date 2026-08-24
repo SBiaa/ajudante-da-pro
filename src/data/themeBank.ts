@@ -563,6 +563,20 @@ export const THEME_BANK: Record<OwnSubject, BankEntry[]> = {
         "Anotar as sugestões recebidas.",
         "Fazer os ajustes no texto a partir do retorno dos colegas."
       ]
+    },
+    {
+      "theme": "O dado das histórias",
+      "curriculumCode": "EFCALFLP24",
+      "description": "Produção de textos orais considerando a situação comunicativa, criando uma história coletiva a partir de imagens sorteadas em um dado ou em cartas.",
+      "materials": [
+        "Um dado com uma imagem desenhada em cada face (ou cartas com desenhos)"
+      ],
+      "steps": [
+        "Fazer (ou usar) um dado com uma imagem diferente em cada face: um personagem, um lugar, um objeto.",
+        "Jogar o dado e pedir que um aluno comece uma história usando o que apareceu.",
+        "Jogar novamente e pedir que outro aluno continue a história com o novo elemento sorteado.",
+        "Repetir até formar uma história coletiva completa, com começo, meio e fim."
+      ]
     }
   ],
   "matematica": [
@@ -884,6 +898,20 @@ export const THEME_BANK: Record<OwnSubject, BankEntry[]> = {
         "Pedir que observem as peças antes de começar a montar.",
         "Deixar os grupos montarem o quebra-cabeça, incentivando tentativas diferentes.",
         "Conversar em roda sobre as estratégias usadas para encaixar as peças."
+      ]
+    },
+    {
+      "theme": "Torre de Hanói simplificada",
+      "curriculumCode": "EF02M32",
+      "description": "Realização do jogo Torre de Hanói (versão simplificada, com 3 discos), desenvolvendo raciocínio lógico, planejamento e testagem de estratégias.",
+      "materials": [
+        "3 discos ou tampas de tamanhos diferentes e 3 espaços marcados (pratinhos ou desenhos no papel)"
+      ],
+      "steps": [
+        "Empilhar os 3 discos em ordem do maior (embaixo) para o menor (em cima) no primeiro espaço.",
+        "Explicar o desafio: mover a pilha inteira para o terceiro espaço, um disco de cada vez, sem nunca colocar um disco maior sobre um menor.",
+        "Deixar a turma tentar em duplas, testando diferentes ordens de movimento.",
+        "Conversar sobre quantos movimentos cada dupla usou e quais estratégias funcionaram melhor."
       ]
     },
     {
@@ -1231,6 +1259,20 @@ export const THEME_BANK: Record<OwnSubject, BankEntry[]> = {
         "Pesquisar em livros da sala ou perguntar exemplos que conhecem de casa.",
         "Classificar os itens no quadro em dois grupos: perecíveis e não perecíveis.",
         "Pedir que registrem a classificação no caderno com desenhos."
+      ]
+    },
+    {
+      "theme": "Minhocário da sala: observando a decomposição",
+      "curriculumCode": "EF02C05",
+      "description": "Observação direta do processo de decomposição de materiais orgânicos (como cascas de frutas) em um minhocário simples, identificando a importância dos decompositores.",
+      "materials": [
+        "Um pote transparente com terra, restos de fruta ou verdura e, se possível, minhocas"
+      ],
+      "steps": [
+        "Montar um minhocário simples com terra e restos de fruta em um pote transparente.",
+        "Observar e registrar, ao longo de alguns dias, o que acontece com os restos de comida.",
+        "Conversar sobre o papel das minhocas e outros seres pequenos na decomposição.",
+        "Relacionar a decomposição observada com o destino do lixo orgânico em casa."
       ]
     },
     {
@@ -1779,6 +1821,20 @@ export const THEME_BANK: Record<OwnSubject, BankEntry[]> = {
       ]
     },
     {
+      "theme": "Jogo Mancala: um jogo de origem africana",
+      "curriculumCode": "EF02H06",
+      "description": "Vivência de um jogo de estratégia de origem africana milenar (Mancala), reconhecendo sua importância entre os jogos de matriz africana.",
+      "materials": [
+        "Tabuleiro de Mancala (ou caixa de ovos e sementes/tampinhas, como alternativa)"
+      ],
+      "steps": [
+        "Explicar que o Mancala é uma família de jogos muito antiga, de origem africana, jogada há milhares de anos.",
+        "Se não houver tabuleiro, montar um com uma caixa de ovos e usar sementes, feijões ou tampinhas.",
+        "Ensinar a regra básica: cada jogador distribui as sementes pelos buracos, tentando juntar mais sementes que o adversário.",
+        "Jogar em duplas e depois conversar sobre a estratégia usada."
+      ]
+    },
+    {
       "theme": "Jogos e brincadeiras de imigrantes",
       "curriculumCode": "EF02H07",
       "description": "Conhecimento de jogos e brincadeiras praticados por diferentes grupos de imigrantes.",
@@ -1889,6 +1945,20 @@ export const THEME_BANK: Record<OwnSubject, BankEntry[]> = {
         "Fazer perguntas de investigação: do que é feito? Como foi construído? Para que serve? É decorado? Tem algum valor especial?",
         "Registrar as respostas em um quadro simples com essas colunas.",
         "Comparar o brinquedo investigado com os brinquedos industrializados que a turma costuma usar hoje."
+      ]
+    },
+    {
+      "theme": "Dominó em Libras: aprendendo sinais brincando",
+      "curriculumCode": "EF02H12",
+      "description": "Vivência de um jogo de dominó com sinais de Libras (Língua Brasileira de Sinais), valorizando a diversidade linguística e incluindo estudantes surdos ou falantes de Libras.",
+      "materials": [
+        "Jogo de dominó com imagens e sinais de Libras (ou cartas feitas pela turma com desenhos de animais/frutas e o sinal correspondente)"
+      ],
+      "steps": [
+        "Apresentar à turma que Libras é uma língua, com sinais para cada palavra, usada por pessoas surdas no Brasil.",
+        "Jogar o dominó juntando as peças que têm a mesma figura ou o mesmo sinal correspondente.",
+        "Ensinar alguns sinais simples (como os de animais) para toda a turma praticar.",
+        "Conversar sobre a importância de incluir todo mundo, inclusive quem se comunica em Libras."
       ]
     }
   ]
