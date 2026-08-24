@@ -5,6 +5,9 @@ import { sql } from "./client";
 export type SharedWeekPayload = {
   week: WeekPlan;
   colorOverrides: SubjectColorOverrides;
+  // Carimbado no momento da criação do link: a página pública não tem sessão, então não dá
+  // pra descobrir de quem é o perfil na hora de exibir (agora que há mais de uma professora).
+  gradeLabel: string;
 };
 
 const SHARE_TTL_DAYS = 30;

@@ -11,7 +11,7 @@ export async function saveProfileAction(
   _prevState: SaveProfileState,
   formData: FormData
 ): Promise<SaveProfileState> {
-  await requireSession();
+  const userId = await requireSession();
 
   const gradeYear = String(formData.get("gradeYear") ?? "");
   const option = GRADE_OPTIONS.find((g) => g.value === gradeYear);
@@ -25,7 +25,7 @@ export async function saveProfileAction(
     return { error: "Esse tema ainda não está disponível.", saved: false };
   }
 
-  await saveProfile(gradeYear, theme);
+  await saveProfile(userId, gradeYear, theme);
   revalidatePath("/perfil");
   revalidatePath("/");
   return { error: null, saved: true };

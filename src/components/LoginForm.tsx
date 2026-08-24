@@ -11,6 +11,19 @@ export function LoginForm() {
 
   return (
     <form action={formAction} className="w-full max-w-sm">
+      <label htmlFor="username" className="block text-sm font-medium text-[var(--text-body)] mb-1.5">
+        Usuário
+      </label>
+      <input
+        id="username"
+        name="username"
+        type="text"
+        autoComplete="username"
+        autoFocus
+        required
+        className="w-full text-sm border border-[var(--border-subtle)] rounded-[var(--radius-md)] px-3 py-2 mb-3 focus:outline-none focus:ring-2 focus:ring-[var(--focus-ring)]"
+      />
+
       <label htmlFor="password" className="block text-sm font-medium text-[var(--text-body)] mb-1.5">
         Senha
       </label>
@@ -18,7 +31,7 @@ export function LoginForm() {
         id="password"
         name="password"
         type="password"
-        autoFocus
+        autoComplete="current-password"
         required
         className="w-full text-sm border border-[var(--border-subtle)] rounded-[var(--radius-md)] px-3 py-2 mb-3 focus:outline-none focus:ring-2 focus:ring-[var(--focus-ring)]"
       />

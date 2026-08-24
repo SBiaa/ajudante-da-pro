@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Baloo_2, Inter } from "next/font/google";
 import { getProfile } from "@/lib/db/profile";
+import { requireSession } from "@/lib/auth/requireSession";
 import { DEFAULT_THEME } from "@/types/profile";
 import { ThemeEffects } from "@/components/ThemeEffects";
 import "./globals.css";
@@ -24,10 +25,12 @@ export const metadata: Metadata = {
 export default async function RootLayout({ children }: LayoutProps<"/">) {
   let theme = DEFAULT_THEME;
   try {
-    const profile = await getProfile();
+    const userId = await requireSession();
+    const profile = await getProfile(userId);
     theme = profile?.theme ?? DEFAULT_THEME;
   } catch {
-    // Sem banco disponível (ex.: build estático): segue com o tema padrão.
+    // Sem sessão válida (ex.: /login, /compartilhado) ou banco indisponível (ex.: build
+    // estático): segue com o tema padrão.
   }
 
   return (

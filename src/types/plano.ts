@@ -176,4 +176,7 @@ export type AppState = {
   weeks: Record<string, WeekPlan>; // keyed by WeekPlan.id
   themeHistory: ThemeHistoryEntry[];
   subjectColorOverrides: SubjectColorOverrides;
+  /** ISO date da última alteração local, usado para decidir (contra o servidor) quem é mais
+   * recente ao sincronizar entre dispositivos — ver src/lib/db/appData.ts. */
+  updatedAt: string;
 };

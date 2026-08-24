@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import type { StoredAppData } from "@/lib/db/appData";
 import {
   WEEKDAYS,
   SLOT_NUMBERS,
@@ -31,12 +32,14 @@ import { LoadingScreen } from "@/components/LoadingScreen";
 import { saveStoredTimetableAction, createShareLinkAction } from "@/app/actions";
 
 type Props = {
+  userId: number;
   initialTimetable: WeeklyTimetable | null;
   gradeLabel: string;
+  initialAppData: StoredAppData | null;
 };
 
-export default function HomeClient({ initialTimetable, gradeLabel }: Props) {
-  const { state, setState, hydrated } = useAppState();
+export default function HomeClient({ userId, initialTimetable, gradeLabel, initialAppData }: Props) {
+  const { state, setState, hydrated } = useAppState(userId);
   const [viewedMonday, setViewedMonday] = useState(() => getMondayISO());
   const [showTimetableEditor, setShowTimetableEditor] = useState(false);
   const [showColorEditor, setShowColorEditor] = useState(false);
@@ -75,13 +78,31 @@ export default function HomeClient({ initialTimetable, gradeLabel }: Props) {
     []
   );
 
-  // Se o localStorage deste dispositivo ainda não tem grade fixa, adota a que já está
-  // salva no banco (outro dispositivo/sessão anterior), evitando pedir pra configurar de novo.
+  // Reconcilia com o servidor uma vez, logo após hidratar: adota a grade fixa salva no banco
+  // se este dispositivo ainda não tem nenhuma, e adota semanas/histórico/cores do servidor se
+  // eles forem mais recentes que os deste dispositivo (ex.: editado em outro aparelho depois
+  // da última sincronização daqui). Só roda uma vez — depois disso o próprio dispositivo volta
+  // a ser a fonte da verdade e empurra alterações pro servidor (ver useAppState).
+  const didReconcileWithServer = useRef(false);
   useEffect(() => {
-    if (hydrated && !state.timetable && initialTimetable) {
-      setState((s) => ({ ...s, timetable: initialTimetable }));
-    }
-  }, [hydrated, state.timetable, initialTimetable, setState]);
+    if (!hydrated || didReconcileWithServer.current) return;
+    didReconcileWithServer.current = true;
+    setState((s) => {
+      let next = s;
+      if (!next.timetable && initialTimetable) {
+        next = { ...next, timetable: initialTimetable };
+      }
+      if (initialAppData && initialAppData.updatedAt > s.updatedAt) {
+        next = {
+          ...next,
+          weeks: initialAppData.weeks,
+          themeHistory: initialAppData.themeHistory,
+          subjectColorOverrides: initialAppData.subjectColorOverrides,
+        };
+      }
+      return next;
+    });
+  }, [hydrated, initialTimetable, initialAppData, setState]);
 
   function saveTimetable(t: WeeklyTimetable) {
     setState((s) => ({ ...s, timetable: t }));

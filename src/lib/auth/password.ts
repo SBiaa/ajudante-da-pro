@@ -1,13 +1,21 @@
-import { createHash, timingSafeEqual } from "node:crypto";
+import { randomBytes, scryptSync, timingSafeEqual } from "node:crypto";
 
-function sha256(value: string): Buffer {
-  return createHash("sha256").update(value, "utf8").digest();
+const KEY_LENGTH = 64;
+
+/** Deriva hash+salt pra guardar no banco — nunca a senha em texto puro. scrypt é nativo do
+ * Node (sem dependência nova) e já inclui custo computacional alto o bastante pra dificultar
+ * força bruta, diferente de um sha256 simples. */
+export function hashPassword(password: string): { hash: string; salt: string } {
+  const salt = randomBytes(16).toString("hex");
+  const hash = scryptSync(password, salt, KEY_LENGTH).toString("hex");
+  return { hash, salt };
 }
 
-/** Compara a senha digitada com APP_PASSWORD em tempo constante (hash de ambos os lados
- * garante buffers do mesmo tamanho, evitando o throw do timingSafeEqual). */
-export function verifyPassword(input: string): boolean {
-  const expected = process.env.APP_PASSWORD;
-  if (!expected) return false;
-  return timingSafeEqual(sha256(input), sha256(expected));
+/** Recalcula o hash com o mesmo salt e compara em tempo constante, pra não vazar por timing
+ * quantos caracteres da senha bateram. */
+export function verifyPasswordHash(password: string, hash: string, salt: string): boolean {
+  const expected = Buffer.from(hash, "hex");
+  const actual = scryptSync(password, salt, KEY_LENGTH);
+  if (actual.length !== expected.length) return false;
+  return timingSafeEqual(actual, expected);
 }

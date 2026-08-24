@@ -1,6 +1,8 @@
 import HomeClient from "@/components/HomeClient";
 import { getStoredTimetable } from "@/lib/db/timetable";
 import { getProfile } from "@/lib/db/profile";
+import { getStoredAppData } from "@/lib/db/appData";
+import { requireSession } from "@/lib/auth/requireSession";
 import { DEFAULT_GRADE, getGradeLabel } from "@/types/profile";
 
 // Sem isso o Next tenta pré-renderizar a página em build time (ela não lê cookies/headers,
@@ -9,7 +11,19 @@ import { DEFAULT_GRADE, getGradeLabel } from "@/types/profile";
 export const dynamic = "force-dynamic";
 
 export default async function Home() {
-  const [initialTimetable, profile] = await Promise.all([getStoredTimetable(), getProfile()]);
+  const userId = await requireSession();
+  const [initialTimetable, profile, initialAppData] = await Promise.all([
+    getStoredTimetable(userId),
+    getProfile(userId),
+    getStoredAppData(userId),
+  ]);
   const gradeLabel = getGradeLabel(profile?.gradeYear ?? DEFAULT_GRADE);
-  return <HomeClient initialTimetable={initialTimetable} gradeLabel={gradeLabel} />;
+  return (
+    <HomeClient
+      userId={userId}
+      initialTimetable={initialTimetable}
+      gradeLabel={gradeLabel}
+      initialAppData={initialAppData}
+    />
+  );
 }

@@ -1,9 +1,18 @@
 import { AppState, GeneratedLessonPlan, WeekPlan } from "@/types/plano";
 
-const STORAGE_KEY = "plano-aula-app-state-v1";
+// A chave inclui o userId: o localStorage é por navegador, não por conta — sem isso, trocar
+// de usuário no mesmo navegador reaproveitaria o cache da conta anterior (e sincronizaria os
+// dados dela pra conta nova, vazando informação entre contas).
+function storageKey(userId: number): string {
+  return `plano-aula-app-state-v1:${userId}`;
+}
+
+// Época zero: garante que qualquer dado real vindo do servidor seja considerado mais
+// recente que um estado local vazio/nunca sincronizado (ver reconciliação em HomeClient).
+const NEVER_SYNCED = new Date(0).toISOString();
 
 export function emptyState(): AppState {
-  return { timetable: null, weeks: {}, themeHistory: [], subjectColorOverrides: {} };
+  return { timetable: null, weeks: {}, themeHistory: [], subjectColorOverrides: {}, updatedAt: NEVER_SYNCED };
 }
 
 /** Preenche campos que possam faltar em dados salvos por uma versão anterior do app. */
@@ -36,10 +45,10 @@ function normalizeWeek(week: WeekPlan): WeekPlan {
   return { ...week, days };
 }
 
-export function loadState(): AppState {
+export function loadState(userId: number): AppState {
   if (typeof window === "undefined") return emptyState();
   try {
-    const raw = window.localStorage.getItem(STORAGE_KEY);
+    const raw = window.localStorage.getItem(storageKey(userId));
     if (!raw) return emptyState();
     const parsed = JSON.parse(raw) as AppState;
     const state = { ...emptyState(), ...parsed };
@@ -52,7 +61,7 @@ export function loadState(): AppState {
   }
 }
 
-export function saveState(state: AppState): void {
+export function saveState(userId: number, state: AppState): void {
   if (typeof window === "undefined") return;
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  window.localStorage.setItem(storageKey(userId), JSON.stringify(state));
 }

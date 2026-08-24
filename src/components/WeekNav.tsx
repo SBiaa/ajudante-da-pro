@@ -16,8 +16,13 @@ type Props = {
   onJumpToWeek: (weekStartDate: string) => void;
 };
 
-const secondaryButton =
-  "text-sm px-4 py-1.5 rounded-full border border-[var(--plum-900)] text-[var(--plum-900)] transition-colors hover:bg-[var(--plum-900)] hover:text-white";
+// Tom neutro pra navegação: só "Gerar semana inteira" (a ação principal da tela) deve puxar o
+// olho com a cor de marca. Botões de navegação em plum-900 competiam visualmente com ela e
+// deixavam a barra com "muitos botões" de peso igual — ver conversa de usabilidade.
+const navButton =
+  "text-sm px-4 py-1.5 rounded-full border border-[var(--border-subtle)] text-[var(--text-body)] transition-colors hover:border-[var(--border-strong)] hover:bg-[var(--surface-subtle)]";
+const navIconButton =
+  "flex items-center justify-center w-9 h-9 rounded-full border border-[var(--border-subtle)] text-[var(--text-body)] transition-colors hover:border-[var(--border-strong)] hover:bg-[var(--surface-subtle)]";
 
 export function WeekNav({
   weekStartDate,
@@ -52,20 +57,20 @@ export function WeekNav({
       </div>
 
       <div className="print:hidden flex flex-wrap items-center gap-2">
-        <button onClick={onPrevWeek} type="button" className={secondaryButton}>
-          ← Semana anterior
+        <button onClick={onPrevWeek} type="button" aria-label="Semana anterior" title="Semana anterior" className={navIconButton}>
+          ←
         </button>
         <button
           onClick={onGoToday}
           type="button"
           disabled={isCurrentWeek}
           title={isCurrentWeek ? "Você já está na semana atual" : undefined}
-          className={`${secondaryButton} disabled:opacity-[0.5] disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-[var(--plum-900)]`}
+          className={`${navButton} disabled:opacity-[0.5] disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:border-[var(--border-subtle)]`}
         >
           Hoje
         </button>
-        <button onClick={onNextWeek} type="button" className={secondaryButton}>
-          Próxima semana →
+        <button onClick={onNextWeek} type="button" aria-label="Próxima semana" title="Próxima semana" className={navIconButton}>
+          →
         </button>
         <input
           type="date"
@@ -77,7 +82,7 @@ export function WeekNav({
           className="text-sm px-3 py-1.5 rounded-full border border-[var(--border-subtle)] text-[var(--text-body)] focus:outline-none focus:ring-2 focus:ring-[var(--focus-ring)]"
         />
         <details className="relative">
-          <summary className={`${secondaryButton} list-none [&::-webkit-details-marker]:hidden cursor-pointer`}>
+          <summary className={`${navButton} list-none [&::-webkit-details-marker]:hidden cursor-pointer`}>
             Semanas salvas {savedWeeks.length > 0 && `(${savedWeeks.length})`}
           </summary>
           <div className="absolute left-0 z-20 mt-2 w-72 max-h-80 overflow-y-auto rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-white p-2 shadow-[var(--shadow-lg)]">

@@ -28,6 +28,26 @@ export function TimetableEditor({ timetable, onSave, onCancel, canCancel }: Prop
     setGrid((prev) => ({ ...prev, [day]: { ...prev[day], [slot]: entry } }));
   }
 
+  /** Atalho pro preenchimento inicial: em vez de repetir a mesma escolha em até 25 selects,
+   * a professora monta só a segunda-feira e replica pros outros dias — ela ainda pode ajustar
+   * pontualmente depois (aqui mesmo ou direto na semana já gerada). */
+  function copyMondayToWeek() {
+    setGrid((prev) => {
+      const monday = prev.segunda;
+      const next = { ...prev };
+      for (const day of WEEKDAYS) {
+        if (day === "segunda") continue;
+        const updatedDay = { ...prev[day] };
+        for (const slot of SLOT_NUMBERS) {
+          if (slot === 1) continue; // 1ª aula é sempre Leitura Diária, não é editável
+          updatedDay[slot] = monday[slot];
+        }
+        next[day] = updatedDay;
+      }
+      return next;
+    });
+  }
+
   function handleSave() {
     onSave({ id: timetable.id, updatedAt: new Date().toISOString(), grid });
   }
@@ -39,6 +59,16 @@ export function TimetableEditor({ timetable, onSave, onCancel, canCancel }: Prop
         Configure uma vez qual matéria cai em cada horário — isso se repete toda semana e você ainda pode ajustar
         pontualmente depois. A 1ª aula de todo dia é sempre a Leitura Diária.
       </p>
+
+      <div className="mb-4">
+        <button
+          onClick={copyMondayToWeek}
+          type="button"
+          className="text-sm px-4 py-1.5 rounded-full border border-[var(--border-subtle)] text-[var(--text-muted)] transition-colors hover:border-[var(--plum-900)] hover:text-[var(--plum-900)]"
+        >
+          Copiar segunda-feira para os outros dias
+        </button>
+      </div>
 
       <div className="overflow-x-auto">
         <table className="w-full text-sm border-collapse">

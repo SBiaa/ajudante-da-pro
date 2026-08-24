@@ -4,9 +4,9 @@ import { SESSION_COOKIE_NAME, verifySessionToken } from "@/lib/auth/session";
 
 export function proxy(request: NextRequest) {
   const token = request.cookies.get(SESSION_COOKIE_NAME)?.value;
-  const isAuthenticated = verifySessionToken(token);
+  const userId = verifySessionToken(token);
 
-  if (!isAuthenticated) {
+  if (userId === null) {
     return NextResponse.redirect(new URL("/login", request.url));
   }
 }

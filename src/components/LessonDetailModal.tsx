@@ -9,6 +9,7 @@ import { FREE_BOOK_LINKS } from "@/data/freeBookLinks";
 import { CopyButton } from "./CopyButton";
 import { ActivitySheetModal } from "./ActivitySheetModal";
 import { SubjectIcon } from "./SubjectIcon";
+import { ConfirmModal } from "./ConfirmModal";
 
 type Props = {
   title: string;
@@ -50,6 +51,7 @@ export function LessonDetailModal({
   const [showActivity, setShowActivity] = useState(false);
   const [showHomework, setShowHomework] = useState(false);
   const [keyword, setKeyword] = useState("");
+  const [pendingRegenerate, setPendingRegenerate] = useState(false);
   const activity = findActivity(subjectKey, plan.theme);
   const homework = findHomework(subjectKey, plan.theme);
 
@@ -60,6 +62,17 @@ export function LessonDetailModal({
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
   }, [onClose, showActivity, showHomework]);
+
+  /** "Gerar de novo" sobrescreve o conteúdo direto — só pausa pra confirmar quando existe uma
+   * edição manual em risco de ser perdida; sortear de novo em cima do que já veio do banco de
+   * temas não precisa de aviso. */
+  function handleGenerateClick() {
+    if (plan.theme && plan.editedManually) {
+      setPendingRegenerate(true);
+    } else {
+      onGenerate?.(keyword);
+    }
+  }
 
   const sgpText = [plan.curriculumCode, plan.description].filter(Boolean).join(" — ");
 
@@ -103,7 +116,7 @@ export function LessonDetailModal({
             </div>
             <button
               type="button"
-              onClick={() => onGenerate?.(keyword)}
+              onClick={handleGenerateClick}
               className="text-sm px-4 py-1.5 rounded-full bg-[var(--action-primary)] text-white transition-colors hover:bg-[var(--action-primary-hover)] active:scale-[0.975] whitespace-nowrap"
             >
               {plan.theme ? "Gerar de novo" : "Gerar"}
@@ -359,6 +372,19 @@ export function LessonDetailModal({
           entry={homework}
           kind="licao-de-casa"
           onClose={() => setShowHomework(false)}
+        />
+      )}
+
+      {pendingRegenerate && (
+        <ConfirmModal
+          title="Sortear tema de novo?"
+          message="Essa aula foi editada manualmente — sortear de novo substitui o que você escreveu, sem volta."
+          confirmLabel="Gerar de novo"
+          onConfirm={() => {
+            setPendingRegenerate(false);
+            onGenerate?.(keyword);
+          }}
+          onCancel={() => setPendingRegenerate(false)}
         />
       )}
     </div>

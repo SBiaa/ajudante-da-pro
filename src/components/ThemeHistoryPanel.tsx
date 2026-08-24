@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { OWN_SUBJECTS, OwnSubject, ThemeHistoryEntry } from "@/types/plano";
 import { COLOR_KEY_LABELS } from "@/lib/subjectColors";
+import { ConfirmModal } from "./ConfirmModal";
 
 type SubjectKey = OwnSubject | "leitura-diaria";
 
@@ -30,6 +31,7 @@ const secondaryButton =
 export function ThemeHistoryPanel({ history, weekStartDates, onClose, onJumpToWeek, onDeleteEntry }: Props) {
   const [subjectFilter, setSubjectFilter] = useState<SubjectKey | "">("");
   const [search, setSearch] = useState("");
+  const [pendingDelete, setPendingDelete] = useState<{ index: number; theme: string } | null>(null);
 
   const countBySubject = useMemo(() => {
     const counts: Partial<Record<SubjectKey, number>> = {};
@@ -122,7 +124,7 @@ export function ThemeHistoryPanel({ history, weekStartDates, onClose, onJumpToWe
                   <span className="text-xs text-[var(--text-muted)] italic">semana não salva</span>
                 )}
                 <button
-                  onClick={() => onDeleteEntry(index)}
+                  onClick={() => setPendingDelete({ index, theme: entry.theme })}
                   type="button"
                   title="Remover do histórico"
                   aria-label="Remover do histórico"
@@ -141,6 +143,19 @@ export function ThemeHistoryPanel({ history, weekStartDates, onClose, onJumpToWe
           Fechar
         </button>
       </div>
+
+      {pendingDelete && (
+        <ConfirmModal
+          title="Remover do histórico?"
+          message={`"${pendingDelete.theme}" não vai mais contar pra evitar repetição de tema — essa ação não pode ser desfeita.`}
+          confirmLabel="Remover"
+          onConfirm={() => {
+            onDeleteEntry(pendingDelete.index);
+            setPendingDelete(null);
+          }}
+          onCancel={() => setPendingDelete(null)}
+        />
+      )}
     </div>
   );
 }
