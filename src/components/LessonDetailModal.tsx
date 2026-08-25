@@ -76,8 +76,9 @@ export function LessonDetailModal({
     }
   }
 
-  /** O SGP já tem campo próprio pra habilidade/código — só a descrição precisa ser colada nele. */
-  const sgpText = plan.description;
+  /** O SGP pede o desenvolvimento da aula: o que o professor faz E o que o aluno produz — não
+   * basta o resumo da habilidade (curto e abstrato demais), por isso o passo a passo entra junto. */
+  const sgpText = [plan.description, plan.steps.join("\n")].filter(Boolean).join("\n\n");
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-[var(--ink-900)]/50 p-4" onClick={onClose}>
