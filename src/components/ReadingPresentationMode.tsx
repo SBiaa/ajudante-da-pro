@@ -61,7 +61,14 @@ export function ReadingPresentationMode({ theme, genre, text, onClose }: Props) 
   const isLast = step === slides.length - 1;
 
   return (
-    <div ref={containerRef} className="fixed inset-0 z-[60] flex flex-col bg-[var(--ink-900)] text-white">
+    // stopPropagation: este overlay é renderizado como filho da div de fundo do
+    // LessonDetailModal (onClick={onClose}) — sem isso, qualquer clique aqui dentro
+    // (inclusive nos botões) borbulha e fecha o modal inteiro por trás.
+    <div
+      ref={containerRef}
+      className="fixed inset-0 z-[60] flex flex-col bg-[var(--ink-900)] text-white"
+      onClick={(e) => e.stopPropagation()}
+    >
       <div className="flex items-center justify-between px-6 sm:px-10 pt-6 sm:pt-8">
         <div>
           <div className="text-xs sm:text-sm font-medium uppercase tracking-[0.22em] text-[var(--plum-300)]">
