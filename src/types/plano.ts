@@ -46,7 +46,8 @@ export const OWN_SUBJECT_LABELS: Record<OwnSubject, string> = {
 
 /**
  * Tipo de conteúdo de um horário na grade.
- * - "leitura-diaria": fixo na 1ª aula de todo dia, gerado por IA (livro/texto do dia).
+ * - "leitura-diaria": livro/texto do dia, sorteado do banco local; pode ser configurado em
+ *   qualquer horário da grade.
  * - "materia-propria": uma das 5 matérias da professora, gerada por IA.
  * - "materia-externa": aula de outro professor (Ed. Física, Artes, Informática...),
  *   preenchimento manual, sem geração automática.

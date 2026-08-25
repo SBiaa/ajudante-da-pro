@@ -28,7 +28,7 @@ export function TimetableEditor({ timetable, onSave, onCancel, canCancel }: Prop
     setGrid((prev) => ({ ...prev, [day]: { ...prev[day], [slot]: entry } }));
   }
 
-  /** Atalho pro preenchimento inicial: em vez de repetir a mesma escolha em até 25 selects,
+  /** Atalho pro preenchimento inicial: em vez de repetir a mesma escolha em até 30 selects,
    * a professora monta só a segunda-feira e replica pros outros dias — ela ainda pode ajustar
    * pontualmente depois (aqui mesmo ou direto na semana já gerada). */
   function copyMondayToWeek() {
@@ -39,7 +39,6 @@ export function TimetableEditor({ timetable, onSave, onCancel, canCancel }: Prop
         if (day === "segunda") continue;
         const updatedDay = { ...prev[day] };
         for (const slot of SLOT_NUMBERS) {
-          if (slot === 1) continue; // 1ª aula é sempre Leitura Diária, não é editável
           updatedDay[slot] = monday[slot];
         }
         next[day] = updatedDay;
@@ -57,7 +56,7 @@ export function TimetableEditor({ timetable, onSave, onCancel, canCancel }: Prop
       <h2 className="text-[24px] mb-1">Grade fixa semanal</h2>
       <p className="text-sm text-[var(--text-muted)] mb-4 max-w-[62ch]">
         Configure uma vez qual matéria cai em cada horário — isso se repete toda semana e você ainda pode ajustar
-        pontualmente depois. A 1ª aula de todo dia é sempre a Leitura Diária.
+        pontualmente depois. Escolha em qual(is) horário(s) entra a Leitura Diária.
       </p>
 
       <div className="mb-4">
@@ -92,22 +91,22 @@ export function TimetableEditor({ timetable, onSave, onCancel, canCancel }: Prop
               <tr key={slot} className="border-t border-[var(--border-subtle)]">
                 <td className="p-2 font-medium text-[var(--text-muted)] align-top">{slot}ª</td>
                 {WEEKDAYS.map((day) => {
-                  if (slot === 1) {
-                    return (
-                      <td key={day} className="p-2 text-[var(--ink-400)] italic align-top">
-                        Leitura Diária
-                      </td>
-                    );
-                  }
                   const entry = grid[day][slot];
-                  const selectValue = entry.kind === "materia-propria" ? entry.subject : "externa";
+                  const selectValue =
+                    entry.kind === "materia-propria"
+                      ? entry.subject
+                      : entry.kind === "leitura-diaria"
+                        ? "leitura-diaria"
+                        : "externa";
                   return (
                     <td key={day} className="p-2 align-top">
                       <select
                         value={selectValue}
                         onChange={(e) => {
                           const value = e.target.value;
-                          if (value === "externa") {
+                          if (value === "leitura-diaria") {
+                            setEntry(day, slot, { kind: "leitura-diaria" });
+                          } else if (value === "externa") {
                             setEntry(day, slot, {
                               kind: "materia-externa",
                               label: entry.kind === "materia-externa" ? entry.label : "",
@@ -118,6 +117,7 @@ export function TimetableEditor({ timetable, onSave, onCancel, canCancel }: Prop
                         }}
                         className="w-full text-xs border border-[var(--border-subtle)] rounded-[var(--radius-md)] px-1.5 py-1 mb-1 focus:outline-none focus:ring-2 focus:ring-[var(--focus-ring)]"
                       >
+                        <option value="leitura-diaria">Leitura Diária</option>
                         {OWN_SUBJECTS.map((s) => (
                           <option key={s} value={s}>
                             {OWN_SUBJECT_LABELS[s]}

@@ -23,7 +23,8 @@ export function emptyPlan(): GeneratedLessonPlan {
   };
 }
 
-/** Grade fixa inicial: 1ª aula sempre Leitura Diária, demais horários em branco (a definir). */
+/** Grade fixa inicial: sugestão de 1ª aula com Leitura Diária (editável), demais horários em
+ * branco (a definir). */
 export function createEmptyTimetable(): WeeklyTimetable {
   const grid = {} as WeeklyTimetable["grid"];
   for (const day of WEEKDAYS) {
