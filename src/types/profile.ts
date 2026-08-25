@@ -12,6 +12,10 @@ export const GRADE_OPTIONS: GradeOption[] = [
   { value: "3-ano", label: "3º ano" },
   { value: "4-ano", label: "4º ano" },
   { value: "5-ano", label: "5º ano" },
+  { value: "6-ano", label: "6º ano" },
+  { value: "7-ano", label: "7º ano" },
+  { value: "8-ano", label: "8º ano" },
+  { value: "9-ano", label: "9º ano" },
 ];
 
 export const DEFAULT_GRADE = "2-ano";

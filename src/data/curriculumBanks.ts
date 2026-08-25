@@ -10,10 +10,18 @@ import { PREFEITURA_1_ANO_THEME_BANK } from "./themeBankPrefeitura1Ano";
 import { PREFEITURA_3_ANO_THEME_BANK } from "./themeBankPrefeitura3Ano";
 import { PREFEITURA_4_ANO_THEME_BANK } from "./themeBankPrefeitura4Ano";
 import { PREFEITURA_5_ANO_THEME_BANK } from "./themeBankPrefeitura5Ano";
+import { PREFEITURA_6_ANO_THEME_BANK } from "./themeBankPrefeitura6Ano";
+import { PREFEITURA_7_ANO_THEME_BANK } from "./themeBankPrefeitura7Ano";
+import { PREFEITURA_8_ANO_THEME_BANK } from "./themeBankPrefeitura8Ano";
+import { PREFEITURA_9_ANO_THEME_BANK } from "./themeBankPrefeitura9Ano";
 import { ESTADO_1_ANO_THEME_BANK } from "./themeBankEstado1Ano";
 import { ESTADO_3_ANO_THEME_BANK } from "./themeBankEstado3Ano";
 import { ESTADO_4_ANO_THEME_BANK } from "./themeBankEstado4Ano";
 import { ESTADO_5_ANO_THEME_BANK } from "./themeBankEstado5Ano";
+import { ESTADO_6_ANO_THEME_BANK } from "./themeBankEstado6Ano";
+import { ESTADO_7_ANO_THEME_BANK } from "./themeBankEstado7Ano";
+import { ESTADO_8_ANO_THEME_BANK } from "./themeBankEstado8Ano";
+import { ESTADO_9_ANO_THEME_BANK } from "./themeBankEstado9Ano";
 
 type SubjectBank = Record<OwnSubject, BankEntry[]>;
 
@@ -24,6 +32,10 @@ const REGISTRY: Partial<Record<Network, Partial<Record<string, SubjectBank>>>> =
     "3-ano": PREFEITURA_3_ANO_THEME_BANK,
     "4-ano": PREFEITURA_4_ANO_THEME_BANK,
     "5-ano": PREFEITURA_5_ANO_THEME_BANK,
+    "6-ano": PREFEITURA_6_ANO_THEME_BANK,
+    "7-ano": PREFEITURA_7_ANO_THEME_BANK,
+    "8-ano": PREFEITURA_8_ANO_THEME_BANK,
+    "9-ano": PREFEITURA_9_ANO_THEME_BANK,
   },
   estado: {
     "1-ano": ESTADO_1_ANO_THEME_BANK,
@@ -31,6 +43,10 @@ const REGISTRY: Partial<Record<Network, Partial<Record<string, SubjectBank>>>> =
     "3-ano": ESTADO_3_ANO_THEME_BANK,
     "4-ano": ESTADO_4_ANO_THEME_BANK,
     "5-ano": ESTADO_5_ANO_THEME_BANK,
+    "6-ano": ESTADO_6_ANO_THEME_BANK,
+    "7-ano": ESTADO_7_ANO_THEME_BANK,
+    "8-ano": ESTADO_8_ANO_THEME_BANK,
+    "9-ano": ESTADO_9_ANO_THEME_BANK,
   },
 };
 
