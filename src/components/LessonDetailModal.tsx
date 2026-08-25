@@ -10,6 +10,7 @@ import { CopyButton } from "./CopyButton";
 import { ActivitySheetModal } from "./ActivitySheetModal";
 import { SubjectIcon } from "./SubjectIcon";
 import { ConfirmModal } from "./ConfirmModal";
+import { ReadingPresentationMode } from "./ReadingPresentationMode";
 
 type Props = {
   title: string;
@@ -50,6 +51,7 @@ export function LessonDetailModal({
   const [editing, setEditing] = useState(false);
   const [showActivity, setShowActivity] = useState(false);
   const [showHomework, setShowHomework] = useState(false);
+  const [showPresentation, setShowPresentation] = useState(false);
   const [keyword, setKeyword] = useState("");
   const [pendingRegenerate, setPendingRegenerate] = useState(false);
   const activity = findActivity(subjectKey, plan.theme);
@@ -57,11 +59,11 @@ export function LessonDetailModal({
 
   useEffect(() => {
     function handleKey(e: KeyboardEvent) {
-      if (e.key === "Escape" && !showActivity && !showHomework) onClose();
+      if (e.key === "Escape" && !showActivity && !showHomework && !showPresentation) onClose();
     }
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-  }, [onClose, showActivity, showHomework]);
+  }, [onClose, showActivity, showHomework, showPresentation]);
 
   /** "Gerar de novo" sobrescreve o conteúdo direto — só pausa pra confirmar quando existe uma
    * edição manual em risco de ser perdida; sortear de novo em cima do que já veio do banco de
@@ -74,7 +76,8 @@ export function LessonDetailModal({
     }
   }
 
-  const sgpText = [plan.curriculumCode, plan.description].filter(Boolean).join(" — ");
+  /** O SGP já tem campo próprio pra habilidade/código — só a descrição precisa ser colada nele. */
+  const sgpText = plan.description;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-[var(--ink-900)]/50 p-4" onClick={onClose}>
@@ -110,6 +113,12 @@ export function LessonDetailModal({
               <input
                 value={keyword}
                 onChange={(e) => setKeyword(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    e.preventDefault();
+                    handleGenerateClick();
+                  }
+                }}
                 placeholder='Ex.: "notícia", "divisão"...'
                 className={fieldClass}
               />
@@ -215,17 +224,68 @@ export function LessonDetailModal({
               </div>
             )}
 
-            {!isReading && plan.curriculumCode && (
-              <div
-                style={{ background: color.bg, color: color.text }}
-                className="inline-block text-sm font-mono rounded-full px-3 py-1"
-              >
-                {plan.curriculumCode}
-              </div>
-            )}
+            {(plan.curriculumCode || plan.description || plan.materials.length > 0 || plan.steps.length > 0) && (
+              <div className="rounded-[var(--radius-md)] border border-[var(--border-subtle)] p-4 sm:p-5 space-y-4">
+                <div className="text-[11px] font-medium uppercase tracking-[0.22em] text-[var(--text-muted)]">
+                  Para o SGP
+                </div>
 
-            {plan.description && (
-              <p className="text-[15px] leading-[1.55] text-[var(--text-body)] max-w-[62ch]">{plan.description}</p>
+                {!isReading && plan.curriculumCode && (
+                  <div>
+                    <div className="text-xs font-medium text-[var(--text-muted)] mb-1">Habilidade trabalhada</div>
+                    <div
+                      style={{ background: color.bg, color: color.text }}
+                      className="inline-block text-sm font-mono rounded-full px-3 py-1"
+                    >
+                      {plan.curriculumCode}
+                    </div>
+                  </div>
+                )}
+
+                {plan.description && (
+                  <div>
+                    <div className="text-xs font-medium text-[var(--text-muted)] mb-1">Descrição e objetivo da aula</div>
+                    <p className="text-[15px] leading-[1.55] text-[var(--text-body)] max-w-[62ch]">{plan.description}</p>
+                  </div>
+                )}
+
+                {plan.materials.length > 0 && (
+                  <div>
+                    <div className="text-xs font-medium text-[var(--text-muted)] mb-2">Recursos / materiais</div>
+                    <div className="flex flex-wrap gap-2">
+                      {plan.materials.map((m, i) => (
+                        <span
+                          key={i}
+                          className="text-sm rounded-full bg-[var(--surface-subtle)] text-[var(--text-body)] px-3 py-1"
+                        >
+                          {m}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {plan.steps.length > 0 && (
+                  <div>
+                    <div className="text-xs font-medium text-[var(--text-muted)] mb-2">
+                      Metodologia — passo a passo da aula
+                    </div>
+                    <ol className="space-y-2.5">
+                      {plan.steps.map((step, i) => (
+                        <li key={i} className="flex gap-3 text-[15px] leading-[1.55] text-[var(--text-body)]">
+                          <span
+                            style={{ background: color.bg, color: color.text }}
+                            className="flex-none w-5 h-5 rounded-full text-xs font-medium flex items-center justify-center"
+                          >
+                            {i + 1}
+                          </span>
+                          <span>{step}</span>
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                )}
+              </div>
             )}
 
             {isReading && plan.readingText && (
@@ -234,7 +294,16 @@ export function LessonDetailModal({
                   <div className="text-[11px] font-medium uppercase tracking-[0.22em] text-[var(--text-muted)]">
                     Texto para ler em voz alta
                   </div>
-                  <CopyButton text={plan.readingText} label="Copiar texto" />
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={() => setShowPresentation(true)}
+                      className="text-sm px-3 py-1.5 rounded-full bg-[var(--action-primary)] text-white transition-colors hover:bg-[var(--action-primary-hover)]"
+                    >
+                      Modo leitura (telão)
+                    </button>
+                    <CopyButton text={plan.readingText} label="Copiar texto" />
+                  </div>
                 </div>
                 <div className="max-w-[62ch] text-[15px] leading-[1.7] text-[var(--text-body)] space-y-3">
                   {plan.readingText.split("\n").map((paragraph, i) => (
@@ -265,45 +334,6 @@ export function LessonDetailModal({
                     </a>
                   ))}
                 </div>
-              </div>
-            )}
-
-            {plan.materials.length > 0 && (
-              <div>
-                <div className="text-[11px] font-medium uppercase tracking-[0.22em] text-[var(--text-muted)] mb-2">
-                  Materiais
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {plan.materials.map((m, i) => (
-                    <span
-                      key={i}
-                      className="text-sm rounded-full bg-[var(--surface-subtle)] text-[var(--text-body)] px-3 py-1"
-                    >
-                      {m}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {plan.steps.length > 0 && (
-              <div>
-                <div className="text-[11px] font-medium uppercase tracking-[0.22em] text-[var(--text-muted)] mb-2">
-                  Passo a passo da aula
-                </div>
-                <ol className="space-y-2.5">
-                  {plan.steps.map((step, i) => (
-                    <li key={i} className="flex gap-3 text-[15px] leading-[1.55] text-[var(--text-body)]">
-                      <span
-                        style={{ background: color.bg, color: color.text }}
-                        className="flex-none w-5 h-5 rounded-full text-xs font-medium flex items-center justify-center"
-                      >
-                        {i + 1}
-                      </span>
-                      <span>{step}</span>
-                    </li>
-                  ))}
-                </ol>
               </div>
             )}
 
@@ -372,6 +402,15 @@ export function LessonDetailModal({
           entry={homework}
           kind="licao-de-casa"
           onClose={() => setShowHomework(false)}
+        />
+      )}
+
+      {showPresentation && isReading && plan.readingText && (
+        <ReadingPresentationMode
+          theme={plan.theme}
+          genre={plan.genre}
+          text={plan.readingText}
+          onClose={() => setShowPresentation(false)}
         />
       )}
 
