@@ -76,9 +76,9 @@ export function LessonDetailModal({
     }
   }
 
-  /** O SGP pede o desenvolvimento da aula: o que o professor faz E o que o aluno produz — não
-   * basta o resumo da habilidade (curto e abstrato demais), por isso o passo a passo entra junto. */
-  const sgpText = [plan.description, plan.steps.join("\n")].filter(Boolean).join("\n\n");
+  /** O SGP já tem campo próprio pra habilidade/código — só a descrição precisa ser colada nele.
+   * O passo a passo é o guia da professora pra conduzir a aula, não entra nesse texto. */
+  const sgpText = plan.description;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-[var(--ink-900)]/50 p-4" onClick={onClose}>
@@ -225,7 +225,7 @@ export function LessonDetailModal({
               </div>
             )}
 
-            {(plan.curriculumCode || plan.description || plan.materials.length > 0 || plan.steps.length > 0) && (
+            {(plan.curriculumCode || plan.description || plan.materials.length > 0) && (
               <div className="rounded-[var(--radius-md)] border border-[var(--border-subtle)] p-4 sm:p-5 space-y-4">
                 <div className="text-[11px] font-medium uppercase tracking-[0.22em] text-[var(--text-muted)]">
                   Para o SGP
@@ -266,26 +266,27 @@ export function LessonDetailModal({
                   </div>
                 )}
 
-                {plan.steps.length > 0 && (
-                  <div>
-                    <div className="text-xs font-medium text-[var(--text-muted)] mb-2">
-                      Metodologia — passo a passo da aula
-                    </div>
-                    <ol className="space-y-2.5">
-                      {plan.steps.map((step, i) => (
-                        <li key={i} className="flex gap-3 text-[15px] leading-[1.55] text-[var(--text-body)]">
-                          <span
-                            style={{ background: color.bg, color: color.text }}
-                            className="flex-none w-5 h-5 rounded-full text-xs font-medium flex items-center justify-center"
-                          >
-                            {i + 1}
-                          </span>
-                          <span>{step}</span>
-                        </li>
-                      ))}
-                    </ol>
-                  </div>
-                )}
+              </div>
+            )}
+
+            {plan.steps.length > 0 && (
+              <div>
+                <div className="text-[11px] font-medium uppercase tracking-[0.22em] text-[var(--text-muted)] mb-2">
+                  Passo a passo da aula
+                </div>
+                <ol className="space-y-2.5">
+                  {plan.steps.map((step, i) => (
+                    <li key={i} className="flex gap-3 text-[15px] leading-[1.55] text-[var(--text-body)]">
+                      <span
+                        style={{ background: color.bg, color: color.text }}
+                        className="flex-none w-5 h-5 rounded-full text-xs font-medium flex items-center justify-center"
+                      >
+                        {i + 1}
+                      </span>
+                      <span>{step}</span>
+                    </li>
+                  ))}
+                </ol>
               </div>
             )}
 
