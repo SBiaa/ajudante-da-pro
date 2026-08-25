@@ -84,7 +84,7 @@ export function ActivityWorksheet({ subjectLabel, theme, curriculumCode, color, 
   return (
     <div
       style={{ fontFamily: kidFont, color: "#2d2d2d", textTransform: "uppercase", borderColor: color.text }}
-      className="max-w-[760px] mx-auto p-6 leading-[1.5] border-[3px] border-dashed rounded-[26px] print:max-w-none print:mx-0 print:flex print:h-full print:flex-col print:box-border print:p-8"
+      className="max-w-[760px] mx-auto p-6 leading-[1.5] border-[3px] border-dashed rounded-[26px] print:max-w-none print:mx-0 print:flex print:h-full print:flex-col print:box-border print:p-4"
     >
       <div className="text-center border-b-4 border-dashed pb-3.5 mb-6" style={{ borderColor: color.text }}>
         <h1 style={{ color: color.text, fontFamily: kidFont }} className="text-[26px] mb-2">
