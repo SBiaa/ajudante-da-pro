@@ -41,6 +41,7 @@ type Props = {
   network: Network;
   initialAppData: StoredAppData | null;
   isAdmin?: boolean;
+  teacherName?: string;
 };
 
 export default function HomeClient({
@@ -51,6 +52,7 @@ export default function HomeClient({
   network,
   initialAppData,
   isAdmin = false,
+  teacherName,
 }: Props) {
   const networkLabel = getNetworkLabel(network);
   const { state, setState, hydrated } = useAppState(userId);
@@ -132,7 +134,7 @@ export default function HomeClient({
   if (!state.timetable) {
     return (
       <main className="max-w-4xl w-full mx-auto px-4 py-8">
-        <AppHeader gradeLabel={gradeLabel} networkLabel={networkLabel} isAdmin={isAdmin} />
+        <AppHeader gradeLabel={gradeLabel} networkLabel={networkLabel} isAdmin={isAdmin} teacherName={teacherName} />
         <p className="text-[var(--text-muted)] mb-6 max-w-[62ch]">
           Antes de começar, configure a grade fixa: qual matéria cai em cada horário, de segunda a sexta.
         </p>
@@ -347,7 +349,13 @@ export default function HomeClient({
 
   return (
     <main className="max-w-6xl w-full mx-auto px-4 py-8 flex-1">
-      <AppHeader gradeLabel={gradeLabel} networkLabel={networkLabel} menuItems={menuItems} isAdmin={isAdmin} />
+      <AppHeader
+        gradeLabel={gradeLabel}
+        networkLabel={networkLabel}
+        menuItems={menuItems}
+        isAdmin={isAdmin}
+        teacherName={teacherName}
+      />
 
       {showTimetableEditor ? (
         <TimetableEditor

@@ -15,6 +15,9 @@ type Props = {
   menuItems?: AppMenuItem[];
   /** Mostra o link "Admin" — só quando a usuária logada tem is_admin = true. */
   isAdmin?: boolean;
+  /** Username de quem está logada, pra saudação pessoal ("Olá, prof ..."). Omitido nas telas
+   * sem sessão (link compartilhado) — nesses casos o título volta a ser o nome do app. */
+  teacherName?: string;
 };
 
 export function AppHeader({
@@ -23,6 +26,7 @@ export function AppHeader({
   networkLabel = getNetworkLabel(DEFAULT_NETWORK),
   menuItems,
   isAdmin = false,
+  teacherName,
 }: Props) {
   return (
     <div className="print:hidden relative rounded-[var(--radius-lg)] bg-[var(--surface-brand)] px-6 py-6 mb-6 shadow-[var(--shadow-brand)]">
@@ -45,9 +49,16 @@ export function AppHeader({
           <img src="/brand/logo-mark.svg" alt="" aria-hidden="true" className="brand-mark-icon w-7 h-7 flex-none mt-0.5" />
           <span aria-hidden="true" className="brand-mark-icon-emoji hidden flex-none" />
           <div className="min-w-0">
-            <h1 className="app-header-title text-[22px] sm:text-[28px] leading-tight">Plano de Aula Semanal</h1>
-            <p className="mt-1 text-[11px] font-medium uppercase tracking-[0.22em] text-[var(--crimson-200)]">
-              {gradeLabel} · Ensino Fundamental 1 · {networkLabel}
+            {teacherName && (
+              <p className="text-[11px] font-medium uppercase tracking-[0.22em] text-[var(--crimson-200)]">
+                Plano de Aula Semanal
+              </p>
+            )}
+            <h1 className="app-header-title text-[22px] sm:text-[28px] leading-tight">
+              {teacherName ? `Olá, prof ${teacherName}!` : "Plano de Aula Semanal"}
+            </h1>
+            <p className="mt-1 text-[13px] text-[var(--plum-100)]">
+              Você está com o {gradeLabel} · Ensino Fundamental 1 · {networkLabel}
             </p>
           </div>
         </div>

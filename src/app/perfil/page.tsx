@@ -17,6 +17,7 @@ export default async function PerfilPage() {
         gradeLabel={getGradeLabel(profile?.gradeYear ?? DEFAULT_GRADE)}
         networkLabel={getNetworkLabel(profile?.network ?? DEFAULT_NETWORK)}
         isAdmin={user?.isAdmin ?? false}
+        teacherName={user?.username}
       />
       <PerfilForm
         currentGrade={profile?.gradeYear ?? DEFAULT_GRADE}

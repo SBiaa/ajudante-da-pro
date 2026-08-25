@@ -31,6 +31,7 @@ export default async function Home() {
       network={network}
       initialAppData={initialAppData}
       isAdmin={user?.isAdmin ?? false}
+      teacherName={user?.username}
     />
   );
 }
