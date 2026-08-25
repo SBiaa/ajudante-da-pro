@@ -2,12 +2,15 @@
 
 import { useMemo, useState } from "react";
 import { OWN_SUBJECTS, OWN_SUBJECT_LABELS, OwnSubject, WeekPlan } from "@/types/plano";
+import { Network } from "@/types/profile";
 import { SUBJECT_COLORS } from "@/lib/subjectColors";
 import { computeCurriculumCoverage } from "@/lib/curriculumCoverage";
 import { formatFullDate, getMondayISO, addWeeksISO, toISODate } from "@/lib/date";
 
 type Props = {
   weeks: Record<string, WeekPlan>;
+  network: Network;
+  gradeYear: string;
   onClose: () => void;
   onJumpToWeek: (weekStartDate: string) => void;
 };
@@ -33,7 +36,7 @@ function todayISO(): string {
   return toISODate(new Date());
 }
 
-export function CurriculumCoveragePanel({ weeks, onClose, onJumpToWeek }: Props) {
+export function CurriculumCoveragePanel({ weeks, network, gradeYear, onClose, onJumpToWeek }: Props) {
   const [subject, setSubject] = useState<OwnSubject>(OWN_SUBJECTS[0]);
   const [preset, setPreset] = useState<PresetKey>("bimestre");
   const [customFrom, setCustomFrom] = useState("");
@@ -49,8 +52,8 @@ export function CurriculumCoveragePanel({ weeks, onClose, onJumpToWeek }: Props)
   }, [preset, customFrom, customTo]);
 
   const coverage = useMemo(
-    () => computeCurriculumCoverage(weeks, subject, range),
-    [weeks, subject, range]
+    () => computeCurriculumCoverage(weeks, network, gradeYear, subject, range),
+    [weeks, network, gradeYear, subject, range]
   );
 
   const bankEntries = coverage.filter((c) => c.inBank);

@@ -17,6 +17,7 @@ import { useAppState } from "@/hooks/useAppState";
 import { getMondayISO, getWeekId, addWeeksISO } from "@/lib/date";
 import { createEmptyTimetable, buildWeekPlan, duplicateWeekPlan, syncWeeksWithTimetable } from "@/lib/timetable";
 import { pickThemeEntry } from "@/lib/themePicker";
+import { Network, getNetworkLabel } from "@/types/profile";
 import { TimetableEditor } from "@/components/TimetableEditor";
 import { WeekNav } from "@/components/WeekNav";
 import { WeekGrid } from "@/components/WeekGrid";
@@ -26,6 +27,7 @@ import { SubjectColorEditor } from "@/components/SubjectColorEditor";
 import { ThemeHistoryPanel } from "@/components/ThemeHistoryPanel";
 import { CurriculumCoveragePanel } from "@/components/CurriculumCoveragePanel";
 import { PeriodOverviewPanel } from "@/components/PeriodOverviewPanel";
+import { ContentBankPanel } from "@/components/ContentBankPanel";
 import { ConfirmModal } from "@/components/ConfirmModal";
 import { ShareModal } from "@/components/ShareModal";
 import { LoadingScreen } from "@/components/LoadingScreen";
@@ -35,10 +37,22 @@ type Props = {
   userId: number;
   initialTimetable: WeeklyTimetable | null;
   gradeLabel: string;
+  gradeYear: string;
+  network: Network;
   initialAppData: StoredAppData | null;
+  isAdmin?: boolean;
 };
 
-export default function HomeClient({ userId, initialTimetable, gradeLabel, initialAppData }: Props) {
+export default function HomeClient({
+  userId,
+  initialTimetable,
+  gradeLabel,
+  gradeYear,
+  network,
+  initialAppData,
+  isAdmin = false,
+}: Props) {
+  const networkLabel = getNetworkLabel(network);
   const { state, setState, hydrated } = useAppState(userId);
   const [viewedMonday, setViewedMonday] = useState(() => getMondayISO());
   const [showTimetableEditor, setShowTimetableEditor] = useState(false);
@@ -46,6 +60,7 @@ export default function HomeClient({ userId, initialTimetable, gradeLabel, initi
   const [showThemeHistory, setShowThemeHistory] = useState(false);
   const [showCoverage, setShowCoverage] = useState(false);
   const [showPeriodOverview, setShowPeriodOverview] = useState(false);
+  const [showContentBank, setShowContentBank] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [pendingGenerateWeekCount, setPendingGenerateWeekCount] = useState<number | null>(null);
   const [shareState, setShareState] = useState<
@@ -74,6 +89,7 @@ export default function HomeClient({ userId, initialTimetable, gradeLabel, initi
       { label: "Temas já dados", onClick: () => setShowThemeHistory(true) },
       { label: "Cobertura curricular", onClick: () => setShowCoverage(true) },
       { label: "Visão geral", onClick: () => setShowPeriodOverview(true) },
+      { label: "Banco de conteúdo", onClick: () => setShowContentBank(true) },
     ],
     []
   );
@@ -116,7 +132,7 @@ export default function HomeClient({ userId, initialTimetable, gradeLabel, initi
   if (!state.timetable) {
     return (
       <main className="max-w-4xl w-full mx-auto px-4 py-8">
-        <AppHeader gradeLabel={gradeLabel} />
+        <AppHeader gradeLabel={gradeLabel} networkLabel={networkLabel} isAdmin={isAdmin} />
         <p className="text-[var(--text-muted)] mb-6 max-w-[62ch]">
           Antes de começar, configure a grade fixa: qual matéria cai em cada horário, de segunda a sexta.
         </p>
@@ -151,7 +167,7 @@ export default function HomeClient({ userId, initialTimetable, gradeLabel, initi
       .sort((a, b) => (a.usedAt < b.usedAt ? 1 : -1))
       .slice(0, 8)
       .map((t) => t.theme);
-    const entry = pickThemeEntry(subjectKey, [...extraRecent, ...historyThemes], keyword);
+    const entry = pickThemeEntry(network, gradeYear, subjectKey, [...extraRecent, ...historyThemes], keyword);
     if (!entry.theme) return null;
     const plan: GeneratedLessonPlan = {
       theme: entry.theme,
@@ -331,7 +347,7 @@ export default function HomeClient({ userId, initialTimetable, gradeLabel, initi
 
   return (
     <main className="max-w-6xl w-full mx-auto px-4 py-8 flex-1">
-      <AppHeader gradeLabel={gradeLabel} menuItems={menuItems} />
+      <AppHeader gradeLabel={gradeLabel} networkLabel={networkLabel} menuItems={menuItems} isAdmin={isAdmin} />
 
       {showTimetableEditor ? (
         <TimetableEditor
@@ -361,13 +377,26 @@ export default function HomeClient({ userId, initialTimetable, gradeLabel, initi
           onDeleteEntry={handleDeleteThemeHistoryEntry}
         />
       ) : showCoverage ? (
-        <CurriculumCoveragePanel weeks={state.weeks} onClose={() => setShowCoverage(false)} onJumpToWeek={handleJumpToWeek} />
+        <CurriculumCoveragePanel
+          weeks={state.weeks}
+          network={network}
+          gradeYear={gradeYear}
+          onClose={() => setShowCoverage(false)}
+          onJumpToWeek={handleJumpToWeek}
+        />
       ) : showPeriodOverview ? (
         <PeriodOverviewPanel
           weeks={state.weeks}
           currentWeekId={weekId}
           onClose={() => setShowPeriodOverview(false)}
           onJumpToWeek={handleJumpToWeek}
+        />
+      ) : showContentBank ? (
+        <ContentBankPanel
+          colorOverrides={state.subjectColorOverrides}
+          network={network}
+          gradeYear={gradeYear}
+          onClose={() => setShowContentBank(false)}
         />
       ) : (
         <>

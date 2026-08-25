@@ -1,5 +1,7 @@
 import { OwnSubject } from "@/types/plano";
-import { THEME_BANK, READING_BANK } from "@/data/themeBank";
+import { Network } from "@/types/profile";
+import { READING_BANK } from "@/data/themeBank";
+import { getThemeBank } from "@/data/curriculumBanks";
 
 export type PickedEntry = {
   theme: string;
@@ -29,8 +31,14 @@ const EMPTY_PICK: PickedEntry = {
  * Se `keyword` for informado, o sorteio é restrito às entradas cujo tema ou descrição
  * contêm essa palavra (comparação sem acento e sem diferenciar maiúsculas/minúsculas).
  * Se nenhuma entrada bater com a palavra, retorna vazio em vez de ignorar o filtro.
+ *
+ * Leitura Diária é compartilhada entre redes/anos (não tem código de currículo). As demais
+ * matérias usam o banco da combinação rede+ano (ver src/data/curriculumBanks.ts); se essa
+ * combinação ainda não tiver banco de conteúdo, retorna vazio.
  */
 export function pickThemeEntry(
+  network: Network,
+  gradeYear: string,
   subject: OwnSubject | "leitura-diaria",
   recentThemes: string[],
   keyword = ""
@@ -52,8 +60,11 @@ export function pickThemeEntry(
     );
   }
 
+  const bank = getThemeBank(network, gradeYear);
+  if (!bank) return EMPTY_PICK;
+
   return pickFrom(
-    THEME_BANK[subject],
+    bank[subject],
     recentThemes,
     keyword,
     (entry): PickedEntry => ({

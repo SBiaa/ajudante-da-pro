@@ -1,9 +1,10 @@
 // Cria um novo usuário (professora/testadora) direto no banco.
 //
 // Uso:
-//   node scripts/create-user.mjs <usuario> <senha>
+//   node scripts/create-user.mjs <usuario> <senha> [--admin]
 //
 // Ex.: node scripts/create-user.mjs joana "senha da joana"
+//      node scripts/create-user.mjs bia admin --admin
 //
 // Não depende de nenhum servidor rodando — conecta direto no Neon usando a mesma
 // DATABASE_URL do .env.local. Reimplementa o hash de senha (scrypt) em vez de importar de
@@ -32,9 +33,11 @@ function hashPassword(password) {
 }
 
 async function main() {
-  const [username, password] = process.argv.slice(2);
+  const args = process.argv.slice(2).filter((a) => a !== "--admin");
+  const isAdmin = process.argv.includes("--admin");
+  const [username, password] = args;
   if (!username || !password) {
-    console.error("Uso: node scripts/create-user.mjs <usuario> <senha>");
+    console.error("Uso: node scripts/create-user.mjs <usuario> <senha> [--admin]");
     process.exit(1);
   }
 
@@ -46,11 +49,13 @@ async function main() {
       username text unique not null,
       password_hash text not null,
       password_salt text not null,
+      is_admin boolean not null default false,
       created_at timestamptz not null default now()
     )
   `.catch((err) => {
     if (!/pg_type_typname_nsp_index|already exists/i.test(err.message)) throw err;
   });
+  await sql`alter table users add column if not exists is_admin boolean not null default false`;
 
   const existing = await sql`select id from users where username = ${username}`;
   if (existing.length > 0) {
@@ -60,12 +65,12 @@ async function main() {
 
   const { hash, salt } = hashPassword(password);
   const rows = await sql`
-    insert into users (username, password_hash, password_salt)
-    values (${username}, ${hash}, ${salt})
-    returning id, username
+    insert into users (username, password_hash, password_salt, is_admin)
+    values (${username}, ${hash}, ${salt}, ${isAdmin})
+    returning id, username, is_admin
   `;
 
-  console.log(`Usuário criado: ${rows[0].username} (id ${rows[0].id})`);
+  console.log(`Usuário criado: ${rows[0].username} (id ${rows[0].id})${rows[0].is_admin ? " [admin]" : ""}`);
   console.log("Ela já pode fazer login em /login com esse usuário e senha.");
 }
 

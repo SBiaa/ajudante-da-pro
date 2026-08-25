@@ -1,5 +1,6 @@
 import { OwnSubject, WeekPlan } from "@/types/plano";
-import { THEME_BANK } from "@/data/themeBank";
+import { Network } from "@/types/profile";
+import { getThemeBank } from "@/data/curriculumBanks";
 
 export type CodeCoverage = {
   code: string;
@@ -25,10 +26,12 @@ function inRange(weekStartDate: string, range: CoverageRange): boolean {
 
 /** Códigos do banco de temas para a matéria, na ordem em que aparecem no documento oficial, sem
  * repetir — cada código guarda o tema da primeira entrada como rótulo de referência. */
-function bankCodesFor(subject: OwnSubject): { code: string; label: string }[] {
+function bankCodesFor(network: Network, gradeYear: string, subject: OwnSubject): { code: string; label: string }[] {
+  const bank = getThemeBank(network, gradeYear);
+  if (!bank) return [];
   const seen = new Set<string>();
   const result: { code: string; label: string }[] = [];
-  for (const entry of THEME_BANK[subject]) {
+  for (const entry of bank[subject]) {
     if (!entry.curriculumCode || seen.has(entry.curriculumCode)) continue;
     seen.add(entry.curriculumCode);
     result.push({ code: entry.curriculumCode, label: entry.theme });
@@ -44,6 +47,8 @@ function bankCodesFor(subject: OwnSubject): { code: string; label: string }[] {
  */
 export function computeCurriculumCoverage(
   weeks: Record<string, WeekPlan>,
+  network: Network,
+  gradeYear: string,
   subject: OwnSubject,
   range: CoverageRange = {}
 ): CodeCoverage[] {
@@ -65,7 +70,7 @@ export function computeCurriculumCoverage(
     }
   }
 
-  const bankCodes = bankCodesFor(subject);
+  const bankCodes = bankCodesFor(network, gradeYear, subject);
   const bankCodeSet = new Set(bankCodes.map((c) => c.code));
 
   const fromBank: CodeCoverage[] = bankCodes.map(({ code, label }) => {

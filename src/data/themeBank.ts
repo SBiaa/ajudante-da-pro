@@ -2280,7 +2280,7 @@ export const READING_BANK: ReadingBankEntry[] = [
     "text": "JORNAL DA ESCOLA — Edição de hoje\n\nHorta da turma do 2º ano dá os primeiros frutos\n\nDepois de dois meses de cuidado, a horta plantada pela turma do 2º ano finalmente deu seus primeiros resultados: pés de alface, cenoura e cheiro-verde já estão prontos para a colheita.\n\nO projeto começou em uma aula de Ciências, quando os alunos aprenderam sobre o crescimento das plantas. Desde então, a turma se revezou para regar a horta todos os dias, mesmo durante as férias.\n\n\"No começo eu achei que ia demorar demais, mas todo dia a gente via uma coisa diferente crescendo\", contou uma das alunas responsáveis pelo cuidado das folhas.\n\nA colheita será usada na próxima merenda especial da escola, e a turma já está planejando plantar novas sementes para o próximo semestre.\n\nFim da edição de hoje. Até a próxima!",
     "steps": [
       "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
-      "Ler a notícia em voz alta, destacando a manchete e as informações principais.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
       "Roda de conversa sobre quem gostaria de ter uma horta na escola ou em casa."
     ]
   },
@@ -2291,7 +2291,7 @@ export const READING_BANK: ReadingBankEntry[] = [
     "text": "JORNAL DA ESCOLA — Edição especial de esportes\n\nTurma do 2º B vence torneio de queimada do recreio\n\nNa manhã desta sexta-feira, o pátio da escola ficou cheio de gritos de torcida: a turma do 2º B venceu o torneio de queimada organizado pelos professores de Educação Física, disputado durante os recreios da semana.\n\nA final foi contra a turma do 3º A, e o jogo terminou empatado até os últimos minutos, quando um lançamento certeiro decidiu a partida.\n\n\"A gente treinou todo dia no recreio, por isso deu certo\", disse um dos jogadores da equipe vencedora, ainda ofegante depois da partida.\n\nOs professores já anunciaram que o próximo torneio será de corrida com saco, no mês que vem. As inscrições abrem na próxima segunda-feira.\n\nFim da edição especial. Até a próxima notícia!",
     "steps": [
       "Perguntar à turma se já assistiram ou participaram de algum torneio.",
-      "Ler a notícia em voz alta, destacando manchete, fala entre aspas e informação final.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
       "Roda de conversa sobre trabalho em equipe e treino."
     ]
   },
@@ -2524,6 +2524,1084 @@ export const READING_BANK: ReadingBankEntry[] = [
       "Explicar que uma indicação literária é um texto curto para recomendar um livro para outra pessoa.",
       "Ler o exemplo em voz alta, destacando as partes (título, o que gostou, para quem indica).",
       "Propor que a turma escreva, ditando ao professor, uma indicação literária de um livro que já leram."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Vulcão em Erupção Agita a Feira de Ciências",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a Feira de Ciências da escola, seguida de roda de conversa sobre experimentos científicos.",
+    "text": "JORNAL DA ESCOLA — Edição Especial de Ciências\n\nVulcão em Erupção Rouba a Cena na Feira de Ciências\n\nA Feira de Ciências da escola aconteceu na quadra coberta nesta terça-feira, e um dos experimentos mais concorridos foi o vulcão em erupção, feito pela turma do Professor André.\n\nCom garrafa pet, massa de modelar e muita imaginação, os alunos montaram uma montanha colorida bem no meio da mesa. Na hora da apresentação, eles misturaram bicarbonato de sódio com vinagre tingido de vermelho, e a “lava” subiu borbulhando para fora do vulcão, arrancando aplausos da plateia.\n\nAlém do vulcão, outras turmas mostraram experimentos com ímãs, plantas e bolhas de sabão gigantes. Mas foi a erupção que fez a fila mais comprida do dia.\n\n\"Eu nunca imaginei que bicarbonato e vinagre pudessem fazer tanta espuma!\", contou um aluno do 4º ano, ainda impressionado com o resultado.\n\nA Feira de Ciências acontece todo ano na escola e é sempre um dos momentos mais esperados pelos alunos.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre quais experimentos de ciências os alunos gostariam de fazer."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Biblioteca Ganha Caixa de Livros Novos",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a chegada de livros novos na biblioteca, seguida de roda de conversa sobre livros preferidos.",
+    "text": "JORNAL DA ESCOLA — Edição de hoje\n\nBiblioteca da Escola Recebe Caixa Cheia de Livros Novos\n\nChegou uma novidade animadora para quem gosta de ler: a biblioteca da escola recebeu, nesta semana, uma caixa cheia de livros novos, doados por uma editora parceira.\n\nForam mais de trinta livros diferentes, entre histórias em quadrinhos, contos de aventura e livros de curiosidades sobre animais. A bibliotecária Dona Rosa já organizou tudo nas estantes para que os alunos possam escolher suas próximas leituras.\n\n\"Ficamos muito felizes com essa doação. Agora vai ter novidade para todo mundo\", disse Dona Rosa, sorrindo enquanto carimbava os livros.\n\nAs turmas do 2º e do 3º ano já foram visitar a biblioteca para conhecer os títulos novos, e muitos alunos já fizeram empréstimo para levar um livro para casa.\n\nA escola pretende organizar uma roda de leitura especial nas próximas semanas para comentar as novidades.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre qual tipo de livro a turma mais gostaria de ganhar."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Organiza Brechó de Brinquedos",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre um brechó de brinquedos organizado pela turma, seguida de roda de conversa sobre doar e trocar brinquedos.",
+    "text": "JORNAL DA ESCOLA — Edição do Bazar\n\nTurma Organiza Brechó de Brinquedos para Arrecadar Fundos\n\nNo pátio da escola, a turma da Professora Juliana organizou, neste sábado, um brechó de brinquedos usados para arrecadar dinheiro para o passeio de fim de ano.\n\nOs alunos trouxeram bonecos, carrinhos, quebra-cabeças e jogos que não usavam mais, todos em bom estado. Cada família colaborou com o que tinha em casa, e as famílias da escola foram convidadas a visitar as mesinhas montadas para a venda.\n\nO dinheiro arrecadado foi guardado em um cofrinho da turma, e todos ajudaram a organizar os preços, sempre bem baratinhos.\n\n\"Foi muito legal ver todo mundo participando e ainda dar uma segunda vida para os brinquedos\", contou uma aluna da turma, orgulhosa da ideia.\n\nCom o sucesso do brechó, a turma já pensa em repetir a ação no próximo semestre.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre brinquedos que os alunos poderiam doar ou trocar."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Dia da Leitura Tem Troca de Livros Favoritos",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre o Dia da Leitura, seguida de roda de conversa sobre os livros favoritos de cada aluno.",
+    "text": "JORNAL DA ESCOLA — Edição da Leitura\n\nDia da Leitura: Alunos Trocam Seus Livros Favoritos\n\nA escola realizou nesta quinta-feira o Dia da Leitura, um evento especial em que os alunos trouxeram de casa o livro favorito para trocar com os colegas.\n\nCada aluno escreveu um bilhetinho contando por que gostava daquele livro e colou na capa, antes de colocá-lo em uma mesa grande no pátio. Depois, todos puderam escolher um livro diferente para levar para casa e ler.\n\nA atividade foi organizada pela Professora Fernanda, que também preparou uma roda de conversa sobre os livros favoritos de cada turma.\n\n\"Foi muito legal descobrir livros que eu nunca tinha visto antes\", contou um aluno do 3º ano, mostrando o livro que escolheu.\n\nO Dia da Leitura foi um sucesso e a escola já pensa em repetir a troca de livros no próximo semestre.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre qual livro cada aluno traria para trocar com um colega."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Escola Realiza Simulado de Evacuação",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre um treino de evacuação por segurança, seguida de roda de conversa sobre regras de segurança.",
+    "text": "JORNAL DA ESCOLA — Edição de Segurança\n\nEscola Realiza Simulado de Evacuação com Toda a Turma\n\nNesta manhã, a escola realizou um simulado de evacuação, treino importante para que todos saibam o que fazer em caso de emergência.\n\nQuando o sinal especial tocou, os alunos pararam o que estavam fazendo e seguiram, em fila e com calma, até o ponto de encontro no pátio, guiados pelos professores. O zelador seu Antônio ajudou a organizar a saída de cada turma pelos corredores.\n\nDepois do treino, a diretora explicou que o simulado serve para deixar todo mundo preparado, sem susto, caso algo assim aconteça de verdade.\n\n\"No começo fiquei um pouco nervosa, mas segui as instruções e ficou tudo bem\", contou uma aluna do 2º ano.\n\nO simulado terminou em poucos minutos e todos os alunos foram parabenizados pela organização.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre a importância de seguir as regras de segurança com calma."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma do 3º Ano Vence Olimpíada de Matemática",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre uma olimpíada de matemática na escola, seguida de roda de conversa sobre desafios de matemática.",
+    "text": "JORNAL DA ESCOLA — Edição Especial de Matemática\n\nTurma do 3º Ano Vence Olimpíada de Matemática da Escola\n\nA escola realizou nesta semana a Olimpíada de Matemática, com desafios e problemas para todas as turmas do Ensino Fundamental. Depois de muitas contas e raciocínio, a turma do 3º ano B foi a grande campeã.\n\nOs alunos resolveram problemas de soma, subtração e até desafios com formas geométricas, em provas organizadas pelo Professor Marcelo. A disputa foi acirrada até o último minuto, com times de todas as turmas torcendo bastante.\n\nNa premiação, a turma vencedora recebeu um certificado e um aplauso geral no pátio.\n\n\"A gente treinou bastante em sala e ficou muito feliz com o resultado\", contou uma aluna da turma campeã, segurando o certificado.\n\nA Olimpíada de Matemática deve virar tradição na escola, com uma nova edição prevista para o ano que vem.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre desafios de matemática que a turma gostaria de tentar resolver."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Coral Encanta Famílias na Reunião de Pais",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a apresentação do coral na reunião de pais, seguida de roda de conversa sobre música e canto.",
+    "text": "JORNAL DA ESCOLA — Edição da Reunião de Pais\n\nCoral da Escola Encanta Famílias na Reunião de Pais\n\nNa reunião de pais desta semana, o coral da escola fez uma apresentação especial e emocionou as famílias presentes no auditório.\n\nOs alunos ensaiaram durante várias semanas com a Professora Patrícia e cantaram três músicas, incluindo uma canção sobre amizade escrita pela própria turma. Os pais aplaudiram de pé ao final da apresentação.\n\nAlém do coral, a reunião também trouxe informações importantes sobre o calendário escolar e os próximos eventos.\n\n\"Fiquei toda arrepiada vendo meu filho cantando com tanta alegria\", contou uma mãe presente na plateia.\n\nO coral já está ensaiando novas músicas para se apresentar na festa junina da escola.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre músicas que a turma gostaria de cantar em um coral."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Escola Inaugura Mural Feito pelos Alunos",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a inauguração de um mural pintado pelos alunos, seguida de roda de conversa sobre arte na escola.",
+    "text": "JORNAL DA ESCOLA — Edição da Arte\n\nEscola Inaugura Mural Colorido Feito pelos Alunos\n\nA parede do corredor principal da escola ganhou uma cara nova: um mural colorido, pintado pelos próprios alunos, foi inaugurado nesta sexta-feira.\n\nO desenho mostra árvores, animais e crianças de mãos dadas, representando a amizade entre as turmas. O projeto foi coordenado pela Professora Fernanda durante as aulas de arte, e cada turma pintou uma parte do desenho.\n\nNa inauguração, todos os alunos se reuniram no corredor para admirar o resultado e tirar fotos ao lado do mural.\n\n\"Foi muito bom pintar junto com os colegas e ver a arte da nossa turma na parede da escola\", contou um aluno participante do projeto.\n\nO mural já é o novo ponto favorito para fotos na escola.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre o que a turma gostaria de desenhar em um mural da escola."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Planta Árvore no Dia da Árvore",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre o plantio de uma árvore no pátio da escola, seguida de roda de conversa sobre cuidar das plantas.",
+    "text": "JORNAL DA ESCOLA — Edição Verde\n\nTurma Planta Árvore no Pátio para Comemorar o Dia da Árvore\n\nPara comemorar o Dia da Árvore, a turma do 2º ano plantou uma muda de árvore no pátio da escola nesta quarta-feira.\n\nCom a ajuda do zelador seu Antônio, os alunos cavaram um buraquinho, colocaram a muda com cuidado e regaram bastante água. Cada aluno pôde colocar um punhado de terra para ajudar a árvore a crescer forte.\n\nDepois do plantio, a Professora Juliana explicou a importância das árvores para o ar que respiramos e para os animais que vivem nelas.\n\n\"Vou voltar aqui todo ano para ver como a árvore está crescendo\", disse um aluno, todo animado com a novidade.\n\nA turma combinou de cuidar da muda juntos, regando sempre que for preciso.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre como cada aluno poderia cuidar de uma planta em casa."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Alunos Criam Jornal Mural sobre Reciclagem",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre um mural com dicas de reciclagem, seguida de roda de conversa sobre separar o lixo.",
+    "text": "JORNAL DA ESCOLA — Edição da Reciclagem\n\nAlunos Criam Jornal Mural com Dicas de Reciclagem\n\nA turma do 3º ano A criou um jornal mural cheio de dicas sobre reciclagem, que agora está exposto no corredor da escola.\n\nCom cartolina, revistas recortadas e muita criatividade, os alunos explicaram como separar o lixo em papel, plástico, vidro e metal, além de dar dicas de como reaproveitar materiais em casa. O projeto foi feito durante as aulas de ciências com o Professor André.\n\nO mural já chamou a atenção de outras turmas, que pararam para ler as dicas durante o recreio.\n\n\"A gente pesquisou bastante para ter certeza de que as informações estavam certas\", contou uma aluna que ajudou a montar o mural.\n\nA escola pretende colocar lixeiras coloridas de reciclagem em todos os corredores em breve.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre como separar o lixo em casa e na escola."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Bombeiros Visitam a Escola para Palestra",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre uma visita de bombeiros à escola, seguida de roda de conversa sobre segurança contra incêndio.",
+    "text": "JORNAL DA ESCOLA — Edição Especial dos Bombeiros\n\nBombeiros Visitam a Escola para Palestra sobre Segurança\n\nNesta terça-feira, a escola recebeu a visita de uma equipe de bombeiros, que veio conversar com os alunos sobre segurança e prevenção de incêndios.\n\nOs bombeiros mostraram os equipamentos que usam no trabalho, como capacete, mangueira e extintor, e explicaram, de um jeito bem simples, o que fazer em caso de fogo ou fumaça. Os alunos puderam fazer perguntas e até experimentar segurar a mangueira, sem água, é claro.\n\nA palestra aconteceu no pátio e todas as turmas do Ensino Fundamental participaram, encantadas com a apresentação.\n\n\"Achei incrível o tamanho do caminhão de bombeiro que eles trouxeram!\", contou um aluno, ainda empolgado.\n\nA escola agradeceu a visita e já pensa em convidar outros profissionais para futuras palestras.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre o que fazer em caso de fogo ou fumaça em casa."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Organiza Campanha de Agasalhos",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre uma campanha de arrecadação de agasalhos, seguida de roda de conversa sobre ajudar o próximo.",
+    "text": "JORNAL DA ESCOLA — Edição do Agasalho\n\nTurma Organiza Campanha de Arrecadação de Agasalhos\n\nCom a chegada do frio, a turma do 2º ano B organizou uma campanha para arrecadar agasalhos e ajudar famílias que precisam de roupas quentinhas.\n\nDurante duas semanas, os alunos trouxeram casacos, cobertores e blusas de lã que não usavam mais, deixando tudo em uma caixa decorada na entrada da escola. A Professora Patrícia ajudou a organizar a triagem das doações.\n\nNo final da campanha, os agasalhos foram entregues para uma instituição do bairro que cuida de famílias em situação de necessidade.\n\n\"Fiquei feliz sabendo que meu casaco velho vai esquentar outra criança\", contou uma aluna que participou da campanha.\n\nA escola arrecadou mais de cem peças de roupa e já pensa em repetir a campanha no próximo inverno.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre formas de ajudar outras pessoas no frio."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Feira do Livro Chega à Escola",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a Feira do Livro na escola, seguida de roda de conversa sobre os livros que os alunos gostariam de ganhar.",
+    "text": "JORNAL DA ESCOLA — Edição da Feira do Livro\n\nFeira do Livro Chega à Escola Nesta Semana\n\nA tão esperada Feira do Livro chegou à escola e vai ficar montada no pátio coberto durante toda esta semana.\n\nAs bancas estão cheias de livros de aventura, poesia, quadrinhos e histórias em quadrinhos para todas as idades. Os alunos puderam visitar a feira durante o recreio, folhear os livros e escolher aqueles que mais chamaram atenção para pedir de presente aos pais.\n\nA bibliotecária Dona Rosa organizou também uma sessão de autógrafos com um escritor convidado, que leu um trecho de seu livro para as turmas.\n\n\"Eu já escolhi três livros que eu quero ganhar de aniversário\", contou um aluno animado, mostrando sua listinha.\n\nA Feira do Livro é um dos eventos mais esperados do ano na escola.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre qual livro cada aluno gostaria de escolher em uma feira."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Alunos Apresentam Peça de Teatro sobre Amizade",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre uma peça de teatro apresentada pelos alunos, seguida de roda de conversa sobre amizade.",
+    "text": "JORNAL DA ESCOLA — Edição do Teatro\n\nAlunos Apresentam Peça de Teatro sobre Amizade\n\nA turma do 3º ano C apresentou, nesta sexta-feira, uma peça de teatro sobre amizade para toda a escola, no auditório.\n\nA história contava sobre dois amigos que brigam por causa de um brinquedo, mas aprendem a se desculpar e voltam a brincar juntos. Os alunos usaram fantasias coloridas e cenário feito à mão, com a ajuda da Professora Fernanda.\n\nA plateia acompanhou tudo com atenção e aplaudiu bastante no final, quando os dois personagens se abraçaram no palco.\n\n\"Decorar as falas foi difícil, mas valeu muito a pena ver todo mundo aplaudindo\", contou um aluno que fez o papel principal.\n\nA escola já planeja uma nova peça de teatro para o próximo bimestre.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre como resolver brigas com amigos com um pedido de desculpas."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Gincana Anima as Turmas da Escola",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre uma gincana entre as turmas, seguida de roda de conversa sobre brincadeiras em equipe.",
+    "text": "JORNAL DA ESCOLA — Edição da Gincana\n\nEscola Promove Gincana Animada entre as Turmas\n\nA escola realizou nesta sexta-feira uma gincana cheia de brincadeiras entre as turmas do Ensino Fundamental, movimentando todo o pátio.\n\nForam provas de corrida com colher e ovo, cabo de guerra e caça ao tesouro com pistas escondidas pelo pátio. Cada turma escolheu uma cor para se identificar e torcer bastante durante as disputas.\n\nNo final, todas as turmas se reuniram para a contagem de pontos, e a gincana terminou com uma grande festa, mesmo sem um único vencedor, já que o clima foi de muita diversão para todos.\n\n\"A brincadeira que eu mais gostei foi a caça ao tesouro\", contou uma aluna, ainda ofegante da corrida.\n\nA gincana deve se tornar uma tradição anual na escola.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre qual brincadeira de gincana a turma mais gostaria de fazer."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Descobre Minhocário na Horta",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a descoberta de um minhocário na horta escolar, seguida de roda de conversa sobre a horta.",
+    "text": "JORNAL DA ESCOLA — Edição da Horta\n\nTurma Descobre Minhocário na Horta da Escola\n\nDurante uma visita à horta escolar, a turma do 2º ano fez uma descoberta interessante: um minhocário, uma caixinha cheia de minhocas que ajudam a transformar restos de comida em adubo.\n\nO Professor André explicou que as minhocas comem cascas de frutas e verduras e produzem um adubo natural, ótimo para deixar as plantas da horta fortes e saudáveis. Os alunos puderam observar as minhocas de perto, com luvas, sem medo.\n\nA turma decidiu ajudar a alimentar o minhocário toda semana com restos da merenda, como cascas de banana e maçã.\n\n\"No começo tive nojinho, mas depois achei muito legal ver como elas ajudam as plantas\", contou uma aluna da turma.\n\nA horta da escola deve colher os primeiros vegetais nas próximas semanas.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre como as minhocas ajudam as plantas a crescer."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Alunos Participam de Oficina de Robótica",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre uma oficina de robótica na escola, seguida de roda de conversa sobre tecnologia e invenções.",
+    "text": "JORNAL DA ESCOLA — Edição da Robótica\n\nAlunos Participam de Oficina de Robótica na Escola\n\nA escola promoveu, nesta quinta-feira, uma oficina de robótica para os alunos do 3º ano, usando peças de montar e sensores simples.\n\nEm grupos, os alunos montaram pequenos robôs que se moviam ao apertar um botão, e aprenderam noções básicas de como programar comandos simples no computador. A atividade foi conduzida pelo Professor Marcelo, que incentivou todos a testar diferentes ideias.\n\nNo final da oficina, cada grupo apresentou seu robô para os colegas, explicando como ele funcionava.\n\n\"Foi a primeira vez que eu programei alguma coisa, e o robô realmente andou!\", contou um aluno, muito animado com o resultado.\n\nA escola pretende oferecer novas oficinas de robótica ao longo do ano.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre que tipo de robô a turma gostaria de inventar."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Campanha de Brinquedos no Dia das Crianças",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre uma campanha de arrecadação de brinquedos no Dia das Crianças, seguida de roda de conversa sobre generosidade.",
+    "text": "JORNAL DA ESCOLA — Edição do Dia das Crianças\n\nEscola Realiza Campanha de Arrecadação de Brinquedos\n\nPensando no Dia das Crianças, a escola organizou uma campanha de arrecadação de brinquedos para distribuir entre famílias da comunidade.\n\nDurante duas semanas, os alunos trouxeram brinquedos em bom estado, que não usavam mais, e depositaram em uma caixa decorada montada na entrada da escola. A Professora Juliana ajudou a organizar tudo por idade e tipo de brinquedo.\n\nNa última sexta-feira, os brinquedos arrecadados foram entregues a uma instituição parceira, que cuida de crianças da região.\n\n\"Foi muito bom saber que meu brinquedo vai deixar outra criança feliz no Dia das Crianças\", contou um aluno que participou da campanha.\n\nA escola agradeceu a generosidade de todas as turmas e já pensa em repetir a ação no ano que vem.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre a alegria de doar brinquedos para outras crianças."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Cria o Novo Mascote da Escola",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a votação do mascote da escola, seguida de roda de conversa sobre a criação de personagens.",
+    "text": "JORNAL DA ESCOLA — Edição da Votação\n\nTurma Cria e Escolhe o Novo Mascote da Escola\n\nDepois de semanas de desenhos e ideias, a escola finalmente escolheu seu novo mascote em uma votação animada realizada nesta quarta-feira.\n\nCada turma criou um personagem diferente, entre eles um passarinho estudioso, um gatinho de óculos e uma coruja com mochila. Os desenhos ficaram expostos no pátio para que todos pudessem conhecer as opções antes de votar em uma urna feita de caixa de sapato.\n\nApós a contagem dos votos, a coruja com mochila, criada pela turma do 3º ano, foi a grande vencedora e agora vai representar a escola em eventos e cartazes.\n\n\"Fizemos vários rascunhos até chegar no desenho perfeito\", contou uma aluna da turma criadora do mascote.\n\nO novo mascote já ganhou até um nome escolhido pelos alunos.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre que mascote a turma criaria para representar a escola."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Aula de Educação Física Vira Campeonato",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre um campeonato de pular corda na aula de Educação Física, seguida de roda de conversa sobre esportes.",
+    "text": "JORNAL DA ESCOLA — Edição Esportiva\n\nAula de Educação Física Vira Campeonato de Pular Corda\n\nA aula de Educação Física desta semana ganhou um clima de competição: os alunos participaram de um campeonato de pular corda organizado no pátio da escola.\n\nCada turma formou uma fila e, um a um, os alunos tentaram pular corda pelo maior tempo possível, sem errar. Teve gente pulando sozinho e também duplas pulando juntas, o que arrancou muitas risadas e aplausos dos colegas.\n\nO campeonato foi organizado pelo Professor Ricardo, que cronometrou cada tentativa com um relógio na mão.\n\n\"Treinei em casa a semana toda para conseguir pular mais tempo\", contou uma aluna, orgulhosa de seu resultado.\n\nNo final, todos os participantes receberam um aplauso especial pela dedicação durante o campeonato.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre outros jogos e esportes que a turma gosta de praticar."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Gatinho Aparece no Pátio e Vira Mascote do Dia",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal, sobre um gatinho que aparece no pátio da escola e vira o mascote do dia, seguida de roda de conversa sobre como agir com calma ao encontrar um animal desconhecido.",
+    "text": "JORNAL DA ESCOLA — Edição especial de animais\n\nGatinho surpreende alunos e vira mascote do dia na Escola Girassol\n\nNa manhã desta terça-feira, um gatinho de pelo cor de café apareceu caminhando tranquilo pelo pátio da Escola Municipal Girassol, bem na hora do intervalo. As crianças ficaram encantadas e logo formaram uma roda para observar o visitante peludo.\n\nA professora Cláudia percebeu que o gatinho estava calmo e sem coleira, então avisou a diretoria e pediu que os alunos não se aproximassem demais, para não assustá-lo. Aos poucos, o bichano se aproximou sozinho e aceitou um pouco de água.\n\n\"Ele parecia já conhecer a escola, andava tão à vontade!\", contou a professora Cláudia, sorrindo.\n\nA turma decidiu chamá-lo de Café, por causa da cor do pelo, e ele passou o dia sendo o mascote especial da escola, recebendo carinho e muita atenção. No fim da tarde, a coordenação combinou de procurar um tutor responsável para cuidar dele com carinho.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre como agir com calma e cuidado ao encontrar um animal desconhecido."
+    ]
+  },
+  {
+    "theme": "Jornal do Bairro: Gato Resgatado da Árvore Vira Alívio da Vizinhança",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal, sobre o resgate de um gato que subiu em uma árvore muito alta, seguida de roda de conversa sobre a importância de pedir ajuda de adultos em situações de risco.",
+    "text": "JORNAL DO BAIRRO — Edição de hoje\n\nGato do bairro é resgatado depois de subir em árvore muito alta\n\nMoradores da Rua das Acácias viveram um momento de susto e depois muito alívio nesta quarta-feira. O gato Fubá, conhecido de todos na vizinhança, subiu em uma árvore alta e não conseguia descer sozinho.\n\nO miado do gatinho chamou a atenção de quem passava, e logo um grupo de vizinhos se reuniu para ajudar. Como a árvore era muito alta, eles chamaram uma equipe de resgate especializada em animais.\n\nCom escada e muito cuidado, o resgatista conseguiu chegar até Fubá e trazê-lo para baixo, são e salvo, em poucos minutos.\n\n\"Foi um alívio enorme ver o gatinho a salvo\", contou a dona Iolanda, tutora de Fubá, abraçando o bichano.\n\nDepois do susto, Fubá recebeu muitos afagos e um potinho de petisco. Os vizinhos combinaram de ficar de olho sempre que ele sair para passear.\n\nPor hoje é só, pessoal! Até a próxima edição!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre a importância de pedir ajuda de um adulto em situações de risco com animais."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Encontra Gatinho Perdido e Ajuda a Reencontrar a Dona",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal, sobre uma turma que encontra um gatinho perdido perto da escola e ajuda a devolvê-lo para a dona, seguida de roda de conversa sobre ajudar animais perdidos com responsabilidade.",
+    "text": "JORNAL DA ESCOLA — Edição de sexta-feira\n\nTurma do 2º ano encontra gatinha perdida e ajuda a reencontrar a dona\n\nNa manhã desta sexta-feira, os alunos do 2º ano da Escola Municipal Arco-Íris encontraram uma gatinha cor de amora, sem coleira, miando perto do portão da escola. Com medo de que ela estivesse perdida, avisaram logo a professora.\n\nA professora Beatriz ajudou as crianças a fazerem cartazes coloridos com a foto da gatinha, escritos com a ajuda da turma toda. Os cartazes foram colados em postes da rua, com um número de telefone para contato.\n\nNo fim da tarde, dona Rosa, moradora do bairro, reconheceu a gatinha Amora nos cartazes e foi correndo até a escola, muito aliviada.\n\n\"Eu procurei a Amora a manhã inteira, vocês são uns heróis!\", agradeceu dona Rosa, abraçando a gatinha.\n\nA turma ficou muito feliz em ajudar a reunir as duas de novo, e todos combinaram de sempre avisar um adulto quando encontrarem um bichinho perdido.\n\nEssa foi a notícia de hoje. Até mais!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre como ajudar animais perdidos e a importância de avisar um adulto."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Concurso de Desenho Tem Gatinhos Como Tema",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal, sobre um concurso de desenho na escola com gatinhos como tema, seguida de roda de conversa sobre criatividade e imaginação na hora de desenhar.",
+    "text": "JORNAL DA ESCOLA — Edição especial de arte\n\nConcurso de desenho com tema gatinhos encanta toda a Escola Passarinho\n\nEsta semana, a Escola Estadual Passarinho promoveu um concurso de desenho para os alunos do Ensino Fundamental, e o tema escolhido foi \"Gatinhos\". Os corredores da escola ficaram coloridos com dezenas de desenhos de bichanos de todos os jeitos.\n\nCada turma pôde participar com desenhos feitos em sala, usando lápis de cor, giz de cera e até colagem. Teve gato listrado, gato preto, gato de óculos e até gato astronauta, criado pela imaginação dos alunos.\n\nUma comissão de professores escolheu os desenhos mais criativos, mas todos os trabalhos foram expostos no mural da entrada, para que as famílias pudessem admirar.\n\n\"Fiquei muito orgulhosa da criatividade da turma, cada desenho contava uma historinha diferente\", disse a professora Lívia, uma das organizadoras do concurso.\n\nO aluno Pedro, do 3º ano, venceu na categoria mais votada pelos colegas, com um desenho de um gatinho listrado tomando sol na janela. A escola já planeja um novo concurso para o próximo bimestre.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre criatividade e imaginação na hora de desenhar."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Gata Tem Filhotes Pertinho da Escola",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal, sobre uma gata que tem filhotes perto da escola e é acompanhada pela turma, seguida de roda de conversa sobre os cuidados com filhotes recém-nascidos.",
+    "text": "JORNAL DA ESCOLA — Edição especial de animais\n\nGata Luna tem filhotes perto da escola e turma acompanha o crescimento\n\nHá duas semanas, a gata Luna, que já vivia na vizinhança da Escola Municipal Girassol, teve quatro filhotinhos em uma caixa de papelão protegida, montada por um zelador da escola embaixo de uma árvore no pátio.\n\nDesde então, os alunos do 3º ano pediram para observar os filhotes de longe, sem mexer neles, para não assustar a mamãe gata. A professora aproveitou para explicar como os gatinhos recém-nascidos precisam de cuidado e calma.\n\nToda semana, a turma registra em um caderno como os filhotes estão crescendo: primeiro de olhinhos fechados, depois já andando meio bambos, e agora brincando uns com os outros.\n\n\"É emocionante ver os alunos tão cuidadosos e curiosos ao mesmo tempo\", contou o zelador seu Antônio, responsável por cuidar da caixinha.\n\nQuando os filhotes crescerem um pouco mais, a escola vai ajudar a encontrar famílias amorosas para cada um deles, com a Luna sempre por perto.\n\nPor hoje é só, pessoal! Até a próxima edição!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre os cuidados necessários com filhotes de animais recém-nascidos."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Gatinho Invade Sala de Aula Durante a Prova",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal, sobre um gatinho que entra escondido na sala de aula durante uma prova, seguida de roda de conversa sobre como manter a calma diante de situações inesperadas.",
+    "text": "JORNAL DA ESCOLA — Edição extra\n\nGatinho entra escondido na sala e vira a atração do dia durante a prova\n\nNa manhã desta quinta-feira, os alunos do 3º ano da Escola Municipal Girassol se preparavam para fazer uma prova de matemática quando um gatinho branco e cinza entrou escondido pela porta, que estava entreaberta.\n\nO bichano, que mais tarde descobriram se chamar Bolinha e pertencer a um morador da rua ao lado, andou tranquilo entre as carteiras, cheirando mochilas e provocando risadinhas baixinhas na turma.\n\nA professora Cláudia, com calma, pegou Bolinha no colo para que a prova pudesse continuar, e o gatinho ficou fazendo companhia, quietinho, em uma caixa forrada perto da mesa dela.\n\n\"Ele deixou a prova bem menos assustadora, até os mais nervosos relaxaram\", contou a professora, rindo.\n\nNo final da aula, o tutor de Bolinha veio buscá-lo, agradecendo a gentileza da turma. Todos combinaram que, da próxima vez, vão deixar um potinho de água na porta para ele.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre como manter a calma diante de situações inesperadas."
+    ]
+  },
+  {
+    "theme": "Jornal do Bairro: Bombeiros Resgatam Gatinho Preso Embaixo de um Carro",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal, sobre o resgate de um gatinho preso embaixo de um carro, seguida de roda de conversa sobre o trabalho dos bombeiros e a importância de pedir ajuda profissional.",
+    "text": "JORNAL DO BAIRRO — Edição de hoje\n\nBombeiros resgatam gatinho que ficou preso embaixo de um carro\n\nNa tarde desta segunda-feira, moradores da Rua das Acácias ouviram um miado insistente vindo de baixo de um carro estacionado. Ao se aproximarem, descobriram um gatinho cinza, ainda bem pequeno, preso entre as peças do veículo.\n\nComo ninguém conseguia tirá-lo sozinho, os vizinhos chamaram os bombeiros, que chegaram rapidamente com equipamentos apropriados para fazer o resgate com segurança, sem machucar o animal.\n\nApós alguns minutos de trabalho cuidadoso, o gatinho, batizado ali mesmo de Pingo pelos moradores, foi retirado sem nenhum arranhão e recebido com aplausos por quem estava acompanhando.\n\n\"Ficamos com o coração apertado, mas os bombeiros foram rápidos e gentis com ele\", contou o morador seu Carlos, que ajudou a chamar a equipe.\n\nPingo foi levado a um veterinário para uma revisão e, depois, uma família da vizinhança se ofereceu para adotá-lo e cuidar dele com muito carinho.\n\nPor hoje é só, pessoal! Até a próxima edição!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre o trabalho dos bombeiros e a importância de pedir ajuda profissional."
+    ]
+  },
+  {
+    "theme": "Jornal do Bairro: Vizinhos Organizam Campanha de Adoção de Gatinhos",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal, sobre vizinhos que organizam uma campanha para adotar gatinhos de rua, seguida de roda de conversa sobre a importância da adoção responsável de animais.",
+    "text": "JORNAL DO BAIRRO — Edição especial\n\nMoradores organizam campanha de adoção para ajudar gatinhos de rua\n\nUm grupo de moradores do bairro Vila Nova decidiu se unir para ajudar os gatinhos que vivem soltos pelas ruas da região. A ideia surgiu depois que perceberam vários filhotes precisando de cuidado e alimentação.\n\nA campanha, batizada de \"Um Lar para Cada Gatinho\", reuniu vizinhos que ajudaram a levar os bichanos ao veterinário para checar a saúde de cada um antes de procurar novas famílias.\n\nCartazes coloridos foram espalhados pela vizinhança, com fotos dos gatinhos e um número de telefone para quem quisesse adotar com responsabilidade.\n\n\"Em poucos dias, quase todos os gatinhos já tinham uma família esperando por eles\", contou dona Helena, uma das organizadoras da campanha.\n\nA ação foi um sucesso, e os moradores já planejam repetir a campanha sempre que novos gatinhos precisarem de ajuda, mostrando que trabalho em equipe faz toda a diferença.\n\nEssa foi a notícia de hoje. Até mais!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre a importância da adoção responsável de animais de estimação."
+    ]
+  },
+  {
+    "theme": "Gazeta do Bairro: Gato de Estimação Aprende Truque Novo e Faz Sucesso",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal, sobre um gato de estimação que aprende um truque novo e vira sensação no bairro, seguida de roda de conversa sobre paciência e carinho no treinamento de animais.",
+    "text": "GAZETA DO BAIRRO — Edição de hoje\n\nGato aprende a dar \"high five\" e vira sensação entre os vizinhos\n\nO gato Mel, de pelo alaranjado, sempre foi conhecido por ser esperto, mas ninguém esperava que ele aprenderia um truque tão engraçado. Depois de semanas de treino com petiscos, ele aprendeu a levantar a patinha para cumprimentar as pessoas.\n\nSeu tutor, o aluno Théo, do bairro Jardim das Flores, começou a treinar Mel por brincadeira, sem imaginar que o gato aprenderia tão rápido. Agora, sempre que alguém estende a mão, Mel responde com sua patinha.\n\nA novidade se espalhou entre os vizinhos, que passaram a visitar a casa só para ver o truque ao vivo.\n\n\"No começo eu achei que ele não ia aprender, mas o Mel me surpreendeu\", contou Théo, orgulhoso do gato.\n\nAgora Théo pensa em ensinar mais truques para Mel, sempre com paciência e muito carinho, sem forçar o gatinho a fazer nada que ele não queira.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre paciência e carinho no treinamento de animais de estimação."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Visita Abrigo de Gatos em Passeio Especial",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal, sobre uma turma que visita um abrigo de gatos em um passeio escolar, seguida de roda de conversa sobre os cuidados que um abrigo oferece aos animais.",
+    "text": "JORNAL DA ESCOLA — Edição de passeio\n\nAlunos do 3º ano visitam abrigo de gatos e aprendem sobre cuidado animal\n\nNesta quarta-feira, a turma do 3º ano da Escola Estadual Passarinho fez um passeio especial até um abrigo de gatos da cidade, que cuida de bichanos à espera de uma nova família.\n\nNo local, os alunos conheceram vários gatinhos de cores e tamanhos diferentes e aprenderam, com a ajuda dos cuidadores, como alimentar, escovar e brincar com os animais de forma segura e gentil.\n\nA turma também ficou sabendo que muitos gatos chegam ao abrigo perdidos ou abandonados, e que a adoção responsável é uma forma importante de ajudar.\n\n\"Foi muito bonito ver o cuidado que cada gatinho recebe aqui todos os dias\", disse a professora Lívia, que organizou o passeio.\n\nAo final da visita, os alunos decidiram organizar uma arrecadação de ração e cobertores para doar ao abrigo, ajudando ainda mais os gatinhos que esperam por um lar.\n\nPor hoje é só, pessoal! Até a próxima edição!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre os cuidados que um abrigo de animais oferece aos bichanos."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Gatinho Se Esconde na Mochila e Vai Parar na Escola",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal, sobre um gatinho que se esconde na mochila de um aluno e vai parar na escola, seguida de roda de conversa sobre como agir com cuidado diante de um imprevisto com animais.",
+    "text": "JORNAL DA ESCOLA — Edição extra\n\nGatinho se esconde na mochila e faz viagem surpresa até a escola\n\nO aluno Rafael teve uma surpresa e tanto na manhã desta terça-feira. Ao abrir a mochila na sala de aula para pegar o caderno, encontrou um gatinho preto e branco escondido entre os materiais escolares.\n\nO gatinho, que provavelmente entrou na mochila enquanto ela estava aberta em casa, parecia calmo, apenas espiando tudo com curiosidade. Rafael avisou a professora na mesma hora, sem se assustar.\n\nA turma toda ficou animada com a visita inesperada, e a professora ajudou a acomodar o gatinho, batizado de Sardinha pela turma, em uma caixinha confortável até o fim das aulas.\n\n\"Eu nem percebi quando ele entrou, mas fiquei feliz que ele estava bem\", contou Rafael, sorrindo.\n\nNo final do dia, a família de Rafael veio buscá-lo junto com Sardinha, que passou a fazer parte da casa como novo integrante, agora sim, de propósito.\n\nEssa foi a notícia de hoje. Até mais!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre como agir com calma diante de um imprevisto envolvendo um animal."
+    ]
+  },
+  {
+    "theme": "Jornal do Bairro: Feira de Adoção de Gatinhos Reúne Famílias na Praça",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal, sobre uma feira de adoção de gatinhos que acontece na praça do bairro, seguida de roda de conversa sobre a importância de adotar animais com responsabilidade.",
+    "text": "JORNAL DO BAIRRO — Edição de fim de semana\n\nFeira de adoção de gatinhos reúne famílias na Praça da Alegria\n\nNeste sábado, a Praça da Alegria recebeu uma feira de adoção especial, organizada por voluntários da região para ajudar gatinhos que precisavam de um novo lar. Barraquinhas coloridas montaram um espaço confortável para os bichanos.\n\nCada gatinho tinha uma plaquinha com seu nome e um pouco de sua história, e os voluntários conversavam com cada família interessada para garantir que a adoção seria feita com responsabilidade e carinho.\n\nCrianças e adultos passaram a manhã brincando com os gatinhos, e muitos deles encontraram uma família disposta a cuidar bem para sempre.\n\n\"Ver cada gatinho saindo daqui com uma família feliz é a melhor recompensa\", contou dona Célia, uma das voluntárias organizadoras.\n\nAté o fim da tarde, quase todos os gatinhos já tinham encontrado um novo lar, e os organizadores já pensam em fazer outra feira em breve.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre a importância de adotar animais com responsabilidade."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Gato da Vizinhança Vira Xerife Simpático da Horta",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal, sobre um gato da vizinhança que passa a 'vigiar' a horta da escola, seguida de roda de conversa sobre a relação entre animais e o cuidado com plantas e hortas.",
+    "text": "JORNAL DA ESCOLA — Edição especial de animais\n\nGato da vizinhança adota a horta da escola e vira xerife simpático do lugar\n\nHá algumas semanas, o gato Canela, bem conhecido na vizinhança da Escola Municipal Girassol, descobriu a hortinha cuidada pelos alunos e passou a aparecer todos os dias para dar uma \"olhada\".\n\nDeitado entre os pés de alface e tomate, Canela parece vigiar o espaço, e os alunos adoram brincar que ele é o guarda oficial da horta, sempre de olho em passarinhos e insetos curiosos.\n\nA professora responsável pela horta percebeu que, desde que Canela passou a frequentar o lugar, as plantinhas não sofreram mais com bichinhos indesejados.\n\n\"Ele parece levar o trabalho muito a sério, fica ali paradinho, vigiando tudo\", contou a professora Beatriz, entre risos.\n\nOs alunos decidiram deixar sempre uma tigela de água por perto para agradecer a companhia de Canela, que virou parte da rotina divertida da horta escolar.\n\nPor hoje é só, pessoal! Até a próxima edição!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre a relação entre animais e o cuidado com plantas e hortas."
+    ]
+  },
+  {
+    "theme": "Gazeta do Bairro: Concurso Gato Mais Fofo do Bairro Tem Final Emocionante",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal, sobre o concurso 'Gato Mais Fofo do Bairro' e seu final emocionante, seguida de roda de conversa sobre respeito e carinho com os animais de estimação de todos.",
+    "text": "GAZETA DO BAIRRO — Edição especial\n\nConcurso \"Gato Mais Fofo do Bairro\" tem final emocionante na praça\n\nNeste domingo, o bairro Jardim das Flores realizou a grande final do concurso \"Gato Mais Fofo do Bairro\", que reuniu dezenas de tutores e seus gatinhos na Praça da Alegria, todos muito bem cuidados e enfeitados.\n\nCada gatinho desfilou em um tapete improvisado, e o público aplaudia com carinho a cada um deles, sem nenhuma disputa de verdade, apenas muita festa e alegria entre os vizinhos.\n\nNo final, depois de muita votação animada, o gatinho Pipoca, de pelo branco e uma manchinha preta no olho, foi escolhido o mais fofo pelo público presente.\n\n\"A gente participa mais pela diversão do que para ganhar, foi um dia lindo\", contou seu Nelson, tutor de Pipoca, sorrindo bastante.\n\nTodos os gatinhos participantes ganharam um certificado de \"fofura\" e um potinho de petisco, e o bairro já está combinando a próxima edição do concurso.\n\nEssa foi a notícia de hoje. Até mais!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre respeito e carinho com os animais de estimação de todos."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Gatinho Órfão Vira Mascote Querido da Turma",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal, sobre um gatinho órfão que é adotado por toda a turma como mascote da sala, seguida de roda de conversa sobre responsabilidade e trabalho em equipe no cuidado de um animal.",
+    "text": "JORNAL DA ESCOLA — Edição especial\n\nGatinho órfão encontrado perto da escola vira mascote querido da turma\n\nNo início do mês, um gatinho muito pequeno e sozinho foi encontrado perto do portão da Escola Estadual Passarinho, sem nenhum sinal da mãe por perto. A professora Cláudia decidiu levá-lo para casa até que ele estivesse mais fortalecido.\n\nDurante esse tempo, a turma acompanhou de perto, com fotos e notícias trazidas pela professora, o crescimento do gatinho, batizado de Mingau por causa do pelinho clarinho.\n\nQuando ficou grandinho o suficiente, a turma decidiu, em conjunto, adotar Mingau como mascote da sala, com revezamento de cuidados combinado entre as famílias, sempre com a orientação de um adulto responsável.\n\n\"Foi lindo ver os alunos se organizando para cuidar dele com tanto carinho\", contou a professora Cláudia, emocionada.\n\nHoje, Mingau é o queridinho da turma, e as crianças aprenderam, na prática, o quanto cuidar de um animal exige responsabilidade e trabalho em equipe.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre responsabilidade e trabalho em equipe no cuidado de um animal."
+    ]
+  },
+  {
+    "theme": "Jornal do Bairro: Gata Resgatada da Chuva Vira Queridinha da Rua",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal, sobre uma gata resgatada da chuva que vira queridinha da rua, seguida de roda de conversa sobre como ajudar animais em dias de chuva ou frio.",
+    "text": "JORNAL DO BAIRRO — Edição de hoje\n\nGata encontrada encharcada na chuva vira queridinha de toda a rua\n\nDurante uma forte chuva na última sexta-feira, moradores da Rua das Acácias avistaram uma gatinha cinza, completamente encharcada, abrigada debaixo de um carro, tremendo de frio.\n\nA vizinha dona Marta não pensou duas vezes: pegou uma toalha e, com cuidado, enrolou a gatinha para levá-la para dentro de casa, onde ofereceu um cantinho quentinho e um pouco de comida.\n\nApós se aquecer e descansar, a gatinha, batizada de Neve por causa do pelo claro, mostrou-se muito dócil e carinhosa com todos que se aproximavam.\n\n\"Ela parecia tão assustada, mas bastou um pouco de carinho para ela se acalmar\", contou dona Marta, com a gata enrolada no colo.\n\nCom o tempo, Neve se tornou conhecida por toda a rua, sendo visitada e mimada pelos vizinhos, que agora sempre ficam de olho nela nos dias de chuva.\n\nPor hoje é só, pessoal! Até a próxima edição!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre como ajudar animais em dias de chuva ou frio."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Gatinho Brincalhão Derruba Vaso e Faz a Turma Rir",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal, sobre um gatinho brincalhão que derruba um vaso de planta e faz a turma rir, seguida de roda de conversa sobre como lidar com imprevistos engraçados com bom humor.",
+    "text": "JORNAL DA ESCOLA — Edição bem-humorada\n\nGatinho brincalhão derruba vaso de planta e vira a estrela do recreio\n\nNa tarde desta quinta-feira, o gatinho Biscoito, que vive na escola e já é conhecido de todos, decidiu perseguir uma borboleta durante o recreio da Escola Municipal Girassol e acabou esbarrando em um vaso de planta no corredor.\n\nO vaso caiu com um barulho engraçado, espalhando um pouco de terra pelo chão, e Biscoito saiu correndo, com o rabo todo arrepiado, arrancando gargalhadas de toda a turma que estava por perto.\n\nO zelador seu Antônio veio ajudar a limpar tudo rapidinho, sem nenhum estrago maior, enquanto os alunos ainda riam contando a cena uns para os outros.\n\n\"Ele é o bagunceiro mais fofo que já tivemos por aqui\", brincou seu Antônio, replantando a mudinha com cuidado.\n\nDepois da confusão, Biscoito recebeu carinho de todo mundo e a turma prometeu ajudar a cuidar melhor dos vasos, para as próximas perseguições de borboleta serem mais tranquilas.\n\nEssa foi a notícia de hoje. Até mais!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre como lidar com imprevistos do dia a dia com bom humor."
+    ]
+  },
+  {
+    "theme": "Jornal do Bairro: Dupla de Gatinhos Gêmeos Nasce na Casa de Aluno",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal, sobre uma dupla de gatinhos gêmeos que nasce na casa de um aluno, seguida de roda de conversa sobre os cuidados com filhotes recém-nascidos.",
+    "text": "JORNAL DO BAIRRO — Edição de hoje\n\nDupla de gatinhos gêmeos nasce na casa de aluno e encanta a vizinhança\n\nA família do aluno Miguel teve uma alegria dobrada na semana passada: a gata da casa, chamada Estrela, deu à luz dois filhotinhos muito parecidos, quase idênticos, que logo ganharam o apelido de gêmeos do bairro.\n\nOs gatinhos, batizados de Sol e Lua por causa das pelagens clara e escura, nasceram saudáveis e já estão abrindo os olhinhos, sempre grudados um no outro para dormir.\n\nMiguel contou com orgulho a novidade para os colegas de turma, que ficaram curiosos para acompanhar o crescimento da dupla nas próximas semanas.\n\n\"A gente nunca tinha visto dois gatinhos tão parecidos, é uma fofura só\", contou Miguel, todo animado.\n\nA família já está providenciando tudo o que os filhotes precisam, com muito carinho e paciência, e Miguel promete trazer fotos para mostrar aos amigos como Sol e Lua estão crescendo.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre os cuidados necessários com filhotes recém-nascidos."
+    ]
+  },
+  {
+    "theme": "Jornal do Bairro: Gato Desaparecido É Encontrado Dentro do Armário",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal, sobre um gato que desaparece por um dia e é encontrado dentro do armário da cozinha, seguida de roda de conversa sobre como procurar com calma um animal perdido em casa.",
+    "text": "JORNAL DO BAIRRO — Edição de hoje\n\nGato desaparecido é encontrado dormindo dentro do armário da cozinha\n\nA família de dona Iolanda viveu um dia de preocupação depois que o gato Pandora sumiu de repente na manhã de terça-feira. Todos procuraram por baixo das camas, no quintal e até na rua, sem encontrar nenhum sinal do bichano.\n\nDepois de muitas horas de busca e bastante aflição, foi o filho mais novo da família quem teve a ideia de abrir o armário da cozinha, onde guardam potes e panelas, e lá estava Pandora, dormindo tranquilamente entre as toalhas.\n\nO gatinho havia entrado escondido no armário sem que ninguém percebesse e simplesmente cochilou o dia inteiro, sem imaginar toda a preocupação que causou.\n\n\"Foi um alívio enorme ver o gatinho a salvo, ainda mais dormindo tão tranquilo\", contou dona Iolanda, rindo do susto.\n\nDepois do episódio, a família combinou de sempre checar os armários antes de fechá-los, e Pandora ganhou até um cantinho especial só para os cochilos dele.\n\nPor hoje é só, pessoal! Até a próxima edição!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre como procurar com calma um animal de estimação perdido em casa."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Cria Casinha de Papelão Para Gatinho de Rua",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal, sobre uma turma que cria uma casinha de papelão para um gatinho de rua, seguida de roda de conversa sobre solidariedade e cuidado com animais de rua.",
+    "text": "JORNAL DA ESCOLA — Edição especial de solidariedade\n\nTurma constrói casinha de papelão para proteger gatinho de rua do frio\n\nDepois de perceber que um gatinho de rua, chamado carinhosamente de Fumaça pelos alunos, costumava se abrigar perto do muro da Escola Estadual Passarinho, a turma do 2º ano teve uma ideia solidária: construir uma casinha só para ele.\n\nCom a ajuda da professora Beatriz, os alunos usaram caixas de papelão, tinta e um pouco de criatividade para montar um abrigo confortável, forrado com um cobertor velho, protegido da chuva e do vento.\n\nA casinha foi colocada em um cantinho seguro perto da escola, e desde então Fumaça passou a dormir ali, sempre visitado pelos alunos, que deixam água e comida todos os dias.\n\n\"Foi muito bonito ver a turma inteira se unindo para ajudar o gatinho\", contou a professora Beatriz, orgulhosa dos alunos.\n\nCom o abrigo pronto, Fumaça agora tem um cantinho quentinho para chamar de seu, e a turma aprendeu como pequenas atitudes podem fazer muita diferença na vida de um animal.\n\nEssa foi a notícia de hoje. Até mais!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Roda de conversa sobre solidariedade e cuidado com animais que vivem na rua."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Deixa a Escola Pronta para o Arraial",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a decoração da Festa Junina feita pela turma, seguida de roda de conversa sobre as tradições da festa junina.",
+    "text": "JORNAL DA ESCOLA — Edição especial de Festa Junina\n\nEscola vira arraial colorido para a festa de junho\n\nNesta semana, os corredores da Escola Municipal Alegria ganharam bandeirinhas, balões e um sol de cartolina enorme na entrada. Os alunos do 3º ano B decidiram deixar tudo pronto para a Festa Junina que acontece na sexta-feira.\n\nA ideia surgiu numa roda de conversa: cada turma ficou responsável por decorar um espaço diferente. A turma da professora Fernanda cuidou do pátio, enchendo os varais com bandeirinhas coloridas feitas de papel crepom.\n\n\"Cortamos, colamos e ainda aprendemos sobre as cores, porque cada bandeirinha ficou de uma cor diferente\", contou a aluna Beatriz, 8 anos, mostrando o varal.\n\nAlém da decoração, os alunos ensaiam a quadrilha e combinam as roupas: chapéu de palha, chita e tranças. O zelador seu Joaquim ajudou a pendurar as luzes no palco improvisado do pátio.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Fazer uma roda de conversa sobre as tradições da Festa Junina: comidas, roupas, danças e por que ela é comemorada em junho."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: 2º Ano A Sorteia Amigo Secreto de Natal",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a organização do amigo secreto de Natal da turma, seguida de roda de conversa sobre a importância de presentear com carinho.",
+    "text": "JORNAL DA ESCOLA — Edição de hoje\n\nTurma do 2º A sorteia amigo secreto de fim de ano\n\nNuma manhã cheia de risadas, os alunos do 2º ano A organizaram o tradicional amigo secreto de Natal. Cada criança escreveu seu nome num papelzinho e colocou dentro de uma caixa decorada com estrelas.\n\nA brincadeira foi ideia do próprio grupo, depois de uma conversa sobre presentear sem gastar muito dinheiro. Ficou combinado que os presentes seriam desenhos, bilhetes carinhosos ou pequenos objetos feitos à mão.\n\n\"Vou fazer um desenho do amigo que eu tirei, porque ele adora dinossauros\", contou o aluno Miguel, todo animado com o sorteio.\n\nA professora Laura lembrou a turma da importância de guardar segredo até o dia da troca, marcada para a última semana de aula antes das férias.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Fazer uma roda de conversa sobre a importância de presentear com carinho, mesmo com coisas simples e feitas à mão."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Escola Recebe as Mães com Café da Manhã Especial",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre o café da manhã especial em homenagem às mães, seguida de roda de conversa sobre a importância das mães e cuidadoras.",
+    "text": "JORNAL DA ESCOLA — Edição especial do Dia das Mães\n\nEscola recebe as mães com café da manhã especial\n\nNa manhã de quarta-feira, o pátio da Escola Municipal Girassol se encheu de mesas enfeitadas com toalhas coloridas para o café da manhã em homenagem às mães dos alunos.\n\nA turma do 3º ano C ajudou a preparar tudo: dobraram guardanapos, escreveram cartões e organizaram uma mesa cheia de frutas, bolos e sucos trazidos pelas famílias.\n\n\"Fiz um cartão com um coração enorme escrito 'obrigada por tudo'\", disse a aluna Alice, entregando o presente para a mãe assim que ela chegou.\n\nDurante o encontro, os alunos cantaram uma música especial e a diretora dona Rosa agradeceu a presença de todas as famílias que puderam comparecer.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Fazer uma roda de conversa sobre a importância das mães e de quem cuida da gente todos os dias."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Alunos Preparam Surpresa para o Dia dos Pais",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a homenagem preparada pelos alunos para o Dia dos Pais, seguida de roda de conversa sobre a importância dos pais e cuidadores.",
+    "text": "JORNAL DA ESCOLA — Edição de hoje\n\nAlunos preparam surpresa para o Dia dos Pais\n\nOs alunos do 2º ano B passaram a semana preparando uma homenagem especial para os pais, que serão recebidos na escola nesta sexta-feira com um mural de fotos e mensagens.\n\nCada criança escreveu um bilhete contando por que admira seu pai ou responsável, e os textos foram colados num painel enorme montado na entrada da escola.\n\n\"Escrevi que meu pai me ensina a andar de bicicleta todo domingo de manhã\", contou o aluno Enzo, sorrindo enquanto colava o bilhete.\n\nO professor Caio organizou também uma apresentação de música, em que a turma vai cantar para os convidados especiais logo na chegada.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Fazer uma roda de conversa sobre a importância dos pais e responsáveis na vida de cada criança."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Escola Organiza Desfile Cívico de 7 de Setembro",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre o desfile cívico de 7 de Setembro, seguida de roda de conversa sobre a Independência do Brasil.",
+    "text": "JORNAL DA ESCOLA — Edição especial de 7 de Setembro\n\nEscola organiza desfile cívico para comemorar a Independência\n\nA Escola Municipal Horizonte Azul prepara um desfile cívico para o dia 7 de setembro, com participação de todas as turmas do Ensino Fundamental 1.\n\nOs alunos ensaiam o hino nacional e caminham pelo pátio carregando bandeiras do Brasil feitas em sala de aula com tinta guache verde e amarela.\n\n\"É a primeira vez que vou desfilar, estou super animada com o ensaio\", contou a aluna Manuela, do 3º ano A, ajustando sua faixa antes da fila.\n\nA professora Sofia explicou à turma o significado da data e por que é importante lembrar a história do país com respeito e alegria.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Fazer uma roda de conversa sobre o que é a Independência do Brasil e por que comemoramos o 7 de Setembro."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Celebra a Consciência Negra com Roda de Capoeira",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a roda de capoeira do Dia da Consciência Negra, seguida de roda de conversa sobre a valorização da cultura afro-brasileira.",
+    "text": "JORNAL DA ESCOLA — Edição especial da Consciência Negra\n\nTurma celebra 20 de novembro com roda de capoeira no pátio\n\nNesta quinta-feira, o pátio da escola se transformou em roda de capoeira para celebrar o Dia da Consciência Negra, data que valoriza a cultura e a história do povo negro no Brasil.\n\nUm mestre de capoeira foi convidado para ensinar os movimentos básicos e tocar o berimbau, enquanto os alunos formavam a roda cantando junto, batendo palmas no ritmo certo.\n\n\"Aprendi que a capoeira é dança, luta e música ao mesmo tempo, é muito legal!\", contou o aluno Rafael, do 3º ano B, ainda ofegante da roda.\n\nDepois da atividade, a turma conversou sobre personalidades negras importantes da história e da cultura brasileira, valorizando suas conquistas e contribuições.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Fazer uma roda de conversa sobre a valorização da cultura afro-brasileira e a importância do 20 de novembro."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Pátio Vira Cenário de Caça aos Ovos de Páscoa",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a caça aos ovos de Páscoa no pátio da escola, seguida de roda de conversa sobre celebrar em família.",
+    "text": "JORNAL DA ESCOLA — Edição de Páscoa\n\nPátio da escola vira cenário de caça aos ovos de Páscoa\n\nNa manhã desta sexta-feira, os alunos do 2º ano C participaram de uma animada caça aos ovos de chocolate espalhados pelo pátio da escola.\n\nAntes da brincadeira, a professora Isadora explicou que a Páscoa é um momento de celebrar a família, a amizade e a renovação, cada um do seu jeito.\n\nEscondidos atrás de vasos de plantas e embaixo dos bancos, os ovos coloridos deixaram a turma eufórica. \"Achei três ovos, foi o melhor dia do ano!\", contou o aluno Davi, correndo pelo pátio.\n\nAo final, todos dividiram os doces encontrados e fizeram um desenho sobre o que mais gostaram na brincadeira da manhã.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Fazer uma roda de conversa sobre momentos de celebrar em família e com os amigos."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Alunos Criam Personagens Inventados para o Carnaval",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre os personagens inventados pelos alunos para o Carnaval, seguida de roda de conversa sobre criatividade e fantasia.",
+    "text": "JORNAL DA ESCOLA — Edição especial de Carnaval\n\nAlunos criam personagens inventados para o Carnaval da escola\n\nA festa de Carnaval da Escola Municipal Arco-Íris teve um toque especial este ano: em vez de fantasias prontas, os alunos do 3º ano A inventaram seus próprios personagens.\n\nDurante duas semanas, a turma desenhou, deu nome e criou histórias para os personagens, que depois viraram fantasias feitas com material reciclável.\n\n\"Meu personagem se chama Capitão Papelão e ele salva o planeta reciclando lixo\", contou o aluno Théo, orgulhoso da fantasia que fez em casa.\n\nNo dia da festa, todos desfilaram pelo pátio ao som de marchinhas, apresentando suas criações para as outras turmas da escola.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Fazer uma roda de conversa sobre criatividade e sobre inventar personagens e fantasias próprias."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Mural de Desejos Recebe o Ano Novo",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre o mural de desejos feito para receber o Ano Novo, seguida de roda de conversa sobre sonhos e metas para o novo ano.",
+    "text": "JORNAL DA ESCOLA — Edição de Ano Novo\n\nEscola recebe o Ano Novo com mural de desejos da turma\n\nPara comemorar a chegada do Ano Novo, os alunos do 2º ano A montaram um grande mural na entrada da escola, cheio de desejos escritos à mão.\n\nCada criança escreveu num papel colorido o que gostaria de aprender ou conquistar no ano que está começando, e colou a mensagem no painel decorado com estrelas.\n\n\"Meu desejo é aprender a nadar e ler livros mais grossos\", contou a aluna Helena, mostrando seu bilhete pendurado no mural.\n\nA professora Ana Clara aproveitou o momento para conversar sobre metas e sonhos, incentivando a turma a acreditar em suas próprias conquistas.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Fazer uma roda de conversa sobre sonhos e metas de cada aluno para o ano que está começando."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Alunos Viajam pelo Brasil das Lendas no Dia do Folclore",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre as lendas brasileiras apresentadas no Dia do Folclore, seguida de roda de conversa sobre a cultura popular brasileira.",
+    "text": "JORNAL DA ESCOLA — Edição do Dia do Folclore\n\nAlunos viajam pelo Brasil das lendas no Dia do Folclore\n\nPara celebrar o Dia do Folclore, a escola organizou uma manhã especial contando lendas brasileiras como o Saci-Pererê, a Iara e o Curupira.\n\nOs alunos do 3º ano C se vestiram de personagens usando fantasias simples, feitas com meias e retalhos de tecido, e encenaram pequenas histórias para as outras turmas.\n\n\"Eu fiz o gorro vermelho do Saci com minha avó, foi muito divertido\", contou o aluno Gabriel, cheio de orgulho da fantasia.\n\nDepois das apresentações, a turma conversou sobre como as lendas mostram a diversidade cultural do país e nascem de histórias contadas de geração em geração.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Fazer uma roda de conversa sobre lendas e a cultura popular brasileira contada de geração em geração."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Organiza Festa Surpresa para o Aniversário da Escola",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a festa surpresa organizada para o aniversário da escola, seguida de roda de conversa sobre a história e o carinho pela escola.",
+    "text": "JORNAL DA ESCOLA — Edição de hoje\n\nTurma organiza festa surpresa para o aniversário da escola\n\nEm segredo absoluto, os alunos do 3º ano B planejaram uma festa surpresa para comemorar o aniversário da Escola Municipal Alegria, que completa 30 anos nesta semana.\n\nA turma fez cartazes, balões e um bolo de mentirinha em cartolina para decorar o pátio, tudo escondido da direção até a hora certa da surpresa.\n\n\"Foi difícil guardar segredo, mas valeu muito a pena ver a cara da diretora\", contou a aluna Sofia, rindo do susto que deram.\n\nA diretora dona Rosa se emocionou ao entrar no pátio decorado e agradeceu o carinho de toda a turma pela lembrança especial.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Fazer uma roda de conversa sobre a história da escola e o carinho que a turma sente por ela."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Escola Resgata Brincadeiras Antigas no Dia da Criança",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre o resgate de brincadeiras antigas no Dia da Criança, seguida de roda de conversa sobre brincadeiras de diferentes épocas.",
+    "text": "JORNAL DA ESCOLA — Edição especial do Dia da Criança\n\nEscola resgata brincadeiras antigas para o Dia da Criança\n\nPara comemorar o Dia da Criança, a escola organizou uma manhã inteira de brincadeiras antigas, como amarelinha, pião, corda e passa-anel, espalhadas pelo pátio.\n\nOs avós de alguns alunos foram convidados para ensinar as regras dos jogos que eles brincavam quando eram crianças, muitas décadas atrás.\n\n\"Nunca tinha jogado bolinha de gude, agora é minha brincadeira favorita\", contou o aluno Bernardo, todo empolgado com a novidade.\n\nAo final do dia, a turma conversou sobre como as brincadeiras mudam com o tempo, mas a diversão continua sendo sempre a mesma.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Fazer uma roda de conversa comparando as brincadeiras de antigamente com as brincadeiras de hoje."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Monta Árvore de Natal com Garrafas Recicladas",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a árvore de Natal reciclada feita com garrafas pet, seguida de roda de conversa sobre reciclagem e sustentabilidade.",
+    "text": "JORNAL DA ESCOLA — Edição verde de Natal\n\nTurma monta árvore de Natal com garrafas pet recicladas\n\nOs alunos do 2º ano B passaram semanas juntando garrafas pet para montar uma árvore de Natal sustentável na entrada da escola.\n\nCom ajuda da professora Valentina, as garrafas foram lavadas, pintadas de verde e encaixadas em formato de árvore, decoradas com enfeites feitos de tampinhas coloridas.\n\n\"É uma árvore ecológica, porque em vez de jogar as garrafas fora, a gente transformou elas em decoração\", explicou o aluno Lucas, ajustando o último enfeite.\n\nA atividade também serviu para conversar sobre reciclagem e a importância de cuidar do planeta em qualquer época do ano.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Fazer uma roda de conversa sobre reciclagem e formas de cuidar do planeta no dia a dia."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Escola Celebra os Povos Indígenas com Contação de Histórias",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a contação de histórias do Dia dos Povos Indígenas, seguida de roda de conversa sobre a diversidade dos povos indígenas do Brasil.",
+    "text": "JORNAL DA ESCOLA — Edição especial dos Povos Indígenas\n\nEscola celebra o Dia dos Povos Indígenas com contação de histórias\n\nPara valorizar a cultura dos povos indígenas brasileiros, a escola recebeu um contador de histórias que apresentou lendas e costumes de diferentes etnias do país.\n\nSentados em roda no pátio, os alunos do 3º ano A ouviram histórias sobre a relação dos povos indígenas com a natureza e aprenderam palavras em línguas indígenas.\n\n\"Eu não sabia que existem tantos povos indígenas diferentes no Brasil, cada um com sua língua\", contou a aluna Maria Eduarda, encantada com as histórias.\n\nDepois da roda de histórias, a turma fez desenhos inspirados na natureza para expor no mural da escola.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Fazer uma roda de conversa sobre a diversidade e a importância dos povos indígenas na cultura brasileira."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Alunos Participam da Quermesse de Fim de Ano",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a quermesse de fim de ano da escola, seguida de roda de conversa sobre trabalho em equipe e encerramento do ano letivo.",
+    "text": "JORNAL DA ESCOLA — Edição de fim de ano\n\nAlunos participam da quermesse de encerramento do ano letivo\n\nA Escola Municipal Horizonte Azul recebeu famílias e alunos para a tradicional quermesse de fim de ano, com barracas de jogos, comidas e brincadeiras espalhadas pelo pátio.\n\nCada turma organizou uma barraca: a do 3º ano B era de pescaria, com peixinhos de papel e prêmios pequenos para quem pescasse certo.\n\n\"Ajudei a fazer os peixinhos e a organizar a fila, foi muito trabalho, mas valeu a pena\", contou a aluna Vitória, orgulhosa da barraca.\n\nA festa terminou com uma apresentação de dança preparada pelos alunos, encerrando o ano letivo com muita alegria e aplausos.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Fazer uma roda de conversa sobre trabalho em equipe e sobre o que a turma mais gostou no ano letivo."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Organiza Chá da Manhã para o Dia das Mães",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre o chá da manhã organizado para o Dia das Mães, seguida de roda de conversa sobre gestos de carinho com a família.",
+    "text": "JORNAL DA ESCOLA — Edição especial do Dia das Mães\n\nTurma organiza chá da manhã surpresa para as mães\n\nDiferente do café tradicional, a turma do 2º ano C decidiu organizar um chá da manhã elegante para homenagear as mães, com toalhas de mesa e flores de papel.\n\nOs alunos prepararam convites escritos à mão e escolheram músicas suaves para tocar durante o encontro, que aconteceu no refeitório da escola.\n\n\"Eu escolhi a música favorita da minha mãe para colocar na hora que ela chegasse\", contou o aluno Pedro, sorrindo perto da mesa decorada.\n\nAo final do chá, cada mãe recebeu uma flor de papel feita pelo próprio filho, como lembrança do dia especial.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Fazer uma roda de conversa sobre gestos de carinho que podemos ter com as mães e com a família."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Festival Junino Reúne Quadrilhas de Todas as Turmas",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre o festival junino com a quadrilha das turmas, seguida de roda de conversa sobre as tradições da festa junina.",
+    "text": "JORNAL DA ESCOLA — Edição especial de Festa Junina\n\nFestival junino reúne quadrilhas de todas as turmas\n\nNo sábado, a escola realizou seu tradicional festival junino, com apresentações de quadrilha de todas as turmas do Ensino Fundamental 1.\n\nAs roupas coloridas, os laços e os chapéus de palha tomaram conta do palco, enquanto os pais assistiam animados às coreografias ensaiadas nas últimas semanas.\n\n\"Errei um passo, mas continuei sorrindo até o final\", contou o aluno Miguel, do 2º ano A, contando como foi sua apresentação.\n\nAlém da quadrilha, o festival teve barracas de comidas típicas e brincadeiras, fechando a noite com uma linda apresentação de luzes no palco.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Fazer uma roda de conversa sobre as tradições da festa junina e a origem da quadrilha."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Comemora Conquista com Festa na Sala",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a comemoração de uma conquista da escola, seguida de roda de conversa sobre a importância de comemorar conquistas em grupo.",
+    "text": "JORNAL DA ESCOLA — Edição comemorativa\n\nTurma comemora conquista da escola com festa na sala\n\nA Escola Municipal Alegria venceu um concurso municipal de leitura, e a notícia foi recebida com muita festa pela turma do 3º ano B.\n\nAssim que souberam do resultado, os alunos decoraram a sala com balões e cartazes escritos \"Somos campeões de leitura!\", em comemoração ao prêmio conquistado.\n\n\"A gente leu tantos livros esse ano que nem contamos direito, mas valeu cada página\", contou a aluna Laura, sorrindo para os colegas.\n\nA diretora dona Rosa parabenizou a turma e prometeu uma tarde de cinema como recompensa pelo esforço de todos os alunos.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Fazer uma roda de conversa sobre a importância de comemorar conquistas em grupo e valorizar o esforço coletivo."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Escola Celebra o Dia Mundial da Água",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre as brincadeiras educativas do Dia Mundial da Água, seguida de roda de conversa sobre economia de água no dia a dia.",
+    "text": "JORNAL DA ESCOLA — Edição do Dia Mundial da Água\n\nEscola celebra o Dia Mundial da Água com brincadeiras educativas\n\nPara marcar o Dia Mundial da Água, a escola organizou uma manhã de brincadeiras e experiências sobre a importância de cuidar desse recurso tão precioso.\n\nOs alunos do 2º ano B participaram de um jogo de perguntas e respostas sobre economia de água e também plantaram mudas usando água reaproveitada da chuva.\n\n\"Aprendi que não posso deixar a torneira aberta enquanto escovo os dentes\", contou o aluno Gabriel, decidido a mudar o hábito em casa.\n\nA atividade terminou com um cartaz coletivo cheio de dicas para economizar água em casa e na escola.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Fazer uma roda de conversa sobre formas simples de economizar água no dia a dia."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Alunos Decoram a Escola para Receber o Papai Noel",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a decoração da escola para receber o Papai Noel, seguida de roda de conversa sobre a magia e o clima de fim de ano.",
+    "text": "JORNAL DA ESCOLA — Edição de Natal\n\nAlunos decoram a escola para receber o Papai Noel\n\nNesta semana, os corredores da escola ganharam luzes, laços vermelhos e flocos de neve de papel, preparando tudo para a visita especial do Papai Noel.\n\nA turma do 3º ano C organizou a decoração da entrada, pendurando enfeites feitos em sala de aula com materiais recicláveis e muita criatividade.\n\n\"Fizemos flocos de neve de papel dobrado, mesmo sem neve de verdade aqui\", contou a aluna Alice, mostrando os enfeites brancos pendurados na janela.\n\nA visita está marcada para a última semana de aula, quando o Papai Noel vai entregar pequenas lembranças para toda a turma.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Fazer uma roda de conversa sobre a magia e o clima de fim de ano nas famílias e na escola."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Inverno Chega com Casacos e Cachecóis no Pátio",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a chegada do inverno e as roupas quentes no pátio, seguida de roda de conversa sobre as roupas de frio que os alunos gostam de usar.",
+    "text": "JORNAL DA ESCOLA — Edição de hoje\n\nInverno chega e pátio vira desfile de casacos coloridos\n\nNesta semana, o inverno chegou de vez à escola, e o pátio ficou diferente logo cedo. Os alunos apareceram com casacos, gorros, cachecóis e luvas de todas as cores para brincar no recreio.\n\nA professora Célia, do 2º ano, contou que resolveu fazer uma roda de conversa sobre o frio antes da aula começar. \"É gostoso ver a turma toda agasalhada, cada um com uma peça diferente\", disse ela.\n\nO aluno Rafael, do 3º ano, apareceu com um gorro de lã laranja que ganhou da avó. \"Esquentei até a ponta do nariz!\", contou ele, rindo com os amigos.\n\nNa hora do recreio, a diretora pediu que todos tomassem cuidado para não esquecer o casaco pendurado na cadeira. Os alunos ajudaram os colegas menores a fechar o zíper e amarrar o cachecol.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre quais roupas quentes eles gostam de usar quando chega o frio."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Observa a Mudança das Folhas no Outono",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a mudança das folhas na chegada do outono, seguida de roda de conversa sobre as cores e mudanças que essa estação traz.",
+    "text": "JORNAL DA ESCOLA — Edição especial de outono\n\nÁrvore do pátio muda de cor e vira aula ao ar livre\n\nO outono chegou trazendo uma surpresa para os alunos do 3º ano: a grande árvore do pátio da escola começou a soltar folhas amarelas e alaranjadas, cobrindo o chão como um tapete colorido.\n\nA professora Denise aproveitou a novidade para tirar a turma da sala e fazer uma aula diferente, sentada em roda perto da árvore. Os alunos observaram, tocaram e até desenharam as folhas que caíam.\n\n\"Por que as folhas mudam de cor, professora?\", perguntou a aluna Isadora, curiosa, segurando uma folha alaranjada na mão. A turma toda ficou esperando a resposta com atenção.\n\nO aluno Enzo resolveu juntar as folhas mais bonitas para fazer um mural na sala. \"Vou colar todas numa cartolina e escrever o nome do outono bem grande\", disse ele, animado.\n\nNo fim da aula, todos guardaram uma folhinha na mochila para mostrar em casa. Fim da edição de hoje. Até a próxima notícia!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre as cores e mudanças que aparecem na natureza durante o outono."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Calor do Verão Anima Brincadeiras com Água",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre brincadeiras com água no recreio por causa do calor, seguida de roda de conversa sobre como as crianças se refrescam no verão.",
+    "text": "JORNAL DA ESCOLA — Edição de verão\n\nRecreio molhado alegra tarde quente na escola\n\nCom o calor forte do verão, a escola decidiu liberar uma brincadeira especial no recreio desta sexta-feira: baldes de água e esponjas para refrescar a turma toda.\n\nOs alunos do 2º e do 3º ano se organizaram em fila para brincar com cuidado, sob o olhar atento do professor Bruno, que ajudou a molhar as esponjas sem exagerar na bagunça.\n\n\"Hoje o recreio ficou ainda mais gostoso, porque o sol estava de dar sede só de olhar\", contou a aluna Valentina, toda molhada e sorrindo de orelha a orelha.\n\nDepois da brincadeira, a merendeira dona Zilda preparou um suco bem geladinho para todo mundo. \"Depois de tanta correria, nada melhor que uma bebida fresquinha\", disse ela, servindo os copinhos.\n\nA diretora avisou que, nos dias mais quentes, a brincadeira com água pode se repetir, sempre com a autorização dos professores. Fim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre como cada um gosta de se refrescar nos dias muito quentes de verão."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Primavera Enche o Jardim de Flores Novas",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre o florescimento do jardim na primavera, seguida de roda de conversa sobre o cuidado com plantas e flores.",
+    "text": "JORNAL DA ESCOLA — Edição especial de primavera\n\nJardim da escola fica colorido com a chegada da primavera\n\nA primavera chegou e trouxe uma novidade linda para o jardim da escola: as roseiras e os pés de margarida que a turma plantou no mês passado finalmente floresceram.\n\nFoi a professora Rita quem percebeu primeiro, logo cedo, ao abrir o portão da escola. Ela chamou os alunos do 2º ano para dar uma volta pelo jardim antes da primeira aula.\n\n\"Olha quantas cores apareceram! Rosa, amarelo, branco... parece um arco-íris no chão\", disse a aluna Marina, encantada, agachada perto das flores para sentir o cheiro.\n\nO aluno Davi, que ajudou a regar as plantinhas todos os dias, ficou orgulhoso do resultado. \"Eu sabia que ia dar certo, só precisava de sol e água\", contou ele, sorrindo bastante.\n\nA escola decidiu colocar uma placa perto do jardim pedindo para todos cuidarem das flores novas. Fim da edição especial de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre a importância de cuidar das plantas e flores que nascem na primavera."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Chuva Forte Cancela Recreio ao Ar Livre",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre uma chuva forte que mudou os planos do recreio, seguida de roda de conversa sobre brincadeiras possíveis em dias de chuva.",
+    "text": "JORNAL DA ESCOLA — Edição extra\n\nTemporal muda os planos do recreio desta quarta-feira\n\nUma chuva forte surpreendeu a escola bem na hora do recreio desta quarta-feira, e o sinal precisou tocar mais cedo para chamar todo mundo para dentro da sala.\n\nO professor Tiago avisou a turma pelo alto-falante que, por segurança, ninguém poderia ficar no pátio molhado. Os alunos correram para os corredores cobertos, ouvindo o barulho da chuva no telhado.\n\n\"Que pena, eu ia jogar bola hoje\", disse o aluno Miguel, olhando pela janela enquanto a água escorria pelo vidro. Mas logo a turma encontrou um jeito de se divertir mesmo assim.\n\nA inspetora Helena organizou um recreio diferente dentro da sala, com jogos de tabuleiro e desenhos. \"Chuva não estraga a diversão, só muda o lugar dela\", disse ela, distribuindo os jogos.\n\nAo final do dia, o sol voltou a aparecer e todos torceram por um recreio ao ar livre no dia seguinte. Fim da edição extra de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre brincadeiras divertidas que dá para fazer dentro da sala em dias de chuva."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Volta às Aulas Anima os Corredores",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a volta às aulas depois das férias, seguida de roda de conversa sobre os sentimentos de reencontrar os amigos.",
+    "text": "JORNAL DA ESCOLA — Edição de volta às aulas\n\nCorredores ficam cheios de abraços na volta às aulas\n\nDepois de um período de férias, a escola voltou a ficar cheia de vida nesta segunda-feira. Os corredores se encheram de risadas, abraços e histórias para contar.\n\nA professora Iracema recebeu a turma do 3º ano na porta da sala com um cartaz escrito \"Bem-vindos de volta!\". Muitos alunos chegaram com mochilas novas e cadernos ainda sem nenhuma folha usada.\n\n\"Eu estava com saudade dos meus amigos e até da professora\", contou a aluna Alice, dando um abraço apertado na colega Clara logo na entrada da sala.\n\nO aluno Pedro trouxe uma foto da viagem que fez com a família e mostrou para todo mundo antes da aula começar. \"Foi a melhor parte das minhas férias\", disse ele, sorrindo.\n\nA diretora aproveitou para desejar um ótimo ano a todos os alunos e professores. Fim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre como foi o reencontro com os amigos depois das férias."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Férias de Julho Terminam com Muitas Novidades",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre o fim das férias de julho e as novidades trazidas pela turma, seguida de roda de conversa sobre o que cada um fez nas férias.",
+    "text": "JORNAL DA ESCOLA — Edição de julho\n\nFim das férias de julho traz muitas histórias para contar\n\nAs férias de julho terminaram e a turma do 2º ano voltou às aulas cheia de novidades para dividir com os colegas nesta manhã de retorno.\n\nO professor Nelson organizou uma roda de conversa logo na primeira aula para que cada aluno pudesse contar um pouco do que fez durante o descanso. A sala ficou animada com tantas histórias diferentes.\n\n\"Eu fui para a casa da minha avó e aprendi a fazer pipoca doce\", contou o aluno Gustavo, muito animado, enquanto os colegas escutavam com atenção.\n\nJá a aluna Sofia contou que passou as férias brincando no quintal com o irmão mais novo. \"A gente construiu uma casinha de caixa de papelão gigante\", disse ela, orgulhosa.\n\nNo fim da roda de conversa, todos concordaram que, apesar de terem gostado das férias, também estavam felizes de reencontrar os amigos na escola. Fim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Fazer uma roda de conversa em que cada aluno conta uma novidade das últimas férias."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Dias Mais Curtos do Inverno Mudam a Rotina",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre os dias mais curtos do inverno, seguida de roda de conversa sobre como o sol nasce e se põe em horários diferentes ao longo do ano.",
+    "text": "JORNAL DA ESCOLA — Edição de inverno\n\nSol se põe mais cedo e escola se adapta ao inverno\n\nCom a chegada do inverno, os dias ficaram mais curtos, e os alunos que saem da escola no fim da tarde perceberam que o céu já escurece bem mais cedo.\n\nA professora Célia comentou com a turma que, no inverno, o sol nasce mais tarde e se põe mais cedo, por isso a claridade dura menos tempo durante o dia.\n\n\"Hoje quando eu saí da escola, o céu já estava quase escuro, parecia noite!\", contou o aluno Bernardo, surpreso com a mudança que percebeu na saída.\n\nPara deixar a tarde mais aconchegante, a escola resolveu acender as luzes dos corredores um pouco mais cedo e pediu que os alunos usassem casacos na hora de ir embora.\n\nA aluna Larissa achou a novidade interessante e prometeu observar, todos os dias, a que horas o céu começa a escurecer. Fim da edição de inverno. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre como eles percebem que os dias ficam mais curtos no inverno."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Semana do Frio Termina com Sopa Coletiva",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a semana do frio e a sopa coletiva feita pela turma, seguida de roda de conversa sobre comidas gostosas nos dias frios.",
+    "text": "JORNAL DA ESCOLA — Edição especial\n\nSemana do frio termina com sopa feita por todos os alunos\n\nPara comemorar a chegada dos dias mais frios, a escola organizou a \"Semana do Frio\", com atividades sobre o inverno durante toda a semana, e o encerramento foi uma sopa coletiva preparada com a ajuda da turma.\n\nCada aluno trouxe um ingrediente de casa: cenoura, batata, mandioquinha e até um punhado de macarrão. A merendeira dona Zilda cozinhou tudo com muito cuidado na cozinha da escola.\n\n\"Adorei ver os alunos participando, cada um trouxe um pedacinho da sopa de casa\", contou dona Zilda, mexendo a panela grande enquanto o cheirinho tomava conta do refeitório.\n\nO aluno João, que trouxe a cenoura, ficou orgulhoso quando provou a sopa. \"Eu ajudei a fazer isso, ficou muito gostosa!\", disse ele, tomando mais uma colherada.\n\nA turma toda se sentou junto para comer e se aquecer nesse dia mais frio. Fim da edição especial de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre comidas quentinhas que eles gostam de comer nos dias frios."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Ventania Derruba Brinquedos e Turma Ajuda a Arrumar",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre uma ventania que bagunçou o pátio, seguida de roda de conversa sobre trabalho em equipe e cuidado com os espaços comuns.",
+    "text": "JORNAL DA ESCOLA — Edição do dia\n\nVento forte bagunça o pátio e alunos ajudam a organizar tudo\n\nUm vento forte passou pela escola na noite passada e, quando os alunos chegaram nesta manhã, encontraram alguns brinquedos do pátio espalhados e até uma cadeira virada de ponta-cabeça.\n\nO professor Márcio explicou para a turma que ventanias assim podem acontecer em certas épocas do ano e que não havia motivo para se assustar. \"Vamos arrumar tudo juntos, com calma\", disse ele.\n\nOs alunos formaram uma corrente para recolher os brinquedos e guardá-los no lugar certo. \"Parecia um quebra-cabeça gigante para montar de novo\", brincou a aluna Beatriz, carregando um pneu de brincar.\n\nO inspetor seu Antônio agradeceu a ajuda da turma. \"Com vocês, ficou tudo arrumado rapidinho\", disse ele, sorrindo, enquanto varria as últimas folhas espalhadas pelo chão.\n\nNo fim da manhã, o pátio já estava do jeitinho de sempre, pronto para o recreio. Fim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre a importância de ajudar a cuidar e arrumar os espaços da escola juntos."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Verão Traz Sorvete de Brinde na Cantina",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre um sorvete de brinde oferecido na cantina por causa do calor, seguida de roda de conversa sobre sabores de sorvete preferidos.",
+    "text": "JORNAL DA ESCOLA — Edição de verão\n\nCantina surpreende alunos com sorvete de brinde no calor\n\nPara comemorar os dias quentes de verão, a cantina da escola preparou uma surpresa nesta quinta-feira: todo aluno que fosse ao recreio ganhou um sorvetinho de brinde.\n\nA funcionária da cantina, dona Marlene, contou que a ideia surgiu justamente por causa do calorão que estava fazendo. \"Pensei: nada melhor que um sorvete gelado num dia assim\", disse ela, distribuindo os potinhos.\n\nO aluno Lucas escolheu o sabor morango e comeu rapidinho antes que derretesse todo. \"Foi o melhor recreio do verão até agora!\", contou ele, com a boca ainda gelada.\n\nA aluna Helena preferiu o sabor chocolate e dividiu uma colherada com a amiga do lado. \"Sorvete sempre fica melhor quando a gente divide\", disse ela, rindo.\n\nA diretora avisou que, se o calor continuar forte, a surpresa pode se repetir em outros dias de verão. Fim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre os sabores de sorvete favoritos de cada um."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Primeira Geada do Ano Surpreende os Alunos",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a primeira geada do ano numa manhã fria, seguida de roda de conversa sobre fenômenos do frio observados pelos alunos.",
+    "text": "JORNAL DA ESCOLA — Edição fria de hoje\n\nGeada cobre o gramado da escola numa manhã gelada\n\nNesta manhã, os alunos que chegaram mais cedo tiveram uma surpresa gelada: o gramado perto da entrada da escola estava coberto por uma fina camada branca de geada, a primeira do ano.\n\nA professora Denise aproveitou o momento para levar a turma até perto da grade, com casacos bem fechados, para observar de longe o fenômeno raro naquela região. \"É a água virando gelo por causa do frio intenso\", explicou ela.\n\n\"Parece açúcar espalhado na grama!\", disse a aluna Isadora, admirada, apontando para o chão brilhante sob o sol fraco da manhã.\n\nO aluno Enzo quis tocar de leve na grama gelada e sentiu a mão gelar na hora. \"Está bem geladinho mesmo, professora!\", contou ele, esfregando as mãos uma na outra.\n\nCom o passar da manhã, o sol foi derretendo a geada aos poucos. Fim da edição fria de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre já terem visto geada, gelo ou muito frio em algum momento."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Planta Sementes de Primavera na Horta",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre o plantio de sementes na horta da escola em comemoração à primavera, seguida de roda de conversa sobre o cuidado com hortas e plantas.",
+    "text": "JORNAL DA ESCOLA — Edição da horta\n\nAlunos plantam sementes novas na horta para celebrar a primavera\n\nPara celebrar a chegada da primavera, a turma do 3º ano foi até a horta da escola nesta manhã para plantar sementes novas de flores e de alguns temperinhos.\n\nO professor Bruno separou as sementinhas em potes pequenos e explicou como cavar buraquinhos rasos na terra antes de colocar cada semente. \"Depois é só regar todos os dias e esperar\", disse ele.\n\nA aluna Valentina escolheu plantar sementes de girassol. \"Quero ver ele crescer bem alto, mais alto que eu!\", contou ela, sorrindo enquanto cobria a semente com terra.\n\nJá o aluno Rafael preferiu plantar cheiro-verde, pensando na merenda da escola. \"Assim a gente ajuda a temperar a comida da cantina\", disse ele, orgulhoso da ideia.\n\nA turma prometeu visitar a horta todas as semanas para acompanhar o crescimento das plantinhas. Fim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre o que é preciso para uma planta crescer bem na primavera."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Recreio de Inverno Ganha Campeonato de Dominó",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre um campeonato de dominó criado por causa do frio do inverno, seguida de roda de conversa sobre brincadeiras de mesa preferidas.",
+    "text": "JORNAL DA ESCOLA — Edição do recreio\n\nFrio do inverno faz nascer campeonato de dominó na sala\n\nComo o inverno andava deixando o pátio frio demais para brincar muito tempo lá fora, a professora Rita teve uma ideia: organizar um campeonato de dominó dentro da sala durante o recreio.\n\nOs alunos se dividiram em duplas e formaram uma fila para jogar, enquanto esperavam a vez sentados em roda, bem agasalhados, tomando um chazinho quentinho que a escola preparou.\n\n\"Eu nunca tinha jogado dominó antes, mas já estou craque!\", contou o aluno Miguel, animado, batendo a última peça na mesa.\n\nA aluna Marina, que ganhou a primeira rodada, recebeu um aplauso de todos os colegas. \"Foi mais divertido que eu imaginava, quero jogar de novo amanhã\", disse ela, sorrindo.\n\nO campeonato de dominó fez tanto sucesso que a professora prometeu repetir a brincadeira em outros dias frios. Fim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre jogos de mesa que eles gostam de jogar em dias frios dentro de casa."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Outono Enche o Pátio de Folhas Secas",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre as folhas secas do outono que viraram brincadeira no pátio, seguida de roda de conversa sobre brincadeiras ao ar livre nessa estação.",
+    "text": "JORNAL DA ESCOLA — Edição de outono\n\nMonte de folhas secas vira brincadeira favorita do outono\n\nO outono espalhou tantas folhas secas pelo pátio da escola que os alunos resolveram transformar a limpeza em brincadeira nesta sexta-feira, antes mesmo do recreio começar.\n\nO inspetor seu Ivo separou um cantinho do pátio e ajuntou as folhas num montinho enorme, com a ajuda de vários alunos que carregavam as folhas em baldinhos coloridos.\n\n\"Posso pular no montinho, seu Ivo?\", perguntou o aluno Davi, todo animado, olhando para a pilha de folhas crocantes.\n\nCom a autorização do inspetor, alguns alunos pularam de leve por cima das folhas, rindo muito com o barulhinho que elas faziam. \"Parece um tapete que faz música quando pisa\", disse a aluna Alice.\n\nDepois da brincadeira, todos ajudaram a juntar as folhas de novo para o jardineiro levar embora. Fim da edição de outono. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre brincadeiras divertidas que dá para fazer com folhas secas no outono."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Chuva de Verão Vira Brincadeira no Intervalo",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre uma chuva rápida de verão que animou o intervalo, seguida de roda de conversa sobre o som e o cheiro da chuva de verão.",
+    "text": "JORNAL DA ESCOLA — Edição chuvosa\n\nChuva rápida de verão anima o intervalo de um jeito diferente\n\nUma chuva rápida de verão caiu bem na hora do intervalo desta terça-feira, mas em vez de estragar a diversão, ela deu início a uma brincadeira nova debaixo do telhado do pátio coberto.\n\nO professor Tiago propôs que a turma ficasse observando as gotas caindo e ouvindo o barulho da chuva no telhado, enquanto cantavam uma música sobre o verão.\n\n\"Adoro esse barulhinho da chuva, parece uma música de verdade\", disse a aluna Clara, batendo palmas no ritmo das gotas caindo.\n\nO aluno Pedro aproveitou uma poça pequena que se formou perto da entrada para observar o reflexo do céu na água, com cuidado para não se molhar demais.\n\nAssim que a chuva parou, o sol voltou a aparecer e o recreio continuou animado como sempre. Fim da edição chuvosa de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre o que eles sentem quando ouvem o barulho da chuva de verão."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Escola se Prepara para a Semana Mais Fria do Ano",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre dicas de agasalho para a semana mais fria do ano, seguida de roda de conversa sobre formas de se proteger do frio intenso.",
+    "text": "JORNAL DA ESCOLA — Edição de última hora\n\nEscola avisa: semana mais fria do ano está chegando\n\nA direção da escola avisou nesta quarta-feira que a próxima semana deve ser a mais fria do ano, e pediu que todos os alunos vinham preparados com casacos bem quentinhos.\n\nA professora Iracema aproveitou o aviso para dar algumas dicas simples de como se agasalhar direito: usar mais de uma camada de roupa, não esquecer meias grossas e sempre trazer um cachecol na mochila.\n\n\"Quem se agasalha direito consegue aproveitar o recreio sem sentir tanto frio\", explicou ela para a turma, enquanto mostrava um desenho de um menino bem vestido para o inverno.\n\nO aluno João prometeu já separar o casaco mais quente que tinha em casa. \"Vou pedir para minha mãe separar o gorro também\", disse ele, animado com o aviso.\n\nA escola pediu ainda que as famílias mandassem uma garrafinha de água morna nos dias mais gelados. Fim da edição de última hora. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre outras dicas de como se proteger bem nos dias mais frios do ano."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Sol Forte do Verão Pede Boné e Protetor Solar",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre o reforço do uso de boné e protetor solar por causa do sol forte do verão, seguida de roda de conversa sobre cuidados com o sol.",
+    "text": "JORNAL DA ESCOLA — Edição do sol\n\nEscola pede boné e protetor solar por causa do sol forte\n\nCom o sol bem forte destes dias de verão, a escola decidiu reforçar um aviso importante para toda a turma: usar boné e passar protetor solar antes das atividades ao ar livre.\n\nO professor Nelson explicou, numa roda de conversa, que o sol do verão pode machucar a pele se a gente ficar exposto por muito tempo sem proteção. \"Por isso o boné e o protetor solar são tão importantes\", disse ele.\n\nA aluna Sofia contou que sua mãe já separa o protetor solar toda manhã antes de vir para a escola. \"Ela passa em mim antes de eu sair de casa\", disse ela, mostrando o bonezinho amarelo que usava.\n\nO aluno Gustavo, que esqueceu o boné em casa, prometeu não esquecer mais. \"Amanhã eu já deixo separado perto da mochila\", disse ele, um pouco encabulado.\n\nA escola combinou de deixar um aviso na entrada, lembrando todo mundo da proteção contra o sol. Fim da edição do sol. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre outros cuidados importantes para os dias de sol forte no verão."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma do 2º Ano Vence Campeonato de Futebol de Botão",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre um campeonato de futebol de botão vencido pela turma do 2º ano, seguida de roda de conversa sobre trabalho em equipe nos esportes.",
+    "text": "JORNAL DA ESCOLA — Edição de hoje\n\nTurma do 2º Ano é a grande campeã do Campeonato de Futebol de Botão!\n\nNa manhã desta quinta-feira, a escola viveu momentos de muita emoção. Aconteceu a final do Campeonato de Futebol de Botão, disputada no pátio coberto, entre a turma do 2º ano A e a turma do 3º ano B.\n\nO jogo foi disputadíssimo, com três gols de cada lado, até que, no último minuto, o aluno Pedro Henrique fez o gol da vitória com um botão amarelo bem treinado. A torcida gritou de alegria!\n\n\"Treinamos toda semana no recreio para chegar preparados\", contou a aluna Luiza, capitã do time campeão.\n\nA professora Marta, responsável pela atividade, entregou uma medalha de papel colorido para cada jogador. \"O mais importante foi ver o respeito entre as equipes\", disse ela, sorrindo.\n\nO campeonato faz parte do projeto de esportes de mesa da escola e deve ganhar uma nova edição no próximo semestre.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre a importância do trabalho em equipe e do respeito nos esportes."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Alunos Participam de Oficina de Reciclagem com Garrafas PET",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre uma oficina de reciclagem com garrafas pet realizada na escola, seguida de roda de conversa sobre reciclagem e cuidado com o meio ambiente.",
+    "text": "JORNAL DA ESCOLA — Edição especial de meio ambiente\n\nEscola realiza oficina de reciclagem com garrafas pet!\n\nNesta terça-feira, os alunos do Ensino Fundamental participaram de uma oficina especial de reciclagem, organizada pelo grêmio estudantil. Cada criança trouxe de casa uma garrafa pet vazia e limpa para transformar em um objeto novo.\n\nCom tesoura sem ponta, tinta e muita criatividade, as garrafas viraram potinhos para lápis, vasinhos de planta e até brinquedos de arremesso. A atividade aconteceu no pátio da escola, sob o sol da manhã.\n\n\"Eu não sabia que dava para fazer tanta coisa com uma garrafa que eu ia jogar fora\", disse o aluno Gabriel, todo orgulhoso do seu potinho azul.\n\nA professora Cristina, que ajudou a organizar a oficina, explicou que o objetivo é mostrar que o lixo pode virar material útil. \"Reciclar é cuidar do nosso planeta\", ensinou ela para a turma.\n\nOs objetos criados ficarão expostos no mural da escola durante toda a semana.\n\nEssa foi a notícia de hoje. Até a próxima edição!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre a importância de reciclar e de reaproveitar materiais em casa."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Cria Horta Suspensa com Garrafas Recicladas",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a criação de uma horta suspensa com garrafas recicladas, seguida de roda de conversa sobre reaproveitamento de materiais e cultivo de plantas.",
+    "text": "JORNAL DA ESCOLA — Edição de notícias verdes\n\nAlunos criam horta suspensa usando garrafas recicladas!\n\nNa manhã de quarta-feira, a turma do 3º ano surpreendeu a escola toda com uma novidade: uma horta suspensa feita com garrafas pet penduradas na parede do corredor.\n\nCom a ajuda do professor Ricardo, os alunos cortaram as garrafas ao meio, fizeram furos para a água escorrer e plantaram mudas de alface, cebolinha e salsinha. Depois, penduraram tudo em um varal de corda.\n\n\"Ficou parecendo um jardim pendurado, bem diferente!\", contou a aluna Sofia, animada.\n\nO professor Ricardo explicou que a horta suspensa economiza espaço e ainda reaproveita garrafas que seriam jogadas fora. \"Daqui a algumas semanas, vamos colher e usar tudo na nossa salada\", contou ele à reportagem do jornal.\n\nA turma ficou responsável por regar as plantinhas todos os dias, na hora do recreio.\n\nPor hoje é só, pessoal. Até a próxima edição!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre outras formas de reaproveitar materiais para cultivar plantas."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Aprende a Fazer Pipoca Doce em Aula de Culinária",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre uma aula de culinária em que a turma aprendeu a fazer pipoca doce, seguida de roda de conversa sobre alimentos que gostamos de preparar em casa.",
+    "text": "JORNAL DA ESCOLA — Edição de hoje\n\nCheiro de pipoca doce toma conta da escola!\n\nNesta sexta-feira, a turma do 2º ano teve uma aula bem gostosa: culinária! Com a ajuda da merendeira Dona Célia, os alunos aprenderam a fazer pipoca doce, direto na cozinha da escola.\n\nCada criança pôde ajudar em uma etapa: uma mexia o milho, outra colocava o açúcar e outra experimentava o resultado, é claro, depois de esfriar. O cheirinho doce espalhou-se por todos os corredores.\n\n\"Eu nunca tinha visto a pipoca ficar cor-de-rosa desse jeito!\", disse o aluno Théo, morrendo de rir com a pipoca colorida.\n\nDona Célia contou que a receita é simples e pode ser feita em casa com a ajuda de um adulto. \"O importante é ter cuidado perto do fogo\", avisou ela às crianças.\n\nNo final, todos se sentaram no pátio para saborear juntos a pipoquinha quentinha.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre receitas que já ajudaram a preparar em casa."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Escola Recebe Doação de Instrumentos Musicais",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a doação de instrumentos musicais recebida pela escola, seguida de roda de conversa sobre música e instrumentos favoritos.",
+    "text": "JORNAL DA ESCOLA — Edição especial de música\n\nEscola ganha instrumentos musicais novinhos!\n\nUma notícia animou toda a escola nesta segunda-feira: a escola recebeu uma doação de instrumentos musicais de uma família da comunidade. Chegaram violões, teclados, pandeiros e até um pequeno xilofone.\n\nOs instrumentos foram entregues pela manhã, no pátio, e logo os alunos se reuniram ao redor, curiosos para experimentar cada som.\n\n\"Eu sempre quis tocar teclado e agora vou poder aprender aqui na escola!\", contou a aluna Helena, com os olhos brilhando.\n\nO professor de música, Fernando, agradeceu a doação e explicou que os instrumentos serão usados nas aulas semanais e também em apresentações especiais. \"Agora nossas aulas de música vão ficar ainda mais completas\", comemorou ele.\n\nA diretora da escola disse que pretende organizar um pequeno show no final do ano, para toda a turma mostrar o que aprendeu.\n\nEssa foi a notícia de hoje. Até a próxima edição!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre instrumentos musicais que conhecem ou gostariam de aprender a tocar."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Alunos Participam de Campanha de Plantio de Árvores no Bairro",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre uma campanha de plantio de árvores no bairro, seguida de roda de conversa sobre a importância das árvores para o meio ambiente.",
+    "text": "JORNAL DA ESCOLA — Edição especial de meio ambiente\n\nAlunos plantam árvores nas ruas do bairro!\n\nNo sábado de manhã, um grupo de alunos da escola, acompanhado dos pais e de alguns professores, participou de uma campanha de plantio de árvores organizada pela prefeitura do bairro. Ao todo, foram plantadas quinze mudas de árvores nativas.\n\nCada criança recebeu uma muda, uma pá pequena e luvas para colocar a mão na terra. Depois de plantar, todos regaram as mudinhas com muito cuidado.\n\n\"Vou voltar aqui daqui a um ano para ver minha árvore crescendo\", disse o aluno Bernardo, orgulhoso da sua muda de ipê.\n\nA professora Joana, que organizou a saída da escola, explicou que as árvores ajudam a refrescar as ruas e dão casa para os passarinhos. \"Cada árvore plantada é um presente para o futuro\", disse ela ao grupo.\n\nA prefeitura prometeu voltar ao bairro em alguns meses para cuidar das mudinhas junto com as crianças.\n\nPor hoje é só. Até a próxima edição!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre por que as árvores são importantes para as cidades."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Cria Banda Escolar com Instrumentos Reciclados",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a criação de uma banda escolar com instrumentos reciclados, seguida de roda de conversa sobre música feita com materiais reaproveitados.",
+    "text": "JORNAL DA ESCOLA — Edição especial de música\n\nSurge a primeira banda da escola feita com instrumentos reciclados!\n\nNesta quinta-feira, a turma do 3º ano apresentou um projeto muito especial: uma banda montada inteiramente com instrumentos reciclados. Os alunos usaram latas, potes, canos de PVC e elásticos para criar tambores, chocalhos e violões improvisados.\n\nA apresentação aconteceu no pátio, durante o recreio, e reuniu alunos de várias turmas para assistir e bater palma no ritmo da música.\n\n\"Meu tambor é feito de lata de leite em pó, mas o som fica ótimo!\", contou o aluno Danilo, batucando animado.\n\nA professora Renata, que ajudou no projeto, explicou que a ideia surgiu durante as aulas sobre reaproveitamento de materiais. \"Eles perceberam que música pode nascer de qualquer coisa\", contou ela, orgulhosa da turma.\n\nA banda já tem até nome: Bandinha do Reaproveita. A próxima apresentação está marcada para a festa junina da escola.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre outros materiais que poderiam virar instrumentos musicais."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Escola Promove Torneio de Xadrez entre as Turmas",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre um torneio de xadrez entre as turmas da escola, seguida de roda de conversa sobre paciência e concentração nos jogos.",
+    "text": "JORNAL DA ESCOLA — Edição de hoje\n\nTorneio de xadrez agita a escola nesta semana!\n\nComeçou nesta segunda-feira o Torneio de Xadrez entre as turmas do Ensino Fundamental. As partidas acontecem na biblioteca, durante o horário do recreio, e já reúnem dezenas de alunos curiosos assistindo em silêncio.\n\nCada turma escolheu dois representantes para jogar. As peças se movem com calma pelo tabuleiro, enquanto os colegas torcem baixinho para não atrapalhar a concentração dos jogadores.\n\n\"Xadrez ensina a gente a pensar antes de agir\", contou o aluno Otávio, um dos representantes do 3º ano, depois de vencer sua primeira partida.\n\nO professor Cláudio, organizador do torneio, explicou que o objetivo não é só competir, mas aprender com calma e paciência. \"Aqui, o mais importante é pensar bem antes de mover a peça\", disse ele aos participantes.\n\nA grande final está marcada para sexta-feira, no pátio, com direito a medalhas para os dois finalistas.\n\nEssa foi a notícia de hoje. Até a próxima edição!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre jogos que exigem paciência e concentração."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Alunos Visitam Zoológico e Conhecem Animais de Perto",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre uma visita da turma a um zoológico, seguida de roda de conversa sobre animais e a preservação da natureza.",
+    "text": "JORNAL DA ESCOLA — Edição especial de passeio\n\nTurma do 2º ano visita o zoológico da cidade!\n\nNa quarta-feira, os alunos do 2º ano saíram da escola bem cedo para um passeio muito esperado: uma visita ao zoológico da cidade. O ônibus saiu cheio de crianças animadas e cheias de perguntas.\n\nDurante o passeio, os alunos conheceram araras coloridas, macacos brincalhões e até um tucano bem de perto. Um guia explicou como cada animal vive e do que se alimenta.\n\n\"Eu adorei ver a onça-pintada, ela é enorme!\", contou a aluna Manuela, ainda impressionada com o passeio.\n\nA professora Vanessa, que acompanhou a turma, aproveitou para explicar sobre a importância de preservar os animais e seus habitats. \"Cada bicho tem um papel importante na natureza\", ensinou ela durante o caminho de volta.\n\nDe volta à escola, os alunos desenharam os animais favoritos que viram durante o passeio.\n\nPor hoje é só, pessoal. Até a próxima edição!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre animais que gostariam de conhecer de perto e por que devemos preservá-los."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Organiza Campeonato de Pipa no Fim de Semana",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre um campeonato de pipa organizado pela turma no fim de semana, seguida de roda de conversa sobre segurança nas brincadeiras ao ar livre.",
+    "text": "JORNAL DA ESCOLA — Edição de fim de semana\n\nCéu se enche de pipas coloridas no campeonato da turma!\n\nNo sábado à tarde, alunos do 3º ano se reuniram na praça perto da escola para um animado campeonato de pipa. Cada criança levou sua própria pipa, feita em casa com a ajuda da família.\n\nCom o vento forte da tarde, as pipas subiram rápido, e logo o céu ficou cheio de cores. Houve prêmio para a pipa mais alta, a mais colorida e a mais criativa.\n\n\"Minha pipa é toda decorada com estrelas, eu mesma pintei!\", contou a aluna Isadora, orgulhosa da sua criação.\n\nO professor Wagner, que ajudou a organizar o evento, lembrou as crianças sobre a importância de soltar pipa em local seguro, longe de fios elétricos. \"Segurança em primeiro lugar, depois a diversão\", avisou ele antes do início.\n\nNo fim da tarde, todos se despediram combinando um novo campeonato para o próximo mês.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre cuidados de segurança ao soltar pipa ou brincar ao ar livre."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Escola Inaugura Sala de Tecnologia com Computadores Novos",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a inauguração de uma sala de tecnologia na escola, seguida de roda de conversa sobre o uso dos computadores para aprender.",
+    "text": "JORNAL DA ESCOLA — Edição especial de tecnologia\n\nEscola inaugura sala de tecnologia com computadores novos!\n\nNesta terça-feira, a escola abriu oficialmente sua nova sala de tecnologia. O espaço, que antes era um depósito, agora tem dez computadores novos, todos com internet e programas educativos.\n\nA diretora cortou uma fitinha na porta da sala, e os alunos entraram em fila, curiosos para conhecer a novidade. Cada turma terá uma aula por semana no novo espaço.\n\n\"Eu nunca tinha usado um computador sozinho, vai ser demais aprender aqui\", contou o aluno Ian, todo empolgado.\n\nA professora Patrícia, responsável pelas aulas de tecnologia, explicou que os alunos vão aprender desde o básico, como ligar e desligar o computador, até pequenos jogos educativos. \"A tecnologia é uma ferramenta para aprender ainda mais\", disse ela à turma.\n\nA primeira aula na sala nova já está marcada para a próxima semana.\n\nEssa foi a notícia de hoje. Até a próxima edição!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre como os computadores podem ajudar a aprender coisas novas."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Alunos Criam Joguinho Simples em Aula de Informática",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a criação de um joguinho simples em aula de informática, seguida de roda de conversa sobre jogos e criatividade.",
+    "text": "JORNAL DA ESCOLA — Edição especial de tecnologia\n\nAlunos criam seu primeiro joguinho de computador!\n\nNa aula de informática desta quinta-feira, os alunos do 3º ano tiveram uma missão especial: criar um joguinho simples usando blocos coloridos de programação, sem precisar escrever nenhum código difícil.\n\nCada dupla montou uma pequena história, com um personagem que precisava desviar de obstáculos até chegar ao final da tela. Os cliques e as cores se transformaram em verdadeiros jogos.\n\n\"Meu joguinho tem um gatinho que pula por cima de pedras, foi eu que pensei tudo!\", contou a aluna Cecília, toda orgulhosa da criação.\n\nO professor Diego, responsável pela aula, explicou que programar ensina a pensar em passos, um de cada vez. \"Eles estão aprendendo a resolver problemas brincando\", disse ele, observando a turma concentrada.\n\nNo final da aula, cada dupla apresentou seu joguinho para os colegas, que testaram e deram opiniões.\n\nPor hoje é só. Até a próxima edição!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre ideias de joguinhos que gostariam de inventar."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Participa de Mutirão de Limpeza da Praça do Bairro",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre um mutirão de limpeza realizado pela turma na praça do bairro, seguida de roda de conversa sobre o cuidado com espaços públicos.",
+    "text": "JORNAL DA ESCOLA — Edição especial de meio ambiente\n\nAlunos ajudam a deixar a praça do bairro mais limpa!\n\nNa manhã de sábado, alunos do 2º e do 3º ano, junto com professores e familiares, participaram de um mutirão de limpeza na praça perto da escola. Todos usaram luvas e sacos de lixo para recolher papéis, garrafas e outros materiais espalhados pelo chão.\n\nEm pouco mais de uma hora, a praça já estava bem diferente, com os canteiros limpos e os bancos livres de lixo.\n\n\"Eu não sabia que tinha tanto lixo escondido perto dos brinquedos\", contou o aluno Matheus, surpreso com o que encontrou.\n\nA professora Simone, que organizou o mutirão, aproveitou para conversar com as crianças sobre a importância de jogar o lixo no lugar certo. \"Cuidar da praça é cuidar do nosso próprio bairro\", explicou ela ao grupo.\n\nNo final, todos se sentaram nos bancos limpinhos para descansar e comer um lanche coletivo.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre como cuidar de praças e espaços públicos do bairro."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Escola Promove Semana da Alimentação Saudável",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a Semana da Alimentação Saudável promovida pela escola, seguida de roda de conversa sobre alimentos saudáveis.",
+    "text": "JORNAL DA ESCOLA — Edição especial de saúde\n\nComeça a Semana da Alimentação Saudável na escola!\n\nNesta segunda-feira, teve início a Semana da Alimentação Saudável, com atividades especiais em todas as turmas. O cardápio da merenda ganhou frutas coloridas, saladas variadas e sucos naturais.\n\nDurante os intervalos, os alunos participaram de uma roda de degustação, provando alimentos que talvez nunca tivessem experimentado antes, como jabuticaba e chuchu.\n\n\"Eu experimentei quiabo pela primeira vez e até que gostei!\", contou a aluna Yasmin, fazendo uma careta engraçada.\n\nA nutricionista da escola, convidada especialmente para a semana, conversou com as turmas sobre a importância de comer verduras e frutas todos os dias. \"Comer bem deixa o corpo e a mente mais fortes para aprender\", explicou ela aos alunos.\n\nAo longo da semana, cada turma vai montar um cartaz com os alimentos mais saudáveis para expor no corredor da escola.\n\nEssa foi a notícia de hoje. Até a próxima edição!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre frutas e verduras que já experimentaram ou gostariam de experimentar."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Alunos Apresentam Experiência de Vulcão de Bicarbonato na Feira de Ciências",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a apresentação de um vulcão de bicarbonato na feira de ciências da escola, seguida de roda de conversa sobre experiências científicas simples.",
+    "text": "JORNAL DA ESCOLA — Edição especial de ciências\n\nVulcão de mentirinha \"entra em erupção\" na feira de ciências!\n\nA Feira de Ciências da escola, realizada nesta sexta-feira no pátio, teve um dos experimentos mais esperados pelos alunos: o vulcão de bicarbonato. A turma do 3º ano construiu um vulcão de massinha e, na hora certa, misturou bicarbonato de sódio com vinagre.\n\nUma espuma alaranjada saiu borbulhando pela boca do vulcão, arrancando gritinhos de surpresa da plateia reunida ao redor da mesa.\n\n\"Parece lava de verdade, mas é só espuma!\", explicou o aluno Guilherme, um dos responsáveis pela experiência, todo orgulhoso.\n\nO professor Marcelo, que ajudou a montar o experimento, contou que a reação acontece por causa da mistura de um ácido com uma base. \"O importante é que a ciência pode ser muito divertida\", disse ele, sorrindo para a plateia.\n\nA feira segue até o fim da tarde, com outros experimentos espalhados pelos corredores da escola.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre outras experiências científicas simples que gostariam de ver ou fazer."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Cria Horta de Temperos Dentro da Sala de Aula",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a criação de uma horta de temperos dentro da sala de aula, seguida de roda de conversa sobre o cuidado com plantas no dia a dia.",
+    "text": "JORNAL DA ESCOLA — Edição de notícias verdes\n\nSala de aula ganha cheirinho de horta de temperos!\n\nNesta quarta-feira, a turma do 2º ano transformou um cantinho da sala de aula em uma pequena horta de temperos. Em potinhos reaproveitados, os alunos plantaram mudas de manjericão, hortelã e alecrim.\n\nCada aluno ficou responsável por cuidar de um potinho, regando com cuidado e observando o crescimento das plantinhas dia após dia.\n\n\"Toda vez que passo perto, sinto o cheiro de hortelã, é bem gostoso\", contou a aluna Alice, cheirando as folhinhas.\n\nA professora Bianca, que teve a ideia da horta, explicou que os temperos serão usados em uma receita especial no fim do mês. \"Vamos aprender sobre plantas e também sobre culinária\", contou ela à turma.\n\nA horta de temperos já virou o cantinho preferido da sala, e os alunos combinaram uma escala para regar as plantinhas todos os dias.\n\nPor hoje é só, pessoal. Até a próxima edição!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre como cuidar de uma planta em casa ou na escola."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Escola Recebe Visita de um Escritor para Bate-Papo com os Alunos",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre a visita de um escritor à escola para conversar com os alunos, seguida de roda de conversa sobre livros e histórias favoritas.",
+    "text": "JORNAL DA ESCOLA — Edição especial de literatura\n\nEscritor visita a escola e conversa com os alunos!\n\nNesta quinta-feira, a escola recebeu a visita de um escritor de livros infantis, que veio conversar com as turmas sobre seus livros e sobre como nascem as histórias. O encontro aconteceu no pátio coberto, decorado com desenhos feitos pelos próprios alunos.\n\nO escritor contou como surgiu a ideia do seu livro mais famoso e respondeu a várias perguntas curiosas da plateia.\n\n\"Eu quis saber se ele já ficou sem ideia para escrever, e ele disse que sim, às vezes acontece!\", contou o aluno Rafael, rindo da resposta sincera.\n\nA professora Adriana, responsável por organizar o encontro, disse que o objetivo era aproximar os alunos do mundo da leitura. \"Conhecer quem escreve os livros deixa a leitura ainda mais especial\", explicou ela.\n\nNo final, o escritor autografou alguns livros da biblioteca da escola, para alegria da turma.\n\nEssa foi a notícia de hoje. Até a próxima edição!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre livros e histórias que são os favoritos de cada um."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Alunos Criam Campanha Contra o Desperdício de Água na Escola",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre uma campanha criada pelos alunos contra o desperdício de água na escola, seguida de roda de conversa sobre economia de água no dia a dia.",
+    "text": "JORNAL DA ESCOLA — Edição especial de meio ambiente\n\nAlunos lançam campanha para economizar água na escola!\n\nNesta terça-feira, os alunos do 3º ano lançaram uma campanha para lembrar todo mundo da escola sobre a importância de não desperdiçar água. Cartazes coloridos, feitos pela própria turma, foram colados perto das torneiras e dos banheiros.\n\nOs cartazes trazem frases simples, como \"Feche a torneira enquanto escova os dentes\", e desenhos de gotinhas sorridentes pedindo cuidado.\n\n\"A gente percebeu que muita gente deixava a torneira aberta sem perceber\", contou o aluno Vitor, um dos criadores da campanha.\n\nA professora Camila, que apoiou o projeto, explicou que pequenas atitudes fazem grande diferença para o planeta. \"Cuidar da água é cuidar do futuro de todos nós\", disse ela aos alunos, orgulhosa da iniciativa.\n\nA campanha vai continuar pelas próximas semanas, com novos cartazes sendo criados por outras turmas da escola.\n\nFim da edição de hoje. Até a próxima!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre atitudes simples para economizar água em casa e na escola."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Turma Organiza Sarau de Poesia na Biblioteca da Escola",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre um sarau de poesia organizado na biblioteca da escola, seguida de roda de conversa sobre poemas e sentimentos.",
+    "text": "JORNAL DA ESCOLA — Edição especial de literatura\n\nBiblioteca da escola recebe sarau de poesia!\n\nNesta sexta-feira à tarde, a biblioteca da escola ficou tomada de versos e rimas. A turma do 3º ano organizou um sarau de poesia, onde cada aluno pôde ler, em voz alta, um poema escolhido ou até criado por eles mesmos.\n\nO espaço foi decorado com almofadas no chão e luzinhas coloridas, deixando o ambiente ainda mais aconchegante para a apresentação.\n\n\"Eu escrevi um poema sobre a lua, minhas mãos tremiam um pouco na hora de ler\", contou a aluna Beatriz, sorrindo depois de terminar.\n\nO professor Anderson, responsável pela biblioteca, explicou que o sarau nasceu para incentivar o gosto pela leitura e pela escrita. \"A poesia ajuda a gente a expressar o que sente\", disse ele à plateia de alunos.\n\nNo final, todos bateram palmas para os colegas e já pediram para repetir o sarau no próximo bimestre.\n\nPor hoje é só. Até a próxima edição!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre sentimentos que poderiam virar um poema."
+    ]
+  },
+  {
+    "theme": "Jornal da Escola: Escola Promove Oficina de Pintura com Tinta Natural Feita de Plantas",
+    "genre": "notícia",
+    "description": "Leitura em voz alta de notícia fictícia, no estilo de jornal escolar, sobre uma oficina de pintura com tintas naturais feitas de plantas, seguida de roda de conversa sobre arte e materiais da natureza.",
+    "text": "JORNAL DA ESCOLA — Edição especial de arte\n\nAlunos pintam com tintas feitas de plantas!\n\nNesta quarta-feira, a escola promoveu uma oficina bem diferente: pintura com tintas naturais, feitas a partir de plantas e alimentos, como beterraba, urucum e folhas verdes. As cores surgiram sem nenhuma tinta comprada em loja.\n\nCom pincéis e papel, os alunos criaram desenhos coloridos usando apenas essas tintas naturais, descobrindo tons de rosa, amarelo e verde bem diferentes do usual.\n\n\"Eu não sabia que dava para pintar com beterraba, o rosa ficou lindo!\", contou a aluna Valentina, mostrando seu desenho para os colegas.\n\nA professora Letícia, que preparou as tintas com antecedência, explicou que a natureza pode ser uma grande aliada da arte. \"Tudo isso vem de plantas que a gente encontra até no jardim da escola\", contou ela à turma.\n\nOs desenhos feitos na oficina serão expostos no corredor principal, para toda a escola admirar.\n\nEssa foi a notícia de hoje. Até a próxima edição!",
+    "steps": [
+      "Explicar que essa notícia é fictícia, mas escrita no estilo real de um jornal.",
+      "Ler a notícia em voz alta e, com a turma, responder juntos: quem? o quê? quando? onde? (procurando as respostas no texto).",
+      "Conversar com a turma sobre outros materiais da natureza que poderiam ser usados na arte."
     ]
   }
 ];

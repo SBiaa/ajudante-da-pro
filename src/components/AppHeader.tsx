@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { DEFAULT_GRADE, getGradeLabel } from "@/types/profile";
+import { DEFAULT_GRADE, DEFAULT_NETWORK, getGradeLabel, getNetworkLabel } from "@/types/profile";
 
 export type AppMenuItem = { label: string; onClick: () => void };
 
@@ -8,12 +8,22 @@ type Props = {
   showProfileLink?: boolean;
   /** Ano/série configurado em /perfil — cai no padrão se quem chamou não tiver o dado à mão. */
   gradeLabel?: string;
+  /** Rede de ensino configurada em /perfil (Prefeitura ou Estado) — cai no padrão do mesmo jeito. */
+  networkLabel?: string;
   /** Ferramentas (grade fixa, cores, histórico...) agrupadas num só menu — omitido nas telas
    * que não têm nada pra oferecer aqui (configuração inicial, perfil, link compartilhado). */
   menuItems?: AppMenuItem[];
+  /** Mostra o link "Admin" — só quando a usuária logada tem is_admin = true. */
+  isAdmin?: boolean;
 };
 
-export function AppHeader({ showProfileLink = true, gradeLabel = getGradeLabel(DEFAULT_GRADE), menuItems }: Props) {
+export function AppHeader({
+  showProfileLink = true,
+  gradeLabel = getGradeLabel(DEFAULT_GRADE),
+  networkLabel = getNetworkLabel(DEFAULT_NETWORK),
+  menuItems,
+  isAdmin = false,
+}: Props) {
   return (
     <div className="print:hidden relative rounded-[var(--radius-lg)] bg-[var(--surface-brand)] px-6 py-6 mb-6 shadow-[var(--shadow-brand)]">
       {/* Camada decorativa separada, com seu próprio overflow-hidden: se esse clip estivesse
@@ -37,7 +47,7 @@ export function AppHeader({ showProfileLink = true, gradeLabel = getGradeLabel(D
           <div className="min-w-0">
             <h1 className="app-header-title text-[22px] sm:text-[28px] leading-tight">Plano de Aula Semanal</h1>
             <p className="mt-1 text-[11px] font-medium uppercase tracking-[0.22em] text-[var(--crimson-200)]">
-              {gradeLabel} · Ensino Fundamental 1 · SME-SP
+              {gradeLabel} · Ensino Fundamental 1 · {networkLabel}
             </p>
           </div>
         </div>
@@ -67,6 +77,14 @@ export function AppHeader({ showProfileLink = true, gradeLabel = getGradeLabel(D
                 ))}
               </div>
             </details>
+          )}
+          {isAdmin && (
+            <Link
+              href="/admin"
+              className="app-header-link text-xs font-medium uppercase tracking-[0.1em] transition-colors"
+            >
+              Admin
+            </Link>
           )}
           {showProfileLink && (
             <Link
