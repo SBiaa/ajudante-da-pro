@@ -61,7 +61,7 @@ export function ActivitySheetModal({ subjectLabel, theme, curriculumCode, color,
           </div>
         </div>
 
-        <div className="activity-print-target bg-white p-4 sm:p-6">
+        <div className="activity-print-target bg-white p-4 sm:p-6 print:p-0 print:h-full">
           <ActivityWorksheet subjectLabel={subjectLabel} theme={theme} curriculumCode={curriculumCode} color={color} entry={entry} kind={kind} />
         </div>
       </div>
