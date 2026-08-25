@@ -7,12 +7,12 @@ import { saveStoredAppDataAction } from "@/app/actions";
 
 // Estado compartilhado por módulo (fonte externa, sincronizada via useSyncExternalStore).
 // No servidor sempre retorna SERVER_SNAPSHOT; no cliente, carrega do localStorage sob demanda.
-// Login/logout sempre fazem um reload completo da página (redirect do server), então esse
-// módulo é reinicializado do zero a cada troca de conta — cachedState nunca vaza entre contas
-// dentro de uma mesma sessão de navegador; o isolamento por usuário vem da chave do
-// localStorage em si (ver storage.ts).
+// Login/logout no App Router fazem redirect() de dentro de uma Server Action, que com JS
+// habilitado é uma navegação client-side (SPA) — o módulo NÃO é reinicializado. Por isso o
+// cache precisa saber a qual usuário pertence e recarregar quando o userId mudar.
 const SERVER_SNAPSHOT: AppState = emptyState();
 let cachedState: AppState | null = null;
+let cachedUserId: number | null = null;
 const listeners = new Set<() => void>();
 
 // Debounce das gravações no servidor: evita um round-trip por tecla digitada, já que
@@ -33,6 +33,17 @@ function scheduleSync(state: AppState) {
   }, SYNC_DEBOUNCE_MS);
 }
 
+// Recarrega o estado do usuário informado, descartando qualquer sync pendente do usuário
+// anterior (senão o debounce dispararia e gravaria dados de A na sessão de B).
+function loadForUser(userId: number): AppState {
+  if (syncTimer) {
+    clearTimeout(syncTimer);
+    syncTimer = null;
+  }
+  cachedUserId = userId;
+  return loadState(userId);
+}
+
 function subscribe(listener: () => void) {
   listeners.add(listener);
   return () => listeners.delete(listener);
@@ -46,8 +57,8 @@ type StateUpdater = AppState | ((prev: AppState) => AppState);
 
 export function useAppState(userId: number) {
   const getSnapshot = useCallback(() => {
-    if (cachedState === null) {
-      cachedState = loadState(userId);
+    if (cachedState === null || cachedUserId !== userId) {
+      cachedState = loadForUser(userId);
     }
     return cachedState;
   }, [userId]);
@@ -56,7 +67,7 @@ export function useAppState(userId: number) {
 
   const setState = useCallback(
     (updater: StateUpdater) => {
-      const prev = cachedState ?? loadState(userId);
+      const prev = cachedState !== null && cachedUserId === userId ? cachedState : loadForUser(userId);
       const updated = typeof updater === "function" ? (updater as (p: AppState) => AppState)(prev) : updater;
       const next = { ...updated, updatedAt: new Date().toISOString() };
       cachedState = next;
