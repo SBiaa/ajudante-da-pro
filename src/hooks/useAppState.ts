@@ -27,6 +27,7 @@ function scheduleSync(state: AppState) {
     saveStoredAppDataAction({
       weeks: state.weeks,
       themeHistory: state.themeHistory,
+      usedExercises: state.usedExercises,
       subjectColorOverrides: state.subjectColorOverrides,
       updatedAt: state.updatedAt,
     }).catch((err) => console.error("Falha ao sincronizar com o servidor:", err));

@@ -3418,6 +3418,216 @@ export const ACTIVITY_BANK: Record<OwnSubject | "leitura-diaria", ActivityEntry[
         { kind: "lines", instruction: "Escreva um exemplo próprio de adição e comprove a propriedade comutativa trocando a ordem dos números:", lines: 2 },
       ],
     },
+    {
+      theme: "Números que marcam lugar: a fila do ônibus",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Pedro chegou na parada e ficou em 4º lugar na fila do ônibus. O número 4 está indicando:",
+          options: [
+            "A idade de Pedro",
+            "A posição de Pedro na fila",
+            "A quantidade de ônibus",
+            "O horário do ônibus",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com o número da posição de cada criança na fila:",
+          items: [
+            "A primeira criança da fila está em ___ lugar",
+            "A criança depois da 2ª está em ___ lugar",
+            "A criança depois da 5ª está em ___ lugar",
+            "A última criança, a oitava, está em ___ lugar",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva sobre uma vez em que você ficou numa fila (no mercado, na escola, no ônibus). Em que posição você estava?",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma fila de pessoas esperando o ônibus e numere cada uma de acordo com sua posição:",
+        },
+      ],
+    },
+    {
+      theme: "Montando a conta com os sinais certos",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete as contas com o sinal + ou -:",
+          items: [
+            "8 ___ 3 = 11",
+            "10 ___ 4 = 6",
+            "5 ___ 5 = 10",
+            "9 ___ 2 = 7",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule as palavras que indicam que a conta deve ser de SOMAR (adição):",
+          items: [
+            "GANHOU",
+            "PERDEU",
+            "GASTOU",
+            "RECEBEU",
+            "COMPROU",
+            "DEU",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Maria tinha 6 figurinhas e ganhou mais 3. Escreva a conta com o sinal certo e o resultado:",
+          lines: 2,
+        },
+        {
+          kind: "options",
+          instruction: "João tinha 12 bolinhas de gude e perdeu 5 numa partida. Qual sinal ele deve usar para descobrir quantas restaram?",
+          options: [
+            "+",
+            "-",
+            "=",
+            "×",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Trocando moedas: quantas de 1 real formam 5?",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete quantas moedas de 1 real formam o mesmo valor:",
+          items: [
+            "1 moeda de 5 reais = ___ moedas de 1 real",
+            "1 moeda de 2 reais = ___ moedas de 1 real",
+            "1 moeda de 10 reais = ___ moedas de 1 real",
+            "1 moeda de 1 real = ___ moeda de 1 real",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Se você trocar uma nota de 5 reais só por moedas de 1 real, quantas moedas vai receber?",
+          options: [
+            "3 moedas",
+            "5 moedas",
+            "10 moedas",
+            "1 moeda",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Imagine que você vai trocar dinheiro no mercadinho da escola. Escreva o que você compraria com 5 moedas de 1 real:",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe 5 moedas de 1 real ao lado de uma moeda de 5 reais, mostrando que valem o mesmo:",
+        },
+      ],
+    },
+    {
+      theme: "Caça-números na sala de aula",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Observe o número 12 escrito na porta da sala de aula. O que esse número representa?",
+          options: [
+            "Um código que identifica a sala",
+            "A quantidade de alunos da turma",
+            "A altura da porta",
+            "A hora do recreio",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete dizendo se o número é um código, uma quantidade ou uma medida:",
+          items: [
+            "O número da camisa do jogador é um ___",
+            "O número de lápis dentro da caixa é uma ___",
+            "O número marcado na fita métrica é uma ___",
+            "O número da sua casa é um ___",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Procure um número escondido na sala de aula (no relógio, no calendário, num cartaz) e escreva o que ele representa:",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe três lugares da sala de aula onde há números escritos, como o calendário, o relógio ou um cartaz.",
+        },
+      ],
+    },
+    {
+      theme: "Verdadeiro ou falso: a igualdade está certa?",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "A sentença 4 + 4 = 9 está:",
+          options: [
+            "Certa",
+            "Errada",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete cada sentença com V (verdadeira) ou F (falsa):",
+          items: [
+            "6 + 2 = 8 ( ___ )",
+            "7 + 1 = 9 ( ___ )",
+            "10 - 3 = 7 ( ___ )",
+            "5 + 5 = 11 ( ___ )",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha uma sentença falsa da lista acima e escreva como ela ficaria certa:",
+          lines: 2,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma balança de dois pratos bem equilibrada, mostrando uma igualdade que você conhece, como 2 + 2 = 4.",
+        },
+      ],
+    },
+    {
+      theme: "Montando o valor certo com cédulas e moedas",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete com cédulas ou moedas que juntas formam o valor pedido:",
+          items: [
+            "R$ 5 = ___ + ___",
+            "R$ 10 = ___ + ___",
+            "R$ 2 = ___ + ___",
+            "R$ 1 = ___ + ___",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Para pagar exatamente R$ 7, qual combinação você pode usar?",
+          options: [
+            "1 nota de R$ 5 e 1 moeda de R$ 2",
+            "1 nota de R$ 2 e 1 moeda de R$ 1",
+            "2 moedas de R$ 1",
+            "1 nota de R$ 10",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Imagine que você vai comprar um doce de R$ 3 na cantina. Escreva quais moedas ou notas você usaria:",
+          lines: 2,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe as cédulas e moedas que você usaria para pagar R$ 6.",
+        },
+      ],
+    },
   ],
   "lingua-portuguesa": [
     {
@@ -4828,6 +5038,286 @@ export const ACTIVITY_BANK: Record<OwnSubject | "leitura-diaria", ActivityEntry[
         { kind: "word-select", instruction: "Marque as divisões corretas, que não deixam letra sozinha:", items: ["a-be-lha", "abelh-a", "o-vo", "ov-o"] },
       ],
     },
+    {
+      theme: "Caça-nomes no varal da sala",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Circule apenas os nomes de colegas escritos no varal (e não os outros itens):",
+          items: [
+            "JÚLIA",
+            "OUTUBRO",
+            "CADERNO",
+            "MARCOS",
+            "FESTA",
+            "BEATRIZ",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva o nome de dois colegas da turma que fazem aniversário no mesmo mês que você:",
+          lines: 2,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com o mês de aniversário:",
+          items: [
+            "Eu faço aniversário em ___",
+            "Um colega da minha fila faz aniversário em ___",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe o varal da sala com bandeirinhas mostrando os nomes dos aniversariantes do mês:",
+        },
+      ],
+    },
+    {
+      theme: "Conto em quadrinhos: reescrevendo em cenas",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Escolha um conto que você conhece bem. Escreva o nome do conto e o nome dos personagens principais:",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe a primeira cena do conto que você escolheu, mostrando como a história começa:",
+        },
+        {
+          kind: "options",
+          instruction: "Em um quadrinho, a ordem das cenas precisa:",
+          options: [
+            "Ser qualquer uma, não importa",
+            "Seguir a sequência da história",
+            "Sempre começar pelo final",
+            "Ter só uma cena",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete o resumo das cenas do seu quadrinho:",
+          items: [
+            "Cena 1: ___",
+            "Cena 2: ___",
+            "Cena 3 (final): ___",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Trocando nomes repetidos por apelidos",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete a segunda frase trocando o nome repetido por ELE, ELA ou um apelido:",
+          items: [
+            "O gato subiu no telhado. ___ dormiu lá.",
+            "Ana pegou o livro. ___ leu o livro.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule as palavras que podem substituir um nome repetido no texto:",
+          items: [
+            "ELE",
+            "CADEIRA",
+            "ELA",
+            "DEPOIS",
+            "O MENINO",
+            "AMARELO",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva duas frases sobre um colega, repetindo o nome dele. Depois, reescreva trocando a segunda vez pelo apelido ou por 'ele/ela':",
+          lines: 4,
+        },
+        {
+          kind: "options",
+          instruction: "Por que é importante não repetir o mesmo nome várias vezes em um texto?",
+          options: [
+            "Porque é proibido escrever nomes",
+            "Porque o texto fica mais bonito e menos repetitivo",
+            "Porque cansa a mão de escrever",
+            "Porque nomes são difíceis de escrever",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Como a chuva? Caça às comparações do texto",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete as comparações como se fossem de um texto:",
+          items: [
+            "Ela chorava como a ___",
+            "Ele corria como um ___",
+            "A menina era leve como uma ___",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Na frase 'Ele estava tão bravo quanto um leão', a palavra 'leão' foi usada para:",
+          options: [
+            "Dizer que ele virou um leão",
+            "Comparar o jeito bravo dele com um leão",
+            "Falar sobre animais do zoológico",
+            "Enfeitar a frase sem motivo",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Invente uma comparação para dizer como você fica quando está muito feliz (por exemplo: feliz como...):",
+          lines: 2,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma cena que mostre a comparação 'chorava como a chuva':",
+        },
+      ],
+    },
+    {
+      theme: "Lista de brinquedos do dia do brinquedo",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Escreva o nome de 3 brinquedos que os colegas trouxeram para o dia do brinquedo:",
+          lines: 3,
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule apenas os nomes de brinquedos na lista:",
+          items: [
+            "BONECA",
+            "CADERNO",
+            "BOLA",
+            "LÁPIS",
+            "PIÃO",
+            "MOCHILA",
+            "CARRINHO",
+            "BORRACHA",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Numa lista organizada por ordem alfabética, qual brinquedo viria primeiro?",
+          options: [
+            "BOLA",
+            "PIÃO",
+            "CARRINHO",
+            "BONECA",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe o brinquedo preferido que um colega trouxe para o dia do brinquedo.",
+        },
+      ],
+    },
+    {
+      theme: "Final alternativo para um conto conhecido",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Escolha um conto que você conhece bem (como Chapeuzinho Vermelho ou Os Três Porquinhos) e escreva um final diferente para ele:",
+          lines: 4,
+        },
+        {
+          kind: "options",
+          instruction: "Ao inventar um novo final para um conto, o que deve continuar igual?",
+          options: [
+            "o começo e o meio da história",
+            "o final também precisa ser igual",
+            "os personagens precisam sumir",
+            "a história precisa virar poesia",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as informações sobre o conto que você escolheu:",
+          items: [
+            "O conto que escolhi se chama: ___",
+            "No final original, a história terminava assim: ___",
+            "No meu novo final, a história termina assim: ___",
+            "O personagem principal do conto é: ___",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe a cena do novo final que você inventou para o conto.",
+        },
+      ],
+    },
+    {
+      theme: "Substituindo \"ele\" e \"ela\" no texto dos animais",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases usando 'ele' ou 'ela' no lugar do nome do animal:",
+          items: [
+            "O cachorro correu no jardim. ___ estava muito feliz.",
+            "A gata dormiu no sofá. ___ ficou lá a tarde toda.",
+            "O passarinho voou alto. ___ cantava bonito.",
+            "A borboleta pousou na flor. ___ tinha asas coloridas.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Por que usamos 'ele' ou 'ela' no lugar do nome do animal?",
+          options: [
+            "para não repetir o mesmo nome várias vezes",
+            "porque é mais difícil de escrever",
+            "porque o nome do animal está errado",
+            "para deixar o texto maior",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva duas frases sobre um animal que você conhece, usando 'ele' ou 'ela' na segunda frase para não repetir o nome:",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um animal e escreva embaixo uma frase sobre ele usando 'ele' ou 'ela'.",
+        },
+      ],
+    },
+    {
+      theme: "Inventando comparações para o coleguinha",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete as comparações:",
+          items: [
+            "Meu amigo é rápido como um ___",
+            "Minha amiga é forte como um ___",
+            "Ele é esperto como uma ___",
+            "Ela é doce como um ___",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual frase é uma comparação?",
+          options: [
+            "Ela é ligeira como um gato",
+            "Ela correu até a escola",
+            "Ela tem sete anos",
+            "Ela mora perto da escola",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Pense num colega da turma e escreva uma comparação bonita sobre ele ou ela (por exemplo: é alegre como um passarinho):",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe o colega e o animal ou objeto que você usou na comparação, lado a lado.",
+        },
+      ],
+    },
   ],
   historia: [
     {
@@ -5345,6 +5835,426 @@ export const ACTIVITY_BANK: Record<OwnSubject | "leitura-diaria", ActivityEntry[
         {
           kind: "draw",
           instruction: "Desenhe uma peça do dominó em Libras com o sinal que você mais gostou:",
+        },
+      ],
+    },
+    {
+      theme: "Brincadeiras da roça e brincadeiras da cidade",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Circule as brincadeiras que são mais fáceis de fazer no campo, onde tem bastante espaço e natureza:",
+          items: [
+            "SUBIR EM ÁRVORE",
+            "PULAR CORDA",
+            "JOGAR CARTINHA",
+            "REDE",
+            "VIDEOGAME",
+            "BRINCAR NO RIO",
+            "TABLET",
+            "PIPA",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Quem mora na cidade, cheia de prédios e carros, tem menos espaço aberto para brincar. Onde você acha mais fácil soltar pipa?",
+          options: [
+            "No sítio, porque tem mais espaço aberto",
+            "No apartamento, porque é mais alto",
+            "Dá no mesmo, não tem diferença",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Você preferia brincar num lugar cheio de árvores e terra ou num lugar cheio de prédios e asfalto? Escreva o motivo:",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma brincadeira que você imagina que uma criança que mora na roça faz todos os dias:",
+        },
+      ],
+    },
+    {
+      theme: "Amarelinha pelo Brasil: nomes diferentes, mesmo jogo",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre a amarelinha:",
+          items: [
+            "A amarelinha é desenhada no ___ com giz.",
+            "Para jogar, a gente pula em ___ pé só.",
+            "Em algumas regiões do Brasil, esse jogo tem outro ___.",
+            "Depois de jogar a pedrinha, é preciso pular sem pisar no ___.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Mesmo com nomes diferentes em cada lugar do Brasil, o jogo da amarelinha é parecido em quase tudo. O que isso mostra?",
+          options: [
+            "Que crianças de lugares diferentes podem gostar das mesmas brincadeiras",
+            "Que só existe amarelinha em São Paulo",
+            "Que cada brincadeira só pode ter um nome certo",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Pergunte para alguém da sua família se conhece outro nome para a amarelinha (como sapata, macaca, avião). Escreva o nome que essa pessoa disse:",
+          lines: 2,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe como você imagina o desenho da amarelinha no chão, com os números dentro dos quadrados:",
+        },
+      ],
+    },
+    {
+      theme: "Corrida de toras: uma tradição indígena",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "As toras usadas nessa corrida vêm de árvores. Circule as palavras que têm a ver com essa brincadeira indígena:",
+          items: [
+            "TRONCO",
+            "FLORESTA",
+            "CONTROLE REMOTO",
+            "FORÇA",
+            "CORRIDA",
+            "SHOPPING",
+            "TIME",
+            "ELEVADOR",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Na corrida de toras, os times carregam pedaços pesados de tronco de árvore correndo. Por que essa brincadeira precisa ser feita em grupo, e não sozinho?",
+          options: [
+            "Porque o tronco é pesado e várias pessoas ajudam a carregar",
+            "Porque é proibido correr sozinho",
+            "Porque só cabe uma pessoa por vez na floresta",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "O que mais te chamou atenção na corrida de toras dos povos Xavante e Krahô? Escreva aqui:",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um grupo de crianças carregando um tronco em uma corrida, como fazem os povos Xavante e Krahô:",
+        },
+      ],
+    },
+    {
+      theme: "Brincadeiras que vieram da Itália",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre a bocha:",
+          items: [
+            "A bocha é uma brincadeira que veio da ___.",
+            "Para jogar bocha, a gente lança bolas em direção a uma bola ___.",
+            "Ganha quem deixa a bola mais ___ do alvo.",
+            "A bocha chegou ao Brasil com as famílias de ___ italianos.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule as palavras que têm a ver com o jogo de bocha:",
+          items: [
+            "BOLAS",
+            "TIME DE FUTEBOL",
+            "GRAMADO",
+            "PONTARIA",
+            "PISCINA",
+            "ALVO",
+            "PATINETE",
+            "DISTÂNCIA",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Você tem algum parente ou conhecido que veio de outro país ou é descendente de imigrantes? Escreva o nome dessa pessoa e de onde a família dela veio:",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe você jogando bocha com bolinhas de papel ou bolas de gude no chão da sala:",
+        },
+      ],
+    },
+    {
+      theme: "Combinado antes de brincar",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Antes de começar uma brincadeira em grupo, é importante combinar as regras. Por quê?",
+          options: [
+            "Para todo mundo saber como brincar e evitar brigas",
+            "Para a brincadeira demorar mais tempo",
+            "Porque é proibido brincar sem combinar",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre os combinados:",
+          items: [
+            "Antes de brincar, o grupo precisa ___ as regras.",
+            "Se alguém não seguir o combinado, pode dar ___.",
+            "Um bom combinado ajuda todo mundo a se ___ na brincadeira.",
+            "Quando surge uma dúvida durante o jogo, o grupo pode parar e fazer um novo ___.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Pense em uma brincadeira que você gosta de fazer com amigos. Escreva um combinado importante para essa brincadeira dar certo:",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe você e seus colegas conversando em roda para combinar as regras de uma brincadeira:",
+        },
+      ],
+    },
+    {
+      theme: "Roda de entrevistas: convidando um familiar para contar uma brincadeira",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Se um familiar seu fosse à escola contar uma brincadeira da infância dele, qual pergunta você faria para ele?",
+          lines: 3,
+        },
+        {
+          kind: "options",
+          instruction: "Por que é importante ouvir uma pessoa mais velha contar como ela brincava quando era criança?",
+          options: [
+            "Porque aprendemos coisas sobre o passado que não estão em nenhum livro",
+            "Porque essa pessoa vai brincar no nosso lugar",
+            "Porque não é importante, só serve para passar o tempo",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre a entrevista com o familiar:",
+          items: [
+            "Antes da entrevista, é bom preparar as ___ que vamos fazer.",
+            "O convidado vai contar uma brincadeira da sua ___.",
+            "Enquanto ele fala, devemos ficar em ___ para escutar.",
+            "No final, podemos ___ o convidado por ter vindo.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe o familiar convidado contando a brincadeira para a turma:",
+        },
+      ],
+    },
+    {
+      theme: "Como se brincava sem brinquedo comprado",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Circule os materiais que podem virar brinquedo, mesmo sem ir a uma loja:",
+          items: [
+            "TAMPINHA",
+            "GARRAFA",
+            "PEDRINHA",
+            "LATA",
+            "SEMENTE",
+            "CONTROLE DE VIDEOGAME",
+            "MEIA VELHA",
+            "TABLET",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre brinquedos feitos em casa:",
+          items: [
+            "Com uma meia velha dá para fazer uma ___",
+            "Uma lata vazia pode virar um ___",
+            "Com jornal amassado dá para fazer uma ___",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Peça para alguém da sua família contar um brinquedo que ele mesmo fez quando era criança. Escreva aqui o nome desse brinquedo:",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Escolha um material simples (tampinha, lata, pedrinha ou meia) e desenhe o brinquedo que você faria com ele:",
+          note: "Não esqueça de dar um nome para o seu brinquedo!",
+        },
+      ],
+    },
+    {
+      theme: "Pião: uma brincadeira, muitos lugares",
+      exercises: [
+        {
+          kind: "draw",
+          instruction: "Desenhe um pião, do jeitinho que você imagina que ele seja:",
+        },
+        {
+          kind: "options",
+          instruction: "Para o pião rodar bem, o que a criança precisa fazer?",
+          options: [
+            "Girar ele com a mão ou com um barbante",
+            "Só olhar para ele parado",
+            "Jogar ele para o alto e pegar de volta",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Você já brincou de pião ou já viu alguém brincando? Escreva onde foi:",
+          lines: 2,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre o pião:",
+          items: [
+            "O pião pode ser feito de ___ ou de plástico",
+            "Para o pião girar, muitas crianças usam um ___",
+            "Em algumas brincadeiras, o objetivo é ver qual pião gira por mais ___",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Peteca: brincadeira indígena que virou jogo de todo mundo",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Circule as palavras que têm a ver com a brincadeira de peteca:",
+          items: [
+            "PENA",
+            "BOLA DE FUTEBOL",
+            "MÃO",
+            "PALHA",
+            "CONTROLE",
+            "DUPLA",
+            "PATINS",
+            "REDE",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Combine com um colega e brinquem de peteca no pátio ou na quadra. Depois, escreva como foi:",
+          lines: 3,
+        },
+        {
+          kind: "options",
+          instruction: "Quem inventou a brincadeira de peteca?",
+          options: [
+            "Os povos indígenas, há muito tempo",
+            "Uma fábrica de brinquedos",
+            "Os astronautas",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe você jogando peteca com um amigo ou amiga:",
+        },
+      ],
+    },
+    {
+      theme: "Jogos japoneses que chegaram ao Brasil",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Com a ajuda do professor, faça uma dobradura de origami. Depois, escreva o nome do que você criou:",
+          lines: 2,
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule o que a gente usa para fazer uma dobradura de origami:",
+          items: [
+            "PAPEL",
+            "TESOURA",
+            "COLA",
+            "DOBRAS COM A MÃO",
+            "TINTA",
+            "PACIÊNCIA",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "De onde vieram os jogos e as dobraduras japonesas que brincamos aqui no Brasil?",
+          options: [
+            "De imigrantes japoneses que vieram morar no Brasil",
+            "De uma fábrica de brinquedos brasileira",
+            "Ninguém sabe de onde vieram",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe a dobradura de origami que você fez ou gostaria de fazer:",
+        },
+      ],
+    },
+    {
+      theme: "O que fazer quando alguém não respeita a regra",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Um colega não quer seguir a regra do jogo. O que é melhor fazer?",
+          options: [
+            "Conversar e explicar a regra com calma",
+            "Gritar e não deixar mais ele brincar",
+            "Desistir de brincar para sempre",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Conte uma vez em que alguém não seguiu uma regra da brincadeira. O que vocês fizeram para resolver?",
+          lines: 3,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre as regras dos jogos:",
+          items: [
+            "As regras existem para que a brincadeira seja ___ para todos",
+            "Quando alguém não respeita a regra, é importante conversar com ___",
+            "Combinar as regras ___ de começar a brincar ajuda a evitar brigas",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe duas crianças combinando as regras de um jogo antes de começar a brincar:",
+        },
+      ],
+    },
+    {
+      theme: "Brincar com cadeira de rodas: é possível?",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Circule o que ajuda a incluir um colega que usa cadeira de rodas na brincadeira:",
+          items: [
+            "ESPAÇO LIVRE PARA PASSAR",
+            "REGRAS COMBINADAS COM TODOS",
+            "ESCADA ESTREITA",
+            "AMIZADE",
+            "DEIXAR ELE DE FORA",
+            "PACIÊNCIA",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Um colega que usa cadeira de rodas quer brincar de pega-pega com a turma. O que a turma pode fazer?",
+          options: [
+            "Pensar juntos em um jeito de todos brincarem",
+            "Não deixar ele participar",
+            "Trocar de brincadeira sem perguntar nada a ele",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Pense em uma brincadeira que você gosta. Escreva uma ideia de como um colega que usa cadeira de rodas poderia participar dela também:",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe você e seus colegas brincando juntos, incluindo um amigo que usa cadeira de rodas:",
         },
       ],
     },
@@ -5957,6 +6867,460 @@ export const ACTIVITY_BANK: Record<OwnSubject | "leitura-diaria", ActivityEntry[
           items: [
             "Quando vejo um objeto de cima, ele parece __________ (maior ou menor?) do que de perto.",
             "Um mapa mostra o lugar como se estivéssemos olhando de __________.",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Meu cantinho preferido na escola",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Marque o lugar da escola que você mais gosta de ficar:",
+          options: [
+            "O pátio",
+            "A sala de aula",
+            "A biblioteca",
+            "A quadra",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule os lugares que existem na sua escola:",
+          items: [
+            "PÁTIO",
+            "BIBLIOTECA",
+            "QUADRA",
+            "COZINHA",
+            "PRAIA",
+            "SALA DE AULA",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva por que esse cantinho da escola é o seu preferido:",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe o seu cantinho preferido da escola:",
+          note: "Capriche nos detalhes!",
+        },
+      ],
+    },
+    {
+      theme: "Roupas e enfeites de festas tradicionais",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre roupas e enfeites de festa:",
+          items: [
+            "Na festa junina se usa chapéu de ___",
+            "Para dançar quadrilha, muita gente usa roupa ___",
+            "Em festas de aniversário, é comum usar chapéu de ___",
+            "Algumas roupas de festa têm fitas e ___ coloridos",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule os enfeites que podem aparecer em uma festa:",
+          items: [
+            "BALÃO",
+            "FITA",
+            "CHAPÉU",
+            "BANDEIRINHA",
+            "GELADEIRA",
+            "COROA",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Marque a roupa que combina com uma festa tradicional:",
+          options: [
+            "Roupa de festa junina com chapéu de palha",
+            "Roupa de dormir",
+            "Roupa de banho",
+            "Uniforme de trabalho",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma roupa ou enfeite de uma festa que você conhece:",
+          note: "Pode ser uma festa da sua família ou do seu bairro.",
+        },
+      ],
+    },
+    {
+      theme: "Quanto tempo leva? Comparando percursos da turma",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Escreva como você vai da sua casa até a escola e quanto tempo demora:",
+          lines: 3,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre o caminho até a escola:",
+          items: [
+            "Eu moro ___ da escola",
+            "Eu venho para a escola de ___",
+            "O meu caminho até a escola demora mais ou menos ___ minutos",
+            "Eu chego na escola andando bem ___",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Marque como você costuma ir para a escola:",
+          options: [
+            "A pé",
+            "De carro",
+            "De ônibus",
+            "De bicicleta",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe o caminho que você faz de casa até a escola:",
+          note: "Marque os lugares que você passa no caminho.",
+        },
+      ],
+    },
+    {
+      theme: "Croqui da mesa da sala de aula",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Circule os objetos que podem estar em cima da sua mesa:",
+          items: [
+            "LÁPIS",
+            "CADERNO",
+            "BORRACHA",
+            "GELADEIRA",
+            "ESTOJO",
+            "LIVRO",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva o nome de três objetos que ficam em cima da sua mesa:",
+          lines: 3,
+        },
+        {
+          kind: "options",
+          instruction: "Marque de onde é a vista de um croqui feito de cima:",
+          options: [
+            "De cima, olhando para baixo",
+            "De lado",
+            "De dentro do objeto",
+            "De baixo, olhando para cima",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Observe os objetos em cima da sua mesa e desenhe-os vistos de cima:",
+          note: "Desenhe como se estivesse olhando de cima para baixo, igual um passarinho voando.",
+        },
+      ],
+    },
+    {
+      theme: "Quente ou fria? A temperatura do meu percurso",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre o seu caminho até a escola:",
+          items: [
+            "Nos lugares com muita árvore, eu sinto mais ___",
+            "Nos lugares sem sombra, o sol deixa tudo mais ___",
+            "No meio do dia, o caminho costuma ficar mais ___",
+            "Debaixo da sombra de uma árvore, a temperatura fica mais ___",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva se o seu caminho até a escola tem mais sol ou mais sombra:",
+          lines: 3,
+        },
+        {
+          kind: "options",
+          instruction: "Marque o lugar que costuma ser mais fresquinho:",
+          options: [
+            "Embaixo de uma árvore grande",
+            "No meio do sol, sem sombra nenhuma",
+            "Em cima do asfalto quente",
+            "Perto de um muro de metal ao sol",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma parte do seu caminho até a escola que tem sombra ou que tem muito sol:",
+          note: "Capriche nas árvores ou no sol bem forte.",
+        },
+      ],
+    },
+    {
+      theme: "Álbum de fotografias do bairro",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Circule os lugares do bairro que podem aparecer em fotografias:",
+          items: [
+            "PRAÇA",
+            "MERCADO",
+            "PADARIA",
+            "LUA",
+            "PONTO DE ÔNIBUS",
+            "IGREJA",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as legendas das fotografias do bairro:",
+          items: [
+            "Esta é uma foto da ___ do meu bairro",
+            "Nesta foto aparece a ___ onde eu compro pão",
+            "Esta fotografia mostra a ___ onde eu brinco",
+            "Esta é a foto do meu lugar ___ no bairro",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva o nome de três lugares do seu bairro que você colocaria em um álbum de fotos:",
+          lines: 3,
+        },
+        {
+          kind: "options",
+          instruction: "Marque como podemos organizar as fotos de um álbum do bairro:",
+          options: [
+            "Por tipo de lugar (praças, mercados, escolas)",
+            "Todas jogadas sem nenhuma ordem",
+            "Apenas fotos de outros países",
+            "Sem legenda nenhuma",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Como era o bairro quando meus pais eram crianças",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Circule as brincadeiras que talvez seus pais faziam na rua quando eram crianças:",
+          items: [
+            "PIÃO",
+            "PIPA",
+            "AMARELINHA",
+            "BOLA DE GUDE",
+            "VIDEOGAME",
+            "TABLET",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Pergunte para alguém da sua família como era o bairro quando essa pessoa era criança. Escreva o que você descobriu:",
+          lines: 4,
+          note: "Peça ajuda para um adulto responder às suas perguntas.",
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre o bairro de antigamente e de hoje:",
+          items: [
+            "Antigamente, as pessoas brincavam de ___.",
+            "Hoje em dia, eu gosto de brincar de ___.",
+            "Uma coisa que mudou no bairro foi ___.",
+            "Uma coisa que continua igual até hoje é ___.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe como você imagina que era a rua do seu bairro na época dos seus pais:",
+        },
+      ],
+    },
+    {
+      theme: "O caderno de receitas da turma",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Marque o que você mais gosta de comer lá em casa:",
+          options: [
+            "Comida salgada",
+            "Doce",
+            "Fruta",
+            "Sopa quente",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Pergunte para alguém da sua família uma receita fácil e gostosa. Escreva o nome do prato e quem te ensinou:",
+          lines: 3,
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule os ingredientes que podem aparecer em receitas de família:",
+          items: [
+            "ARROZ",
+            "FEIJÃO",
+            "CANELA",
+            "PIMENTA",
+            "LEITE",
+            "AÇÚCAR",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe o prato que sua família contou para você, prontinho no prato:",
+        },
+      ],
+    },
+    {
+      theme: "Manual de instruções: como pegar o ônibus certo",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete as instruções para pegar o ônibus certo:",
+          items: [
+            "Primeiro, eu preciso saber o número do ___.",
+            "Depois, eu espero o ônibus no ___.",
+            "Na hora de entrar, eu mostro o cartão ou pago a ___.",
+            "Para descer, eu aperto a campainha e vou até a ___.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe você esperando o ônibus no ponto certo, na calçada:",
+        },
+        {
+          kind: "options",
+          instruction: "Marque o lugar certo para esperar o ônibus:",
+          options: [
+            "No meio da rua",
+            "No ponto de ônibus",
+            "Correndo atrás do ônibus",
+            "Dentro de uma loja",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva, em ordem, os passos para pegar o ônibus certo até a escola:",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Caça ao tesouro com pistas de posição",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Circule as palavras que indicam posição:",
+          items: [
+            "EM CIMA",
+            "EMBAIXO",
+            "ATRÁS",
+            "AMARELO",
+            "DENTRO",
+            "PULAR",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as pistas do caça ao tesouro:",
+          items: [
+            "O tesouro estava ___ da mesa.",
+            "A primeira pista mandava olhar ___ da cadeira.",
+            "Eu encontrei a segunda pista ___ do armário.",
+            "A última pista estava ___ da porta.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe onde você escondeu (ou encontrou) o tesouro:",
+        },
+        {
+          kind: "options",
+          instruction: "Se a pista diz 'atrás da cortina', onde você deve procurar?",
+          options: [
+            "Em cima da cortina",
+            "Atrás da cortina",
+            "Dentro da gaveta",
+            "Embaixo da cama",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Texturas que piso no caminho",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Circule as texturas que você pode sentir com os pés no caminho até a escola:",
+          items: [
+            "ÁSPERO",
+            "LISO",
+            "MACIO",
+            "DURO",
+            "MOLHADO",
+            "IRREGULAR",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre o chão do seu caminho:",
+          items: [
+            "O chão da calçada costuma ser ___.",
+            "Quando chove, o chão de terra fica ___.",
+            "A grama do parque é ___ para os pés.",
+            "Uma pedra no meio do caminho pode ser ___.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Pense no caminho de casa até a escola. Escreva os tipos de chão que você pisa (calçada, terra, grama...):",
+          lines: 3,
+        },
+        {
+          kind: "options",
+          instruction: "Qual desses chãos é mais liso para andar?",
+          options: [
+            "Calçada de cimento lisa",
+            "Terra cheia de pedras",
+            "Grama bem alta",
+            "Buraco na rua",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "O que descobrimos na saída de campo",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Escreva três coisas que você observou na caminhada ao redor da escola:",
+          lines: 3,
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule o que você viu durante a saída de campo:",
+          items: [
+            "ÁRVORES",
+            "CARROS",
+            "LOJAS",
+            "PÁSSAROS",
+            "PRAÇA",
+            "LIXO NO CHÃO",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe a coisa mais interessante que você viu na saída de campo:",
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete, organizando o que vimos por categoria:",
+          items: [
+            "Da natureza, nós vimos ___.",
+            "Das construções, nós vimos ___.",
+            "Dos animais, nós vimos ___.",
+            "Uma coisa que me surpreendeu foi ___.",
           ],
         },
       ],
@@ -6673,6 +8037,474 @@ export const ACTIVITY_BANK: Record<OwnSubject | "leitura-diaria", ActivityEntry[
         {
           kind: "draw",
           instruction: "Desenhe um prato colorido e saudável com pelo menos quatro alimentos diferentes.",
+        },
+      ],
+    },
+    {
+      theme: "Uma balança feita de cabide",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Numa balança de cabide, penduramos um saquinho em cada ponta. Se um lado tem um objeto bem pesado, o que acontece?",
+          options: [
+            "O lado pesado desce e o outro sobe",
+            "Os dois lados ficam parados na mesma altura",
+            "O cabide cai no chão",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule os objetos que você acha que são MAIS PESADOS:",
+          items: [
+            "PENA",
+            "PEDRA",
+            "BORRACHA",
+            "LIVRO GROSSO",
+            "CLIPE DE PAPEL",
+            "SAPATO",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre a balança de cabide:",
+          items: [
+            "Na balança, o lado com o objeto mais ___ desce.",
+            "Para saber qual objeto pesa mais, colocamos um em cada ___ da balança.",
+            "O cabide funciona como o ___ da balança.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha dois objetos da sua mochila. Se você os colocasse na balança de cabide, qual lado desceria? Por quê?",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Sorvete de saquinho: do líquido pro sólido com frio",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "No experimento, colocamos leite e açúcar num saquinho pequeno bem fechado e colocamos dentro de outro saquinho com bastante gelo e sal. Depois sacudimos bastante. O que aconteceu com o líquido de dentro depois de um tempo sacudindo?",
+          lines: 3,
+        },
+        {
+          kind: "options",
+          instruction: "Por que colocamos SAL no gelo do saquinho grande?",
+          options: [
+            "Para o gelo ficar ainda mais gelado e congelar o sorvete mais rápido",
+            "Para dar sabor ao sorvete",
+            "Para o saquinho não rasgar",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre o sorvete de saquinho:",
+          items: [
+            "Antes de sacudir, o leite com açúcar estava no estado ___.",
+            "Depois de sacudir bastante tempo no gelo, o sorvete ficou no estado ___.",
+            "O frio fez o líquido virar ___.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule as palavras que têm a ver com FRIO:",
+          items: [
+            "GELO",
+            "NEVE",
+            "CONGELADOR",
+            "FOGO",
+            "SOL FORTE",
+            "SORVETE",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Mesma fruta, guardada diferente",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Cortamos uma maçã ao meio. Uma metade ficou fora da geladeira e a outra ficou guardada dentro da geladeira. No dia seguinte, observamos as duas. Escreva o que você acha que aconteceu com cada uma.",
+          lines: 4,
+        },
+        {
+          kind: "options",
+          instruction: "Qual pedaço de fruta deve estragar mais rápido?",
+          options: [
+            "O que ficou fora da geladeira",
+            "O que ficou dentro da geladeira",
+            "Os dois estragam igual",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre a conservação dos alimentos:",
+          items: [
+            "A geladeira deixa os alimentos mais ___.",
+            "O frio ajuda a fruta a se conservar por mais ___.",
+            "Fora da geladeira, a fruta cortada fica exposta ao ___ do ambiente.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule os alimentos que costumamos guardar na geladeira:",
+          items: [
+            "LEITE",
+            "IOGURTE",
+            "PÃO FRANCÊS",
+            "QUEIJO",
+            "BOLACHA",
+            "FRUTA CORTADA",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Caça-sombras pela escola",
+      exercises: [
+        {
+          kind: "draw",
+          instruction: "Escolha um objeto do pátio da escola que faz sombra. Desenhe o objeto e a sombra dele.",
+          note: "Não esqueça de desenhar o sol também!",
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre as sombras:",
+          items: [
+            "A sombra aparece quando um objeto bloqueia a passagem da ___.",
+            "Lá fora, a fonte de luz mais comum é o ___.",
+            "Dentro da sala de aula, a sombra pode aparecer por causa da luz da ___.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Em qual horário as sombras costumam ficar bem curtinhas?",
+          options: [
+            "No meio do dia, quando o sol está bem alto",
+            "De noite",
+            "Quando está chovendo",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule os lugares da escola onde você pode encontrar sombras:",
+          items: [
+            "PÁTIO NO SOL",
+            "DEBAIXO DA ÁRVORE",
+            "PERTO DA JANELA COM SOL",
+            "DENTRO DO ARMÁRIO FECHADO",
+            "EMBAIXO DO BRINQUEDO DO PARQUINHO",
+            "CORREDOR COM LÂMPADA ACESA",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Fome de verdade x vontade de comer besteira",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual dessas é um sinal de fome de verdade?",
+          options: [
+            "A barriga ronca e você se sente fraco",
+            "Você vê uma propaganda de biscoito na TV",
+            "Seu amigo está comendo doce",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre a alimentação:",
+          items: [
+            "Sentir o estômago ___ é um sinal de que o corpo precisa de comida.",
+            "Comer besteira só porque deu ___ de comer não é a mesma coisa que ter fome.",
+            "O corpo precisa de comida de verdade para ter ___ para brincar e estudar.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule os alimentos que ajudam o corpo a ficar forte e saudável:",
+          items: [
+            "ARROZ E FEIJÃO",
+            "BATATA FRITA DE PACOTE",
+            "FRUTA",
+            "REFRIGERANTE",
+            "OVO",
+            "SALGADINHO",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Conte sobre uma vez em que você sentiu fome de verdade. O que você comeu?",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Planta no sol, planta no escuro",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Colocamos duas mudas de feijão iguais para crescer: uma perto da janela, com sol, e outra dentro de um armário escuro. Depois de uma semana, o que você acha que aconteceu com cada uma?",
+          lines: 4,
+        },
+        {
+          kind: "options",
+          instruction: "Por que a planta que ficou no escuro cresce fraca e com folhas pálidas?",
+          options: [
+            "Porque ela precisa de luz para fazer seu alimento e crescer forte",
+            "Porque ela não gosta de água",
+            "Porque o armário é muito grande",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre as plantas e a luz:",
+          items: [
+            "As plantas precisam de ___ para crescerem fortes e verdes.",
+            "Sem luz, as folhas da planta ficam mais ___.",
+            "A planta que ficou perto da janela recebeu mais ___ do que a que ficou no escuro.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe as duas plantinhas do experimento: uma que cresceu no sol e outra que cresceu no escuro.",
+          note: "Mostre a diferença entre elas!",
+        },
+      ],
+    },
+    {
+      theme: "Peso não é tamanho",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Uma bexiga cheia de ar é bem grande. Uma pedrinha é pequena. Qual das duas você acha que é mais pesada?",
+          options: [
+            "A bexiga, porque é maior",
+            "A pedrinha, mesmo sendo menor",
+            "As duas pesam igual",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule as coisas pequenas que podem ser bem pesadas:",
+          items: [
+            "MOEDA",
+            "TRAVESSEIRO",
+            "CHAVE",
+            "PARAFUSO",
+            "BALÃO DE FESTA",
+            "PILHA",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases:",
+          items: [
+            "Uma pena é grande, mas é muito ___.",
+            "Uma pedrinha é pequena, mas pode ser bem ___.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Pense em dois objetos da sua casa. Qual deles é maior? Qual deles é mais pesado? É o mesmo objeto ou não?",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Roupa molhada no varal",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Uma camiseta molhada foi pendurada no varal, no sol. Outra igual foi pendurada na sombra. Qual vai secar primeiro?",
+          options: [
+            "A que está no sol",
+            "A que está na sombra",
+            "As duas secam no mesmo tempo",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases:",
+          items: [
+            "O calor do sol faz a água da roupa ___.",
+            "Na sombra, a roupa demora mais tempo para ___.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule os lugares onde uma roupa molhada seca mais rápido:",
+          items: [
+            "VARAL NO SOL",
+            "GAVETA FECHADA",
+            "QUINTAL ENSOLARADO",
+            "ARMÁRIO ESCURO",
+            "JANELA COM SOL",
+            "PORÃO",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Tem varal na sua casa? Conte onde ele fica e se pega bastante sol durante o dia.",
+          lines: 3,
+          note: "Se você não souber, pode perguntar para um adulto em casa.",
+        },
+      ],
+    },
+    {
+      theme: "Receita de como guardar o lanche",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual desses lanches estraga mais rápido se ficar fora da geladeira num dia quente?",
+          options: [
+            "Iogurte",
+            "Bolacha de água e sal",
+            "Suco de caixinha fechado",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule os alimentos que é melhor guardar na geladeira antes de ir para a escola:",
+          items: [
+            "IOGURTE",
+            "BISCOITO",
+            "PRESUNTO",
+            "BANANA",
+            "SUCO NATURAL",
+            "PÃO",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases:",
+          items: [
+            "Um pote bem fechado ajuda a manter o lanche ___.",
+            "Guardar o suco numa garrafinha gelada mantém ele fresco por mais ___.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva uma dica para um amigo guardar bem o lanche dele na mochila.",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Biscoito das fases da Lua",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Quando um biscoito redondo está inteiro, sem nenhuma mordida, ele se parece com qual fase da Lua?",
+          options: [
+            "Lua cheia",
+            "Lua minguante",
+            "Lua nova",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases:",
+          items: [
+            "Quando a Lua está toda redonda e iluminada, chamamos de Lua ___.",
+            "Quando quase não conseguimos ver a Lua no céu, chamamos de Lua ___.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule os nomes das fases da Lua:",
+          items: [
+            "LUA CHEIA",
+            "LUA NOVA",
+            "LUA CRESCENTE",
+            "LUA MINGUANTE",
+            "SOL",
+            "ESTRELA",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe a Lua como você a viu no céu essa semana: cheia, redonda pela metade ou bem fininha?",
+          note: "Se não lembrar, pergunte para alguém da sua casa ou observe a Lua hoje à noite com ajuda de um adulto.",
+        },
+      ],
+    },
+    {
+      theme: "Sem energia pra brincar",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que te dá mais energia para correr e brincar bastante no parque?",
+          options: [
+            "Comer uma refeição balanceada",
+            "Ficar o dia todo sem comer",
+            "Beber só água gelada",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases:",
+          items: [
+            "Os alimentos dão ___ para o nosso corpo se mexer.",
+            "Quando ficamos muito tempo sem comer, o corpo fica ___.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule os alimentos que dão bastante energia para brincar:",
+          items: [
+            "ARROZ",
+            "FEIJÃO",
+            "BANANA",
+            "PEDRA",
+            "PÃO",
+            "SAPATO",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Conte uma brincadeira que você gosta de fazer e que precisa de bastante energia.",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Dissecando uma planta de verdade",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Circule as partes de uma planta:",
+          items: [
+            "RAIZ",
+            "CAULE",
+            "FOLHA",
+            "FLOR",
+            "RODA",
+            "PORTA",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases:",
+          items: [
+            "A parte da planta que fica embaixo da terra é a ___.",
+            "A parte que sai da terra e sustenta a planta é o ___.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual parte da planta costuma ficar escondida dentro da terra?",
+          options: [
+            "A folha",
+            "A raiz",
+            "A flor",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Observe com atenção a planta de verdade que o professor trouxe para a sala. Desenhe a planta e escreva o nome de cada parte que você encontrar.",
+          note: "Só toque na planta com a ajuda do professor e lave as mãos depois de mexer nela.",
         },
       ],
     },

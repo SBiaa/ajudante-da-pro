@@ -1,10 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { GeneratedLessonPlan, OwnSubject } from "@/types/plano";
+import { useEffect, useMemo, useState } from "react";
+import { GeneratedLessonPlan, OwnSubject, UsedExerciseEntry } from "@/types/plano";
 import { SubjectColor } from "@/lib/subjectColors";
-import { findActivity } from "@/lib/activityPicker";
-import { findHomework } from "@/lib/homeworkPicker";
+import { findMergedActivity, SourcedExercise } from "@/lib/mergedActivityPicker";
 import { FREE_BOOK_LINKS } from "@/data/freeBookLinks";
 import { CopyButton } from "./CopyButton";
 import { ActivitySheetModal } from "./ActivitySheetModal";
@@ -26,6 +25,9 @@ type Props = {
   readOnly?: boolean;
   /** Desempata atividade/lição de casa quando o mesmo tema existe em mais de um ano. */
   gradeYear?: string;
+  /** Questões já impressas antes — sinaliza "já usada" na hora de personalizar a atividade. */
+  usedExercises?: UsedExerciseEntry[];
+  onMarkExercisesUsed?: (subjectKey: OwnSubject | "leitura-diaria", theme: string, exercises: SourcedExercise[]) => void;
 };
 
 function linesToArray(text: string): string[] {
@@ -50,23 +52,32 @@ export function LessonDetailModal({
   onClose,
   readOnly = false,
   gradeYear,
+  usedExercises,
+  onMarkExercisesUsed,
 }: Props) {
   const [editing, setEditing] = useState(false);
-  const [showActivity, setShowActivity] = useState(false);
-  const [showHomework, setShowHomework] = useState(false);
+  const [showActivitySheet, setShowActivitySheet] = useState(false);
   const [showPresentation, setShowPresentation] = useState(false);
   const [keyword, setKeyword] = useState("");
   const [pendingRegenerate, setPendingRegenerate] = useState(false);
-  const activity = findActivity(subjectKey, plan.theme, gradeYear);
-  const homework = findHomework(subjectKey, plan.theme, gradeYear);
+  const merged = findMergedActivity(subjectKey, plan.theme, gradeYear);
+  const usedExerciseKeys = useMemo(
+    () =>
+      new Set(
+        (usedExercises ?? [])
+          .filter((e) => e.subject === subjectKey && e.theme === plan.theme)
+          .map((e) => e.exerciseKey)
+      ),
+    [usedExercises, subjectKey, plan.theme]
+  );
 
   useEffect(() => {
     function handleKey(e: KeyboardEvent) {
-      if (e.key === "Escape" && !showActivity && !showHomework && !showPresentation) onClose();
+      if (e.key === "Escape" && !showActivitySheet && !showPresentation) onClose();
     }
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-  }, [onClose, showActivity, showHomework, showPresentation]);
+  }, [onClose, showActivitySheet, showPresentation]);
 
   /** "Gerar de novo" sobrescreve o conteúdo direto — só pausa pra confirmar quando existe uma
    * edição manual em risco de ser perdida; sortear de novo em cima do que já veio do banco de
@@ -394,22 +405,13 @@ export function LessonDetailModal({
                 </button>
               )}
               <CopyButton text={sgpText} label="Copiar p/ SGP" />
-              {activity && (
+              {merged && (
                 <button
                   type="button"
-                  onClick={() => setShowActivity(true)}
+                  onClick={() => setShowActivitySheet(true)}
                   className="text-sm px-4 py-1.5 rounded-full bg-[var(--action-primary)] text-white transition-colors hover:bg-[var(--action-primary-hover)]"
                 >
                   Criar atividade
-                </button>
-              )}
-              {homework && (
-                <button
-                  type="button"
-                  onClick={() => setShowHomework(true)}
-                  className="text-sm px-4 py-1.5 rounded-full bg-[var(--action-primary)] text-white transition-colors hover:bg-[var(--action-primary-hover)]"
-                >
-                  Criar lição de casa
                 </button>
               )}
               <button
@@ -424,24 +426,15 @@ export function LessonDetailModal({
         )}
       </div>
 
-      {showActivity && activity && (
+      {showActivitySheet && merged && (
         <ActivitySheetModal
           subjectLabel={title}
           theme={plan.theme}
           color={color}
-          entry={activity}
-          onClose={() => setShowActivity(false)}
-        />
-      )}
-
-      {showHomework && homework && (
-        <ActivitySheetModal
-          subjectLabel={title}
-          theme={plan.theme}
-          color={color}
-          entry={homework}
-          kind="licao-de-casa"
-          onClose={() => setShowHomework(false)}
+          exercises={merged.exercises}
+          onClose={() => setShowActivitySheet(false)}
+          usedExerciseKeys={usedExerciseKeys}
+          onPrint={(printed) => onMarkExercisesUsed?.(subjectKey, plan.theme, printed)}
         />
       )}
 

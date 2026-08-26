@@ -6,10 +6,12 @@ import {
   WEEKDAY_LABELS,
   SLOT_NUMBERS,
   OWN_SUBJECT_LABELS,
+  OwnSubject,
   WeekPlan,
   WeekCell,
   Weekday,
   SlotNumber,
+  UsedExerciseEntry,
 } from "@/types/plano";
 import { LessonCardCompact } from "./LessonCardCompact";
 import { ExternalCard } from "./ExternalCard";
@@ -17,6 +19,7 @@ import { CatSpinner } from "./CatSpinner";
 import { LessonDetailModal } from "./LessonDetailModal";
 import { ColorKey, SubjectColorOverrides, resolveSubjectColor } from "@/lib/subjectColors";
 import { toISODate, addDaysISO } from "@/lib/date";
+import { SourcedExercise } from "@/lib/mergedActivityPicker";
 
 /** Versão curta do dia da semana — as abas do modo mobile não têm espaço pro rótulo completo
  * usado no cabeçalho de coluna da grade ("Segunda-feira" etc). */
@@ -44,6 +47,10 @@ type Props = {
    * ActivityEntry.gradeYear). Ausente na página pública de compartilhamento, que hoje não
    * guarda o ano — nesse caso cai no primeiro resultado encontrado, como antes. */
   gradeYear?: string;
+  /** Questões já impressas antes (ver ActivitySheetModal) — ausente na página pública de
+   * compartilhamento, que não tem esse histórico. */
+  usedExercises?: UsedExerciseEntry[];
+  onMarkExercisesUsed?: (subjectKey: OwnSubject | "leitura-diaria", theme: string, exercises: SourcedExercise[]) => void;
 };
 
 function colorKeyFor(cell: WeekCell): ColorKey {
@@ -63,6 +70,8 @@ export function WeekGrid({
   shareLoading = false,
   readOnly = false,
   gradeYear,
+  usedExercises,
+  onMarkExercisesUsed,
 }: Props) {
   const [detailKey, setDetailKey] = useState<{ day: Weekday; slot: SlotNumber } | null>(null);
   const detailCell = detailKey ? week.days[detailKey.day][detailKey.slot] : null;
@@ -214,6 +223,8 @@ export function WeekGrid({
           onGenerate={(keyword) => onGenerateCell?.(detailKey.day, detailKey.slot, keyword)}
           onClose={() => setDetailKey(null)}
           readOnly={readOnly}
+          usedExercises={usedExercises}
+          onMarkExercisesUsed={onMarkExercisesUsed}
         />
       )}
     </div>

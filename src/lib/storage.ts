@@ -12,7 +12,14 @@ function storageKey(userId: number): string {
 const NEVER_SYNCED = new Date(0).toISOString();
 
 export function emptyState(): AppState {
-  return { timetable: null, weeks: {}, themeHistory: [], subjectColorOverrides: {}, updatedAt: NEVER_SYNCED };
+  return {
+    timetable: null,
+    weeks: {},
+    themeHistory: [],
+    usedExercises: [],
+    subjectColorOverrides: {},
+    updatedAt: NEVER_SYNCED,
+  };
 }
 
 /** Preenche campos que possam faltar em dados salvos por uma versão anterior do app. */

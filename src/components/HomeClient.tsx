@@ -17,6 +17,8 @@ import { useAppState } from "@/hooks/useAppState";
 import { getMondayISO, getWeekId, addWeeksISO } from "@/lib/date";
 import { createEmptyTimetable, buildWeekPlan, duplicateWeekPlan, syncWeeksWithTimetable } from "@/lib/timetable";
 import { pickThemeEntry } from "@/lib/themePicker";
+import { exerciseKey } from "@/lib/usedExercises";
+import { SourcedExercise } from "@/lib/mergedActivityPicker";
 import { Network, getNetworkLabel } from "@/types/profile";
 import { TimetableEditor } from "@/components/TimetableEditor";
 import { WeekNav } from "@/components/WeekNav";
@@ -115,6 +117,7 @@ export default function HomeClient({
           ...next,
           weeks: initialAppData.weeks,
           themeHistory: initialAppData.themeHistory,
+          usedExercises: initialAppData.usedExercises,
           subjectColorOverrides: initialAppData.subjectColorOverrides,
         };
       }
@@ -328,6 +331,23 @@ export default function HomeClient({
     setState((s) => ({ ...s, themeHistory: s.themeHistory.filter((_, i) => i !== index) }));
   }
 
+  /** Chamada ao imprimir/exportar uma atividade: marca as questões que saíram na folha como
+   * "já usada", pra sinalizar (sem bloquear) da próxima vez que a mesma professora montar
+   * atividade pro mesmo tema. Não marca de novo o que já estava marcado. */
+  function markExercisesUsed(subjectKey: OwnSubject | "leitura-diaria", theme: string, exercises: SourcedExercise[]) {
+    setState((s) => {
+      const already = new Set(
+        s.usedExercises.filter((e) => e.subject === subjectKey && e.theme === theme).map((e) => e.exerciseKey)
+      );
+      const usedAt = new Date().toISOString();
+      const newEntries = exercises
+        .filter((ex) => !already.has(exerciseKey(ex)))
+        .map((ex) => ({ subject: subjectKey, theme, exerciseKey: exerciseKey(ex), usedAt }));
+      if (newEntries.length === 0) return s;
+      return { ...s, usedExercises: [...s.usedExercises, ...newEntries] };
+    });
+  }
+
   function handleGoToday() {
     setViewedMonday(getMondayISO());
   }
@@ -405,6 +425,8 @@ export default function HomeClient({
           colorOverrides={state.subjectColorOverrides}
           network={network}
           gradeYear={gradeYear}
+          usedExercises={state.usedExercises}
+          onMarkExercisesUsed={markExercisesUsed}
           onClose={() => setShowContentBank(false)}
         />
       ) : (
@@ -438,6 +460,8 @@ export default function HomeClient({
               onShare={handleShareWeek}
               shareLoading={shareState?.status === "loading"}
               gradeYear={gradeYear}
+              usedExercises={state.usedExercises}
+              onMarkExercisesUsed={markExercisesUsed}
             />
           ) : (
             <EmptyWeekPrompt

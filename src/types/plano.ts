@@ -142,6 +142,20 @@ export type ThemeHistoryEntry = {
 };
 
 // ---------------------------------------------------------------------------
+// Questões já impressas (pra sinalizar "já usada" na hora de montar outra atividade —
+// não bloqueia reaproveitar, só avisa)
+// ---------------------------------------------------------------------------
+
+export type UsedExerciseEntry = {
+  subject: OwnSubject | "leitura-diaria";
+  theme: string;
+  /** Identifica a questão dentro do tema (ver src/lib/usedExercises.ts) — os bancos de
+   * atividade/lição de casa não têm id próprio, então usamos a origem + o enunciado. */
+  exerciseKey: string;
+  usedAt: string; // ISO date
+};
+
+// ---------------------------------------------------------------------------
 // Banco de temas local (offline, sem custo — ver src/data/themeBank.ts)
 // ---------------------------------------------------------------------------
 
@@ -183,6 +197,7 @@ export type AppState = {
   timetable: WeeklyTimetable | null;
   weeks: Record<string, WeekPlan>; // keyed by WeekPlan.id
   themeHistory: ThemeHistoryEntry[];
+  usedExercises: UsedExerciseEntry[];
   subjectColorOverrides: SubjectColorOverrides;
   /** ISO date da última alteração local, usado para decidir (contra o servidor) quem é mais
    * recente ao sincronizar entre dispositivos — ver src/lib/db/appData.ts. */

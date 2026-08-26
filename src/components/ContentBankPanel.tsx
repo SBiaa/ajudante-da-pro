@@ -1,13 +1,14 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { OWN_SUBJECTS, OwnSubject, GeneratedLessonPlan } from "@/types/plano";
+import { OWN_SUBJECTS, OwnSubject, GeneratedLessonPlan, UsedExerciseEntry } from "@/types/plano";
 import { Network } from "@/types/profile";
 import { READING_BANK } from "@/data/themeBank";
 import { getThemeBank } from "@/data/curriculumBanks";
 import { ACTIVITY_BANK } from "@/data/activityBank";
 import { HOMEWORK_BANK, HomeworkSubject } from "@/data/homeworkBank";
 import { COLOR_KEY_LABELS, SubjectColorOverrides, resolveSubjectColor } from "@/lib/subjectColors";
+import { SourcedExercise } from "@/lib/mergedActivityPicker";
 import { SubjectIcon } from "./SubjectIcon";
 import { LessonDetailModal } from "./LessonDetailModal";
 
@@ -51,6 +52,8 @@ type Props = {
   colorOverrides: SubjectColorOverrides;
   network: Network;
   gradeYear: string;
+  usedExercises?: UsedExerciseEntry[];
+  onMarkExercisesUsed?: (subjectKey: OwnSubject | "leitura-diaria", theme: string, exercises: SourcedExercise[]) => void;
   onClose: () => void;
 };
 
@@ -110,7 +113,14 @@ function buildRows(network: Network, gradeYear: string): Row[] {
 /** Tela de consulta ao banco de conteúdo local: todos os temas cadastrados por matéria,
  * com filtro por matéria e por que tipo de material já existe pronto (atividade, lição de
  * casa) — pra ver o que já tem no banco sem precisar sortear uma aula. */
-export function ContentBankPanel({ colorOverrides, network, gradeYear, onClose }: Props) {
+export function ContentBankPanel({
+  colorOverrides,
+  network,
+  gradeYear,
+  usedExercises,
+  onMarkExercisesUsed,
+  onClose,
+}: Props) {
   const [subjectFilter, setSubjectFilter] = useState<SubjectKey | "">("");
   const [contentFilter, setContentFilter] = useState<ContentFilter>("");
   const [search, setSearch] = useState("");
@@ -241,6 +251,8 @@ export function ContentBankPanel({ colorOverrides, network, gradeYear, onClose }
           gradeYear={gradeYear}
           onClose={() => setSelected(null)}
           readOnly
+          usedExercises={usedExercises}
+          onMarkExercisesUsed={onMarkExercisesUsed}
         />
       )}
     </div>
