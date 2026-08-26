@@ -16,6 +16,7 @@ export function emptyPlan(): GeneratedLessonPlan {
     description: "",
     materials: [],
     steps: [],
+    classScript: [],
     readingText: "",
     genre: "",
     generatedAt: null,

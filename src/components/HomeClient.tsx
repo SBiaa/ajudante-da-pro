@@ -177,6 +177,7 @@ export default function HomeClient({
       description: entry.description,
       materials: entry.materials,
       steps: entry.steps,
+      classScript: entry.classScript,
       readingText: entry.readingText,
       genre: entry.genre,
       generatedAt: new Date().toISOString(),
@@ -436,6 +437,7 @@ export default function HomeClient({
               onExportPdf={handleExportPdf}
               onShare={handleShareWeek}
               shareLoading={shareState?.status === "loading"}
+              gradeYear={gradeYear}
             />
           ) : (
             <EmptyWeekPrompt

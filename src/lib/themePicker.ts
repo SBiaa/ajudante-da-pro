@@ -9,6 +9,7 @@ export type PickedEntry = {
   description: string;
   materials: string[];
   steps: string[];
+  classScript: string[];
   readingText: string;
   genre: string;
 };
@@ -19,6 +20,7 @@ const EMPTY_PICK: PickedEntry = {
   description: "",
   materials: [],
   steps: [],
+  classScript: [],
   readingText: "",
   genre: "",
 };
@@ -54,6 +56,7 @@ export function pickThemeEntry(
         description: r.description,
         materials: [],
         steps: r.steps,
+        classScript: [],
         readingText: r.text,
         genre: r.genre,
       })
@@ -73,6 +76,7 @@ export function pickThemeEntry(
       description: entry.description,
       materials: entry.materials,
       steps: entry.steps,
+      classScript: entry.classScript ?? [],
       readingText: "",
       genre: "",
     })

@@ -13,5 +13,11 @@ export type ActivityExercise =
 export type ActivityEntry = {
   /** Deve corresponder exatamente ao "theme" da entrada no banco de temas (BankEntry.theme). */
   theme: string;
+  /**
+   * Só precisa ser preenchido quando o mesmo texto de "theme" aparece em mais de um ano
+   * (ex.: "Compondo e decompondo números" existe igual no 2º e no 3º ano, com números
+   * diferentes) — desempata a busca por série. Deixe em branco quando o tema for único.
+   */
+  gradeYear?: string;
   exercises: ActivityExercise[];
 };

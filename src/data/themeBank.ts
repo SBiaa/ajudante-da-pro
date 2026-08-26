@@ -577,6 +577,907 @@ export const THEME_BANK: Record<OwnSubject, BankEntry[]> = {
         "Jogar novamente e pedir que outro aluno continue a história com o novo elemento sorteado.",
         "Repetir até formar uma história coletiva completa, com começo, meio e fim."
       ]
+    },
+    {
+      "theme": "Caça-nomes no varal da sala",
+      "curriculumCode": "EF02LP01",
+      "description": "Localizar, num varal de aniversariantes do mês, os nomes dos colegas dentro do mesmo campo semântico de datas comemorativas da turma.",
+      "materials": [
+        "Varal ou barbante com pregadores",
+        "Tiras de papel com os nomes dos aniversariantes do mês"
+      ],
+      "steps": [
+        "Pendurar no varal as tiras com os nomes dos aniversariantes do mês.",
+        "Ler em voz alta cada nome pendurado com a turma.",
+        "Perguntar quem consegue encontrar seu próprio nome no varal.",
+        "Pedir que cada aluno copie, numa ficha, o nome de dois colegas que fazem aniversário no mesmo mês que ele.",
+        "Guardar as fichas preenchidas no mural da turma."
+      ]
+    },
+    {
+      "theme": "Lista de brinquedos do dia do brinquedo",
+      "curriculumCode": "EF02LP01",
+      "description": "Localizar nomes de brinquedos trazidos pelos colegas numa lista organizada pelo mesmo campo semântico de brincadeiras.",
+      "materials": [
+        "Brinquedos trazidos de casa (dia combinado)",
+        "Cartaz com espaço para lista"
+      ],
+      "steps": [
+        "Combinar com antecedência o dia do brinquedo.",
+        "Escrever na lousa o nome de cada brinquedo trazido, ditado pelos donos.",
+        "Ler a lista completa em voz alta com a turma.",
+        "Pedir que os alunos localizem, na lista, o nome do próprio brinquedo e o circulem.",
+        "Copiar no caderno o nome de três brinquedos da lista que mais gostaram."
+      ]
+    },
+    {
+      "theme": "Escalando ajudantes do dia",
+      "curriculumCode": "EF02LP02",
+      "description": "Localizar nomes de alunos numa lista da turma para copiar e organizar a escala semanal de ajudantes da sala.",
+      "materials": [
+        "Lista de nomes da turma",
+        "Quadro de escala semanal (cartaz)"
+      ],
+      "steps": [
+        "Mostrar o quadro de escala de ajudantes ainda vazio.",
+        "Ler a lista de nomes da turma em voz alta.",
+        "Sortear ou combinar quem será ajudante em cada dia da semana.",
+        "Pedir que cada aluno localize seu nome na lista e o copie no dia combinado do quadro.",
+        "Fixar o quadro de escala preenchido na parede da sala."
+      ]
+    },
+    {
+      "theme": "Adivinhas na roda",
+      "curriculumCode": "EF02LP03",
+      "description": "Ler de forma autônoma, em roda, adivinhas já conhecidas de cor, ajustando o que é falado ao que está escrito no cartaz.",
+      "materials": [
+        "Cartaz com adivinhas conhecidas pela turma"
+      ],
+      "steps": [
+        "Sentar em roda e recitar de cor uma adivinha conhecida.",
+        "Mostrar a mesma adivinha escrita no cartaz.",
+        "Pedir que apontem cada palavra com o dedo enquanto recitam novamente.",
+        "Chamar alguns alunos para ler sozinhos, apontando as palavras.",
+        "Pedir que cada aluno registre no caderno a resposta da adivinha preferida."
+      ]
+    },
+    {
+      "theme": "Poema decorado vira leitura",
+      "curriculumCode": "EF02LP03",
+      "description": "Ler de forma autônoma um poema curto já decorado pela turma, ajustando a fala ao texto escrito verso por verso.",
+      "materials": [
+        "Cartaz ou folha com o poema em letra grande"
+      ],
+      "steps": [
+        "Recitar o poema de cor com toda a turma.",
+        "Mostrar o poema escrito, verso por verso, no cartaz.",
+        "Pedir que apontem cada verso enquanto recitam.",
+        "Convidar duplas para ler um verso cada, apontando as palavras.",
+        "Pedir que os alunos copiem no caderno o verso de que mais gostaram."
+      ]
+    },
+    {
+      "theme": "Manchetes de jornal na roda",
+      "curriculumCode": "EF02LP04",
+      "description": "Ler de forma autônoma manchetes de jornal, usando pistas do texto para antecipar e depois validar o que está escrito.",
+      "materials": [
+        "Recortes de manchetes de jornais ou revistas"
+      ],
+      "steps": [
+        "Distribuir recortes de manchetes para os grupos, viradas para baixo.",
+        "Pedir que cada grupo espie só a imagem ou o título e imagine do que trata.",
+        "Ler a manchete em voz alta e comparar com o que foi imaginado.",
+        "Discutir quais pistas (letras grandes, imagem, palavras conhecidas) ajudaram a adivinhar.",
+        "Pedir que cada grupo escreva numa folha o assunto da manchete que leu."
+      ]
+    },
+    {
+      "theme": "Mural das lendas de cada família",
+      "curriculumCode": "EF02LP05",
+      "description": "Escutar lendas e mitos trazidos pelas famílias dos alunos, valorizando a diversidade cultural presente na própria turma.",
+      "materials": [
+        "Lendas ou mitos pesquisados com a família (combinado com antecedência)",
+        "Papel para o mural"
+      ],
+      "steps": [
+        "Combinar com antecedência que cada aluno pergunte em casa uma lenda ou mito que a família conhece.",
+        "Organizar uma roda para os alunos contarem o que descobriram.",
+        "Ouvir com atenção cada lenda contada, sem interromper.",
+        "Perguntar de que região ou cultura vem cada lenda contada.",
+        "Registrar no mural o título da lenda e o nome de quem contou."
+      ]
+    },
+    {
+      "theme": "Comparando fábulas do Brasil e da África",
+      "curriculumCode": "EF02LP05",
+      "description": "Escutar duas fábulas de tradições diferentes, uma brasileira e uma africana, para valorizar a diversidade cultural entre os povos.",
+      "materials": [
+        "Duas fábulas de tradições diferentes para leitura em voz alta"
+      ],
+      "steps": [
+        "Ler em voz alta a primeira fábula, de tradição brasileira.",
+        "Ler em voz alta a segunda fábula, de tradição africana.",
+        "Conversar sobre os animais e a lição de cada uma.",
+        "Preencher com a turma um quadro comparando personagens e lições das duas fábulas.",
+        "Pedir que cada aluno desenhe o animal que mais gostou e escreva seu nome."
+      ]
+    },
+    {
+      "theme": "Livrinho das cantigas que a vovó cantava",
+      "curriculumCode": "EF02LP06",
+      "description": "Cantar e depois registrar cantigas e parlendas da tradição oral trazidas de casa pelos alunos, valorizando a memória da família.",
+      "materials": [
+        "Cantigas trazidas de casa (combinado com antecedência)",
+        "Folhas para montar um livrinho"
+      ],
+      "steps": [
+        "Combinar que os alunos perguntem em casa uma cantiga que os avós ou pais cantavam.",
+        "Cantar em roda cada cantiga trazida pelos alunos.",
+        "Escrever na lousa o título de cada cantiga cantada.",
+        "Pedir que cada aluno escolha uma cantiga e a copie numa folha do livrinho da turma.",
+        "Encadernar as folhas e formar o livrinho de cantigas da turma."
+      ]
+    },
+    {
+      "theme": "Verbete sobre a profissão dos familiares",
+      "curriculumCode": "EF02LP08",
+      "description": "Escutar a leitura de pequenos verbetes sobre profissões dos familiares dos alunos, conhecendo a diversidade da comunidade escolar.",
+      "materials": [
+        "Verbetes curtos sobre profissões (preparados pelo professor)"
+      ],
+      "steps": [
+        "Perguntar a cada aluno qual é a profissão de alguém da sua família.",
+        "Ler em voz alta um verbete curto sobre cada profissão citada.",
+        "Conversar sobre o que a pessoa faz no trabalho.",
+        "Pedir que os alunos desenhem a profissão de um familiar.",
+        "Escrever embaixo do desenho, com ajuda, o nome da profissão."
+      ]
+    },
+    {
+      "theme": "Relato histórico do bairro da escola",
+      "curriculumCode": "EF02LP08",
+      "description": "Escutar um relato histórico sobre a origem do bairro onde fica a escola, conhecendo a comunidade escolar.",
+      "materials": [
+        "Texto curto sobre a história do bairro (pesquisado pelo professor)"
+      ],
+      "steps": [
+        "Ler em voz alta o relato histórico sobre o bairro da escola.",
+        "Mostrar fotos antigas do bairro, se houver.",
+        "Perguntar o que os alunos já sabiam e o que descobriram de novo.",
+        "Fazer perguntas sobre o relato para verificar o que entenderam.",
+        "Pedir que os alunos escrevam ou desenhem uma coisa que aprenderam sobre o bairro."
+      ]
+    },
+    {
+      "theme": "Lista de frutas do lanche coletivo",
+      "curriculumCode": "EF02LP09",
+      "description": "Escrever uma lista de frutas para o lanche coletivo da turma, consultando a lista de nomes e o alfabeto da sala como referência.",
+      "materials": [
+        "Alfabeto móvel ou cartaz do alfabeto fixado na sala",
+        "Frutas para o lanche (combinado com antecedência)"
+      ],
+      "steps": [
+        "Perguntar a cada aluno qual fruta quer trazer para o lanche coletivo.",
+        "Escrever na lousa o nome de cada fruta dita.",
+        "Mostrar o alfabeto fixado na sala como apoio para as dúvidas de letras.",
+        "Pedir que os alunos copiem a lista de frutas no caderno.",
+        "Marcar ao lado do nome quem trouxe cada fruta no dia combinado."
+      ]
+    },
+    {
+      "theme": "Livrinho de trava-línguas da turma",
+      "curriculumCode": "EF02LP11",
+      "description": "Escrever, com escrita alfabética e de memória, trava-línguas conhecidos pela turma para montar um livrinho coletivo.",
+      "materials": [
+        "Folhas para montar um livrinho"
+      ],
+      "steps": [
+        "Relembrar em roda os trava-línguas que a turma sabe de cor.",
+        "Escolher, com a turma, três trava-línguas para o livrinho.",
+        "Pedir que cada aluno escreva um trava-língua de memória na sua folha.",
+        "Circular pela sala ajudando com as letras que faltam.",
+        "Juntar as folhas e montar o livrinho de trava-línguas da turma."
+      ]
+    },
+    {
+      "theme": "Adivinha de cor: escrevendo sem olhar",
+      "curriculumCode": "EF02LP11",
+      "description": "Escrever, com escrita alfabética, uma adivinha conhecida de cor, sem consultar o texto, testando o que já sabe sobre as letras.",
+      "materials": [],
+      "steps": [
+        "Escolher em roda uma adivinha que todos sabem de cor.",
+        "Recitar a adivinha juntos algumas vezes.",
+        "Pedir que cada aluno escreva a adivinha no caderno sem olhar para nenhum cartaz.",
+        "Comparar depois com a versão escrita no cartaz, corrigindo o que for preciso.",
+        "Guardar a versão corrigida no caderno de textos da turma."
+      ]
+    },
+    {
+      "theme": "Recontando a fábula com fantoches",
+      "curriculumCode": "EF02LP12",
+      "description": "Recontar oralmente uma fábula conhecida usando fantoches, respeitando a sequência e as características do gênero.",
+      "materials": [
+        "Fantoches simples (de meia, saco de papel ou dedo)"
+      ],
+      "steps": [
+        "Ler ou relembrar uma fábula conhecida pela turma.",
+        "Distribuir fantoches representando os personagens da fábula.",
+        "Organizar os alunos em grupos para recontar a fábula com os fantoches.",
+        "Apresentar o reconto para o restante da turma.",
+        "Pedir que cada grupo escreva numa ficha o nome dos personagens e a lição da fábula."
+      ]
+    },
+    {
+      "theme": "Conto em quadrinhos: reescrevendo em cenas",
+      "curriculumCode": "EF02LP13",
+      "description": "Reescrever um conto conhecido dividindo-o em cenas desenhadas e legendadas, respeitando a sequência da história.",
+      "materials": [
+        "Folha dividida em quadros (modelo de história em quadrinhos)"
+      ],
+      "steps": [
+        "Relembrar com a turma um conto conhecido, do início ao fim.",
+        "Listar na lousa as principais partes da história em ordem.",
+        "Distribuir a folha com quadros para cada aluno.",
+        "Pedir que desenhem uma cena em cada quadro, na ordem da história.",
+        "Pedir que escrevam uma legenda curta embaixo de cada cena desenhada."
+      ]
+    },
+    {
+      "theme": "Final alternativo para um conto conhecido",
+      "curriculumCode": "EF02LP13",
+      "description": "Reescrever, de próprio punho ou ditando ao professor, um conto conhecido criando um final diferente, mas respeitando o restante da sequência.",
+      "materials": [],
+      "steps": [
+        "Relembrar com a turma um conto conhecido até o momento antes do final.",
+        "Perguntar o que aconteceria se a história terminasse de outro jeito.",
+        "Combinar em roda algumas ideias de finais diferentes.",
+        "Pedir que cada aluno escreva ou dite ao professor o novo final escolhido.",
+        "Ler alguns finais em voz alta para a turma."
+      ]
+    },
+    {
+      "theme": "Linha do tempo do nosso dia de horta",
+      "curriculumCode": "EF02LP15",
+      "description": "Escrever coletivamente o relato de um dia de trabalho na horta da escola, situando as ações no tempo com primeiro, depois e por fim.",
+      "materials": [
+        "Horta ou canteiro da escola (ou fotos da atividade)"
+      ],
+      "steps": [
+        "Realizar uma atividade na horta da escola (plantar, regar ou colher).",
+        "Depois, sentar em roda e relembrar tudo o que foi feito, na ordem.",
+        "Escrever na lousa as palavras 'primeiro', 'depois' e 'por fim' como apoio.",
+        "Escrever coletivamente, com a turma ditando, o relato do dia na horta.",
+        "Ler o relato pronto em voz alta e fixá-lo no mural da turma."
+      ]
+    },
+    {
+      "theme": "Convite para a festa junina da escola",
+      "curriculumCode": "EF02LP16",
+      "description": "Produzir um convite para a festa junina da escola, respeitando a situação comunicativa: para quem escrever e o que informar.",
+      "materials": [
+        "Cartolina ou papel colorido para o convite"
+      ],
+      "steps": [
+        "Conversar sobre a festa junina da escola: data, horário e local.",
+        "Perguntar quem vai receber o convite (familiares, outra turma).",
+        "Listar na lousa as informações que não podem faltar no convite.",
+        "Pedir que cada aluno escreva seu convite com as informações combinadas.",
+        "Decorar os convites e entregá-los aos destinatários combinados."
+      ]
+    },
+    {
+      "theme": "Carta para um amigo de outra turma",
+      "curriculumCode": "EF02LP16",
+      "description": "Produzir uma carta para um aluno de outra turma da escola, respeitando a estrutura e a situação comunicativa desse gênero.",
+      "materials": [
+        "Papel de carta ou folha comum",
+        "Envelope (opcional)"
+      ],
+      "steps": [
+        "Combinar com outra turma da escola a troca de cartas entre os alunos.",
+        "Mostrar um modelo de carta simples e identificar suas partes (data, saudação, texto, despedida).",
+        "Perguntar o que cada aluno quer contar para o amigo da outra turma.",
+        "Pedir que cada aluno escreva sua carta seguindo o modelo mostrado.",
+        "Entregar ou trocar as cartas escritas entre as duas turmas."
+      ]
+    },
+    {
+      "theme": "Manual de instruções para montar um brinquedo de papel",
+      "curriculumCode": "EF02LP17",
+      "description": "Escrever um pequeno manual de instruções para montar um brinquedo de papel, respeitando a estrutura do texto instrucional.",
+      "materials": [
+        "Papel para dobradura",
+        "Modelo de brinquedo de papel simples (barquinho, chapéu)"
+      ],
+      "steps": [
+        "Montar juntos, passo a passo, um brinquedo de papel simples.",
+        "Listar na lousa cada passo feito, na ordem certa.",
+        "Numerar os passos e reler para conferir se está completo.",
+        "Pedir que os alunos copiem os passos numa folha, formando o manual.",
+        "Trocar os manuais entre duplas para tentar montar o brinquedo seguindo as instruções do colega."
+      ]
+    },
+    {
+      "theme": "Organizando o sarau de histórias da turma",
+      "curriculumCode": "EF02LP18",
+      "description": "Organizar coletivamente um sarau de contação de histórias, decidindo quem conta, para quem e como será a apresentação.",
+      "materials": [
+        "Histórias já preparadas pelos alunos ou grupos"
+      ],
+      "steps": [
+        "Conversar sobre o que é um sarau de histórias.",
+        "Combinar com a turma quem vai contar cada história e para quem (outra turma, os pais).",
+        "Ensaiar em pequenos grupos como cada um vai contar sua parte.",
+        "Organizar a ordem das apresentações numa lista escrita na lousa.",
+        "Realizar o sarau e pedir que os alunos anotem numa ficha qual história mais gostaram de ouvir."
+      ]
+    },
+    {
+      "theme": "Contação para a turma do 1º ano",
+      "curriculumCode": "EF02LP18",
+      "description": "Preparar e realizar uma roda de contação de histórias para os alunos do 1º ano, organizando previamente quem conta e como.",
+      "materials": [
+        "Livro ou história escolhida para contar"
+      ],
+      "steps": [
+        "Escolher com a turma uma história para contar aos alunos menores.",
+        "Combinar quem vai contar cada parte da história.",
+        "Ensaiar a contação em voz alta, prestando atenção no tom de voz.",
+        "Ir até a turma do 1º ano e realizar a contação combinada.",
+        "Voltar para a sala e escrever, com a turma, o que os alunos menores mais gostaram."
+      ]
+    },
+    {
+      "theme": "Explicando o ciclo da água",
+      "curriculumCode": "EF02LP19",
+      "description": "Explicar oralmente, com apoio de perguntas, o que a turma aprendeu sobre o ciclo da água, opinando sobre o assunto estudado.",
+      "materials": [
+        "Cartaz ou desenho do ciclo da água"
+      ],
+      "steps": [
+        "Mostrar o cartaz do ciclo da água para relembrar o que foi estudado.",
+        "Pedir que os alunos expliquem, com suas palavras, cada etapa do ciclo.",
+        "Incentivar que formulem perguntas sobre o que ainda têm dúvida.",
+        "Perguntar a opinião deles sobre a importância de cuidar da água.",
+        "Pedir que cada aluno escreva ou desenhe uma etapa do ciclo da água que explicou."
+      ]
+    },
+    {
+      "theme": "Roda do meu animal favorito",
+      "curriculumCode": "EF02LP20",
+      "description": "Apresentar oralmente, em roda de conversa, informações sobre o animal favorito de cada aluno, respeitando a vez de falar.",
+      "materials": [],
+      "steps": [
+        "Combinar a ordem de fala e as regras da roda de conversa.",
+        "Pedir que cada aluno pense em três informações sobre seu animal favorito.",
+        "Chamar os alunos, um de cada vez, para apresentar seu animal favorito à turma.",
+        "Pedir que os colegas ouçam em silêncio até chegar sua vez.",
+        "Pedir que cada aluno desenhe seu animal favorito e escreva seu nome embaixo."
+      ]
+    },
+    {
+      "theme": "Apresentando meu brinquedo preferido",
+      "curriculumCode": "EF02LP20",
+      "description": "Apresentar oralmente para a turma o brinquedo preferido, organizando as ideias sobre o tema em roda de conversa.",
+      "materials": [
+        "Brinquedo preferido trazido de casa (combinado com antecedência)"
+      ],
+      "steps": [
+        "Combinar com antecedência que os alunos tragam o brinquedo preferido.",
+        "Explicar as regras da roda: falar na vez, ouvir os colegas.",
+        "Chamar cada aluno para apresentar seu brinquedo, contando por que gosta dele.",
+        "Permitir perguntas rápidas dos colegas após cada apresentação.",
+        "Pedir que cada aluno escreva o nome do brinquedo apresentado numa lista da turma."
+      ]
+    },
+    {
+      "theme": "Relato oral do dia em que aprendi algo novo",
+      "curriculumCode": "EF02LP21",
+      "description": "Relatar oralmente uma experiência vivida em que o aluno aprendeu algo novo, organizando a fala de acordo com a situação de roda de conversa.",
+      "materials": [],
+      "steps": [
+        "Pedir que os alunos pensem em um dia em que aprenderam algo novo, como andar de bicicleta ou cozinhar.",
+        "Combinar a ordem de fala na roda de conversa.",
+        "Chamar cada aluno para contar sua experiência, do começo ao fim.",
+        "Ajudar com perguntas quando o relato ficar confuso na ordem dos fatos.",
+        "Pedir que cada aluno desenhe o momento em que aprendeu algo novo e dite uma legenda para o professor escrever."
+      ]
+    },
+    {
+      "theme": "Assembleia da turma: decidindo as regras da sala",
+      "curriculumCode": "EF02LP22",
+      "description": "Participar de uma discussão oral para decidir as regras da sala, ouvindo os colegas com atenção e opinando sobre o tema.",
+      "materials": [
+        "Cartaz para registrar as regras combinadas"
+      ],
+      "steps": [
+        "Explicar que a turma vai decidir juntas as regras da sala.",
+        "Pedir que cada aluno sugira uma regra, um de cada vez.",
+        "Ouvir as sugestões e discutir quais fazem sentido para todos.",
+        "Votar, com a mão levantada, as regras que ficarão valendo.",
+        "Escrever as regras combinadas no cartaz e fixá-lo na sala."
+      ]
+    },
+    {
+      "theme": "Debate sobre reciclagem na escola",
+      "curriculumCode": "EF02LP22",
+      "description": "Participar de uma discussão oral sobre reciclagem na escola, ouvindo os colegas e opinando com argumentos sobre o tema.",
+      "materials": [
+        "Materiais recicláveis para mostrar (garrafa, papel, lata)"
+      ],
+      "steps": [
+        "Mostrar alguns materiais recicláveis trazidos para a roda.",
+        "Perguntar o que a turma sabe sobre reciclagem.",
+        "Abrir a discussão perguntando se a escola deveria reciclar mais e por quê.",
+        "Ouvir as opiniões, garantindo que cada aluno tenha sua vez de falar.",
+        "Pedir que os alunos escrevam uma ideia para melhorar a reciclagem na escola."
+      ]
+    },
+    {
+      "theme": "Retrato falado da personagem",
+      "curriculumCode": "EF02LP23",
+      "description": "Identificar características físicas e de personalidade de uma personagem de um conto lido pelo professor, montando um retrato falado dela.",
+      "materials": [
+        "Conto com uma personagem marcante para ler em voz alta"
+      ],
+      "steps": [
+        "Ler em voz alta um conto com uma personagem marcante.",
+        "Perguntar como é a personagem por fora (aparência) e por dentro (jeito de ser).",
+        "Listar na lousa as características citadas pelos alunos.",
+        "Pedir que cada aluno desenhe a personagem com as características discutidas.",
+        "Pedir que escrevam, embaixo do desenho, duas palavras que descrevem a personagem."
+      ]
+    },
+    {
+      "theme": "Trocando nomes repetidos por apelidos",
+      "curriculumCode": "EF02LP24",
+      "description": "Revisar coletivamente um texto da turma, eliminando a repetição do nome de um personagem e substituindo por apelidos adequados.",
+      "materials": [
+        "Texto coletivo da turma com o nome do personagem repetido (preparado pelo professor)"
+      ],
+      "steps": [
+        "Ler em voz alta o texto coletivo com o nome do personagem repetido várias vezes.",
+        "Pedir que os alunos apontem cada vez que o nome aparece repetido.",
+        "Perguntar que apelido ou jeito de chamar a personagem poderia substituir o nome.",
+        "Reescrever coletivamente o trecho, trocando algumas repetições pelos apelidos combinados.",
+        "Copiar a versão final revisada no caderno."
+      ]
+    },
+    {
+      "theme": "Substituindo \"ele\" e \"ela\" no texto dos animais",
+      "curriculumCode": "EF02LP24",
+      "description": "Revisar um texto coletivo sobre animais, eliminando repetições dos nomes e substituindo por pronomes como 'ele' e 'ela'.",
+      "materials": [
+        "Texto coletivo sobre um animal com o nome repetido (preparado pelo professor)"
+      ],
+      "steps": [
+        "Ler o texto coletivo sobre o animal, notando quantas vezes o nome se repete.",
+        "Circular junto com a turma cada repetição do nome do animal.",
+        "Perguntar quais palavras (ele, ela, esse bicho) poderiam substituir algumas repetições.",
+        "Reescrever coletivamente o texto com as substituições combinadas.",
+        "Pedir que os alunos copiem a versão revisada no caderno."
+      ]
+    },
+    {
+      "theme": "Colocando em ordem as tiras da história embaralhada",
+      "curriculumCode": "EF02LP26",
+      "description": "Reescrever um texto articulando suas partes de forma coerente, reorganizando tiras embaralhadas de uma história conhecida.",
+      "materials": [
+        "Tiras de papel com trechos de uma história embaralhados"
+      ],
+      "steps": [
+        "Distribuir as tiras embaralhadas da história para os grupos.",
+        "Pedir que os grupos leiam cada tira com atenção.",
+        "Organizar as tiras na ordem que faz sentido para a história.",
+        "Colar as tiras em ordem numa folha, formando o texto completo.",
+        "Ler o texto final em voz alta para conferir se ficou coerente."
+      ]
+    },
+    {
+      "theme": "Separando as palavras da mensagem secreta",
+      "curriculumCode": "EF02LP28",
+      "description": "Segmentar em palavras uma mensagem secreta escrita sem espaços, identificando onde cada palavra começa e termina.",
+      "materials": [
+        "Mensagem escrita sem espaços entre as palavras (preparada pelo professor)"
+      ],
+      "steps": [
+        "Mostrar a mensagem secreta escrita toda junta, sem espaços.",
+        "Pedir que os alunos, em duplas, tentem descobrir onde uma palavra termina e outra começa.",
+        "Pedir que marquem com um traço cada espaço encontrado.",
+        "Conferir juntos a separação correta na lousa.",
+        "Pedir que os alunos copiem a mensagem já separada corretamente no caderno."
+      ]
+    },
+    {
+      "theme": "Cortando a frase gigante em pedaços",
+      "curriculumCode": "EF02LP28",
+      "description": "Segmentar uma frase longa escrita sem espaços em cartões de palavras, reconhecendo os limites entre elas.",
+      "materials": [
+        "Tiras de papel com uma frase gigante escrita sem espaços",
+        "Tesoura sem ponta"
+      ],
+      "steps": [
+        "Mostrar a tira com a frase gigante escrita sem espaços.",
+        "Ler a frase em voz alta, marcando a pausa entre cada palavra.",
+        "Pedir que os alunos cortem a tira nos lugares onde acham que uma palavra termina.",
+        "Conferir juntos se o corte ficou nos lugares certos.",
+        "Colar os pedaços corretos numa folha, com espaço entre cada palavra."
+      ]
+    },
+    {
+      "theme": "Acento ou não? Jogo de cartas",
+      "curriculumCode": "EF02LP31",
+      "description": "Reconhecer acentos agudo e circunflexo em palavras de uso frequente, classificando cartas de palavras entre acentuadas e não acentuadas.",
+      "materials": [
+        "Cartas com palavras acentuadas e não acentuadas de textos já conhecidos"
+      ],
+      "steps": [
+        "Distribuir as cartas de palavras para os grupos.",
+        "Pedir que leiam cada palavra e verifiquem se tem acento.",
+        "Separar as cartas em dois montes: 'com acento' e 'sem acento'.",
+        "Conferir juntos, na lousa, se a separação de cada grupo está correta.",
+        "Pedir que os alunos copiem no caderno três palavras acentuadas encontradas no jogo."
+      ]
+    },
+    {
+      "theme": "Bingo das palavras com H mudo",
+      "curriculumCode": "EF02LP33",
+      "description": "Praticar a escrita convencional de palavras com H inicial que não seguem regras regulares, por meio de um jogo de bingo.",
+      "materials": [
+        "Cartelas de bingo com palavras com H inicial",
+        "Marcadores (tampinhas ou grãos)"
+      ],
+      "steps": [
+        "Distribuir as cartelas de bingo com palavras que começam com H.",
+        "Sortear e falar em voz alta uma palavra por vez.",
+        "Pedir que os alunos marquem a palavra sorteada, se estiver na cartela.",
+        "Conferir a cartela do aluno que completar a linha ou cartela cheia.",
+        "Pedir que os alunos copiem no caderno as palavras com H que marcaram."
+      ]
+    },
+    {
+      "theme": "Ditado das palavras com C ou S no início",
+      "curriculumCode": "EF02LP33",
+      "description": "Escrever de forma convencional, por meio de ditado, palavras de uso frequente que começam com C ou S e não seguem regra regular.",
+      "materials": [
+        "Lista de palavras com C ou S inicial (preparada pelo professor)"
+      ],
+      "steps": [
+        "Avisar a turma que será feito um ditado de palavras.",
+        "Ditar, uma a uma, palavras que começam com C ou S.",
+        "Pedir que os alunos escrevam cada palavra no caderno.",
+        "Escrever as palavras corretas na lousa após o ditado.",
+        "Pedir que os alunos comparem e corrijam o que escreveram, reescrevendo a palavra certa ao lado."
+      ]
+    },
+    {
+      "theme": "Reportagem sobre uma criança de outro lugar do Brasil",
+      "curriculumCode": "EF02LP07",
+      "description": "Escutar a leitura de uma reportagem sobre a vida de uma criança de outra região do Brasil, conhecendo diferentes realidades sociais.",
+      "materials": [
+        "Reportagem curta sobre uma criança de outra região (preparada pelo professor)"
+      ],
+      "steps": [
+        "Ler em voz alta a reportagem sobre a criança de outra região do Brasil.",
+        "Mostrar no mapa ou em uma imagem onde fica essa região.",
+        "Conversar sobre as semelhanças e diferenças com a vida da turma.",
+        "Perguntar o que mais chamou a atenção dos alunos na reportagem.",
+        "Pedir que os alunos desenhem algo que aprenderam sobre essa criança e escrevam uma frase sobre o desenho."
+      ]
+    },
+    {
+      "theme": "Montando o nome dos bichos com letras móveis",
+      "curriculumCode": "EF02LP10",
+      "description": "Escrever nomes de animais com letras móveis, justificando as escolhas das letras usadas em cada palavra.",
+      "materials": [
+        "Letras móveis (alfabeto de EVA, madeira ou papel)",
+        "Figuras de animais"
+      ],
+      "steps": [
+        "Mostrar uma figura de animal por vez para a turma.",
+        "Pedir que os alunos montem o nome do animal com as letras móveis.",
+        "Perguntar por que escolheram cada letra usada.",
+        "Conferir juntos se o nome está escrito corretamente.",
+        "Pedir que os alunos copiem no caderno os nomes dos animais que montaram."
+      ]
+    },
+    {
+      "theme": "Escrevendo o cardápio do lanche com letras móveis",
+      "curriculumCode": "EF02LP10",
+      "description": "Escrever, com letras móveis, os nomes dos alimentos do cardápio do lanche, justificando as decisões sobre as letras utilizadas.",
+      "materials": [
+        "Letras móveis (alfabeto de EVA, madeira ou papel)",
+        "Cardápio do lanche do dia"
+      ],
+      "steps": [
+        "Mostrar o cardápio do lanche do dia para a turma.",
+        "Pedir que os alunos montem, com as letras móveis, o nome de um alimento do cardápio.",
+        "Perguntar por que usaram cada letra na montagem da palavra.",
+        "Corrigir juntos as montagens que tiverem alguma letra trocada.",
+        "Pedir que os alunos copiem no caderno o cardápio completo do dia."
+      ]
+    },
+    {
+      "theme": "Legenda para o cartaz dos dinossauros",
+      "curriculumCode": "EF02LP14",
+      "description": "Produzir, ditando ao professor, legendas e verbetes de curiosidades sobre dinossauros para compor um cartaz de pesquisa da turma.",
+      "materials": [
+        "Imagens de dinossauros",
+        "Cartolina para o cartaz"
+      ],
+      "steps": [
+        "Mostrar imagens de diferentes dinossauros para a turma.",
+        "Ler curiosidades curtas sobre cada dinossauro apresentado.",
+        "Perguntar quais curiosidades os alunos querem colocar no cartaz.",
+        "Escrever no cartaz, ditado pelos alunos, uma legenda curta para cada imagem.",
+        "Expor o cartaz pronto na sala com as legendas e verbetes de curiosidades."
+      ]
+    },
+    {
+      "theme": "Tirando o \"aí\" e o \"daí\" do texto",
+      "curriculumCode": "EF02LP25",
+      "description": "Revisar coletivamente um texto eliminando organizadores da fala do dia a dia, como 'aí' e 'daí', inadequados ao registro escrito.",
+      "materials": [
+        "Texto coletivo da turma com marcas de oralidade (preparado pelo professor)"
+      ],
+      "steps": [
+        "Ler em voz alta o texto coletivo com as palavras 'aí' e 'daí' repetidas.",
+        "Pedir que os alunos identifiquem cada vez que essas palavras aparecem.",
+        "Perguntar como o texto ficaria sem essas palavras.",
+        "Reescrever coletivamente o trecho, retirando os organizadores desnecessários.",
+        "Copiar a versão revisada, mais próxima da escrita de livro, no caderno."
+      ]
+    },
+    {
+      "theme": "Tirando o \"né\" e o \"tipo\" da história escrita",
+      "curriculumCode": "EF02LP25",
+      "description": "Revisar coletivamente uma história escrita eliminando marcas da fala, como 'né' e 'tipo', inadequadas ao registro linguístico do texto.",
+      "materials": [
+        "Texto coletivo com marcas de oralidade (preparado pelo professor)"
+      ],
+      "steps": [
+        "Ler o texto coletivo em voz alta, destacando as palavras 'né' e 'tipo'.",
+        "Perguntar se essas palavras aparecem em livros que a turma já leu.",
+        "Combinar juntos como reescrever as frases sem essas palavras.",
+        "Reescrever coletivamente o trecho revisado na lousa.",
+        "Pedir que os alunos copiem a versão final revisada no caderno."
+      ]
+    },
+    {
+      "theme": "Reescrevendo a lenda do Boitatá contada por ele mesmo",
+      "curriculumCode": "EF02LP27",
+      "description": "Reescrever um trecho da lenda do Boitatá empregando o mesmo narrador em 1ª pessoa, como se o próprio personagem estivesse contando.",
+      "materials": [
+        "Texto da lenda do Boitatá (ou outra lenda conhecida) em 3ª pessoa"
+      ],
+      "steps": [
+        "Ler a lenda do Boitatá contada em 3ª pessoa, com o narrador contando sobre ele.",
+        "Explicar que agora o próprio Boitatá vai contar a história.",
+        "Reescrever coletivamente a primeira frase, trocando para a fala do personagem ('Eu sou...').",
+        "Pedir que os alunos continuem a reescrita individualmente ou em duplas.",
+        "Ler algumas versões em voz alta, comparando com o texto original."
+      ]
+    },
+    {
+      "theme": "Como a chuva? Caça às comparações do texto",
+      "curriculumCode": "EF02LP29",
+      "description": "Identificar, num texto lido, comparações entre dois termos, como 'chorava como a chuva', reconhecendo o efeito de sentido criado.",
+      "materials": [
+        "Texto ou poema com comparações (preparado pelo professor)"
+      ],
+      "steps": [
+        "Ler em voz alta o texto ou poema escolhido.",
+        "Perguntar se alguma frase compara uma coisa com outra.",
+        "Destacar juntos as comparações encontradas no texto.",
+        "Conversar sobre o que cada comparação faz a gente imaginar.",
+        "Pedir que os alunos copiem no caderno a comparação de que mais gostaram."
+      ]
+    },
+    {
+      "theme": "Inventando comparações para o coleguinha",
+      "curriculumCode": "EF02LP29",
+      "description": "Criar comparações entre dois termos, inspiradas em textos lidos, para descrever características de colegas ou animais.",
+      "materials": [],
+      "steps": [
+        "Relembrar comparações encontradas em textos já lidos pela turma, como 'rápido como o vento'.",
+        "Explicar que agora cada aluno vai inventar uma comparação.",
+        "Pedir que pensem numa característica de um colega ou animal para comparar.",
+        "Ajudar na construção oral da frase de comparação de cada aluno.",
+        "Pedir que os alunos escrevam sua comparação inventada no caderno."
+      ]
+    },
+    {
+      "theme": "Comparando duas capas do mesmo livro",
+      "curriculumCode": "EF02LP30",
+      "description": "Analisar aspectos gráficos de duas capas diferentes do mesmo livro, reconhecendo os efeitos de sentido das cores e imagens escolhidas.",
+      "materials": [
+        "Duas edições ou capas diferentes do mesmo livro (impressas)"
+      ],
+      "steps": [
+        "Mostrar as duas capas diferentes do mesmo livro para a turma.",
+        "Perguntar quais cores e imagens aparecem em cada uma.",
+        "Conversar sobre qual capa parece mais alegre, mais assustadora ou mais misteriosa, e por quê.",
+        "Preencher com a turma um quadro comparando as duas capas.",
+        "Pedir que os alunos desenhem a capa que preferem para o livro."
+      ]
+    },
+    {
+      "theme": "Ditado: escolhendo M ou N no final da sílaba",
+      "curriculumCode": "EF02LP32",
+      "description": "Escrever, por meio de ditado, palavras regulares contextuais, decidindo entre M e N conforme a letra que vem depois.",
+      "materials": [
+        "Lista de palavras com nasalidade M/N (preparada pelo professor)"
+      ],
+      "steps": [
+        "Explicar que antes de P e B usamos M, e antes de outras letras usamos N.",
+        "Ditar palavras uma a uma para os alunos escreverem no caderno.",
+        "Escrever as palavras corretas na lousa após o ditado.",
+        "Pedir que os alunos confiram e corrijam o que escreveram.",
+        "Pedir que copiem, num quadro, as palavras separadas em 'com M' e 'com N'."
+      ]
+    },
+    {
+      "theme": "Quando escrevo GA-GO-GA e GUE-GUI",
+      "curriculumCode": "EF02LP32",
+      "description": "Analisar palavras com G e GU, compreendendo que o contexto determina o uso de U para manter o som de 'guê' e 'gui'.",
+      "materials": [
+        "Lista de palavras com GA, GO, GU, GUE, GUI (preparada pelo professor)"
+      ],
+      "steps": [
+        "Escrever na lousa exemplos de palavras com GA, GO, GU, GUE e GUI.",
+        "Ler cada palavra em voz alta, destacando o som do G.",
+        "Perguntar por que algumas palavras têm o U depois do G e outras não.",
+        "Pedir que os alunos completem, em uma ficha, palavras com a letra que falta (G ou GU).",
+        "Corrigir juntos e pedir que os alunos copiem as palavras completas no caderno."
+      ]
+    },
+    {
+      "theme": "Escolhendo o gênero certo para cada recado",
+      "curriculumCode": "EFCALFLP13",
+      "description": "Reconhecer, diante de diferentes situações comunicativas, qual gênero (bilhete, cartaz ou lista) é mais adequado para cada finalidade.",
+      "materials": [
+        "Cartões com situações comunicativas diferentes (avisar os pais, divulgar uma festa, organizar tarefas)"
+      ],
+      "steps": [
+        "Apresentar diferentes situações: avisar a falta de aula, divulgar uma festa, organizar tarefas da semana.",
+        "Perguntar qual gênero de texto serve melhor para cada situação (bilhete, cartaz, lista).",
+        "Discutir com a turma quem vai ler cada texto e por quê.",
+        "Escolher uma das situações e produzir juntos o texto no gênero escolhido.",
+        "Pedir que os alunos registrem numa ficha qual gênero escolheram para cada situação apresentada."
+      ]
+    },
+    {
+      "theme": "Pesquisando sobre um animal antes de escrever",
+      "curriculumCode": "EFCALFLP14",
+      "description": "Pesquisar informações sobre um animal escolhido, recuperando o conteúdo temático necessário antes de produzir um texto sobre ele.",
+      "materials": [
+        "Livros ou imagens sobre animais para pesquisa"
+      ],
+      "steps": [
+        "Pedir que cada aluno escolha um animal que quer conhecer melhor.",
+        "Disponibilizar livros e imagens para os alunos pesquisarem sobre o animal escolhido.",
+        "Anotar, com ajuda, três informações encontradas sobre o animal.",
+        "Conversar em duplas sobre o que cada um descobriu.",
+        "Pedir que os alunos escrevam as informações pesquisadas numa ficha, para usar depois na produção do texto."
+      ]
+    },
+    {
+      "theme": "Brainstorm de ideias para o texto sobre a escola",
+      "curriculumCode": "EFCALFLP14",
+      "description": "Recuperar e criar ideias sobre a escola, levantando o conteúdo temático que será usado na produção de um texto coletivo.",
+      "materials": [
+        "Cartaz para anotar as ideias"
+      ],
+      "steps": [
+        "Perguntar aos alunos o que eles sabem e gostam na escola.",
+        "Anotar no cartaz todas as ideias ditas pelos alunos, sem julgar nenhuma.",
+        "Reler as ideias anotadas e agrupar as parecidas.",
+        "Escolher, com a turma, quais ideias vão entrar no texto que será escrito.",
+        "Pedir que os alunos copiem, numa lista, as ideias escolhidas para o texto."
+      ]
+    },
+    {
+      "theme": "Organizando as partes do texto num quadro antes de escrever",
+      "curriculumCode": "EFCALFLP15",
+      "description": "Elaborar o plano de um texto a ser produzido, organizando início, meio e fim num quadro antes de começar a escrever.",
+      "materials": [
+        "Quadro com três colunas: início, meio e fim (impresso ou desenhado)"
+      ],
+      "steps": [
+        "Explicar que todo texto tem início, meio e fim.",
+        "Distribuir o quadro com as três colunas para os alunos.",
+        "Pedir que pensem no que vai acontecer em cada parte do texto que vão escrever.",
+        "Preencher o quadro com desenhos ou palavras-chave para cada parte.",
+        "Guardar o quadro preenchido para usar como guia na hora de escrever o texto completo."
+      ]
+    },
+    {
+      "theme": "Lendo em voz alta para achar o que falta",
+      "curriculumCode": "EFCALFLP17",
+      "description": "Revisar o próprio texto lendo-o em voz alta, ajustando trechos que faltam informação para garantir a legibilidade.",
+      "materials": [],
+      "steps": [
+        "Pedir que os alunos peguem um texto que já escreveram.",
+        "Explicar que ler em voz alta ajuda a perceber o que está faltando.",
+        "Pedir que cada aluno leia seu texto baixinho, apontando com o dedo.",
+        "Pedir que marquem com um sinal os trechos que ficaram confusos ou incompletos.",
+        "Pedir que reescrevam, ao lado, a parte marcada com a informação que faltava."
+      ]
+    },
+    {
+      "theme": "Marcando com lápis o que ficou confuso no texto",
+      "curriculumCode": "EFCALFLP17",
+      "description": "Revisar o texto de um colega, marcando com lápis os trechos confusos, para depois o autor ajustar o que for necessário.",
+      "materials": [
+        "Textos já escritos pelos alunos",
+        "Lápis coloridos"
+      ],
+      "steps": [
+        "Formar duplas e trocar os textos já escritos entre os colegas.",
+        "Pedir que cada aluno leia o texto do colega com atenção.",
+        "Marcar com lápis colorido as partes que não ficaram claras.",
+        "Devolver o texto marcado ao autor para ele explicar ou reescrever a parte confusa.",
+        "Pedir que cada aluno reescreva, no caderno, a versão ajustada do próprio texto."
+      ]
+    },
+    {
+      "theme": "Votando o tema do mural da turma",
+      "curriculumCode": "EFCALFLP18",
+      "description": "Participar da definição da situação comunicativa de um texto a ser produzido, votando entre diferentes opiniões sobre o tema do mural da turma.",
+      "materials": [
+        "Cartaz para registrar os votos"
+      ],
+      "steps": [
+        "Propor a criação de um mural para a sala e perguntar sobre o que ele poderia falar.",
+        "Anotar na lousa as sugestões de tema dadas pelos alunos.",
+        "Explicar as regras da votação: uma mão levantada, um voto por aluno.",
+        "Contar os votos de cada sugestão em voz alta.",
+        "Registrar no cartaz o tema vencedor e o número de votos que recebeu."
+      ]
+    },
+    {
+      "theme": "Caixinha de sugestões para o texto do colega",
+      "curriculumCode": "EFCALFLP19",
+      "description": "Submeter o texto produzido à apreciação dos colegas por meio de bilhetes de sugestão, realizando ajustes a partir do retorno recebido.",
+      "materials": [
+        "Caixa ou envelope para as sugestões",
+        "Tiras de papel para escrever os bilhetes"
+      ],
+      "steps": [
+        "Expor os textos já escritos pelos alunos num varal ou mural.",
+        "Pedir que cada aluno leia o texto de um colega e escreva um bilhete com uma sugestão.",
+        "Colocar os bilhetes de sugestão na caixinha do respectivo autor.",
+        "Devolver os bilhetes para cada autor ler as sugestões recebidas.",
+        "Pedir que cada aluno reescreva uma parte do texto usando alguma sugestão recebida."
+      ]
+    },
+    {
+      "theme": "Lendo meu texto para a família e trazendo o que acharam",
+      "curriculumCode": "EFCALFLP19",
+      "description": "Submeter o texto produzido à apreciação da família, trazendo o retorno recebido para realizar ajustes no texto.",
+      "materials": [],
+      "steps": [
+        "Combinar que os alunos vão ler seu texto para alguém da família em casa.",
+        "Pedir que anotem, com ajuda de um familiar, o que a pessoa achou do texto.",
+        "No dia seguinte, pedir que cada aluno conte para a turma o que ouviu em casa.",
+        "Perguntar se algum comentário da família deu vontade de mudar algo no texto.",
+        "Pedir que os alunos reescrevam uma parte do texto considerando o retorno recebido."
+      ]
+    },
+    {
+      "theme": "Carta misteriosa sorteia a história do dia",
+      "curriculumCode": "EFCALFLP24",
+      "description": "Produzir oralmente uma história coletiva a partir de imagens sorteadas em cartas, considerando a situação comunicativa de contar para a turma.",
+      "materials": [
+        "Cartas com imagens variadas (personagens, lugares, objetos)"
+      ],
+      "steps": [
+        "Embaralhar as cartas com imagens e colocá-las viradas para baixo.",
+        "Sortear três cartas com a ajuda de um aluno.",
+        "Mostrar as cartas sorteadas e pedir ideias de como elas podem se conectar numa história.",
+        "Construir a história coletivamente, ditando ao professor conforme a turma vai criando.",
+        "Ler a história completa em voz alta e registrar no caderno da turma."
+      ]
     }
   ],
   "matematica": [
@@ -1174,6 +2075,745 @@ export const THEME_BANK: Record<OwnSubject, BankEntry[]> = {
         "Comparar com outro número que representa quantidade (ex.: 'tem 5 lápis').",
         "Propor que a turma numere e organize objetos da sala usando números como código."
       ]
+    },
+    {
+      "theme": "Números que marcam lugar: a fila do ônibus",
+      "curriculumCode": "EF02M01",
+      "description": "Uso de números como indicadores de ordem e código em situações do cotidiano, explorando a posição de pessoas em uma fila.",
+      "materials": [],
+      "steps": [
+        "Organizar os alunos em fila e perguntar quem é o primeiro, o segundo, o terceiro.",
+        "Explicar que esses números indicam ordem, e não quantidade.",
+        "Pedir que desenhem no caderno uma fila (ônibus, parquinho) numerando cada pessoa da posição.",
+        "Registrar por escrito a posição de três colegas usando números ordinais."
+      ]
+    },
+    {
+      "theme": "Caça-números na sala de aula",
+      "curriculumCode": "EF02M01",
+      "description": "Identificação de números como código, medida ou quantidade espalhados pela sala, para descobrir o que cada um representa.",
+      "materials": [],
+      "steps": [
+        "Espalhar previamente cartõezinhos com números pela sala (na régua, no calendário, no relógio, na porta).",
+        "Organizar os alunos em duplas para caçar os números escondidos.",
+        "Para cada número encontrado, perguntar se ele indica quantidade, ordem, medida ou código.",
+        "Registrar no caderno uma tabela com o número encontrado e o que ele representa."
+      ]
+    },
+    {
+      "theme": "Duelo de dados: quem tira o maior número?",
+      "curriculumCode": "EF02M02",
+      "description": "Comparação de números naturais formados aleatoriamente, reconhecendo qual é maior observando dezena e unidade.",
+      "materials": [
+        "dois dados",
+        "fichas ou tampinhas"
+      ],
+      "steps": [
+        "Organizar os alunos em duplas com dois dados cada.",
+        "Cada aluno joga os dados e forma um número de dois algarismos.",
+        "Comparar com o colega qual número é maior, explicando pela dezena ou pela unidade.",
+        "Registrar no caderno cinco rodadas, escrevendo os números e o sinal de maior, menor ou igual entre eles."
+      ]
+    },
+    {
+      "theme": "Ordenando os aniversariantes do mês",
+      "curriculumCode": "EF02M02",
+      "description": "Comparação de números naturais usando as datas de nascimento dos colegas para colocá-las em ordem.",
+      "materials": [],
+      "steps": [
+        "Perguntar a data de nascimento (dia) de alguns alunos voluntários.",
+        "Anotar os números na lousa fora de ordem.",
+        "Pedir que a turma ajude a ordenar do menor para o maior número.",
+        "Cada aluno registra no caderno a lista ordenada com os nomes e os dias."
+      ]
+    },
+    {
+      "theme": "Montando números com o material dourado",
+      "curriculumCode": "EF02M03",
+      "description": "Composição e decomposição de números de dois algarismos, separando fisicamente dezenas e unidades.",
+      "materials": [
+        "material dourado ou palitos de picolé amarrados em grupos de 10"
+      ],
+      "steps": [
+        "Mostrar um número na lousa e perguntar quantas dezenas e unidades ele tem.",
+        "Distribuir o material dourado para os grupos montarem o número com barras (dezenas) e cubinhos (unidades).",
+        "Pedir que montem o mesmo número de outra forma, trocando uma dezena por dez unidades soltas.",
+        "Registrar no caderno o número e as duas formas de composição encontradas."
+      ]
+    },
+    {
+      "theme": "Quebra-cabeça das dezenas e unidades",
+      "curriculumCode": "EF02M03",
+      "description": "Decomposição de números naturais por meio da montagem de cartas que representam dezenas e unidades separadamente.",
+      "materials": [
+        "cartas com números de dezena e cartas com números de unidade"
+      ],
+      "steps": [
+        "Distribuir cartas de dezenas (10, 20, 30) e cartas de unidades (1 a 9) embaralhadas para os grupos.",
+        "Pedir que combinem uma carta de dezena com uma de unidade para formar um número.",
+        "Cada grupo troca as combinações formadas e confere com os colegas.",
+        "Registrar no caderno cinco números formados com a decomposição em dezena mais unidade."
+      ]
+    },
+    {
+      "theme": "Quantos grãos de feijão no pote?",
+      "curriculumCode": "EF02M04",
+      "description": "Estimativa e contagem de uma coleção de grãos, comparando o valor estimado com a contagem real.",
+      "materials": [
+        "pote com grãos de feijão ou milho"
+      ],
+      "steps": [
+        "Mostrar o pote fechado e pedir que cada aluno escreva no caderno sua estimativa da quantidade.",
+        "Distribuir os grãos para grupos contarem devagar, agrupando de 10 em 10.",
+        "Registrar a quantidade real contada ao lado da estimativa.",
+        "Comparar em roda quem chegou mais perto do valor real e registrar no caderno quem acertou a estimativa."
+      ]
+    },
+    {
+      "theme": "Contando os livros da estante da sala",
+      "curriculumCode": "EF02M04",
+      "description": "Contagem de uma coleção real de objetos do ambiente escolar, comparando quantidades entre grupos diferentes.",
+      "materials": [],
+      "steps": [
+        "Dividir a turma em grupos, cada um responsável por contar os livros de uma prateleira.",
+        "Orientar que contem um a um, apontando cada livro.",
+        "Registrar no caderno a quantidade contada por prateleira.",
+        "Comparar os números entre os grupos e registrar no caderno qual prateleira tem mais e qual tem menos livros."
+      ]
+    },
+    {
+      "theme": "Pulando na reta numérica de 2 em 2",
+      "curriculumCode": "EF02M06",
+      "description": "Recitação de contagens ascendentes de dois em dois por meio de saltos em uma reta numérica desenhada no chão.",
+      "materials": [
+        "fita crepe ou giz para desenhar a reta numérica no chão"
+      ],
+      "steps": [
+        "Desenhar uma reta numérica de 0 a 20 no chão com fita crepe.",
+        "Pedir que os alunos, em fila, pulem de 2 em 2 casas dizendo o número em voz alta.",
+        "Repetir a atividade contando de trás para frente.",
+        "Registrar no caderno a sequência de números ditos durante os pulos."
+      ]
+    },
+    {
+      "theme": "Contagem regressiva do foguete",
+      "curriculumCode": "EF02M06",
+      "description": "Recitação de contagens descendentes de dez em dez e de cinco em cinco em uma brincadeira de lançamento de foguete.",
+      "materials": [
+        "desenho de foguete ou objeto para representar o lançamento"
+      ],
+      "steps": [
+        "Explicar que antes de um foguete decolar, faz-se uma contagem regressiva.",
+        "Fazer com a turma a contagem regressiva de 50 até 0, de dez em dez, em voz alta.",
+        "Repetir a contagem de cinco em cinco, a partir de 25.",
+        "Pedir que cada aluno registre no caderno as duas sequências regressivas encontradas."
+      ]
+    },
+    {
+      "theme": "Ficha de cálculo com reserva: armando as contas",
+      "curriculumCode": "EF02M08",
+      "description": "Cálculo de adições e subtrações usando a técnica operatória convencional em contas que exigem reagrupamento.",
+      "materials": [
+        "ficha impressa com quadrinhos de dezena e unidade (pode ser desenhada no caderno)"
+      ],
+      "steps": [
+        "Explicar como armar uma conta de adição que precisa \"levar um\" para a dezena.",
+        "Resolver um exemplo coletivamente na lousa, mostrando o reagrupamento.",
+        "Distribuir uma ficha com cinco contas armadas (adição e subtração) para os alunos resolverem sozinhos.",
+        "Conferir os resultados usando material dourado ou tampinhas e corrigir no caderno."
+      ]
+    },
+    {
+      "theme": "Corrida das continhas: calculando e conferindo o resultado",
+      "curriculumCode": "EF02M08",
+      "description": "Resolução ágil de adições e subtrações, validando cada resultado com uma segunda forma de cálculo.",
+      "materials": [
+        "cronômetro (pode ser o celular do professor)"
+      ],
+      "steps": [
+        "Escrever seis continhas de mais e de menos na lousa.",
+        "Cronometrar um tempo para os alunos resolverem no caderno o máximo de contas corretas.",
+        "Ao final, pedir que confiram cada resultado usando os dedos ou desenhando bolinhas.",
+        "Registrar no caderno quantas contas acertaram e a correção das que erraram."
+      ]
+    },
+    {
+      "theme": "Mais um, mais dois: comparando coleções de tampinhas",
+      "curriculumCode": "EF02M09",
+      "description": "Comparação de coleções para identificar quem tem mais um ou mais dois elementos que o colega.",
+      "materials": [
+        "tampinhas"
+      ],
+      "steps": [
+        "Distribuir quantidades diferentes de tampinhas para duplas de alunos.",
+        "Pedir que contem suas tampinhas e as do colega.",
+        "Perguntar quantas a mais um tem em relação ao outro, usando as expressões \"mais um\" e \"mais dois\".",
+        "Registrar no caderno a comparação feita, escrevendo as quantidades e a diferença."
+      ]
+    },
+    {
+      "theme": "Entre quais números estou?",
+      "curriculumCode": "EF02M09",
+      "description": "Exploração da relação \"estar entre\" por meio da localização de um número escondido em um intervalo.",
+      "materials": [
+        "cartões numerados de 0 a 30"
+      ],
+      "steps": [
+        "Escolher um número secreto entre 0 e 30 sem contar para a turma.",
+        "Os alunos vão tentando adivinhar, e o professor responde se o número secreto está entre os dois valores tentados.",
+        "Reduzir o intervalo a cada tentativa até descobrirem o número.",
+        "Registrar no caderno os intervalos usados até chegar ao número secreto."
+      ]
+    },
+    {
+      "theme": "Problema do lanche: quantos salgadinhos sobraram?",
+      "curriculumCode": "EF02M10",
+      "description": "Resolução de problema de campo aditivo envolvendo transformação de uma quantidade ao longo de uma situação de lanche.",
+      "materials": [],
+      "steps": [
+        "Contar uma situação-problema: a turma tinha 24 salgadinhos, comeram 15 no recreio, quantos sobraram?",
+        "Pedir que os alunos representem a situação com desenhos ou tampinhas.",
+        "Orientar que armem a conta correspondente no caderno.",
+        "Registrar a resposta do problema com a conta e uma frase explicando o resultado."
+      ]
+    },
+    {
+      "theme": "Problemas da cantina da escola",
+      "curriculumCode": "EF02M10",
+      "description": "Resolução de problemas de composição envolvendo compra e troco em uma situação simulada de cantina.",
+      "materials": [
+        "dinheiro de brinquedo (opcional)"
+      ],
+      "steps": [
+        "Montar no quadro uma pequena cantina com preços de itens simples (bolacha R$2, suco R$3).",
+        "Apresentar um problema pedindo o valor de duas compras juntas.",
+        "Pedir que os alunos resolvam a conta de adição no caderno.",
+        "Propor um segundo problema de troco (subtração) para resolverem e registrarem."
+      ]
+    },
+    {
+      "theme": "Dividindo balas em partes iguais",
+      "curriculumCode": "EF02M11",
+      "description": "Resolução de problema de divisão com significado de formação de grupos iguais, repartindo uma quantidade entre colegas.",
+      "materials": [
+        "balas ou tampinhas para representar as balas"
+      ],
+      "steps": [
+        "Propor o problema: temos 12 balas para repartir igualmente entre 4 amigos, quantas cada um recebe?",
+        "Distribuir tampinhas para os grupos simularem a divisão, repartindo uma a uma.",
+        "Pedir que registrem no caderno quantas balas cada amigo recebeu.",
+        "Repetir com outro número e outra quantidade de amigos, registrando o novo resultado."
+      ]
+    },
+    {
+      "theme": "Dobro e metade com fileiras de cadeiras",
+      "curriculumCode": "EF02M11",
+      "description": "Resolução de problemas de multiplicação envolvendo os significados de dobro e metade a partir de uma situação com fileiras.",
+      "materials": [],
+      "steps": [
+        "Organizar um grupo de alunos em uma fileira e perguntar quantos seriam no dobro dessa fileira.",
+        "Fazer o mesmo com a metade de um grupo maior, dividindo-o em duas partes iguais.",
+        "Propor problemas escritos como: se uma fileira tem 5 cadeiras, quantas tem o dobro?",
+        "Registrar no caderno os cálculos de dobro e metade feitos durante a atividade."
+      ]
+    },
+    {
+      "theme": "Montando a conta com os sinais certos",
+      "curriculumCode": "EF02M12",
+      "description": "Escrita de operações de adição e subtração utilizando corretamente os sinais convencionais a partir de situações contadas.",
+      "materials": [
+        "cartões com os sinais +, – e ="
+      ],
+      "steps": [
+        "Contar uma pequena situação oral (ex: tinha 8 figurinhas, ganhei mais 3).",
+        "Perguntar quais sinais devem ser usados para escrever essa situação em forma de conta.",
+        "Pedir que os alunos montem a operação usando os cartões de sinais ou escrevendo no caderno.",
+        "Registrar no caderno três situações transformadas em operações com os sinais corretos."
+      ]
+    },
+    {
+      "theme": "Verdadeiro ou falso: a igualdade está certa?",
+      "curriculumCode": "EF02M12",
+      "description": "Análise de sentenças matemáticas para verificar se o sinal de igualdade foi usado corretamente entre as expressões.",
+      "materials": [],
+      "steps": [
+        "Escrever na lousa sentenças como 5 + 3 = 9 e 6 + 2 = 8, algumas certas e outras erradas.",
+        "Pedir que os alunos calculem cada uma e decidam se é verdadeira ou falsa.",
+        "Discutir como corrigir as sentenças falsas.",
+        "Registrar no caderno as sentenças corrigidas com o sinal de igualdade correto."
+      ]
+    },
+    {
+      "theme": "Escada numérica de 3 em 3",
+      "curriculumCode": "EF02M13",
+      "description": "Construção de uma sequência numérica crescente a partir de uma regularidade escolhida pela turma, diferente do padrão usual.",
+      "materials": [],
+      "steps": [
+        "Combinar com a turma uma regra de sequência, por exemplo, de 3 em 3 a partir do 1.",
+        "Construir juntos os primeiros termos na lousa, como uma escada.",
+        "Pedir que os alunos continuem a escada sozinhos no caderno até o número 30.",
+        "Registrar a sequência completa e destacar a regra usada."
+      ]
+    },
+    {
+      "theme": "Construindo a sequência dos números pares",
+      "curriculumCode": "EF02M13",
+      "description": "Construção de uma sequência numérica a partir da regularidade de números pares, em ordem crescente e decrescente.",
+      "materials": [],
+      "steps": [
+        "Perguntar o que os alunos sabem sobre números pares.",
+        "Construir coletivamente a sequência de pares de 0 a 20 na lousa.",
+        "Pedir que escrevam a mesma sequência de trás para frente no caderno.",
+        "Registrar as duas sequências, crescente e decrescente, completas."
+      ]
+    },
+    {
+      "theme": "Mapa do tesouro da sala de aula",
+      "curriculumCode": "EF02M16",
+      "description": "Localização de objetos escondidos na sala a partir de pontos de referência indicados em um mapa simples.",
+      "materials": [
+        "desenho simples da sala de aula (mapa)"
+      ],
+      "steps": [
+        "Desenhar previamente um mapa simples da sala com pontos de referência (mesa do professor, porta, armário).",
+        "Esconder um objeto e marcar sua posição no mapa distribuído aos alunos.",
+        "Pedir que localizem o objeto usando o mapa e os pontos de referência.",
+        "Registrar no caderno a posição do objeto usando frases como perto de ou ao lado de."
+      ]
+    },
+    {
+      "theme": "Onde está escondido o brinquedo?",
+      "curriculumCode": "EF02M16",
+      "description": "Identificação e representação da localização de um objeto escondido na sala a partir de pontos de referência indicados oralmente pelos colegas.",
+      "materials": [],
+      "steps": [
+        "Esconder um brinquedo em um local da sala enquanto um aluno está de costas.",
+        "Pedir que os colegas deem pistas de localização usando pontos de referência (perto da janela, atrás da mesa).",
+        "O aluno tenta encontrar o brinquedo seguindo as pistas dadas.",
+        "Registrar no caderno, com desenho, onde o brinquedo estava escondido e os pontos de referência usados."
+      ]
+    },
+    {
+      "theme": "Qual é a regra da sequência?",
+      "curriculumCode": "EF02M14",
+      "description": "Descrição oral do padrão de uma sequência numérica ou de figuras, identificando a regra que a organiza.",
+      "materials": [
+        "cartões com sequências numéricas ou de figuras (desenhadas pelo professor)"
+      ],
+      "steps": [
+        "Apresentar sequências diferentes na lousa (números ou figuras) que seguem uma regularidade.",
+        "Pedir que os alunos observem e digam em voz alta qual é a regra de cada sequência.",
+        "Discutir coletivamente as diferentes formas de explicar a mesma regra.",
+        "Registrar no caderno cada sequência copiada com a regra descrita em uma frase."
+      ]
+    },
+    {
+      "theme": "Lendo o mapa da caça ao tesouro",
+      "curriculumCode": "EF02M18",
+      "description": "Leitura de um croqui simples para descrever a movimentação de um objeto a partir de pontos de referência.",
+      "materials": [
+        "croqui simples desenhado pelo professor"
+      ],
+      "steps": [
+        "Apresentar um croqui do pátio da escola com o caminho até um tesouro marcado.",
+        "Ler junto com a turma o croqui, identificando os pontos de referência do percurso.",
+        "Pedir que os alunos sigam o caminho indicado até o local marcado.",
+        "Registrar no caderno, com desenho, o croqui do caminho percorrido."
+      ]
+    },
+    {
+      "theme": "Caça aos sólidos geométricos na sala",
+      "curriculumCode": "EF02M19",
+      "description": "Identificação de objetos do cotidiano da sala de aula que se parecem com cubos, esferas, cones, cilindros e pirâmides.",
+      "materials": [],
+      "steps": [
+        "Pedir que os alunos observem a sala e listem objetos que lembram formas espaciais (caixa, bola, cone de trânsito, lata).",
+        "Organizar os objetos encontrados em grupos por semelhança de forma.",
+        "Discutir por que cada objeto lembra aquela forma geométrica.",
+        "Registrar no caderno uma tabela com o objeto encontrado e a forma espacial correspondente."
+      ]
+    },
+    {
+      "theme": "Construindo uma cidade com embalagens",
+      "curriculumCode": "EF02M19",
+      "description": "Identificação de figuras geométricas espaciais por meio da construção de uma maquete simples com embalagens recicladas.",
+      "materials": [
+        "caixas, latas e embalagens recicladas de diferentes formatos"
+      ],
+      "steps": [
+        "Pedir que os alunos tragam embalagens vazias (caixas, latas, potes).",
+        "Organizar os alunos em grupos para construir uma pequena cidade com as embalagens, montando prédios e casas.",
+        "Perguntar que forma geométrica espacial cada embalagem usada lembra.",
+        "Registrar no caderno uma lista das formas espaciais usadas na construção."
+      ]
+    },
+    {
+      "theme": "Mosaico com formas planas",
+      "curriculumCode": "EF02M21",
+      "description": "Exploração de semelhanças e diferenças entre triângulos, quadrados, retângulos e círculos por meio da montagem de um mosaico.",
+      "materials": [
+        "recortes de papel colorido em formas planas (triângulo, quadrado, retângulo, círculo)"
+      ],
+      "steps": [
+        "Distribuir recortes de diferentes formas planas para os alunos.",
+        "Pedir que observem e comparem os lados e cantos de cada forma.",
+        "Orientar a montagem de um mosaico colando as formas em uma folha, agrupando as parecidas.",
+        "Registrar embaixo do mosaico o nome de cada forma usada e uma característica dela."
+      ]
+    },
+    {
+      "theme": "Adivinha a forma: pistas e desenhos",
+      "curriculumCode": "EF02M21",
+      "description": "Exploração de características de figuras geométricas planas por meio de pistas orais que o colega deve desenhar.",
+      "materials": [],
+      "steps": [
+        "Explicar que um aluno vai descrever uma forma plana só com pistas (número de lados, cantos), sem falar o nome.",
+        "Organizar duplas em que um dá as pistas e o outro desenha a forma no caderno.",
+        "Trocar os papéis para que todos pratiquem dar e receber pistas.",
+        "Registrar no caderno as formas desenhadas junto com o nome correto de cada uma."
+      ]
+    },
+    {
+      "theme": "Sorteando bolinhas coloridas do saquinho",
+      "curriculumCode": "EF02M22",
+      "description": "Classificação de eventos aleatórios como prováveis ou improváveis a partir de um sorteio com quantidades desiguais de bolinhas.",
+      "materials": [
+        "saquinho com bolinhas ou tampinhas de duas cores em quantidades desiguais"
+      ],
+      "steps": [
+        "Montar um saquinho com, por exemplo, 8 tampinhas azuis e 2 vermelhas.",
+        "Perguntar aos alunos qual cor é mais provável de ser sorteada e por quê.",
+        "Realizar dez sorteios, anotando na lousa a cor retirada a cada vez.",
+        "Registrar no caderno o resultado dos sorteios e uma frase dizendo se a previsão estava certa."
+      ]
+    },
+    {
+      "theme": "Comparando o gráfico do lanche saudável",
+      "curriculumCode": "EF02M23",
+      "description": "Leitura e comparação de informações de um gráfico de colunas sobre os alimentos levados na lancheira da turma.",
+      "materials": [],
+      "steps": [
+        "Apresentar um gráfico de colunas pronto mostrando tipos de lanche trazidos pela turma em uma semana.",
+        "Fazer perguntas de leitura: qual lanche foi mais trazido, qual foi menos.",
+        "Pedir que os alunos comparem duas colunas e digam a diferença entre elas.",
+        "Registrar no caderno três informações lidas no gráfico com suas respectivas respostas."
+      ]
+    },
+    {
+      "theme": "Quem venceu a queimada? Lendo a tabela de resultados",
+      "curriculumCode": "EF02M23",
+      "description": "Leitura e interpretação de uma tabela simples com os resultados de partidas de queimada realizadas na quadra.",
+      "materials": [],
+      "steps": [
+        "Registrar na lousa, em forma de tabela, os resultados de partidas de queimada jogadas na aula de educação física.",
+        "Ler junto com a turma quantos pontos cada time fez.",
+        "Perguntar qual time venceu mais partidas, observando a tabela.",
+        "Registrar no caderno a tabela copiada e a resposta sobre o time vencedor."
+      ]
+    },
+    {
+      "theme": "Quantos irmãos você tem? Pesquisa e gráfico da turma",
+      "curriculumCode": "EF02M24",
+      "description": "Realização de uma pesquisa sobre o número de irmãos dos colegas, organizando os dados coletados em uma tabela e gráfico de colunas.",
+      "materials": [
+        "papel quadriculado ou folha para o gráfico"
+      ],
+      "steps": [
+        "Perguntar a cada aluno quantos irmãos tem, anotando as respostas na lousa.",
+        "Organizar os dados coletados em uma tabela simples.",
+        "Ajudar os alunos a transformarem a tabela em um gráfico de colunas no papel quadriculado.",
+        "Cada aluno registra o gráfico finalizado, colorindo uma coluna para cada quantidade de irmãos."
+      ]
+    },
+    {
+      "theme": "Quantas letras tem o seu nome? Organizando os dados em gráfico",
+      "curriculumCode": "EF02M24",
+      "description": "Realização de pesquisa sobre a quantidade de letras do nome de cada aluno, organizando os dados em tabela e gráfico de colunas.",
+      "materials": [
+        "papel quadriculado ou folha para o gráfico"
+      ],
+      "steps": [
+        "Pedir que cada aluno conte quantas letras tem o próprio nome.",
+        "Anotar na lousa os nomes e a quantidade de letras de cada um.",
+        "Organizar as informações em uma tabela, agrupando quem tem a mesma quantidade de letras.",
+        "Registrar em um gráfico de colunas feito no caderno, com uma coluna para cada quantidade de letras."
+      ]
+    },
+    {
+      "theme": "Quem é mais alto? Medindo a turma com fita métrica",
+      "curriculumCode": "EF02M26",
+      "description": "Medição e comparação da altura dos alunos utilizando fita métrica, registrando e ordenando os resultados.",
+      "materials": [
+        "fita métrica"
+      ],
+      "steps": [
+        "Organizar os alunos em duplas para medir a altura um do outro com a fita métrica.",
+        "Anotar na lousa a altura de cada aluno medido.",
+        "Pedir que a turma ordene os nomes do mais baixo para o mais alto.",
+        "Registrar no caderno a própria altura e a de um colega, comparando quem é mais alto."
+      ]
+    },
+    {
+      "theme": "Quanto cabe no copo? Medindo capacidade",
+      "curriculumCode": "EF02M26",
+      "description": "Medição e comparação da capacidade de recipientes diferentes utilizando um copo medidor como unidade padronizada.",
+      "materials": [
+        "copo medidor ou recipiente graduado",
+        "recipientes de tamanhos diferentes (garrafa, pote, jarra)"
+      ],
+      "steps": [
+        "Apresentar recipientes de tamanhos diferentes e perguntar qual acham que tem mais capacidade.",
+        "Medir a capacidade de cada recipiente usando o copo medidor, contando quantos copos cabem.",
+        "Anotar na lousa a quantidade de copos de cada recipiente.",
+        "Registrar no caderno os recipientes medidos em ordem, do que tem menor para o que tem maior capacidade."
+      ]
+    },
+    {
+      "theme": "Trocando moedas: quantas de 1 real formam 5?",
+      "curriculumCode": "EF02M28",
+      "description": "Estabelecimento de equivalência entre moedas do sistema monetário brasileiro por meio de trocas simuladas.",
+      "materials": [
+        "moedas de brinquedo ou reais de papel recortado"
+      ],
+      "steps": [
+        "Distribuir moedas de brinquedo de diferentes valores para os grupos.",
+        "Propor desafios de troca, como quantas moedas de 1 real formam uma nota de 5.",
+        "Pedir que os grupos montem as trocas usando as moedas e cédulas disponíveis.",
+        "Registrar no caderno três equivalências encontradas durante a atividade."
+      ]
+    },
+    {
+      "theme": "Montando o valor certo com cédulas e moedas",
+      "curriculumCode": "EF02M28",
+      "description": "Composição de um valor determinado combinando diferentes cédulas e moedas do sistema monetário brasileiro.",
+      "materials": [
+        "cédulas e moedas de brinquedo"
+      ],
+      "steps": [
+        "Escrever na lousa um valor alvo, por exemplo, R$ 12.",
+        "Pedir que os grupos montem esse valor usando diferentes combinações de cédulas e moedas.",
+        "Comparar as combinações encontradas por cada grupo.",
+        "Registrar no caderno duas formas diferentes de montar o mesmo valor."
+      ]
+    },
+    {
+      "theme": "Que horas o recreio começa? Lendo o relógio da rotina",
+      "curriculumCode": "EF02M29",
+      "description": "Leitura de horas em relógio digital associadas aos horários de atividades da rotina escolar.",
+      "materials": [
+        "relógio digital de brinquedo ou desenhado"
+      ],
+      "steps": [
+        "Mostrar um relógio digital e explicar como ler as horas.",
+        "Relacionar horários da rotina da escola (entrada, recreio, saída) com marcações no relógio digital.",
+        "Pedir que os alunos ajustem o relógio de brinquedo para mostrar cada horário citado.",
+        "Registrar no caderno os horários da rotina escrevendo o relógio digital correspondente a cada um."
+      ]
+    },
+    {
+      "theme": "Qual relógio mostra o horário mais cedo?",
+      "curriculumCode": "EF02M29",
+      "description": "Leitura e comparação de horários em relógios digitais para identificar qual indica um momento mais cedo ou mais tarde.",
+      "materials": [
+        "cartões com desenhos de relógios digitais mostrando horários diferentes"
+      ],
+      "steps": [
+        "Distribuir cartões com pares de relógios digitais mostrando horários diferentes.",
+        "Pedir que os alunos leiam cada horário em voz alta.",
+        "Pedir que decidam qual dos dois horários é mais cedo.",
+        "Registrar no caderno três pares de horários comparados, indicando qual é mais cedo em cada um."
+      ]
+    },
+    {
+      "theme": "O que vem depois? Prevendo os dias da semana",
+      "curriculumCode": "EF02M30",
+      "description": "Antecipação oral da sequência de dias da semana a partir de um dia de referência, utilizando o calendário como apoio.",
+      "materials": [],
+      "steps": [
+        "Perguntar que dia é hoje e qual foi o dia anterior.",
+        "Usar o calendário da sala para prever qual será o próximo dia e o dia depois dele.",
+        "Repetir o jogo partindo de outros dias da semana escolhidos pelos alunos.",
+        "Registrar no caderno uma sequência de cinco dias previstos a partir de um dia escolhido."
+      ]
+    },
+    {
+      "theme": "Estratégia das bordas: montando o quebra-cabeça",
+      "curriculumCode": "EF02M32",
+      "description": "Realização de jogo de quebra-cabeça utilizando a estratégia de separar as peças de borda antes de montar o restante.",
+      "materials": [
+        "quebra-cabeça de papelão"
+      ],
+      "steps": [
+        "Apresentar um quebra-cabeça e perguntar como poderiam começar a montá-lo.",
+        "Orientar a estratégia de separar primeiro as peças com uma borda reta.",
+        "Pedir que montem a moldura do quebra-cabeça antes de preencher o meio.",
+        "Registrar no caderno, com desenho ou frase, a estratégia usada para montar o quebra-cabeça."
+      ]
+    },
+    {
+      "theme": "Comandos de robô: direita, esquerda, para frente",
+      "curriculumCode": "EF02M17",
+      "description": "Representação da movimentação de um colega no espaço da sala seguindo comandos de direção e sentido dados por outro aluno.",
+      "materials": [],
+      "steps": [
+        "Explicar que um aluno será o robô e outro dará os comandos (para frente, direita, esquerda).",
+        "Organizar duplas para praticar a movimentação pela sala seguindo os comandos.",
+        "Trocar os papéis para que todos pratiquem dar e seguir comandos.",
+        "Registrar no caderno a sequência de comandos usada para o robô chegar a um ponto combinado."
+      ]
+    },
+    {
+      "theme": "Rola ou não rola? Testando os sólidos geométricos",
+      "curriculumCode": "EF02M20",
+      "description": "Exploração de semelhanças e diferenças entre sólidos geométricos observando quais têm partes arredondadas e rolam.",
+      "materials": [
+        "objetos com formas de cubo, esfera, cone e cilindro (caixa, bola, cone de papel, lata)"
+      ],
+      "steps": [
+        "Apresentar objetos com diferentes formas espaciais.",
+        "Pedir que os alunos testem, um a um, se cada objeto rola ou não quando empurrado.",
+        "Discutir por que alguns rolam (partes arredondadas) e outros não.",
+        "Registrar no caderno uma tabela com o objeto, se rolou ou não, e o motivo."
+      ]
+    },
+    {
+      "theme": "Qual foi o brinquedo mais votado?",
+      "curriculumCode": "EF02M25",
+      "description": "Análise de um gráfico de colunas com os brinquedos preferidos da turma, com descrição oral de uma conclusão e registro coletivo.",
+      "materials": [],
+      "steps": [
+        "Apresentar um gráfico de colunas pronto com os brinquedos preferidos votados anteriormente pela turma.",
+        "Fazer perguntas para a turma analisar: qual foi o mais votado, qual foi o menos votado.",
+        "Construir coletivamente na lousa uma frase de conclusão sobre o gráfico.",
+        "Cada aluno registra no caderno a conclusão combinada com a turma."
+      ]
+    },
+    {
+      "theme": "Problema da receita de suco",
+      "curriculumCode": "EF02M27",
+      "description": "Resolução de um problema envolvendo a grandeza capacidade, a partir de uma receita simples de suco com medidas em copos.",
+      "materials": [
+        "copo medidor (opcional)"
+      ],
+      "steps": [
+        "Apresentar uma receita simples de suco que usa medidas em copos de água e de suco concentrado.",
+        "Propor um problema: quantos copos de líquido serão usados ao todo na receita.",
+        "Pedir que os alunos resolvam o problema no caderno, representando com desenhos se precisar.",
+        "Registrar a resposta do problema junto com a estratégia usada para resolver."
+      ]
+    },
+    {
+      "theme": "Quantas semanas até as férias?",
+      "curriculumCode": "EF02M31",
+      "description": "Indicação da duração de um intervalo de tempo em semanas entre a data atual e uma data futura, utilizando o calendário.",
+      "materials": [],
+      "steps": [
+        "Localizar no calendário a data de hoje e a data do início das férias.",
+        "Contar juntos, semana por semana, quantas semanas faltam entre as duas datas.",
+        "Marcar no calendário as semanas contadas.",
+        "Registrar no caderno o número de semanas encontrado e como a contagem foi feita."
+      ]
+    },
+    {
+      "theme": "Contando de dois em dois: formando pares de meias",
+      "curriculumCode": "EF02M05",
+      "description": "Exploração da estratégia de contagem por formação de pares para quantificar uma coleção de objetos.",
+      "materials": [
+        "meias ou luvas (pode ser recorte de papel)"
+      ],
+      "steps": [
+        "Espalhar uma quantidade de meias soltas, sem formar pares, sobre a mesa.",
+        "Pedir que os alunos formem pares de meias iguais.",
+        "Contar quantos pares foram formados e quantas meias sobraram sem par.",
+        "Registrar no caderno a quantidade total de meias, o número de pares e as que sobraram."
+      ]
+    },
+    {
+      "theme": "O número que sumiu da sequência",
+      "curriculumCode": "EF02M15",
+      "description": "Descrição de elementos ausentes em uma sequência numérica repetitiva, completando o espaço vazio a partir do padrão identificado.",
+      "materials": [],
+      "steps": [
+        "Escrever na lousa sequências numéricas com um número faltando (ex: 2, 4, _, 8, 10).",
+        "Pedir que os alunos identifiquem o padrão da sequência.",
+        "Pedir que descubram e completem o número que falta em cada sequência.",
+        "Registrar no caderno as sequências completas, destacando o número que estava faltando."
+      ]
+    },
+    {
+      "theme": "Calculando de cabeça com ajuda das dezenas",
+      "curriculumCode": "EF02M07",
+      "description": "Exploração da decomposição de números para realizar cálculos mentais de adição, arredondando para dezenas cheias.",
+      "materials": [],
+      "steps": [
+        "Propor uma conta como 28 + 15 e perguntar como calcular sem armar a conta.",
+        "Mostrar a estratégia de decompor os números em dezenas e unidades para somar por partes.",
+        "Praticar coletivamente mais um ou dois exemplos na lousa.",
+        "Registrar no caderno três contas resolvidas mentalmente, mostrando a decomposição usada."
+      ]
+    },
+    {
+      "theme": "Quanto lixo produzimos em uma semana?",
+      "curriculumCode": "EF02M35",
+      "description": "Desenvolvimento de um projeto relacionando a Matemática à produção de lixo da turma, organizando os dados coletados durante a semana.",
+      "materials": [
+        "saco ou caixa para coletar o lixo reciclável da sala",
+        "balança (se disponível)"
+      ],
+      "steps": [
+        "Combinar com a turma separar e contar os materiais recicláveis descartados na sala durante uma semana.",
+        "Registrar diariamente na lousa a quantidade de itens descartados (papel, plástico).",
+        "Ao final da semana, organizar os dados coletados em uma tabela simples.",
+        "Registrar no caderno a tabela final e uma conclusão sobre a quantidade de lixo produzida pela turma."
+      ]
+    },
+    {
+      "theme": "Contando para o colega como pensei para resolver",
+      "curriculumCode": "EF02M36",
+      "description": "Expressão oral do processo de resolução de um problema para um colega, seguida do registro escrito da explicação dada.",
+      "materials": [],
+      "steps": [
+        "Propor um problema simples de adição ou subtração para os alunos resolverem individualmente.",
+        "Organizar duplas em que um aluno explica para o outro, em voz alta, como pensou para chegar à resposta.",
+        "Pedir que o colega que ouviu repita a explicação com suas próprias palavras.",
+        "Cada aluno registra no caderno, por escrito, como explicou o processo usado para resolver o problema."
+      ]
+    },
+    {
+      "theme": "Desenhando os passos que usei para resolver o problema",
+      "curriculumCode": "EF02M36",
+      "description": "Justificativa do processo de resolução de um problema por meio de desenhos e frases que mostram cada etapa do raciocínio.",
+      "materials": [],
+      "steps": [
+        "Propor um problema envolvendo uma situação de compra ou troca.",
+        "Pedir que os alunos resolvam o problema no caderno, registrando cada etapa com um desenho.",
+        "Ao lado de cada desenho, pedir que escrevam uma frase curta explicando o que fizeram.",
+        "Compartilhar com um colega os passos desenhados e registrados no caderno."
+      ]
+    },
+    {
+      "theme": "Que pergunta posso fazer com esses números?",
+      "curriculumCode": "EF02M37",
+      "description": "Elaboração de uma pergunta matemática a partir de uma situação dada, seguida da resolução e verificação da resposta encontrada.",
+      "materials": [],
+      "steps": [
+        "Apresentar uma situação com números, sem uma pergunta pronta (ex: Ana tinha 10 balas e ganhou mais 5).",
+        "Pedir que os alunos criem uma pergunta possível para essa situação.",
+        "Pedir que resolvam a própria pergunta criada, registrando a conta no caderno.",
+        "Verificar coletivamente se a resposta faz sentido e registrar no caderno a conclusão sobre a pergunta criada."
+      ]
+    },
+    {
+      "theme": "Troca de problemas: eu invento, o colega resolve e eu confiro",
+      "curriculumCode": "EF02M37",
+      "description": "Elaboração de um problema matemático completo, trocado com um colega para resolução, com verificação da validade da resposta.",
+      "materials": [],
+      "steps": [
+        "Pedir que cada aluno invente um problema simples de adição ou subtração no caderno.",
+        "Trocar o caderno com um colega para que ele resolva o problema criado.",
+        "Devolver o caderno para que o autor confira se a resposta do colega está correta.",
+        "Registrar no caderno o problema, a resolução do colega e se a resposta foi validada como correta."
+      ]
     }
   ],
   "ciencias": [
@@ -1467,6 +3107,1284 @@ export const THEME_BANK: Record<OwnSubject, BankEntry[]> = {
         "Identificar quais alimentos ajudam o corpo a crescer forte.",
         "Comparar o prato montado com o que costumam comer em casa."
       ]
+    },
+    {
+      "theme": "Uma balança feita de cabide",
+      "curriculumCode": "EF02C01",
+      "description": "Construção coletiva de uma balança simples para comparar o peso de diferentes objetos do cotidiano.",
+      "materials": [
+        "cabide de arame",
+        "dois copos plásticos",
+        "barbante",
+        "objetos variados (borracha, tampinha, pedra pequena, bola de papel)"
+      ],
+      "steps": [
+        "Montar com a turma uma balança simples pendurando dois copos nas pontas de um cabide com barbante.",
+        "Colocar um objeto em cada copo e observar para qual lado a balança pende.",
+        "Testar pelo menos quatro pares de objetos diferentes, anotando no quadro qual foi mais pesado em cada rodada.",
+        "Pedir que os alunos copiem a tabela no caderno e completem com o nome do objeto mais pesado de cada dupla testada.",
+        "Fechar perguntando se algum resultado surpreendeu a turma e por quê."
+      ]
+    },
+    {
+      "theme": "Peso não é tamanho",
+      "curriculumCode": "EF02C01",
+      "description": "Investigação prática de que objetos grandes podem ser leves e objetos pequenos podem ser pesados, ampliando a comparação de massa entre materiais.",
+      "materials": [
+        "bola de isopor ou bexiga cheia de ar",
+        "pedra pequena",
+        "caixa de papelão grande vazia",
+        "chave ou pilha"
+      ],
+      "steps": [
+        "Apresentar pares de objetos com tamanhos bem diferentes do peso esperado, como uma bexiga grande e uma pedrinha.",
+        "Pedir que os alunos segurem os dois e digam qual acham mais pesado antes de comparar.",
+        "Comparar segurando um objeto em cada mão e verificar se a previsão estava certa.",
+        "Repetir com outro par de objetos, como a caixa grande vazia e a chave.",
+        "Pedir que desenhem no caderno um objeto grande e leve e um objeto pequeno e pesado que conheçam."
+      ]
+    },
+    {
+      "theme": "Quanto de água cabe aqui?",
+      "curriculumCode": "EF02C01",
+      "description": "Comparação do volume de água em recipientes de formatos diferentes, mostrando que a mesma quantidade pode parecer maior ou menor dependendo do recipiente.",
+      "materials": [
+        "copo alto e fino",
+        "copo baixo e largo",
+        "jarra com água",
+        "fita crepe ou marcador"
+      ],
+      "steps": [
+        "Encher um copo alto e fino com água até uma marca combinada.",
+        "Despejar a mesma água em um copo baixo e largo, na frente da turma.",
+        "Perguntar se a quantidade de água mudou, mesmo parecendo diferente de um copo pro outro.",
+        "Repetir o teste com outro par de recipientes, pedindo palpites antes de despejar.",
+        "Pedir que desenhem os dois copos usados e registrem se a quantidade de água era a mesma ou não."
+      ]
+    },
+    {
+      "theme": "Ficha de pesagem da turma",
+      "curriculumCode": "EF02C01",
+      "description": "Registro sistemático de comparações de massa entre pares de objetos escolares usando uma ficha de observação em duplas.",
+      "materials": [
+        "objetos da sala de aula (estojo, livro, borracha, régua)",
+        "balança de cabide ou balança de pratos simples"
+      ],
+      "steps": [
+        "Organizar os alunos em duplas com uma balança simples disponível.",
+        "Distribuir uma ficha com pares de objetos para comparar, como estojo e livro.",
+        "Cada dupla testa os pares na balança e marca na ficha qual objeto é mais pesado.",
+        "Circular pela sala ajudando a interpretar o resultado da balança.",
+        "Recolher as fichas preenchidas e conferir juntos os resultados no quadro."
+      ]
+    },
+    {
+      "theme": "Comparando volume com grãos",
+      "curriculumCode": "EF02C01",
+      "description": "Uso de grãos para comparar visualmente o volume ocupado por diferentes recipientes do cotidiano.",
+      "materials": [
+        "arroz ou feijão cru",
+        "três potes de tamanhos diferentes",
+        "colher de sopa",
+        "bandeja"
+      ],
+      "steps": [
+        "Escolher três potes de tamanhos diferentes e pedir que a turma preveja qual vai caber mais grãos.",
+        "Encher cada pote até a borda, usando a mesma colher pra encher todos.",
+        "Comparar os potes cheios lado a lado.",
+        "Anotar no quadro a ordem do pote que coube mais grão pro que coube menos.",
+        "Pedir que copiem essa ordem no caderno com um desenho de cada pote."
+      ]
+    },
+    {
+      "theme": "Sacola pesada, sacola leve",
+      "curriculumCode": "EF02C01",
+      "description": "Comparação de massa entre embalagens do dia a dia trazidas de casa, relacionando o conteúdo ao peso percebido.",
+      "materials": [
+        "embalagens vazias e cheias trazidas de casa (caixa de suco, pacote de arroz, saco de algodão)"
+      ],
+      "steps": [
+        "Pedir com antecedência que tragam de casa uma embalagem cheia e outra vazia parecida.",
+        "Organizar uma roda e pedir que segurem as embalagens comparando o peso.",
+        "Perguntar por que a embalagem cheia é mais pesada que a vazia do mesmo tipo.",
+        "Ordenar as embalagens da turma da mais leve pra mais pesada, com ajuda de uma balança de cabide.",
+        "Pedir que registrem no caderno o nome de três embalagens em ordem de peso, da mais leve à mais pesada."
+      ]
+    },
+    {
+      "theme": "Prego enferrujando",
+      "curriculumCode": "EF02C02",
+      "description": "Observação planejada de uma transformação irreversível, acompanhando o enferrujamento de um prego em água ao longo de vários dias.",
+      "materials": [
+        "prego de metal",
+        "pote com água",
+        "papel toalha"
+      ],
+      "steps": [
+        "Deixar um prego de metal dentro de um pote com um pouco de água em um canto visível da sala.",
+        "Combinar de observar o prego todos os dias, sem mexer, por cerca de uma semana.",
+        "Registrar em uma tabela simples o que foi observado a cada dia (cor, manchas).",
+        "No fim da semana, comparar o desenho do primeiro dia com o do último.",
+        "Perguntar se dá pra deixar o prego como era antes, concluindo que é uma mudança irreversível."
+      ]
+    },
+    {
+      "theme": "Dobradura vai e volta",
+      "curriculumCode": "EF02C02",
+      "description": "Investigação de transformações reversíveis usando dobraduras de papel, comparando com o efeito de rasgar o mesmo tipo de papel.",
+      "materials": [
+        "duas folhas de papel sulfite por aluno"
+      ],
+      "steps": [
+        "Ensinar uma dobradura simples, como um barquinho ou avião de papel.",
+        "Pedir que desdobrem o papel e voltem ao formato original de folha lisa.",
+        "Em outra folha, pedir que rasguem um pedacinho e tentem colocar de volta no lugar.",
+        "Comparar as duas situações, perguntando qual delas dá pra desfazer.",
+        "Pedir que registrem no caderno, com desenho, qual mudança foi reversível e qual não foi."
+      ]
+    },
+    {
+      "theme": "Suco vira gelo, gelo vira suco",
+      "curriculumCode": "EF02C02",
+      "description": "Observação de uma transformação reversível ao congelar e depois derreter um mesmo líquido.",
+      "materials": [
+        "suco ou água colorida",
+        "forminha de gelo",
+        "freezer combinado com antecedência",
+        "copo transparente"
+      ],
+      "steps": [
+        "No dia anterior, congelar suco em forminhas com ajuda de alguém da escola ou de casa.",
+        "Levar os cubos congelados pra sala já no início da aula.",
+        "Colocar os cubos em um copo transparente e observar o degelo ao longo da aula.",
+        "Perguntar se o suco líquido do início da semana e o suco derretido agora são a mesma coisa.",
+        "Pedir que desenhem as três etapas: suco líquido, suco congelado e suco derretido de novo."
+      ]
+    },
+    {
+      "theme": "Casca da fruta não volta",
+      "curriculumCode": "EF02C02",
+      "description": "Observação de uma transformação irreversível simples ao descascar uma fruta na frente da turma.",
+      "materials": [
+        "banana ou laranja",
+        "prato"
+      ],
+      "steps": [
+        "Descascar uma fruta devagar na frente da turma, mostrando a casca se separando.",
+        "Perguntar se alguém sabe como colocar a casca de volta do jeito que estava antes.",
+        "Tentar encostar a casca na fruta pra mostrar que não gruda mais como antes.",
+        "Comparar com outra mudança já vista em aula que dá pra desfazer.",
+        "Pedir que desenhem a fruta com casca e sem casca, escrevendo se dá pra voltar como era."
+      ]
+    },
+    {
+      "theme": "Massinha muda de forma, biscoito não volta a ser massa",
+      "curriculumCode": "EF02C02",
+      "description": "Comparação entre uma transformação reversível (moldar massinha várias vezes) e uma irreversível (massa de biscoito já assada).",
+      "materials": [
+        "massinha de modelar",
+        "biscoito pronto (exemplo já assado)"
+      ],
+      "steps": [
+        "Distribuir massinha e pedir que moldem uma bolinha, depois uma cobrinha, depois voltem à bolinha.",
+        "Perguntar quantas vezes dá pra mudar o formato da massinha sem problema.",
+        "Mostrar um biscoito pronto e explicar que ele começou como uma massa parecida.",
+        "Perguntar se é possível transformar o biscoito de volta em massa mole.",
+        "Pedir que registrem no caderno, com desenho, a diferença entre a massinha e o biscoito assado."
+      ]
+    },
+    {
+      "theme": "Manteiga ao sol e na geladeira",
+      "curriculumCode": "EF02C03",
+      "description": "Comparação da mudança de estado de um material sólido gorduroso quando exposto a temperaturas diferentes.",
+      "materials": [
+        "pedaço pequeno de manteiga ou margarina",
+        "dois pratinhos"
+      ],
+      "steps": [
+        "Separar dois pedaços iguais de manteiga em pratinhos diferentes.",
+        "Deixar um no parapeito ao sol ou lugar quente e outro na geladeira ou lugar sombreado.",
+        "Esperar o restante da aula e depois comparar os dois pratinhos.",
+        "Perguntar por que um amoleceu mais rápido que o outro.",
+        "Pedir que desenhem os dois pratinhos e escrevam qual manteiga derreteu mais."
+      ]
+    },
+    {
+      "theme": "Garrafa com balão soprando sozinho",
+      "curriculumCode": "EF02C03",
+      "description": "Demonstração de como o calor pode fazer o ar dentro de uma garrafa se expandir, enchendo um balão sem ninguém soprar.",
+      "materials": [
+        "garrafa pet vazia",
+        "bexiga",
+        "bacia com água morna",
+        "bacia com água gelada"
+      ],
+      "steps": [
+        "Encaixar a boca de um balão murcho na boca da garrafa vazia.",
+        "Colocar a garrafa dentro da bacia com água morna e observar o que acontece com o balão.",
+        "Trocar para a bacia com água gelada e observar de novo.",
+        "Perguntar por que o balão enche sozinho na água quente.",
+        "Pedir que desenhem a garrafa nas duas situações, com o balão murcho e o balão cheio."
+      ]
+    },
+    {
+      "theme": "Sorvete de saquinho: do líquido pro sólido com frio",
+      "curriculumCode": "EF02C03",
+      "description": "Produção de sorvete artesanal em sala para observar a mudança de um líquido em sólido quando exposto a temperatura muito baixa.",
+      "materials": [
+        "leite ou suco",
+        "açúcar",
+        "sacos plásticos com fecho (um pequeno e um maior)",
+        "gelo picado",
+        "sal grosso"
+      ],
+      "steps": [
+        "Misturar leite ou suco com um pouco de açúcar dentro do saco pequeno e fechar bem.",
+        "Colocar esse saco dentro do saco maior, cheio de gelo picado e sal grosso.",
+        "Fechar o saco maior e pedir que os alunos sacudam com cuidado por alguns minutos.",
+        "Abrir o saco pequeno e observar que o líquido virou sorvete sólido.",
+        "Pedir que registrem no caderno o que estava líquido no início e o que ficou no final."
+      ]
+    },
+    {
+      "theme": "Roupa molhada no varal",
+      "curriculumCode": "EF02C03",
+      "description": "Comparação da velocidade de secagem de um tecido molhado exposto ao sol e à sombra, relacionando com a temperatura do ambiente.",
+      "materials": [
+        "dois pedaços de pano molhados iguais",
+        "varal ou barbante",
+        "prendedores de roupa"
+      ],
+      "steps": [
+        "Molhar dois pedaços de pano do mesmo tamanho e pendurar um em local ensolarado e outro na sombra.",
+        "Combinar horários pra ir checando os dois panos ao longo da aula.",
+        "Anotar no quadro em qual horário cada pano ficou seco.",
+        "Perguntar por que o pano do sol secou mais rápido.",
+        "Pedir que desenhem os dois panos e escrevam qual secou primeiro."
+      ]
+    },
+    {
+      "theme": "Gelo em diferentes lugares da sala",
+      "curriculumCode": "EF02C03",
+      "description": "Comparação do tempo de derretimento de cubos de gelo colocados em locais com temperaturas diferentes da sala de aula.",
+      "materials": [
+        "cubos de gelo do mesmo tamanho",
+        "três pratinhos",
+        "relógio ou temporizador"
+      ],
+      "steps": [
+        "Colocar um cubo de gelo igual em três pratinhos: um perto da janela ao sol, um na sombra e um dentro de um armário fechado.",
+        "Marcar o horário em que cada gelo foi colocado.",
+        "Checar os três pratinhos em intervalos combinados durante a aula.",
+        "Anotar no quadro a ordem de qual gelo derreteu primeiro.",
+        "Pedir que registrem no caderno essa ordem com um desenho de cada pratinho."
+      ]
+    },
+    {
+      "theme": "Caça ao material: separando na hora do lanche",
+      "curriculumCode": "EF02C04",
+      "description": "Observação prática dos resíduos gerados no lanche da turma, propondo o destino adequado para cada tipo de material.",
+      "materials": [
+        "restos de embalagens do lanche do dia",
+        "caixas ou sacolas identificadas por tipo de material"
+      ],
+      "steps": [
+        "Depois do lanche, juntar as embalagens e restos que sobraram na sala.",
+        "Separar o material em grupos por tipo (papel, plástico, resto de comida).",
+        "Conversar sobre pra onde cada grupo de material deveria ir.",
+        "Montar um pequeno cartaz coletivo mostrando os grupos formados.",
+        "Pedir que cada aluno escreva ou desenhe um item do lanche e o destino correto dele."
+      ]
+    },
+    {
+      "theme": "O que fazer com a pilha usada?",
+      "curriculumCode": "EF02C04",
+      "description": "Proposição de descarte especial para materiais que não podem ir no lixo comum, como pilhas e eletrônicos.",
+      "materials": [
+        "pilha usada vazia ou imagem de pilha",
+        "cartolina"
+      ],
+      "steps": [
+        "Mostrar uma pilha usada (ou imagem) e perguntar se ela pode ir no lixo comum.",
+        "Explicar por que pilhas precisam de um descarte especial.",
+        "Conversar sobre outros materiais que também precisam de descarte especial, como eletrônicos.",
+        "Desenhar juntos um cartaz de aviso para o descarte correto de pilhas.",
+        "Pedir que cada aluno copie o aviso no caderno com um desenho de uma pilha."
+      ]
+    },
+    {
+      "theme": "Jogo da separação: para qual lixeira vai?",
+      "curriculumCode": "EF02C04",
+      "description": "Jogo prático de classificação de resíduos do cotidiano nas lixeiras corretas da coleta seletiva.",
+      "materials": [
+        "cartões com desenhos ou nomes de objetos",
+        "lixeiras de cores diferentes feitas de caixa"
+      ],
+      "steps": [
+        "Preparar cartões com objetos variados do dia a dia (garrafa, casca de fruta, jornal).",
+        "Organizar lixeiras de cores diferentes representando os tipos de coleta.",
+        "Chamar os alunos um a um pra colocar o cartão na lixeira correta.",
+        "Corrigir juntos os cartões que ficaram na lixeira errada.",
+        "Pedir que cada aluno copie no caderno uma tabela relacionando três objetos à cor da lixeira certa."
+      ]
+    },
+    {
+      "theme": "Consertar, doar ou jogar fora?",
+      "curriculumCode": "EF02C04",
+      "description": "Proposição de alternativas ao descarte imediato de objetos, valorizando consertar e doar antes de jogar fora.",
+      "materials": [
+        "objetos quebrados ou velhos trazidos de casa (opcional)",
+        "cartaz com três colunas"
+      ],
+      "steps": [
+        "Apresentar exemplos de objetos velhos ou quebrados (brinquedo, roupa, sapato).",
+        "Conversar sobre as opções possíveis: consertar, doar ou descartar.",
+        "Classificar os exemplos apresentados nas três colunas do cartaz.",
+        "Perguntar se algum aluno já doou ou consertou algo em casa.",
+        "Pedir que cada aluno desenhe um objeto e escreva o que faria com ele antes de jogar fora."
+      ]
+    },
+    {
+      "theme": "Carta para quem joga lixo na rua",
+      "curriculumCode": "EF02C04",
+      "description": "Produção de um cartaz de conscientização propondo ações de descarte adequado de lixo em espaços públicos.",
+      "materials": [
+        "papel",
+        "lápis de cor"
+      ],
+      "steps": [
+        "Conversar sobre problemas causados por jogar lixo na rua ou em rios.",
+        "Mostrar imagens de ruas ou rios sujos, se possível.",
+        "Discutir juntos o que poderia ser feito diferente.",
+        "Pedir que cada aluno crie um pequeno cartaz com um desenho e uma mensagem sobre descarte correto.",
+        "Expor os cartazes produzidos no mural da sala."
+      ]
+    },
+    {
+      "theme": "Pesquisa em casa: o que estraga rápido?",
+      "curriculumCode": "EF02C05",
+      "description": "Pesquisa com a família sobre quais alimentos estragam rapidamente, classificando-os em perecíveis e não perecíveis.",
+      "materials": [
+        "ficha simples para pesquisa em casa",
+        "embalagens de alimentos com data de validade trazidas de casa"
+      ],
+      "steps": [
+        "Enviar uma ficha simples pedindo que perguntem em casa quais alimentos estragam rápido.",
+        "Pedir que tragam uma embalagem com data de validade de casa.",
+        "Em sala, juntar as embalagens trazidas e observar as datas de validade.",
+        "Classificar coletivamente em dois grupos: perecíveis e não perecíveis.",
+        "Pedir que cada aluno copie a lista de dois grupos no caderno."
+      ]
+    },
+    {
+      "theme": "Um pão vai mudando: comparando duas fatias",
+      "curriculumCode": "EF02C05",
+      "description": "Observação da decomposição de um alimento perecível exposto ao ar durante vários dias, registrando as mudanças diárias.",
+      "materials": [
+        "duas fatias de pão",
+        "dois potinhos ou sacos plásticos",
+        "lupa se houver"
+      ],
+      "steps": [
+        "Colocar uma fatia de pão em um potinho fechado e deixar em um canto visível da sala.",
+        "Combinar de observar o pão diariamente, sem abrir o pote, por cerca de uma semana.",
+        "Registrar em uma tabela simples o que muda a cada dia (cor, cheiro relatado, textura aparente).",
+        "No fim da semana, comparar o desenho do primeiro dia com o do último.",
+        "Concluir juntos que o pão é um alimento perecível, escrevendo essa conclusão no caderno."
+      ]
+    },
+    {
+      "theme": "O que dura mais no armário da cantina?",
+      "curriculumCode": "EF02C05",
+      "description": "Pesquisa sobre alimentos não perecíveis, investigando por que certos alimentos duram meses sem estragar.",
+      "materials": [
+        "embalagens vazias de alimentos não perecíveis (macarrão, arroz, enlatado)",
+        "embalagens de alimentos perecíveis para comparar"
+      ],
+      "steps": [
+        "Pedir que tragam embalagens vazias de alimentos guardados em casa.",
+        "Observar juntos as datas de validade de cada embalagem.",
+        "Separar as embalagens em dois grupos: as que duram pouco tempo e as que duram meses.",
+        "Conversar sobre por que alguns alimentos duram tanto tempo fechados.",
+        "Pedir que cada aluno copie a classificação em duas colunas no caderno, com desenhos."
+      ]
+    },
+    {
+      "theme": "Ficha de investigação: perecível ou não?",
+      "curriculumCode": "EF02C05",
+      "description": "Classificação de imagens de alimentos em perecíveis e não perecíveis a partir de pesquisa e discussão em duplas.",
+      "materials": [
+        "ficha impressa com imagens de alimentos variados",
+        "lápis de cor"
+      ],
+      "steps": [
+        "Distribuir uma ficha com imagens de vários alimentos.",
+        "Pedir que as duplas conversem sobre qual alimento estraga rápido e qual dura mais.",
+        "Cada dupla marca na ficha a classificação escolhida para cada imagem.",
+        "Corrigir juntos no quadro, comparando as respostas das duplas.",
+        "Pedir que cada aluno explique em voz alta uma de suas respostas antes de guardar a ficha no caderno."
+      ]
+    },
+    {
+      "theme": "Da fruta madura à fruta estragada",
+      "curriculumCode": "EF02C05",
+      "description": "Observação da decomposição gradual de uma fruta ao longo de vários dias, relacionando com a necessidade de conservação adequada.",
+      "materials": [
+        "banana ou outra fruta macia",
+        "prato",
+        "caderno de registro"
+      ],
+      "steps": [
+        "Colocar uma fruta madura em um prato visível na sala.",
+        "Combinar de observar e desenhar a fruta a cada dois ou três dias, ao longo de uma semana.",
+        "Registrar as mudanças percebidas em cada observação numa tabela simples.",
+        "No fim do período, comparar o primeiro e o último desenho.",
+        "Concluir juntos por que a fruta foi se decompondo, escrevendo essa conclusão no caderno."
+      ]
+    },
+    {
+      "theme": "Geladeira, fruteira ou armário: onde guardar cada alimento?",
+      "curriculumCode": "EF02C06",
+      "description": "Reconhecimento de ações de conservação de alimentos perecíveis, relacionando o local de armazenamento correto a cada tipo.",
+      "materials": [
+        "cartões com imagens de alimentos",
+        "desenhos representando geladeira, fruteira e armário"
+      ],
+      "steps": [
+        "Apresentar cartões com imagens de alimentos variados.",
+        "Mostrar os três locais de guarda: geladeira, fruteira e armário.",
+        "Pedir que a turma, junto, decida onde cada alimento deve ser guardado.",
+        "Colar ou desenhar os cartões perto do local correto no cartaz.",
+        "Pedir que cada aluno copie a lista de alimentos organizada por local de guarda."
+      ]
+    },
+    {
+      "theme": "Mesma fruta, guardada diferente",
+      "curriculumCode": "EF02C06",
+      "description": "Comparação prática do efeito da geladeira na conservação de uma fruta cortada, observando as mudanças após um dia.",
+      "materials": [
+        "duas porções da mesma fruta cortada (ex: maçã)",
+        "dois potinhos",
+        "geladeira disponível"
+      ],
+      "steps": [
+        "Cortar duas porções iguais de uma fruta na frente da turma.",
+        "Guardar uma porção na geladeira e deixar a outra na sala, fora da geladeira.",
+        "No dia seguinte, comparar as duas porções.",
+        "Perguntar por que uma conservou melhor que a outra.",
+        "Pedir que desenhem as duas porções e escrevam qual se conservou melhor."
+      ]
+    },
+    {
+      "theme": "Receita de como guardar o lanche",
+      "curriculumCode": "EF02C06",
+      "description": "Produção de um guia individual com dicas de conservação para os alimentos que os alunos trazem na lancheira.",
+      "materials": [
+        "lancheiras trazidas de casa (opcional)"
+      ],
+      "steps": [
+        "Conversar sobre o que acontece com um lanche deixado destampado fora da lancheira.",
+        "Discutir formas de conservar melhor o lanche, como tampar e manter na sombra.",
+        "Listar juntos três dicas simples de conservação.",
+        "Pedir que cada aluno crie um pequeno cartão ilustrado com essas dicas.",
+        "Guardar o cartão dentro da lancheira ou do caderno como lembrete."
+      ]
+    },
+    {
+      "theme": "Tampar, gelar ou secar: como conservamos alimentos",
+      "curriculumCode": "EF02C06",
+      "description": "Reconhecimento de diferentes técnicas de conservação de alimentos usadas no dia a dia, como refrigeração, vedação e secagem.",
+      "materials": [
+        "imagens de alimentos conservados de formas diferentes (fruta seca, suco na geladeira, feijão em pote fechado)"
+      ],
+      "steps": [
+        "Apresentar exemplos de alimentos conservados de formas diferentes.",
+        "Conversar sobre qual técnica foi usada em cada exemplo.",
+        "Pedir que os alunos liguem, numa ficha, cada alimento à sua técnica de conservação.",
+        "Corrigir juntos no quadro.",
+        "Pedir que cada aluno escreva uma técnica de conservação usada na sua casa."
+      ]
+    },
+    {
+      "theme": "O que aconteceu com o alimento esquecido fora da geladeira?",
+      "curriculumCode": "EF02C06",
+      "description": "Roda de conversa sobre experiências reais de alimentos estragados por falta de conservação, terminando em registro escrito de aprendizado.",
+      "materials": [],
+      "steps": [
+        "Perguntar quem já viu algum alimento estragar em casa por ter ficado fora da geladeira.",
+        "Listar no quadro os exemplos que a turma contar.",
+        "Discutir o que poderia ter sido feito para evitar cada caso.",
+        "Reforçar juntos regras simples de conservação de alimentos.",
+        "Pedir que cada aluno escreva ou desenhe uma regra de conservação que vai lembrar em casa."
+      ]
+    },
+    {
+      "theme": "Sombra do poste ao longo do dia",
+      "curriculumCode": "EF02C07",
+      "description": "Observação e registro da posição do Sol relacionada ao comprimento e direção da sombra de um objeto fixo em diferentes horários.",
+      "materials": [
+        "giz",
+        "objeto fixo no pátio (poste, mastro ou árvore)"
+      ],
+      "steps": [
+        "Escolher um objeto fixo no pátio que faça sombra durante o dia.",
+        "Marcar com giz a ponta da sombra em três horários diferentes da rotina escolar.",
+        "Escrever o horário ao lado de cada marca feita.",
+        "No fim do dia, comparar juntos as três marcas registradas.",
+        "Pedir que cada aluno desenhe as três posições da sombra observadas."
+      ]
+    },
+    {
+      "theme": "Relógio de sol da escola",
+      "curriculumCode": "EF02C07",
+      "description": "Construção coletiva de um relógio de sol simples, observando a mudança de posição da sombra ao longo do dia.",
+      "materials": [
+        "vareta ou lápis grande",
+        "base de papelão ou terra do pátio",
+        "giz de cera"
+      ],
+      "steps": [
+        "Fincar uma vareta em pé em um local ensolarado do pátio.",
+        "Marcar a posição da sombra de hora em hora, ao longo da manhã ou do dia.",
+        "Escrever o horário ao lado de cada marca.",
+        "Comparar a posição da sombra pela manhã e à tarde.",
+        "Pedir que cada aluno desenhe o relógio de sol montado com as marcas de horário."
+      ]
+    },
+    {
+      "theme": "Manhã, meio-dia e tarde: onde está o Sol?",
+      "curriculumCode": "EF02C07",
+      "description": "Registro da posição aparente do Sol no céu em três momentos do dia, ao longo de uma semana de observação orientada.",
+      "materials": [
+        "ficha de registro semanal",
+        "lápis de cor"
+      ],
+      "steps": [
+        "Explicar que nunca se deve olhar direto para o Sol, apenas notar sua posição aproximada no céu.",
+        "Combinar três momentos do dia para observar e desenhar onde o Sol parece estar.",
+        "Repetir a observação por vários dias, preenchendo a ficha semanal.",
+        "No fim da semana, comparar os registros de todos os dias.",
+        "Fechar pedindo que expliquem, com o registro em mãos, o que perceberam sobre a posição do Sol ao longo do dia."
+      ]
+    },
+    {
+      "theme": "Minha sombra muda de tamanho",
+      "curriculumCode": "EF02C07",
+      "description": "Observação da própria sombra em diferentes horários, relacionando o tamanho da sombra à posição do Sol no céu.",
+      "materials": [
+        "giz"
+      ],
+      "steps": [
+        "Levar a turma ao pátio pela manhã e pedir que observem o tamanho da própria sombra.",
+        "Marcar com giz o contorno dos pés e o comprimento da sombra de uma dupla de alunos.",
+        "Repetir a mesma marcação em outro horário do dia.",
+        "Comparar juntos as duas marcações feitas.",
+        "Pedir que cada aluno desenhe sua sombra maior e sua sombra menor, indicando o horário de cada uma."
+      ]
+    },
+    {
+      "theme": "Para onde o Sol nasce e se põe?",
+      "curriculumCode": "EF02C07",
+      "description": "Pesquisa orientada pela família sobre os pontos aproximados onde o Sol aparece pela manhã e desaparece no fim da tarde.",
+      "materials": [
+        "ficha de observação para casa"
+      ],
+      "steps": [
+        "Enviar uma ficha simples pedindo que observem com a família onde o Sol aparece de manhã e onde desaparece à tarde.",
+        "Pedir que anotem ou desenhem pontos de referência (uma casa, uma árvore) próximos de onde viram o Sol.",
+        "Recolher as fichas preenchidas e compartilhar os relatos em roda.",
+        "Comparar as observações de diferentes alunos.",
+        "Pedir que cada aluno desenhe uma cena mostrando o Sol nascendo de um lado e se pondo do outro."
+      ]
+    },
+    {
+      "theme": "Teatro de sombras com lanterna",
+      "curriculumCode": "EF02C08",
+      "description": "Investigação da relação entre a posição do objeto e da fonte de luz na formação de sombras, usando um teatrinho simples.",
+      "materials": [
+        "lanterna",
+        "lençol branco ou parede clara",
+        "bonecos de papelão recortados",
+        "palito de churrasco"
+      ],
+      "steps": [
+        "Montar um teatrinho de sombras simples com lanterna, parede clara e bonecos de papelão presos em palitos.",
+        "Mostrar a sombra do boneco perto da luz e depois longe da luz.",
+        "Perguntar por que o tamanho da sombra mudou.",
+        "Deixar duplas de alunos experimentarem mover o boneco enquanto os colegas observam.",
+        "Pedir que cada aluno desenhe duas sombras do mesmo boneco, uma pequena e uma grande, indicando qual estava mais perto da luz."
+      ]
+    },
+    {
+      "theme": "Sombra grande, sombra pequena",
+      "curriculumCode": "EF02C08",
+      "description": "Investigação de como a distância entre um objeto e a fonte de luz altera o tamanho da sombra projetada na parede.",
+      "materials": [
+        "lanterna",
+        "objeto pequeno (brinquedo ou borracha)",
+        "parede ou papel branco"
+      ],
+      "steps": [
+        "Escurecer um canto da sala e apontar a lanterna para a parede.",
+        "Colocar o objeto pequeno perto da luz e observar o tamanho da sombra.",
+        "Afastar o mesmo objeto da luz e observar como a sombra muda de tamanho.",
+        "Repetir algumas vezes, com alunos revezando pra observar de perto.",
+        "Pedir que registrem no caderno, com desenho, as sombras \"perto\" e \"longe\" da luz."
+      ]
+    },
+    {
+      "theme": "Onde a luz não passa",
+      "curriculumCode": "EF02C08",
+      "description": "Investigação de quais materiais deixam a luz passar totalmente, parcialmente ou não passar, relacionando com a formação de sombra.",
+      "materials": [
+        "lanterna",
+        "objetos de materiais variados (papel, plástico transparente, tecido, livro)"
+      ],
+      "steps": [
+        "Escurecer um canto da sala e apontar a lanterna para a parede.",
+        "Colocar cada material variado na frente do feixe de luz, um de cada vez.",
+        "Observar juntos se a luz passa toda, passa um pouco ou não passa.",
+        "Preencher uma tabela simples classificando cada material testado.",
+        "Pedir que cada aluno copie a tabela no caderno com desenhos dos materiais testados."
+      ]
+    },
+    {
+      "theme": "A sombra do meu corpo em posições diferentes",
+      "curriculumCode": "EF02C08",
+      "description": "Observação da própria sombra em diferentes posições do corpo em relação à fonte de luz, explorando mudanças de forma.",
+      "materials": [
+        "lanterna em sala escurecida ou luz do sol no pátio"
+      ],
+      "steps": [
+        "Levar a turma a um local com boa fonte de luz (sol no pátio ou lanterna em sala escurecida).",
+        "Pedir que um aluno de cada vez faça poses diferentes em frente à luz.",
+        "Observar juntos como a forma da sombra muda de acordo com a posição do corpo.",
+        "Deixar duplas experimentarem e comentarem as sombras uma da outra.",
+        "Pedir que cada aluno desenhe duas poses diferentes suas e a sombra correspondente de cada uma."
+      ]
+    },
+    {
+      "theme": "Caça-sombras pela escola",
+      "curriculumCode": "EF02C08",
+      "description": "Identificação e registro de diferentes sombras encontradas em ambientes da escola, relacionando-as à fonte de luz correspondente.",
+      "materials": [
+        "prancheta ou caderno",
+        "lápis"
+      ],
+      "steps": [
+        "Levar os alunos em um passeio curto pelo pátio ou corredores da escola.",
+        "Pedir que observem e apontem sombras formadas por árvores, postes ou muros.",
+        "Para cada sombra encontrada, identificar junto qual é a fonte de luz responsável.",
+        "Voltar pra sala e conversar sobre as sombras encontradas.",
+        "Pedir que cada aluno desenhe três sombras encontradas no passeio, com o objeto e a fonte de luz de cada uma."
+      ]
+    },
+    {
+      "theme": "Biscoito das fases da Lua",
+      "curriculumCode": "EF02C09",
+      "description": "Representação das fases da Lua usando biscoitos mordidos em diferentes formatos, associando à observação real do céu.",
+      "materials": [
+        "biscoitos redondos (tipo maisena)",
+        "prato de papel"
+      ],
+      "steps": [
+        "Distribuir quatro biscoitos redondos para cada aluno.",
+        "Pedir que mordam os biscoitos até formar os formatos das fases da Lua: nova, crescente, cheia e minguante.",
+        "Organizar os biscoitos em ordem no prato de papel, representando a sequência das fases.",
+        "Nomear cada fase junto com a turma.",
+        "Pedir que desenhem no caderno a mesma sequência de fases antes de poderem comer os biscoitos."
+      ]
+    },
+    {
+      "theme": "Calendário lunar da turma",
+      "curriculumCode": "EF02C09",
+      "description": "Percepção e registro coletivo das fases da Lua observadas ao longo de um mês, comparando com o calendário civil da turma.",
+      "materials": [
+        "calendário mensal grande impresso",
+        "lápis de cor"
+      ],
+      "steps": [
+        "Fixar um calendário grande do mês na parede da sala.",
+        "Combinar que, todo dia, um aluno diferente relata como estava a Lua na noite anterior (com ajuda da família).",
+        "Desenhar juntos o formato relatado no dia correspondente do calendário.",
+        "Ao final do mês, observar juntos o padrão formado pelos desenhos.",
+        "Pedir que cada aluno copie o calendário lunar completo no caderno."
+      ]
+    },
+    {
+      "theme": "Modelando as fases da Lua com massinha",
+      "curriculumCode": "EF02C09",
+      "description": "Representação manual das quatro fases principais da Lua a partir de discos de massinha, fixando o nome de cada fase.",
+      "materials": [
+        "massinha de modelar amarela ou branca",
+        "cartolina preta como fundo"
+      ],
+      "steps": [
+        "Distribuir massinha clara e um pedaço de cartolina preta para cada aluno.",
+        "Pedir que moldem quatro discos, achatando mais ou menos cada um pra representar as fases da Lua.",
+        "Colar os discos na cartolina preta em ordem, da nova até a minguante.",
+        "Escrever o nome de cada fase abaixo do disco correspondente.",
+        "Pedir que cada aluno apresente sua sequência para um colega, explicando a ordem das fases."
+      ]
+    },
+    {
+      "theme": "O que a família viu no céu ontem à noite?",
+      "curriculumCode": "EF02C09",
+      "description": "Percepção da fase da Lua por meio de observação orientada em casa, com posterior registro e comparação em grupo.",
+      "materials": [
+        "ficha de observação para casa"
+      ],
+      "steps": [
+        "Enviar uma ficha simples pedindo que observem a Lua à noite com a família e desenhem o formato visto.",
+        "Recolher as fichas preenchidas no dia seguinte.",
+        "Comparar em roda os desenhos trazidos por diferentes alunos.",
+        "Perguntar se todos viram a mesma fase da Lua.",
+        "Montar um pequeno mural coletivo juntando os desenhos trazidos pela turma."
+      ]
+    },
+    {
+      "theme": "Lua cheia ou Lua escondida: brincando com luz e sombra",
+      "curriculumCode": "EF02C09",
+      "description": "Exploração lúdica de como partes de uma esfera parecem mais ou menos iluminadas dependendo da posição, relacionando com a percepção das fases da Lua.",
+      "materials": [
+        "bola de isopor pequena",
+        "lanterna",
+        "sala escurecida"
+      ],
+      "steps": [
+        "Escurecer um canto da sala e usar a lanterna como se fosse o Sol iluminando a bolinha de isopor.",
+        "Girar devagar a bolinha na frente da lanterna, mostrando mais ou menos parte iluminada.",
+        "Perguntar em que momento a bolinha parece \"cheia\" de luz e em que momento parece \"escondida\".",
+        "Relacionar a brincadeira com o que já observaram da Lua no céu.",
+        "Pedir que cada aluno desenhe dois momentos da bolinha: com mais luz e com menos luz."
+      ]
+    },
+    {
+      "theme": "Meu coração acelera depois de pular",
+      "curriculumCode": "EF02C10",
+      "description": "Reconhecimento dos batimentos cardíacos como sinal vital, comparando a frequência em repouso e após atividade física.",
+      "materials": [
+        "cronômetro ou relógio com segundeiro"
+      ],
+      "steps": [
+        "Pedir que cada aluno coloque a mão no peito e conte os batimentos sentidos durante 15 segundos, em repouso.",
+        "Anotar o número contado por cada um no caderno.",
+        "Propor um minuto de pulinhos ou corrida no lugar.",
+        "Logo depois, pedir que contem os batimentos de novo pelos mesmos 15 segundos.",
+        "Pedir que registrem os dois números e escrevam qual foi maior e por quê."
+      ]
+    },
+    {
+      "theme": "Quantas vezes respiro em um minuto?",
+      "curriculumCode": "EF02C10",
+      "description": "Contagem e registro da própria frequência respiratória, comparando em repouso e após movimento.",
+      "materials": [
+        "cronômetro ou relógio",
+        "ficha simples de contagem"
+      ],
+      "steps": [
+        "Organizar duplas onde um aluno conta as respirações do colega durante 30 segundos, em repouso.",
+        "Anotar o número contado na ficha.",
+        "Trocar os papéis para que o outro também seja contado.",
+        "Fazer uma atividade leve de movimento e repetir a contagem de respirações.",
+        "Pedir que preencham a ficha comparando o número de respirações em repouso e depois do movimento."
+      ]
+    },
+    {
+      "theme": "Termômetro: sentindo a temperatura do corpo",
+      "curriculumCode": "EF02C10",
+      "description": "Reconhecimento da temperatura corporal como sinal vital, comparando a sensação de calor em diferentes partes do próprio corpo.",
+      "materials": [
+        "termômetro se disponível (uso não invasivo)"
+      ],
+      "steps": [
+        "Conversar sobre o que é a temperatura do corpo e por que ela é um sinal vital.",
+        "Pedir que cada aluno toque a própria testa, mão e pé, comparando as sensações.",
+        "Perguntar qual parte pareceu mais quente e qual mais fria.",
+        "Se houver termômetro disponível, mostrar como ele é usado com segurança em um voluntário.",
+        "Pedir que registrem no caderno qual parte do corpo pareceu mais quente na comparação feita."
+      ]
+    },
+    {
+      "theme": "Roda dos sinais vitais: o que meu corpo me conta",
+      "curriculumCode": "EF02C10",
+      "description": "Comunicação oral e escrita coletiva sobre os principais sinais vitais percebidos no próprio corpo, como batimentos e respiração.",
+      "materials": [
+        "cartaz com os três sinais vitais"
+      ],
+      "steps": [
+        "Revisar em roda os três sinais vitais estudados: batimentos, respiração e temperatura.",
+        "Pedir que cada aluno conte um momento em que percebeu o coração batendo mais rápido ou a respiração ofegante.",
+        "Anotar os relatos em um cartaz coletivo.",
+        "Conversar sobre por que o corpo reage assim em certas situações.",
+        "Pedir que cada aluno escreva ou desenhe um momento em que percebeu um desses sinais no próprio corpo."
+      ]
+    },
+    {
+      "theme": "Comparando o pulso em repouso: eu e meu colega",
+      "curriculumCode": "EF02C10",
+      "description": "Reconhecimento e comparação dos batimentos cardíacos entre colegas, percebendo variações individuais mesmo em repouso.",
+      "materials": [
+        "cronômetro"
+      ],
+      "steps": [
+        "Organizar duplas e pedir que cada aluno sinta o próprio pulso no pescoço ou pulso da mão.",
+        "Contar os batimentos sentidos durante 15 segundos, em silêncio e em repouso.",
+        "Anotar o número de cada aluno no quadro, formando uma lista da turma.",
+        "Observar juntos que os números não são todos iguais.",
+        "Pedir que cada aluno registre seu próprio número no caderno com um desenho de um coração ao lado."
+      ]
+    },
+    {
+      "theme": "Um dia sem comer: o que meu corpo sentiria?",
+      "curriculumCode": "EF02C11",
+      "description": "Reconhecimento da importância da alimentação como necessidade vital, refletindo sobre sensações de fome e falta de energia.",
+      "materials": [],
+      "steps": [
+        "Perguntar o que a turma sente quando fica muito tempo sem comer.",
+        "Listar no quadro as sensações citadas, como fome, cansaço e dor de cabeça.",
+        "Conversar sobre por que o corpo precisa de comida para funcionar bem.",
+        "Relacionar com situações do dia a dia, como sentir fome antes do lanche.",
+        "Pedir que cada aluno desenhe ou escreva uma coisa que o corpo precisa de comida pra fazer, como brincar ou crescer."
+      ]
+    },
+    {
+      "theme": "Diário do meu lanche",
+      "curriculumCode": "EF02C11",
+      "description": "Registro da própria alimentação ao longo de alguns dias, reconhecendo a alimentação como necessidade constante do corpo.",
+      "materials": [
+        "ficha de registro diário"
+      ],
+      "steps": [
+        "Distribuir uma ficha simples para anotar o que comeram nas principais refeições, por três ou quatro dias.",
+        "Pedir que preencham em casa com ajuda da família.",
+        "Recolher as fichas preenchidas e compartilhar em pequenos grupos.",
+        "Conversar sobre a rotina de comer todos os dias, mais de uma vez.",
+        "Pedir que cada aluno escreva uma frase sobre por que é importante comer todos os dias."
+      ]
+    },
+    {
+      "theme": "Animais também precisam comer",
+      "curriculumCode": "EF02C11",
+      "description": "Reconhecimento da alimentação como necessidade vital comum a todos os seres vivos, comparando o ser humano a diferentes animais.",
+      "materials": [
+        "imagens de animais variados"
+      ],
+      "steps": [
+        "Mostrar imagens de animais diferentes, como cachorro, passarinho e peixe.",
+        "Perguntar o que cada animal come e por que precisa se alimentar.",
+        "Comparar com a necessidade humana de se alimentar.",
+        "Conversar sobre o que aconteceria se um animal ficasse muito tempo sem comer.",
+        "Pedir que cada aluno desenhe um animal e o que ele come, ao lado de um desenho de si mesmo e do que come."
+      ]
+    },
+    {
+      "theme": "Fome de verdade x vontade de comer besteira",
+      "curriculumCode": "EF02C11",
+      "description": "Reflexão sobre a diferença entre a necessidade vital de se alimentar e o desejo por um alimento específico, valorizando a alimentação como necessidade do corpo.",
+      "materials": [],
+      "steps": [
+        "Perguntar se a turma sabe diferenciar sentir fome de verdade e ter vontade de comer algo gostoso.",
+        "Dar exemplos das duas situações e discutir juntos.",
+        "Conversar sobre como o corpo avisa quando precisa de comida.",
+        "Relacionar com a importância de comer refeições completas, não só guloseimas.",
+        "Pedir que cada aluno desenhe uma refeição que ajuda o corpo a funcionar bem."
+      ]
+    },
+    {
+      "theme": "Sem energia pra brincar",
+      "curriculumCode": "EF02C11",
+      "description": "Relação entre alimentação e energia para realizar atividades do dia a dia, evidenciando a importância vital de se alimentar.",
+      "materials": [],
+      "steps": [
+        "Perguntar se algum aluno já se sentiu fraco ou cansado por estar com fome.",
+        "Conversar em roda sobre esses momentos.",
+        "Relacionar a sensação de cansaço com a falta de energia por não ter comido.",
+        "Discutir como uma boa alimentação ajuda a ter energia para brincar e estudar.",
+        "Pedir que cada aluno desenhe duas cenas: uma pessoa sem energia por não comer e a mesma pessoa cheia de energia depois de comer."
+      ]
+    },
+    {
+      "theme": "Cesta de alimentos: o que vem da terra, do animal ou da fábrica?",
+      "curriculumCode": "EF02C12",
+      "description": "Conhecimento de diferentes origens dos alimentos, identificando os que vêm de plantas, de animais ou são industrializados.",
+      "materials": [
+        "imagens ou embalagens de alimentos variados"
+      ],
+      "steps": [
+        "Apresentar imagens ou embalagens de alimentos diferentes.",
+        "Conversar sobre de onde vem cada alimento: planta, animal ou fábrica.",
+        "Separar coletivamente os alimentos em três grupos.",
+        "Discutir exemplos que geram dúvida, como o pão feito de trigo.",
+        "Pedir que cada aluno copie a classificação em três colunas no caderno, com desenhos."
+      ]
+    },
+    {
+      "theme": "Alimentos que dão força para os músculos",
+      "curriculumCode": "EF02C12",
+      "description": "Conhecimento de alimentos ricos em proteína, relacionando-os ao fortalecimento do corpo.",
+      "materials": [
+        "imagens de alimentos proteicos (ovo, feijão, carne, leite)"
+      ],
+      "steps": [
+        "Mostrar imagens de alimentos como ovo, feijão, carne e leite.",
+        "Conversar sobre como esses alimentos ajudam os músculos a ficarem fortes.",
+        "Listar juntos outros exemplos que a turma conhece.",
+        "Perguntar quais desses alimentos costumam comer em casa.",
+        "Pedir que cada aluno desenhe seu alimento proteico favorito e escreva o nome dele."
+      ]
+    },
+    {
+      "theme": "Alimentos que dão energia para brincar",
+      "curriculumCode": "EF02C12",
+      "description": "Conhecimento de alimentos fonte de energia, relacionando-os à disposição para atividades físicas do dia a dia.",
+      "materials": [
+        "imagens de alimentos energéticos (arroz, pão, batata, banana)"
+      ],
+      "steps": [
+        "Mostrar imagens de alimentos como arroz, pão, batata e banana.",
+        "Conversar sobre como esses alimentos ajudam a ter energia para correr e brincar.",
+        "Perguntar o que costumam comer antes de uma atividade física ou do recreio.",
+        "Relacionar com situações em que sentiram falta de energia.",
+        "Pedir que cada aluno desenhe uma refeição com um alimento energético antes de uma brincadeira."
+      ]
+    },
+    {
+      "theme": "Vitaminas escondidas nas frutas e verduras",
+      "curriculumCode": "EF02C12",
+      "description": "Conhecimento de alimentos ricos em vitaminas, associando frutas e verduras à proteção do corpo contra doenças.",
+      "materials": [
+        "frutas e verduras reais ou imagens variadas"
+      ],
+      "steps": [
+        "Apresentar frutas e verduras reais ou em imagens, uma de cada vez.",
+        "Conversar sobre como elas ajudam o corpo a ficar mais forte contra doenças.",
+        "Se possível, oferecer pequenas amostras para experimentar, verificando alergias antes.",
+        "Perguntar quais frutas e verduras a turma já experimentou ou gosta.",
+        "Pedir que cada aluno desenhe e colora três frutas ou verduras que conhece."
+      ]
+    },
+    {
+      "theme": "Classificando o cardápio da semana",
+      "curriculumCode": "EF02C12",
+      "description": "Conhecimento dos tipos de alimentos necessários ao desenvolvimento do corpo, analisando o cardápio real da merenda escolar.",
+      "materials": [
+        "cardápio da semana da escola impresso ou copiado do mural"
+      ],
+      "steps": [
+        "Levar para a sala o cardápio da merenda da semana.",
+        "Passar por cada dia identificando alimentos proteicos, energéticos e vitamínicos.",
+        "Marcar cada tipo com uma cor ou símbolo diferente.",
+        "Conversar sobre o equilíbrio entre os tipos de alimentos no cardápio.",
+        "Pedir que cada aluno copie um dia do cardápio no caderno com a classificação marcada."
+      ]
+    },
+    {
+      "theme": "Onde os animais da minha rua dormem?",
+      "curriculumCode": "EF02C13",
+      "description": "Identificação dos modos de vida de animais do convívio próximo, investigando onde e como cada um descansa.",
+      "materials": [
+        "imagens ou relatos de animais comuns na região (cachorro, gato, pombo, formiga)"
+      ],
+      "steps": [
+        "Conversar sobre animais que costumam ver perto de casa ou da escola.",
+        "Perguntar onde cada um desses animais costuma descansar ou dormir.",
+        "Listar no quadro os animais citados e o local de descanso de cada um.",
+        "Comparar com o local onde os alunos dormem.",
+        "Pedir que cada aluno desenhe um animal local e o lugar onde ele descansa."
+      ]
+    },
+    {
+      "theme": "Bichos que voam, nadam e andam",
+      "curriculumCode": "EF02C13",
+      "description": "Identificação e classificação coletiva dos modos de locomoção de animais do convívio próximo.",
+      "materials": [
+        "cartões com imagens de animais variados"
+      ],
+      "steps": [
+        "Apresentar cartões com imagens de animais diferentes.",
+        "Perguntar como cada animal se movimenta: voando, nadando, andando ou rastejando.",
+        "Organizar coletivamente os cartões em grupos por tipo de locomoção.",
+        "Discutir casos de animais que se encaixam em mais de um grupo.",
+        "Pedir que cada aluno copie a classificação no caderno, com desenhos de um animal de cada grupo."
+      ]
+    },
+    {
+      "theme": "O que cada bicho de estimação come?",
+      "curriculumCode": "EF02C13",
+      "description": "Identificação dos modos de vida de animais de estimação próximos, investigando hábitos alimentares específicos de cada um.",
+      "materials": [
+        "ficha de pesquisa para casa ou imagens de pets comuns"
+      ],
+      "steps": [
+        "Perguntar quem tem animal de estimação em casa e o que ele come.",
+        "Para quem não tem, apresentar imagens de pets comuns pra pesquisar junto.",
+        "Compartilhar as descobertas em pequenos grupos.",
+        "Propor coletivamente uma classificação simples dos pets pelo tipo de alimento.",
+        "Pedir que cada aluno desenhe seu animal (ou um escolhido) e o alimento que ele come."
+      ]
+    },
+    {
+      "theme": "Animais do quintal: dia ou noite?",
+      "curriculumCode": "EF02C13",
+      "description": "Identificação dos hábitos de atividade de animais próximos, classificando-os coletivamente em diurnos e noturnos.",
+      "materials": [
+        "imagens de animais diurnos e noturnos comuns (galinha, morcego, coruja, borboleta)"
+      ],
+      "steps": [
+        "Apresentar imagens de animais que a turma conhece.",
+        "Conversar sobre em qual período do dia cada animal costuma aparecer.",
+        "Classificar coletivamente os animais em diurnos e noturnos.",
+        "Discutir por que alguns animais preferem a noite.",
+        "Pedir que cada aluno desenhe um animal em uma cena de dia ou de noite, conforme seu hábito."
+      ]
+    },
+    {
+      "theme": "Formigueiro no pátio: observando o modo de vida das formigas",
+      "curriculumCode": "EF02C13",
+      "description": "Observação direta dos modos de vida de um animal do convívio próximo, investigando organização e comportamento do grupo.",
+      "materials": [
+        "lupa se houver",
+        "prancheta"
+      ],
+      "steps": [
+        "Levar a turma para observar, de uma distância segura, um formigueiro ou trilha de formigas no pátio.",
+        "Pedir que observem em silêncio por alguns minutos o que as formigas carregam e fazem.",
+        "Voltar pra sala e conversar sobre o que foi observado.",
+        "Discutir por que as formigas trabalham em grupo.",
+        "Pedir que cada aluno desenhe as formigas observadas e o que estavam carregando ou fazendo."
+      ]
+    },
+    {
+      "theme": "Plantando feijão no algodão",
+      "curriculumCode": "EF02C14",
+      "description": "Investigação da importância da água para uma planta, acompanhando a germinação de uma semente ao longo de vários dias.",
+      "materials": [
+        "sementes de feijão",
+        "algodão",
+        "copo transparente",
+        "água"
+      ],
+      "steps": [
+        "Colocar algodão úmido dentro de um copo transparente e algumas sementes de feijão encostadas na parede do copo.",
+        "Regar levemente todos os dias, mantendo o algodão úmido.",
+        "Observar e desenhar o crescimento da semente a cada poucos dias, ao longo de uma ou duas semanas.",
+        "Conversar sobre o que aconteceria se parassem de regar.",
+        "Pedir que organizem os desenhos feitos em ordem, mostrando o crescimento da plantinha."
+      ]
+    },
+    {
+      "theme": "Planta no sol, planta no escuro",
+      "curriculumCode": "EF02C14",
+      "description": "Investigação da importância da luz para o desenvolvimento das plantas, comparando duas mudas em condições diferentes.",
+      "materials": [
+        "duas mudas iguais em vasos ou copos",
+        "caixa de papelão para escurecer uma delas"
+      ],
+      "steps": [
+        "Separar duas mudas iguais, regando as duas igualmente.",
+        "Deixar uma no sol e cobrir a outra com uma caixa de papelão, tirando só para regar.",
+        "Observar as duas plantas depois de cerca de uma semana.",
+        "Comparar o que aconteceu com a planta que ficou no escuro.",
+        "Pedir que cada aluno desenhe as duas plantas, indicando qual ficou no sol e qual ficou no escuro."
+      ]
+    },
+    {
+      "theme": "Dissecando uma planta de verdade",
+      "curriculumCode": "EF02C14",
+      "description": "Nomeação das principais partes de uma planta a partir da observação direta de uma planta real trazida para a sala.",
+      "materials": [
+        "planta pequena com raiz, caule, folhas e se possível flor",
+        "prato ou jornal para apoiar"
+      ],
+      "steps": [
+        "Trazer uma planta pequena inteira, com raiz, e apoiá-la sobre um prato ou jornal.",
+        "Apontar e nomear junto com a turma cada parte da planta: raiz, caule, folha e flor.",
+        "Deixar que os alunos toquem e observem cada parte de perto.",
+        "Perguntar para que serve cada parte observada.",
+        "Pedir que cada aluno desenhe a planta observada, escrevendo o nome de cada parte."
+      ]
+    },
+    {
+      "theme": "Quem murcha primeiro: a planta sem água",
+      "curriculumCode": "EF02C14",
+      "description": "Investigação da importância da água comparando o murchamento de uma planta que não recebe água com outra regada normalmente.",
+      "materials": [
+        "duas mudas iguais em vasos",
+        "água"
+      ],
+      "steps": [
+        "Separar duas mudas iguais, colocando as duas no mesmo local com sol.",
+        "Regar uma normalmente todos os dias e não regar a outra.",
+        "Observar e desenhar as duas plantas a cada dois dias, durante uma semana.",
+        "Conversar sobre o que aconteceu com a planta sem água.",
+        "Pedir que registrem no caderno a conclusão sobre a importância da água para a planta."
+      ]
+    },
+    {
+      "theme": "Maquete das partes da planta",
+      "curriculumCode": "EF02C14",
+      "description": "Nomeação e representação das principais partes de uma planta por meio da construção de uma maquete simples.",
+      "materials": [
+        "massinha de modelar ou papel colorido",
+        "prato de papelão",
+        "palitos de churrasco"
+      ],
+      "steps": [
+        "Distribuir os materiais para cada aluno montar uma planta usando massinha ou papel colorido.",
+        "Orientar que a maquete precisa ter raiz, caule, folha e flor bem identificáveis.",
+        "Fazer pequenas etiquetas de papel com o nome de cada parte para colar na maquete.",
+        "Pedir que apresentem a maquete para um colega, explicando a função de cada parte.",
+        "Expor as maquetes prontas em uma mesa ou mural da sala."
+      ]
+    },
+    {
+      "theme": "Caça aos perigos escondidos na sala de aula",
+      "curriculumCode": "EF02C15",
+      "description": "Reconhecimento de situações de risco no ambiente escolar, propondo atitudes de segurança no uso de materiais e espaços.",
+      "materials": [],
+      "steps": [
+        "Percorrer a sala de aula com a turma procurando possíveis perigos, como fios soltos ou objetos cortantes fora do lugar.",
+        "Listar no quadro os perigos encontrados.",
+        "Conversar sobre como evitar ou corrigir cada situação encontrada.",
+        "Combinar atitudes seguras que a turma vai adotar a partir de agora.",
+        "Pedir que cada aluno desenhe um perigo encontrado e a solução segura combinada."
+      ]
+    },
+    {
+      "theme": "Regras de segurança com a tesoura e a cola",
+      "curriculumCode": "EF02C15",
+      "description": "Reconhecimento de modos de prevenir acidentes no uso de materiais escolares comuns, como tesoura e outros objetos cortantes.",
+      "materials": [
+        "tesoura sem ponta",
+        "cartaz"
+      ],
+      "steps": [
+        "Demonstrar a forma correta e a incorreta de segurar e passar uma tesoura.",
+        "Conversar sobre por que essas regras existem.",
+        "Praticar em duplas passando uma tesoura fechada de forma segura.",
+        "Registrar juntos em um cartaz as regras combinadas.",
+        "Pedir que cada aluno escreva ou desenhe duas regras de segurança para usar a tesoura."
+      ]
+    },
+    {
+      "theme": "Placas de aviso da escola",
+      "curriculumCode": "EF02C15",
+      "description": "Reconhecimento de sinalizações de segurança presentes na escola, relacionando-as à prevenção de acidentes.",
+      "materials": [
+        "fotos ou desenhos de placas de segurança comuns (piso molhado, saída de emergência, extintor)"
+      ],
+      "steps": [
+        "Mostrar imagens de placas de segurança comuns encontradas em prédios.",
+        "Conversar sobre o significado de cada placa.",
+        "Fazer uma pequena volta pela escola procurando placas parecidas de verdade.",
+        "Anotar quais placas foram encontradas e onde.",
+        "Pedir que cada aluno desenhe uma placa de segurança e explique o que ela significa."
+      ]
+    },
+    {
+      "theme": "O que fazer se tiver algo quente por perto?",
+      "curriculumCode": "EF02C15",
+      "description": "Reconhecimento de atitudes seguras diante de situações de risco envolvendo calor no dia a dia, propondo condutas adequadas de prevenção.",
+      "materials": [],
+      "steps": [
+        "Conversar sobre situações com objetos quentes em casa, como fogão e ferro de passar.",
+        "Perguntar o que se deve e o que não se deve fazer perto desses objetos.",
+        "Listar no quadro atitudes seguras combinadas pela turma.",
+        "Discutir também o que fazer se perceberem um adulto usando esses objetos.",
+        "Pedir que cada aluno escreva ou desenhe uma atitude segura perto de objetos quentes."
+      ]
+    },
+    {
+      "theme": "Mapa dos cuidados na escada e no corredor",
+      "curriculumCode": "EF02C15",
+      "description": "Reconhecimento de atitudes de segurança em espaços de circulação da escola, propondo condutas para evitar quedas e colisões.",
+      "materials": [],
+      "steps": [
+        "Conversar sobre acidentes comuns em escadas e corredores, como correr e empurrar.",
+        "Listar atitudes seguras para esses espaços.",
+        "Fazer uma caminhada pela escada e corredor da escola apontando pontos de atenção.",
+        "Reforçar juntos as regras combinadas de circulação segura.",
+        "Pedir que cada aluno desenhe a escada ou o corredor da escola com uma dica de segurança escrita ao lado."
+      ]
+    },
+    {
+      "theme": "Linha do tempo da minha higiene diária",
+      "curriculumCode": "EF02C16",
+      "description": "Valorização de cuidados com o corpo, organizando em sequência os hábitos de higiene realizados ao longo de um dia.",
+      "materials": [
+        "tiras de papel ou ficha com espaços para desenhar"
+      ],
+      "steps": [
+        "Conversar sobre todos os hábitos de higiene feitos em um dia, como escovar os dentes e tomar banho.",
+        "Listar juntos esses hábitos no quadro, sem uma ordem definida.",
+        "Pedir que cada aluno organize os hábitos na ordem em que costuma fazer, do acordar até dormir.",
+        "Desenhar cada hábito em uma tira de papel formando uma linha do tempo.",
+        "Colar as tiras em sequência no caderno como registro final da rotina de higiene."
+      ]
+    },
+    {
+      "theme": "Minhas mãos antes e depois de lavar",
+      "curriculumCode": "EF02C16",
+      "description": "Valorização do hábito de lavar as mãos, relacionando-o à prevenção de doenças e ao desenvolvimento saudável do corpo.",
+      "materials": [
+        "sabonete",
+        "pia ou balde com água disponível",
+        "cartaz com passos de lavagem das mãos"
+      ],
+      "steps": [
+        "Conversar sobre por que as mãos podem carregar germes ao longo do dia.",
+        "Demonstrar o passo a passo correto de lavar as mãos.",
+        "Levar pequenos grupos até a pia para praticar a lavagem correta.",
+        "Conversar sobre em quais momentos do dia é importante lavar as mãos.",
+        "Pedir que cada aluno desenhe, em ordem, os passos da lavagem correta das mãos."
+      ]
+    },
+    {
+      "theme": "Quantas horas eu durmo?",
+      "curriculumCode": "EF02C16",
+      "description": "Valorização do sono como hábito saudável relacionado ao desenvolvimento do corpo, registrando a própria rotina de sono.",
+      "materials": [
+        "ficha de registro do sono para casa"
+      ],
+      "steps": [
+        "Enviar uma ficha simples pedindo que anotem, com ajuda da família, o horário de dormir e acordar por algumas noites.",
+        "Recolher as fichas preenchidas e conversar sobre os horários registrados.",
+        "Discutir por que dormir bem ajuda o corpo e o cérebro a crescerem saudáveis.",
+        "Comparar as rotinas de sono de diferentes alunos, sem julgar quem dorme mais ou menos.",
+        "Pedir que cada aluno desenhe sua rotina de dormir, com o horário que costuma ir para a cama."
+      ]
+    },
+    {
+      "theme": "Cuidando dos dentes: o que ajuda e o que atrapalha",
+      "curriculumCode": "EF02C16",
+      "description": "Valorização de cuidados com a saúde bucal, relacionando hábitos alimentares e de higiene ao desenvolvimento saudável do corpo.",
+      "materials": [
+        "escova de dente para demonstração",
+        "imagens de alimentos que ajudam ou prejudicam os dentes"
+      ],
+      "steps": [
+        "Mostrar imagens de alimentos e conversar sobre quais ajudam e quais prejudicam os dentes.",
+        "Separar coletivamente as imagens em dois grupos.",
+        "Demonstrar o movimento correto de escovar os dentes com uma escova.",
+        "Conversar sobre a importância de escovar os dentes depois das refeições.",
+        "Pedir que cada aluno desenhe um sorriso saudável e escreva dois cuidados que tem com os dentes."
+      ]
+    },
+    {
+      "theme": "Roupa certa para cada clima cuida do corpo",
+      "curriculumCode": "EF02C16",
+      "description": "Valorização de cuidados com o corpo relacionados à escolha de vestimentas adequadas para diferentes climas, prevenindo desconfortos e doenças.",
+      "materials": [
+        "imagens ou desenhos de roupas variadas (casaco, boné, capa de chuva, roupa leve)"
+      ],
+      "steps": [
+        "Conversar sobre o que vestir em dias quentes, frios e chuvosos.",
+        "Mostrar imagens de roupas variadas e perguntar em qual clima cada uma se usa.",
+        "Separar coletivamente as roupas por tipo de clima.",
+        "Sortear ou combinar um clima para cada aluno representar.",
+        "Pedir que cada aluno desenhe a si mesmo vestido de forma adequada para o clima combinado, explicando sua escolha."
+      ]
     }
   ],
   "geografia": [
@@ -1712,6 +4630,1203 @@ export const THEME_BANK: Record<OwnSubject, BankEntry[]> = {
         "Escolher um objeto da sala e desenhá-lo visto de cima e visto de lado, comparando as duas formas.",
         "Perguntar por que um mapa é sempre desenhado como se estivéssemos vendo de cima.",
         "Fazer o desenho, visto de cima, de um objeto simples da sala (a mesa do professor, por exemplo)."
+      ]
+    },
+    {
+      "theme": "Meu cantinho preferido na escola",
+      "curriculumCode": "EF02G01",
+      "description": "Passeio pelos espaços da escola para cada aluno escolher um lugar de que mais gosta, fortalecendo o vínculo afetivo com o ambiente escolar.",
+      "materials": [
+        "papel para desenho"
+      ],
+      "steps": [
+        "Levar a turma para caminhar pelos espaços da escola (pátio, biblioteca, quadra, sala).",
+        "Pedir que cada aluno escolha o lugar de que mais gosta.",
+        "Perguntar por que aquele lugar é especial para cada um.",
+        "Voltar pra sala e pedir que desenhem o cantinho escolhido.",
+        "Escrever embaixo do desenho uma frase curta explicando por que gostam daquele lugar."
+      ]
+    },
+    {
+      "theme": "Como era o bairro quando meus pais eram crianças",
+      "curriculumCode": "EF02G01",
+      "description": "Entrevista em família para comparar o bairro de antigamente com o de hoje, valorizando o vínculo afetivo com as mudanças do lugar.",
+      "materials": [],
+      "steps": [
+        "Combinar com a turma uma entrevista em casa com um adulto da família.",
+        "Orientar perguntas simples: 'Como era o bairro quando você era criança?' e 'O que mudou?'",
+        "Na aula seguinte, abrir roda de conversa para os alunos contarem o que descobriram.",
+        "Comparar as respostas: o que mudou e o que continua igual no bairro.",
+        "Pedir que registrem por escrito ou em desenho uma coisa que mudou no bairro."
+      ]
+    },
+    {
+      "theme": "Tudo que tem na minha rua",
+      "curriculumCode": "EF02G01",
+      "description": "Observação do entorno da escola para reconhecer e valorizar os elementos que fazem parte da rua onde os alunos vivem.",
+      "materials": [
+        "prancheta ou apoio para escrever (pode ser uma pasta)"
+      ],
+      "steps": [
+        "Sair com a turma para uma volta curta e segura ao redor da escola.",
+        "Pedir que observem o que existe na rua: casas, lojas, árvores, praça.",
+        "Anotar ou desenhar no caminho os elementos que mais chamam atenção.",
+        "Voltar pra sala e conversar sobre o que viram.",
+        "Pedir que façam um desenho da rua da escola com os elementos observados."
+      ]
+    },
+    {
+      "theme": "Minha casa e minha escola: parecidas ou diferentes?",
+      "curriculumCode": "EF02G01",
+      "description": "Comparação entre a casa e a escola para reconhecer semelhanças e diferenças entre os espaços de vivência dos alunos.",
+      "materials": [],
+      "steps": [
+        "Perguntar aos alunos como é a casa deles e como é a escola.",
+        "Fazer no quadro três colunas: 'só em casa', 'só na escola', 'nos dois lugares'.",
+        "Preencher a lista com as respostas da turma.",
+        "Pedir que desenhem, dividindo a folha ao meio, a casa de um lado e a escola do outro.",
+        "Escrever uma frase contando o que mais gostam em cada lugar."
+      ]
+    },
+    {
+      "theme": "Um mapa dos lugares que eu amo",
+      "curriculumCode": "EF02G01",
+      "description": "Criação de um mapinha afetivo ligando os lugares de vivência mais queridos, reforçando os vínculos construídos com esses espaços.",
+      "materials": [
+        "papel",
+        "lápis de cor"
+      ],
+      "steps": [
+        "Conversar sobre os lugares que cada aluno mais gosta de frequentar (casa, escola, praça, casa de parente).",
+        "Pedir que pensem em pelo menos três lugares queridos.",
+        "Ajudar a desenhar um mapinha simples ligando esses lugares com linhas ou setas.",
+        "Pedir que desenhem um símbolo ou coraçãozinho no lugar de que mais gostam.",
+        "Compartilhar o mapa com um colega, contando por que aqueles lugares são especiais."
+      ]
+    },
+    {
+      "theme": "A mala da vovó: o que trouxe de outro lugar",
+      "curriculumCode": "EF02G02",
+      "description": "Investigação de objetos ou costumes trazidos por familiares que migraram, registrando essa história em desenho.",
+      "materials": [],
+      "steps": [
+        "Perguntar se algum familiar dos alunos veio de outra cidade, estado ou país.",
+        "Conversar sobre o que essas pessoas podem ter trazido na mudança (objetos, receitas, costumes).",
+        "Pedir que cada aluno pergunte em casa se a família guarda algum objeto de outro lugar.",
+        "Na aula seguinte, compartilhar em roda o que descobriram.",
+        "Desenhar o objeto ou costume trazido pela família de outro lugar."
+      ]
+    },
+    {
+      "theme": "Gráfico de barras: de onde vieram as famílias da turma",
+      "curriculumCode": "EF02G02",
+      "description": "Construção de um gráfico simples coletivo com as origens das famílias da turma, registrando a história das migrações em forma visual.",
+      "materials": [
+        "cartolina ou papel pardo",
+        "post-its ou quadradinhos de papel coloridos"
+      ],
+      "steps": [
+        "Perguntar a cada aluno de qual cidade ou estado veio a família (ou se sempre morou em São Paulo).",
+        "Anotar as respostas no quadro, agrupando por local de origem.",
+        "Montar com a turma um gráfico de barras simples na cartolina, colando um quadradinho por aluno em cada coluna.",
+        "Observar juntos qual origem aparece mais vezes no gráfico.",
+        "Pedir que copiem ou desenhem o gráfico no caderno com uma frase sobre o que descobriram."
+      ]
+    },
+    {
+      "theme": "Uma história de mudança contada em desenhos",
+      "curriculumCode": "EF02G02",
+      "description": "Registro em sequência de desenhos de uma história de migração familiar, do antes até o depois da mudança.",
+      "materials": [
+        "papel dividido em três partes"
+      ],
+      "steps": [
+        "Contar uma pequena história (real ou inventada) de uma família que se mudou de outra cidade para São Paulo.",
+        "Perguntar por que as pessoas decidem se mudar (trabalho, estudo, família).",
+        "Pedir que os alunos perguntem em casa se a família já se mudou de cidade alguma vez.",
+        "Dividir uma folha em três partes: 'antes', 'a mudança' e 'agora'.",
+        "Desenhar a história de mudança da própria família (ou uma inventada, se não houver) nas três partes."
+      ]
+    },
+    {
+      "theme": "Tabela da turma: quem nasceu aqui, quem veio de longe",
+      "curriculumCode": "EF02G02",
+      "description": "Organização em tabela simples do local de nascimento de cada aluno, reconhecendo a diversidade de origens da turma.",
+      "materials": [],
+      "steps": [
+        "Perguntar a cada aluno em que cidade nasceu.",
+        "Desenhar no quadro uma tabela simples com duas colunas: 'nasceu em São Paulo' e 'nasceu em outro lugar'.",
+        "Preencher a tabela com o nome de cada aluno na coluna correta.",
+        "Contar juntos quantos alunos estão em cada coluna.",
+        "Pedir que copiem a tabela no caderno e circulem onde está o próprio nome."
+      ]
+    },
+    {
+      "theme": "O que a gente comeu que veio de outro lugar",
+      "curriculumCode": "EF02G02",
+      "description": "Levantamento de pratos típicos das famílias para relacionar tradições alimentares à história de migração de cada uma.",
+      "materials": [],
+      "steps": [
+        "Conversar sobre pratos de comida que a família de cada um gosta de fazer.",
+        "Perguntar se algum desses pratos veio de outra cidade, estado ou país através da família.",
+        "Compartilhar em roda os nomes dos pratos e de onde vieram.",
+        "Fazer uma lista no quadro juntando prato e lugar de origem.",
+        "Pedir que desenhem o prato preferido da família e escrevam de onde ele veio."
+      ]
+    },
+    {
+      "theme": "Festas que minha família comemora",
+      "curriculumCode": "EF02G03",
+      "description": "Levantamento das festas comemoradas por cada família para comparar tradições e reforçar o respeito à diversidade cultural e religiosa.",
+      "materials": [],
+      "steps": [
+        "Perguntar quais festas cada família comemora ao longo do ano.",
+        "Listar no quadro as festas citadas pela turma.",
+        "Conversar sobre como cada família comemora de um jeito diferente.",
+        "Reforçar o respeito às diferenças religiosas e culturais nas comemorações.",
+        "Pedir que desenhem a festa que mais gostam de comemorar em família."
+      ]
+    },
+    {
+      "theme": "A música que toca lá em casa",
+      "curriculumCode": "EF02G03",
+      "description": "Comparação dos estilos musicais das famílias da turma para reconhecer e valorizar tradições culturais diferentes.",
+      "materials": [],
+      "steps": [
+        "Perguntar que tipo de música toca na casa de cada aluno.",
+        "Conversar sobre os diferentes ritmos e estilos citados pela turma.",
+        "Explicar que a música pode vir de tradições de diferentes lugares e culturas.",
+        "Fazer uma lista no quadro com os estilos de música citados.",
+        "Pedir que desenhem um instrumento ou momento em que a família escuta música."
+      ]
+    },
+    {
+      "theme": "O jeito de brincar de cada família",
+      "curriculumCode": "EF02G03",
+      "description": "Comparação de brincadeiras tradicionais passadas entre gerações da família, valorizando a diversidade de costumes.",
+      "materials": [],
+      "steps": [
+        "Perguntar aos alunos que brincadeiras os pais ou avós brincavam quando crianças.",
+        "Anotar no quadro os nomes das brincadeiras citadas.",
+        "Comparar com as brincadeiras que a turma gosta de brincar hoje.",
+        "Escolher uma brincadeira antiga para experimentar no pátio.",
+        "Pedir que desenhem a brincadeira que mais gostaram de descobrir."
+      ]
+    },
+    {
+      "theme": "Roupas e enfeites de festas tradicionais",
+      "curriculumCode": "EF02G03",
+      "description": "Reconhecimento de roupas e enfeites usados em festas de diferentes culturas do bairro, valorizando o respeito às tradições.",
+      "materials": [
+        "imagens de roupas típicas de diferentes culturas (recorte de revista ou impresso)"
+      ],
+      "steps": [
+        "Mostrar imagens de roupas usadas em festas de diferentes culturas presentes no bairro.",
+        "Conversar sobre o que cada roupa representa para quem usa.",
+        "Perguntar se alguém já usou uma roupa especial em alguma festa de família.",
+        "Reforçar que todas essas tradições merecem respeito.",
+        "Pedir que desenhem uma roupa especial de alguma festa que conhecem."
+      ]
+    },
+    {
+      "theme": "O caderno de receitas da turma",
+      "curriculumCode": "EF02G03",
+      "description": "Coleta de receitas de família para montar um caderno coletivo, reconhecendo a diversidade de tradições culinárias da turma.",
+      "materials": [
+        "papel para montar o caderno de receitas"
+      ],
+      "steps": [
+        "Pedir que cada aluno pergunte em casa uma receita simples e especial da família.",
+        "Na aula seguinte, compartilhar em roda o nome dos pratos trazidos pelos colegas.",
+        "Conversar sobre como as receitas mudam de família para família.",
+        "Organizar as receitas em folhas para montar um caderno de receitas da turma.",
+        "Pedir que ilustrem a própria receita com um desenho do prato."
+      ]
+    },
+    {
+      "theme": "Um cartão-postal do meu bairro",
+      "curriculumCode": "EF02G04",
+      "description": "Criação de um cartão-postal ilustrado do próprio bairro para compará-lo com os bairros dos colegas.",
+      "materials": [
+        "papel no formato de cartão-postal (retangular)"
+      ],
+      "steps": [
+        "Mostrar exemplos de cartões-postais de diferentes lugares.",
+        "Conversar sobre o que poderia representar o bairro da escola em um cartão-postal.",
+        "Pedir que os alunos desenhem um cartão-postal do próprio bairro.",
+        "Trocar os cartões entre os colegas para conhecer como cada um vê o bairro.",
+        "Fixar os cartões-postais em um mural da sala."
+      ]
+    },
+    {
+      "theme": "Bairro da zona norte, zona sul, leste ou oeste?",
+      "curriculumCode": "EF02G04",
+      "description": "Localização do bairro da escola e de outros bairros citados pelos alunos em um mapa simples dividido por zonas da cidade.",
+      "materials": [
+        "mapa simples de São Paulo dividido em zonas (impresso ou desenhado)"
+      ],
+      "steps": [
+        "Mostrar um mapa simples de São Paulo dividido em zona norte, sul, leste, oeste e centro.",
+        "Localizar juntos em que zona fica o bairro da escola.",
+        "Perguntar se alguém conhece ou tem parentes em outra zona da cidade.",
+        "Marcar no mapa os bairros citados pelos alunos.",
+        "Pedir que copiem o mapa no caderno e pintem a zona onde moram."
+      ]
+    },
+    {
+      "theme": "Entrevista: um familiar que mora em outro bairro",
+      "curriculumCode": "EF02G04",
+      "description": "Entrevista com um familiar ou conhecido de outro bairro para comparar paisagens e rotinas diferentes das vividas pelos alunos.",
+      "materials": [],
+      "steps": [
+        "Pedir que os alunos perguntem a um familiar ou conhecido que mora em outro bairro como é o lugar onde ele vive.",
+        "Sugerir perguntas simples: 'tem parque?', 'tem muitos prédios ou casas?', 'como se chega lá?'",
+        "Na aula seguinte, compartilhar em roda o que descobriram sobre o outro bairro.",
+        "Comparar as respostas com as características do bairro da escola.",
+        "Registrar em desenho o bairro descrito pelo familiar entrevistado."
+      ]
+    },
+    {
+      "theme": "Álbum de figurinhas dos bairros de São Paulo",
+      "curriculumCode": "EF02G04",
+      "description": "Montagem coletiva de um álbum ilustrado com pontos conhecidos de diferentes bairros da cidade.",
+      "materials": [
+        "papel para montar as figurinhas",
+        "cola"
+      ],
+      "steps": [
+        "Listar com a turma nomes de bairros de São Paulo que conhecem ou já ouviram falar.",
+        "Dividir os bairros entre os alunos ou duplas.",
+        "Pedir que desenhem um ponto conhecido daquele bairro (praça, monumento, rua famosa).",
+        "Colar os desenhos em um álbum coletivo da turma.",
+        "Apresentar para a turma o bairro que cada um ilustrou."
+      ]
+    },
+    {
+      "theme": "Se eu morasse em outro bairro",
+      "curriculumCode": "EF02G04",
+      "description": "Comparação imaginativa entre o bairro da escola e um bairro bem diferente, usando fotos para identificar características próprias de cada lugar.",
+      "materials": [
+        "fotos ou imagens de um bairro diferente do da escola"
+      ],
+      "steps": [
+        "Mostrar fotos de um bairro bem diferente do bairro da escola (mais arborizado, mais vertical, etc.).",
+        "Conversar sobre as diferenças que os alunos percebem nas imagens.",
+        "Perguntar como seria morar naquele bairro diferente.",
+        "Comparar com as características do bairro onde a escola está.",
+        "Pedir que desenhem como imaginam sua casa se morassem naquele outro bairro."
+      ]
+    },
+    {
+      "theme": "Semáforo de papel: o que cada cor manda fazer",
+      "curriculumCode": "EF02G05",
+      "description": "Construção de um semáforo de papel para reconhecer o significado de cada cor e praticar a travessia segura.",
+      "materials": [
+        "círculos de papel vermelho, amarelo e verde",
+        "palito de sorvete ou canudo"
+      ],
+      "steps": [
+        "Perguntar o que cada cor do semáforo significa.",
+        "Montar junto com a turma um semáforo de papel com os três círculos coloridos.",
+        "Simular no pátio uma travessia de pedestres seguindo as cores do semáforo.",
+        "Conversar sobre a importância de respeitar o semáforo para a segurança.",
+        "Pedir que desenhem o semáforo no caderno, escrevendo o que cada cor manda fazer."
+      ]
+    },
+    {
+      "theme": "Caça às placas perto da escola",
+      "curriculumCode": "EF02G05",
+      "description": "Observação das placas de trânsito ao redor da escola para reconhecer seus símbolos e significados.",
+      "materials": [
+        "prancheta ou apoio para desenhar na rua"
+      ],
+      "steps": [
+        "Sair com a turma para observar as placas de trânsito ao redor da escola.",
+        "Pedir que apontem e nomeiem as placas que reconhecem.",
+        "Anotar ou desenhar rapidamente as placas encontradas durante o passeio.",
+        "Voltar pra sala e conversar sobre o significado de cada placa observada.",
+        "Fazer um cartaz coletivo com as placas encontradas e seus significados."
+      ]
+    },
+    {
+      "theme": "Assento preferencial: para quem é e por que existe",
+      "curriculumCode": "EF02G05",
+      "description": "Reconhecimento do símbolo de assento preferencial no transporte público e discussão sobre acessibilidade e respeito.",
+      "materials": [
+        "imagens de assentos preferenciais de ônibus/metrô"
+      ],
+      "steps": [
+        "Mostrar imagens dos símbolos de assento preferencial usados no ônibus e no metrô.",
+        "Conversar sobre quem tem prioridade nesses assentos (idosos, gestantes, pessoas com deficiência).",
+        "Perguntar por que é importante respeitar esses lugares.",
+        "Simular em sala uma situação de ceder o lugar preferencial.",
+        "Pedir que desenhem o símbolo do assento preferencial e escrevam para quem ele é."
+      ]
+    },
+    {
+      "theme": "Faixa de pedestres: atravessando com segurança",
+      "curriculumCode": "EF02G05",
+      "description": "Simulação prática da travessia na faixa de pedestres para fixar os passos de uma atravessada segura.",
+      "materials": [
+        "fita crepe para simular faixa de pedestres no chão"
+      ],
+      "steps": [
+        "Montar uma faixa de pedestres no chão da sala ou pátio com fita crepe.",
+        "Explicar os passos para atravessar com segurança: olhar, esperar o sinal, atravessar sem correr.",
+        "Simular a travessia em duplas, um fazendo de pedestre e outro de carro.",
+        "Repetir a simulação até todos praticarem.",
+        "Pedir que desenhem a faixa de pedestres e escrevam os passos para atravessar com segurança."
+      ]
+    },
+    {
+      "theme": "Meu jeito de ir pra escola: a pé, de ônibus ou de carro?",
+      "curriculumCode": "EF02G05",
+      "description": "Levantamento dos meios de transporte usados pela turma para chegar à escola, relacionando ao reconhecimento do transporte público.",
+      "materials": [],
+      "steps": [
+        "Perguntar a cada aluno como costuma vir para a escola (a pé, de ônibus, de carro, de bicicleta).",
+        "Anotar as respostas no quadro em uma lista simples.",
+        "Contar juntos quantos alunos usam cada meio de transporte.",
+        "Conversar sobre as vantagens de cada meio de transporte.",
+        "Pedir que desenhem o meio de transporte que usam para vir à escola."
+      ]
+    },
+    {
+      "theme": "Painel dos símbolos do trânsito",
+      "curriculumCode": "EF02G05",
+      "description": "Montagem de um painel coletivo com os principais símbolos de trânsito e seus significados para consulta da turma.",
+      "materials": [
+        "cartolina",
+        "imagens ou desenhos de símbolos de trânsito"
+      ],
+      "steps": [
+        "Retomar com a turma quais símbolos de trânsito já conhecem.",
+        "Dividir os símbolos entre duplas para desenhar em pedaços de papel.",
+        "Escrever embaixo de cada símbolo o que ele significa.",
+        "Montar um painel coletivo colando os símbolos na cartolina.",
+        "Expor o painel na sala para consulta da turma."
+      ]
+    },
+    {
+      "theme": "Roteiro até o parque mais perto",
+      "curriculumCode": "EF02G06",
+      "description": "Produção coletiva de um roteiro informativo de transporte até um parque ou praça conhecida, incluindo o tempo estimado de deslocamento.",
+      "materials": [],
+      "steps": [
+        "Escolher com a turma um parque ou praça conhecida perto da escola.",
+        "Perguntar quem já foi lá e como chegou (ônibus, a pé, carro).",
+        "Montar coletivamente, no quadro, um roteiro com os passos para chegar até lá.",
+        "Incluir no roteiro uma estimativa de quanto tempo leva o percurso.",
+        "Copiar o roteiro no caderno, ilustrando a chegada ao parque."
+      ]
+    },
+    {
+      "theme": "Quanto tempo leva? Comparando percursos da turma",
+      "curriculumCode": "EF02G06",
+      "description": "Levantamento e comparação do tempo de deslocamento de cada aluno até a escola, organizado em uma tabela simples.",
+      "materials": [],
+      "steps": [
+        "Perguntar a cada aluno quanto tempo leva para chegar da casa até a escola.",
+        "Anotar as respostas no quadro, do tempo mais curto ao mais longo.",
+        "Conversar sobre por que alguns percursos demoram mais que outros.",
+        "Montar uma tabela simples com o nome do aluno e o tempo de percurso.",
+        "Pedir que copiem a tabela no caderno e circulem a própria linha."
+      ]
+    },
+    {
+      "theme": "Manual de instruções: como pegar o ônibus certo",
+      "curriculumCode": "EF02G06",
+      "description": "Produção coletiva de um texto instrucional com os passos necessários para embarcar e viajar corretamente de ônibus.",
+      "materials": [],
+      "steps": [
+        "Conversar sobre os passos para pegar um ônibus: esperar no ponto certo, olhar o número, fazer sinal, pagar a passagem, descer no ponto certo.",
+        "Listar esses passos no quadro em ordem, com a ajuda da turma.",
+        "Produzir coletivamente um pequeno manual de instruções com esses passos.",
+        "Ler o manual em voz alta para revisar se está completo.",
+        "Pedir que copiem o manual no caderno e ilustrem um dos passos."
+      ]
+    },
+    {
+      "theme": "O trajeto da minha casa até a escola, em texto",
+      "curriculumCode": "EF02G06",
+      "description": "Produção de um texto informativo individual descrevendo o próprio trajeto e o meio de transporte usado, a partir de um modelo coletivo.",
+      "materials": [],
+      "steps": [
+        "Pedir que cada aluno pense no caminho que faz de casa até a escola.",
+        "Ajudar a organizar oralmente as informações: por onde passa, que transporte usa, quanto tempo leva.",
+        "Escrever coletivamente no quadro um modelo de texto informativo sobre trajeto.",
+        "Pedir que cada aluno escreva seu próprio texto seguindo o modelo.",
+        "Compartilhar os textos em roda, comparando os diferentes trajetos."
+      ]
+    },
+    {
+      "theme": "Placa informativa do ponto de ônibus da escola",
+      "curriculumCode": "EF02G06",
+      "description": "Criação coletiva de uma placa informativa sobre o ponto de ônibus mais próximo da escola, com linhas e destinos.",
+      "materials": [
+        "cartolina ou papel A3"
+      ],
+      "steps": [
+        "Observar ou lembrar juntos como é o ponto de ônibus mais próximo da escola.",
+        "Levantar quais linhas de ônibus passam por ali e para onde vão (se souberem).",
+        "Organizar essas informações coletivamente no quadro.",
+        "Montar uma placa informativa em cartolina com os dados do ponto de ônibus.",
+        "Expor a placa na sala, simulando uma placa real de ponto."
+      ]
+    },
+    {
+      "theme": "Foto de ontem, foto de hoje: o bairro mudou?",
+      "curriculumCode": "EF02G07",
+      "description": "Comparação de fotos antigas e atuais de um mesmo lugar do bairro para identificar semelhanças e diferenças na paisagem.",
+      "materials": [
+        "fotos antigas e atuais do bairro (impressas ou em tablet/celular)"
+      ],
+      "steps": [
+        "Mostrar uma foto antiga e uma foto atual do mesmo lugar do bairro.",
+        "Pedir que os alunos apontem o que mudou e o que continua igual.",
+        "Conversar sobre os motivos das mudanças na paisagem.",
+        "Perguntar se alguém tem fotos antigas de família mostrando o bairro de outros tempos.",
+        "Pedir que desenhem como imaginam que era esse lugar antigamente."
+      ]
+    },
+    {
+      "theme": "Paisagem de prédio ou paisagem de casinha?",
+      "curriculumCode": "EF02G07",
+      "description": "Comparação entre paisagens urbanas verticais e horizontais para identificar diferenças no jeito de morar na cidade.",
+      "materials": [
+        "imagens de rua com prédios altos e imagens de rua com casas baixas"
+      ],
+      "steps": [
+        "Mostrar duas imagens de paisagens urbanas diferentes: uma com prédios altos, outra com casas baixas.",
+        "Perguntar qual paisagem se parece mais com a rua onde moram.",
+        "Conversar sobre as diferenças entre morar em prédio e morar em casa.",
+        "Listar no quadro vantagens e curiosidades de cada tipo de paisagem.",
+        "Pedir que desenhem a paisagem da própria rua, com prédios ou casas."
+      ]
+    },
+    {
+      "theme": "Paisagem com muito verde, paisagem com muito cimento",
+      "curriculumCode": "EF02G07",
+      "description": "Comparação entre paisagens arborizadas e paisagens construídas para perceber diferenças no entorno da escola.",
+      "materials": [
+        "imagens de uma paisagem arborizada e de uma paisagem bem construída"
+      ],
+      "steps": [
+        "Mostrar uma imagem de paisagem com muitas árvores e uma com muito prédio e cimento.",
+        "Perguntar qual das duas se parece mais com o entorno da escola.",
+        "Conversar sobre como as pessoas se sentem em cada tipo de paisagem.",
+        "Fazer uma lista no quadro do que tem mais verde e do que tem mais cimento perto da escola.",
+        "Pedir que desenhem uma paisagem com bastante verde, do jeito que gostariam de ver no bairro."
+      ]
+    },
+    {
+      "theme": "Minha rua de dia de sol, minha rua de dia de chuva",
+      "curriculumCode": "EF02G07",
+      "description": "Comparação da mesma paisagem em diferentes condições de tempo para identificar o que muda e o que permanece.",
+      "materials": [],
+      "steps": [
+        "Perguntar como fica a rua da escola em um dia de sol e como fica em um dia de chuva.",
+        "Conversar sobre as diferenças: poças, guarda-chuvas, roupas, movimento de gente.",
+        "Listar no quadro as diferenças citadas pela turma.",
+        "Dividir uma folha ao meio: de um lado a rua no sol, do outro a rua na chuva.",
+        "Desenhar a mesma rua nas duas situações."
+      ]
+    },
+    {
+      "theme": "Paisagem da minha janela",
+      "curriculumCode": "EF02G07",
+      "description": "Observação individual da paisagem vista de casa para comparar semelhanças e diferenças entre as paisagens da turma.",
+      "materials": [],
+      "steps": [
+        "Pedir que os alunos observem, em casa, o que veem pela janela do quarto ou da sala.",
+        "Na aula seguinte, perguntar o que cada um viu: prédios, árvores, rua, quintal.",
+        "Comparar em roda as diferentes paisagens vistas pelos colegas.",
+        "Conversar sobre as semelhanças e diferenças entre as paisagens da turma.",
+        "Pedir que desenhem a paisagem vista da própria janela."
+      ]
+    },
+    {
+      "theme": "Maquete de duas paisagens diferentes",
+      "curriculumCode": "EF02G07",
+      "description": "Construção de maquetes simples representando duas paisagens bem diferentes, para comparar suas características.",
+      "materials": [
+        "caixa de sapato",
+        "sucata (papel, algodão, gravetos)",
+        "cola",
+        "tinta"
+      ],
+      "steps": [
+        "Escolher com a turma duas paisagens bem diferentes (praia e cidade, ou bairro arborizado e bairro com prédios).",
+        "Dividir a turma em dois grupos, cada um representando uma paisagem.",
+        "Montar juntos uma maquete simples dentro de uma caixa de sapato para cada paisagem, usando sucata.",
+        "Comparar as duas maquetes prontas, apontando diferenças e semelhanças.",
+        "Apresentar as maquetes para a turma, explicando o que cada uma representa."
+      ]
+    },
+    {
+      "theme": "Croqui da minha sala de aula",
+      "curriculumCode": "EF02G08",
+      "description": "Produção de um croqui simples da sala de aula, representando a posição dos objetos observados vista de cima.",
+      "materials": [
+        "papel quadriculado (opcional)"
+      ],
+      "steps": [
+        "Observar juntos os móveis e objetos da sala de aula (mesa, lousa, porta, janela).",
+        "Conversar sobre como esses objetos estão posicionados uns em relação aos outros.",
+        "Pedir que os alunos desenhem um croqui simples da sala, vista de cima.",
+        "Comparar os croquis entre os colegas, vendo se todos representaram os mesmos objetos.",
+        "Nomear os objetos desenhados no croqui com legendas simples."
+      ]
+    },
+    {
+      "theme": "Croqui do meu quarto ou cantinho de brincar",
+      "curriculumCode": "EF02G08",
+      "description": "Representação em croqui de um espaço de vivência em casa, praticando a posição dos objetos em relação uns aos outros.",
+      "materials": [],
+      "steps": [
+        "Pedir que os alunos pensem no quarto ou cantinho onde brincam em casa.",
+        "Conversar sobre quais móveis e objetos existem nesse espaço.",
+        "Explicar que um croqui é um desenho simples, visto de cima, sem muitos detalhes.",
+        "Pedir que desenhem o croqui do próprio quarto ou cantinho de brincar.",
+        "Compartilhar o croqui com um colega, explicando onde fica cada objeto."
+      ]
+    },
+    {
+      "theme": "Croqui do pátio da escola",
+      "curriculumCode": "EF02G08",
+      "description": "Observação do pátio da escola para representá-lo em croqui, posicionando quadra, parquinho e outros elementos.",
+      "materials": [
+        "prancheta para apoiar o papel no pátio"
+      ],
+      "steps": [
+        "Levar a turma para observar o pátio da escola.",
+        "Pedir que identifiquem os principais elementos do pátio (quadra, parquinho, bebedouro, árvores).",
+        "Voltar pra sala e explicar como representar esses elementos em um croqui simples.",
+        "Pedir que desenhem o croqui do pátio, posicionando os elementos observados.",
+        "Comparar os croquis feitos pela turma, vendo as diferentes formas de representar o mesmo espaço."
+      ]
+    },
+    {
+      "theme": "Onde ficam as coisas na cozinha de casa",
+      "curriculumCode": "EF02G08",
+      "description": "Representação em croqui de um cômodo da casa, focando na posição relativa dos objetos que fazem parte dele.",
+      "materials": [],
+      "steps": [
+        "Perguntar aos alunos que cômodo da casa eles conhecem bem (cozinha, sala).",
+        "Conversar sobre os objetos que existem nesse cômodo e onde ficam.",
+        "Explicar que vamos desenhar um croqui simples desse espaço.",
+        "Pedir que desenhem o croqui do cômodo escolhido, posicionando os objetos.",
+        "Escrever o nome de cada objeto desenhado, criando uma pequena legenda."
+      ]
+    },
+    {
+      "theme": "Croqui da mesa da sala de aula",
+      "curriculumCode": "EF02G08",
+      "description": "Observação de objetos escolares dispostos sobre uma mesa para praticar a representação de posições vista de cima.",
+      "materials": [
+        "objetos escolares (lápis, borracha, régua, estojo)"
+      ],
+      "steps": [
+        "Colocar alguns objetos escolares sobre uma mesa (lápis, borracha, régua, estojo).",
+        "Pedir que os alunos observem como os objetos estão posicionados na mesa.",
+        "Explicar que vamos representar essa cena vista de cima, como um croqui.",
+        "Pedir que desenhem o croqui da mesa com os objetos na posição observada.",
+        "Comparar os desenhos com a disposição real dos objetos na mesa."
+      ]
+    },
+    {
+      "theme": "Caça ao tesouro com pistas de posição",
+      "curriculumCode": "EF02G09",
+      "description": "Jogo de caça ao tesouro usando palavras de posição (em cima, embaixo, atrás) para localizar um objeto escondido.",
+      "materials": [
+        "objeto pequeno para esconder (tesouro)"
+      ],
+      "steps": [
+        "Esconder um pequeno objeto na sala ou no pátio.",
+        "Dar pistas usando palavras de posição: 'está embaixo de...', 'está atrás de...', 'está em cima de...'",
+        "Deixar os alunos seguirem as pistas em grupo até encontrar o tesouro.",
+        "Repetir o jogo trocando quem dá as pistas.",
+        "Pedir que desenhem o caminho percorrido até o tesouro, usando setas."
+      ]
+    },
+    {
+      "theme": "Robozinho obediente",
+      "curriculumCode": "EF02G09",
+      "description": "Brincadeira em que um aluno comanda outro usando termos de direita, esquerda, frente e trás, e depois registra o percurso.",
+      "materials": [],
+      "steps": [
+        "Explicar que um aluno vai ser o 'robô' e outro vai dar os comandos de posição.",
+        "Ensinar os comandos possíveis: andar pra frente, pra trás, virar à direita, virar à esquerda.",
+        "Deixar duplas se revezarem sendo robô e comandante em um espaço livre da sala.",
+        "Repetir com desafios, como levar o robô até um objeto específico.",
+        "Pedir que desenhem o trajeto do robô usando setas de direção."
+      ]
+    },
+    {
+      "theme": "Onde está o brinquedo escondido?",
+      "curriculumCode": "EF02G09",
+      "description": "Jogo de perguntas usando vocabulário de posição para localizar um brinquedo escondido na sala.",
+      "materials": [
+        "um brinquedo ou objeto para esconder"
+      ],
+      "steps": [
+        "Esconder um brinquedo em um local da sala (em cima do armário, embaixo da mesa, atrás da porta).",
+        "Pedir que os alunos façam perguntas de posição para descobrir onde está ('está em cima?', 'está atrás?').",
+        "Responder só com sim ou não até encontrarem o brinquedo.",
+        "Repetir o jogo algumas vezes com objetos diferentes.",
+        "Pedir que desenhem onde o brinquedo estava escondido, usando as palavras de posição aprendidas."
+      ]
+    },
+    {
+      "theme": "Batalha das posições no tabuleiro",
+      "curriculumCode": "EF02G09",
+      "description": "Jogo em tabuleiro quadriculado no qual os alunos posicionam peças seguindo comandos de esquerda, direita, cima e baixo.",
+      "materials": [
+        "folha com um tabuleiro quadriculado simples desenhado",
+        "objetos pequenos ou tampinhas"
+      ],
+      "steps": [
+        "Desenhar ou entregar um tabuleiro quadriculado simples para cada dupla.",
+        "Dar comandos de posição para os alunos colocarem uma tampinha no tabuleiro ('coloque em cima', 'coloque à esquerda').",
+        "Deixar as duplas praticarem dando comandos uma para a outra.",
+        "Conferir juntos se as tampinhas ficaram nas posições certas.",
+        "Pedir que desenhem o tabuleiro final com as tampinhas nas posições indicadas."
+      ]
+    },
+    {
+      "theme": "Vestindo o boneco de posições",
+      "curriculumCode": "EF02G09",
+      "description": "Atividade lúdica com um boneco para posicionar objetos em cima, embaixo, na frente e atrás, fixando o vocabulário espacial.",
+      "materials": [
+        "boneco ou desenho de um boneco recortável"
+      ],
+      "steps": [
+        "Usar um boneco de papel ou de pano para representar posições no corpo.",
+        "Pedir que os alunos coloquem objetos ou adesivos em cima, embaixo, na frente e atrás do boneco.",
+        "Nomear em voz alta cada posição enquanto colocam os objetos.",
+        "Trocar de posição os objetos e repetir os comandos com outro aluno.",
+        "Pedir que desenhem o boneco com os objetos posicionados como ficou no final da atividade."
+      ]
+    },
+    {
+      "theme": "Sigam o mapa da sala",
+      "curriculumCode": "EF02G09",
+      "description": "Seguimento de um mapa simples da sala usando palavras de posição para chegar até um ponto marcado.",
+      "materials": [
+        "mapa simples da sala de aula desenhado no papel"
+      ],
+      "steps": [
+        "Desenhar previamente um mapa simples da sala com um caminho marcado até um ponto de chegada.",
+        "Explicar aos alunos como seguir o mapa usando palavras de posição.",
+        "Deixar os alunos, em duplas, seguirem o mapa dentro da sala até o ponto marcado.",
+        "Conversar sobre as dificuldades encontradas ao seguir o mapa.",
+        "Pedir que desenhem o próprio mapa da sala com um caminho até um ponto escolhido por eles."
+      ]
+    },
+    {
+      "theme": "Grande, médio ou pequeno? Comparando objetos da sala",
+      "curriculumCode": "EF02G10",
+      "description": "Comparação de tamanhos entre objetos da sala para iniciar a noção de proporção nos desenhos.",
+      "materials": [
+        "objetos de tamanhos variados (lápis, caderno, mesa)"
+      ],
+      "steps": [
+        "Separar objetos de tamanhos bem diferentes (lápis, borracha, caderno, mesa).",
+        "Pedir que os alunos organizem os objetos do menor para o maior.",
+        "Conversar sobre como representar essa diferença de tamanho em um desenho.",
+        "Pedir que desenhem os objetos observados, respeitando a diferença de tamanho entre eles.",
+        "Escrever embaixo de cada desenho se o objeto é grande, médio ou pequeno."
+      ]
+    },
+    {
+      "theme": "Texturas do bairro: liso, áspero, macio",
+      "curriculumCode": "EF02G10",
+      "description": "Exploração tátil de superfícies do entorno da escola para registrar diferentes texturas em decalques.",
+      "materials": [
+        "papel e lápis de cera para fazer frottage (decalque de textura)"
+      ],
+      "steps": [
+        "Sair com a turma para tocar diferentes superfícies perto da escola (parede, tronco de árvore, calçada).",
+        "Conversar sobre as texturas sentidas: liso, áspero, macio, duro.",
+        "Fazer decalques de textura colocando papel sobre a superfície e passando lápis de cera.",
+        "Voltar pra sala e comparar os decalques feitos por cada aluno.",
+        "Escrever embaixo de cada decalque o nome da textura sentida."
+      ]
+    },
+    {
+      "theme": "Legenda de cores do meu desenho",
+      "curriculumCode": "EF02G10",
+      "description": "Criação de uma legenda de cores simples para representar diferentes elementos em um desenho do bairro.",
+      "materials": [
+        "lápis de cor"
+      ],
+      "steps": [
+        "Pedir que os alunos pensem em um lugar do bairro para desenhar (praça, rua, escola).",
+        "Explicar que cada cor do desenho pode representar uma coisa diferente (verde para plantas, cinza para rua).",
+        "Montar juntos uma legenda simples no canto da folha, associando cor a elemento.",
+        "Pedir que façam o desenho do lugar escolhido seguindo a legenda criada.",
+        "Comparar os desenhos, conferindo se a legenda foi seguida corretamente."
+      ]
+    },
+    {
+      "theme": "Formas que vejo nas construções",
+      "curriculumCode": "EF02G10",
+      "description": "Observação de formas geométricas presentes nas construções do entorno da escola, representadas depois em desenho.",
+      "materials": [],
+      "steps": [
+        "Perguntar quais formas geométricas os alunos conhecem (quadrado, círculo, triângulo, retângulo).",
+        "Sair para observar o entorno da escola procurando essas formas em janelas, portas, telhados.",
+        "Anotar ou apontar as formas encontradas durante o passeio.",
+        "Voltar pra sala e conversar sobre as formas mais encontradas.",
+        "Pedir que desenhem uma construção usando as formas geométricas observadas."
+      ]
+    },
+    {
+      "theme": "Meu objeto favorito: tamanho, forma, textura e cor",
+      "curriculumCode": "EF02G10",
+      "description": "Descrição de um objeto favorito segundo quatro características (tamanho, forma, textura e cor), representado com uma pequena legenda.",
+      "materials": [
+        "objeto favorito trazido de casa (opcional)"
+      ],
+      "steps": [
+        "Pedir que os alunos pensem em um objeto favorito que têm em casa.",
+        "Conversar sobre as características desse objeto: tamanho, forma, textura e cor.",
+        "Anotar no quadro um modelo de ficha com essas quatro características.",
+        "Pedir que preencham a ficha e desenhem o próprio objeto favorito.",
+        "Adicionar uma pequena legenda no desenho indicando a cor principal do objeto."
+      ]
+    },
+    {
+      "theme": "Sons do caminho até a escola",
+      "curriculumCode": "EF02G11",
+      "description": "Registro dos sons percebidos no percurso diário até a escola, explorando a percepção sensorial dos trajetos.",
+      "materials": [],
+      "steps": [
+        "Pedir que os alunos prestem atenção nos sons que ouvem no caminho de casa até a escola.",
+        "Na aula seguinte, perguntar quais sons cada um lembrou (buzina, pássaro, música, conversa).",
+        "Listar no quadro os diferentes sons citados pela turma.",
+        "Conversar sobre quais sons são agradáveis e quais incomodam.",
+        "Pedir que desenhem uma cena do caminho representando um som que ouviram."
+      ]
+    },
+    {
+      "theme": "Cheiros que sinto no caminho",
+      "curriculumCode": "EF02G11",
+      "description": "Registro dos cheiros percebidos no trajeto diário, relacionando a percepção sensorial a pontos específicos do percurso.",
+      "materials": [],
+      "steps": [
+        "Perguntar se os alunos percebem cheiros diferentes no caminho até a escola (padaria, flores, comida).",
+        "Conversar sobre onde esses cheiros costumam aparecer no percurso.",
+        "Listar no quadro os cheiros lembrados pela turma e onde sentem cada um.",
+        "Conversar sobre cheiros que gostam e cheiros que não gostam no caminho.",
+        "Pedir que desenhem o lugar do percurso onde sentem o cheiro que mais gostam."
+      ]
+    },
+    {
+      "theme": "Quente ou fria? A temperatura do meu percurso",
+      "curriculumCode": "EF02G11",
+      "description": "Percepção de variações de temperatura ao longo do trajeto diário, relacionando-as à presença de sombra e vegetação.",
+      "materials": [],
+      "steps": [
+        "Perguntar se no caminho até a escola tem lugares mais quentes e lugares mais frescos.",
+        "Conversar sobre o que pode causar essa diferença (sombra de árvore, sol direto, muito cimento).",
+        "Listar no quadro os pontos mais quentes e mais frescos citados pela turma.",
+        "Conversar sobre por que é bom ter árvores dando sombra no caminho.",
+        "Pedir que desenhem o percurso marcando com sol o trecho mais quente e com nuvem o mais fresco."
+      ]
+    },
+    {
+      "theme": "Texturas que piso no caminho",
+      "curriculumCode": "EF02G11",
+      "description": "Percepção das diferentes texturas do chão pisado durante o percurso diário até a escola.",
+      "materials": [],
+      "steps": [
+        "Perguntar se os alunos percebem diferenças no chão por onde caminham até a escola (calçada lisa, buraco, terra, grama).",
+        "Conversar sobre como é caminhar em cada tipo de piso.",
+        "Listar no quadro os tipos de piso citados pela turma.",
+        "Conversar sobre quais pisos são mais seguros para caminhar.",
+        "Pedir que desenhem o percurso indicando os diferentes tipos de piso encontrados."
+      ]
+    },
+    {
+      "theme": "Mapa sensorial do meu percurso",
+      "curriculumCode": "EF02G11",
+      "description": "Elaboração de um mapa combinando sons, cheiros e texturas percebidos no trajeto diário até a escola.",
+      "materials": [
+        "lápis de cor"
+      ],
+      "steps": [
+        "Retomar com a turma os sons, cheiros e texturas já observados no caminho até a escola em outras aulas.",
+        "Explicar que vamos juntar tudo isso em um só desenho: um mapa sensorial.",
+        "Pedir que desenhem o percurso de casa até a escola.",
+        "Adicionar símbolos no desenho representando sons, cheiros e texturas sentidos em cada trecho.",
+        "Compartilhar o mapa sensorial com um colega, explicando os símbolos usados."
+      ]
+    },
+    {
+      "theme": "Antes e depois: um lugar poluído que pode melhorar",
+      "curriculumCode": "EF02G12",
+      "description": "Identificação de um local degradado perto da escola e imaginação de como ele poderia ser recuperado.",
+      "materials": [],
+      "steps": [
+        "Conversar sobre algum lugar perto da escola que esteja sujo, com lixo ou mal cuidado.",
+        "Perguntar por que aquele lugar ficou daquele jeito.",
+        "Conversar sobre o que poderia ser feito para melhorar o lugar.",
+        "Dividir uma folha ao meio: de um lado como o lugar está agora, do outro como poderia ficar.",
+        "Desenhar as duas versões do lugar: antes e depois da melhoria imaginada."
+      ]
+    },
+    {
+      "theme": "Detetives do lixo: o que encontramos na rua",
+      "curriculumCode": "EF02G12",
+      "description": "Observação de sinais de lixo e poluição no entorno da escola para reconhecer a ação humana na degradação da paisagem.",
+      "materials": [
+        "luvas ou saquinho, se for coletar (opcional)"
+      ],
+      "steps": [
+        "Sair com a turma para observar o entorno da escola, procurando sinais de lixo ou poluição.",
+        "Anotar ou apontar o que foi encontrado durante o passeio.",
+        "Voltar pra sala e conversar sobre os efeitos do lixo na paisagem e nos animais.",
+        "Conversar sobre atitudes que ajudam a preservar o lugar.",
+        "Pedir que desenhem uma cena mostrando uma atitude de cuidado com o ambiente."
+      ]
+    },
+    {
+      "theme": "Ação humana que ajuda: quem cuida do nosso bairro",
+      "curriculumCode": "EF02G12",
+      "description": "Reconhecimento de profissões que preservam a paisagem do bairro, valorizando ações humanas de cuidado com o ambiente.",
+      "materials": [],
+      "steps": [
+        "Perguntar se os alunos conhecem pessoas que trabalham cuidando do bairro (gari, jardineiro, catador de recicláveis).",
+        "Conversar sobre a importância desses trabalhos para manter a paisagem cuidada.",
+        "Listar no quadro os diferentes trabalhos citados pela turma.",
+        "Conversar sobre como cada aluno pode ajudar nesse cuidado também.",
+        "Pedir que desenhem uma pessoa cuidando do bairro, escrevendo o nome do trabalho dela."
+      ]
+    },
+    {
+      "theme": "Árvore derrubada, árvore plantada",
+      "curriculumCode": "EF02G12",
+      "description": "Comparação dos efeitos de derrubar e de plantar árvores na paisagem local, reconhecendo a ação humana sobre o ambiente.",
+      "materials": [],
+      "steps": [
+        "Conversar sobre o que acontece com um lugar quando uma árvore é derrubada.",
+        "Perguntar o que muda na paisagem, na sombra e nos animais que viviam ali.",
+        "Conversar sobre a importância de plantar novas árvores no bairro.",
+        "Listar no quadro benefícios que as árvores trazem para a paisagem.",
+        "Pedir que desenhem duas cenas: uma rua sem árvores e a mesma rua com árvores plantadas."
+      ]
+    },
+    {
+      "theme": "Rio ou córrego: limpo ou sujo?",
+      "curriculumCode": "EF02G12",
+      "description": "Comparação de imagens de cursos de água limpos e poluídos para discutir o impacto humano sobre a paisagem.",
+      "materials": [
+        "imagens de um rio ou córrego limpo e de um poluído"
+      ],
+      "steps": [
+        "Mostrar imagens de um rio ou córrego limpo e de outro poluído com lixo.",
+        "Conversar sobre o que causou a diferença entre as duas imagens.",
+        "Perguntar se conhecem algum córrego ou rio perto de onde moram.",
+        "Conversar sobre atitudes que ajudam a manter a água limpa.",
+        "Pedir que desenhem como gostariam que fosse um rio ou córrego do bairro."
+      ]
+    },
+    {
+      "theme": "Diário de observação do pé de feijão",
+      "curriculumCode": "EF02G13",
+      "description": "Plantio e acompanhamento do crescimento de uma planta ao longo de semanas, registrando as mudanças observadas.",
+      "materials": [
+        "copinho ou pote",
+        "algodão ou terra",
+        "sementes de feijão",
+        "água"
+      ],
+      "steps": [
+        "Plantar sementes de feijão em copinhos com algodão ou terra molhada.",
+        "Combinar de observar e regar a planta toda semana.",
+        "Registrar em um pequeno diário como a planta está mudando a cada observação.",
+        "Conversar sobre o que a planta precisa para crescer (água, luz, tempo).",
+        "Ao final de algumas semanas, desenhar a planta em suas diferentes fases de crescimento."
+      ]
+    },
+    {
+      "theme": "Árvore das quatro estações",
+      "curriculumCode": "EF02G13",
+      "description": "Ilustração da mesma árvore em cada uma das quatro estações do ano para compreender as mudanças sazonais na paisagem.",
+      "materials": [
+        "papel dividido em quatro partes"
+      ],
+      "steps": [
+        "Conversar sobre as quatro estações do ano e suas principais características.",
+        "Mostrar imagens de uma mesma árvore em diferentes estações, se possível.",
+        "Dividir uma folha em quatro partes, uma para cada estação.",
+        "Pedir que desenhem a mesma árvore em cada uma das quatro estações.",
+        "Comparar os desenhos, conversando sobre as mudanças observadas."
+      ]
+    },
+    {
+      "theme": "Jardim da escola em cada estação",
+      "curriculumCode": "EF02G13",
+      "description": "Observação de uma planta do jardim da escola para registrar suas mudanças ao longo das estações do ano.",
+      "materials": [],
+      "steps": [
+        "Visitar o jardim ou uma planta da escola para observar como ela está agora.",
+        "Conversar sobre como essa planta pode mudar ao longo do ano (folhas, flores, frutos).",
+        "Perguntar se alguém já percebeu essas mudanças em outras épocas.",
+        "Combinar de voltar a observar a mesma planta em outra estação do ano.",
+        "Pedir que desenhem a planta observada, registrando a data da observação."
+      ]
+    },
+    {
+      "theme": "Roupa de inverno, roupa de verão: e as plantas?",
+      "curriculumCode": "EF02G13",
+      "description": "Comparação entre as mudanças sazonais nas roupas das pessoas e nas plantas, reforçando a percepção das estações do ano.",
+      "materials": [],
+      "steps": [
+        "Conversar sobre como as roupas das pessoas mudam entre o verão e o inverno.",
+        "Perguntar se as plantas também mudam de um jeito parecido entre as estações.",
+        "Listar no quadro as mudanças das plantas em cada estação (folhas caindo, flores nascendo).",
+        "Comparar a lista das plantas com a lista das roupas das pessoas.",
+        "Pedir que desenhem uma planta e uma pessoa vestida de acordo com a mesma estação."
+      ]
+    },
+    {
+      "theme": "Coletando folhas de diferentes épocas",
+      "curriculumCode": "EF02G13",
+      "description": "Coleta e organização de folhas caídas para observar as mudanças que ocorrem nas plantas conforme a época do ano.",
+      "materials": [
+        "folhas caídas coletadas no pátio ou na rua",
+        "cola"
+      ],
+      "steps": [
+        "Sair com a turma para coletar folhas caídas no chão do pátio ou da rua.",
+        "Observar juntos as cores e o estado das folhas coletadas (secas, verdes, amareladas).",
+        "Conversar sobre em que época do ano costuma cair mais folhas.",
+        "Colar as folhas coletadas em uma folha de papel, montando um pequeno herbário.",
+        "Escrever ao lado a estação do ano em que fizeram a coleta."
+      ]
+    },
+    {
+      "theme": "Montando uma tabela com dados da turma",
+      "curriculumCode": "EF02G14",
+      "description": "Organização de informações coletadas da turma (cor favorita, transporte, brincadeira) em uma tabela simples.",
+      "materials": [],
+      "steps": [
+        "Escolher uma pergunta simples para fazer a toda a turma (cor favorita, meio de transporte, brincadeira preferida).",
+        "Perguntar a cada aluno e anotar a resposta no quadro.",
+        "Organizar as respostas em uma tabela simples com nome e resposta.",
+        "Conversar sobre o que a tabela mostra sobre a turma.",
+        "Pedir que copiem a tabela no caderno, destacando a própria resposta."
+      ]
+    },
+    {
+      "theme": "Álbum de fotografias do bairro",
+      "curriculumCode": "EF02G14",
+      "description": "Organização de fotografias de lugares do bairro em categorias, montando um álbum coletivo com legendas.",
+      "materials": [
+        "fotos do bairro trazidas de casa ou impressas",
+        "cola"
+      ],
+      "steps": [
+        "Pedir que os alunos tragam ou busquem fotos de lugares do bairro (pode ser com a família).",
+        "Organizar as fotos trazidas em grupos: praças, ruas, comércios, casas.",
+        "Montar um álbum coletivo colando as fotos organizadas por grupo.",
+        "Escrever uma legenda simples embaixo de cada foto.",
+        "Apresentar o álbum pronto para a turma."
+      ]
+    },
+    {
+      "theme": "O que descobrimos na saída de campo",
+      "curriculumCode": "EF02G14",
+      "description": "Organização das observações feitas em uma caminhada pelo entorno da escola em categorias registradas por escrito.",
+      "materials": [
+        "prancheta para anotações durante o passeio"
+      ],
+      "steps": [
+        "Sair com a turma para uma pequena caminhada de observação pelo entorno da escola.",
+        "Anotar ou desenhar rapidamente o que for observado durante o percurso.",
+        "Voltar pra sala e organizar as observações em uma lista no quadro.",
+        "Separar a lista em categorias, como 'plantas', 'construções' e 'pessoas'.",
+        "Pedir que copiem a lista organizada no caderno, com um desenho de uma das observações."
+      ]
+    },
+    {
+      "theme": "Gráfico das respostas da entrevista",
+      "curriculumCode": "EF02G14",
+      "description": "Transformação de respostas coletadas em entrevista com a família em um gráfico simples organizado pela turma.",
+      "materials": [
+        "cartolina para o gráfico"
+      ],
+      "steps": [
+        "Combinar uma pergunta simples para entrevistar familiares em casa (por exemplo, meio de transporte que mais usam).",
+        "Recolher as respostas trazidas por cada aluno na aula seguinte.",
+        "Organizar as respostas em um gráfico simples de barras ou marcações na cartolina.",
+        "Conversar sobre o que o gráfico mostra sobre as famílias da turma.",
+        "Pedir que copiem o gráfico no caderno com uma frase sobre o resultado."
+      ]
+    },
+    {
+      "theme": "Mural de mapas e fotos do bairro",
+      "curriculumCode": "EF02G14",
+      "description": "Montagem de um mural combinando mapas simples e fotos como forma organizada de reunir informações sobre o bairro.",
+      "materials": [
+        "mapa simples do bairro",
+        "fotos ou desenhos de pontos do bairro",
+        "cartolina"
+      ],
+      "steps": [
+        "Reunir mapas simples e fotos ou desenhos de pontos conhecidos do bairro.",
+        "Organizar esse material junto com a turma, decidindo onde cada item vai ficar no mural.",
+        "Montar o mural colando o mapa no centro e as fotos ao redor, ligadas por linhas aos pontos do mapa.",
+        "Conversar sobre como o mural organiza as informações do bairro.",
+        "Pedir que cada aluno aponte e explique um item do mural para um colega."
+      ]
+    },
+    {
+      "theme": "Relógio das atividades do dia",
+      "curriculumCode": "EF02G15",
+      "description": "Construção de um relógio simples associando horários a atividades sociais do dia e da noite.",
+      "materials": [
+        "prato de papel ou círculo de cartolina para o relógio",
+        "ponteiros de papel"
+      ],
+      "steps": [
+        "Conversar sobre as atividades que a turma faz em diferentes horários do dia.",
+        "Montar um relógio simples de papel com ponteiros móveis.",
+        "Marcar no relógio os horários de atividades como acordar, ir à escola, brincar, dormir.",
+        "Pedir que cada aluno escolha um horário e diga que atividade faz naquele momento.",
+        "Desenhar o relógio montado no caderno, indicando uma atividade de dia e uma de noite."
+      ]
+    },
+    {
+      "theme": "Quem trabalha de dia, quem trabalha de noite",
+      "curriculumCode": "EF02G15",
+      "description": "Reconhecimento de profissões e atividades sociais que acontecem em diferentes horários, associando-as ao dia e à noite.",
+      "materials": [],
+      "steps": [
+        "Perguntar se os alunos conhecem alguém que trabalha à noite (padeiro, segurança, enfermeiro).",
+        "Conversar sobre por que algumas pessoas trabalham enquanto outras dormem.",
+        "Listar no quadro profissões ou atividades que acontecem de dia e de noite.",
+        "Conversar sobre como a cidade continua funcionando mesmo à noite.",
+        "Pedir que desenhem uma pessoa trabalhando de dia e outra trabalhando de noite."
+      ]
+    },
+    {
+      "theme": "O céu muda: sol, lua e estrelas",
+      "curriculumCode": "EF02G15",
+      "description": "Observação das mudanças do céu entre dia e noite, relacionando-as às atividades sociais realizadas em cada período.",
+      "materials": [],
+      "steps": [
+        "Conversar sobre o que aparece no céu de dia (sol, nuvens) e o que aparece à noite (lua, estrelas).",
+        "Perguntar como os alunos percebem que o dia está virando noite.",
+        "Relacionar as mudanças no céu com as atividades que fazem em cada momento (acordar, jantar, dormir).",
+        "Listar no quadro atividades típicas de dia e de noite.",
+        "Pedir que desenhem o céu de dia de um lado da folha e o céu de noite do outro, com uma atividade em cada."
+      ]
+    },
+    {
+      "theme": "Minha rotina em quadrinhos: manhã, tarde e noite",
+      "curriculumCode": "EF02G15",
+      "description": "Registro em quadrinhos da rotina diária dividida em manhã, tarde e noite, associando atividades a cada período.",
+      "materials": [
+        "papel dividido em três quadros"
+      ],
+      "steps": [
+        "Conversar sobre a rotina diária dos alunos, dividida em manhã, tarde e noite.",
+        "Pedir que cada aluno pense em uma atividade que faz em cada período do dia.",
+        "Dividir uma folha em três quadros: manhã, tarde e noite.",
+        "Desenhar em cada quadro a atividade correspondente àquele período.",
+        "Compartilhar os quadrinhos com um colega, comparando as rotinas."
+      ]
+    },
+    {
+      "theme": "Entrevista: como era a noite antes de ter luz elétrica",
+      "curriculumCode": "EF02G15",
+      "description": "Entrevista com um familiar mais velho sobre a rotina noturna antes da luz elétrica, comparando com a noite de hoje.",
+      "materials": [],
+      "steps": [
+        "Perguntar em casa a um familiar mais velho como era a noite antes de ter luz elétrica em todo lugar.",
+        "Compartilhar em roda o que descobriram na entrevista.",
+        "Comparar as respostas com como é a noite hoje em dia, com luzes e televisão.",
+        "Conversar sobre as diferenças entre o dia e a noite de antigamente e de hoje.",
+        "Pedir que desenhem uma cena de noite, de antigamente ou de hoje, como preferirem."
+      ]
+    },
+    {
+      "theme": "Caixa de materiais: madeira, areia, argila e brita",
+      "curriculumCode": "EF02G16",
+      "description": "Exploração prática de materiais naturais usados em construções para relacioná-los à sua origem na natureza.",
+      "materials": [
+        "amostras de madeira, areia, argila e brita, se possível"
+      ],
+      "steps": [
+        "Mostrar ou descrever amostras de madeira, areia, argila e brita.",
+        "Conversar sobre de onde cada um desses materiais vem da natureza.",
+        "Perguntar em que parte de uma casa ou rua cada material pode ser usado.",
+        "Deixar os alunos tocarem e descreverem as texturas dos materiais, se disponíveis.",
+        "Pedir que desenhem uma casa e escrevam ao lado quais materiais naturais foram usados para construí-la."
+      ]
+    },
+    {
+      "theme": "Casa de tijolo, casa de madeira: comparando construções",
+      "curriculumCode": "EF02G16",
+      "description": "Comparação entre casas construídas com diferentes materiais naturais, reconhecendo a origem de cada um.",
+      "materials": [
+        "imagens de casas de tijolo e casas de madeira"
+      ],
+      "steps": [
+        "Mostrar imagens de uma casa feita de tijolo e de uma casa feita de madeira.",
+        "Conversar sobre de onde vem o material de cada tipo de casa.",
+        "Perguntar qual tipo de casa é mais comum no bairro dos alunos.",
+        "Listar no quadro vantagens de cada tipo de material de construção.",
+        "Pedir que desenhem a casa que mais gostariam de morar, escolhendo o material."
+      ]
+    },
+    {
+      "theme": "De onde vem a areia da praça?",
+      "curriculumCode": "EF02G16",
+      "description": "Investigação sobre a origem natural da areia usada em playgrounds e caixas de areia próximas à escola.",
+      "materials": [],
+      "steps": [
+        "Perguntar se a escola ou algum parque próximo tem caixa de areia ou playground com areia.",
+        "Conversar sobre de onde a areia vem originalmente (rios, praias, jazidas).",
+        "Explicar de forma simples como a areia chega até o lugar onde é usada.",
+        "Conversar sobre outros lugares onde a areia é usada nas construções.",
+        "Pedir que desenhem a caixa de areia ou playground, escrevendo de onde veio a areia."
+      ]
+    },
+    {
+      "theme": "Construindo com massinha de argila",
+      "curriculumCode": "EF02G16",
+      "description": "Modelagem prática com argila ou massinha para explorar de forma concreta um recurso natural usado em construções.",
+      "materials": [
+        "massinha de modelar ou argila"
+      ],
+      "steps": [
+        "Conversar sobre a argila como um recurso da natureza usado para fazer tijolos e telhas.",
+        "Distribuir massinha ou argila para os alunos manusearem.",
+        "Pedir que modelem um pequeno tijolo ou telha com a massinha.",
+        "Conversar sobre como a argila é transformada até virar material de construção.",
+        "Pedir que desenhem o processo, da argila da natureza até o tijolo pronto."
+      ]
+    },
+    {
+      "theme": "Maquete de casa com materiais naturais",
+      "curriculumCode": "EF02G16",
+      "description": "Construção de uma maquete de casa usando materiais naturais para reforçar seu uso concreto nas construções.",
+      "materials": [
+        "gravetos",
+        "areia ou terra",
+        "argila ou massinha",
+        "cola"
+      ],
+      "steps": [
+        "Reunir gravetos, areia, argila ou massinha para representar materiais de construção.",
+        "Conversar sobre qual parte da casa cada material pode representar (parede, telhado, chão).",
+        "Montar em grupos uma pequena maquete de casa usando esses materiais naturais.",
+        "Apresentar as maquetes prontas para a turma, explicando os materiais usados.",
+        "Registrar em desenho a maquete construída, nomeando os materiais utilizados."
       ]
     }
   ],
@@ -1959,6 +6074,1247 @@ export const THEME_BANK: Record<OwnSubject, BankEntry[]> = {
         "Jogar o dominó juntando as peças que têm a mesma figura ou o mesmo sinal correspondente.",
         "Ensinar alguns sinais simples (como os de animais) para toda a turma praticar.",
         "Conversar sobre a importância de incluir todo mundo, inclusive quem se comunica em Libras."
+      ]
+    },
+    {
+      "theme": "Brincadeiras da roça e brincadeiras da cidade",
+      "curriculumCode": "EF02H01",
+      "description": "Perceber como o lugar onde se mora muda o jeito de brincar, comparando brincadeiras de quem vive no campo e na cidade.",
+      "materials": [],
+      "steps": [
+        "Perguntar quem já morou ou tem parentes que moram em sítio, fazenda ou zona rural.",
+        "Listar na lousa brincadeiras que usam mais espaço aberto, terra ou árvore, e comparar com brincadeiras de rua ou apartamento da cidade.",
+        "Em roda, conversar sobre o que muda quando não se tem um espaço grande para brincar.",
+        "Pedir que cada aluno desenhe uma brincadeira de campo e uma de cidade, escrevendo o nome de cada uma.",
+        "Expor os desenhos no mural da sala."
+      ]
+    },
+    {
+      "theme": "Como se brincava sem brinquedo comprado",
+      "curriculumCode": "EF02H01",
+      "description": "Reconhecer que muitas brincadeiras de outros tempos eram feitas com materiais simples, sem brinquedo comprado em loja.",
+      "materials": [
+        "tampinhas de garrafa",
+        "barbante",
+        "sucata"
+      ],
+      "steps": [
+        "Mostrar exemplos de brinquedos feitos com sucata, como bilboquê de garrafa pet ou boneca de espiga de milho.",
+        "Perguntar se alguém já brincou ou viu alguém brincar com brinquedo feito em casa.",
+        "Organizar a turma em grupos para montar um brinquedo simples com tampinha e barbante, como uma peteca ou pião.",
+        "Testar os brinquedos montados no pátio.",
+        "Pedir que cada aluno escreva no caderno o nome do brinquedo que fez e de que material ele foi feito."
+      ]
+    },
+    {
+      "theme": "A pipa ontem e hoje",
+      "curriculumCode": "EF02H01",
+      "description": "Comparar como a pipa era feita e usada antigamente com as pipas de hoje, percebendo mudanças e permanências.",
+      "materials": [
+        "papel de seda",
+        "varetas finas",
+        "linha",
+        "cola"
+      ],
+      "steps": [
+        "Perguntar quem já soltou pipa ou conhece alguém que solta.",
+        "Descrever para a turma como eram feitas as pipas antigas de jornal e como são as pipas de hoje.",
+        "Conversar sobre o que mudou no material e o que continua igual na brincadeira.",
+        "Ajudar a turma a montar uma pipa simples de papel e vareta.",
+        "Pedir que cada aluno escreva uma frase contando como foi montar a pipa."
+      ]
+    },
+    {
+      "theme": "Brincadeiras de rua que quase desapareceram",
+      "curriculumCode": "EF02H01",
+      "description": "Investigar brincadeiras de rua comuns há algumas décadas e perceber por que ficaram mais raras hoje em dia.",
+      "materials": [],
+      "steps": [
+        "Contar para a turma sobre brincadeiras de rua como pique-pega, garrafão e barra-manteiga.",
+        "Perguntar se algum aluno já brincou de alguma dessas brincadeiras.",
+        "Levar a turma ao pátio para experimentar uma dessas brincadeiras.",
+        "Em roda, conversar sobre por que hoje se brinca menos na rua.",
+        "Pedir que os alunos registrem em uma frase e um desenho a brincadeira que experimentaram."
+      ]
+    },
+    {
+      "theme": "Um brinquedo, dois tempos: pião de ontem e de hoje",
+      "curriculumCode": "EF02H01",
+      "description": "Observar como um mesmo brinquedo, o pião, mudou de material e formato ao longo do tempo, mas manteve o jeito de brincar.",
+      "materials": [
+        "pião de madeira ou plástico"
+      ],
+      "steps": [
+        "Mostrar um pião de madeira e, se possível, um pião de plástico com luzes.",
+        "Perguntar qual a turma acha mais parecido com o que os avós usavam quando crianças.",
+        "Ensinar a rodar o pião e deixar a turma experimentar no pátio.",
+        "Voltar à sala e pedir que desenhem o pião que mais gostaram de usar.",
+        "Escrever embaixo do desenho se aquele pião parece mais antigo ou mais novo."
+      ]
+    },
+    {
+      "theme": "Brincar dentro de casa: ontem e hoje",
+      "curriculumCode": "EF02H01",
+      "description": "Comparar as brincadeiras de dentro de casa de antigamente com as de hoje, incluindo o uso de telas.",
+      "materials": [],
+      "steps": [
+        "Perguntar o que os alunos costumam fazer em casa quando não estão na rua.",
+        "Perguntar o que os pais e avós contam que faziam dentro de casa quando eram crianças.",
+        "Listar na lousa, em duas colunas, brincadeiras de dentro de casa de antes e de agora.",
+        "Conversar em roda sobre as diferenças, incluindo o uso de celular e televisão hoje.",
+        "Pedir que cada aluno escreva a brincadeira de dentro de casa que mais gosta."
+      ]
+    },
+    {
+      "theme": "Boneca de pano, boneca de hoje",
+      "curriculumCode": "EF02H01",
+      "description": "Comparar bonecas feitas artesanalmente de outros tempos com as bonecas industrializadas de hoje.",
+      "materials": [
+        "retalhos de tecido",
+        "linha",
+        "enchimento (algodão ou tnt)"
+      ],
+      "steps": [
+        "Mostrar uma boneca de pano simples e perguntar se é parecida com as bonecas que os alunos têm.",
+        "Conversar sobre como as bonecas eram feitas à mão antigamente.",
+        "Ajudar a turma a montar, em grupos, uma boneca simples de retalho.",
+        "Pedir que cada grupo apresente a boneca que fez para a turma.",
+        "Registrar no caderno uma frase sobre a diferença entre a boneca de pano e a boneca de loja."
+      ]
+    },
+    {
+      "theme": "Cada um traz sua brincadeira favorita",
+      "curriculumCode": "EF02H02",
+      "description": "Dar espaço para que cada criança apresente e ensine à turma a brincadeira de que mais gosta.",
+      "materials": [],
+      "steps": [
+        "Pedir com antecedência que cada aluno pense em sua brincadeira favorita para apresentar.",
+        "Em roda, cada criança conta o nome da brincadeira e explica como se joga.",
+        "Escolher com a turma três brincadeiras apresentadas para experimentar no pátio.",
+        "Depois de brincar, voltar à sala e perguntar o que acharam.",
+        "Pedir que cada aluno desenhe a brincadeira que apresentou."
+      ]
+    },
+    {
+      "theme": "Roda de brincadeiras: o que a turma já sabe",
+      "curriculumCode": "EF02H02",
+      "description": "Levantar o repertório de brincadeiras que a turma já conhece antes de começar o estudo do tema.",
+      "materials": [],
+      "steps": [
+        "Em roda, perguntar a cada aluno uma brincadeira que sabe brincar.",
+        "Anotar todos os nomes citados na lousa, sem repetir.",
+        "Contar quantas brincadeiras diferentes a turma já conhece.",
+        "Separar quais brincadeiras a maioria conhece e quais só um ou dois alunos citaram.",
+        "Pedir que cada aluno copie no caderno a lista de brincadeiras da turma."
+      ]
+    },
+    {
+      "theme": "Brincadeira preferida da família da turma",
+      "curriculumCode": "EF02H02",
+      "description": "Valorizar as brincadeiras que cada família da turma costuma jogar em casa.",
+      "materials": [],
+      "steps": [
+        "Pedir que os alunos perguntem em casa, no dia anterior, qual é a brincadeira preferida da família.",
+        "Em roda, cada aluno conta a brincadeira que descobriu.",
+        "Anotar na lousa as brincadeiras que mais se repetiram entre as famílias.",
+        "Escolher uma das brincadeiras citadas para a turma experimentar no pátio.",
+        "Pedir que cada aluno escreva o nome da brincadeira da própria família."
+      ]
+    },
+    {
+      "theme": "Show de brincadeiras: apresentando para os colegas",
+      "curriculumCode": "EF02H02",
+      "description": "Organizar uma apresentação em que grupos de alunos ensinam uma brincadeira do seu repertório para o restante da turma.",
+      "materials": [],
+      "steps": [
+        "Dividir a turma em grupos pequenos.",
+        "Cada grupo escolhe uma brincadeira que já conhece bem para ensinar aos colegas.",
+        "Dar um tempo para o grupo combinar como vai explicar as regras.",
+        "Cada grupo apresenta e ensina sua brincadeira para a turma no pátio.",
+        "De volta à sala, cada aluno escreve o nome da brincadeira que mais gostou de aprender com os colegas."
+      ]
+    },
+    {
+      "theme": "Livro das brincadeiras da turma",
+      "curriculumCode": "EF02H02",
+      "description": "Reunir em um só material o repertório de brincadeiras trazido por todos os alunos da turma.",
+      "materials": [
+        "folhas de papel",
+        "grampeador ou barbante"
+      ],
+      "steps": [
+        "Pedir que cada aluno escolha uma brincadeira do seu repertório.",
+        "Cada aluno desenha a brincadeira em uma folha e escreve o nome embaixo.",
+        "Recolher as folhas e organizar em ordem.",
+        "Montar as folhas juntas como um livro da turma, com capa feita pelos alunos.",
+        "Deixar o livro disponível para a turma consultar na sala."
+      ]
+    },
+    {
+      "theme": "Brincadeira que aprendi com meu amigo",
+      "curriculumCode": "EF02H02",
+      "description": "Reconhecer que parte do repertório de brincadeiras das crianças vem da troca entre amigos e colegas.",
+      "materials": [],
+      "steps": [
+        "Perguntar se algum aluno aprendeu uma brincadeira com um amigo ou colega, e não com a família.",
+        "Em roda, os alunos contam essas brincadeiras e quem ensinou.",
+        "Escolher uma das brincadeiras contadas para a turma experimentar.",
+        "Depois da brincadeira, conversar sobre como é bom aprender brincadeiras novas com os amigos.",
+        "Pedir que cada aluno escreva o nome do amigo que ensinou a brincadeira e o nome dela."
+      ]
+    },
+    {
+      "theme": "Painel do que a turma sabe brincar",
+      "curriculumCode": "EF02H02",
+      "description": "Construir um registro coletivo e visual de todo o repertório de brincadeiras já apresentado pela turma.",
+      "materials": [
+        "cartolina",
+        "canetinha",
+        "cola"
+      ],
+      "steps": [
+        "Retomar com a turma todas as brincadeiras já apresentadas nas aulas anteriores.",
+        "Distribuir pequenos papéis para cada aluno escrever ou desenhar uma brincadeira.",
+        "Colar os papéis juntos em uma cartolina grande, formando um painel.",
+        "Pendurar o painel na sala de aula.",
+        "Pedir que cada aluno aponte no painel a brincadeira que mais gosta e escreva uma frase explicando por quê."
+      ]
+    },
+    {
+      "theme": "Amarelinha pelo Brasil: nomes diferentes, mesmo jogo",
+      "curriculumCode": "EF02H03",
+      "description": "Descobrir que a amarelinha é conhecida por nomes diferentes em várias regiões do Brasil, mas com regras parecidas.",
+      "materials": [
+        "giz"
+      ],
+      "steps": [
+        "Contar para a turma que a amarelinha tem nomes diferentes, como sapata, macaca ou avião, dependendo da região.",
+        "Perguntar se algum aluno conhece outro nome para essa brincadeira.",
+        "Desenhar a amarelinha no chão do pátio com giz e brincar com a turma.",
+        "Voltar à sala e conversar sobre as semelhanças entre os nomes diferentes da mesma brincadeira.",
+        "Pedir que cada aluno escreva o nome que usa para essa brincadeira em casa."
+      ]
+    },
+    {
+      "theme": "Pião: uma brincadeira, muitos lugares",
+      "curriculumCode": "EF02H03",
+      "description": "Comparar como o pião é jogado em diferentes lugares do Brasil, observando o que muda e o que se mantém.",
+      "materials": [
+        "pião"
+      ],
+      "steps": [
+        "Perguntar se os alunos já viram ou brincaram de pião em lugares diferentes, como na casa dos avós no interior.",
+        "Explicar que o jeito de rodar o pião pode mudar um pouco de região para região.",
+        "Levar a turma ao pátio para experimentar rodar o pião.",
+        "Conversar sobre as dificuldades e facilidades de brincar de pião.",
+        "Pedir que cada aluno desenhe o pião e escreva se conseguiu rodar sozinho."
+      ]
+    },
+    {
+      "theme": "Corda e suas variações",
+      "curriculumCode": "EF02H03",
+      "description": "Conhecer diferentes formas de brincar de pular corda em várias regiões, com músicas e regras próprias.",
+      "materials": [
+        "corda"
+      ],
+      "steps": [
+        "Ensinar duas cantigas diferentes de pular corda conhecidas em regiões distintas do Brasil.",
+        "Perguntar se os alunos conhecem outras músicas de pular corda.",
+        "Levar a turma ao pátio para pular corda com as cantigas ensinadas.",
+        "Voltar à sala e comparar as músicas, observando quais têm rimas parecidas e quais são diferentes.",
+        "Pedir que cada aluno escreva um pedacinho da cantiga de que mais gostou."
+      ]
+    },
+    {
+      "theme": "Bolinha de gude ontem e hoje",
+      "curriculumCode": "EF02H03",
+      "description": "Comparar como se brincava de bolinha de gude antigamente com o jeito que se brinca hoje, em diferentes lugares.",
+      "materials": [
+        "bolinhas de gude"
+      ],
+      "steps": [
+        "Explicar as regras básicas do jogo de bolinha de gude.",
+        "Perguntar se alguém já brincou ou viu alguém brincar de bolinha de gude.",
+        "Organizar a turma em duplas para experimentar o jogo no pátio.",
+        "Conversar sobre se essa brincadeira é comum hoje em dia ou não.",
+        "Pedir que cada aluno registre no caderno se gostaria de brincar mais vezes de bolinha de gude e por quê."
+      ]
+    },
+    {
+      "theme": "Brincadeiras de tabuleiro de antigamente e de agora",
+      "curriculumCode": "EF02H03",
+      "description": "Comparar jogos de tabuleiro simples de outras épocas com os jogos de tabuleiro que a turma conhece hoje.",
+      "materials": [
+        "papelão",
+        "canetinha",
+        "tampinhas ou botões"
+      ],
+      "steps": [
+        "Mostrar um jogo de tabuleiro simples, como jogo da velha ou trilha, e explicar que existe há muito tempo.",
+        "Perguntar quais jogos de tabuleiro os alunos conhecem hoje.",
+        "Ajudar a turma a desenhar um tabuleiro simples de trilha em papelão.",
+        "Jogar em duplas usando tampinhas como peças.",
+        "Pedir que cada dupla escreva uma regra do jogo que criaram ou usaram."
+      ]
+    },
+    {
+      "theme": "Cirandas de diferentes lugares",
+      "curriculumCode": "EF02H03",
+      "description": "Conhecer cirandas cantadas em diferentes regiões do Brasil e perceber suas semelhanças e diferenças.",
+      "materials": [],
+      "steps": [
+        "Ensinar a letra de uma ciranda tradicional para a turma.",
+        "Contar que existem cirandas parecidas em várias regiões do país, com pequenas diferenças na letra.",
+        "Formar uma roda e cantar e brincar de ciranda no pátio.",
+        "Voltar à sala e perguntar o que os alunos acharam da brincadeira.",
+        "Pedir que cada aluno desenhe a roda de ciranda e escreva o nome da música."
+      ]
+    },
+    {
+      "theme": "Brincadeiras de praia, de campo e de cidade",
+      "curriculumCode": "EF02H03",
+      "description": "Perceber como o ambiente, seja praia, campo ou cidade, influencia o tipo de brincadeira que as pessoas fazem.",
+      "materials": [],
+      "steps": [
+        "Perguntar quem já brincou na praia, no campo e na cidade.",
+        "Listar na lousa, em três colunas, brincadeiras típicas de cada lugar.",
+        "Conversar sobre por que certas brincadeiras combinam mais com um lugar do que com outro.",
+        "Pedir que cada aluno escolha um desses lugares e desenhe uma brincadeira que combina com ele.",
+        "Escrever embaixo do desenho o nome do lugar escolhido."
+      ]
+    },
+    {
+      "theme": "Brincadeira não tem gênero",
+      "curriculumCode": "EF02H04",
+      "description": "Discutir por que nenhuma brincadeira deveria ser considerada 'só de menino' ou 'só de menina'.",
+      "materials": [],
+      "steps": [
+        "Perguntar à turma se existe brincadeira que só menino pode ou só menina pode brincar.",
+        "Ouvir as respostas e anotar na lousa os argumentos dados.",
+        "Propor que a turma pense em exemplos de meninas que jogam bola e meninos que brincam de boneca.",
+        "Conversar sobre por que todo mundo pode brincar do que quiser.",
+        "Pedir que cada aluno escreva uma frase dizendo que brincadeira não tem dono."
+      ]
+    },
+    {
+      "theme": "Classificando brincadeiras: de correr, de cantar, de construir",
+      "curriculumCode": "EF02H04",
+      "description": "Criar com a turma categorias para organizar as brincadeiras conhecidas, sem usar separação por gênero.",
+      "materials": [
+        "cartolina",
+        "canetinha"
+      ],
+      "steps": [
+        "Listar na lousa várias brincadeiras conhecidas pela turma.",
+        "Perguntar como poderiam organizar essas brincadeiras em grupos, sem falar em menino ou menina.",
+        "Construir com a turma categorias como 'de correr', 'de cantar', 'de construir' ou 'de montar'.",
+        "Organizar as brincadeiras listadas dentro dessas categorias em uma cartolina.",
+        "Pedir que cada aluno copie no caderno a categoria da brincadeira que mais gosta."
+      ]
+    },
+    {
+      "theme": "Bola é para todo mundo jogar",
+      "curriculumCode": "EF02H04",
+      "description": "Vivenciar um jogo de bola misto para desconstruir a ideia de que futebol é brincadeira só de menino.",
+      "materials": [
+        "bola"
+      ],
+      "steps": [
+        "Perguntar quem acha que só menino pode jogar bola e ouvir a turma.",
+        "Organizar um jogo de bola no pátio com todos os alunos, meninos e meninas juntos.",
+        "Observar e depois conversar sobre como foi jogar todos juntos.",
+        "Perguntar se alguém mudou de ideia depois de jogar.",
+        "Pedir que cada aluno escreva se gostou de jogar bola com toda a turma."
+      ]
+    },
+    {
+      "theme": "Boneca e bola de gude: quem pode brincar?",
+      "curriculumCode": "EF02H04",
+      "description": "Comparar duas brincadeiras normalmente rotuladas por gênero e discutir que qualquer criança pode brincar de ambas.",
+      "materials": [
+        "boneca",
+        "bolinhas de gude"
+      ],
+      "steps": [
+        "Mostrar uma boneca e um conjunto de bolinhas de gude para a turma.",
+        "Perguntar quem imagina que cada brinquedo é 'de menina' ou 'de menino'.",
+        "Organizar estações para que todos experimentem brincar com a boneca e com as bolinhas de gude.",
+        "Conversar em roda sobre a experiência de brincar com os dois brinquedos.",
+        "Pedir que cada aluno desenhe um dos dois brinquedos e escreva que qualquer criança pode brincar com ele."
+      ]
+    },
+    {
+      "theme": "Nossa lista de brincadeiras sem rótulo",
+      "curriculumCode": "EF02H04",
+      "description": "Construir coletivamente uma lista de brincadeiras da turma sem separar por 'de menino' e 'de menina'.",
+      "materials": [],
+      "steps": [
+        "Perguntar a cada aluno uma brincadeira que gosta, sem perguntar se é 'de menino' ou 'de menina'.",
+        "Escrever a lista na lousa misturando todas as respostas.",
+        "Conversar sobre como ficou a lista, sem divisão por gênero.",
+        "Reforçar que todos podem escolher qualquer brincadeira da lista.",
+        "Pedir que cada aluno copie a lista no caderno e marque as que já brincou."
+      ]
+    },
+    {
+      "theme": "Organizando as brincadeiras da turma por tipo",
+      "curriculumCode": "EF02H04",
+      "description": "Criar critérios próprios, como espaço usado ou número de participantes, para organizar as brincadeiras da turma.",
+      "materials": [
+        "cartolina"
+      ],
+      "steps": [
+        "Retomar as brincadeiras já conhecidas pela turma.",
+        "Perguntar que outros critérios, além de menino e menina, poderiam separar as brincadeiras, como espaço, quantidade de gente ou uso de bola.",
+        "Organizar as brincadeiras em uma tabela na cartolina usando esses novos critérios.",
+        "Conversar sobre como esses critérios fazem mais sentido do que separar por gênero.",
+        "Pedir que cada aluno escreva no caderno um critério que ajudou a organizar as brincadeiras."
+      ]
+    },
+    {
+      "theme": "Desafiando o 'brincadeira de menina' e 'de menino'",
+      "curriculumCode": "EF02H04",
+      "description": "Propor um desafio prático em que meninos e meninas trocam de brincadeira tida como 'típica' do outro grupo.",
+      "materials": [],
+      "steps": [
+        "Perguntar quais brincadeiras a turma costuma achar 'de menino' e quais 'de menina'.",
+        "Propor que, no pátio, todos experimentem uma brincadeira do grupo 'contrário' ao que imaginavam.",
+        "Observar como foi a experiência de todos brincarem juntos.",
+        "Voltar à sala e perguntar o que acharam do desafio.",
+        "Pedir que cada aluno escreva uma frase sobre a brincadeira nova que experimentou."
+      ]
+    },
+    {
+      "theme": "Corrida de toras: uma tradição indígena",
+      "curriculumCode": "EF02H05",
+      "description": "Conhecer a corrida de toras, brincadeira tradicional de povos indígenas como os Xavante e os Krahô.",
+      "materials": [],
+      "steps": [
+        "Explicar para a turma o que é a corrida de toras e quais povos a praticam.",
+        "Descrever como acontece essa corrida em revezamento entre os participantes.",
+        "Propor uma brincadeira de revezamento simples no pátio, inspirada na corrida de toras.",
+        "Conversar sobre como foi participar de uma corrida em equipe.",
+        "Pedir que cada aluno desenhe a corrida de toras e escreva o nome de um povo indígena que a pratica."
+      ]
+    },
+    {
+      "theme": "Peteca: brincadeira indígena que virou jogo de todo mundo",
+      "curriculumCode": "EF02H05",
+      "description": "Conhecer a origem indígena da peteca e experimentar essa brincadeira em duplas.",
+      "materials": [
+        "peteca de papel ou pano"
+      ],
+      "steps": [
+        "Contar que a peteca é uma brincadeira criada por povos indígenas antes da chegada dos portugueses.",
+        "Ajudar a turma a montar uma peteca simples com papel ou retalho e enchimento.",
+        "Organizar duplas para jogar peteca no pátio.",
+        "Conversar sobre como foi jogar e o que é preciso fazer para não deixar a peteca cair.",
+        "Pedir que cada aluno escreva de que povo veio a brincadeira da peteca."
+      ]
+    },
+    {
+      "theme": "Arco e flecha de brincadeira",
+      "curriculumCode": "EF02H05",
+      "description": "Conhecer a importância do arco e flecha para diversos povos indígenas e recriar essa brincadeira de forma segura.",
+      "materials": [
+        "canudo ou vareta de madeira",
+        "barbante",
+        "bolinha de papel"
+      ],
+      "steps": [
+        "Explicar que o arco e flecha é usado por muitos povos indígenas, tanto para caça quanto para brincadeiras de pontaria.",
+        "Combinar com a turma que a atividade vai usar uma versão seguríssima, sem pontas.",
+        "Ajudar os alunos a montar um lançador simples de bolinha de papel com canudo e barbante.",
+        "Organizar um jogo de pontaria em um alvo desenhado no chão.",
+        "Pedir que cada aluno registre no caderno sua pontuação e desenhe o alvo."
+      ]
+    },
+    {
+      "theme": "Jogo da onça: tabuleiro indígena",
+      "curriculumCode": "EF02H05",
+      "description": "Conhecer e experimentar o jogo da onça, um jogo de tabuleiro de origem indígena que envolve estratégia.",
+      "materials": [
+        "papelão",
+        "canetinha",
+        "tampinhas de duas cores"
+      ],
+      "steps": [
+        "Explicar as regras simples do jogo da onça, em que uma peça representa a onça e as outras os cachorros.",
+        "Desenhar o tabuleiro do jogo da onça em papelão com a turma.",
+        "Organizar duplas para jogar usando tampinhas de cores diferentes.",
+        "Perguntar quem conseguiu vencer como onça e quem venceu como cachorro.",
+        "Pedir que cada dupla escreva uma regra do jogo que aprenderam."
+      ]
+    },
+    {
+      "theme": "Brincadeiras indígenas com bola de borracha natural",
+      "curriculumCode": "EF02H05",
+      "description": "Conhecer brincadeiras indígenas que usam bola feita de látex natural, rebatendo a bola sem deixá-la cair.",
+      "materials": [
+        "bola leve (meia ou papel)"
+      ],
+      "steps": [
+        "Contar que alguns povos indígenas faziam bolas de látex de árvore para brincar.",
+        "Explicar uma brincadeira simples de rebater a bola sem deixar cair, usando as mãos.",
+        "Organizar a turma em roda no pátio para experimentar rebater a bola sem deixá-la cair.",
+        "Contar quantas vezes cada aluno conseguiu rebater sem deixar a bola cair.",
+        "Pedir que cada aluno escreva no caderno seu recorde de rebatidas."
+      ]
+    },
+    {
+      "theme": "Cabo de força dos povos indígenas",
+      "curriculumCode": "EF02H05",
+      "description": "Vivenciar o cabo de força, brincadeira de disputa em equipe praticada por diversos povos indígenas em festas e celebrações.",
+      "materials": [
+        "corda grossa"
+      ],
+      "steps": [
+        "Explicar que o cabo de força é praticado por vários povos indígenas em festas e celebrações.",
+        "Dividir a turma em duas equipes para brincar de cabo de força com a corda.",
+        "Realizar a brincadeira no pátio, com segurança e revezamento entre os alunos.",
+        "Conversar sobre a importância do trabalho em equipe nessa brincadeira.",
+        "Pedir que cada aluno desenhe a disputa e escreva qual equipe torceu."
+      ]
+    },
+    {
+      "theme": "Contação de brincadeiras: um jogo indígena por vez",
+      "curriculumCode": "EF02H05",
+      "description": "Apresentar semanalmente, de forma detalhada, uma brincadeira de um povo indígena diferente, com registro da turma.",
+      "materials": [],
+      "steps": [
+        "Escolher uma brincadeira de um povo indígena para apresentar na aula, contando de que povo ela vem.",
+        "Explicar como essa brincadeira é jogada.",
+        "Se possível, experimentar uma versão simplificada da brincadeira no pátio.",
+        "Conversar sobre o que a turma achou dessa brincadeira.",
+        "Pedir que cada aluno registre no caderno o nome da brincadeira e do povo indígena apresentado."
+      ]
+    },
+    {
+      "theme": "Boneca Abayomi: brincando e criando",
+      "curriculumCode": "EF02H06",
+      "description": "Conhecer a origem da boneca Abayomi, criada sem costura por povos de matriz africana, e confeccionar a própria.",
+      "materials": [
+        "retalhos de tecido colorido"
+      ],
+      "steps": [
+        "Contar a história da boneca Abayomi, feita com nós de tecido, sem agulha ou tesoura.",
+        "Mostrar o passo a passo de como amarrar o tecido para formar a boneca.",
+        "Ajudar cada aluno a fazer sua própria boneca Abayomi com retalhos.",
+        "Organizar uma roda para os alunos mostrarem suas bonecas.",
+        "Pedir que cada aluno escreva o nome que deu para sua boneca."
+      ]
+    },
+    {
+      "theme": "Roda de capoeira: um jogo de corpo inteiro",
+      "curriculumCode": "EF02H06",
+      "description": "Conhecer a capoeira como jogo de matriz africana que une luta, dança e música.",
+      "materials": [],
+      "steps": [
+        "Explicar que a capoeira é um jogo criado por povos africanos escravizados no Brasil, misturando luta e dança.",
+        "Ensinar um movimento simples de ginga para a turma experimentar.",
+        "Formar uma roda no pátio e bater palmas no ritmo enquanto duplas experimentam a ginga.",
+        "Conversar sobre como é jogar capoeira em roda, com todos participando.",
+        "Pedir que cada aluno desenhe a roda de capoeira e escreva a palavra 'ginga'."
+      ]
+    },
+    {
+      "theme": "Jongo: brincando com roda e tambor",
+      "curriculumCode": "EF02H06",
+      "description": "Conhecer o jongo, dança e jogo de roda de matriz africana, praticado ao som de tambores.",
+      "materials": [],
+      "steps": [
+        "Explicar que o jongo é uma roda cantada e dançada, criada por comunidades de matriz africana.",
+        "Ensinar uma cantiga simples de roda para a turma.",
+        "Formar uma roda no pátio e cantar batendo palmas no ritmo, revezando quem entra no meio da roda.",
+        "Conversar sobre como se sentiram brincando em roda com música.",
+        "Pedir que cada aluno escreva no caderno uma palavra da cantiga que aprendeu."
+      ]
+    },
+    {
+      "theme": "Brincadeiras de mão de matriz africana",
+      "curriculumCode": "EF02H06",
+      "description": "Conhecer e vivenciar brincadeiras de palmas em dupla, de tradição afro-brasileira.",
+      "materials": [],
+      "steps": [
+        "Ensinar uma brincadeira de bater palmas em dupla de origem afro-brasileira.",
+        "Demonstrar a sequência de palmas devagar até a turma entender.",
+        "Organizar duplas para praticar a brincadeira de palmas.",
+        "Fazer um desafio de quem consegue fazer a sequência mais rápido sem errar.",
+        "Pedir que cada aluno escreva o nome do colega com quem brincou."
+      ]
+    },
+    {
+      "theme": "Parlendas e cantigas de brincar afro-brasileiras",
+      "curriculumCode": "EF02H06",
+      "description": "Conhecer parlendas e cantigas de roda de matriz africana e registrar a favorita da turma.",
+      "materials": [],
+      "steps": [
+        "Apresentar duas ou três parlendas ou cantigas de roda de matriz africana.",
+        "Ensinar a turma a recitar ou cantar uma delas.",
+        "Brincar em roda repetindo a cantiga escolhida algumas vezes.",
+        "Perguntar qual parlenda ou cantiga a turma mais gostou.",
+        "Pedir que cada aluno copie no caderno a cantiga escolhida pela turma."
+      ]
+    },
+    {
+      "theme": "Bonecas de pano de tradição africana",
+      "curriculumCode": "EF02H06",
+      "description": "Investigar como bonecas de pano feitas por comunidades de matriz africana carregam histórias e tradições.",
+      "materials": [
+        "retalhos de tecido",
+        "linha"
+      ],
+      "steps": [
+        "Mostrar exemplos de bonecas de pano de tradição africana e contar um pouco sobre seu significado.",
+        "Perguntar se os alunos já viram bonecas parecidas em casa ou na comunidade.",
+        "Ajudar a turma a montar, em grupos, uma boneca simples de pano.",
+        "Cada grupo conta para a turma como fez a boneca.",
+        "Pedir que cada aluno registre no caderno uma frase sobre a boneca que o grupo fez."
+      ]
+    },
+    {
+      "theme": "Jogo de contar histórias: griôs e brincadeiras",
+      "curriculumCode": "EF02H06",
+      "description": "Conhecer o papel dos griôs, contadores de histórias de tradição africana, brincando de contar e adivinhar histórias curtas.",
+      "materials": [],
+      "steps": [
+        "Explicar quem são os griôs e a importância de contar histórias na tradição africana.",
+        "Contar uma história curta de tradição africana para a turma.",
+        "Organizar um jogo em que cada aluno inventa e conta uma historinha curta para um colega.",
+        "Reunir a turma em roda para alguns alunos contarem sua historinha para todos.",
+        "Pedir que cada aluno escreva ou desenhe a historinha que contou."
+      ]
+    },
+    {
+      "theme": "Brincadeiras que vieram da Itália",
+      "curriculumCode": "EF02H07",
+      "description": "Conhecer brincadeiras trazidas por imigrantes italianos, como a bocha, e experimentar uma versão simples.",
+      "materials": [
+        "bolinhas ou bolas de meia"
+      ],
+      "steps": [
+        "Contar que muitos imigrantes italianos vieram para o Brasil e trouxeram a brincadeira da bocha.",
+        "Explicar as regras simples do jogo de bocha, tentando chegar mais perto de uma bolinha alvo.",
+        "Organizar a turma em grupos para jogar uma versão simplificada de bocha no pátio.",
+        "Conversar sobre como foi jogar essa brincadeira de origem italiana.",
+        "Pedir que cada aluno desenhe o jogo e escreva de que país veio a brincadeira."
+      ]
+    },
+    {
+      "theme": "Jogos japoneses que chegaram ao Brasil",
+      "curriculumCode": "EF02H07",
+      "description": "Conhecer brincadeiras trazidas por imigrantes japoneses, como o origami, e praticar uma dobradura simples.",
+      "materials": [
+        "papel quadrado colorido"
+      ],
+      "steps": [
+        "Contar que imigrantes japoneses trouxeram para o Brasil o origami, arte de dobrar papel.",
+        "Mostrar o passo a passo de uma dobradura simples, como um barquinho ou um chapéu.",
+        "Ajudar cada aluno a fazer sua própria dobradura de papel.",
+        "Organizar uma exposição das dobraduras feitas pela turma.",
+        "Pedir que cada aluno escreva o nome da dobradura que fez."
+      ]
+    },
+    {
+      "theme": "Brincadeiras da colônia alemã",
+      "curriculumCode": "EF02H07",
+      "description": "Conhecer jogos e festas trazidos por imigrantes alemães ao Brasil, como jogos de boliche caseiro.",
+      "materials": [
+        "garrafas pet vazias",
+        "bola pequena"
+      ],
+      "steps": [
+        "Contar que imigrantes alemães trouxeram tradições de festas com jogos, como o boliche.",
+        "Montar com a turma um boliche simples usando garrafas pet.",
+        "Organizar a turma em fila para jogar o boliche, derrubando os 'pinos'.",
+        "Contar os pontos de cada aluno.",
+        "Pedir que cada aluno registre no caderno quantos pinos derrubou."
+      ]
+    },
+    {
+      "theme": "Jogos de tabuleiro trazidos por imigrantes",
+      "curriculumCode": "EF02H07",
+      "description": "Conhecer jogos de tabuleiro trazidos por diferentes grupos de imigrantes e experimentar um deles.",
+      "materials": [
+        "papelão",
+        "canetinha",
+        "peças ou tampinhas"
+      ],
+      "steps": [
+        "Contar que jogos como dama e xadrez chegaram ao Brasil com imigrantes europeus.",
+        "Mostrar as regras básicas do jogo de dama.",
+        "Ajudar a turma a montar um tabuleiro simples de dama em papelão.",
+        "Organizar duplas para jogar uma partida simplificada.",
+        "Pedir que cada dupla escreva o resultado da partida no caderno."
+      ]
+    },
+    {
+      "theme": "Brincadeira de roda dos imigrantes portugueses",
+      "curriculumCode": "EF02H07",
+      "description": "Conhecer cantigas de roda trazidas por imigrantes portugueses que ainda são cantadas no Brasil hoje.",
+      "materials": [],
+      "steps": [
+        "Contar que muitas cantigas de roda conhecidas no Brasil vieram de Portugal com os imigrantes.",
+        "Ensinar a letra de uma cantiga de roda de origem portuguesa.",
+        "Formar uma roda no pátio e cantar a cantiga brincando.",
+        "Conversar sobre se a turma já conhecia essa cantiga.",
+        "Pedir que cada aluno copie a cantiga no caderno."
+      ]
+    },
+    {
+      "theme": "Peão e bolinha de gude: herança dos imigrantes",
+      "curriculumCode": "EF02H07",
+      "description": "Investigar como brincadeiras de peão e bolinha de gude chegaram ao Brasil por meio de diferentes grupos de imigrantes.",
+      "materials": [
+        "pião",
+        "bolinhas de gude"
+      ],
+      "steps": [
+        "Contar que peão e bolinha de gude são brincadeiras trazidas por diferentes grupos de imigrantes europeus.",
+        "Organizar duas estações no pátio, uma de peão e outra de bolinha de gude.",
+        "Deixar a turma revezar entre as duas estações, experimentando as duas brincadeiras.",
+        "Perguntar qual das duas brincadeiras a turma mais gostou.",
+        "Pedir que cada aluno desenhe a brincadeira preferida e escreva seu nome."
+      ]
+    },
+    {
+      "theme": "Origami: brincadeira que veio do Japão",
+      "curriculumCode": "EF02H07",
+      "description": "Aprofundar o conhecimento sobre o origami como brincadeira e arte trazida pelos imigrantes japoneses.",
+      "materials": [
+        "papel quadrado"
+      ],
+      "steps": [
+        "Retomar com a turma o que já sabem sobre a origem japonesa do origami.",
+        "Ensinar uma dobradura um pouco mais desafiadora que a já feita antes, como um passarinho.",
+        "Acompanhar os alunos passo a passo na dobradura.",
+        "Organizar um varal na sala para pendurar as dobraduras feitas.",
+        "Pedir que cada aluno escreva uma frase contando se achou fácil ou difícil fazer a dobradura."
+      ]
+    },
+    {
+      "theme": "O que acontece quando não tem regra",
+      "curriculumCode": "EF02H08",
+      "description": "Experimentar uma brincadeira sem nenhuma regra combinada para perceber por que as regras são necessárias.",
+      "materials": [
+        "bola"
+      ],
+      "steps": [
+        "Propor à turma uma brincadeira com bola sem explicar nenhuma regra antes.",
+        "Deixar a turma tentar brincar por alguns minutos e observar o que acontece.",
+        "Parar a brincadeira e perguntar o que estava difícil ou confuso sem regras.",
+        "Combinar agora sim algumas regras simples e brincar novamente.",
+        "Pedir que cada aluno escreva a diferença entre brincar sem regra e brincar com regra."
+      ]
+    },
+    {
+      "theme": "Inventando as regras de um jogo novo",
+      "curriculumCode": "EF02H08",
+      "description": "Criar coletivamente um jogo novo e suas regras, entendendo como elas dão forma à brincadeira.",
+      "materials": [
+        "giz ou cordas para marcar o espaço"
+      ],
+      "steps": [
+        "Propor que a turma invente um jogo novo, ainda sem nome nem regras.",
+        "Em roda, decidir juntos como o jogo vai funcionar: quantos jogadores, o que vale ponto, como se ganha.",
+        "Testar o jogo inventado no pátio seguindo as regras combinadas.",
+        "Ajustar alguma regra que não funcionou bem durante o teste.",
+        "Pedir que cada aluno escreva o nome do jogo inventado e uma de suas regras."
+      ]
+    },
+    {
+      "theme": "Regras escritas: registrando um jogo da turma",
+      "curriculumCode": "EF02H08",
+      "description": "Praticar o registro escrito das regras de um jogo já conhecido pela turma.",
+      "materials": [
+        "papel",
+        "lápis"
+      ],
+      "steps": [
+        "Escolher com a turma um jogo que todos já conhecem bem.",
+        "Conversar sobre quais são as regras principais desse jogo.",
+        "Organizar a turma em duplas para escrever, com ajuda, as regras do jogo em um papel.",
+        "Ler algumas das regras escritas pelas duplas em voz alta.",
+        "Guardar os papéis com as regras em uma pasta da turma para consulta futura."
+      ]
+    },
+    {
+      "theme": "Jogo sem regra x jogo com regra",
+      "curriculumCode": "EF02H08",
+      "description": "Comparar diretamente uma rodada de jogo sem regras e uma rodada do mesmo jogo com regras combinadas.",
+      "materials": [],
+      "steps": [
+        "Escolher um jogo simples, como pega-pega, para a atividade.",
+        "Jogar uma primeira rodada sem combinar nenhuma regra específica.",
+        "Parar e combinar com a turma regras claras, como quem é o pegador e onde é a área segura.",
+        "Jogar uma segunda rodada já com as regras combinadas.",
+        "Pedir que cada aluno escreva qual das duas rodadas foi mais fácil de jogar e por quê."
+      ]
+    },
+    {
+      "theme": "Placar do jogo: para que servem os pontos e as regras",
+      "curriculumCode": "EF02H08",
+      "description": "Entender a função da pontuação como parte das regras de um jogo, criando um placar simples.",
+      "materials": [
+        "cartolina",
+        "canetinha"
+      ],
+      "steps": [
+        "Escolher um jogo com pontuação simples, como acertar um alvo.",
+        "Perguntar à turma por que os jogos costumam ter pontos.",
+        "Organizar o jogo no pátio, marcando os pontos de cada aluno em uma cartolina levada para fora.",
+        "Ao final, conferir juntos quem fez mais pontos.",
+        "Pedir que cada aluno registre no caderno sua pontuação final."
+      ]
+    },
+    {
+      "theme": "Regras que mudam o jogo",
+      "curriculumCode": "EF02H08",
+      "description": "Perceber como pequenas mudanças nas regras transformam completamente a experiência de um mesmo jogo.",
+      "materials": [
+        "bola"
+      ],
+      "steps": [
+        "Jogar uma rodada de um jogo simples com as regras usuais.",
+        "Propor uma mudança em uma regra, como jogar sem poder usar as mãos.",
+        "Jogar novamente com a regra alterada e observar o que mudou.",
+        "Conversar sobre como uma regra diferente muda o jeito de jogar.",
+        "Pedir que cada aluno escreva uma regra que gostaria de mudar em algum jogo e o que aconteceria."
+      ]
+    },
+    {
+      "theme": "Fiscal das regras: brincando de árbitro",
+      "curriculumCode": "EF02H08",
+      "description": "Vivenciar o papel de árbitro, responsável por observar se as regras combinadas de um jogo estão sendo seguidas.",
+      "materials": [
+        "apito (opcional)"
+      ],
+      "steps": [
+        "Explicar o que faz um árbitro ou fiscal em um jogo.",
+        "Combinar as regras de um jogo simples com a turma.",
+        "Escolher alunos, em revezamento, para serem os 'fiscais das regras' durante o jogo.",
+        "Jogar no pátio enquanto os fiscais observam se as regras estão sendo seguidas.",
+        "Pedir que cada aluno que foi fiscal escreva no caderno se alguma regra foi descumprida durante o jogo."
+      ]
+    },
+    {
+      "theme": "Combinado antes de brincar",
+      "curriculumCode": "EF02H09",
+      "description": "Praticar a construção de combinados antes de iniciar uma brincadeira, entendendo sua importância para o grupo.",
+      "materials": [],
+      "steps": [
+        "Perguntar à turma o que costuma dar errado quando ninguém combina nada antes de brincar.",
+        "Escolher uma brincadeira e, antes de começar, fazer uma roda de combinados sobre como ela vai acontecer.",
+        "Escrever os combinados na lousa.",
+        "Brincar seguindo os combinados definidos.",
+        "Pedir que cada aluno copie os combinados no caderno."
+      ]
+    },
+    {
+      "theme": "O que fazer quando alguém não respeita a regra",
+      "curriculumCode": "EF02H09",
+      "description": "Discutir situações de desrespeito às regras durante brincadeiras e pensar em soluções para esses conflitos.",
+      "materials": [],
+      "steps": [
+        "Contar uma situação, real ou inventada, em que alguém não respeitou a regra de um jogo.",
+        "Perguntar à turma como se sentiriam se isso acontecesse com eles.",
+        "Em roda, levantar possíveis soluções para quando alguém não respeita a regra.",
+        "Escolher, com a turma, a melhor solução para usar na escola.",
+        "Pedir que cada aluno escreva a solução escolhida pela turma no caderno."
+      ]
+    },
+    {
+      "theme": "Regras da escola e regras do jogo",
+      "curriculumCode": "EF02H09",
+      "description": "Comparar as regras combinadas de um jogo com as regras de convivência da escola, percebendo que ambas existem para o bem do grupo.",
+      "materials": [],
+      "steps": [
+        "Listar na lousa algumas regras da escola que a turma já conhece.",
+        "Listar também as regras de um jogo conhecido pela turma.",
+        "Comparar as duas listas, perguntando para que servem as regras em cada caso.",
+        "Conversar sobre como respeitar regras ajuda o grupo a conviver melhor.",
+        "Pedir que cada aluno escreva uma regra da escola e uma regra de jogo que considera importante."
+      ]
+    },
+    {
+      "theme": "Assembleia da turma: criando regras para o recreio",
+      "curriculumCode": "EF02H09",
+      "description": "Vivenciar uma pequena assembleia para que a turma combine e registre regras próprias para brincar no recreio.",
+      "materials": [],
+      "steps": [
+        "Explicar que a turma vai fazer uma assembleia para decidir regras do recreio.",
+        "Em roda, cada aluno pode sugerir uma regra para tornar o recreio mais gostoso para todos.",
+        "Votar com a turma quais regras sugeridas serão adotadas.",
+        "Escrever as regras escolhidas na lousa.",
+        "Pedir que cada aluno copie as regras combinadas para guardar no caderno."
+      ]
+    },
+    {
+      "theme": "Cartaz das regras combinadas",
+      "curriculumCode": "EF02H09",
+      "description": "Produzir um cartaz coletivo com as regras de convivência combinadas para os momentos de brincadeira na turma.",
+      "materials": [
+        "cartolina",
+        "canetinha"
+      ],
+      "steps": [
+        "Retomar com a turma as regras já combinadas em aulas anteriores para brincar.",
+        "Organizar a turma em grupos para desenhar cada regra combinada.",
+        "Colar os desenhos juntos formando um cartaz das regras da turma.",
+        "Pendurar o cartaz em um lugar visível da sala.",
+        "Pedir que cada aluno aponte, no cartaz, a regra que considera mais importante e escreva uma frase explicando por quê."
+      ]
+    },
+    {
+      "theme": "Brincando de mediar um conflito no jogo",
+      "curriculumCode": "EF02H09",
+      "description": "Simular pequenos conflitos que surgem durante jogos e praticar formas de resolvê-los respeitando as regras.",
+      "materials": [],
+      "steps": [
+        "Contar uma pequena cena de conflito durante um jogo, como uma discussão sobre quem venceu.",
+        "Dividir a turma em duplas para encenar essa situação.",
+        "Pedir que cada dupla pense em uma forma de resolver o conflito respeitando as regras combinadas.",
+        "Algumas duplas apresentam sua solução para a turma.",
+        "Pedir que cada aluno escreva no caderno uma forma de resolver um conflito no jogo sem brigar."
+      ]
+    },
+    {
+      "theme": "Jogo da vez: respeitando a ordem para brincar",
+      "curriculumCode": "EF02H09",
+      "description": "Vivenciar um jogo que exige esperar a vez, trabalhando o respeito à ordem como parte das regras.",
+      "materials": [
+        "jogo de tabuleiro simples ou boliche"
+      ],
+      "steps": [
+        "Escolher um jogo em que os alunos precisam esperar a vez para jogar.",
+        "Combinar com a turma como vai funcionar a ordem de participação.",
+        "Jogar respeitando a vez de cada um.",
+        "Conversar sobre como foi esperar a vez e se foi difícil para alguém.",
+        "Pedir que cada aluno escreva se conseguiu esperar sua vez e como se sentiu."
+      ]
+    },
+    {
+      "theme": "Entrevista com a avó ou avô: brincadeiras de criança",
+      "curriculumCode": "EF02H10",
+      "description": "Realizar uma pequena entrevista com avós ou pessoas mais velhas da família sobre as brincadeiras de infância delas.",
+      "materials": [
+        "roteiro de perguntas simples"
+      ],
+      "steps": [
+        "Construir com a turma um roteiro simples de perguntas para entrevistar um avô, avó ou pessoa mais velha da família.",
+        "Enviar o roteiro para casa para que os alunos façam a entrevista com ajuda da família.",
+        "Em roda, cada aluno conta o que descobriu na entrevista.",
+        "Anotar na lousa as brincadeiras mais citadas pelos entrevistados.",
+        "Pedir que cada aluno escreva no caderno o nome da brincadeira que a pessoa entrevistada contou."
+      ]
+    },
+    {
+      "theme": "Entrevista com os pais: como brincavam na infância",
+      "curriculumCode": "EF02H10",
+      "description": "Entrevistar pai, mãe ou responsável sobre suas brincadeiras de infância e comparar com as brincadeiras de hoje.",
+      "materials": [
+        "roteiro de perguntas simples"
+      ],
+      "steps": [
+        "Montar com a turma perguntas simples para entrevistar um responsável sobre a infância dele.",
+        "Pedir que os alunos façam a entrevista em casa.",
+        "Em roda, cada aluno compartilha uma brincadeira que descobriu na entrevista.",
+        "Comparar essas brincadeiras com as que a turma brinca hoje.",
+        "Pedir que cada aluno escreva uma frase comparando a brincadeira do responsável com uma brincadeira de hoje."
+      ]
+    },
+    {
+      "theme": "Álbum de brincadeiras da família",
+      "curriculumCode": "EF02H10",
+      "description": "Organizar em um pequeno álbum as brincadeiras pesquisadas com diferentes membros da família de cada aluno.",
+      "materials": [
+        "folhas de papel",
+        "lápis de cor",
+        "barbante ou grampeador"
+      ],
+      "steps": [
+        "Pedir que cada aluno pergunte em casa a brincadeira favorita de dois familiares diferentes.",
+        "Em sala, cada aluno desenha as duas brincadeiras descobertas, uma em cada folha.",
+        "Escrever embaixo de cada desenho o nome do familiar e da brincadeira.",
+        "Juntar as folhas de cada aluno formando um pequeno álbum pessoal.",
+        "Expor os álbuns para a turma consultar."
+      ]
+    },
+    {
+      "theme": "Linha do tempo das brincadeiras da minha família",
+      "curriculumCode": "EF02H10",
+      "description": "Construir uma linha do tempo simples com as brincadeiras de diferentes gerações da própria família.",
+      "materials": [
+        "papel longo ou várias folhas coladas",
+        "lápis de cor"
+      ],
+      "steps": [
+        "Pedir que os alunos descubram em casa uma brincadeira dos avós, uma dos pais e uma deles mesmos.",
+        "Em sala, desenhar uma linha no papel dividida em três momentos: avós, pais e hoje.",
+        "Cada aluno desenha, em cada parte da linha, a brincadeira correspondente.",
+        "Alguns alunos apresentam sua linha do tempo para a turma.",
+        "Guardar as linhas do tempo produzidas na pasta de trabalhos da turma."
+      ]
+    },
+    {
+      "theme": "Árvore genealógica das brincadeiras",
+      "curriculumCode": "EF02H10",
+      "description": "Montar uma árvore genealógica simples registrando a brincadeira favorita de cada geração da família.",
+      "materials": [
+        "papel",
+        "lápis de cor"
+      ],
+      "steps": [
+        "Explicar de forma simples o que é uma árvore genealógica, com avós, pais e o próprio aluno.",
+        "Ajudar a turma a desenhar uma árvore simples com esses três níveis.",
+        "Pedir que cada aluno escreva, ao lado de cada nome ou desenho de familiar, uma brincadeira que essa pessoa gostava.",
+        "Em roda, alguns alunos mostram sua árvore para a turma.",
+        "Guardar as árvores produzidas para o portfólio da turma."
+      ]
+    },
+    {
+      "theme": "Caça-brincadeiras: pesquisa com vizinhos e familiares",
+      "curriculumCode": "EF02H10",
+      "description": "Realizar uma pequena pesquisa de campo perguntando a vizinhos e familiares sobre brincadeiras antigas.",
+      "materials": [
+        "papel para anotações"
+      ],
+      "steps": [
+        "Combinar com a turma que cada aluno vai perguntar a pelo menos duas pessoas, familiares ou vizinhos, sobre uma brincadeira antiga.",
+        "Entregar um pequeno papel para anotar as respostas encontradas em casa.",
+        "Em sala, os alunos trazem as anotações e compartilham em roda o que descobriram.",
+        "Anotar na lousa todas as brincadeiras 'caçadas' pela turma.",
+        "Pedir que cada aluno copie a lista completa das brincadeiras encontradas pela turma no caderno."
+      ]
+    },
+    {
+      "theme": "Reportagem da turma: brincadeiras de antigamente",
+      "curriculumCode": "EF02H10",
+      "description": "Produzir uma pequena reportagem coletiva reunindo as descobertas da turma sobre brincadeiras antigas pesquisadas com a família.",
+      "materials": [
+        "cartolina",
+        "canetinha"
+      ],
+      "steps": [
+        "Retomar as pesquisas de brincadeiras antigas já feitas em casa pelos alunos.",
+        "Organizar a turma em grupos para escolher uma das brincadeiras pesquisadas para apresentar.",
+        "Cada grupo escreve um pequeno texto ou desenha contando sobre a brincadeira escolhida.",
+        "Montar os textos e desenhos em uma cartolina, como se fosse uma reportagem da turma.",
+        "Expor a 'reportagem' no mural da escola ou da sala."
+      ]
+    },
+    {
+      "theme": "Roda de entrevistas: convidando um familiar para contar uma brincadeira",
+      "curriculumCode": "EF02H10",
+      "description": "Convidar um familiar de algum aluno para ir à escola contar pessoalmente uma brincadeira de sua infância.",
+      "materials": [],
+      "steps": [
+        "Combinar com antecedência o convite a um familiar disponível para visitar a turma.",
+        "Preparar com a turma perguntas para fazer ao convidado sobre suas brincadeiras de infância.",
+        "Receber o convidado em roda e fazer as perguntas preparadas.",
+        "Se possível, experimentar no pátio a brincadeira ensinada pelo convidado.",
+        "Pedir que cada aluno escreva no caderno o nome da brincadeira ensinada pelo convidado."
+      ]
+    },
+    {
+      "theme": "Brincar com cadeira de rodas: é possível?",
+      "curriculumCode": "EF02H11",
+      "description": "Refletir sobre como adaptar brincadeiras para que uma criança que usa cadeira de rodas também possa participar.",
+      "materials": [],
+      "steps": [
+        "Perguntar à turma se conhecem alguém que usa cadeira de rodas ou outro tipo de apoio para se locomover.",
+        "Escolher uma brincadeira de correr conhecida pela turma e perguntar como ela poderia ser adaptada.",
+        "Propor coletivamente uma adaptação, como trocar a corrida por um jogo de lançar ou de mira.",
+        "Experimentar a versão adaptada da brincadeira no pátio.",
+        "Pedir que cada aluno escreva uma frase sobre a adaptação que a turma criou."
+      ]
+    },
+    {
+      "theme": "Adaptando um jogo para todo mundo brincar",
+      "curriculumCode": "EF02H11",
+      "description": "Praticar a adaptação de um jogo já conhecido para incluir colegas com diferentes necessidades.",
+      "materials": [
+        "bola macia"
+      ],
+      "steps": [
+        "Escolher um jogo conhecido pela turma que normalmente exige correr rápido ou enxergar bem.",
+        "Perguntar como esse jogo poderia mudar para incluir quem tem dificuldade de correr ou de enxergar.",
+        "Combinar com a turma uma versão adaptada do jogo.",
+        "Jogar a versão adaptada no pátio.",
+        "Pedir que cada aluno registre no caderno uma adaptação que ajudou o jogo a incluir mais gente."
+      ]
+    },
+    {
+      "theme": "Brincadeira que dá para brincar sentado",
+      "curriculumCode": "EF02H11",
+      "description": "Descobrir e experimentar brincadeiras que podem ser feitas sentado, pensando em quem tem dificuldade para ficar em pé ou correr.",
+      "materials": [
+        "bolinha de papel ou de meia"
+      ],
+      "steps": [
+        "Perguntar à turma se conhecem brincadeiras que dá para fazer sentado.",
+        "Listar essas brincadeiras na lousa.",
+        "Escolher uma para experimentar, como um jogo de passar a bolinha sentado em roda.",
+        "Brincar sentados em roda no pátio ou na sala.",
+        "Pedir que cada aluno desenhe a brincadeira feita sentado."
+      ]
+    },
+    {
+      "theme": "Brincadeiras sem falar: incluindo quem não ouve",
+      "curriculumCode": "EF02H11",
+      "description": "Experimentar brincar sem usar a fala, pensando em como incluir uma criança surda na brincadeira.",
+      "materials": [],
+      "steps": [
+        "Perguntar à turma como poderiam brincar sem falar nenhuma palavra.",
+        "Combinar uma brincadeira simples usando apenas gestos e sinais combinados.",
+        "Brincar no pátio seguindo apenas os gestos combinados.",
+        "Conversar sobre como foi se comunicar sem falar durante a brincadeira.",
+        "Pedir que cada aluno desenhe um gesto que usou durante a brincadeira e escreva o que ele significa."
+      ]
+    },
+    {
+      "theme": "Testando se todo mundo consegue brincar",
+      "curriculumCode": "EF02H11",
+      "description": "Avaliar coletivamente brincadeiras conhecidas pela turma, verificando se qualquer criança conseguiria participar delas.",
+      "materials": [],
+      "steps": [
+        "Listar na lousa três ou quatro brincadeiras já conhecidas pela turma.",
+        "Para cada uma, perguntar se uma criança com alguma dificuldade de locomoção, visão ou audição conseguiria participar.",
+        "Marcar com a turma quais brincadeiras já são bem inclusivas e quais precisariam de adaptação.",
+        "Escolher uma brincadeira para pensar juntos em uma adaptação.",
+        "Pedir que cada aluno escreva no caderno qual brincadeira precisa de mais adaptação e por quê."
+      ]
+    },
+    {
+      "theme": "Brincadeira boa para poucos e para muitos",
+      "curriculumCode": "EF02H11",
+      "description": "Investigar quais brincadeiras funcionam bem com poucos participantes e quais precisam de muita gente, pensando na inclusão de todos.",
+      "materials": [],
+      "steps": [
+        "Perguntar à turma quantas pessoas são necessárias para diferentes brincadeiras conhecidas.",
+        "Organizar na lousa uma lista separando brincadeiras 'de poucos' e 'de muitos'.",
+        "Conversar sobre o que fazer quando poucas crianças querem brincar de um jogo feito para muita gente.",
+        "Propor uma adaptação de uma brincadeira de muita gente para funcionar com poucos alunos.",
+        "Pedir que cada aluno escreva a adaptação combinada pela turma."
+      ]
+    },
+    {
+      "theme": "Espaço pequeno, espaço grande: onde dá para brincar",
+      "curriculumCode": "EF02H11",
+      "description": "Analisar quais brincadeiras podem ser feitas em espaços pequenos, pensando em incluir quem não tem acesso a espaços grandes.",
+      "materials": [],
+      "steps": [
+        "Perguntar à turma quais brincadeiras precisam de um espaço grande e quais cabem em um espaço pequeno.",
+        "Organizar as brincadeiras citadas em duas listas na lousa.",
+        "Escolher uma brincadeira de espaço grande e propor uma versão para espaço pequeno.",
+        "Testar essa versão adaptada dentro da sala de aula.",
+        "Pedir que cada aluno desenhe a versão da brincadeira adaptada para espaço pequeno."
+      ]
+    },
+    {
+      "theme": "Mapa de brincadeiras do mundo",
+      "curriculumCode": "EF02H12",
+      "description": "Construir um mapa simples relacionando brincadeiras já estudadas a diferentes lugares e culturas.",
+      "materials": [
+        "cartolina ou papel grande",
+        "canetinha"
+      ],
+      "steps": [
+        "Retomar com a turma brincadeiras de diferentes origens já conhecidas nas aulas anteriores.",
+        "Desenhar um mapa simples do mundo ou do Brasil em uma cartolina.",
+        "Pedir que os alunos colem ou desenhem, em cada região do mapa, uma brincadeira relacionada.",
+        "Conversar sobre a diversidade de brincadeiras representadas no mapa.",
+        "Pendurar o mapa na sala para consulta da turma."
+      ]
+    },
+    {
+      "theme": "Mural da diversidade de brincadeiras",
+      "curriculumCode": "EF02H12",
+      "description": "Produzir um mural coletivo que reúna brincadeiras de diferentes povos e culturas estudadas pela turma.",
+      "materials": [
+        "papel kraft ou cartolina grande",
+        "lápis de cor"
+      ],
+      "steps": [
+        "Relembrar com a turma as brincadeiras de diferentes povos e culturas já estudadas.",
+        "Dividir a turma em grupos, cada um responsável por desenhar uma brincadeira diferente.",
+        "Montar todos os desenhos juntos em um mural na sala.",
+        "Cada grupo apresenta brevemente a brincadeira que desenhou.",
+        "Deixar o mural exposto como registro da diversidade estudada pela turma."
+      ]
+    },
+    {
+      "theme": "Brincadeira de um jeito, brincadeira de outro jeito",
+      "curriculumCode": "EF02H12",
+      "description": "Comparar como uma mesma brincadeira pode ser jogada de formas diferentes em culturas diferentes, valorizando cada versão.",
+      "materials": [],
+      "steps": [
+        "Escolher uma brincadeira já estudada que tenha versões diferentes em culturas diferentes.",
+        "Apresentar as duas versões para a turma.",
+        "Experimentar as duas formas de brincar no pátio.",
+        "Conversar sobre qual versão cada aluno preferiu e por quê, sem dizer que uma é melhor que a outra.",
+        "Pedir que cada aluno escreva as duas versões da brincadeira no caderno."
+      ]
+    },
+    {
+      "theme": "Nosso jogo inventado com pedacinhos de cada cultura",
+      "curriculumCode": "EF02H12",
+      "description": "Criar coletivamente um jogo novo que misture elementos de diferentes brincadeiras estudadas ao longo do ano.",
+      "materials": [
+        "giz",
+        "bola ou peteca"
+      ],
+      "steps": [
+        "Retomar com a turma várias brincadeiras diferentes já estudadas.",
+        "Escolher, com a turma, um elemento de cada brincadeira para juntar em um jogo novo.",
+        "Combinar as regras desse novo jogo misturado.",
+        "Testar o jogo inventado no pátio.",
+        "Pedir que cada aluno escreva o nome do novo jogo e de quais brincadeiras ele foi inspirado."
+      ]
+    },
+    {
+      "theme": "Feira de brincadeiras do mundo",
+      "curriculumCode": "EF02H12",
+      "description": "Organizar uma pequena feira em sala com estações de brincadeiras de diferentes culturas para a turma experimentar.",
+      "materials": [
+        "materiais variados conforme as brincadeiras escolhidas"
+      ],
+      "steps": [
+        "Escolher com a turma quatro brincadeiras de culturas diferentes já estudadas.",
+        "Organizar quatro estações na sala ou no pátio, uma para cada brincadeira.",
+        "Dividir a turma em grupos que revezam entre as estações.",
+        "Ao final, reunir a turma em roda para comentar as brincadeiras experimentadas.",
+        "Pedir que cada aluno escreva qual estação mais gostou e de que cultura era a brincadeira."
+      ]
+    },
+    {
+      "theme": "Livro coletivo: brincadeiras de todo lugar",
+      "curriculumCode": "EF02H12",
+      "description": "Produzir coletivamente um pequeno livro reunindo brincadeiras de diferentes culturas estudadas durante o ano.",
+      "materials": [
+        "folhas de papel",
+        "grampeador ou barbante",
+        "lápis de cor"
+      ],
+      "steps": [
+        "Relembrar com a turma as brincadeiras de diferentes culturas já estudadas ao longo do ano.",
+        "Dividir as brincadeiras entre os alunos, cada um responsável por uma página.",
+        "Cada aluno desenha e escreve na sua página o nome da brincadeira e de onde ela vem.",
+        "Juntar todas as páginas formando o livro coletivo da turma.",
+        "Deixar o livro disponível na sala para leitura de todos."
+      ]
+    },
+    {
+      "theme": "Roda das diferenças: cada brincadeira conta uma história",
+      "curriculumCode": "EF02H12",
+      "description": "Encerrar o estudo da diversidade de jogos e brincadeiras com uma roda de conversa que valoriza o que cada brincadeira ensina sobre uma cultura.",
+      "materials": [],
+      "steps": [
+        "Retomar em roda as diferentes brincadeiras de culturas variadas estudadas pela turma.",
+        "Perguntar a cada aluno o que aprendeu sobre uma cultura por meio de uma brincadeira.",
+        "Anotar na lousa as descobertas mais interessantes citadas pela turma.",
+        "Conversar sobre como conhecer brincadeiras diferentes ajuda a respeitar as diferenças entre as pessoas.",
+        "Pedir que cada aluno escreva uma frase sobre o que aprendeu com a diversidade de brincadeiras estudadas."
       ]
     }
   ]

@@ -40,6 +40,10 @@ type Props = {
   /** true na página pública de compartilhamento: sem gerar, editar ou compartilhar de novo —
    * só visualizar e exportar PDF. */
   readOnly?: boolean;
+  /** Desempata atividade/lição de casa quando o mesmo tema existe em mais de um ano (ver
+   * ActivityEntry.gradeYear). Ausente na página pública de compartilhamento, que hoje não
+   * guarda o ano — nesse caso cai no primeiro resultado encontrado, como antes. */
+  gradeYear?: string;
 };
 
 function colorKeyFor(cell: WeekCell): ColorKey {
@@ -58,6 +62,7 @@ export function WeekGrid({
   onShare,
   shareLoading = false,
   readOnly = false,
+  gradeYear,
 }: Props) {
   const [detailKey, setDetailKey] = useState<{ day: Weekday; slot: SlotNumber } | null>(null);
   const detailCell = detailKey ? week.days[detailKey.day][detailKey.slot] : null;
@@ -204,6 +209,7 @@ export function WeekGrid({
           subjectKey={detailCell.kind === "leitura-diaria" ? "leitura-diaria" : detailCell.subject}
           plan={detailCell.plan}
           isReading={detailCell.kind === "leitura-diaria"}
+          gradeYear={gradeYear}
           onChange={(plan) => onCellChange?.(detailKey.day, detailKey.slot, { ...detailCell, plan })}
           onGenerate={(keyword) => onGenerateCell?.(detailKey.day, detailKey.slot, keyword)}
           onClose={() => setDetailKey(null)}

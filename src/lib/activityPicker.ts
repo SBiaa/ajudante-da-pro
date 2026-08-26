@@ -7,8 +7,14 @@ import { ACTIVITY_BANK } from "@/data/activityBank";
  * banco de temas). Retorna null se a matéria ainda não tem atividades no banco, ou se o
  * tema foi editado manualmente e não bate mais com nenhuma entrada.
  */
-export function findActivity(subjectKey: OwnSubject | "leitura-diaria", theme: string): ActivityEntry | null {
+export function findActivity(
+  subjectKey: OwnSubject | "leitura-diaria",
+  theme: string,
+  gradeYear?: string
+): ActivityEntry | null {
   if (!theme) return null;
   const list = ACTIVITY_BANK[subjectKey];
-  return list.find((entry) => entry.theme === theme) ?? null;
+  const matches = list.filter((entry) => entry.theme === theme);
+  if (matches.length <= 1) return matches[0] ?? null;
+  return matches.find((entry) => entry.gradeYear === gradeYear) ?? matches[0];
 }

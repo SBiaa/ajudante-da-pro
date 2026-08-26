@@ -23,6 +23,7 @@ function normalizePlan(plan: Partial<GeneratedLessonPlan>): GeneratedLessonPlan 
     description: plan.description ?? "",
     materials: plan.materials ?? [],
     steps: plan.steps ?? [],
+    classScript: plan.classScript ?? [],
     readingText: plan.readingText ?? "",
     genre: plan.genre ?? "",
     generatedAt: plan.generatedAt ?? null,

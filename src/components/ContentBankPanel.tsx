@@ -76,6 +76,7 @@ function buildRows(network: Network, gradeYear: string): Row[] {
           description: entry.description,
           materials: entry.materials,
           steps: entry.steps,
+          classScript: entry.classScript ?? [],
           readingText: "",
           genre: "",
           generatedAt: null,
@@ -95,6 +96,7 @@ function buildRows(network: Network, gradeYear: string): Row[] {
         description: entry.description,
         materials: [],
         steps: entry.steps,
+        classScript: [],
         readingText: entry.text,
         genre: entry.genre,
         generatedAt: null,
@@ -236,6 +238,7 @@ export function ContentBankPanel({ colorOverrides, network, gradeYear, onClose }
           subjectKey={selected.subjectKey}
           plan={selected.plan}
           isReading={selected.subjectKey === "leitura-diaria"}
+          gradeYear={gradeYear}
           onClose={() => setSelected(null)}
           readOnly
         />

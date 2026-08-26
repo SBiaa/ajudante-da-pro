@@ -24,6 +24,8 @@ type Props = {
   onClose: () => void;
   /** true na página pública de compartilhamento: some a busca/sorteio e o botão "Editar". */
   readOnly?: boolean;
+  /** Desempata atividade/lição de casa quando o mesmo tema existe em mais de um ano. */
+  gradeYear?: string;
 };
 
 function linesToArray(text: string): string[] {
@@ -47,6 +49,7 @@ export function LessonDetailModal({
   onGenerate,
   onClose,
   readOnly = false,
+  gradeYear,
 }: Props) {
   const [editing, setEditing] = useState(false);
   const [showActivity, setShowActivity] = useState(false);
@@ -54,8 +57,8 @@ export function LessonDetailModal({
   const [showPresentation, setShowPresentation] = useState(false);
   const [keyword, setKeyword] = useState("");
   const [pendingRegenerate, setPendingRegenerate] = useState(false);
-  const activity = findActivity(subjectKey, plan.theme);
-  const homework = findHomework(subjectKey, plan.theme);
+  const activity = findActivity(subjectKey, plan.theme, gradeYear);
+  const homework = findHomework(subjectKey, plan.theme, gradeYear);
 
   useEffect(() => {
     function handleKey(e: KeyboardEvent) {
@@ -200,6 +203,19 @@ export function LessonDetailModal({
               />
             </div>
 
+            <div>
+              <div className="text-xs font-medium text-[var(--text-muted)] mb-1">
+                Roteiro detalhado da aula (um por linha, pra guiar você em sala — não vai pro SGP)
+              </div>
+              <textarea
+                value={plan.classScript.join("\n")}
+                onChange={(e) => onChange?.({ ...plan, classScript: linesToArray(e.target.value), editedManually: true })}
+                placeholder="Ainda sem roteiro detalhado"
+                rows={8}
+                className={fieldClass}
+              />
+            </div>
+
             <div className="flex justify-end">
               <button
                 type="button"
@@ -284,6 +300,30 @@ export function LessonDetailModal({
                         {i + 1}
                       </span>
                       <span>{step}</span>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            )}
+
+            {plan.classScript.length > 0 && (
+              <div className="rounded-[var(--radius-md)] bg-[var(--surface-subtle)] p-4 sm:p-5">
+                <div className="flex items-center justify-between mb-3 gap-2">
+                  <div className="text-[11px] font-medium uppercase tracking-[0.22em] text-[var(--text-muted)]">
+                    Plano de aula completo — roteiro pra sala
+                  </div>
+                  <CopyButton text={plan.classScript.join("\n\n")} label="Copiar roteiro" />
+                </div>
+                <ol className="space-y-3">
+                  {plan.classScript.map((line, i) => (
+                    <li key={i} className="flex gap-3 text-[15px] leading-[1.55] text-[var(--text-body)]">
+                      <span
+                        style={{ background: color.bg, color: color.text }}
+                        className="flex-none w-5 h-5 rounded-full text-xs font-medium flex items-center justify-center"
+                      >
+                        {i + 1}
+                      </span>
+                      <span>{line}</span>
                     </li>
                   ))}
                 </ol>

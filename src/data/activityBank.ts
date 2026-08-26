@@ -1827,6 +1827,7 @@ export const ACTIVITY_BANK: Record<OwnSubject | "leitura-diaria", ActivityEntry[
     },
     {
       theme: "Compondo e decompondo números",
+      gradeYear: "2-ano",
       exercises: [
         {
           kind: "fill-blank",
@@ -2320,6 +2321,7 @@ export const ACTIVITY_BANK: Record<OwnSubject | "leitura-diaria", ActivityEntry[
     },
     {
       theme: "Lendo tabelas e gráficos de barras",
+      gradeYear: "2-ano",
       exercises: [
         {
           kind: "lines",
@@ -3081,6 +3083,341 @@ export const ACTIVITY_BANK: Record<OwnSubject | "leitura-diaria", ActivityEntry[
         },
       ],
     },
+    {
+      theme: "Lendo, escrevendo e comparando números naturais",
+      exercises: [
+        { kind: "fill-blank", instruction: "Escreva por extenso os números:", items: ["234 = ___", "509 = ___", "687 = ___", "912 = ___"] },
+        { kind: "fill-blank", instruction: "Compare os números usando os sinais > (maior), < (menor) ou = (igual):", items: ["356 ___ 365", "480 ___ 480", "721 ___ 712", "199 ___ 201"] },
+        { kind: "options", instruction: "Qual é o maior número da lista?", options: ["345", "354", "453", "435"] },
+        { kind: "lines", instruction: "Escreva em ordem crescente os números: 482, 248, 824, 428.", lines: 1 },
+      ],
+    },
+    {
+      theme: "Compondo e decompondo números",
+      gradeYear: "3-ano",
+      exercises: [
+        { kind: "fill-blank", instruction: "Decomponha os números em centenas, dezenas e unidades:", items: ["347 = ___C + ___D + ___U", "506 = ___C + ___D + ___U", "829 = ___C + ___D + ___U"] },
+        { kind: "fill-blank", instruction: "Complete a composição:", items: ["4C + 2D + 6U = ___", "7C + 0D + 3U = ___", "2C + 9D + 1U = ___"] },
+        { kind: "options", instruction: "O número 632 é formado por:", options: ["6 centenas, 3 dezenas e 2 unidades", "6 dezenas, 3 centenas e 2 unidades", "6 unidades, 3 dezenas e 2 centenas"] },
+        { kind: "lines", instruction: "Escreva um número de 3 algarismos e decomponha-o em centenas, dezenas e unidades:", lines: 2 },
+      ],
+    },
+    {
+      theme: "Contagem oral em ordem crescente e decrescente",
+      exercises: [
+        { kind: "fill-blank", instruction: "Complete a sequência em ordem crescente, contando de 1 em 1:", items: ["58, 59, ___, ___, 62", "97, 98, ___, ___, 101"] },
+        { kind: "fill-blank", instruction: "Complete a sequência em ordem decrescente, contando de 1 em 1:", items: ["45, 44, ___, ___, 41", "20, 19, ___, ___, 16"] },
+        { kind: "lines", instruction: "Comece em 30 e conte de 2 em 2 até 40, escrevendo todos os números:", lines: 1 },
+        { kind: "options", instruction: "Contando de trás para frente a partir de 10, qual número vem depois do 6?", options: ["7", "5", "4"] },
+      ],
+    },
+    {
+      theme: "Comparando números: maior, menor, dobro e metade",
+      exercises: [
+        { kind: "fill-blank", instruction: "Calcule o dobro e a metade de cada número:", items: ["Dobro de 12 = ___ / Metade de 12 = ___", "Dobro de 25 = ___ / Metade de 24 = ___", "Dobro de 40 = ___ / Metade de 40 = ___"] },
+        { kind: "fill-blank", instruction: "Complete com > (maior que), < (menor que) ou entre:", items: ["18 ___ 15", "9 está ___ 5 e 12", "30 ___ 45"] },
+        { kind: "options", instruction: "O triplo de 6 é:", options: ["12", "18", "9"] },
+        { kind: "lines", instruction: "Se uma caixa tem 9 lápis, quantos lápis tem o dobro dessa caixa e quantos tem a metade?", lines: 2 },
+      ],
+    },
+    {
+      theme: "Números na reta numérica",
+      exercises: [
+        { kind: "draw", instruction: "Desenhe uma reta numérica de 0 a 20 e marque os números 4, 11 e 17:" },
+        { kind: "fill-blank", instruction: "Observando uma reta numérica de 0 a 10, complete os números que faltam entre as marcações:", items: ["0, 1, ___, 3, ___, 5", "5, ___, 7, ___, 9, 10"] },
+        { kind: "options", instruction: "Numa reta numérica, o número 8 fica localizado:", options: ["Entre o 7 e o 9", "Entre o 9 e o 10", "Antes do 6"] },
+        { kind: "lines", instruction: "Qual número está exatamente na metade do caminho entre 10 e 20 numa reta numérica?", lines: 1 },
+      ],
+    },
+    {
+      theme: "Calculando adições e subtrações com estratégias próprias",
+      exercises: [
+        { kind: "fill-blank", instruction: "Resolva usando a estratégia que preferir (cálculo mental, decomposição ou desenho):", items: ["34 + 25 = ___", "58 - 23 = ___", "47 + 36 = ___", "90 - 47 = ___"] },
+        { kind: "lines", instruction: "Explique, com suas palavras, como você calculou 68 + 15 sem usar conta armada:", lines: 3 },
+        { kind: "options", instruction: "Uma boa estimativa para 39 + 41 é aproximadamente:", options: ["80", "60", "100"] },
+        { kind: "fill-blank", instruction: "Complete decompondo as dezenas e unidades: 45 + 32 = 40 + 5 + 30 + 2 = ___", items: ["___"] },
+      ],
+    },
+    {
+      theme: "Resolvendo problemas de juntar, separar e comparar",
+      exercises: [
+        { kind: "lines", instruction: "Ana tinha 24 figurinhas e ganhou mais 15. Com quantas figurinhas ela ficou? Mostre o cálculo:", lines: 2 },
+        { kind: "lines", instruction: "Pedro tinha 50 balas e deu 18 para os amigos. Quantas balas sobraram? Mostre o cálculo:", lines: 2 },
+        { kind: "lines", instruction: "Marcos tem 32 carrinhos e Bruna tem 19. Quantos carrinhos a mais Marcos tem do que Bruna?", lines: 2 },
+        { kind: "options", instruction: "Quando comparamos duas quantidades para saber a diferença entre elas, usamos:", options: ["Subtração", "Multiplicação", "Nenhuma operação"] },
+      ],
+    },
+    {
+      theme: "Adição e subtração com reserva e recurso (conta armada)",
+      exercises: [
+        { kind: "fill-blank", instruction: "Resolva as adições em conta armada, usando reserva quando necessário:", items: ["48 + 37 = ___", "156 + 268 = ___", "329 + 194 = ___"] },
+        { kind: "fill-blank", instruction: "Resolva as subtrações em conta armada, usando recurso quando necessário:", items: ["82 - 45 = ___", "300 - 127 = ___", "521 - 236 = ___"] },
+        { kind: "lines", instruction: "Explique quando é preciso 'pedir emprestado' (recurso) numa subtração:", lines: 2 },
+        { kind: "options", instruction: "Na conta 65 + 28, ao somar as unidades (5 + 8 = 13), o que fazemos?", options: ["Escrevemos 3 e reservamos 1 dezena", "Escrevemos 13 inteiro", "Ignoramos o 1"] },
+      ],
+    },
+    {
+      theme: "Fatos básicos da multiplicação por 2, 3, 4 e 5",
+      exercises: [
+        { kind: "fill-blank", instruction: "Complete as multiplicações:", items: ["2 x 6 = ___", "3 x 7 = ___", "4 x 5 = ___", "5 x 8 = ___", "3 x 9 = ___"] },
+        { kind: "fill-blank", instruction: "Complete as divisões relacionadas:", items: ["10 : 2 = ___", "15 : 3 = ___", "20 : 4 = ___", "25 : 5 = ___"] },
+        { kind: "word-select", instruction: "Circule os resultados da tabuada do 4:", items: ["12", "18", "16", "20", "9", "24"] },
+        { kind: "options", instruction: "Quanto é 5 x 6?", options: ["30", "25", "35"] },
+      ],
+    },
+    {
+      theme: "Problemas de multiplicação: proporcionalidade e arranjo retangular",
+      exercises: [
+        { kind: "lines", instruction: "Cada caixa tem 4 ovos. Quantos ovos há em 6 caixas? Mostre o cálculo:", lines: 2 },
+        { kind: "draw", instruction: "Desenhe um arranjo retangular de 3 linhas por 5 colunas de bolinhas e escreva a multiplicação que ele representa:" },
+        { kind: "lines", instruction: "Uma sala tem as cadeiras organizadas em 4 fileiras com 5 cadeiras cada. Quantas cadeiras há ao todo?", lines: 2 },
+        { kind: "options", instruction: "Se cada criança ganha 3 balões e há 7 crianças, quantos balões são necessários?", options: ["21", "18", "24"] },
+      ],
+    },
+    {
+      theme: "Usando os sinais das operações matemáticas",
+      exercises: [
+        { kind: "fill-blank", instruction: "Complete com o sinal correto (+, -, x, : ou =):", items: ["8 ___ 3 = 11", "20 ___ 4 = 5", "6 ___ 5 = 30", "15 ___ 6 = 9"] },
+        { kind: "word-select", instruction: "Circule os sinais usados na multiplicação e na divisão:", items: ["+", "-", "x", ":", "="] },
+        { kind: "lines", instruction: "Escreva uma sentença matemática usando o sinal de igualdade (=) que represente 7 + 8:", lines: 1 },
+        { kind: "options", instruction: "Qual sinal indica que dois valores são iguais?", options: ["=", "+", ":"] },
+      ],
+    },
+    {
+      theme: "Regularidades em sequências numéricas",
+      exercises: [
+        { kind: "fill-blank", instruction: "Complete as sequências, descobrindo a regularidade:", items: ["5, 10, 15, ___, ___, 30", "100, 90, 80, ___, ___, 50", "3, 6, 9, ___, ___, 18"] },
+        { kind: "lines", instruction: "Na sequência 4, 8, 12, 16..., qual é a regra usada para passar de um número ao próximo?", lines: 1 },
+        { kind: "options", instruction: "Na sequência 50, 45, 40, 35..., qual é o próximo número?", options: ["30", "25", "32"] },
+        { kind: "lines", instruction: "Crie sua própria sequência somando sempre 3, começando do número 2:", lines: 1 },
+      ],
+    },
+    {
+      theme: "Descobrindo padrões em sequências",
+      exercises: [
+        { kind: "fill-blank", instruction: "Descubra o padrão e complete os números que faltam:", items: ["2, 4, 6, ___, 10, ___", "1, 3, 5, 7, ___, ___"] },
+        { kind: "draw", instruction: "Observe o padrão de figuras: estrela, círculo, círculo, estrela, círculo, círculo... Desenhe as próximas 3 figuras da sequência:" },
+        { kind: "lines", instruction: "Explique qual é o padrão da sequência 1, 4, 7, 10, 13...", lines: 2 },
+        { kind: "options", instruction: "Na sequência de figuras quadrado, triângulo, quadrado, triângulo..., a 7ª figura será:", options: ["Quadrado", "Triângulo", "Círculo"] },
+      ],
+    },
+    {
+      theme: "A ideia de igualdade em sentenças matemáticas",
+      exercises: [
+        { kind: "fill-blank", instruction: "Complete para que as sentenças fiquem corretas (iguais dos dois lados):", items: ["6 + 4 = ___ + 2", "15 - 5 = 20 - ___", "8 + 3 = ___ - 1"] },
+        { kind: "lines", instruction: "Escreva duas sentenças de adição diferentes que tenham o resultado 10:", lines: 2 },
+        { kind: "lines", instruction: "Escreva duas sentenças de subtração diferentes que tenham o resultado 5:", lines: 2 },
+        { kind: "options", instruction: "A sentença 9 + 1 = 12 - 2 está correta porque:", options: ["Os dois lados resultam em 10", "Os dois lados resultam em 11", "Os dois lados são diferentes"] },
+      ],
+    },
+    {
+      theme: "Localizando objetos no espaço com maquetes e croquis",
+      exercises: [
+        { kind: "draw", instruction: "Desenhe um croqui simples da sua sala de aula, indicando onde fica a porta, a lousa e a sua carteira:" },
+        { kind: "lines", instruction: "Observando uma maquete de um bairro, descreva onde fica a escola em relação à praça (na frente, atrás, ao lado):", lines: 2 },
+        { kind: "options", instruction: "Um ponto de referência serve para:", options: ["Ajudar a localizar um objeto no espaço", "Colorir o desenho", "Contar os objetos"] },
+        { kind: "fill-blank", instruction: "Complete usando pontos de referência (perto de, longe de, ao lado de, em frente a):", items: ["A biblioteca fica ___ da secretaria.", "O parquinho fica ___ do portão."] },
+      ],
+    },
+    {
+      theme: "Descrevendo a movimentação de objetos no espaço",
+      exercises: [
+        { kind: "draw", instruction: "Desenhe um croqui simples mostrando o caminho de casa até a escola, com o início e o fim marcados:" },
+        { kind: "lines", instruction: "Descreva o trajeto que um robô deve fazer para ir da porta até a mesa do professor, usando as palavras direita, esquerda, para frente:", lines: 3 },
+        { kind: "options", instruction: "Se você está de frente para a lousa e vira para o lado onde fica sua mão que escreve, você virou para:", options: ["A direita (se for destro)", "Para trás", "Para cima"] },
+        { kind: "fill-blank", instruction: "Complete indicando a direção do movimento:", items: ["O carrinho andou 3 passos para ___.", "A formiga subiu e depois desceu, ou seja, ela se moveu para ___ e para ___."] },
+      ],
+    },
+    {
+      theme: "Elementos das figuras geométricas planas e espaciais",
+      exercises: [
+        { kind: "fill-blank", instruction: "Complete com o número de lados e vértices de cada figura plana:", items: ["Triângulo: ___ lados e ___ vértices", "Quadrado: ___ lados e ___ vértices", "Pentágono: ___ lados e ___ vértices"] },
+        { kind: "fill-blank", instruction: "Complete com o nome dos elementos das figuras espaciais:", items: ["O cubo tem faces, vértices e ___.", "A pirâmide tem uma base e faces em formato de ___."] },
+        { kind: "word-select", instruction: "Circule os elementos que uma figura geométrica espacial pode ter:", items: ["Face", "Aresta", "Vértice", "Cor", "Cheiro"] },
+        { kind: "draw", instruction: "Desenhe um triângulo e marque seus 3 lados e seus 3 vértices:" },
+      ],
+    },
+    {
+      theme: "Comparando figuras planas e espaciais",
+      exercises: [
+        { kind: "fill-blank", instruction: "Relacione cada figura espacial com a figura plana parecida com ela:", items: ["Cubo se parece com ___", "Bloco retangular se parece com ___", "Esfera se parece com ___", "Pirâmide se parece com ___"] },
+        { kind: "options", instruction: "Qual figura plana está relacionada ao cone e ao cilindro?", options: ["Círculo", "Quadrado", "Triângulo"] },
+        { kind: "word-select", instruction: "Circule as figuras que são planas (não espaciais):", items: ["Círculo", "Cubo", "Triângulo", "Esfera", "Retângulo"] },
+        { kind: "draw", instruction: "Desenhe um objeto do dia a dia que lembre uma esfera e outro que lembre um bloco retangular:" },
+      ],
+    },
+    {
+      theme: "Planificações de figuras espaciais",
+      exercises: [
+        { kind: "lines", instruction: "Explique com suas palavras o que é a planificação de uma figura espacial:", lines: 2 },
+        { kind: "options", instruction: "A planificação do cubo é formada por:", options: ["6 quadrados", "4 triângulos", "2 círculos"] },
+        { kind: "fill-blank", instruction: "Relacione a figura espacial com sua planificação:", items: ["Cone: um círculo e um ___", "Cilindro: dois círculos e um ___", "Pirâmide: um quadrado (base) e triângulos nas ___"] },
+        { kind: "draw", instruction: "Desenhe a planificação (o molde aberto) de uma caixa em formato de bloco retangular:" },
+      ],
+    },
+    {
+      theme: "Explorando pirâmides, cubos, cones, cilindros e esferas",
+      exercises: [
+        { kind: "word-select", instruction: "Circule os nomes das figuras geométricas espaciais:", items: ["Cubo", "Círculo", "Cone", "Triângulo", "Esfera", "Cilindro"] },
+        { kind: "fill-blank", instruction: "Complete com o nome do objeto do cotidiano parecido com cada figura espacial:", items: ["Cubo: ___", "Cilindro: ___", "Esfera: ___", "Cone: ___"] },
+        { kind: "options", instruction: "Qual figura espacial não possui vértices?", options: ["Esfera", "Cubo", "Pirâmide"] },
+        { kind: "lines", instruction: "Escolha uma figura espacial (cubo, cone, cilindro, esfera ou pirâmide) e descreva suas características:", lines: 3 },
+      ],
+    },
+    {
+      theme: "O que é mais provável? Explorando o acaso",
+      exercises: [
+        { kind: "lines", instruction: "Numa caixa há 8 bolinhas azuis e 2 bolinhas vermelhas. É mais provável tirar uma bolinha azul ou vermelha sem olhar? Explique.", lines: 2 },
+        { kind: "options", instruction: "Ao jogar um dado comum (de 1 a 6), qual é a chance de cair no número 7?", options: ["Impossível", "Certo", "Provável"] },
+        { kind: "options", instruction: "Se uma moeda é jogada para cima, qual evento é mais provável?", options: ["Dar cara ou dar coroa têm a mesma chance", "Sempre dar cara", "Sempre dar coroa"] },
+        { kind: "lines", instruction: "Cite um evento do dia a dia que seja pouco provável de acontecer:", lines: 1 },
+      ],
+    },
+    {
+      theme: "Lendo tabelas e gráficos de barras",
+      gradeYear: "3-ano",
+      exercises: [
+        { kind: "lines", instruction: "Observe um gráfico de barras sobre o esporte preferido da turma. Qual barra representa o esporte mais votado?", lines: 1 },
+        { kind: "options", instruction: "O título de um gráfico serve para indicar:", options: ["O assunto que o gráfico representa", "A cor das barras", "O nome da escola"] },
+        { kind: "fill-blank", instruction: "Em um gráfico de barras, futebol recebeu 12 votos e vôlei recebeu 7 votos. A diferença entre eles é de ___ votos.", items: ["___"] },
+        { kind: "draw", instruction: "Desenhe um gráfico de barras simples mostrando: 6 alunos preferem suco, 4 preferem água e 3 preferem chá:" },
+      ],
+    },
+    {
+      theme: "Fazendo pesquisa e organizando dados em tabelas",
+      exercises: [
+        { kind: "lines", instruction: "Pergunte a 10 colegas qual é a cor preferida deles e anote os resultados aqui:", lines: 4 },
+        { kind: "draw", instruction: "Organize os dados que você coletou em uma tabela simples com duas colunas: cor e número de votos:" },
+        { kind: "options", instruction: "Depois de coletar os dados de uma pesquisa, o próximo passo é:", options: ["Organizar e classificar os dados em uma tabela", "Jogar os dados fora", "Contar apenas os primeiros"] },
+        { kind: "lines", instruction: "Com base na sua tabela, qual foi a cor mais votada pela turma?", lines: 1 },
+      ],
+    },
+    {
+      theme: "Interpretando e descrevendo dados de tabelas e gráficos",
+      exercises: [
+        { kind: "lines", instruction: "Observe uma tabela de dupla entrada com o número de meninos e meninas que praticam natação e dança. Descreva o que a tabela mostra:", lines: 3 },
+        { kind: "options", instruction: "Uma tabela de dupla entrada organiza os dados em:", options: ["Linhas e colunas", "Somente linhas", "Somente uma coluna"] },
+        { kind: "fill-blank", instruction: "Com base em um gráfico de colunas sobre animais de estimação (cachorro: 9, gato: 6, peixe: 3), complete:", items: ["O animal mais comum é o ___.", "O animal menos comum é o ___."] },
+        { kind: "lines", instruction: "Escreva uma conclusão sobre os dados do gráfico de animais de estimação:", lines: 2 },
+      ],
+    },
+    {
+      theme: "Resolvendo problemas com dinheiro",
+      exercises: [
+        { kind: "lines", instruction: "Uma bala custa R$ 0,50 e um chiclete custa R$ 0,75. Quanto você gasta comprando os dois?", lines: 2 },
+        { kind: "lines", instruction: "Joana tem uma nota de R$ 10,00 e comprou um lanche de R$ 6,50. Quanto de troco ela deve receber?", lines: 2 },
+        { kind: "fill-blank", instruction: "Complete quantas moedas de R$ 1,00 formam o mesmo valor:", items: ["1 nota de R$ 5,00 = ___ moedas de R$ 1,00", "1 nota de R$ 10,00 = ___ moedas de R$ 1,00"] },
+        { kind: "options", instruction: "Para pagar exatamente R$ 8,00, qual combinação é possível?", options: ["1 nota de R$ 5,00 + 3 moedas de R$ 1,00", "1 nota de R$ 5,00 + 1 moeda de R$ 1,00", "2 notas de R$ 2,00"] },
+      ],
+    },
+    {
+      theme: "Relações entre dia, semana, mês e ano no calendário",
+      exercises: [
+        { kind: "fill-blank", instruction: "Observando um calendário, complete:", items: ["Uma semana tem ___ dias.", "Um ano tem ___ meses.", "Um mês tem em média ___ dias."] },
+        { kind: "options", instruction: "Um bimestre corresponde a quantos meses?", options: ["2 meses", "4 meses", "6 meses"] },
+        { kind: "lines", instruction: "Consultando um calendário, escreva a data de hoje e o dia da semana correspondente:", lines: 1 },
+        { kind: "fill-blank", instruction: "Complete quantos meses tem cada período:", items: ["1 semestre = ___ meses", "1 ano = ___ semestres"] },
+      ],
+    },
+    {
+      theme: "Lendo horas e minutos no relógio",
+      exercises: [
+        { kind: "draw", instruction: "Desenhe os ponteiros em um relógio marcando 7 horas e 30 minutos:" },
+        { kind: "fill-blank", instruction: "Observando um relógio digital, complete o horário por extenso:", items: ["09:15 = ___ horas e ___ minutos", "14:45 = ___ horas e ___ minutos"] },
+        { kind: "lines", instruction: "A aula começa às 13h e termina às 14h30. Quanto tempo dura a aula?", lines: 1 },
+        { kind: "options", instruction: "Quantos minutos há em uma hora?", options: ["60 minutos", "100 minutos", "30 minutos"] },
+      ],
+    },
+    {
+      theme: "Escolhendo o instrumento certo para medir",
+      exercises: [
+        { kind: "fill-blank", instruction: "Escreva o instrumento mais adequado para cada medição:", items: ["Medir o comprimento da mesa: ___", "Medir o tempo de uma corrida: ___", "Medir a capacidade de uma garrafa: ___"] },
+        { kind: "options", instruction: "Para medir quantos minutos você leva para escovar os dentes, o melhor instrumento é:", options: ["Relógio ou cronômetro", "Régua", "Balança"] },
+        { kind: "word-select", instruction: "Circule os instrumentos usados para medir comprimento:", items: ["Fita métrica", "Termômetro", "Régua", "Trena", "Relógio"] },
+        { kind: "lines", instruction: "Explique por que não usamos uma régua para medir a capacidade de um copo de água:", lines: 2 },
+      ],
+    },
+    {
+      theme: "Medindo comprimentos com metro, centímetro e milímetro",
+      exercises: [
+        { kind: "fill-blank", instruction: "Complete as conversões:", items: ["1 metro = ___ centímetros", "1 centímetro = ___ milímetros", "2 metros = ___ centímetros"] },
+        { kind: "lines", instruction: "Meça com uma régua o comprimento do seu lápis e anote o resultado em centímetros:", lines: 1 },
+        { kind: "options", instruction: "Qual unidade é mais adequada para medir o comprimento da sala de aula?", options: ["Metro", "Milímetro", "Centímetro"] },
+        { kind: "fill-blank", instruction: "Complete comparando os comprimentos usando > ou <:", items: ["1 metro ___ 80 centímetros", "15 centímetros ___ 1 metro"] },
+      ],
+    },
+    {
+      theme: "Medindo capacidades com litro e mililitro",
+      exercises: [
+        { kind: "fill-blank", instruction: "Complete as conversões:", items: ["1 litro = ___ mililitros", "meio litro = ___ mililitros"] },
+        { kind: "lines", instruction: "Uma garrafa tem 2 litros de suco. Se forem usados 500 mililitros, quantos mililitros sobram?", lines: 2 },
+        { kind: "options", instruction: "Qual unidade é mais adequada para medir a capacidade de uma colher de remédio?", options: ["Mililitro", "Litro", "Metro"] },
+        { kind: "word-select", instruction: "Circule os objetos que costumam ter capacidade medida em litros:", items: ["Garrafa de água", "Piscina", "Colher de chá", "Balde", "Régua"] },
+      ],
+    },
+    {
+      theme: "Medindo massa com quilograma e grama",
+      exercises: [
+        { kind: "fill-blank", instruction: "Complete as conversões:", items: ["1 quilograma = ___ gramas", "meio quilograma = ___ gramas"] },
+        { kind: "lines", instruction: "Um pacote de arroz pesa 5 quilogramas e um pacote de feijão pesa 1 quilograma. Qual é o peso total dos dois pacotes juntos?", lines: 2 },
+        { kind: "options", instruction: "Qual unidade é mais adequada para pesar uma maçã?", options: ["Grama", "Quilograma", "Litro"] },
+        { kind: "word-select", instruction: "Circule os objetos que costumam ser pesados em quilogramas:", items: ["Um saco de batatas", "Uma moeda", "Uma pessoa", "Um clipe de papel", "Uma mochila cheia"] },
+      ],
+    },
+    {
+      theme: "Criando e mudando regras de um jogo",
+      exercises: [
+        { kind: "lines", instruction: "Escolha um jogo que você conhece e escreva as 3 principais regras dele:", lines: 3 },
+        { kind: "lines", instruction: "Proponha uma mudança em uma das regras desse jogo, sem tirar o desafio dele:", lines: 2 },
+        { kind: "options", instruction: "Ao mudar uma regra de um jogo, é importante que o jogo:", options: ["Continue desafiador e divertido", "Fique impossível de jogar", "Perca todo o sentido"] },
+        { kind: "lines", instruction: "Explique o que pode acontecer se um jogo não tiver nenhuma regra:", lines: 2 },
+      ],
+    },
+    {
+      theme: "Estratégias para vencer um jogo",
+      exercises: [
+        { kind: "lines", instruction: "Escolha um jogo de tabuleiro ou de cartas que você joga e descreva uma estratégia que você usa para vencer:", lines: 3 },
+        { kind: "lines", instruction: "Explique por que essa estratégia funciona bem nesse jogo:", lines: 2 },
+        { kind: "options", instruction: "Ter uma estratégia em um jogo significa:", options: ["Planejar as jogadas para alcançar o objetivo", "Jogar sem pensar", "Copiar sempre o adversário"] },
+        { kind: "lines", instruction: "Depois de jogar uma partida, registre se sua estratégia funcionou e o que você mudaria:", lines: 2 },
+      ],
+    },
+    {
+      theme: "Projeto: água potável e saúde",
+      exercises: [
+        { kind: "lines", instruction: "Explique com suas palavras por que é importante beber água potável (tratada e limpa):", lines: 2 },
+        { kind: "lines", instruction: "Se uma pessoa deve beber cerca de 2 litros de água por dia e já bebeu 800 mililitros, quantos mililitros ainda faltam?", lines: 2 },
+        { kind: "lines", instruction: "Pesquise e registre o número de copos de água que você bebeu ontem. Some o total aproximado em mililitros (considere 1 copo = 200 mL):", lines: 2 },
+        { kind: "options", instruction: "Qual atitude ajuda a economizar água potável em casa?", options: ["Fechar a torneira ao escovar os dentes", "Deixar a torneira aberta o tempo todo", "Tomar banhos muito longos"] },
+      ],
+    },
+    {
+      theme: "Projeto: saneamento básico e saúde",
+      exercises: [
+        { kind: "lines", instruction: "Explique com suas palavras o que é saneamento básico e por que ele é importante para a saúde:", lines: 3 },
+        { kind: "options", instruction: "A falta de saneamento básico pode causar:", options: ["Doenças relacionadas à água contaminada", "Mais brincadeiras no parque", "Melhor qualidade do ar"] },
+        { kind: "lines", instruction: "Numa pesquisa da turma, 18 em cada 25 alunos disseram ter coleta de esgoto em casa. Quantos alunos disseram não ter?", lines: 2 },
+        { kind: "lines", instruction: "Cite duas atitudes que ajudam a manter o saneamento básico funcionando bem na sua rua:", lines: 2 },
+      ],
+    },
+    {
+      theme: "Criando problemas a partir de uma sentença matemática",
+      exercises: [
+        { kind: "lines", instruction: "Crie um problema (uma historinha) que possa ser resolvido pela sentença 24 + 18 = 42:", lines: 3 },
+        { kind: "lines", instruction: "Crie um problema que possa ser resolvido pela sentença 6 x 5 = 30:", lines: 3 },
+        { kind: "lines", instruction: "Depois de criar o problema, resolva-o e verifique se o resultado faz sentido:", lines: 2 },
+        { kind: "options", instruction: "Ao criar um problema a partir de uma sentença matemática, é importante que a história:", options: ["Combine com a operação e o resultado da sentença", "Não tenha nenhuma relação com números", "Seja sempre sobre animais"] },
+      ],
+    },
+    {
+      theme: "Investigando a propriedade comutativa da adição",
+      exercises: [
+        { kind: "fill-blank", instruction: "Verifique se a ordem das parcelas muda o resultado, completando:", items: ["7 + 5 = ___ e 5 + 7 = ___", "12 + 8 = ___ e 8 + 12 = ___"] },
+        { kind: "lines", instruction: "Explique com suas palavras o que você percebeu ao trocar a ordem dos números na adição:", lines: 2 },
+        { kind: "options", instruction: "A propriedade comutativa da adição diz que:", options: ["Trocar a ordem das parcelas não muda o resultado", "Trocar a ordem das parcelas sempre muda o resultado", "Só funciona com números pares"] },
+        { kind: "lines", instruction: "Escreva um exemplo próprio de adição e comprove a propriedade comutativa trocando a ordem dos números:", lines: 2 },
+      ],
+    },
   ],
   "lingua-portuguesa": [
     {
@@ -3413,6 +3750,7 @@ export const ACTIVITY_BANK: Record<OwnSubject | "leitura-diaria", ActivityEntry[
     },
     {
       theme: "Escrevendo regras de brincadeiras e receitas",
+      gradeYear: "2-ano",
       exercises: [
         {
           kind: "lines",
@@ -3432,6 +3770,7 @@ export const ACTIVITY_BANK: Record<OwnSubject | "leitura-diaria", ActivityEntry[
     },
     {
       theme: "Contação de histórias de diferentes culturas",
+      gradeYear: "2-ano",
       exercises: [
         {
           kind: "lines",
@@ -3767,6 +4106,7 @@ export const ACTIVITY_BANK: Record<OwnSubject | "leitura-diaria", ActivityEntry[
     },
     {
       theme: "Escrevendo indicações literárias e verbetes de curiosidades",
+      gradeYear: "2-ano",
       exercises: [
         {
           kind: "lines",
@@ -4159,6 +4499,333 @@ export const ACTIVITY_BANK: Record<OwnSubject | "leitura-diaria", ActivityEntry[
           kind: "draw",
           instruction: "Desenhe a parte da história que você ajudou a inventar:",
         },
+      ],
+    },
+    {
+      theme: "Roda de escuta de contos, mitos e lendas de diferentes culturas",
+      exercises: [
+        { kind: "options", instruction: "Qual desses tipos de história vocês ouviram hoje na roda de escuta?", options: ["Conto de fadas", "Mito", "Lenda", "Fábula"] },
+        { kind: "lines", instruction: "Escreva o título da história que você mais gostou de ouvir:", lines: 2 },
+        { kind: "lines", instruction: "Conte, com suas palavras, um trecho que achou interessante:", lines: 3 },
+        { kind: "word-select", instruction: "Marque as palavras que podem lembrar elementos de contos, mitos e lendas:", items: ["floresta encantada", "dragão", "herói", "computador", "rio sagrado", "ônibus escolar"] },
+        { kind: "draw", instruction: "Desenhe a cena que mais chamou sua atenção na história ouvida:" },
+      ],
+    },
+    {
+      theme: "Leitura autônoma de contos e fábulas de diversas culturas",
+      exercises: [
+        { kind: "lines", instruction: "Escreva o nome do conto ou fábula que você leu sozinho:", lines: 1 },
+        { kind: "fill-blank", instruction: "Complete com base na história que você leu:", items: ["O título da história é: __________", "O lugar onde a história acontece é: __________", "A cultura ou o povo de onde vem essa história é: __________"] },
+        { kind: "options", instruction: "O que costuma ter uma fábula, diferente de outros textos?", options: ["Animais que falam e uma lição no final", "Somente números e contas", "Uma lista de compras", "Um mapa do tesouro"] },
+        { kind: "lines", instruction: "O que essa história te ensinou?", lines: 3 },
+        { kind: "draw", instruction: "Desenhe o personagem principal da história que você leu:" },
+      ],
+    },
+    {
+      theme: "Leitura compartilhada de um livro em capítulos",
+      exercises: [
+        { kind: "fill-blank", instruction: "Complete sobre o livro que a turma está lendo:", items: ["Título do livro: __________", "Capítulo lido hoje: __________", "Personagem principal: __________"] },
+        { kind: "lines", instruction: "O que aconteceu de mais importante neste capítulo?", lines: 3 },
+        { kind: "options", instruction: "O que você acha que vai acontecer no próximo capítulo?", options: ["Uma nova aventura vai começar", "O problema do personagem vai se resolver", "Vai aparecer um novo personagem", "Não sei, quero descobrir lendo"] },
+        { kind: "lines", instruction: "Escreva uma pergunta que você gostaria de fazer sobre a história:", lines: 2 },
+        { kind: "draw", instruction: "Desenhe a cena que você imaginou ao ouvir este capítulo:" },
+      ],
+    },
+    {
+      theme: "Investigando a linguagem dos contos: repetição, comparação e adjetivos",
+      exercises: [
+        { kind: "word-select", instruction: "Marque os adjetivos usados para descrever personagens e lugares nos contos:", items: ["malvada", "escura", "feroz", "densa", "gentil", "cansado"] },
+        { kind: "fill-blank", instruction: "Complete as comparações típicas dos contos:", items: ["Forte como um __________", "Rápido como um __________", "Branca como a __________"] },
+        { kind: "options", instruction: "Qual frase é um exemplo de repetição usada nos contos de fadas?", options: ["Era uma vez, era uma vez...", "O menino comprou pão.", "A escola terminou às 5 horas.", "Minha mãe fez o almoço."] },
+        { kind: "lines", instruction: "Escreva uma frase com uma comparação, como as que aparecem nos contos:", lines: 2 },
+      ],
+    },
+    {
+      theme: "Rodas de notícias e reportagens sobre diferentes grupos sociais",
+      exercises: [
+        { kind: "lines", instruction: "Escreva o assunto da notícia ou reportagem que você ouviu na roda:", lines: 2 },
+        { kind: "fill-blank", instruction: "Complete sobre a notícia ouvida:", items: ["Quem são as pessoas dessa notícia: __________", "O que aconteceu: __________", "Onde aconteceu: __________"] },
+        { kind: "options", instruction: "Por que é importante conhecer notícias sobre diferentes grupos de pessoas?", options: ["Para entender e respeitar a diversidade", "Para ficar com medo do diferente", "Porque não é importante", "Só para passar o tempo"] },
+        { kind: "lines", instruction: "Escreva o que você aprendeu sobre um grupo social diferente do seu:", lines: 3 },
+      ],
+    },
+    {
+      theme: "Conhecendo outras culturas por relatos históricos e verbetes",
+      exercises: [
+        { kind: "fill-blank", instruction: "Complete com base no relato ou verbete que você ouviu:", items: ["O texto falava sobre o país ou povo: __________", "Um costume interessante que aprendi: __________", "Uma palavra nova que aprendi: __________"] },
+        { kind: "options", instruction: "Qual desses textos serve para explicar rapidamente o significado de uma palavra ou tema?", options: ["Verbete de enciclopédia", "Poema", "Fábula", "Bilhete"] },
+        { kind: "lines", instruction: "Escreva duas coisas que você descobriu sobre uma cultura diferente da sua:", lines: 3 },
+        { kind: "draw", instruction: "Desenhe algo típico da cultura que você conheceu (comida, roupa, festa ou objeto):" },
+      ],
+    },
+    {
+      theme: "Pesquisa em diferentes fontes sobre um tema de estudo",
+      exercises: [
+        { kind: "word-select", instruction: "Marque as fontes que podem ser usadas para pesquisar um tema de estudo:", items: ["Livro de enciclopédia", "Revista", "Site confiável", "Jornal", "Bilhete de um amigo", "Desenho animado qualquer"] },
+        { kind: "fill-blank", instruction: "Complete sobre sua pesquisa:", items: ["Tema da minha pesquisa: __________", "Fonte que usei: __________", "Uma informação que encontrei: __________"] },
+        { kind: "options", instruction: "Se duas fontes falam coisas diferentes sobre o mesmo assunto, o que devo fazer?", options: ["Comparar e procurar mais uma fonte para confirmar", "Escolher a primeira que li sem pensar", "Inventar uma resposta", "Não escrever nada"] },
+        { kind: "lines", instruction: "Escreva uma informação relacionada ao tema que você pesquisou:", lines: 3 },
+      ],
+    },
+    {
+      theme: "Selecionando textos para pesquisa usando sumários e títulos",
+      exercises: [
+        { kind: "options", instruction: "Onde você encontra uma lista com os títulos de cada capítulo de um livro?", options: ["No sumário", "Na capa", "No rodapé", "Na última página"] },
+        { kind: "fill-blank", instruction: "Complete sobre o texto que você escolheu:", items: ["Título do texto escolhido: __________", "Subtítulo ou chamada que me chamou atenção: __________"] },
+        { kind: "lines", instruction: "Explique por que você escolheu esse texto para pesquisar o tema:", lines: 3 },
+        { kind: "word-select", instruction: "Marque as pistas que ajudam a escolher um bom texto para a pesquisa:", items: ["Título", "Subtítulo", "Cor da capa", "Sumário", "Número de páginas", "Chamada de link"] },
+      ],
+    },
+    {
+      theme: "Grifando informações importantes para a pesquisa",
+      exercises: [
+        { kind: "lines", instruction: "Copie duas frases importantes que você grifaria em um texto de pesquisa sobre um tema estudado:", lines: 4 },
+        { kind: "options", instruction: "Qual é o objetivo de grifar um trecho do texto?", options: ["Destacar uma informação importante para a pesquisa", "Deixar o texto mais bonito", "Apagar o que não gostou", "Copiar o texto inteiro"] },
+        { kind: "fill-blank", instruction: "Complete sobre sua pesquisa:", items: ["Tema da pesquisa: __________", "Página onde encontrei a informação: __________"] },
+        { kind: "draw", instruction: "Desenhe como fica uma página de livro com trechos grifados:" },
+      ],
+    },
+    {
+      theme: "Preparando um texto teatral para leitura dramática",
+      exercises: [
+        { kind: "fill-blank", instruction: "Complete sobre a cena que você vai representar:", items: ["Nome da peça ou cena: __________", "Personagem que vou representar: __________", "Um sentimento desse personagem: __________"] },
+        { kind: "options", instruction: "Como devemos ler a fala de um personagem muito bravo?", options: ["Com voz firme e mais forte", "Sussurrando bem baixinho", "Cantando", "Sem entonação nenhuma"] },
+        { kind: "lines", instruction: "Escreva uma fala curta do seu personagem, pensando em como vai falar:", lines: 3 },
+        { kind: "draw", instruction: "Desenhe seu personagem representando a cena:" },
+      ],
+    },
+    {
+      theme: "Recontando histórias conhecidas com marcas do registro literário",
+      exercises: [
+        { kind: "fill-blank", instruction: "Complete o começo e o fim de um reconto, usando marcas típicas da linguagem literária:", items: ["__________, numa terra muito distante...", "E assim, os dois viveram __________."] },
+        { kind: "options", instruction: "Qual expressão é típica do início de contos?", options: ["Era uma vez", "Bom dia", "Olá, pessoal", "Fim de semana passado"] },
+        { kind: "lines", instruction: "Reconte, em poucas frases, uma história conhecida usando a linguagem dos contos:", lines: 4 },
+      ],
+    },
+    {
+      theme: "Reescrita coletiva de um conto conhecido",
+      exercises: [
+        { kind: "lines", instruction: "Escreva, com a ajuda da turma, o início do conto que vocês reescreveram:", lines: 3 },
+        { kind: "fill-blank", instruction: "Complete sobre o conto reescrito pela turma:", items: ["Conto escolhido pela turma: __________", "Personagem principal: __________", "Problema da história: __________"] },
+        { kind: "options", instruction: "Ao reescrever um conto conhecido, o que devemos manter?", options: ["Os personagens e o tema principais da história", "Nada, pode mudar tudo", "Só o título", "Só o final"] },
+        { kind: "lines", instruction: "Escreva uma parte da história que a turma decidiu mudar e por quê:", lines: 3 },
+      ],
+    },
+    {
+      theme: "Criando novos finais para contos de diferentes culturas",
+      exercises: [
+        { kind: "fill-blank", instruction: "Complete sobre o conto escolhido:", items: ["Conto escolhido: __________", "Cultura de origem do conto: __________"] },
+        { kind: "lines", instruction: "Escreva o novo final que você criou para esse conto:", lines: 5 },
+        { kind: "options", instruction: "Ao criar um novo final, o que é importante respeitar?", options: ["O tema e os personagens da história original", "Nada, pode inventar qualquer coisa", "Só o nome do autor", "A cor da capa do livro"] },
+        { kind: "draw", instruction: "Desenhe uma cena do novo final que você imaginou:" },
+      ],
+    },
+    {
+      theme: "Escrevendo indicações literárias e verbetes de curiosidades",
+      gradeYear: "3-ano",
+      exercises: [
+        { kind: "fill-blank", instruction: "Complete sua indicação literária:", items: ["Título do livro indicado: __________", "Por que eu indico esse livro: __________", "Para quem eu indico: __________"] },
+        { kind: "options", instruction: "O que é um verbete de curiosidades?", options: ["Um texto curto que explica algo interessante sobre um tema", "Uma carta para um amigo", "Uma lista de compras", "Um poema rimado"] },
+        { kind: "lines", instruction: "Escreva um pequeno verbete sobre uma curiosidade de um tema que você estudou:", lines: 4 },
+      ],
+    },
+    {
+      theme: "Diário da turma: relatando experiências vividas",
+      exercises: [
+        { kind: "fill-blank", instruction: "Complete a página do diário:", items: ["Data: __________", "O que aconteceu hoje na escola: __________", "Como eu me senti: __________"] },
+        { kind: "options", instruction: "Em um diário, é importante organizar os fatos:", options: ["Na ordem em que aconteceram", "De trás para frente", "Sem nenhuma ordem", "Só com desenhos"] },
+        { kind: "lines", instruction: "Escreva uma página do diário da turma contando algo que vivemos essa semana:", lines: 5 },
+        { kind: "draw", instruction: "Desenhe um momento importante do seu dia para ilustrar o diário:" },
+      ],
+    },
+    {
+      theme: "Escrevendo regras de brincadeiras e receitas",
+      gradeYear: "3-ano",
+      exercises: [
+        { kind: "options", instruction: "Em uma receita ou regra de brincadeira, por que a ordem das instruções é importante?", options: ["Porque cada passo depende do anterior para dar certo", "Porque não faz diferença", "Só para enfeitar o texto", "Porque é mais bonito"] },
+        { kind: "fill-blank", instruction: "Complete as etapas de uma receita simples:", items: ["1º passo: __________", "2º passo: __________", "3º passo: __________"] },
+        { kind: "lines", instruction: "Escreva as regras de uma brincadeira que você conhece:", lines: 5 },
+        { kind: "word-select", instruction: "Marque as palavras que costumam aparecer em receitas e regras de jogos:", items: ["primeiro", "misture", "depois", "por fim", "era uma vez", "quem"] },
+      ],
+    },
+    {
+      theme: "Contação de histórias de diferentes culturas",
+      gradeYear: "3-ano",
+      exercises: [
+        { kind: "fill-blank", instruction: "Complete o planejamento da contação de histórias:", items: ["História escolhida: __________", "De qual cultura ou país ela vem: __________", "Quem vai contar: __________", "Para quem vamos contar: __________"] },
+        { kind: "options", instruction: "O que é importante fazer enquanto um colega conta uma história?", options: ["Ouvir com atenção e respeito", "Conversar sobre outro assunto", "Mexer no celular", "Interromper toda hora"] },
+        { kind: "lines", instruction: "Escreva o começo da história que você vai contar para a turma:", lines: 4 },
+        { kind: "draw", instruction: "Desenhe um personagem da história que você vai contar:" },
+      ],
+    },
+    {
+      theme: "Apresentação oral sobre temas estudados",
+      exercises: [
+        { kind: "fill-blank", instruction: "Complete o roteiro da sua apresentação:", items: ["Tema da minha apresentação: __________", "Duas informações importantes: __________", "Uma pergunta que posso fazer à turma: __________"] },
+        { kind: "lines", instruction: "Escreva um roteiro com anotações para te ajudar na apresentação oral:", lines: 5 },
+        { kind: "options", instruction: "Para se preparar bem para uma apresentação oral, é importante:", options: ["Fazer anotações antes de falar", "Decorar tudo sem entender", "Não se preparar", "Falar o mais rápido possível"] },
+      ],
+    },
+    {
+      theme: "Relatando experiências vividas para a turma",
+      exercises: [
+        { kind: "fill-blank", instruction: "Complete sobre a experiência que você vai relatar:", items: ["O que aconteceu: __________", "Quando aconteceu: __________", "Onde aconteceu: __________", "Como eu me senti: __________"] },
+        { kind: "lines", instruction: "Escreva um relato de uma experiência que você viveu para compartilhar com a turma:", lines: 5 },
+        { kind: "options", instruction: "Um bom relato de experiência deve:", options: ["Contar os fatos na ordem em que aconteceram", "Misturar tudo sem ordem", "Inventar fatos que não aconteceram", "Ser só uma lista de palavras soltas"] },
+        { kind: "draw", instruction: "Desenhe a experiência que você relatou:" },
+      ],
+    },
+    {
+      theme: "Roda de conversa sobre convivência e respeito",
+      exercises: [
+        { kind: "options", instruction: "O que fazer quando um colega diz algo desrespeitoso sobre a cor da pele ou o gênero de outra pessoa?", options: ["Conversar e explicar por que isso machuca", "Rir junto", "Fingir que não ouviu", "Repetir a mesma coisa"] },
+        { kind: "lines", instruction: "Escreva uma situação de desrespeito relacionada a gênero ou raça que você já viu ou ouviu falar, sem citar nomes:", lines: 3 },
+        { kind: "lines", instruction: "O que a turma decidiu, em conjunto, sobre como agir nessas situações?", lines: 3 },
+        { kind: "draw", instruction: "Desenhe uma cena em que crianças diferentes brincam juntas com respeito:" },
+      ],
+    },
+    {
+      theme: "Comparando a estrutura de diferentes gêneros textuais",
+      exercises: [
+        { kind: "word-select", instruction: "Marque as partes que costumam aparecer em uma receita:", items: ["Ingredientes", "Modo de preparo", "Rima", "Personagens", "Moral da história"] },
+        { kind: "fill-blank", instruction: "Complete comparando dois gêneros textuais:", items: ["Uma receita tem __________, mas um conto tem __________.", "Uma carta começa com __________, mas uma notícia começa com __________."] },
+        { kind: "options", instruction: "Qual gênero é organizado em estrofes e versos?", options: ["Poema", "Receita", "Bilhete", "Regra de jogo"] },
+        { kind: "lines", instruction: "Escolha dois gêneros textuais e escreva uma diferença entre eles:", lines: 3 },
+      ],
+    },
+    {
+      theme: "Caça aos pronomes: eliminando repetições no texto",
+      exercises: [
+        { kind: "fill-blank", instruction: "Reescreva as frases substituindo a palavra repetida por um pronome:", items: ["A Maria pegou o livro da Maria e leu o livro da Maria. → __________", "O cachorro do João latiu porque o cachorro do João viu um gato. → __________"] },
+        { kind: "word-select", instruction: "Marque os pronomes que podem substituir nomes repetidos:", items: ["ele", "ela", "eles", "mesa", "correr", "elas"] },
+        { kind: "options", instruction: "Qual é a melhor forma de evitar repetir 'o menino' várias vezes no mesmo texto?", options: ["Usar 'ele' depois da primeira vez que aparece", "Repetir 'o menino' em toda frase", "Apagar o personagem da história", "Trocar por um número"] },
+        { kind: "lines", instruction: "Escreva uma frase repetindo um nome e depois reescreva usando um pronome no lugar:", lines: 3 },
+      ],
+    },
+    {
+      theme: "Revisando organizadores textuais no texto produzido",
+      exercises: [
+        { kind: "word-select", instruction: "Marque os organizadores textuais que combinam com um texto narrativo:", items: ["então", "depois", "primeiro passo", "ingredientes", "de repente", "por fim"] },
+        { kind: "fill-blank", instruction: "Complete as frases com um organizador textual adequado:", items: ["__________ o menino saiu de casa, começou a chover.", "__________, todos ficaram felizes com o final da história."] },
+        { kind: "options", instruction: "Em uma receita, qual sequência de organizadores combina melhor?", options: ["Primeiro, depois, por último", "Era uma vez", "Personagem principal", "Nenhum, receitas não usam organizadores"] },
+        { kind: "lines", instruction: "Reescreva uma frase do seu texto trocando um organizador que não combinava por outro mais adequado:", lines: 2 },
+      ],
+    },
+    {
+      theme: "Dando coerência ao final de uma história",
+      exercises: [
+        { kind: "lines", instruction: "Imagine o começo de uma história e escreva um final que combine com ela:", lines: 4 },
+        { kind: "options", instruction: "Um final coerente com a história deve:", options: ["Resolver o problema apresentado no início do texto", "Falar de um assunto totalmente diferente", "Não ter nenhuma relação com o começo", "Terminar no meio da frase"] },
+        { kind: "fill-blank", instruction: "Complete sobre a história que você imaginou:", items: ["Problema da história: __________", "Como esse problema foi resolvido no final: __________"] },
+        { kind: "draw", instruction: "Desenhe a cena final da sua história, mostrando como o problema foi resolvido:" },
+      ],
+    },
+    {
+      theme: "Quem conta a história? Narrador em 1ª e 3ª pessoa",
+      exercises: [
+        { kind: "options", instruction: "Em qual frase o narrador está em 1ª pessoa?", options: ["Eu corri até a floresta e encontrei um lobo.", "Ela correu até a floresta e encontrou um lobo.", "O menino correu até a floresta.", "Os amigos correram até a floresta."] },
+        { kind: "fill-blank", instruction: "Reescreva a frase mudando o narrador de 3ª para 1ª pessoa:", items: ["Ela abriu a porta e viu o jardim. → __________"] },
+        { kind: "word-select", instruction: "Marque as palavras que indicam narrador em 1ª pessoa:", items: ["eu", "meu", "ele", "ela", "nós", "eles"] },
+        { kind: "lines", instruction: "Escreva duas frases contando algo que aconteceu com você, usando narrador em 1ª pessoa:", lines: 3 },
+      ],
+    },
+    {
+      theme: "Observando a pontuação do diálogo nos textos",
+      exercises: [
+        { kind: "word-select", instruction: "Marque os sinais de pontuação usados para marcar a fala dos personagens:", items: ["travessão", "vírgula", "ponto de interrogação", "ponto de exclamação", "cifrão", "parênteses"] },
+        { kind: "fill-blank", instruction: "Complete o diálogo usando o travessão para indicar a fala:", items: ["__________ Vamos brincar? — perguntou Ana.", "__________ Já terminei a lição! — respondeu Pedro."] },
+        { kind: "options", instruction: "Para que serve o ponto de interrogação em um diálogo?", options: ["Indicar que o personagem está fazendo uma pergunta", "Indicar o fim do texto", "Separar duas palavras", "Substituir uma vírgula"] },
+        { kind: "lines", instruction: "Escreva um pequeno diálogo entre dois personagens, usando a pontuação correta:", lines: 4 },
+      ],
+    },
+    {
+      theme: "Pontuando o texto: segmentando frases",
+      exercises: [
+        { kind: "fill-blank", instruction: "Reescreva o texto colocando os pontos finais nos lugares certos:", items: ["o sol nasceu a menina acordou ela tomou café e foi para a escola → __________"] },
+        { kind: "options", instruction: "Onde deve ficar o ponto final?", options: ["No final de cada frase, quando a ideia termina", "No começo da frase", "Depois de cada palavra", "Só no final do texto todo"] },
+        { kind: "lines", instruction: "Escreva um pequeno texto de três frases, usando ponto final para separar as ideias:", lines: 3 },
+        { kind: "word-select", instruction: "Marque os sinais que podem terminar uma frase:", items: ["ponto final", "ponto de interrogação", "ponto de exclamação", "vírgula", "travessão"] },
+      ],
+    },
+    {
+      theme: "Descobrindo comparações escondidas: a metáfora",
+      exercises: [
+        { kind: "options", instruction: "Qual frase é uma metáfora (comparação escondida, sem usar 'como')?", options: ["Seus olhos são duas estrelas.", "Seus olhos brilham como estrelas.", "Ela tem olhos castanhos.", "Ela usa óculos."] },
+        { kind: "fill-blank", instruction: "Complete criando suas próprias metáforas:", items: ["Meu coração é um __________.", "A noite é um __________.", "Sua voz é __________."] },
+        { kind: "lines", instruction: "Escolha uma metáfora de um texto lido e explique o que ela quer dizer:", lines: 3 },
+        { kind: "draw", instruction: "Desenhe a imagem que uma metáfora do texto faz você imaginar:" },
+      ],
+    },
+    {
+      theme: "Usando acentos em palavras conhecidas",
+      exercises: [
+        { kind: "word-select", instruction: "Marque as palavras que precisam de acento gráfico:", items: ["arvore", "cafe", "sofa", "janela", "lapis", "porta"] },
+        { kind: "fill-blank", instruction: "Reescreva as palavras colocando o acento no lugar certo:", items: ["arvore → __________", "cafe → __________", "lapis → __________"] },
+        { kind: "options", instruction: "Qual dessas palavras está escrita corretamente, com o acento no lugar certo?", options: ["Sábado", "Sabádo", "Sabado", "Sabadó"] },
+        { kind: "lines", instruction: "Escreva três palavras acentuadas que você já conhece e usa no dia a dia:", lines: 2 },
+      ],
+    },
+    {
+      theme: "Caçando a sílaba tônica nas palavras do texto",
+      exercises: [
+        { kind: "fill-blank", instruction: "Separe as sílabas e marque a sílaba tônica (a mais forte):", items: ["boneca → __________", "sapato → __________", "árvore → __________"] },
+        { kind: "options", instruction: "O que é a sílaba tônica de uma palavra?", options: ["A sílaba pronunciada com mais força", "A primeira sílaba da palavra", "A última letra da palavra", "A sílaba escrita com letra maiúscula"] },
+        { kind: "word-select", instruction: "Leia as palavras em voz alta e marque as que têm a força na última sílaba:", items: ["café", "mesa", "sofá", "porta", "jacaré", "gato"] },
+        { kind: "lines", instruction: "Escolha uma palavra do seu texto e escreva-a separada em sílabas, destacando a tônica:", lines: 2 },
+      ],
+    },
+    {
+      theme: "Relacionando acento gráfico e sílaba tônica",
+      exercises: [
+        { kind: "options", instruction: "Para que serve o acento gráfico em uma palavra?", options: ["Marcar a sílaba pronunciada com mais força", "Deixar a palavra mais bonita", "Indicar o plural", "Separar duas frases"] },
+        { kind: "fill-blank", instruction: "Complete explicando onde está a força da palavra:", items: ["Em 'sofá', a força está na sílaba __________.", "Em 'árvore', a força está na sílaba __________."] },
+        { kind: "word-select", instruction: "Marque as palavras em que o acento gráfico coincide com a sílaba mais forte:", items: ["sábado", "café", "música", "computador", "relógio", "papel"] },
+        { kind: "lines", instruction: "Escreva duas palavras acentuadas e explique em qual sílaba está a força de cada uma:", lines: 3 },
+      ],
+    },
+    {
+      theme: "Revisando a grafia de M/N, R/RR e O/U final",
+      exercises: [
+        { kind: "fill-blank", instruction: "Complete as palavras com M ou N:", items: ["ca__po", "co__prar", "a__tes"] },
+        { kind: "word-select", instruction: "Marque as palavras escritas corretamente com RR:", items: ["carro", "caro", "guerra", "gera", "terreno", "tereno"] },
+        { kind: "fill-blank", instruction: "Complete as palavras terminadas em O ou U:", items: ["sapat__", "chape__", "jacar__"] },
+        { kind: "lines", instruction: "Escreva uma frase usando uma palavra com R e outra com RR:", lines: 2 },
+      ],
+    },
+    {
+      theme: "Comparando flexões verbais terminadas em -O e -AM",
+      exercises: [
+        { kind: "options", instruction: "Qual frase está no plural (mais de uma pessoa fazendo a ação)?", options: ["Os meninos brincaram no parque.", "O menino brincou no parque.", "Ele brincou com o cachorro.", "Ela brincou sozinha."] },
+        { kind: "fill-blank", instruction: "Complete as frases com a forma correta do verbo:", items: ["Ontem, eu __________ (brincar) no parque.", "Ontem, eles __________ (brincar) no parque."] },
+        { kind: "word-select", instruction: "Marque os verbos que indicam ação de mais de uma pessoa (terminados em -AM):", items: ["correram", "correu", "pularam", "pulou", "cantaram", "cantou"] },
+        { kind: "lines", instruction: "Escreva uma frase no singular (uma pessoa) e a mesma frase no plural (várias pessoas):", lines: 2 },
+      ],
+    },
+    {
+      theme: "Memorizando a grafia de palavras irregulares",
+      exercises: [
+        { kind: "word-select", instruction: "Marque as palavras escritas corretamente:", items: ["homem", "omem", "chuva", "xuva", "cereja", "sereja"] },
+        { kind: "fill-blank", instruction: "Complete as palavras com a letra certa (H, L, LH, C ou S):", items: ["__oje (dia atual)", "toa__a (usada no banho)", "__ereja (fruta)"] },
+        { kind: "options", instruction: "Por que algumas palavras precisam ser memorizadas, e não seguem uma regra?", options: ["Porque nem sempre existe correspondência exata entre letra e som", "Porque são palavras inventadas", "Porque ninguém sabe escrevê-las certo", "Porque são palavras estrangeiras"] },
+        { kind: "lines", instruction: "Escreva três palavras difíceis que você já decorou como se escrevem:", lines: 2 },
+      ],
+    },
+    {
+      theme: "Dividindo palavras no final da linha",
+      exercises: [
+        { kind: "fill-blank", instruction: "Divida as palavras em sílabas para saber onde cortar no final da linha:", items: ["computador → __________", "bicicleta → __________", "girassol → __________"] },
+        { kind: "options", instruction: "Como devemos dividir uma palavra no final da linha?", options: ["Separando por sílabas, com hífen", "Cortando em qualquer letra", "Nunca podemos dividir uma palavra", "Só se a palavra for pequena"] },
+        { kind: "lines", instruction: "Escreva uma palavra grande do seu texto e mostre como ela poderia ser dividida no final da linha:", lines: 2 },
+        { kind: "word-select", instruction: "Marque as palavras já divididas corretamente em sílabas:", items: ["ja-ne-la", "jane-la", "bo-ne-ca", "bone-ca"] },
+      ],
+    },
+    {
+      theme: "Regras para não deixar uma letra sozinha na linha",
+      exercises: [
+        { kind: "options", instruction: "Qual divisão está ERRADA porque deixa uma letra sozinha na linha?", options: ["amarel-o", "a-ma-re-lo", "á-gua", "chu-va"] },
+        { kind: "fill-blank", instruction: "Reescreva a divisão dessas palavras, sem deixar nenhuma letra sozinha:", items: ["água → __________", "ideia → __________"] },
+        { kind: "lines", instruction: "Explique com suas palavras por que não podemos deixar uma letra sozinha no início ou no final da linha:", lines: 3 },
+        { kind: "word-select", instruction: "Marque as divisões corretas, que não deixam letra sozinha:", items: ["a-be-lha", "abelh-a", "o-vo", "ov-o"] },
       ],
     },
   ],

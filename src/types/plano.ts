@@ -88,8 +88,12 @@ export type GeneratedLessonPlan = {
   description: string;
   /** Materiais necessários para a aula (lista vazia se não precisar de nada especial). */
   materials: string[];
-  /** Passo a passo do que fazer com a turma, em ordem. */
+  /** Passo a passo do que fazer com a turma, em ordem (versão enxuta, usada no texto do SGP). */
   steps: string[];
+  /** Roteiro detalhado da aula, pra guiar o professor durante a aula (o que dizer, perguntar,
+   * escrever na lousa) — mais longo e passo a passo que `steps`, não vai pro SGP. Lista vazia
+   * quando ainda não tem roteiro escrito (a aula funciona normalmente com description+steps). */
+  classScript: string[];
   /** Texto completo para ler em voz alta. Só relevante para Leitura Diária; "" nas demais. */
   readingText: string;
   /** Gênero textual (poema, notícia, receita, fábula...). Só relevante para Leitura Diária; "" nas demais. */
@@ -148,6 +152,9 @@ export type BankEntry = {
   description: string;
   materials: string[];
   steps: string[];
+  /** Roteiro detalhado da aula (ver GeneratedLessonPlan.classScript). Opcional: bancos ainda não
+   * reescritos com esse campo funcionam normalmente sem ele. */
+  classScript?: string[];
 };
 
 /**
