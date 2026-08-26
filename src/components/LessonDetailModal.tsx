@@ -428,7 +428,6 @@ export function LessonDetailModal({
         <ActivitySheetModal
           subjectLabel={title}
           theme={plan.theme}
-          curriculumCode={plan.curriculumCode}
           color={color}
           entry={activity}
           onClose={() => setShowActivity(false)}
@@ -439,7 +438,6 @@ export function LessonDetailModal({
         <ActivitySheetModal
           subjectLabel={title}
           theme={plan.theme}
-          curriculumCode={plan.curriculumCode}
           color={color}
           entry={homework}
           kind="licao-de-casa"

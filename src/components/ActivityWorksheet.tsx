@@ -4,7 +4,6 @@ import { SubjectColor } from "@/lib/subjectColors";
 type Props = {
   subjectLabel: string;
   theme: string;
-  curriculumCode: string;
   color: SubjectColor;
   entry: ActivityEntry;
   kind?: "atividade" | "licao-de-casa";
@@ -79,7 +78,7 @@ function ExerciseBlock({ exercise, index, color }: { exercise: ActivityExercise;
   );
 }
 
-export function ActivityWorksheet({ subjectLabel, theme, curriculumCode, color, entry, kind = "atividade" }: Props) {
+export function ActivityWorksheet({ subjectLabel, theme, color, entry, kind = "atividade" }: Props) {
   const heading = kind === "licao-de-casa" ? "Lição de Casa" : "Atividade";
   return (
     <div
@@ -104,11 +103,6 @@ export function ActivityWorksheet({ subjectLabel, theme, curriculumCode, color, 
         <h2 style={{ color: color.text, fontFamily: kidFont }} className="text-[20px] mb-1">
           {theme}
         </h2>
-        {curriculumCode && (
-          <div style={{ color: color.text }} className="text-xs normal-case font-mono tracking-wide">
-            {curriculumCode}
-          </div>
-        )}
       </div>
 
       <div className="print:flex-1 print:flex print:flex-col print:justify-around">
