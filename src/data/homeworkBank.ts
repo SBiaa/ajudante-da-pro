@@ -950,6 +950,123 @@ export const HOMEWORK_BANK: Record<HomeworkSubject, ActivityEntry[]> = {
         { kind: "draw", instruction: "Desenhe os passos que você seguiu para resolver um problema de matemática, numerando cada passo." },
       ],
     },
+    {
+      theme: "Duelo de dados: quem tira o maior número?",
+      exercises: [
+        { kind: "options", instruction: "Em uma rodada, saíram os números 67 e 76. Qual venceu o duelo, ou seja, qual é o maior?", options: ["67", "76", "Empate", "Nenhum dos dois"] },
+        { kind: "fill-blank", instruction: "Peça para alguém da sua casa dizer dois números de dois algarismos. Escreva-os e complete:", items: ["Primeiro número: ___", "Segundo número: ___", "O maior é: ___"] },
+        { kind: "lines", instruction: "Escreva dois números de dois algarismos usando os números de uma placa de carro ou de uma casa da sua rua. Diga qual dos dois é maior:", lines: 3 },
+        { kind: "draw", instruction: "Desenhe dois dados de forma que, juntando os pontos, formem o menor número de dois algarismos possível:" },
+      ],
+    },
+    {
+      theme: "Quantos grãos de feijão no pote?",
+      exercises: [
+        { kind: "lines", instruction: "Pegue um potinho com feijões, botões ou grãos de arroz em casa. Escreva quantos você acha que tem antes de contar:", lines: 1, note: "Depois conte de verdade e compare com o que você escreveu." },
+        { kind: "fill-blank", instruction: "Complete com o resultado da sua contagem:", items: ["Eu estimei: ___", "Eu contei: ___", "A diferença entre os dois números foi: ___"] },
+        { kind: "options", instruction: "Qual é a melhor forma de contar uma quantidade grande de grãos sem errar?", options: ["Separar em grupinhos de 10 e contar os grupos", "Contar tudo de uma vez, bem rápido", "Só olhar e adivinhar", "Contar só a metade do pote"] },
+        { kind: "draw", instruction: "Desenhe o pote ou potinho que você usou, com os grãos organizados em grupos de 10:" },
+      ],
+    },
+    {
+      theme: "Ficha de cálculo com reserva: armando as contas",
+      exercises: [
+        { kind: "fill-blank", instruction: "Arme e resolva as contas, reagrupando quando precisar:", items: ["27 + 15 = ___", "43 + 38 = ___", "52 − 26 = ___", "81 − 47 = ___"] },
+        { kind: "options", instruction: "Na conta 26 + 17, quando somamos as unidades (6 + 7 = 13), o que fazemos com o 1 de dezena que sobra?", options: ["Levamos para a coluna das dezenas", "Jogamos fora", "Escrevemos embaixo das unidades", "Ignoramos"] },
+        { kind: "lines", instruction: "Invente uma conta de adição com reserva usando o número da sua casa e o número de pessoas da sua família. Escreva a conta e o resultado:", lines: 3 },
+        { kind: "draw", instruction: "Desenhe material dourado ou palitinhos representando a conta 34 + 19, mostrando o agrupamento de 10 unidades em uma dezena:" },
+      ],
+    },
+    {
+      theme: "Problema do lanche: quantos salgadinhos sobraram?",
+      exercises: [
+        { kind: "lines", instruction: "Leia: 'A vovó fez 24 coxinhas para o lanche. As crianças comeram 17. Quantas coxinhas sobraram?' Escreva como você pensou para resolver:", lines: 3 },
+        { kind: "fill-blank", instruction: "Complete a resposta do problema do lanche:", items: ["24 − 17 = ___", "Sobraram ___ coxinhas"] },
+        { kind: "options", instruction: "No lanche da tarde, havia 30 biscoitos. As crianças comeram alguns e sobraram 12. Quantos biscoitos foram comidos?", options: ["18", "12", "42", "30"] },
+        { kind: "draw", instruction: "Desenhe o lanche da sua casa de hoje e escreva quantos salgadinhos ou biscoitos havia antes e depois de você comer:" },
+      ],
+    },
+    {
+      theme: "Verdadeiro ou falso: a igualdade está certa?",
+      exercises: [
+        { kind: "options", instruction: "A sentença 8 + 5 = 12 está:", options: ["Falsa, porque 8 + 5 = 13", "Verdadeira", "Falsa, porque 8 + 5 = 15", "Não dá para saber"] },
+        { kind: "fill-blank", instruction: "Escreva V para verdadeiro ou F para falso em cada sentença:", items: ["6 + 4 = 10 ( ___ )", "9 + 3 = 11 ( ___ )", "7 + 7 = 14 ( ___ )", "15 − 5 = 9 ( ___ )"] },
+        { kind: "lines", instruction: "Escolha uma das sentenças falsas de cima e escreva como ela ficaria certa:", lines: 2 },
+        { kind: "draw", instruction: "Desenhe duas mãos com dedos levantados que mostrem uma igualdade verdadeira, por exemplo 5 + 5 = 10:" },
+      ],
+    },
+    {
+      theme: "Onde está escondido o brinquedo?",
+      exercises: [
+        { kind: "lines", instruction: "Esconda um brinquedo em um cômodo da sua casa e escreva pistas usando palavras como 'perto de', 'longe de', 'embaixo de' ou 'ao lado de' para alguém encontrar:", lines: 3 },
+        { kind: "options", instruction: "Se o brinquedo está 'embaixo da cama, perto da parede', onde alguém deve procurar primeiro?", options: ["Debaixo da cama", "Em cima do armário", "Na porta", "No teto"] },
+        { kind: "fill-blank", instruction: "Complete as frases de localização:", items: ["O brinquedo está ___ do sofá.", "A caixa está ___ da porta.", "O bicho de pelúcia está ___ da cama."] },
+        { kind: "draw", instruction: "Desenhe o cômodo da sua casa onde você escondeu o brinquedo, marcando com um X o lugar exato:" },
+      ],
+    },
+    {
+      theme: "Construindo uma cidade com embalagens",
+      exercises: [
+        { kind: "lines", instruction: "Junte 3 embalagens vazias da sua casa (caixa, lata, garrafa). Escreva o nome de cada uma e a figura geométrica espacial que ela lembra:", lines: 3 },
+        { kind: "options", instruction: "Uma lata de ervilha tem o formato de qual figura geométrica espacial?", options: ["Cilindro", "Cubo", "Esfera", "Pirâmide"] },
+        { kind: "fill-blank", instruction: "Ligue cada embalagem à sua forma, completando:", items: ["Caixa de sapato = ___", "Bola de futebol = ___", "Lata de milho = ___"] },
+        { kind: "draw", instruction: "Desenhe a maquete de uma cidade feita com embalagens recicladas, com pelo menos 3 construções diferentes:" },
+      ],
+    },
+    {
+      theme: "Quem venceu a queimada? Lendo a tabela de resultados",
+      exercises: [
+        { kind: "lines", instruction: "Peça para alguém te contar o placar de um jogo (queimada, futebol, ou outro) que você assistiu ou jogou. Escreva o placar:", lines: 2 },
+        { kind: "options", instruction: "Numa tabela de queimada, o Time Azul venceu 3 partidas e o Time Verde venceu 5. Qual time ganhou mais partidas?", options: ["Time Verde", "Time Azul", "Os dois empataram", "Não dá para saber"] },
+        { kind: "fill-blank", instruction: "Complete a tabela de resultados da queimada com os números que faltam:", items: ["Time Azul: 3 vitórias e ___ derrotas (de 5 jogos)", "Time Verde: ___ vitórias e 2 derrotas (de 7 jogos)"] },
+        { kind: "draw", instruction: "Desenhe uma tabela simples com o nome de dois times e o número de vitórias de cada um:" },
+      ],
+    },
+    {
+      theme: "Quanto cabe no copo? Medindo capacidade",
+      exercises: [
+        { kind: "lines", instruction: "Escolha dois recipientes da sua casa (copo, xícara, garrafinha). Use um copo pequeno para medir quantas vezes ele enche cada um. Escreva o resultado:", lines: 3 },
+        { kind: "options", instruction: "Se um copo pequeno enche uma garrafa 6 vezes e enche uma jarra 10 vezes, qual recipiente tem mais capacidade?", options: ["A jarra", "A garrafa", "Os dois têm a mesma capacidade", "O copo pequeno"] },
+        { kind: "fill-blank", instruction: "Complete com maior ou menor:", items: ["Um balde tem capacidade ___ do que um copo.", "Uma colher tem capacidade ___ do que uma panela."] },
+        { kind: "draw", instruction: "Desenhe os dois recipientes que você mediu em casa, do menor para o maior:" },
+      ],
+    },
+    {
+      theme: "Qual relógio mostra o horário mais cedo?",
+      exercises: [
+        { kind: "options", instruction: "Qual horário é mais cedo?", options: ["07:15", "10:30", "14:00", "19:45"] },
+        { kind: "fill-blank", instruction: "Complete comparando os horários:", items: ["08:00 é mais ___ do que 15:00.", "20:00 é mais ___ do que 07:00."] },
+        { kind: "lines", instruction: "Escreva o horário em que você acorda e o horário em que você dorme. Diga qual é mais cedo:", lines: 2 },
+        { kind: "draw", instruction: "Desenhe dois relógios digitais: um mostrando um horário de manhã e outro mostrando um horário de noite:" },
+      ],
+    },
+    {
+      theme: "Qual foi o brinquedo mais votado?",
+      exercises: [
+        { kind: "lines", instruction: "Pergunte para 3 pessoas da sua casa qual é o brinquedo ou brincadeira preferida delas. Escreva as respostas:", lines: 3 },
+        { kind: "options", instruction: "Em um gráfico de colunas sobre brinquedos preferidos, a coluna da bola tem 8 quadradinhos e a da boneca tem 5. Qual brinquedo foi mais votado?", options: ["A bola", "A boneca", "Os dois empataram", "Não dá para saber"] },
+        { kind: "fill-blank", instruction: "Complete a conclusão sobre a votação da sua casa:", items: ["O brinquedo mais votado foi ___", "Ele recebeu ___ votos"] },
+        { kind: "draw", instruction: "Desenhe um gráfico de colunas simples com os votos que você coletou em casa:" },
+      ],
+    },
+    {
+      theme: "O número que sumiu da sequência",
+      exercises: [
+        { kind: "fill-blank", instruction: "Descubra o número que sumiu de cada sequência:", items: ["2, 4, ___, 8, 10", "10, 20, 30, ___, 50", "5, 10, 15, ___, 25"] },
+        { kind: "options", instruction: "Na sequência 12, ___, 16, 18, qual número está faltando?", options: ["14", "13", "15", "20"] },
+        { kind: "lines", instruction: "Invente uma sequência com um número escondido e escreva-a para alguém da sua casa descobrir:", lines: 2 },
+        { kind: "draw", instruction: "Desenhe uma trilha numerada de 1 a 10 com uma casinha vazia no lugar de um número que sumiu:" },
+      ],
+    },
+    {
+      theme: "Desenhando os passos que usei para resolver o problema",
+      exercises: [
+        { kind: "draw", instruction: "Escolha um problema de matemática que você resolveu essa semana. Desenhe o primeiro passo que você usou para pensar nele:" },
+        { kind: "lines", instruction: "Agora escreva com suas palavras o que você fez depois do desenho, até chegar na resposta:", lines: 3 },
+        { kind: "fill-blank", instruction: "Complete as etapas da sua resolução:", items: ["Primeiro eu ___", "Depois eu ___", "Por fim, a resposta foi ___"] },
+        { kind: "options", instruction: "Por que é importante mostrar os passos usados para resolver um problema, e não só a resposta final?", options: ["Porque ajuda a explicar como você pensou", "Porque deixa a folha mais bonita", "Porque é mais rápido de escrever", "Porque não precisa pensar"] },
+      ],
+    },
   ],
   "lingua-portuguesa": [
     {
@@ -1850,6 +1967,114 @@ export const HOMEWORK_BANK: Record<HomeworkSubject, ActivityEntry[]> = {
         { kind: "options", instruction: "Quando a turma vota para escolher um tema, o resultado deve ser:", options: ["o tema com mais votos", "sempre a ideia do professor", "o tema que ninguém quis", "escolhido sem perguntar a ninguém"] },
         { kind: "fill-blank", instruction: "Complete pensando na votação do mural:", items: ["O tema que eu queria votar é: ___", "Eu escolheria esse tema porque: ___", "Se outro tema ganhar, eu ___", "Um colega que talvez vote igual a mim é: ___"] },
         { kind: "draw", instruction: "Desenhe como você imagina que ficaria o mural, com o tema que você votou." },
+      ],
+    },
+    {
+      theme: "Escalando ajudantes do dia",
+      exercises: [
+        { kind: "fill-blank", instruction: "Pergunte para alguém da sua casa qual tarefa ele(a) faz em casa todo dia e complete:", items: ["A tarefa é: ___", "Ele(a) faz essa tarefa no período da: ___"] },
+        { kind: "options", instruction: "Por que é importante ter uma escala com o nome de cada ajudante do dia?", options: ["Para todos saberem de quem é a vez", "Para deixar a sala mais colorida", "Porque é obrigado por lei", "Não tem nenhum motivo"] },
+        { kind: "lines", instruction: "Se você fosse o ajudante do dia amanhã, escreva o que você faria com capricho:", lines: 3 },
+        { kind: "draw", instruction: "Desenhe você mesmo fazendo uma tarefa de ajudante, como distribuir os cadernos ou apagar a lousa:" },
+      ],
+    },
+    {
+      theme: "Comparando fábulas do Brasil e da África",
+      exercises: [
+        { kind: "lines", instruction: "Peça para alguém da sua casa contar uma história que aprendeu quando era criança. Escreva o nome dela e do que ela trata:", lines: 3 },
+        { kind: "options", instruction: "O que uma fábula brasileira e uma fábula africana podem ter em comum, mesmo vindo de lugares diferentes?", options: ["Animais que falam e ensinam uma lição", "O mesmo autor", "O mesmo idioma", "A mesma capa"] },
+        { kind: "fill-blank", instruction: "Complete sobre as fábulas que você conhece:", items: ["Uma fábula que eu conheço se chama ___", "O animal principal dela é ___", "A lição que ela ensina é ___"] },
+        { kind: "draw", instruction: "Desenhe o animal principal de uma fábula que você já ouviu:" },
+      ],
+    },
+    {
+      theme: "Livrinho de trava-línguas da turma",
+      exercises: [
+        { kind: "lines", instruction: "Peça para alguém da sua casa dizer um trava-língua que conhece. Escreva-o do seu jeito, como você lembra:", lines: 3 },
+        { kind: "word-select", instruction: "Circule as palavras que combinam com o som repetido do trava-língua 'O RATO ROEU A ROUPA DO REI DE ROMA':", items: ["RATO", "GATO", "ROEU", "PORTA", "ROUPA", "ROMA"] },
+        { kind: "options", instruction: "Por que os trava-línguas são difíceis de falar rápido?", options: ["Porque têm sons parecidos que se repetem", "Porque são muito compridos", "Porque não têm sentido nenhum", "Porque são escritos em outra língua"] },
+        { kind: "draw", instruction: "Desenhe uma cena que combine com o trava-língua que você escolheu:" },
+      ],
+    },
+    {
+      theme: "Linha do tempo do nosso dia de horta",
+      exercises: [
+        { kind: "lines", instruction: "Se sua casa tivesse uma hortinha, escreva o que você faria primeiro, depois e por fim para cuidar dela:", lines: 3 },
+        { kind: "fill-blank", instruction: "Complete com palavras de tempo (primeiro, depois, por fim):", items: ["___ eu escolheria as sementes.", "___ eu plantaria na terra.", "___ eu regaria e esperaria crescer."] },
+        { kind: "options", instruction: "Qual dessas plantas costuma ser cuidada em uma horta?", options: ["Alface", "Cadeira", "Bola", "Livro"] },
+        { kind: "draw", instruction: "Desenhe uma hortinha com pelo menos duas plantas ou legumes que você conhece:" },
+      ],
+    },
+    {
+      theme: "Contação para a turma do 1º ano",
+      exercises: [
+        { kind: "lines", instruction: "Escolha uma história curta para contar para uma criança menor. Escreva o título e o motivo da escolha:", lines: 2 },
+        { kind: "options", instruction: "O que é importante fazer durante uma contação de histórias para prender a atenção de quem ouve?", options: ["Mudar a voz dos personagens e mostrar as imagens", "Ler bem baixinho e rápido", "Ler sem olhar para quem escuta", "Contar sem nenhuma emoção na voz"] },
+        { kind: "fill-blank", instruction: "Complete o planejamento da sua contação:", items: ["Eu vou contar a história: ___", "Vou usar esses objetos ou fantoches: ___"] },
+        { kind: "draw", instruction: "Desenhe você contando essa história para alguém da sua casa:" },
+      ],
+    },
+    {
+      theme: "Assembleia da turma: decidindo as regras da sala",
+      exercises: [
+        { kind: "lines", instruction: "Se você pudesse escolher uma regra para a sua casa, qual seria? Escreva a regra e o motivo:", lines: 3 },
+        { kind: "options", instruction: "Durante uma assembleia, o que devemos fazer quando um colega está falando?", options: ["Escutar com atenção e esperar a vez de falar", "Falar junto, bem alto", "Sair da roda", "Rir da opinião dele"] },
+        { kind: "fill-blank", instruction: "Complete as regras combinadas para a sua casa ou sala:", items: ["Regra 1: ___", "Regra 2: ___"] },
+        { kind: "draw", instruction: "Desenhe a turma sentada em roda conversando em uma assembleia:" },
+      ],
+    },
+    {
+      theme: "Colocando em ordem as tiras da história embaralhada",
+      exercises: [
+        { kind: "lines", instruction: "Peça para alguém da sua casa contar uma história desorganizada, fora de ordem, de propósito. Escreva como ficaria a ordem certa:", lines: 3 },
+        { kind: "fill-blank", instruction: "Numere as partes de uma história na ordem certa:", items: ["( ___ ) O personagem resolve o problema.", "( ___ ) Surge um problema na história.", "( ___ ) O personagem é apresentado."] },
+        { kind: "word-select", instruction: "Circule as palavras que ajudam a organizar a ordem dos fatos em uma história:", items: ["PRIMEIRO", "CADEIRA", "DEPOIS", "JANELA", "POR FIM", "MESA"] },
+        { kind: "draw", instruction: "Desenhe fora de ordem três cenas de uma história e peça para alguém da sua casa numerar a ordem certa:" },
+      ],
+    },
+    {
+      theme: "Ditado das palavras com C ou S no início",
+      exercises: [
+        { kind: "fill-blank", instruction: "Peça para alguém da sua casa ditar estas palavras. Escreva o que você ouviu:", items: ["___ (sapo)", "___ (cebola)", "___ (sala)", "___ (cidade)"] },
+        { kind: "word-select", instruction: "Circule apenas as palavras que começam com a letra S:", items: ["SAPO", "CASA", "SOL", "CEBOLA", "SALA", "CIDADE"] },
+        { kind: "options", instruction: "A palavra 'cebola' começa com a letra C, mas tem o mesmo som de qual letra?", options: ["S", "K", "Z", "T"] },
+        { kind: "draw", instruction: "Desenhe um objeto que comece com C e outro que comece com S:" },
+      ],
+    },
+    {
+      theme: "Tirando o \"aí\" e o \"daí\" do texto",
+      exercises: [
+        { kind: "lines", instruction: "Conte para alguém da sua casa o que você fez hoje, sem usar as palavras 'aí' e 'daí'. Depois escreva o que você contou:", lines: 3 },
+        { kind: "fill-blank", instruction: "Reescreva as frases tirando o 'aí' ou o 'daí':", items: ["Eu acordei, aí escovei os dentes. → ___", "Fui para a escola, daí encontrei meus amigos. → ___"] },
+        { kind: "options", instruction: "Por que é melhor evitar 'aí' e 'daí' quando escrevemos um texto?", options: ["Porque são palavras usadas ao falar, e não ao escrever", "Porque são palavras proibidas em qualquer situação", "Porque ninguém entende o que elas significam", "Porque são palavras muito difíceis"] },
+        { kind: "draw", instruction: "Desenhe uma cena do seu dia que você contou sem usar 'aí' ou 'daí':" },
+      ],
+    },
+    {
+      theme: "Comparando duas capas do mesmo livro",
+      exercises: [
+        { kind: "lines", instruction: "Procure em casa dois livros ou embalagens com desenhos diferentes. Escreva qual chama mais a sua atenção e por quê:", lines: 3 },
+        { kind: "fill-blank", instruction: "Complete observando uma capa de livro que você tem em casa:", items: ["O título do livro é: ___", "A imagem da capa mostra: ___"] },
+        { kind: "options", instruction: "Se duas capas do mesmo livro usam cores bem diferentes, o que provavelmente muda entre elas?", options: ["A impressão ou sensação que a capa passa", "A história dentro do livro", "O número de páginas", "O nome do autor"] },
+        { kind: "draw", instruction: "Desenhe duas versões diferentes de capa para o mesmo livro, usando cores diferentes em cada uma:" },
+      ],
+    },
+    {
+      theme: "Brainstorm de ideias para o texto sobre a escola",
+      exercises: [
+        { kind: "lines", instruction: "Escreva 3 coisas que vêm à sua cabeça quando você pensa na sua escola:", lines: 3 },
+        { kind: "word-select", instruction: "Circule as palavras que têm a ver com a escola:", items: ["LOUSA", "PRAIA", "RECREIO", "GELADEIRA", "PROFESSORA", "CACHORRO"] },
+        { kind: "fill-blank", instruction: "Complete as ideias para um texto sobre a escola:", items: ["Minha parte preferida da escola é ___", "Na escola eu aprendo ___"] },
+        { kind: "draw", instruction: "Desenhe a sua escola com os lugares que você mais gosta:" },
+      ],
+    },
+    {
+      theme: "Caixinha de sugestões para o texto do colega",
+      exercises: [
+        { kind: "lines", instruction: "Leia (ou peça para alguém ler) um texto curto que você escreveu. Escreva um bilhete com uma sugestão para melhorá-lo:", lines: 3 },
+        { kind: "options", instruction: "Qual é uma boa forma de dar uma sugestão para o texto de um colega?", options: ["Dizer o que gostou e o que pode melhorar, com respeito", "Só apontar os erros", "Não falar nada", "Rasgar o texto do colega"] },
+        { kind: "fill-blank", instruction: "Complete o bilhete de sugestão para um texto:", items: ["Eu gostei de: ___", "Eu sugiro melhorar: ___"] },
+        { kind: "draw", instruction: "Desenhe uma caixinha de sugestões decorada para colocar os bilhetes da turma:" },
       ],
     },
   ],
