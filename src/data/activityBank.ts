@@ -5482,6 +5482,2752 @@ export const ACTIVITY_BANK: Record<OwnSubject | "leitura-diaria", ActivityEntry[
         },
       ],
     },
+    {
+      theme: "Lendo, escrevendo e comparando números naturais na reta numerada",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Escreva por extenso os números:",
+          items: [
+            "2.734 = __________",
+            "10.501 = __________",
+            "45.008 = __________",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual número é maior: 8.245 ou 8.254?",
+          options: [
+            "8.245",
+            "8.254",
+            "Os dois são iguais",
+            "Não é possível saber",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma reta numerada de 0 a 100 e marque os números 15, 47 e 82 com um X.",
+        },
+        {
+          kind: "lines",
+          instruction: "Observe os números 3.456 e 3.465. Explique com suas palavras qual é maior e como você descobriu isso comparando algarismo por algarismo.",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Compondo e decompondo números naturais",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Decomponha os números em unidades de milhar, centena, dezena e unidade:",
+          items: [
+            "3.542 = ____UM + ____C + ____D + ____U",
+            "8.019 = ____UM + ____C + ____D + ____U",
+            "5.276 = ____UM + ____C + ____D + ____U",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual decomposição representa corretamente o número 4.608?",
+          options: [
+            "4.000 + 600 + 0 + 8",
+            "4.000 + 60 + 8",
+            "400 + 60 + 8",
+            "4.000 + 600 + 80",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Represente com material dourado (ou desenhando quadrados, barras e bolinhas) a composição do número 2.135.",
+        },
+        {
+          kind: "lines",
+          instruction: "Explique como você faria para compor o número 6.024 juntando as partes: 6 milhares, 0 centenas, 2 dezenas e 4 unidades.",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Recitação oral de sequências numéricas",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete as sequências ascendentes:",
+          items: [
+            "120, 130, 140, ____, ____, ____",
+            "205, 210, 215, ____, ____, ____",
+            "1.000, 1.100, 1.200, ____, ____, ____",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Na sequência 500, 450, 400, 350..., qual é a regra usada?",
+          options: [
+            "Subtrai 50 a cada passo",
+            "Soma 50 a cada passo",
+            "Subtrai 100 a cada passo",
+            "Multiplica por 2",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um número entre 500 e 1.000 e escreva, com suas palavras, como você contaria de 10 em 10 a partir dele até chegar perto de 2.000.",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma trilha numerada (como um jogo de tabuleiro) começando em 0 e contando de 25 em 25 até 250.",
+        },
+      ],
+    },
+    {
+      theme: "Estimativas e arredondamentos na resolução de problemas",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Arredonde os números para a dezena mais próxima:",
+          items: [
+            "47 → ____",
+            "83 → ____",
+            "125 → ____",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Uma loja vendeu 287 brinquedos em um mês. Arredondando para a centena mais próxima, quantos brinquedos foram vendidos aproximadamente?",
+          options: [
+            "300",
+            "200",
+            "280",
+            "290",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique como você faz para decidir se arredonda um número para cima ou para baixo.",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma cesta com aproximadamente 50 maçãs (não precisa contar uma por uma, faça uma estimativa visual) e escreva sua estimativa.",
+        },
+      ],
+    },
+    {
+      theme: "Cálculo das quatro operações com estratégias pessoais",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Calcule 347 + 256 usando uma estratégia pessoal (sem conta armada) e explique passo a passo o que você fez.",
+          lines: 4,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Resolva mentalmente:",
+          items: [
+            "500 - 180 = ____",
+            "25 x 4 = ____",
+            "144 ÷ 12 = ____",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual é a forma mais fácil de calcular 99 + 47 mentalmente?",
+          options: [
+            "Somar 100 + 47 e depois tirar 1",
+            "Somar 90 + 40 e depois 9 + 7",
+            "Contar de 1 em 1 a partir de 99",
+            "Não dá para calcular sem conta armada",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Escolha uma estratégia (decompor, arredondar, usar a reta numérica) e desenhe como você resolveria 68 + 25.",
+        },
+      ],
+    },
+    {
+      theme: "Multiplicando e dividindo por 10, 100 e 1000",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "34 x 10 = ____",
+            "34 x 100 = ____",
+            "34 x 1.000 = ____",
+            "7.500 ÷ 10 = ____",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "O que acontece com um número natural quando ele é multiplicado por 100?",
+          options: [
+            "Acrescentam-se dois zeros à direita",
+            "O número dobra",
+            "Acrescenta-se um zero à direita",
+            "O número diminui",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique a regularidade que você percebe ao dividir 4.000 por 10, por 100 e por 1.000.",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um esquema (tabela ou setas) mostrando o que acontece com o número 25 quando multiplicado por 10, 100 e 1.000.",
+        },
+      ],
+    },
+    {
+      theme: "Fatos básicos da multiplicação por 6, 7, 8 e 9",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Calcule:",
+          items: [
+            "6 x 7 = ____",
+            "8 x 9 = ____",
+            "7 x 6 = ____",
+            "9 x 8 = ____",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule os resultados que aparecem na tabuada do 7:",
+          items: [
+            "14",
+            "20",
+            "21",
+            "30",
+            "35",
+            "42",
+            "50",
+            "56",
+            "63",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual operação tem o mesmo resultado de 8 x 6?",
+          options: [
+            "6 x 8",
+            "8 + 6",
+            "8 x 5",
+            "6 x 6",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique um truque ou estratégia que você usa para lembrar a tabuada do 9.",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Multiplicação e divisão por decomposição",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Calcule 23 x 4 decompondo o 23 em 20 + 3. Mostre cada passo do cálculo.",
+          lines: 4,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete a decomposição:",
+          items: [
+            "14 x 6 = (10 x 6) + (4 x 6) = ____ + ____ = ____",
+            "35 x 3 = (30 x 3) + (5 x 3) = ____ + ____ = ____",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Para calcular 27 x 5 por decomposição, qual é a forma correta?",
+          options: [
+            "(20 x 5) + (7 x 5)",
+            "(20 + 5) x (7 + 5)",
+            "20 x 7 x 5",
+            "27 + 5",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um retângulo dividido em duas partes para representar a multiplicação 16 x 3 usando decomposição (16 = 10 + 6).",
+        },
+      ],
+    },
+    {
+      theme: "Técnicas convencionais das quatro operações",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Resolva usando a conta armada:",
+          items: [
+            "456 + 278 = ____",
+            "802 - 345 = ____",
+            "127 x 6 = ____",
+            "384 ÷ 4 = ____",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Ao resolver 253 + 189 com a conta armada, você percebe que 3 + 9 = 12. O que fazer com esse resultado?",
+          options: [
+            "Escreve 2 e leva 1 para a próxima coluna",
+            "Escreve 12 embaixo da coluna",
+            "Ignora o 1",
+            "Soma tudo de novo",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Depois de resolver 634 - 258 pela técnica convencional, explique como você pode confirmar se o resultado está certo usando uma estimativa.",
+          lines: 4,
+        },
+        {
+          kind: "draw",
+          instruction: "Faça a conta armada de 216 x 3, mostrando todas as etapas (unidades, dezenas, centenas) organizadas em colunas.",
+        },
+      ],
+    },
+    {
+      theme: "Problemas dos campos aditivo e multiplicativo",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Uma escola tem 8 salas com 32 alunos cada. Quantos alunos há na escola? Explique como você chegou ao resultado.",
+          lines: 4,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Resolva os problemas:",
+          items: [
+            "João tinha R$ 250 e ganhou mais R$ 175 de mesada. Quanto ele tem agora? ____",
+            "Uma caixa tem 6 fileiras com 9 ovos cada. Quantos ovos há na caixa? ____",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Uma loja tem 4 modelos de camiseta e 3 cores diferentes para cada modelo. De quantas formas diferentes é possível escolher uma camiseta?",
+          options: [
+            "12",
+            "7",
+            "43",
+            "34",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe a situação: um teatro tem 5 fileiras de cadeiras, cada fileira com 8 cadeiras. Desenhe o esquema e escreva quantas cadeiras há no total.",
+        },
+      ],
+    },
+    {
+      theme: "Números racionais no cotidiano",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Circule as situações do dia a dia em que usamos números racionais (frações ou decimais):",
+          items: [
+            "Meio quilo de arroz",
+            "3 cadeiras na sala",
+            "R$ 4,50 de troco",
+            "5 lápis na caixa",
+            "1/4 de pizza",
+            "R$ 12,00 inteiros",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual situação representa um número racional na forma decimal?",
+          options: [
+            "O preço R$ 3,75",
+            "5 bolas na caixa",
+            "10 alunos na fila",
+            "2 cadernos novos",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Dê dois exemplos de situações do seu dia a dia em que você usa números racionais (frações ou decimais), como em receitas, preços ou medidas.",
+          lines: 4,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma pizza dividida em 8 pedaços e pinte 3 pedaços para representar a fração 3/8.",
+        },
+      ],
+    },
+    {
+      theme: "Leitura e escrita de números racionais",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Escreva por extenso:",
+          items: [
+            "0,5 = __________",
+            "3,25 = __________",
+            "1/2 = __________",
+            "3/4 = __________",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Como se lê o número 2,75?",
+          options: [
+            "Duas vírgula setenta e cinco",
+            "Vinte e sete vírgula cinco",
+            "Dois setenta e cinco",
+            "Duzentos e setenta e cinco",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique como você lê a fração 5/10 e o que ela representa.",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma régua ou fita métrica e marque o ponto que representa 0,5 metro (meio metro).",
+        },
+      ],
+    },
+    {
+      theme: "Comparando e ordenando números racionais",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete com >, < ou =:",
+          items: [
+            "3,5 ___ 3,25",
+            "0,7 ___ 0,70",
+            "2,1 ___ 1,9",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual é o maior número: 4,08 ou 4,8?",
+          options: [
+            "4,8",
+            "4,08",
+            "São iguais",
+            "Não dá para comparar",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique como você compara 2,3 e 2,25 para saber qual é maior, mesmo que 2,25 tenha mais algarismos.",
+          lines: 4,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma reta numerada de 0 a 5 e marque os números 1,5 / 2,75 / 4,2 em ordem.",
+        },
+      ],
+    },
+    {
+      theme: "Sistema decimal na representação de números racionais",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete a decomposição decimal:",
+          items: [
+            "3,45 = 3 inteiros + ____ décimos + ____ centésimos",
+            "0,08 = ____ décimos + ____ centésimos",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "No número 5,27, o algarismo 2 representa:",
+          options: [
+            "2 décimos",
+            "2 centésimos",
+            "2 unidades",
+            "2 dezenas",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique a diferença entre a casa dos décimos e a casa dos centésimos em um número decimal, usando o exemplo 6,34.",
+          lines: 4,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma tabela com as colunas: unidade, décimo e centésimo, e represente o número 4,26 nela.",
+        },
+      ],
+    },
+    {
+      theme: "Sequências numéricas recursivas com múltiplos",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete as sequências de múltiplos:",
+          items: [
+            "Múltiplos de 4: 4, 8, 12, ____, ____, ____",
+            "Múltiplos de 6: 6, 12, 18, ____, ____, ____",
+            "Múltiplos de 9: 9, 18, 27, ____, ____, ____",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule os múltiplos de 5:",
+          items: [
+            "10",
+            "13",
+            "15",
+            "22",
+            "25",
+            "30",
+            "33",
+            "40",
+            "44",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual é a regra da sequência 7, 14, 21, 28...?",
+          options: [
+            "São múltiplos de 7 (soma-se 7 a cada passo)",
+            "São múltiplos de 4",
+            "Dobra o número anterior",
+            "Subtrai 7 a cada passo",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma tabela de múltiplos de 3 até 30, organizando os números em uma trilha numerada.",
+        },
+      ],
+    },
+    {
+      theme: "Descobrindo o número desconhecido em uma igualdade",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Descubra o número desconhecido:",
+          items: [
+            "25 + ___ = 60",
+            "___ - 18 = 34",
+            "6 x ___ = 48",
+            "___ ÷ 5 = 9",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Na igualdade 40 + x = 95, qual é o valor de x?",
+          options: [
+            "55",
+            "45",
+            "65",
+            "135",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique como você descobriu o número que falta na igualdade 7 x ___ = 63.",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma balança de dois pratos equilibrada representando a igualdade 15 + 10 = 20 + 5.",
+        },
+      ],
+    },
+    {
+      theme: "Localização de pessoas e objetos em malhas quadriculadas",
+      exercises: [
+        {
+          kind: "draw",
+          instruction: "Desenhe uma malha quadriculada de 10x10 e marque a posição da sua casa na linha 3, coluna 5.",
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as coordenadas dos objetos na malha do seu caderno:",
+          items: [
+            "A mesa está na linha ___, coluna ___",
+            "A porta está na linha ___, coluna ___",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Em uma malha quadriculada, como indicamos a posição de um objeto?",
+          options: [
+            "Pela linha e pela coluna onde ele está",
+            "Só pela cor do quadrado",
+            "Só pelo tamanho do objeto",
+            "Não é possível indicar posição em malha",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique como você descreveria para um colega, usando linha e coluna, onde está localizado o seu lugar na sala de aula.",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Movimentação e ângulos como mudança de direção",
+      exercises: [
+        {
+          kind: "draw",
+          instruction: "Desenhe uma malha quadriculada e trace o caminho de um personagem que anda 3 quadrados para frente, vira à direita (mudança de direção) e anda mais 2 quadrados.",
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as instruções de movimento:",
+          items: [
+            "Andar 4 quadrados para frente e virar ____ (direita ou esquerda)",
+            "Fazer um giro de meia-volta significa virar ____ graus",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Quando uma pessoa vira 90 graus, ela faz:",
+          options: [
+            "Um quarto de volta",
+            "Meia volta",
+            "Uma volta inteira",
+            "Não vira nada",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique, usando palavras como 'para frente', 'direita' e 'esquerda', o caminho que você faz da sua carteira até a porta da sala.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Classificando e comparando polígonos",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Circule os nomes de figuras que são polígonos:",
+          items: [
+            "Triângulo",
+            "Círculo",
+            "Quadrado",
+            "Esfera",
+            "Trapézio",
+            "Cone",
+            "Paralelogramo",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete o número de lados e vértices de cada polígono:",
+          items: [
+            "Triângulo: ____ lados e ____ vértices",
+            "Quadrado: ____ lados e ____ vértices",
+            "Trapézio: ____ lados e ____ vértices",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual é a diferença entre um retângulo e um paralelogramo qualquer?",
+          options: [
+            "O retângulo tem todos os ângulos retos (90°), o paralelogramo nem sempre",
+            "Não existe diferença",
+            "O paralelogramo tem mais lados",
+            "O retângulo não tem 4 lados",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um triângulo, um quadrado, um trapézio e um paralelogramo, identificando o nome de cada um.",
+        },
+      ],
+    },
+    {
+      theme: "Similaridades e diferenças entre figuras espaciais",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Circule os nomes de figuras espaciais que têm faces planas (poliedros):",
+          items: [
+            "Cubo",
+            "Esfera",
+            "Pirâmide",
+            "Cilindro",
+            "Bloco retangular",
+            "Cone",
+            "Prisma",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "Um dado tem o formato de um ____________",
+            "Uma lata de refrigerante tem o formato de um ____________",
+            "Uma casquinha de sorvete tem o formato de um ____________",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual é a diferença entre um cubo e um bloco retangular?",
+          options: [
+            "O cubo tem todas as faces iguais (quadradas), o bloco retangular não necessariamente",
+            "Não existe diferença",
+            "O bloco retangular tem menos faces",
+            "O cubo tem faces redondas",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma esfera, um cilindro, um cone e um cubo, comparando suas formas (quais têm faces planas, quais têm partes arredondadas).",
+        },
+      ],
+    },
+    {
+      theme: "Planificação de figuras geométricas espaciais",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Uma planificação com 6 quadrados iguais, quando montada, forma qual figura geométrica espacial?",
+          options: [
+            "Cubo",
+            "Cone",
+            "Pirâmide de base quadrada",
+            "Cilindro",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete de acordo com a planificação de cada figura espacial:",
+          items: [
+            "A planificação do cubo tem __________ faces quadradas.",
+            "A planificação do cilindro tem __________ círculos e __________ retângulo.",
+            "A planificação da pirâmide de base quadrada tem 1 quadrado e __________ triângulos.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe a planificação (o molde todo aberto) de uma caixa em forma de bloco retangular, como uma caixa de sapatos. Não esqueça de indicar as 6 faces.",
+        },
+        {
+          kind: "lines",
+          instruction: "Se você cortar as bordas de uma lata de leite em pó (formato de cilindro) e abrir totalmente a embalagem, quais formas planas vão aparecer? Explique com suas palavras.",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Figuras planas nas faces de poliedros",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete com o nome da figura plana que aparece em cada face:",
+          items: [
+            "As faces laterais de uma pirâmide de base quadrada são __________.",
+            "As faces de um cubo são todas __________.",
+            "Um prisma de base pentagonal tem 2 faces em forma de __________ e faces laterais em forma de __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Um bloco retangular (paralelepípedo) tem faces com qual formato?",
+          options: [
+            "Retângulos",
+            "Triângulos",
+            "Pentágonos",
+            "Círculos",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Observe uma pirâmide de base triangular. Marque as figuras planas que aparecem em suas faces:",
+          items: [
+            "Triângulo",
+            "Quadrado",
+            "Pentágono",
+            "Círculo",
+            "Retângulo",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um poliedro (sólido geométrico) que tenha pelo menos uma face em formato de pentágono. Escreva o nome das figuras planas que aparecem em cada face.",
+        },
+      ],
+    },
+    {
+      theme: "Ângulos retos e não retos em figuras poligonais",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Observe as figuras a seguir e marque as que têm pelo menos um ângulo reto:",
+          items: [
+            "Quadrado",
+            "Triângulo equilátero",
+            "Retângulo",
+            "Losango bem achatado",
+            "Sala de aula (formato do chão)",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual objeto do dia a dia podemos usar para verificar se um ângulo é reto?",
+          options: [
+            "O canto de uma folha de caderno ou de um livro",
+            "Uma régua comprida",
+            "Uma fita métrica",
+            "Um relógio",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "Um ângulo reto mede __________ graus.",
+            "Um ângulo menor que 90° é chamado de ângulo __________.",
+            "Um ângulo maior que 90° é chamado de ângulo __________.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um quadrilátero que tenha exatamente dois ângulos retos e dois ângulos não retos.",
+        },
+      ],
+    },
+    {
+      theme: "Chances de ocorrência em eventos aleatórios",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Uma caixa tem 8 bolinhas azuis e 2 bolinhas vermelhas. Se você tirar uma bolinha sem olhar, é mais provável tirar uma bolinha:",
+          options: [
+            "Azul",
+            "Vermelha",
+            "As chances são iguais",
+            "Impossível saber",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os eventos que têm MAIOR chance de acontecer amanhã:",
+          items: [
+            "O sol nascer",
+            "Chover em um dia de céu bem nublado",
+            "Uma pessoa ganhar na loteria",
+            "Você respirar",
+            "Nevar em São Paulo",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete usando: mais, menos ou igualmente.",
+          items: [
+            "Em um baralho com 4 reis e 48 outras cartas, tirar um rei é __________ provável do que tirar uma carta que não é rei.",
+            "Jogar uma moeda e ela cair de cara ou coroa são eventos __________ prováveis.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Em uma sacola há 6 bolas amarelas e 1 bola verde. Explique por que é mais provável tirar uma bola amarela do que uma verde.",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Interpretando tabelas e gráficos",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Observe uma tabela com a quantidade de livros lidos por 4 turmas (4ºA: 32, 4ºB: 28, 4ºC: 35, 4ºD: 30). Qual turma leu mais livros? Qual leu menos? Explique como você descobriu.",
+          lines: 3,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "Em um gráfico de colunas sobre frutas preferidas, a coluna mais alta representa a fruta __________.",
+            "Para saber o valor exato de uma coluna, devo olhar para o __________ (eixo com os números).",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Em uma tabela de dupla entrada com o número de alunos por turma e por turno (manhã/tarde), para saber quantos alunos do 4º ano estudam de manhã, devo:",
+          options: [
+            "Cruzar a linha do 4º ano com a coluna da manhã",
+            "Somar todas as linhas",
+            "Olhar só a última coluna",
+            "Contar o título da tabela",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um gráfico de colunas simples mostrando quantos animais de estimação (cachorro, gato, peixe) uma turma imaginária tem, usando estes dados: 12 cachorros, 8 gatos, 3 peixes.",
+        },
+      ],
+    },
+    {
+      theme: "Pesquisa, coleta e organização de dados",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Explique, em suas palavras, quais são as etapas para fazer uma pesquisa: o que perguntar, para quem perguntar, como anotar as respostas e como mostrar o resultado.",
+          lines: 4,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "Antes de fazer uma pesquisa, é preciso definir uma __________ clara para perguntar às pessoas.",
+            "Depois de coletar as respostas, devo __________ os dados (organizar em grupos) antes de montar o gráfico.",
+            "Uma boa forma de comunicar o resultado de uma pesquisa é usando um __________ de colunas ou barras.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Se você quer descobrir qual é o esporte favorito da sua turma, qual é a melhor pergunta de pesquisa?",
+          options: [
+            "Qual é o seu esporte favorito?",
+            "Você gosta de esportes?",
+            "Quantos anos você tem?",
+            "Qual é a sua cor favorita?",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Faça uma pesquisa com 8 colegas sobre a fruta preferida entre maçã, banana e uva. Desenhe uma tabela com os resultados que você coletou.",
+        },
+      ],
+    },
+    {
+      theme: "Produzindo textos a partir de dados de pesquisa",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Observe este gráfico de colunas (imaginário) sobre o meio de transporte usado pelos alunos para ir à escola: a pé (10 alunos), de carro (6 alunos), de ônibus (14 alunos). Escreva um pequeno texto explicando o que o gráfico mostra.",
+          lines: 5,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as etapas de um texto sobre dados:",
+          items: [
+            "Ao escrever sobre um gráfico, devo começar dizendo qual é o __________ da pesquisa.",
+            "Depois, devo destacar qual foi o dado com __________ valor e qual teve o __________ valor.",
+            "Por fim, posso escrever uma __________ (o que aprendi com esses dados).",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual frase é a mais adequada para descrever um gráfico onde ônibus foi a opção mais votada?",
+          options: [
+            "A maioria dos alunos vai à escola de ônibus.",
+            "Ninguém vai de ônibus para a escola.",
+            "Todos os alunos vão a pé.",
+            "O gráfico não mostra nada sobre transporte.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Depois de olhar uma tabela com o número de gols de 3 times em um campeonato, escreva um pequeno texto contando qual time foi o artilheiro e por quê.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Estimativa e medição de comprimento, massa e capacidade",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete com a unidade de medida mais adequada:",
+          items: [
+            "Para medir a altura de uma porta, a unidade mais adequada é o __________.",
+            "Para medir a distância entre duas cidades, usamos o __________.",
+            "Para medir o peso de uma pessoa, usamos o __________.",
+            "Para medir a quantidade de água em uma garrafa, usamos o __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual é a unidade de medida mais adequada para pesar um saco de arroz de supermercado?",
+          options: [
+            "Quilograma (kg)",
+            "Centímetro (cm)",
+            "Litro (L)",
+            "Quilômetro (km)",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as unidades de medida que servem para medir CAPACIDADE (quanto líquido cabe):",
+          items: [
+            "Litro",
+            "Mililitro",
+            "Metro",
+            "Quilograma",
+            "Grama",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Antes de medir com a régua, estime (chute com cuidado) quantos centímetros tem o seu lápis. Depois, se possível, meça de verdade e compare. O que você descobriu?",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Relação entre grandeza e unidade de medida",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "1 metro tem __________ centímetros.",
+            "1 quilograma tem __________ gramas.",
+            "1 litro tem __________ mililitros.",
+            "1 quilômetro tem __________ metros.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Uma caneta mede aproximadamente 15 centímetros. Isso é o mesmo que:",
+          options: [
+            "0,15 metro",
+            "1,5 metro",
+            "150 metros",
+            "15 metros",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique por que usamos o quilômetro para medir a distância entre cidades e o centímetro para medir o comprimento de um lápis, em vez de usar sempre a mesma unidade.",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma reta numerada de 0 a 100 representando uma fita métrica de 1 metro, marcando onde ficaria a medida de 25 cm, 50 cm e 75 cm.",
+        },
+      ],
+    },
+    {
+      theme: "Duração de intervalos de tempo",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete calculando a duração de cada intervalo:",
+          items: [
+            "Se um filme começa às 14h e termina às 16h30, ele dura __________ horas e __________ minutos.",
+            "Se a aula começa às 7h e termina às 7h50, ela dura __________ minutos.",
+            "Se uma viagem começa às 9h15 e termina às 11h45, ela dura __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Um jogo de futebol começou às 16h e terminou às 17h45 (com o intervalo incluso). Quanto tempo durou o jogo?",
+          options: [
+            "1 hora e 45 minutos",
+            "2 horas e 15 minutos",
+            "45 minutos",
+            "1 hora",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique como você calcula quanto tempo passou entre o horário em que você acorda e o horário em que chega à escola.",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe dois relógios: um mostrando a hora que você acha que começa o recreio e outro mostrando a hora que ele termina, considerando que dura 20 minutos.",
+        },
+      ],
+    },
+    {
+      theme: "Conversões entre unidades de medida de tempo",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "1 semana tem __________ dias.",
+            "1 dia tem __________ horas.",
+            "1 ano tem __________ meses.",
+            "2 semanas têm __________ dias.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Quantos dias há em 3 semanas?",
+          options: [
+            "21 dias",
+            "18 dias",
+            "24 dias",
+            "14 dias",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique como você calcularia quantos dias faltam para as próximas férias, sabendo quantas semanas faltam.",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um calendário simples de um mês (pode ser inventado), marcando 4 semanas completas e mostrando quantos dias tem cada uma.",
+        },
+      ],
+    },
+    {
+      theme: "Valores decimais no sistema monetário brasileiro",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "R$ 5,75 é lido como __________ reais e __________ centavos.",
+            "Se eu tenho R$ 10,00 e gasto R$ 3,50, fico com R$ __________.",
+            "Duas notas de R$ 20,00 somam R$ __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Ana comprou um lanche de R$ 8,50 e pagou com uma nota de R$ 10,00. Quanto ela recebeu de troco?",
+          options: [
+            "R$ 1,50",
+            "R$ 2,50",
+            "R$ 1,00",
+            "R$ 18,50",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique como você faria para somar R$ 4,35 + R$ 2,80 sem usar calculadora.",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe as notas e moedas (em reais) que você usaria para pagar exatamente R$ 13,75.",
+        },
+      ],
+    },
+    {
+      theme: "Perímetro como medida do contorno de figuras",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "O perímetro de um quadrado com lado de 5 cm é __________ cm.",
+            "O perímetro de um retângulo com lados 4 cm e 7 cm é __________ cm.",
+            "Perímetro é a medida do __________ (contorno) de uma figura.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Para calcular o perímetro de um triângulo, o que devemos fazer?",
+          options: [
+            "Somar as medidas dos três lados",
+            "Multiplicar os três lados",
+            "Somar apenas dois lados",
+            "Contar os vértices",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique, com suas palavras, o que é o perímetro de uma figura e dê um exemplo do dia a dia em que calcular o perímetro é útil (por exemplo, cercar um terreno).",
+          lines: 4,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um retângulo com 6 cm de comprimento e 3 cm de largura e escreva ao lado o cálculo do seu perímetro.",
+        },
+      ],
+    },
+    {
+      theme: "Calculando o perímetro em malhas quadriculadas",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Imagine uma figura desenhada em uma malha quadriculada que ocupa um retângulo de 5 quadradinhos de comprimento por 3 quadradinhos de largura. Explique como você contaria o perímetro dessa figura.",
+          lines: 3,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "Em uma malha quadriculada, cada lado de um quadradinho vale __________ unidade.",
+            "Um quadrado desenhado com 4 quadradinhos de lado tem perímetro de __________ unidades.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Uma figura em forma de L desenhada em malha quadriculada tem os lados medindo, em unidades: 4, 2, 2, 2, 2, 4. Qual é o perímetro dessa figura?",
+          options: [
+            "16 unidades",
+            "8 unidades",
+            "12 unidades",
+            "20 unidades",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe, em uma malha quadriculada (você mesmo desenha os quadradinhos), uma figura em formato de L e calcule o seu perímetro contando os lados.",
+        },
+      ],
+    },
+    {
+      theme: "Certo, provável e impossível em jogos",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Em um jogo de dado comum (de 1 a 6), marque as afirmações CERTAS (sempre verdadeiras):",
+          items: [
+            "O resultado será um número entre 1 e 6",
+            "O resultado será sempre par",
+            "O resultado será um número maior que 0",
+            "O resultado será sempre o número 6",
+            "O resultado não pode ser 7",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Em um jogo de trilha com dado, qual é a chance de tirar um número maior que 4 (ou seja, 5 ou 6)?",
+          options: [
+            "Pouco provável (só 2 números em 6 possíveis)",
+            "Muito provável",
+            "Certeza absoluta",
+            "Impossível",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete usando: certo, provável ou impossível.",
+          items: [
+            "Se um jogo usa uma roleta toda pintada de azul, tirar azul é __________.",
+            "Se a roleta tem metade azul e metade vermelha, tirar azul ou vermelho é igualmente __________.",
+            "Tirar uma cor que não existe na roleta é __________.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Pense em um jogo de tabuleiro que você conhece. Descreva uma situação certa, uma provável e uma impossível de acontecer nesse jogo.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Antecipando ocorrências para ganhar um jogo",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Em um jogo de trilha, você está na casa 45 e precisa chegar exatamente na casa 50 para ganhar. Se você joga um dado de 1 a 6, quais números fariam você ultrapassar a casa 50? Explique seu raciocínio.",
+          lines: 4,
+        },
+        {
+          kind: "options",
+          instruction: "Em um jogo de adivinhar cartas onde há 4 cartas viradas para baixo (1 rei e 3 não-reis), qual afirmação é verdadeira sobre suas chances?",
+          options: [
+            "A chance de acertar o rei é a mesma em qualquer carta escolhida, 1 em 4",
+            "Escolher a primeira carta aumenta as chances",
+            "Escolher a última carta aumenta as chances",
+            "É impossível acertar o rei",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "Para ganhar um jogo de dados onde preciso de um número par, devo torcer para sair 2, 4 ou __________.",
+            "As chances de sair um número par em um dado comum são __________ das chances totais.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um tabuleiro simples de jogo de trilha com 10 casas e marque quais casas seriam boas de cair para ganhar mais rápido, explicando por quê ao lado.",
+        },
+      ],
+    },
+    {
+      theme: "Matemática e cultura indígena",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Muitos povos indígenas brasileiros usam contagens e medidas em suas atividades, como tecer redes, construir ocas e organizar aldeias. Explique como a matemática pode estar presente na construção de uma oca (casa indígena) em formato circular ou oval.",
+          lines: 4,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "Se uma aldeia indígena tem 6 ocas e cada oca abriga em média 8 pessoas, a aldeia tem aproximadamente __________ pessoas.",
+            "Se um artesão indígena faz colares com um padrão que se repete a cada 4 contas, em um colar de 24 contas esse padrão se repete __________ vezes.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Os grafismos (desenhos) indígenas, como os do povo Kadiwéu, costumam usar muito qual conceito matemático?",
+          options: [
+            "Simetria e repetição de padrões geométricos",
+            "Números decimais",
+            "Porcentagem",
+            "Equações",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Pesquise ou imagine um grafismo (padrão de desenho) indígena e desenhe-o, observando se ele tem simetria (uma metade igual à outra).",
+        },
+      ],
+    },
+    {
+      theme: "Matemática, biodiversidade e Fome Zero",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Uma horta escolar plantou 3 canteiros: um com 12 pés de alface, outro com 8 pés de tomate e outro com 15 pés de cenoura. Quantos pés de hortaliças foram plantados ao todo? Explique como você calculou.",
+          lines: 3,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "Se uma horta produz 40 kg de alimentos por mês e metade é doada para famílias que precisam, são doados __________ kg.",
+            "Se uma pesquisa encontrou 120 espécies de plantas em uma área, e 1/4 delas são frutíferas, isso são __________ espécies frutíferas.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "O projeto Fome Zero busca combater a fome e incentivar a alimentação saudável. Qual conta ajuda a organizar a distribuição de 240 kg de alimentos entre 8 famílias igualmente?",
+          options: [
+            "240 ÷ 8 = 30 kg para cada família",
+            "240 x 8 = 1.920 kg para cada família",
+            "240 + 8 = 248 kg para cada família",
+            "240 - 8 = 232 kg para cada família",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma horta com pelo menos 3 tipos de plantas diferentes e escreva ao lado quantos pés de cada uma você imaginou, calculando o total.",
+        },
+      ],
+    },
+    {
+      theme: "Propriedade associativa da adição e da multiplicação",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "(3 + 4) + 5 = 3 + (4 + __________)",
+            "(2 x 3) x 4 = 2 x (3 x __________)",
+            "Na propriedade associativa, mudar o __________ dos números nas contas não muda o resultado final.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual das opções mostra a propriedade associativa da adição sendo usada corretamente?",
+          options: [
+            "(6 + 2) + 5 = 6 + (2 + 5)",
+            "6 + 2 = 2 + 6",
+            "6 x 2 = 2 x 6",
+            "6 + 0 = 6",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Calcule (5 + 3) + 2 e depois 5 + (3 + 2). Compare os resultados e explique o que você percebeu.",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe dois grupos de blocos ou bolinhas que representem (2 x 3) x 2 de um jeito e 2 x (3 x 2) de outro jeito, mostrando que o total é o mesmo.",
+        },
+      ],
+    },
+    {
+      theme: "Regularidades em multiplicações por 0 e por 1",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "7 x 1 = __________",
+            "1 x 15 = __________",
+            "9 x 0 = __________",
+            "0 x 234 = __________",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual regra é sempre verdadeira quando multiplicamos um número por 0?",
+          options: [
+            "O resultado é sempre 0",
+            "O resultado é sempre igual ao número",
+            "O resultado é sempre 1",
+            "Depende do número",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique com suas palavras por que qualquer número multiplicado por 1 dá sempre o próprio número.",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe 5 grupos vazios (sem nenhum elemento dentro) para representar 5 x 0, e depois desenhe 1 grupo com 5 elementos para representar 5 x 1. Compare os resultados.",
+        },
+      ],
+    },
+    {
+      theme: "Leitura, escrita e comparação de números naturais de várias ordens",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Escreva por extenso os números:",
+          items: [
+            "45.372 = __________",
+            "108.009 = __________",
+            "1.250.000 = __________",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual é a forma correta de comparar os números 87.450 e 87.540?",
+          options: [
+            "Comparar primeiro a ordem de maior valor até encontrar uma diferença",
+            "Comparar apenas o último algarismo",
+            "Somar os dois números e ver qual é maior",
+            "Contar quantos algarismos tem cada número, ignorando a ordem",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique, com suas palavras, como você descobre se um número é maior que outro quando os dois têm a mesma quantidade de algarismos:",
+          lines: 4,
+        },
+        {
+          kind: "draw",
+          instruction: "Escolha um número de 6 algarismos e represente sua decomposição em um quadro de ordens (unidades, dezenas, centenas, unidades de milhar, dezenas de milhar, centenas de milhar):",
+        },
+      ],
+    },
+    {
+      theme: "Leitura e representação de números racionais na reta numerada",
+      exercises: [
+        {
+          kind: "draw",
+          instruction: "Desenhe uma reta numerada de 0 a 1, dividida em décimos, e marque os pontos correspondentes a 0,3 e 3/10:",
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com a fração ou o decimal equivalente:",
+          items: [
+            "0,5 = __________ (fração)",
+            "3/4 = __________ (decimal)",
+            "0,25 = __________ (fração)",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Entre um número inteiro e o próximo, quantos números racionais podemos encontrar?",
+          options: [
+            "Infinitos números racionais",
+            "Exatamente 9 números",
+            "Nenhum, só existem os números inteiros",
+            "Apenas números pares",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique como você localizaria o número 1,7 em uma reta numerada que vai de 0 a 3:",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Significados dos números racionais: parte-todo e quociente",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Em '3 pizzas divididas igualmente entre 4 amigos', a fração 3/4 representa o significado de:",
+          options: [
+            "Quociente (divisão entre duas quantidades)",
+            "Parte-todo (uma parte de um único inteiro dividido)",
+            "Porcentagem",
+            "Número decimal apenas",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "Uma barra de chocolate com 8 pedaços, dos quais comi 5, representa a fração __________ no significado parte-todo",
+            "5 barras de chocolate divididas entre 2 pessoas: cada pessoa recebe __________",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique a diferença entre a fração 1/2 usada para representar 'metade de uma pizza' e a fração 1/2 usada para representar '1 litro de suco dividido entre 2 copos':",
+          lines: 5,
+        },
+        {
+          kind: "draw",
+          instruction: "Represente com desenhos duas situações: uma em que a fração 2/3 tem o significado de parte-todo, e outra em que ela representa um quociente (uma divisão):",
+        },
+      ],
+    },
+    {
+      theme: "Comparação e ordenação de frações e números decimais",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual é a forma mais eficiente de comparar 3/5 e 0,55?",
+          options: [
+            "Transformar a fração em decimal (3/5 = 0,6) e comparar com 0,55",
+            "Comparar apenas os numeradores",
+            "Comparar apenas os denominadores",
+            "É impossível comparar fração com decimal",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "0,4 em fração é __________",
+            "3/4 em decimal é __________",
+            "Ordem crescente de 0,4 — 3/4 — 0,15 — 1/2: __________",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique como você decidiu qual é maior: 2/3 ou 0,7:",
+          lines: 3,
+        },
+        {
+          kind: "draw",
+          instruction: "Represente 1/2, 0,3 e 3/4 em uma mesma reta numerada de 0 a 1, para comparar visualmente os três números:",
+        },
+      ],
+    },
+    {
+      theme: "Investigação da equivalência de frações",
+      exercises: [
+        {
+          kind: "draw",
+          instruction: "Desenhe dois retângulos do mesmo tamanho: no primeiro, pinte 1/2; no segundo, divida em quartos e pinte a quantidade equivalente a 1/2:",
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frações equivalentes:",
+          items: [
+            "1/2 = ___/4",
+            "1/2 = ___/6",
+            "2/3 = ___/6",
+            "2/3 = ___/9",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual fração é equivalente a 3/4?",
+          options: [
+            "6/8",
+            "3/8",
+            "4/3",
+            "1/4",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Observando as frações 2/4, 3/6 e 4/8, explique qual regularidade você percebe na relação entre numerador e denominador que faz com que todas sejam equivalentes a 1/2:",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Estratégias de cálculo com as quatro operações",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Explique, passo a passo, uma estratégia de cálculo mental para resolver 298 + 456 sem usar a conta armada:",
+          lines: 4,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "Estime o resultado de 812 - 397 arredondando os números: __________",
+            "Agora calcule o resultado exato: __________",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Para calcular 25 x 12 mentalmente, qual estratégia é mais eficiente?",
+          options: [
+            "Calcular 25 x 10 + 25 x 2",
+            "Somar 25 doze vezes uma por uma",
+            "Multiplicar 2 x 1 e 5 x 2 separadamente sem juntar",
+            "Dividir 25 por 12",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Escolha uma multiplicação de dois números com dois algarismos cada e represente sua decomposição (por exemplo, usando um retângulo dividido) para calcular o resultado:",
+        },
+      ],
+    },
+    {
+      theme: "Resolução de problemas dos campos aditivo e multiplicativo",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Leia o problema: 'Uma escola tem 8 salas de aula, cada uma com 27 alunos. Quantos alunos há na escola ao todo?' Resolva e explique seu raciocínio:",
+          lines: 4,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Resolva:",
+          items: [
+            "Ana tinha R$ 45,00, ganhou R$ 30,00 de mesada e gastou R$ 18,00 em um livro. Quanto sobrou? Resposta: __________",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Um ônibus tem 42 lugares. Para transportar 250 pessoas, quantos ônibus são necessários no mínimo?",
+          options: [
+            "6 ônibus",
+            "5 ônibus",
+            "7 ônibus",
+            "4 ônibus",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Crie e ilustre com um desenho um problema envolvendo multiplicação que possa ser resolvido com a conta 6 x 15:",
+        },
+      ],
+    },
+    {
+      theme: "Cálculo de adição e subtração com números decimais",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Calcule:",
+          items: [
+            "12,50 + 7,35 = __________",
+            "45,00 - 18,75 = __________",
+            "3,08 + 9,4 = __________",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique como você organiza a vírgula ao somar 24,3 + 5,67, e por que isso é importante:",
+          lines: 3,
+        },
+        {
+          kind: "options",
+          instruction: "Qual é o resultado de 8,2 - 3,45?",
+          options: [
+            "4,75",
+            "5,25",
+            "4,85",
+            "3,75",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Represente em um desenho (como um quadro de valor de lugar) a soma 3,25 + 1,8, mostrando como os décimos e centésimos se organizam:",
+        },
+      ],
+    },
+    {
+      theme: "Cálculo de porcentagens simples e sua relação com frações",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Calcule:",
+          items: [
+            "50% de 80 = __________",
+            "25% de 200 = __________",
+            "10% de 350 = __________",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique a relação entre 50%, a fração 1/2 e o número decimal 0,5:",
+          lines: 3,
+        },
+        {
+          kind: "options",
+          instruction: "Uma loja está com 25% de desconto em um produto de R$ 120,00. Qual é o valor do desconto?",
+          options: [
+            "R$ 30,00",
+            "R$ 25,00",
+            "R$ 40,00",
+            "R$ 20,00",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um quadrado dividido em 10 partes iguais e pinte 75% dele, explicando com uma frase quantas partes você pintou:",
+        },
+      ],
+    },
+    {
+      theme: "Problemas do campo aditivo com números racionais em forma decimal",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Leia: 'Marina correu 2,750 km na segunda-feira e 1,340 km na terça-feira. Quantos quilômetros ela correu ao todo?' Resolva e explique seu raciocínio:",
+          lines: 4,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Resolva:",
+          items: [
+            "Uma garrafa tem 1,5 litro de suco. Se eu usar 0,75 litro numa receita, quanto sobra? Resposta: __________",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Pedro tinha R$ 87,40, recebeu R$ 15,60 e gastou R$ 42,00. Quanto ele tem agora?",
+          options: [
+            "R$ 61,00",
+            "R$ 71,00",
+            "R$ 51,00",
+            "R$ 45,00",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Crie e ilustre um problema envolvendo números decimais que possa ser resolvido com a conta 5,25 + 3,80:",
+        },
+      ],
+    },
+    {
+      theme: "Investigação das propriedades da igualdade",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Explique por que a igualdade 8 + 5 = 13 continua verdadeira se somarmos 2 aos dois lados: 8 + 5 + 2 = 13 + 2. O que acontece dos dois lados?",
+          lines: 4,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "Se x + 4 = 10, então x + 4 - 4 = 10 - __________, logo x = __________",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Se numa balança em equilíbrio 6 = 6, o que acontece se multiplicarmos os dois lados por 3?",
+          options: [
+            "A balança continua em equilíbrio, pois 18 = 18",
+            "A balança desequilibra para a esquerda",
+            "A balança desequilibra para a direita",
+            "É impossível saber sem mais informações",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma balança de dois pratos em equilíbrio representando a igualdade 5 + 3 = 8, e depois desenhe o que acontece se você retirar 2 de cada prato:",
+        },
+      ],
+    },
+    {
+      theme: "Problemas envolvendo ampliação e redução proporcional de quantidades",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Uma receita de bolo para 4 pessoas usa 2 xícaras de farinha. Se eu quiser fazer para 12 pessoas, quantas xícaras vou precisar? Explique seu raciocínio:",
+          lines: 4,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete mantendo a proporção:",
+          items: [
+            "Se 3 canetas custam R$ 9,00, quanto custam 9 canetas? __________",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Uma foto de 10 cm x 15 cm será ampliada para o dobro do tamanho. Quais serão as novas medidas?",
+          options: [
+            "20 cm x 30 cm",
+            "15 cm x 20 cm",
+            "10 cm x 30 cm",
+            "12 cm x 17 cm",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um retângulo pequeno de 2 cm x 3 cm em uma malha quadriculada e, ao lado, desenhe a mesma figura ampliada para o triplo do tamanho:",
+        },
+      ],
+    },
+    {
+      theme: "Problemas de partilha de uma quantidade em partes desiguais",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Dois irmãos vão repartir R$ 60,00 de uma mesada, mas um deles recebe o dobro do outro por ser mais velho. Quanto cada um recebe? Explique seu raciocínio:",
+          lines: 4,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "Repartir 40 figurinhas entre dois amigos, sendo que um recebe 3 vezes mais que o outro: o que recebe menos ganha __________, o que recebe mais ganha __________",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Ao repartir 90 balas entre duas crianças, na razão de 2 para 1 (uma recebe o dobro da outra), quantas balas cada uma recebe?",
+          options: [
+            "30 e 60",
+            "45 e 45",
+            "20 e 70",
+            "10 e 80",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Represente com desenhos (bolinhas ou fichas) a partilha de 24 lápis entre duas crianças, sendo que uma recebe o triplo da outra:",
+        },
+      ],
+    },
+    {
+      theme: "Localização e movimentação de pontos no plano cartesiano",
+      exercises: [
+        {
+          kind: "draw",
+          instruction: "Desenhe um plano cartesiano com eixos de 0 a 10 e marque os pontos A(2,3), B(5,7) e C(8,1):",
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "O ponto que está 3 unidades para a direita e 4 unidades para cima da origem tem coordenadas ( __________ , __________ )",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Se um ponto está localizado em (4, 6) e se move 3 unidades para a direita, suas novas coordenadas são:",
+          options: [
+            "(7, 6)",
+            "(4, 9)",
+            "(1, 6)",
+            "(4, 3)",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique a diferença entre o significado da primeira coordenada (x) e da segunda coordenada (y) de um ponto no plano cartesiano:",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Características e classificação de poliedros",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Circule, entre as figuras abaixo, aquelas que são poliedros (sólidos com faces planas):",
+          items: [
+            "Cubo",
+            "Esfera",
+            "Pirâmide de base quadrada",
+            "Cilindro",
+            "Prisma triangular",
+            "Cone",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "Um prisma de base retangular tem __________ faces, __________ vértices e __________ arestas",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual é a principal diferença entre um prisma e uma pirâmide?",
+          options: [
+            "O prisma tem duas bases paralelas e a pirâmide tem uma base e um vértice (ápice)",
+            "O prisma tem faces curvas e a pirâmide não",
+            "A pirâmide sempre tem base quadrada e o prisma não",
+            "Não há diferença entre eles",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um prisma de base triangular e uma pirâmide de base quadrada, identificando as bases de cada um:",
+        },
+      ],
+    },
+    {
+      theme: "Planificação de sólidos geométricos",
+      exercises: [
+        {
+          kind: "draw",
+          instruction: "Desenhe a planificação (o molde aberto) de um cubo, mostrando as 6 faces quadradas conectadas:",
+        },
+        {
+          kind: "options",
+          instruction: "Qual figura plana forma a planificação da superfície lateral de um cilindro (quando desenrolada)?",
+          options: [
+            "Um retângulo",
+            "Um triângulo",
+            "Um círculo",
+            "Um quadrado",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "A planificação de uma pirâmide de base quadrada é formada por __________ quadrado(s) e __________ triângulo(s)",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique como você reconhece se uma planificação de papel, quando dobrada, vai formar um cubo ou uma pirâmide:",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Relações entre faces, vértices e arestas de poliedros",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete usando a relação de Euler (F + V = A + 2):",
+          items: [
+            "Um cubo tem 6 faces, 8 vértices e 12 arestas. Aplicando a relação: 6 + 8 = __________ + 2, ou seja, __________",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique com suas palavras a relação de Euler (faces + vértices = arestas + 2) usando o exemplo de uma pirâmide de base quadrada (5 faces, 5 vértices, 8 arestas):",
+          lines: 4,
+        },
+        {
+          kind: "options",
+          instruction: "Um prisma de base pentagonal tem 7 faces e 10 vértices. Quantas arestas ele deve ter, segundo a relação de Euler?",
+          options: [
+            "15 arestas",
+            "12 arestas",
+            "17 arestas",
+            "10 arestas",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma tabela comparando três poliedros diferentes (cubo, pirâmide de base triangular e prisma de base triangular), anotando o número de faces, vértices e arestas de cada um:",
+        },
+      ],
+    },
+    {
+      theme: "Classificação de polígonos pelo número de lados e ângulos",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "Um polígono de 5 lados chama-se __________",
+            "Um polígono de 6 lados chama-se __________",
+            "Um polígono de 8 lados chama-se __________",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Circule, entre as figuras descritas abaixo, aquelas que são polígonos:",
+          items: [
+            "Triângulo",
+            "Círculo",
+            "Hexágono",
+            "Elipse",
+            "Pentágono",
+            "Losango",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual é a principal diferença entre um polígono regular e um polígono irregular?",
+          options: [
+            "No regular, todos os lados e ângulos são iguais; no irregular, não",
+            "O regular sempre tem 4 lados",
+            "O irregular não tem ângulos",
+            "Não existe diferença",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um pentágono regular e um pentágono irregular, destacando a diferença entre os lados e ângulos de cada um:",
+        },
+      ],
+    },
+    {
+      theme: "Circunferência e seus elementos",
+      exercises: [
+        {
+          kind: "draw",
+          instruction: "Usando um compasso (ou contornando um objeto redondo), desenhe uma circunferência e marque o centro, um raio e o diâmetro:",
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "Se o raio de uma circunferência mede 5 cm, o diâmetro mede __________ cm",
+            "Se o diâmetro mede 18 cm, o raio mede __________ cm",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual é a relação entre o raio e o diâmetro de uma circunferência?",
+          options: [
+            "O diâmetro é o dobro do raio",
+            "O raio é o dobro do diâmetro",
+            "Raio e diâmetro são sempre iguais",
+            "Não existe relação entre eles",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique a diferença entre círculo e circunferência, e entre raio e diâmetro:",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Composição e decomposição de polígonos com figuras triangulares",
+      exercises: [
+        {
+          kind: "draw",
+          instruction: "Desenhe um hexágono e trace linhas para dividi-lo em triângulos, mostrando que ele pode ser formado a partir de figuras triangulares:",
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "Um quadrado pode ser decomposto em __________ triângulos, traçando uma de suas diagonais",
+            "Um pentágono pode ser decomposto em __________ triângulos",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qualquer polígono convexo pode ser decomposto em triângulos traçando:",
+          options: [
+            "Diagonais a partir de um mesmo vértice",
+            "Apenas retas paralelas aos lados",
+            "Círculos internos",
+            "Não é possível decompor polígonos em triângulos",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique por que é útil decompor um polígono em triângulos, por exemplo, para calcular sua área:",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Ampliação e redução de polígonos em malha quadriculada",
+      exercises: [
+        {
+          kind: "draw",
+          instruction: "Em uma malha quadriculada, desenhe um triângulo pequeno e, ao lado, o mesmo triângulo ampliado para o dobro do tamanho, mantendo a proporção:",
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete:",
+          items: [
+            "Um retângulo de 3 x 4 quadradinhos, ampliado para o dobro, terá as medidas __________ x __________",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Ao reduzir um polígono pela metade em uma malha quadriculada, o que deve acontecer com todos os seus lados?",
+          options: [
+            "Todos os lados devem ser divididos por 2, mantendo a proporção",
+            "Apenas um lado muda de tamanho",
+            "Os ângulos devem mudar",
+            "O número de lados diminui",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique o que pode dar errado se, ao ampliar um polígono, você aumentar apenas a largura e não a altura na mesma proporção:",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Simetria de reflexão em figuras planas",
+      exercises: [
+        {
+          kind: "draw",
+          instruction: "Desenhe o eixo de simetria de cada figura: um quadrado, um retângulo e a letra A maiúscula.",
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as letras do alfabeto abaixo que possuem pelo menos um eixo de simetria:",
+          items: [
+            "A",
+            "B",
+            "C",
+            "F",
+            "H",
+            "M",
+            "N",
+            "O",
+            "T",
+            "S",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Observe uma borboleta desenhada com as asas abertas, uma metade igual à outra. O que podemos afirmar sobre suas duas metades?",
+          options: [
+            "Elas são simétricas em relação ao eixo que passa pelo corpo da borboleta",
+            "Elas são totalmente diferentes uma da outra",
+            "Apenas as cores são iguais, o formato não",
+            "Não existe nenhuma relação entre as duas metades",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique com suas palavras o que significa dizer que uma figura tem simetria de reflexão. Dê um exemplo de objeto do dia a dia que você conhece.",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Identificação de ângulos retos, agudos e obtusos",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque as medidas de ângulo que representam ângulos agudos (menores que 90°):",
+          items: [
+            "30°",
+            "90°",
+            "45°",
+            "120°",
+            "10°",
+            "180°",
+            "89°",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Os ponteiros de um relógio marcando 3 horas formam um ângulo de:",
+          options: [
+            "90° (reto)",
+            "45° (agudo)",
+            "180° (raso)",
+            "120° (obtuso)",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um polígono (por exemplo, um pentágono) e marque com um arco cada um dos ângulos internos. Classifique cada um como reto, agudo ou obtuso.",
+        },
+        {
+          kind: "lines",
+          instruction: "Observe os ângulos internos de um triângulo retângulo. Explique quantos ângulos retos, agudos e obtusos ele tem.",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Resultados possíveis de experimentos aleatórios",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Se você lançar um dado comum (de 1 a 6), quais são todos os resultados possíveis? Escreva-os e explique se algum número tem mais chance de sair do que outro.",
+          lines: 4,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete pensando nos resultados possíveis de cada experimento:",
+          items: [
+            "Ao lançar uma moeda, os resultados possíveis são __________ e __________.",
+            "Em uma caixa com bolas azul, verde e amarela, ao tirar uma bola ao acaso, os resultados possíveis são __________.",
+            "Ao girar uma roleta dividida em 4 partes iguais numeradas de 1 a 4, os resultados possíveis são __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Uma urna tem 3 bolas vermelhas e 3 bolas brancas, todas do mesmo tamanho. Isso é um exemplo de evento:",
+          options: [
+            "Equiprovável (mesma chance para cada cor)",
+            "Impossível",
+            "Certo, só pode sair vermelha",
+            "Que nunca pode dar branco",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma roleta dividida em 6 partes iguais, numeradas de 1 a 6, e liste todos os resultados possíveis ao girá-la.",
+        },
+      ],
+    },
+    {
+      theme: "Cálculo da probabilidade de eventos equiprováveis",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete calculando a probabilidade de cada situação:",
+          items: [
+            "Uma caixa tem 5 bolas: 2 vermelhas e 3 azuis. A probabilidade de tirar uma bola vermelha é __________ em __________.",
+            "Em um dado comum, a probabilidade de sair o número 4 é 1 em __________.",
+            "Em uma moeda, a probabilidade de dar cara é __________ em __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Em um saco com 10 bolinhas numeradas de 1 a 10, qual é a probabilidade de tirar um número par?",
+          options: [
+            "5 em 10 (metade)",
+            "1 em 10",
+            "10 em 10",
+            "0 em 10",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Uma roleta tem 8 partes iguais, sendo 2 vermelhas, 3 azuis e 3 verdes. Explique como você calcularia a probabilidade de a seta parar em uma parte azul.",
+          lines: 4,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma roleta com 4 partes iguais, sendo 1 amarela e 3 verdes. Escreva ao lado a probabilidade de cair em cada cor.",
+        },
+      ],
+    },
+    {
+      theme: "Associação de tabelas a gráficos de colunas, barras e linhas",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Um gráfico de linhas é mais indicado para mostrar:",
+          options: [
+            "A variação de um valor ao longo do tempo (por exemplo, temperatura durante a semana)",
+            "A quantidade total de alunos de uma escola em um único dia",
+            "Apenas números pares",
+            "A cor favorita de cada aluno, sem relação com o tempo",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Observe um gráfico de colunas sobre o esporte favorito da turma e complete:",
+          items: [
+            "O __________ do gráfico indica sobre o que ele trata.",
+            "A __________ explica o que cada cor ou símbolo representa.",
+            "A __________ informa de onde vieram os dados e a __________ diz quando a pesquisa foi feita.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque quais elementos devem aparecer em um gráfico bem construído:",
+          items: [
+            "Título",
+            "Legenda (quando necessário)",
+            "Fonte dos dados",
+            "Desenho aleatório sem relação com os dados",
+            "Eixos com valores",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Observe esta tabela: Segunda: 5 alunos faltaram; Terça: 2; Quarta: 4; Quinta: 1; Sexta: 3. Transforme esses dados em um gráfico de colunas, com título, legenda e eixos.",
+        },
+      ],
+    },
+    {
+      theme: "Pesquisa e organização de dados em tabelas e gráficos",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Planeje uma pesquisa com seus colegas de turma sobre o meio de transporte que cada um usa para ir à escola. Escreva a pergunta que você faria e liste as possíveis respostas.",
+          lines: 4,
+        },
+        {
+          kind: "draw",
+          instruction: "Faça uma tabela de frequência imaginando que você perguntou a 10 colegas qual é a estação do ano preferida. Invente os dados e organize em uma tabela com as colunas 'Estação' e 'Número de alunos'.",
+        },
+        {
+          kind: "options",
+          instruction: "Altura e idade são exemplos de variáveis:",
+          options: [
+            "Numéricas (podem ser medidas com números)",
+            "Categóricas (não podem ser medidas com números)",
+            "Impossíveis de pesquisar",
+            "Que não servem para gráficos",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre pesquisa de dados:",
+          items: [
+            "Cor dos olhos é uma variável __________ (categórica/numérica).",
+            "Número de irmãos é uma variável __________ (categórica/numérica).",
+            "Depois de coletar os dados de uma pesquisa, organizamos em uma __________ antes de fazer o gráfico.",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Produção de texto a partir da leitura de tabelas e gráficos",
+      exercises: [
+        {
+          kind: "draw",
+          instruction: "Observe este gráfico de colunas imaginário: Frutas preferidas da turma — Maçã: 8 votos, Banana: 5 votos, Uva: 10 votos, Laranja: 3 votos. Desenhe o gráfico de colunas com esses dados, incluindo título e legenda.",
+        },
+        {
+          kind: "lines",
+          instruction: "Com base no gráfico que você desenhou na questão anterior, escreva um pequeno texto contando qual fruta foi mais votada, qual foi menos votada e qual a diferença entre elas.",
+          lines: 5,
+        },
+        {
+          kind: "options",
+          instruction: "Ao escrever um texto sobre um gráfico, é importante:",
+          options: [
+            "Comparar os dados e destacar o maior e o menor valor",
+            "Inventar números que não estão no gráfico",
+            "Ignorar o título do gráfico",
+            "Escrever sobre um assunto diferente do gráfico",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Com base no gráfico das frutas, complete:",
+          items: [
+            "A fruta mais votada foi a __________, com __________ votos.",
+            "A fruta menos votada foi a __________, com __________ votos.",
+            "A diferença entre a mais votada e a menos votada é de __________ votos.",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Resolução de problemas a partir de dados organizados em tabelas e gráficos",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Uma tabela mostra a venda de livros em uma livraria durante 4 dias: Segunda: 45 livros; Terça: 32 livros; Quarta: 58 livros; Quinta: 27 livros. Quantos livros foram vendidos ao todo nesses 4 dias? Mostre como você calculou.",
+          lines: 4,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Usando a tabela da questão anterior, complete:",
+          items: [
+            "O dia de maior venda foi __________, com __________ livros.",
+            "A diferença entre o dia de maior e o dia de menor venda foi de __________ livros.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Um gráfico mostra que a Turma A leu 120 livros no mês e a Turma B leu 95 livros. Quantos livros a mais a Turma A leu em relação à Turma B?",
+          options: [
+            "25 livros",
+            "15 livros",
+            "35 livros",
+            "215 livros",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Crie uma tabela com a quantidade de gols de 4 times em um campeonato (invente os números) e escreva um problema de matemática que possa ser resolvido usando esses dados.",
+        },
+      ],
+    },
+    {
+      theme: "Problemas envolvendo medidas de comprimento, massa, tempo, temperatura e capacidade",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete as transformações de medida:",
+          items: [
+            "3 metros = __________ centímetros.",
+            "2,5 quilogramas = __________ gramas.",
+            "1 hora e 30 minutos = __________ minutos.",
+            "4 litros = __________ mililitros.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Uma receita de bolo pede 750 mL de leite, mas você só tem um copo medidor de 250 mL. Explique quantas vezes você precisa encher o copo para conseguir a quantidade certa.",
+          lines: 3,
+        },
+        {
+          kind: "options",
+          instruction: "A temperatura da manhã era 14°C e à tarde subiu para 26°C. Qual foi a variação de temperatura?",
+          options: [
+            "12°C",
+            "10°C",
+            "14°C",
+            "40°C",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma linha do tempo mostrando um dia (24 horas) e marque três atividades que você faz, indicando o horário de início e o tempo que cada uma dura.",
+        },
+      ],
+    },
+    {
+      theme: "Cálculo do perímetro de polígonos",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Um terreno retangular tem 12 metros de comprimento e 8 metros de largura. Explique como calcular o perímetro desse terreno e qual é o resultado.",
+          lines: 3,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Calcule o perímetro de cada figura:",
+          items: [
+            "O perímetro de um quadrado com lado de 6 cm é __________ cm.",
+            "O perímetro de um triângulo com lados de 5 cm, 7 cm e 9 cm é __________ cm.",
+            "Um retângulo tem base 10 cm e altura 4 cm. Seu perímetro é __________ cm.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um polígono em uma malha quadriculada (pode ser irregular) com pelo menos 5 lados e calcule seu perímetro contando os quadradinhos das bordas.",
+        },
+        {
+          kind: "options",
+          instruction: "Para calcular o perímetro de qualquer polígono, devemos:",
+          options: [
+            "Somar as medidas de todos os lados",
+            "Multiplicar todos os lados entre si",
+            "Contar apenas os vértices",
+            "Multiplicar a base pela altura",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Compreensão da área como medida de superfície",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Explique com suas palavras o que é a área de uma figura e dê um exemplo de situação do dia a dia em que precisamos calcular uma área.",
+          lines: 4,
+        },
+        {
+          kind: "options",
+          instruction: "A área de uma figura é medida em:",
+          options: [
+            "Unidades de superfície, como cm² ou m²",
+            "Unidades de comprimento, como cm ou m",
+            "Unidades de tempo, como minutos",
+            "Unidades de massa, como gramas",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe duas figuras diferentes em uma malha quadriculada que tenham a mesma área, mas formatos diferentes.",
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as situações em que estamos medindo área (e não perímetro ou volume):",
+          items: [
+            "Calcular quantos ladrilhos cobrem o chão de uma sala",
+            "Calcular quanto tecido é preciso para cobrir uma mesa",
+            "Medir a volta de um jardim com uma cerca",
+            "Calcular quanta tinta é necessária para pintar uma parede",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Cálculo de áreas de retângulos e quadrados em malha quadriculada",
+      exercises: [
+        {
+          kind: "draw",
+          instruction: "Desenhe um retângulo de 6 quadradinhos de base por 4 quadradinhos de altura em uma malha quadriculada e conte o total de quadradinhos para encontrar a área.",
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Calcule a área de cada figura:",
+          items: [
+            "A área de um retângulo com base 7 cm e altura 3 cm é __________ cm².",
+            "A área de um quadrado com lado 5 cm é __________ cm².",
+            "Um retângulo com área 24 cm² e base 6 cm tem altura __________ cm.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique por que multiplicamos a base pela altura para encontrar a área de um retângulo, relacionando com a contagem de quadradinhos em uma malha.",
+          lines: 4,
+        },
+        {
+          kind: "options",
+          instruction: "Um quadrado tem lado de 9 cm. Qual é sua área?",
+          options: [
+            "81 cm²",
+            "36 cm²",
+            "18 cm²",
+            "72 cm²",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Problemas com o sistema monetário brasileiro",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Marina foi ao mercado com R$ 50,00. Comprou um pacote de arroz por R$ 18,90, um leite por R$ 5,50 e um pão por R$ 7,30. Quanto ela gastou ao todo e quanto sobrou do dinheiro? Mostre os cálculos.",
+          lines: 5,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Resolva os cálculos com dinheiro:",
+          items: [
+            "Se um lápis custa R$ 1,75 e você compra 4 lápis, o total é __________.",
+            "Uma calculadora custa R$ 32,00. Pagando com uma nota de R$ 50,00, o troco é __________.",
+            "R$ 8,45 + R$ 12,60 = __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "João comprou 3 cadernos de R$ 9,80 cada e 2 canetas de R$ 3,50 cada. Quanto ele gastou no total?",
+          options: [
+            "R$ 36,40",
+            "R$ 29,40",
+            "R$ 33,90",
+            "R$ 39,90",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Monte uma 'lista de compras' com 4 itens e seus preços (invente valores realistas). Calcule o total gasto e mostre como você faria o cálculo passo a passo.",
+        },
+      ],
+    },
+    {
+      theme: "Noção de volume por meio do empilhamento de cubos",
+      exercises: [
+        {
+          kind: "draw",
+          instruction: "Desenhe uma pilha de cubinhos formando um bloco retangular com 3 cubos de comprimento, 2 de largura e 2 de altura. Depois, conte e escreva o total de cubinhos usados.",
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Calcule o volume em cubinhos:",
+          items: [
+            "Um bloco formado por 4 cubinhos de comprimento, 3 de largura e 2 de altura tem __________ cubinhos ao todo.",
+            "Se um sólido tem volume de 12 cubinhos, ele pode ser formado, por exemplo, por __________ camadas de __________ cubinhos cada.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique como você faria para descobrir o volume de um sólido formado por cubinhos empilhados, sem precisar contar cubo por cubo.",
+          lines: 4,
+        },
+        {
+          kind: "options",
+          instruction: "Uma caixa é montada com 2 camadas de cubinhos, cada camada com 3 fileiras de 4 cubinhos. Quantos cubinhos há na caixa toda?",
+          options: [
+            "24 cubinhos",
+            "9 cubinhos",
+            "12 cubinhos",
+            "20 cubinhos",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Jogos de tabuleiro: estratégias e antecipação de jogadas",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Depois de jogar uma partida de um jogo de tabuleiro (como damas, trilha ou jogo da velha) com um colega, explique qual estratégia você usou para tentar vencer e se ela funcionou.",
+          lines: 5,
+        },
+        {
+          kind: "options",
+          instruction: "No jogo da velha, qual é uma boa estratégia para o primeiro jogador?",
+          options: [
+            "Jogar no centro do tabuleiro",
+            "Jogar sempre no mesmo canto, sem pensar",
+            "Copiar a jogada do adversário",
+            "Jogar aleatoriamente sem observar o tabuleiro",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as atitudes importantes para jogar bem um jogo de estratégia:",
+          items: [
+            "Observar as jogadas do adversário",
+            "Pensar antes de jogar",
+            "Chutar sem pensar",
+            "Antecipar possíveis jogadas futuras",
+            "Desistir ao primeiro erro",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe o tabuleiro de um jogo de estratégia que você conhece (como jogo da velha ou trilha) e marque uma jogada que representaria uma boa estratégia.",
+        },
+      ],
+    },
+    {
+      theme: "Composição de figuras com peças do Tangram",
+      exercises: [
+        {
+          kind: "draw",
+          instruction: "Usando as 7 peças do Tangram (2 triângulos grandes, 1 triângulo médio, 2 triângulos pequenos, 1 quadrado e 1 paralelogramo), desenhe uma composição formando um quadrado grande.",
+        },
+        {
+          kind: "lines",
+          instruction: "Explique como você combinou as peças do Tangram para formar a figura da questão anterior. Quais peças você usou e como elas se encaixaram?",
+          lines: 4,
+        },
+        {
+          kind: "options",
+          instruction: "Quantas peças tem um jogo completo de Tangram?",
+          options: [
+            "7 peças",
+            "5 peças",
+            "10 peças",
+            "6 peças",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Usando apenas 3 peças do Tangram, desenhe um triângulo grande formado pela junção dessas peças.",
+        },
+      ],
+    },
+    {
+      theme: "Projeto sobre produção e consumo consciente de alimentos",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Pesquise (ou estime) quantos quilos de alimentos sua família compra por semana no mercado. Depois, calcule quanto seria em um mês (4 semanas) e explique se esse número parece maior, menor ou parecido com o de outras famílias.",
+          lines: 5,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Resolva os problemas sobre consumo de alimentos:",
+          items: [
+            "Se uma família consome 3 kg de arroz por mês e mora em um prédio com 20 famílias parecidas, o consumo total do prédio seria __________ kg por mês.",
+            "Se um quilo de tomate custa R$ 6,00, o preço de 3 kg é __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual atitude ajuda a reduzir o desperdício de alimentos em casa?",
+          options: [
+            "Planejar as compras e aproveitar os alimentos por completo",
+            "Comprar sempre mais do que se vai consumir",
+            "Jogar fora alimentos que ainda podem ser usados",
+            "Não guardar as sobras de comida",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Monte uma tabela com 4 alimentos e a quantidade aproximada que sua família consome por semana. Depois, desenhe um gráfico de colunas com esses dados.",
+        },
+      ],
+    },
+    {
+      theme: "Projeto sobre impactos sociais e ambientais da produção e consumo",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Se uma família troca 5 sacolas plásticas por semana por sacolas reutilizáveis, quantas sacolas plásticas deixará de usar em um ano (52 semanas)? Explique seu cálculo e comente por que essa mudança é importante para o meio ambiente.",
+          lines: 5,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Resolva os problemas sobre economia de recursos:",
+          items: [
+            "Se uma escola economiza 20 litros de água por dia ao consertar uma torneira que pingava, em 30 dias a economia será de __________ litros.",
+            "Uma família que recicla 2 kg de papel por semana recicla __________ kg em um mês (4 semanas).",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual atitude reduz o impacto ambiental do consumo?",
+          options: [
+            "Separar o lixo para reciclagem e reduzir o uso de descartáveis",
+            "Comprar produtos embalados em muito plástico sempre que possível",
+            "Jogar lixo reciclável junto com o lixo comum",
+            "Deixar torneiras pingando sem consertar",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Monte uma tabela comparando a quantidade de lixo reciclável e não reciclável produzida por uma família em uma semana (pode estimar os números) e represente em um gráfico de barras.",
+        },
+      ],
+    },
+    {
+      theme: "Justificativa da linguagem matemática e das estratégias de resolução",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Resolva o problema: 'Uma fábrica produz 144 brinquedos e quer embalar em caixas com 12 brinquedos cada. Quantas caixas serão necessárias?' Depois, explique com suas palavras por que você escolheu a operação usada.",
+          lines: 5,
+        },
+        {
+          kind: "options",
+          instruction: "Ao resolver um problema de matemática, por que é importante explicar a estratégia usada, e não só dar a resposta final?",
+          options: [
+            "Porque mostra o raciocínio e ajuda a verificar se o caminho está correto",
+            "Porque deixa a resposta mais bonita",
+            "Porque não é necessário, só a resposta final importa",
+            "Porque toma mais tempo e atrapalha",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre justificar uma solução:",
+          items: [
+            "Ao explicar como resolvi um problema de divisão, devo dizer qual __________ usei e por quê.",
+            "Justificar uma estratégia significa dizer o __________ que me levou àquela solução.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Escolha um problema simples de multiplicação ou divisão e represente, com desenhos (bolinhas, retângulos ou esquemas), como você chegou à resposta.",
+        },
+      ],
+    },
+    {
+      theme: "Investigação da propriedade distributiva da multiplicação e da divisão",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Calcule 6 x 14 de duas formas: primeiro multiplicando direto, depois decompondo 14 em 10 + 4 e aplicando a propriedade distributiva (6 x 10 + 6 x 4). Compare os resultados e explique o que você observou.",
+          lines: 5,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete usando a propriedade distributiva:",
+          items: [
+            "7 x 23 pode ser calculado como 7 x 20 + 7 x __________ = __________ + __________ = __________.",
+            "A propriedade distributiva também pode ser usada na subtração: 9 x 18 = 9 x 20 - 9 x __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "A propriedade distributiva da multiplicação em relação à adição diz que:",
+          options: [
+            "a x (b + c) = a x b + a x c",
+            "a x (b + c) = a + b + c",
+            "a x (b + c) = a x b x c",
+            "a x (b + c) = (a + b) x c",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Represente com um desenho (retângulo dividido em partes) por que 5 x 23 é igual a 5 x 20 + 5 x 3.",
+        },
+      ],
+    },
   ],
   "lingua-portuguesa": [
     {
@@ -6840,6 +9586,7 @@ export const ACTIVITY_BANK: Record<OwnSubject | "leitura-diaria", ActivityEntry[
     },
     {
       theme: "Relacionando acento gráfico e sílaba tônica",
+      gradeYear: "3-ano",
       exercises: [
         { kind: "options", instruction: "Para que serve o acento gráfico em uma palavra?", options: ["Marcar a sílaba pronunciada com mais força", "Deixar a palavra mais bonita", "Indicar o plural", "Separar duas frases"] },
         { kind: "fill-blank", instruction: "Complete explicando onde está a força da palavra:", items: ["Em 'sofá', a força está na sílaba __________.", "Em 'árvore', a força está na sílaba __________."] },
@@ -8830,6 +11577,3819 @@ export const ACTIVITY_BANK: Record<OwnSubject | "leitura-diaria", ActivityEntry[
           kind: "lines",
           instruction: "Escreva o que uma imagem do livro te fez sentir: alegria, medo ou surpresa:",
           lines: 2,
+        },
+      ],
+    },
+    {
+      theme: "Roda de contos, mitos, lendas e fábulas de diferentes culturas",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Depois da roda de leitura, qual desses elementos costuma aparecer nas FÁBULAS que vocês ouviram?",
+          options: [
+            "Animais que falam e agem como pessoas, deixando uma lição no final",
+            "Um herói que enfrenta um vilão em uma cidade grande",
+            "Uma receita explicando passo a passo como fazer um doce",
+            "Uma notícia sobre um fato que aconteceu ontem",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com a palavra certa: mito, lenda ou conto.",
+          items: [
+            "Uma história que explica a origem de algo do mundo, como o surgimento do fogo ou das estrelas, é chamada de __________.",
+            "Uma história ligada a um lugar ou a uma crença popular, como o Boto ou o Saci, é chamada de __________.",
+            "Uma história inventada, com começo, meio e fim, que pode ou não ensinar uma lição, é chamada de __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os títulos que soam como LENDAS ou MITOS (histórias ligadas a crenças de um povo):",
+          items: [
+            "A Lenda do Boitatá",
+            "O Mito de Prometeu e o Fogo",
+            "A raposa e as uvas",
+            "A Lenda da Iara",
+            "Chapeuzinho Vermelho",
+            "O Mito da Criação do Mundo",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha uma das histórias ouvidas na roda de leitura (conto, mito, lenda ou fábula) e escreva o que mais chamou sua atenção nela.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Discussão sobre organização interna de textos literários",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Em um texto literário, o que é o 'tempo' da narrativa?",
+          options: [
+            "O momento (época, duração) em que a história acontece",
+            "O tamanho da letra usada no livro",
+            "O nome da editora que publicou o livro",
+            "O preço do livro",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre os elementos de um texto literário.",
+          items: [
+            "Os __________ são as pessoas, animais ou seres que vivem a história.",
+            "O __________ é o lugar onde a história acontece.",
+            "A linguagem __________ (o texto escrito) e as ilustrações trabalham juntas para dar sentido à história.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Releia um trecho do texto lido em sala e marque quais marcas de linguagem aparecem nele:",
+          items: [
+            "Comparações ('parecia um monstro')",
+            "Repetição de sons ou palavras",
+            "Frases bem curtas para dar suspense",
+            "Fórmulas matemáticas",
+            "Diálogos entre personagens",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um texto literário lido em sala. Quem são os personagens principais e qual é o tempo (época) em que a história acontece?",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Comparando registros literário, jornalístico e publicitário",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual característica é típica do registro PUBLICITÁRIO (usado em propagandas)?",
+          options: [
+            "Frases curtas e chamativas para convencer o leitor a comprar ou fazer algo",
+            "Relato imparcial dos fatos, com data e local",
+            "Uso de comparações poéticas e narrador que conta uma história",
+            "Lista numerada de instruções",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete indicando se o trecho é LITERÁRIO, JORNALÍSTICO ou PUBLICITÁRIO.",
+          items: [
+            "'A chuva caía como lágrimas sobre o telhado da vila.' — registro __________.",
+            "'Prefeitura anuncia nova ciclovia na zona leste nesta segunda-feira.' — registro __________.",
+            "'Compre já! Só esta semana, com 50% de desconto!' — registro __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras ou expressões que são características do texto LITERÁRIO:",
+          items: [
+            "comparação",
+            "adjetivação",
+            "data e hora do fato",
+            "metáfora",
+            "preço promocional",
+            "descrição poética",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva a mesma ideia — 'está chovendo muito' — de duas formas: uma como um jornalista escreveria e outra como um escritor de literatura escreveria.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Explorando poemas: haicai, cordel e quadrinha",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que é um HAICAI?",
+          options: [
+            "Um poema curto de origem japonesa, geralmente com três versos, que retrata a natureza",
+            "Um texto jornalístico sobre esportes",
+            "Uma lista de compras em versos",
+            "Um contrato assinado por duas pessoas",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre os tipos de poema estudados.",
+          items: [
+            "O __________ é um poema popular nordestino, geralmente impresso em folhetos, que conta histórias com rima.",
+            "A __________ é um poema curto e engraçado, de quatro versos, comum nas cantigas de roda e no folclore.",
+            "O haicai tradicional fala principalmente sobre __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Releia os poemas estudados em sala e marque os recursos que aparecem neles:",
+          items: [
+            "Rima no final dos versos",
+            "Ritmo ao ler em voz alta",
+            "Comparações com a natureza",
+            "Números de telefone",
+            "Repetição de sons",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva um haicai (três versos curtos) sobre algo da natureza que você gosta de observar.",
+          lines: 3,
+          note: "Não precisa rimar — o haicai japonês tradicional não rima.",
+        },
+      ],
+    },
+    {
+      theme: "Letra e melodia: lendo e ouvindo canções",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que significa dizer que uma canção é 'multimodal'?",
+          options: [
+            "Que ela une duas linguagens diferentes — a letra (palavras) e a melodia (música) — para criar sentido",
+            "Que ela tem várias versões em vários idiomas",
+            "Que só pode ser tocada em um tipo de instrumento",
+            "Que é uma canção muito longa",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre a leitura de letras de canção.",
+          items: [
+            "Antes de ouvir a melodia, ao ler só a __________ da canção, imaginamos um jeito de cantá-la.",
+            "Depois de ouvir a canção, percebemos se o __________ da melodia (rápido, lento, alegre, triste) combina com o que a letra diz.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Depois de ouvir a canção trabalhada em sala, marque as sensações que a melodia transmitiu:",
+          items: [
+            "Alegria",
+            "Tristeza",
+            "Calma",
+            "Agitação",
+            "Nenhuma emoção",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha uma canção que você conhece. Antes de pensar na melodia, o que a LETRA (só as palavras) transmite para você? A melodia combina com esse sentido?",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Textos dramáticos e situações de encenação",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que é um texto dramático (como uma peça de teatro)?",
+          options: [
+            "Um texto escrito para ser encenado, com falas de personagens e indicações de cena",
+            "Um texto que só pode ser lido em silêncio",
+            "Uma lista de regras de um jogo",
+            "Uma receita de bolo",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com os termos: rubrica, personagem, diálogo.",
+          items: [
+            "A fala entre dois ou mais personagens em uma peça é chamada de __________.",
+            "As indicações entre parênteses que dizem como o ator deve agir ou se mover são chamadas de __________.",
+            "Quem representa um papel na peça é o __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque onde um texto dramático pode ser apresentado:",
+          items: [
+            "Espetáculo de teatro em um palco",
+            "Leitura dramática em voz alta, sem cenário",
+            "Teatro de fantoches",
+            "Uma prova de matemática",
+            "Uma apresentação com bonecos",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva um pequeno diálogo (fala de dois personagens) sobre uma discussão simples, como decidir o que assistir na TV.",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Contexto de produção de textos reivindicatórios e relatos históricos",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Um texto reivindicatório é escrito principalmente para:",
+          options: [
+            "Pedir ou exigir uma mudança, defendendo um direito ou uma causa",
+            "Contar uma história de fadas",
+            "Anunciar um produto em promoção",
+            "Ensinar uma receita culinária",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete pensando no contexto de produção dos textos.",
+          items: [
+            "Antes de ler um texto, podemos pensar: quem escreveu, para quem e com qual __________ (objetivo).",
+            "Um relato histórico normalmente conta fatos que aconteceram no __________.",
+            "Um abaixo-assinado pedindo mais uma praça no bairro é um exemplo de texto __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque situações em que alguém escreveria um texto reivindicatório:",
+          items: [
+            "Pedir que a escola tenha mais tempo de recreio",
+            "Reclamar da falta de coleta de lixo no bairro",
+            "Contar a história de um dragão",
+            "Pedir a construção de uma rampa de acesso",
+            "Anunciar uma promoção de sapatos",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Imagine que sua turma quer pedir algo para a escola (mais tempo de biblioteca, por exemplo). O que vocês diriam para convencer a direção? Escreva os principais argumentos.",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Conhecendo culturas por relatos históricos e divulgação científica",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Uma reportagem é diferente de uma entrevista porque:",
+          options: [
+            "A reportagem apresenta e explica um fato, enquanto a entrevista traz perguntas e respostas de uma pessoa",
+            "A reportagem só tem desenhos",
+            "A entrevista nunca tem perguntas",
+            "Não há diferença nenhuma",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre os textos que ajudam a conhecer diferentes culturas.",
+          items: [
+            "Um __________ histórico conta como viviam pessoas de outro tempo ou lugar.",
+            "Um artigo de __________ científica explica uma descoberta ou um fenômeno da ciência.",
+            "Uma __________ é uma conversa registrada entre quem pergunta e quem responde.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque quais destas fontes podem ajudar a conhecer diferentes culturas:",
+          items: [
+            "Reportagens sobre outros países",
+            "Entrevistas com pessoas de comunidades diferentes",
+            "Vídeos documentários",
+            "Uma lista de números aleatórios",
+            "Relatos históricos de outros povos",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Se você pudesse entrevistar uma pessoa de outra cultura (de outro país ou de um povo indígena, por exemplo), quais duas perguntas você faria? Escreva-as.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Organização hierárquica de textos de divulgação científica",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Em um texto de divulgação científica, o título geralmente serve para:",
+          options: [
+            "Apresentar de forma resumida o assunto principal do texto",
+            "Enfeitar a página",
+            "Substituir a necessidade de parágrafos",
+            "Ser ignorado pelo leitor",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre a organização de um texto de divulgação científica.",
+          items: [
+            "Cada __________ novo geralmente apresenta uma ideia ou informação diferente.",
+            "As informações mais __________ costumam vir logo no início do texto.",
+            "Subtítulos ajudam a organizar o texto em __________ (partes menores).",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Releia um texto de divulgação científica estudado em sala e marque o que ele apresenta:",
+          items: [
+            "Um título que resume o assunto",
+            "Parágrafos organizados por tema",
+            "Informações comprovadas por pesquisa",
+            "Uma moral no final, como nas fábulas",
+            "Imagens ou gráficos explicativos",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Por que separar um texto em parágrafos ajuda o leitor a entender melhor as informações? Explique com suas palavras.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Efeitos de sentido em quadrinhos, charges e tiras",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Nas histórias em quadrinhos, os balões de fala com bordas 'espetadas' (como um raio) costumam indicar:",
+          options: [
+            "Um grito ou uma fala em tom alto/exaltado",
+            "Um pensamento silencioso",
+            "Um sussurro",
+            "Uma narração do autor",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com os termos: onomatopeia, charge, tira.",
+          items: [
+            "Uma __________ é uma sequência curta de quadrinhos, geralmente com poucos quadros e um humor rápido.",
+            "Uma __________ é um desenho de humor que critica, com ironia, um fato atual (político ou social).",
+            "'BUM!', 'TOC TOC' e 'CRAC' são exemplos de __________, palavras que imitam sons.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os recursos usados em quadrinhos para criar efeitos de sentido:",
+          items: [
+            "Tamanho e formato dos balões",
+            "Onomatopeias",
+            "Expressão do rosto dos personagens",
+            "Cor de fundo da página do caderno",
+            "Linhas de movimento ao redor do personagem",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha uma tira ou charge que você já viu (em jornal, revista ou internet). O que ela fazia rir ou pensar? Explique o que causava esse efeito.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Multimodalidade em textos de projetos interdisciplinares",
+      gradeYear: "4-ano",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que significa 'multimodalidade' em um texto?",
+          options: [
+            "A combinação de diferentes linguagens (texto escrito, imagem, gráfico) para construir o sentido",
+            "Um texto escrito em vários idiomas ao mesmo tempo",
+            "Um texto que só usa desenhos, sem nenhuma palavra",
+            "Um texto muito comprido",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre textos multimodais usados em projetos de outras áreas (Ciências, História, Geografia).",
+          items: [
+            "Um __________ ajuda a mostrar números e dados de forma visual, sem precisar escrever tudo em texto.",
+            "Uma __________ (foto, desenho, mapa) complementa a explicação escrita, tornando-a mais clara.",
+            "Quando texto e imagem se completam, dizemos que o texto é __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os elementos que podem aparecer juntos em um cartaz de projeto interdisciplinar (por exemplo, sobre reciclagem):",
+          items: [
+            "Texto explicativo",
+            "Gráfico de barras com dados",
+            "Fotos ou desenhos ilustrativos",
+            "Um poema de amor",
+            "Um mapa",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Imagine um cartaz sobre os animais do seu estado, feito para um projeto de Ciências. Que tipos de imagem (fotos, mapas, desenhos) e informações escritas você colocaria nele?",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Lendo trechos de textos jurídicos do cotidiano",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O Estatuto da Criança e do Adolescente (ECA) é um exemplo de texto:",
+          options: [
+            "Jurídico, que define direitos e deveres das crianças e adolescentes",
+            "Literário, com personagens fictícios",
+            "Publicitário, que vende um produto",
+            "Uma canção popular",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre a leitura de textos jurídicos do cotidiano.",
+          items: [
+            "Um __________ é um direito garantido por lei, como o direito à educação.",
+            "Textos jurídicos costumam usar uma linguagem mais __________ (formal) do que os textos literários.",
+            "O ECA garante que toda criança tem direito à __________, entre outros direitos.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque quais são direitos garantidos às crianças pelo ECA:",
+          items: [
+            "Direito à educação",
+            "Direito à saúde",
+            "Direito de trabalhar em qualquer idade",
+            "Direito ao lazer",
+            "Direito à proteção contra maus-tratos",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Depois de ler um trecho do ECA em sala, escreva com suas palavras um direito que você achou importante e por quê.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Antecipando o conteúdo de propagandas e anúncios",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Ao ver só a imagem e o título de um anúncio, antes de ler tudo, o que fazemos?",
+          options: [
+            "Antecipamos (imaginamos) do que ele deve tratar, com base nas pistas visuais",
+            "Lemos tudo sem pensar antes",
+            "Ignoramos completamente o anúncio",
+            "Copiamos o texto sem entender",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre a leitura de propagandas e anúncios.",
+          items: [
+            "Um cartaz de propaganda costuma usar cores fortes e letras grandes para chamar a __________.",
+            "Antes de ler todo o texto, podemos observar a __________ e o título para imaginar o assunto.",
+            "Anúncios geralmente têm o objetivo de __________ o leitor a comprar ou fazer algo.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Observe um anúncio (real ou trazido pela professora) e marque as pistas que ajudam a antecipar o conteúdo antes de ler tudo:",
+          items: [
+            "A imagem principal",
+            "O título em letras grandes",
+            "As cores usadas",
+            "O número de páginas de um livro",
+            "O logotipo da marca",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Olhando só para o título 'Água que renova!' de um anúncio, o que você imagina que está sendo vendido? Explique seu raciocínio.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Relendo e marcando trechos importantes do texto",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Por que é útil grifar ou marcar trechos de um texto durante a leitura?",
+          options: [
+            "Para destacar partes importantes, dúvidas ou trechos para consultar depois",
+            "Para deixar o texto mais bonito",
+            "Porque é obrigatório em todo texto",
+            "Para apagar partes que não gostamos",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre estratégias de releitura.",
+          items: [
+            "Quando encontramos uma palavra desconhecida, podemos marcá-la para consultar no __________.",
+            "Quando um trecho gera __________ (não concordamos com ele), podemos anotar por quê.",
+            "Reler um texto ajuda a esclarecer __________ que ficaram da primeira leitura.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Releia um trecho do texto trabalhado em sala e marque os motivos para grifar uma parte dele:",
+          items: [
+            "Palavra desconhecida",
+            "Informação importante para o tema",
+            "Trecho que gerou dúvida",
+            "Frase que você discorda",
+            "Número de página",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Releia um trecho de um texto que vocês estudaram em sala. Marque (ou anote) uma parte que ficou confusa para você e explique por quê.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Pesquisando em múltiplas fontes sobre um tema de estudo",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Por que é bom pesquisar um tema em mais de uma fonte (livro, site, revista)?",
+          options: [
+            "Porque diferentes fontes podem trazer informações complementares e ajudam a confirmar os dados",
+            "Porque é proibido usar só uma fonte",
+            "Porque todas as fontes sempre dizem exatamente a mesma coisa",
+            "Porque assim o trabalho fica mais longo, sem outro motivo",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre pesquisa escolar.",
+          items: [
+            "Antes de pesquisar, é importante ativar nossos conhecimentos __________ sobre o assunto.",
+            "Livros, __________, sites e revistas são exemplos de fontes de pesquisa.",
+            "Ao assistir a um documentário, é importante ter um olhar __________, sem aceitar tudo sem pensar.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque quais são fontes que podem ser usadas em uma pesquisa escolar:",
+          items: [
+            "Livros",
+            "Enciclopédias",
+            "Sites confiáveis",
+            "Revistas",
+            "Jornais",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um tema de Ciências ou História que vocês estudaram. Que fontes (livro, site, documentário) vocês poderiam consultar para aprender mais sobre ele?",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Tutoria de leitura oral: preparando a leitura em voz alta",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que é a 'prosódia' na leitura em voz alta?",
+          options: [
+            "O jeito de ler com entonação, pausas e ritmo adequados ao sentido do texto",
+            "A quantidade de páginas de um texto",
+            "O tamanho da letra do texto",
+            "O nome do autor do texto",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre a preparação da leitura em voz alta.",
+          items: [
+            "Antes de ler em voz alta, é importante __________ (ler antes, em silêncio) o texto para entendê-lo bem.",
+            "Uma notícia deve ser lida com tom mais __________ (sério, informativo).",
+            "Um texto teatral pode ser lido dando voz e __________ diferentes para cada personagem.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque o que é importante observar ao preparar uma leitura em voz alta:",
+          items: [
+            "Onde fazer pausas",
+            "Qual palavra merece mais destaque",
+            "O tom de voz adequado ao texto",
+            "A cor da capa do livro",
+            "O ritmo da leitura",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um trecho curto de um texto (notícia, teatro ou poema). Como você leria esse trecho em voz alta — rápido ou devagar, sério ou animado? Explique por quê.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Reescrevendo textos mantendo o tema e o conteúdo",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Ao reescrever um texto, o que deve ser mantido?",
+          options: [
+            "O tema e o conteúdo principal da história ou do texto original",
+            "Nada, pode-se mudar tudo, inclusive o assunto",
+            "Apenas o título",
+            "Só a quantidade de páginas",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre a reescrita de textos.",
+          items: [
+            "Reescrever um texto significa contar a mesma história ou informação com __________ próprias.",
+            "É importante manter a __________ dos fatos (a ordem em que acontecem).",
+            "Mesmo reescrevendo, a __________ verbal e nominal (concordância) deve estar correta.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Ao reescrever um conto lido em sala, marque o que deve permanecer igual:",
+          items: [
+            "Os personagens principais",
+            "O problema (conflito) da história",
+            "O final da história",
+            "Suas próprias palavras (isso pode mudar)",
+            "O tema central",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um pequeno trecho de uma história conhecida e reescreva-o com suas próprias palavras, mantendo os fatos principais.",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Produzindo contos de diferentes culturas",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Para dar coerência a um conto, é importante que:",
+          options: [
+            "Os fatos tenham uma sequência lógica e façam sentido entre si",
+            "Cada frase fale de um assunto diferente e sem relação",
+            "Não haja nenhum personagem",
+            "O conto não tenha um final",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete pensando na estrutura de um conto.",
+          items: [
+            "Todo conto tem uma __________ (apresentação), um conflito e um desfecho (final).",
+            "A __________ verbal, ou seja, o uso correto dos tempos verbais, ajuda o leitor a entender quando os fatos acontecem.",
+            "Contos de diferentes culturas podem ter personagens, lugares e __________ diferentes dos que conhecemos.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Antes de escrever seu conto, marque os elementos que você deve planejar:",
+          items: [
+            "Quem são os personagens",
+            "Onde e quando a história acontece",
+            "Qual é o problema (conflito) da história",
+            "O preço de um produto",
+            "Como a história vai terminar",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Planeje o início do seu conto: apresente o personagem principal e o lugar onde a história vai acontecer.",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Produzindo entrevistas e verbetes de enciclopédia",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Um verbete de enciclopédia se caracteriza por:",
+          options: [
+            "Explicar de forma objetiva e organizada um termo ou assunto",
+            "Contar uma história em primeira pessoa",
+            "Ter rima e ritmo",
+            "Ser uma lista de compras",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre a produção de entrevistas.",
+          items: [
+            "Antes de uma entrevista, é importante preparar as __________ que serão feitas.",
+            "Durante a entrevista, quem pergunta é o __________ e quem responde é o entrevistado.",
+            "Um verbete geralmente começa definindo __________ é o assunto tratado.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque o que é necessário planejar antes de fazer uma entrevista sobre um tema de interesse da comunidade:",
+          items: [
+            "A pessoa que será entrevistada",
+            "As perguntas principais",
+            "O objetivo da entrevista",
+            "A cor da caneta usada",
+            "O tema central",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um tema de interesse da comunidade (como reciclagem, segurança ou lazer no bairro) e escreva três perguntas que você faria em uma entrevista sobre esse tema.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Escrevendo cartas de solicitação e reivindicação",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Uma carta de solicitação serve para:",
+          options: [
+            "Pedir algo de forma educada e justificada a uma pessoa ou instituição",
+            "Contar uma história de ficção",
+            "Vender um produto",
+            "Fazer uma lista de tarefas",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre a estrutura de uma carta de solicitação.",
+          items: [
+            "Uma carta formal deve começar com uma __________ (por exemplo, 'Prezado(a) diretor(a),').",
+            "No corpo da carta, explicamos o __________ (motivo) do pedido.",
+            "No final da carta, colocamos a __________ (despedida) e a assinatura.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque o que deve conter uma carta de reivindicação bem escrita:",
+          items: [
+            "Saudação inicial",
+            "Explicação clara do pedido",
+            "Justificativa (motivo do pedido)",
+            "Gírias e informalidade exagerada",
+            "Despedida e assinatura",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva o início de uma carta pedindo à direção da escola uma melhoria que você considera importante (por exemplo, mais livros na biblioteca). Inclua a saudação e o motivo do pedido.",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Escrevendo comentários digitais sobre textos lidos",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Um bom comentário digital sobre um texto lido deve:",
+          options: [
+            "Estabelecer relação clara com o texto original, dizendo a que parte ele se refere",
+            "Falar de qualquer assunto, sem relação com o texto",
+            "Ser sempre negativo",
+            "Copiar o texto original palavra por palavra",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre comentários digitais.",
+          items: [
+            "Ao comentar um texto na internet, é importante deixar claro a qual __________ do texto você está se referindo.",
+            "Um comentário pode expressar uma __________ (concordo, discordo, gostei) sobre o texto.",
+            "É importante ser __________ (respeitoso) mesmo quando discordamos de algo.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque características de um bom comentário digital:",
+          items: [
+            "Relação clara com o texto comentado",
+            "Respeito, mesmo ao discordar",
+            "Opinião justificada",
+            "Ofensas ao autor",
+            "Clareza na escrita",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um texto lido em sala e escreva um comentário digital sobre ele, como se fosse postar em um blog de leitura da turma. Deixe claro a que parte do texto você se refere.",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Apresentando sínteses orais sobre temas estudados",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Para fazer uma boa apresentação oral sobre um tema estudado, é importante:",
+          options: [
+            "Preparar um esquema ou notas com os pontos principais antes de falar",
+            "Decorar um texto enorme sem entender o assunto",
+            "Falar sem se preparar",
+            "Copiar tudo de um livro sem organizar as ideias",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre a apresentação de sínteses orais.",
+          items: [
+            "Uma __________ é um resumo dos pontos mais importantes de um tema.",
+            "Anotar palavras-chave em __________ ajuda a lembrar o que falar sem precisar ler tudo.",
+            "Ao final da apresentação, é interessante abrir espaço para __________ da plateia.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque o que ajuda a preparar uma boa apresentação oral:",
+          items: [
+            "Fazer um esquema com os pontos principais",
+            "Treinar antes de apresentar",
+            "Organizar a ordem das ideias",
+            "Decorar cada palavra sem entender o sentido",
+            "Pensar em possíveis perguntas da plateia",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um tema que vocês estudaram recentemente (de qualquer matéria) e escreva um pequeno esquema com 3 pontos principais que você apresentaria sobre ele.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Debatendo temas atuais com respeito à fala do outro",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Em um debate, quando alguém tem uma opinião diferente da sua, o correto é:",
+          options: [
+            "Ouvir com respeito e responder com argumentos, sem interromper ou ofender",
+            "Gritar mais alto para vencer",
+            "Ignorar completamente a pessoa",
+            "Rir da opinião do outro",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre a participação em debates.",
+          items: [
+            "Um __________ é uma discussão organizada sobre um tema controverso, em que as pessoas defendem opiniões diferentes.",
+            "Para participar bem de um debate, é importante __________ (pesquisar) sobre o assunto antes.",
+            "Justificar uma opinião significa apresentar __________ (motivos) para ela.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque atitudes adequadas para um bom debate em sala:",
+          items: [
+            "Esperar sua vez de falar",
+            "Ouvir os colegas com atenção",
+            "Justificar sua opinião com argumentos",
+            "Interromper os colegas o tempo todo",
+            "Respeitar quem pensa diferente",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um tema atual do cotidiano (como uso de celular na escola ou separação do lixo) e escreva sua opinião sobre ele, justificando com pelo menos um motivo.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Registrando informações durante uma escuta oral",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Ao ouvir uma apresentação ou explicação de um colega, fazer anotações ajuda a:",
+          options: [
+            "Lembrar depois das informações mais importantes",
+            "Atrapalhar quem está falando",
+            "Perder o fio da explicação",
+            "Nada, anotar é desnecessário",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre registros de escuta oral.",
+          items: [
+            "Durante uma escuta, podemos fazer __________ (anotações rápidas) dos pontos principais.",
+            "Um __________ é um desenho organizado que mostra a relação entre as ideias ouvidas.",
+            "Registrar por __________ ou vídeo também é uma forma de guardar informações de uma escuta.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque boas formas de registrar informações durante a escuta de uma apresentação:",
+          items: [
+            "Fazer anotações curtas",
+            "Desenhar um esquema",
+            "Tirar fotos do quadro ou do material",
+            "Conversar com o colega ao lado sobre outro assunto",
+            "Gravar um resumo em vídeo (com autorização)",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Durante a apresentação de um colega (ou de um vídeo assistido em sala), registre por escrito três informações que você considerou mais importantes.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Comparando textos de gêneros diferentes e do mesmo gênero",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Uma receita culinária e um poema podem falar do mesmo assunto (o preparo de um bolo, por exemplo). O que diferencia esses dois textos?",
+          options: [
+            "A forma como as informações são organizadas e a linguagem usada",
+            "O assunto tratado",
+            "O tamanho do papel usado para escrever",
+            "A cor da tinta",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Leia as características abaixo e marque as que pertencem ao gênero NOTÍCIA:",
+          items: [
+            "título chamativo",
+            "rima entre os versos",
+            "responde quem, o quê, quando, onde",
+            "linguagem informativa e objetiva",
+            "personagens fantásticos",
+            "data e local do fato",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Compare duas receitas de bolo que a turma leu em sala. Complete:",
+          items: [
+            "As duas receitas têm em comum a lista de __________ e o modo de __________.",
+            "Uma receita pode ser diferente da outra no __________ usado e na quantidade dos ingredientes.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha dois textos do mesmo gênero que a turma leu (duas notícias, dois poemas ou dois bilhetes) e escreva três semelhanças e uma diferença entre eles:",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Eliminando repetições no texto com sinônimos e pronomes",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Reescreva substituindo a palavra repetida por um sinônimo ou pronome:",
+          items: [
+            "'O cachorro correu no parque. O cachorro pegou a bola.' → 'O cachorro correu no parque. __________ pegou a bola.'",
+            "'Marina gosta de ler. Marina lê todo dia antes de dormir.' → 'Marina gosta de ler. __________ lê todo dia antes de dormir.'",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "No texto 'A menina pegou o livro. A menina abriu o livro. A menina começou a ler o livro.', marque as palavras que se repetem em excesso:",
+          items: [
+            "menina",
+            "livro",
+            "pegou",
+            "abriu",
+            "começou",
+            "ler",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual pronome substitui melhor 'Pedro e Ana' na frase 'Pedro e Ana foram ao mercado. Pedro e Ana compraram frutas.'?",
+          options: [
+            "Eles",
+            "Ele",
+            "Nós",
+            "Você",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Reescreva este parágrafo trocando as repetições por sinônimos ou pronomes: 'O gato subiu na árvore. O gato ficou com medo de descer. Um menino ajudou o gato.'",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Usando organizadores textuais no texto",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque os organizadores textuais que indicam ORDEM ou SEQUÊNCIA de ideias:",
+          items: [
+            "primeiro",
+            "depois",
+            "por fim",
+            "porém",
+            "em seguida",
+            "além disso",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete o texto com organizadores textuais adequados:",
+          items: [
+            "__________, separe todos os ingredientes sobre a mesa.",
+            "__________, misture tudo e leve ao forno por 30 minutos.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual organizador textual indica CONCLUSÃO de uma ideia?",
+          options: [
+            "Portanto",
+            "Enquanto isso",
+            "No início",
+            "Ao mesmo tempo",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva um pequeno texto contando os passos para escovar os dentes, usando pelo menos três organizadores textuais (primeiro, depois, por fim...):",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Mantendo os tempos verbais coerentes no texto",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Leia o texto e marque o verbo que está no tempo ERRADO, quebrando a coerência: 'Ontem eu fui ao parque. Eu brinco com meus amigos e depois voltei para casa.'",
+          items: [
+            "fui",
+            "brinco",
+            "voltei",
+            "parque",
+            "amigos",
+            "ontem",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete mantendo o mesmo tempo verbal (passado) da frase:",
+          items: [
+            "Ontem, Lucas __________ (jogar) bola e depois __________ (tomar) banho.",
+            "Na semana passada, nós __________ (visitar) a vovó e __________ (comer) bolo.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Em um texto todo escrito no passado, qual frase MANTÉM a coerência verbal?",
+          options: [
+            "Ela chegou em casa e guardou a mochila.",
+            "Ela chegou em casa e guarda a mochila.",
+            "Ela chega em casa e guardou a mochila.",
+            "Ela vai chegar em casa e guardava a mochila.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva um parágrafo contando o que você fez no último final de semana, usando os verbos sempre no passado:",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Articulando as partes do texto e mantendo o narrador",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Em um texto narrado em 1ª pessoa, o narrador é:",
+          options: [
+            "Uma personagem que participa da história e usa 'eu'",
+            "Alguém de fora da história que usa 'ele' ou 'ela'",
+            "O autor do livro sempre",
+            "O leitor do texto",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Leia as frases e marque as que estão narradas em 1ª pessoa:",
+          items: [
+            "Eu corri até a floresta e me escondi.",
+            "Ela correu até a floresta e se escondeu.",
+            "Nós encontramos o tesouro escondido.",
+            "Ele encontrou o tesouro escondido.",
+            "Fui o primeiro a chegar.",
+            "João foi o primeiro a chegar.",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Reescreva mantendo o mesmo narrador (3ª pessoa) do começo ao fim:",
+          items: [
+            "Maria abriu a porta. __________ viu um gato na sala. (complete com Ela)",
+            "O menino correu. __________ estava com medo. (complete com Ele)",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Continue esta história MANTENDO o mesmo narrador (3ª pessoa): 'Era uma vez uma raposa esperta que vivia na floresta. Um dia, ela encontrou uma armadilha...'",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Usando a pontuação medial e final com intenção",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual pontuação final devemos usar na frase 'Que susto você me deu'?",
+          options: [
+            "Ponto de exclamação (!)",
+            "Ponto final (.)",
+            "Dois-pontos (:)",
+            "Reticências (...)",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases com a pontuação adequada (. ! ? ...):",
+          items: [
+            "Você já terminou a lição__________",
+            "Cuidado, o chão está molhado__________",
+            "Eu não sei se vou__________ talvez amanhã__________",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as frases em que a vírgula está separando itens de uma lista:",
+          items: [
+            "Comprei maçã, banana e uva.",
+            "Ana, venha aqui!",
+            "Levei lápis, borracha, caderno e régua.",
+            "Não, eu não vou.",
+            "Trouxe bola, corda e peteca.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva um pequeno diálogo entre duas personagens usando pelo menos uma pergunta (?), uma exclamação (!) e um ponto final (.):",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Analisando as escolhas de palavras no próprio texto",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Por que é importante escolher bem as palavras ao escrever um texto?",
+          options: [
+            "Porque cada palavra transmite um sentido diferente e pode mudar o que queremos dizer",
+            "Porque textos com palavras difíceis são sempre melhores",
+            "Porque não faz diferença nenhuma",
+            "Porque só interessa o tamanho do texto",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Leia a frase 'O menino andou pela rua' e marque as palavras que poderiam substituir 'andou' dando mais expressividade ao texto:",
+          items: [
+            "caminhou",
+            "correu",
+            "desfilou",
+            "comeu",
+            "vagou",
+            "dormiu",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Escolha a palavra mais expressiva para completar a frase:",
+          items: [
+            "O vento __________ forte, balançando as árvores. (soprava ou estava?)",
+            "A criança __________ de alegria ao ver o presente. (gritou ou falou?)",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Releia um texto que você escreveu recentemente. Escolha duas palavras que poderiam ser trocadas por outras mais expressivas e reescreva as frases:",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Identificando metáforas, comparações e personificações",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Na frase 'Meu coração é um oceano de sentimentos', qual figura de linguagem foi usada?",
+          options: [
+            "Metáfora",
+            "Comparação com 'como'",
+            "Onomatopeia",
+            "Repetição",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as frases que usam COMPARAÇÃO (com a palavra 'como'):",
+          items: [
+            "Ela é ligeira como um raio.",
+            "Ela é um raio de luz.",
+            "O menino nadava como um peixe.",
+            "O vento sussurrava segredos.",
+            "Forte como um leão.",
+            "Seus olhos são estrelas.",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Identifique a figura de linguagem em cada frase:",
+          items: [
+            "'O sol sorria para a manhã' é um exemplo de __________ (personificação ou comparação?).",
+            "'Ela é rápida como o vento' é um exemplo de __________ (metáfora ou comparação?).",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Crie duas frases: uma com metáfora e outra com personificação, sobre a natureza (sol, lua, chuva, vento, árvores):",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Explorando campo semântico e hiperonímia com o dicionário",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras que pertencem ao mesmo campo semântico de 'cachorro, gato, cavalo':",
+          items: [
+            "animais",
+            "vaca",
+            "papel",
+            "passarinho",
+            "computador",
+            "peixe",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com o hiperônimo (palavra mais geral) que reúne o grupo:",
+          items: [
+            "Maçã, banana e laranja são tipos de __________.",
+            "Cadeira, mesa e armário são tipos de __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual é o hiperônimo da palavra 'rosa'?",
+          options: [
+            "Flor",
+            "Pétala",
+            "Jardim",
+            "Vermelho",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Use o dicionário para procurar duas palavras que você não conhece dentro do campo semântico 'profissões'. Escreva o significado de cada uma:",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Descobrindo palavras polissêmicas",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que significa dizer que uma palavra é 'polissêmica'?",
+          options: [
+            "Que ela tem mais de um significado, dependendo do contexto",
+            "Que ela é muito comprida",
+            "Que ela só existe no plural",
+            "Que ela não pode ser usada em frases",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "A palavra 'manga' pode ter dois sentidos diferentes. Complete:",
+          items: [
+            "Comi uma __________ doce no almoço. (fruta)",
+            "A __________ da camisa estava rasgada. (parte da roupa)",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "A palavra 'banco' aparece em frases diferentes. Marque as frases em que 'banco' significa 'assento':",
+          items: [
+            "Sentei no banco da praça.",
+            "Fui ao banco pegar dinheiro.",
+            "O banco de madeira era confortável.",
+            "Meu pai trabalha em um banco.",
+            "Havia um banco embaixo da árvore.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha a palavra 'copa' e escreva duas frases em que ela tenha significados diferentes (ex: cômodo da casa e competição esportiva):",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Explorando recursos gráfico-textuais do material lido",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Para que serve o NEGRITO em um texto?",
+          options: [
+            "Para destacar uma palavra ou informação importante",
+            "Para indicar que a palavra está errada",
+            "Para diminuir o tamanho da letra",
+            "Para separar parágrafos",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os recursos gráfico-textuais que você pode encontrar em uma reportagem de revista:",
+          items: [
+            "título em letra grande",
+            "negrito",
+            "itálico",
+            "assinatura em carta pessoal",
+            "colunas de texto",
+            "imagens com legenda",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete explicando o efeito de cada recurso:",
+          items: [
+            "Palavras em __________ (itálico ou sublinhado?) geralmente indicam uma palavra estrangeira ou de destaque.",
+            "Letras __________ (grandes ou pequenas?) no título chamam a atenção do leitor logo de início.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Observe uma página de um livro ou revista que você tem em casa ou na escola. Desenhe como ela está organizada, indicando onde estão o título, as imagens e os textos em negrito ou itálico.",
+        },
+      ],
+    },
+    {
+      theme: "Reconhecendo variedades da língua portuguesa",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Por que as pessoas de diferentes regiões do Brasil falam de jeitos diferentes?",
+          options: [
+            "Porque a língua varia conforme a região, a idade, a profissão e outros fatores",
+            "Porque umas pessoas falam certo e outras erradas",
+            "Porque só existe um jeito certo de falar português",
+            "Porque a televisão obriga todo mundo a falar igual",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras que são formas regionais de dizer 'menino/criança' em diferentes partes do Brasil:",
+          items: [
+            "guri",
+            "moleque",
+            "pequeno",
+            "curumim",
+            "cachorro",
+            "piá",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com a palavra usada em algumas regiões do Brasil:",
+          items: [
+            "No Nordeste, 'macaxeira' é o mesmo que __________ em outras regiões.",
+            "Em algumas regiões, 'bergamota' é o mesmo que __________ (uma fruta cítrica pequena).",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva três palavras ou expressões diferentes que você conhece e que são usadas de forma diferente em outras regiões ou por outras gerações (avós, por exemplo):",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Combatendo o preconceito linguístico",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que é preconceito linguístico?",
+          options: [
+            "Discriminar uma pessoa pelo jeito que ela fala",
+            "Corrigir um erro de ortografia em uma prova",
+            "Ensinar a norma culta na escola",
+            "Usar o dicionário para tirar dúvidas",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as atitudes que combatem o preconceito linguístico:",
+          items: [
+            "respeitar o jeito de falar de cada região",
+            "rir de alguém por causa do sotaque",
+            "valorizar as diferentes formas de falar português",
+            "dizer que só existe um jeito certo de falar",
+            "ouvir com atenção pessoas de outros lugares",
+            "corrigir os outros na frente de todo mundo",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com sua opinião, justificando:",
+          items: [
+            "Uma pessoa que fala com sotaque de outra região __________. (deve ser respeitada ou deve mudar o jeito de falar?)",
+            "Falar 'diferente' da norma culta __________. (significa falar errado ou não significa falar errado?)",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva um pequeno texto explicando por que é errado zombar do sotaque ou do jeito de falar de uma pessoa:",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Analisando substantivos e concordância nominal",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Na frase 'As casas amarelas são bonitas', qual palavra é o substantivo no plural?",
+          options: [
+            "Casas",
+            "Amarelas",
+            "São",
+            "Bonitas",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque todos os substantivos da frase: 'O menino levou o cachorro e a bola para o parque.'",
+          items: [
+            "menino",
+            "levou",
+            "cachorro",
+            "bola",
+            "parque",
+            "para",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete fazendo a concordância nominal correta entre substantivo e adjetivo:",
+          items: [
+            "As casa__________ branca__________ da rua são antigas. (complete as terminações de plural)",
+            "O gato preto e a gata pret__________ dormem juntos.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva duas frases em que o substantivo esteja no plural e o adjetivo concorde corretamente com ele (ex: as flores coloridas):",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Analisando verbos e concordância verbal",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Na frase 'Os alunos estudam para a prova', o verbo 'estudam' está concordando com:",
+          options: [
+            "O sujeito 'os alunos', no plural",
+            "A palavra 'prova'",
+            "Nada, verbos não concordam",
+            "O substantivo 'alunos' no singular",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os verbos que indicam AÇÃO nas frases: 'O menino correu. Choveu forte ontem. Ela está feliz. Os pássaros cantam.'",
+          items: [
+            "correu",
+            "choveu",
+            "está",
+            "cantam",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete os verbos concordando com o sujeito:",
+          items: [
+            "Eu __________ (brincar) todos os dias no parque.",
+            "Nós __________ (estudar) português na escola.",
+            "Elas __________ (cantar) na apresentação.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva três frases: uma com verbo de ação, uma com verbo de estado e uma com verbo de fenômeno da natureza (como chover, ventar, trovejar):",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Acentuando palavras de uso frequente",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras que estão faltando acento gráfico:",
+          items: [
+            "sofa",
+            "mesa",
+            "musica",
+            "cadeira",
+            "arvore",
+            "janela",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Reescreva cada palavra com o acento correto:",
+          items: [
+            "sofa → __________",
+            "arvore → __________",
+            "musica → __________",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual destas palavras está corretamente acentuada?",
+          options: [
+            "Café",
+            "Cafe",
+            "Cafè",
+            "Caffé",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva quatro palavras de uso frequente que levam acento (como sofá, café, música, árvore) e forme uma frase com cada uma:",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Identificando a sílaba tônica das palavras",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que é a sílaba tônica de uma palavra?",
+          options: [
+            "A sílaba pronunciada com mais força",
+            "A primeira sílaba da palavra sempre",
+            "A última letra da palavra",
+            "A sílaba que tem a letra A",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras cuja sílaba tônica é a ÚLTIMA sílaba (oxítonas):",
+          items: [
+            "café",
+            "casa",
+            "jacaré",
+            "mesa",
+            "sofá",
+            "porta",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Divida a palavra em sílabas e indique qual é a tônica:",
+          items: [
+            "'boneca' se divide em bo-ne-ca. A sílaba tônica é __________.",
+            "'lápis' se divide em lá-pis. A sílaba tônica é __________.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha quatro palavras de um texto que você leu recentemente. Divida cada uma em sílabas e indique qual é a sílaba tônica:",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Relacionando acento gráfico e sílaba tônica",
+      gradeYear: "4-ano",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual regra explica por que 'árvore' e 'lâmpada' recebem acento gráfico?",
+          options: [
+            "Porque a sílaba tônica é a antepenúltima, e todas as proparoxítonas são acentuadas",
+            "Porque são palavras longas",
+            "Porque começam com vogal",
+            "Porque terminam em vogal",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os pares de palavras em que o acento gráfico MUDA o significado da palavra:",
+          items: [
+            "sabia e sabiá",
+            "esta e está",
+            "pode e pôde",
+            "gato e pato",
+            "bola e vela",
+            "casa e mesa",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete explicando a diferença de sentido entre as palavras com e sem acento:",
+          items: [
+            "'Ele já sabia a resposta' (verbo saber, sem acento) é diferente de 'O __________ cantava na árvore' (o pássaro, com acento).",
+            "Escrever 'Ela esta feliz' está errado; o certo é 'Ela __________ feliz', com acento, porque é o verbo estar.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva duas frases usando o par de palavras 'pode' e 'pôde', mostrando que o acento muda o tempo verbal (presente e passado):",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Escrevendo palavras regulares contextuais (M/N, R/RR, O/U)",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete com M ou N, lembrando que M vem antes de P e B:",
+          items: [
+            "ca__po (lugar de plantação)",
+            "te__po (que passa no relógio)",
+            "a__tes (que vem primeiro)",
+            "ve__to (o ar que sopra)",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras escritas CORRETAMENTE quanto ao uso de M e N:",
+          items: [
+            "tampa",
+            "tanto",
+            "cambo",
+            "campo",
+            "vento",
+            "vemto",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com R ou RR, prestando atenção ao som forte ou fraco entre vogais:",
+          items: [
+            "ca__o (veículo com motor)",
+            "ca__o (valor alto, o contrário de barato)",
+            "te__eno (pedaço de terra)",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva quatro palavras que usam R ou RR entre vogais mudando completamente o sentido (como 'careta' e 'carreta'), explicando o significado de cada uma:",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Investigando palavras regulares morfológico-gramaticais",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque os substantivos terminados em ICE, como 'planície' e 'cúmplice':",
+          items: [
+            "planície",
+            "cúmplice",
+            "cadeira",
+            "índice",
+            "apêndice",
+            "janela",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com a terminação OSO ou OSA, usada em adjetivos que indicam 'cheio de':",
+          items: [
+            "Um dia cheio de chuva é um dia chuv__________.",
+            "Uma pessoa cheia de carinho é carinh__________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Verbos como 'quis' têm um 'parente' terminado em ISSE no passado (se eu quisesse). Qual destas palavras segue esse mesmo padrão?",
+          options: [
+            "Fizesse (de fazer)",
+            "Gostava (de gostar)",
+            "Comendo (de comer)",
+            "Estudar (infinitivo)",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva duas palavras terminadas em EZA (como 'beleza', formada a partir de 'belo') e explique de qual palavra elas vieram:",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Escrevendo palavras com flexões em ÃO/AM e coletivos",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Na frase 'Eles cantaram a música toda', por que 'cantaram' termina em AM e não em ÃO?",
+          options: [
+            "Porque é um verbo no passado, na 3ª pessoa do plural (eles cantaram)",
+            "Porque é um substantivo",
+            "Porque não existe regra",
+            "Porque é uma palavra estrangeira",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com ÃO ou AM, conforme o sentido da frase:",
+          items: [
+            "Os pássaros voar__________ para longe. (verbo no passado)",
+            "Eles com__________ pão no café da manhã. (verbo comer no passado)",
+            "Amanhã eles vir__________ à escola. (verbo vir no futuro)",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os substantivos COLETIVOS corretos:",
+          items: [
+            "cardume (peixes)",
+            "matilha (cães)",
+            "enxame (abelhas)",
+            "gato (animal)",
+            "rebanho (ovelhas)",
+            "livro (objeto)",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva três frases usando substantivos coletivos diferentes (cardume, matilha, enxame, rebanho, alcateia...):",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Escrevendo palavras irregulares com a letra X",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "A letra X pode ter o som de CH, Z, SS ou KS. Marque as palavras em que o X tem som de CH:",
+          items: [
+            "xícara",
+            "exame",
+            "táxi",
+            "peixe",
+            "próximo",
+            "caixa",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com X ou CH, conforme o som da palavra:",
+          items: [
+            "__________uva (que cai do céu, som de CH)",
+            "__________arope (remédio líquido, som de CH)",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Na palavra 'exame', o X tem som de:",
+          options: [
+            "Z",
+            "CH",
+            "SS",
+            "KS",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva quatro palavras com X, cada uma com um som diferente (CH, Z, SS, KS), e registre-as para consultar depois:",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Dividindo sílabas corretamente no final da linha",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual é a forma CORRETA de dividir a palavra 'carro' no final da linha?",
+          options: [
+            "car-ro",
+            "ca-rro",
+            "carr-o",
+            "c-arro",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as divisões silábicas CORRETAS para translineação:",
+          items: [
+            "ca-sa",
+            "pas-sa-ro",
+            "pás-sa-ro",
+            "bo-la",
+            "flo-r",
+            "ár-vo-re",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Divida corretamente as palavras para translineação, sem deixar uma letra sozinha:",
+          items: [
+            "'ideia' divide-se em __________.",
+            "'água' divide-se em __________.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva quatro palavras de mais de três sílabas e mostre como cada uma pode ser dividida corretamente no final da linha:",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Rodas de leitura de contos, mitos, lendas e fábulas de diferentes culturas",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual é a principal diferença entre um mito e uma fábula?",
+          options: [
+            "O mito explica a origem do mundo ou da natureza envolvendo deuses e seres sobrenaturais; a fábula usa animais para ensinar uma lição de moral",
+            "O mito é sempre mais curto que a fábula",
+            "A fábula não tem nenhum tipo de personagem",
+            "Não existe diferença entre os dois gêneros",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque apenas as lendas que fazem parte do folclore brasileiro:",
+          items: [
+            "Curupira",
+            "Cinderela",
+            "Saci-Pererê",
+            "Chapeuzinho Vermelho",
+            "Boitatá",
+            "Iara",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Depois da roda de leitura, escolha um conto, mito, lenda ou fábula que você ouviu e conte, com suas palavras, o que mais chamou sua atenção nele:",
+          lines: 5,
+          note: "Diga também de que cultura ou região essa história pode ter vindo.",
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe a cena que você imaginou como a mais marcante da história ouvida na roda de leitura.",
+          note: "Capriche nos detalhes dos personagens e do cenário.",
+        },
+      ],
+    },
+    {
+      theme: "Discutindo organização, estilo e ilustração em textos literários",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Quando um narrador \"conversa\" diretamente com o leitor, usando frases como \"Você não vai acreditar no que aconteceu depois\", isso é um recurso de:",
+          options: [
+            "Estilo do autor, que busca aproximar o leitor da narrativa",
+            "Erro de digitação do livro",
+            "Regra obrigatória de todo texto literário",
+            "Falta de revisão do texto",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre a relação entre texto e ilustração em um livro:",
+          items: [
+            "A ilustração pode mostrar um detalhe que o texto escrito não ___________.",
+            "Quando a imagem contradiz o que o texto diz, isso pode criar um efeito de ___________ ou humor.",
+            "Em um livro sem nenhuma ilustração, o leitor precisa imaginar sozinho a ___________ das cenas.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um livro ilustrado que você já leu e explique como as imagens ajudaram (ou não) a entender melhor a história:",
+          lines: 5,
+        },
+        {
+          kind: "draw",
+          instruction: "Escolha um trecho de um texto literário lido em sala e crie uma ilustração para ele, pensando em como ela vai dialogar com as palavras do autor.",
+        },
+      ],
+    },
+    {
+      theme: "Comparando registros literário, publicitário e jornalístico",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque as características típicas da linguagem publicitária:",
+          items: [
+            "Frases curtas e de efeito",
+            "Linguagem neutra e impessoal",
+            "Uso de imperativo (\"compre já\", \"experimente\")",
+            "Data e local do fato em destaque",
+            "Apelo às emoções do leitor",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Um texto que começa com \"São Paulo, 14 de agosto — Uma pesquisa divulgada ontem mostrou que...\" pertence a qual registro?",
+          options: [
+            "Registro jornalístico, marcado por data, local e informação verificável",
+            "Registro literário, por causa da beleza das palavras",
+            "Registro publicitário, porque tenta vender algo",
+            "Nenhum registro específico",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete indicando o registro (literário, publicitário ou jornalístico) mais provável de cada trecho:",
+          items: [
+            "\"Era uma vez, num reino distante, uma menina que conversava com as estrelas.\" — registro ___________.",
+            "\"Novo suco vem com 50% mais vitamina C. Peça já o seu!\" — registro ___________.",
+            "\"O prefeito anunciou nesta terça-feira um novo plano de mobilidade urbana.\" — registro ___________.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um mesmo assunto (por exemplo, uma chuva forte na cidade) e escreva duas versões bem curtas dele: uma como notícia de jornal e outra como início de um conto:",
+          lines: 6,
+        },
+      ],
+    },
+    {
+      theme: "Leitura programada de uma obra literária mais extensa",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Depois de ler o capítulo combinado para hoje, resuma o que aconteceu, sem contar o final da história:",
+          lines: 5,
+        },
+        {
+          kind: "options",
+          instruction: "Até agora, qual personagem da obra mais chamou sua atenção?",
+          options: [
+            "O personagem principal",
+            "Um personagem secundário",
+            "O narrador",
+            "Ainda não consegui escolher",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com suas impressões sobre a leitura de hoje:",
+          items: [
+            "O trecho que mais me surpreendeu foi quando ___________.",
+            "Eu acho que, no próximo capítulo, vai acontecer ___________.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma cena do capítulo que você leu hoje, mostrando onde ela se passa e quem está presente.",
+        },
+      ],
+    },
+    {
+      theme: "Letras de canções e sua relação com o poema",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que diferencia uma letra de canção de um poema escrito para ser lido?",
+          options: [
+            "A letra de canção é pensada para ser cantada, com melodia e ritmo musical, enquanto o poema pode existir só na página",
+            "Toda letra de canção é automaticamente um poema",
+            "Poemas nunca têm rima",
+            "Não existe nenhuma diferença entre os dois",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os elementos que costumam aparecer tanto em poemas quanto em letras de canções:",
+          items: [
+            "Rima",
+            "Ritmo",
+            "Refrão obrigatório",
+            "Repetição de versos",
+            "Linguagem figurada (metáforas, comparações)",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Pense em uma canção que você conhece bem (sem copiar a letra). Explique, com suas palavras, sobre o que ela fala e que sentimento ela passa:",
+          lines: 5,
+          note: "Não copie trechos da letra original — conte com suas próprias palavras.",
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva uma pequena estrofe (4 versos) que poderia virar letra de canção, sobre um tema à sua escolha:",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Textos reivindicatórios e representações sociais em artigos e relatos históricos",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Um texto reivindicatório é aquele que:",
+          options: [
+            "Defende um direito ou pede uma mudança em nome de um grupo de pessoas",
+            "Apenas conta uma história inventada",
+            "Serve só para vender um produto",
+            "Não tem nenhum objetivo definido",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete pensando em textos que reivindicam direitos:",
+          items: [
+            "Um grupo pode reivindicar acesso a ___________ público de qualidade, como saúde ou educação.",
+            "Ao ler um relato histórico sobre um movimento social, é importante identificar quem ___________ e por quê.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Se você pudesse escrever um pequeno texto reivindicando uma mudança para a sua escola ou seu bairro, o que pediria e por quê?",
+          lines: 6,
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras que costumam aparecer em textos que defendem direitos e reivindicações:",
+          items: [
+            "direito",
+            "reivindicar",
+            "receita",
+            "igualdade",
+            "cardápio",
+            "justiça",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Relatos históricos e divulgação científica sobre diferentes culturas",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Um artigo de divulgação científica tem como principal objetivo:",
+          options: [
+            "Explicar de forma clara um conhecimento científico para o público em geral",
+            "Contar uma história inventada com final feliz",
+            "Vender um produto específico",
+            "Registrar uma opinião pessoal sem nenhuma comprovação",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com as características de um relato histórico:",
+          items: [
+            "O relato histórico apresenta fatos ordenados no ___________, geralmente com datas.",
+            "Diferente de um conto, o relato histórico busca ser ___________ aos fatos reais.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha uma cultura diferente da sua (indígena, africana, asiática, europeia, entre outras) e escreva o que você já sabe ou gostaria de aprender sobre ela:",
+          lines: 5,
+        },
+        {
+          kind: "draw",
+          instruction: "Escolha um costume, festa ou tradição de uma cultura diferente da sua e desenhe uma cena que a represente.",
+        },
+      ],
+    },
+    {
+      theme: "Efeitos de sentido em quadrinhos, charges e tiras de diferentes culturas",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque os recursos que costumam aparecer em uma HQ ou tira para criar efeitos de sentido:",
+          items: [
+            "Balões de fala e pensamento",
+            "Onomatopeias (BUM, CRAC)",
+            "Linhas de movimento",
+            "Rodapé com data completa",
+            "Expressões faciais exageradas",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Uma charge geralmente tem como objetivo principal:",
+          options: [
+            "Criticar, de forma bem-humorada, um fato atual ou uma figura pública",
+            "Contar uma receita de cozinha",
+            "Explicar uma fórmula de matemática",
+            "Anunciar um produto novo",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete explicando o efeito de alguns recursos usados em quadrinhos:",
+          items: [
+            "Um balão com bordas pontiagudas costuma indicar que o personagem está ___________ ou gritando.",
+            "A onomatopeia \"TOC TOC\" representa o som de ___________.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Crie uma pequena tira de 3 quadrinhos contando uma situação engraçada do seu dia a dia, usando balão de fala e pelo menos uma onomatopeia.",
+        },
+      ],
+    },
+    {
+      theme: "Multimodalidade em textos de projetos interdisciplinares",
+      gradeYear: "5-ano",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Quando dizemos que um texto é \"multimodal\", estamos falando de um texto que:",
+          options: [
+            "Combina diferentes linguagens, como palavras, imagens, gráficos, cores e diagramas, para construir sentido",
+            "É escrito em mais de um idioma ao mesmo tempo",
+            "Só pode ser lido no computador",
+            "Não tem nenhuma imagem",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os elementos que podem tornar um cartaz de projeto interdisciplinar (por exemplo, sobre reciclagem) multimodal:",
+          items: [
+            "Gráfico de barras",
+            "Foto legendada",
+            "Texto corrido apenas em preto e branco",
+            "Ícones e setas",
+            "Mapa com destaques coloridos",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Pense em um cartaz ou apresentação de um projeto de Ciências ou Geografia que você já viu ou fez. Explique como as imagens e os gráficos ajudaram a entender o texto:",
+          lines: 5,
+        },
+        {
+          kind: "draw",
+          instruction: "Escolha um tema de outra área (Ciências, História ou Geografia) e esboce um cartaz combinando texto curto, um gráfico ou tabela simples e uma imagem.",
+        },
+      ],
+    },
+    {
+      theme: "Conhecendo trechos de textos da esfera jurídica",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O Estatuto da Criança e do Adolescente (ECA) é um exemplo de texto da esfera:",
+          options: [
+            "Jurídica, porque estabelece leis e direitos",
+            "Literária, porque conta uma história",
+            "Publicitária, porque vende um produto",
+            "Jornalística, porque só informa notícias do dia",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com palavras comuns em textos jurídicos:",
+          items: [
+            "Um texto jurídico costuma usar a palavra ___________ para indicar algo que é obrigatório por lei.",
+            "O ___________ é a pessoa ou instituição responsável por garantir que uma lei seja cumprida.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Pense em uma regra da sua escola que poderia virar uma \"lei\" para todos os alunos seguirem. Escreva essa regra explicando por que ela é importante:",
+          lines: 5,
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras que costumam aparecer em textos da esfera jurídica (leis, estatutos, regimentos):",
+          items: [
+            "direito",
+            "artigo",
+            "receita",
+            "dever",
+            "personagem",
+            "cumprir",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Comparando textos publicitários sobre o mesmo produto",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Imagine dois anúncios diferentes para o mesmo tênis de corrida: um destaca o preço baixo e outro destaca a qualidade. Escreva uma frase de efeito para cada um:",
+          lines: 4,
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os recursos que um anúncio pode usar para convencer o consumidor:",
+          items: [
+            "Depoimento de cliente satisfeito",
+            "Promessa de desconto",
+            "Uso de cores chamativas",
+            "Data de nascimento do fabricante",
+            "Frase de efeito ou slogan",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Ao comparar dois anúncios do mesmo produto, o que é importante observar?",
+          options: [
+            "Que argumento cada um usa para convencer e a quem cada anúncio parece se dirigir",
+            "Apenas o tamanho da letra usada",
+            "Apenas a cor de fundo do anúncio",
+            "Nada, porque todo anúncio é igual",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete comparando dois tipos de argumento publicitário:",
+          items: [
+            "Um anúncio que mostra um cientista falando sobre o produto usa o argumento de ___________.",
+            "Um anúncio que mostra várias pessoas felizes usando o produto usa o argumento de ___________ (fazer o consumidor se sentir parte de um grupo).",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Estratégias de releitura: grifar, anotar e consultar dicionário",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Para que serve grifar uma palavra ou trecho durante a releitura de um texto?",
+          options: [
+            "Para marcar algo importante, uma dúvida ou uma ideia que merece atenção",
+            "Para deixar o texto mais bonito",
+            "Para apagar aquele trecho da memória",
+            "Não serve para nada na leitura",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com a estratégia de leitura mais adequada para cada situação:",
+          items: [
+            "Quando encontro uma palavra desconhecida, uma boa estratégia é ___________ o significado no dicionário.",
+            "Quando um trecho do texto gera dúvida, posso ___________ uma anotação na margem explicando minha dúvida.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Releia um texto que você já leu antes (do livro didático ou paradidático). Grife uma palavra desconhecida, procure no dicionário e escreva o significado com suas palavras:",
+          lines: 4,
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as ações que fazem parte de uma boa estratégia de releitura:",
+          items: [
+            "Grifar trechos importantes",
+            "Anotar dúvidas na margem",
+            "Consultar o dicionário quando necessário",
+            "Ler só uma vez e nunca voltar ao texto",
+            "Circular palavras desconhecidas",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Pesquisando em várias fontes para estudar temas das áreas de conhecimento",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Por que é importante pesquisar um mesmo tema em mais de uma fonte (livro, site, revista)?",
+          options: [
+            "Porque diferentes fontes podem trazer informações complementares e ajudar a confirmar se um dado é confiável",
+            "Porque copiar de uma fonte só já é o suficiente",
+            "Porque quanto mais fontes, mais bonito fica o trabalho, mesmo sem ler nada",
+            "Não é importante, uma fonte já basta sempre",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as fontes de pesquisa confiáveis para um trabalho escolar:",
+          items: [
+            "Enciclopédia impressa",
+            "Site de uma universidade ou instituição de pesquisa",
+            "Mensagem sem autor que circula em grupos de família",
+            "Reportagem de um jornal conhecido",
+            "Documentário sobre o tema",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com o passo correto de uma pesquisa escolar:",
+          items: [
+            "Antes de escrever, é preciso ___________ as informações encontradas em diferentes fontes.",
+            "Ao usar uma informação de outra pessoa, devo escrever com minhas próprias ___________, e não copiar.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um tema de Ciências ou História que você está estudando. Escreva duas informações sobre ele que você descobriria em fontes diferentes (por exemplo, um livro e um documentário):",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Reescrevendo textos narrativos respeitando o texto-fonte",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Escolha um conto curto lido em sala. Reescreva o início da história com suas próprias palavras, mantendo os fatos principais do texto-fonte:",
+          lines: 6,
+        },
+        {
+          kind: "options",
+          instruction: "Ao reescrever um conto, o que NÃO se deve mudar?",
+          options: [
+            "Os fatos principais e a ordem em que eles acontecem na história original",
+            "As palavras exatas do autor, palavra por palavra",
+            "O nome de quem está reescrevendo o texto",
+            "O tamanho das letras usadas",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre o processo de reescrita de um texto narrativo:",
+          items: [
+            "Antes de reescrever, é importante ___________ o texto original com atenção.",
+            "Depois de escrever, devo ___________ meu texto para corrigir erros e melhorar frases.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Depois de reescrever o trecho do conto, desenhe a cena principal da sua versão.",
+        },
+      ],
+    },
+    {
+      theme: "Produzindo contos com coerência e coesão",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Escreva o início de um conto (situação inicial e apresentação do personagem principal), pensando em um conflito que vai surgir na história:",
+          lines: 6,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases usando conectivos que ajudam a dar coesão a uma narrativa:",
+          items: [
+            "No início da manhã, o menino saiu de casa. ___________, encontrou um bilhete misterioso na calçada.",
+            "Ela queria muito ir à festa, ___________ precisava terminar a tarefa antes.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "O que significa dizer que um conto tem \"coerência\"?",
+          options: [
+            "Que as ideias e os fatos do texto fazem sentido entre si, sem contradições",
+            "Que o texto tem muitas figuras de linguagem",
+            "Que o conto é sempre engraçado",
+            "Que o texto é curto",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe o personagem principal do conto que você está criando, mostrando como ele é fisicamente e algum detalhe de sua personalidade.",
+        },
+      ],
+    },
+    {
+      theme: "Criando quadrinhas e novas estrofes para poemas conhecidos",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Escreva uma quadrinha (4 versos, com rima) sobre um tema à sua escolha, como a escola, um animal de estimação ou uma estação do ano:",
+          lines: 4,
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras que rimam com \"lua\":",
+          items: [
+            "rua",
+            "sala",
+            "nua",
+            "chuva",
+            "chuvarada",
+            "crua",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Ao criar uma nova estrofe para um poema já existente, o que é importante manter?",
+          options: [
+            "O ritmo, o tema e, se possível, o padrão de rima do poema original",
+            "Nada, pode mudar tudo completamente",
+            "Apenas o título do poema",
+            "Só a quantidade de letras",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete o verso mantendo a rima com a palavra anterior:",
+          items: [
+            "No jardim da minha casa / tem um pé de ___________ (rima com \"rosa\").",
+            "O gato dorme na esteira / sonhando com a ___________ (rima com \"lua cheia\").",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Escrevendo verbetes de curiosidade sobre temas estudados",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Escolha um animal, planta ou fenômeno da natureza estudado em Ciências e escreva um verbete de curiosidade sobre ele, em linguagem clara e objetiva:",
+          lines: 6,
+        },
+        {
+          kind: "options",
+          instruction: "Um verbete de curiosidade deve ser escrito, de preferência, em qual linguagem?",
+          options: [
+            "Linguagem clara, objetiva e informativa, sem opiniões pessoais",
+            "Linguagem cheia de gírias e emojis",
+            "Linguagem poética, com muitas rimas",
+            "Linguagem exclusivamente técnica e difícil",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com as partes que costumam aparecer em um verbete:",
+          items: [
+            "O verbete costuma começar apresentando ___________ do assunto (nome, o que é).",
+            "Depois, o verbete traz uma ou mais informações ___________ e curiosas sobre o tema.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Ilustre o verbete que você escreveu, desenhando o animal, planta ou fenômeno descrito.",
+        },
+      ],
+    },
+    {
+      theme: "Produzindo um artigo de divulgação científica sobre tema de interesse da comunidade",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Escolha um tema de interesse da sua comunidade (por exemplo, coleta seletiva, dengue ou economia de água) e escreva o parágrafo de abertura de um artigo de divulgação científica sobre ele:",
+          lines: 6,
+        },
+        {
+          kind: "options",
+          instruction: "Qual é o principal objetivo de um artigo de divulgação científica?",
+          options: [
+            "Explicar um conhecimento científico de forma acessível para o público em geral",
+            "Convencer o leitor a comprar um produto",
+            "Contar uma história de ficção baseada em fatos científicos",
+            "Criticar uma pessoa pública",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com elementos que costumam aparecer em um artigo de divulgação científica:",
+          items: [
+            "O artigo costuma apresentar ___________ (pesquisas, dados) que sustentam a informação.",
+            "É comum o artigo terminar sugerindo ___________ práticas para o leitor sobre o tema.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras que costumam aparecer em artigos de divulgação científica:",
+          items: [
+            "pesquisa",
+            "estudo mostra",
+            "era uma vez",
+            "dados indicam",
+            "personagem",
+            "especialistas afirmam",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Escrevendo comentários opinativos sobre temas atuais",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Leia (ou lembre-se de) uma notícia atual que você conhece e escreva um comentário opinativo curto sobre ela, dizendo o que você pensa e por quê:",
+          lines: 6,
+        },
+        {
+          kind: "options",
+          instruction: "Um comentário opinativo se diferencia de uma notícia porque:",
+          options: [
+            "Expressa o ponto de vista de quem escreve, com argumentos, e não apenas relata fatos",
+            "Nunca pode ter argumentos",
+            "É sempre mais longo que uma notícia",
+            "Não pode falar sobre temas atuais",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com expressões usadas para dar opinião em um comentário:",
+          items: [
+            "\"Na minha ___________, essa decisão foi importante para a cidade.\"",
+            "\"___________ eu, esse assunto deveria ser mais discutido nas escolas.\"",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as expressões que servem para introduzir uma opinião em um texto:",
+          items: [
+            "Eu acho que",
+            "Em primeiro lugar, o fato ocorreu",
+            "Na minha opinião",
+            "Segundo dados do IBGE",
+            "Acredito que",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Produzindo cartas argumentativas de leitor",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Imagine que você leu uma reportagem sobre a falta de praças arborizadas no seu bairro. Escreva o início de uma carta de leitor para o jornal, expondo sua opinião sobre o assunto:",
+          lines: 6,
+        },
+        {
+          kind: "options",
+          instruction: "Uma carta argumentativa de leitor tem como principal objetivo:",
+          options: [
+            "Defender um ponto de vista sobre um assunto lido, apresentando argumentos",
+            "Pedir informações pessoais ao jornal",
+            "Contar uma história de ficção para o jornal publicar",
+            "Divulgar um produto à venda",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as partes de uma carta argumentativa de leitor:",
+          items: [
+            "No início, o autor costuma citar a ___________ ou o assunto que motivou a carta.",
+            "No final, o autor pode propor uma ___________ ou pedir uma providência sobre o problema.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os elementos que geralmente aparecem em uma carta argumentativa de leitor:",
+          items: [
+            "Local e data",
+            "Saudação inicial (\"Prezados\", \"Caro editor\")",
+            "Argumentos que sustentam a opinião",
+            "Receita de um prato",
+            "Assinatura do autor",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Entrevistando especialistas a partir de roteiro pré-elaborado",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Escolha um especialista imaginário (por exemplo, um veterinário, um bombeiro ou um cientista) e escreva 4 perguntas para uma entrevista com essa pessoa sobre sua área de trabalho:",
+          lines: 5,
+        },
+        {
+          kind: "options",
+          instruction: "Por que é importante preparar um roteiro antes de fazer uma entrevista?",
+          options: [
+            "Para organizar as perguntas com antecedência e não esquecer nenhum ponto importante",
+            "Porque não é preciso ouvir com atenção as respostas",
+            "Porque assim não é necessário anotar nada",
+            "O roteiro não tem nenhuma utilidade real",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com boas práticas de uma entrevista:",
+          items: [
+            "Durante a entrevista, é importante ___________ com atenção antes de fazer a próxima pergunta.",
+            "Se a resposta do entrevistado gerar dúvida, é possível fazer um ___________ para esclarecer melhor.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as atitudes adequadas para quem está entrevistando um especialista:",
+          items: [
+            "Ouvir com atenção",
+            "Interromper o entrevistado o tempo todo",
+            "Anotar as respostas importantes",
+            "Fazer perguntas relacionadas ao tema combinado",
+            "Agradecer ao final",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Apresentando ideias em diferentes situações comunicativas orais",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Em uma roda de leitores, qual é a postura mais adequada ao apresentar sua ideia sobre um livro?",
+          options: [
+            "Falar com clareza, olhando para o grupo, e ouvir também as ideias dos colegas",
+            "Falar bem baixo e sem olhar para ninguém",
+            "Não deixar nenhum colega falar depois de você",
+            "Ler o livro inteiro em voz alta para o grupo",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete pensando em diferentes situações comunicativas orais:",
+          items: [
+            "Em uma roda de jornal, cada aluno apresenta uma ___________ que leu ou ouviu durante a semana.",
+            "Em uma roda de conversa, é importante respeitar a ___________ de cada colega para falar.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um assunto que você gostaria de apresentar em uma roda de conversa da sua turma. Escreva um pequeno roteiro do que você diria:",
+          lines: 5,
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as atitudes importantes para uma boa apresentação oral em sala:",
+          items: [
+            "Falar com voz clara",
+            "Olhar para os colegas",
+            "Ficar de costas para a turma",
+            "Respeitar a vez de cada um falar",
+            "Organizar as ideias antes de falar",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Expondo temas estudados com apoio de esquemas e notas",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Escolha um tema estudado recentemente em Ciências, História ou Geografia. Escreva 4 tópicos (notas) que você usaria como apoio para expor esse tema para a turma:",
+          lines: 5,
+        },
+        {
+          kind: "options",
+          instruction: "Qual é a principal vantagem de usar um esquema ou notas para uma exposição oral?",
+          options: [
+            "Ajuda a organizar as ideias e lembrar dos pontos principais na hora de falar",
+            "Serve apenas para deixar o caderno mais bonito",
+            "Não tem nenhuma vantagem, é melhor decorar tudo de cor",
+            "Substitui totalmente a necessidade de estudar o tema",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre a preparação de uma exposição oral com apoio de esquema:",
+          items: [
+            "No esquema, é útil destacar as ___________ mais importantes do tema, sem escrever frases inteiras.",
+            "Durante a apresentação, é possível fazer ___________ para o público e depois comentar as respostas.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Crie um pequeno esquema (com setas, palavras-chave e desenhos) sobre um tema estudado, como se fosse usar esse esquema para apresentar à turma.",
+        },
+      ],
+    },
+    {
+      theme: "Relatando oralmente experiências vividas",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Escreva um roteiro para contar oralmente uma experiência marcante que você viveu (uma viagem, um passeio, um aprendizado novo), organizando o começo, o meio e o fim:",
+          lines: 6,
+        },
+        {
+          kind: "options",
+          instruction: "Ao relatar oralmente uma experiência vivida, é importante:",
+          options: [
+            "Organizar os fatos na ordem em que aconteceram e destacar o que foi mais importante",
+            "Inventar fatos que nunca aconteceram",
+            "Falar sem nenhuma ordem, misturando tudo",
+            "Evitar contar como você se sentiu durante a experiência",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete pensando na organização de um relato oral:",
+          items: [
+            "No início do relato, é comum situar quando e ___________ a experiência aconteceu.",
+            "No final, é interessante contar como você se ___________ depois de viver essa experiência.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as expressões úteis para organizar um relato oral no tempo:",
+          items: [
+            "Primeiro",
+            "Depois",
+            "Nunca aconteceu nada",
+            "Em seguida",
+            "Por fim",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Debatendo temas atuais controversos com base em pesquisa",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Em um debate sobre um tema controverso, o que é fundamental fazer antes de defender sua opinião?",
+          options: [
+            "Pesquisar o assunto em fontes confiáveis para embasar os argumentos",
+            "Falar o que vier à cabeça, sem se preparar",
+            "Copiar a opinião de outra pessoa sem entender",
+            "Evitar ouvir os argumentos contrários",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete pensando em regras importantes de um debate escolar:",
+          items: [
+            "Durante o debate, é preciso respeitar a ___________ de cada colega para falar.",
+            "Mesmo discordando de alguém, é importante ___________ o ponto de vista do outro antes de responder.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um tema atual controverso (por exemplo, uso de celular na escola) e escreva dois argumentos: um a favor e um contra:",
+          lines: 6,
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as atitudes adequadas para participar de um debate de forma respeitosa:",
+          items: [
+            "Ouvir o argumento do colega até o fim",
+            "Gritar para impedir o outro de falar",
+            "Justificar sua opinião com dados ou exemplos",
+            "Xingar quem pensa diferente",
+            "Aceitar mudar de ideia se o argumento for bom",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Registrando informações durante situações de escuta oral",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Quando você está ouvindo a apresentação de um colega e quer guardar as informações mais importantes, o que é mais eficiente fazer?",
+          options: [
+            "Anotar palavras-chave e datas enquanto ouve",
+            "Tentar escrever cada palavra dita pelo colega",
+            "Esperar terminar tudo para tentar lembrar de cor",
+            "Desenhar sem prestar atenção ao que é dito",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "A professora vai ler em voz alta um pequeno texto informativo. Enquanto escuta, anote em tópicos as informações mais importantes (quem, o quê, quando, onde):",
+          lines: 5,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre boas estratégias de registro durante a escuta:",
+          items: [
+            "Ao ouvir uma exposição, é útil anotar apenas as palavras-__________, não a frase inteira.",
+            "Depois de registrar as notas, é importante __________ o que foi anotado para não esquecer o sentido.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os recursos que podem ajudar a registrar informações durante uma escuta oral:",
+          items: [
+            "esquema com setas",
+            "caderno de anotações",
+            "celular tocando música",
+            "foto do quadro",
+            "vídeo da apresentação",
+            "conversa paralela",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Comparando gêneros textuais e suas características específicas",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Uma notícia de jornal e uma receita culinária são gêneros textuais diferentes. O que diferencia esses dois gêneros?",
+          options: [
+            "A finalidade e a forma como as informações são organizadas",
+            "Somente o tamanho do texto",
+            "Apenas a cor do papel em que são impressos",
+            "Nenhuma diferença, são o mesmo gênero",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Leia os nomes de gêneros textuais e marque os que normalmente têm instruções organizadas em passos numerados:",
+          items: [
+            "receita culinária",
+            "poema",
+            "manual de instruções",
+            "carta pessoal",
+            "bula de remédio",
+            "conto de fantasia",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Compare dois gêneros textuais completando as frases:",
+          items: [
+            "Uma notícia tem a função de __________, enquanto um poema tem a função de __________.",
+            "Um convite costuma trazer as informações de __________, __________ e __________ do evento.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha dois gêneros textuais que você conhece (por exemplo: bilhete e reportagem) e escreva três diferenças entre eles:",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Evitando repetições desnecessárias no texto",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Reescreva as frases substituindo a palavra repetida por um sinônimo, pronome ou hiperônimo adequado:",
+          items: [
+            "Marina foi ao mercado. Marina comprou frutas e verduras. → Marina foi ao mercado. __________ comprou frutas e verduras.",
+            "O cachorro correu no parque. O cachorro latiu para os pássaros. → O cachorro correu no parque. __________ latiu para os pássaros.",
+            "Pedro e Ana estudaram juntos. Pedro e Ana tiraram boas notas. → Pedro e Ana estudaram juntos. __________ tiraram boas notas.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "No trecho 'Comprei uma maçã, uma banana e uma pera. Depois lavei as frutas', a palavra 'frutas' foi usada para:",
+          options: [
+            "Evitar repetir 'maçã, banana e pera' (hiperônimo)",
+            "Confundir o leitor",
+            "Trocar de assunto",
+            "Indicar que são frutas estragadas",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras que poderiam substituir 'a menina' em um texto para evitar repetição, sem mudar o sentido:",
+          items: [
+            "ela",
+            "a garota",
+            "a estudante",
+            "o menino",
+            "aquela criança",
+            "o carro",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva um pequeno parágrafo (3 a 4 frases) sobre um animal de estimação, tomando cuidado para não repetir o nome do animal em todas as frases — use pronomes e sinônimos:",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Utilizando organizadores textuais no gênero produzido",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque os organizadores textuais que indicam SEQUÊNCIA de tempo ou de passos:",
+          items: [
+            "primeiro",
+            "por exemplo",
+            "em seguida",
+            "além disso",
+            "por fim",
+            "ou seja",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete o texto instrucional com organizadores textuais adequados:",
+          items: [
+            "__________, separe os ingredientes.",
+            "__________, misture tudo em uma tigela.",
+            "__________, leve ao forno por 30 minutos.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual organizador textual é mais adequado para introduzir uma explicação ou justificativa?",
+          options: [
+            "Porque / pois",
+            "Depois",
+            "Em primeiro lugar",
+            "Finalmente",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva um pequeno texto explicando como se escova os dentes corretamente, usando pelo menos três organizadores textuais (primeiro, depois, por fim, entre outros):",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Mantendo o tempo verbal para garantir a coesão do texto",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Em um texto que narra um fato do passado, qual é o problema da frase: 'Ontem eu fui ao parque e brinco com meus amigos'?",
+          options: [
+            "Há uma mistura indevida entre passado e presente",
+            "Não há nenhum problema",
+            "Falta pontuação",
+            "A frase está no futuro",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Reescreva as frases mantendo o mesmo tempo verbal (passado) do começo ao fim:",
+          items: [
+            "Ontem, Lucas acordou cedo, __________ (tomar) café e __________ (ir) para a escola.",
+            "No fim de semana, nós __________ (visitar) a vovó e __________ (comer) bolo de chocolate.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os verbos que estão no mesmo tempo verbal (pretérito perfeito) que 'brincou':",
+          items: [
+            "correu",
+            "estudou",
+            "brinca",
+            "conversou",
+            "vou",
+            "pulou",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva um pequeno parágrafo contando o que você fez ontem, mantendo todos os verbos no passado:",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Articulando as partes do texto de forma coerente",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Um texto é coerente quando:",
+          options: [
+            "Suas partes se conectam e fazem sentido umas com as outras",
+            "Tem muitas figuras coloridas",
+            "É escrito em letra bonita",
+            "Usa palavras difíceis",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Leia as frases embaralhadas abaixo e reescreva-as na ordem correta, formando um texto coerente: 'Depois, ele regou a planta todos os dias.' / 'Por fim, a plantinha floresceu.' / 'João plantou uma semente no jardim.'",
+          lines: 4,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete o texto de forma que as partes façam sentido entre si:",
+          items: [
+            "Estava chovendo muito, por isso eu __________.",
+            "Ana estudou a semana toda, então ela __________ na prova.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os problemas que podem tornar um texto incoerente:",
+          items: [
+            "ideias contraditórias sem explicação",
+            "falta de ligação entre as frases",
+            "uso de parágrafos",
+            "informação que não tem relação com o assunto",
+            "título adequado",
+            "conclusão que combina com o texto",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Usando a pontuação medial e final para dar sentido ao texto",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque os sinais de pontuação que são considerados pontuação FINAL (terminam uma frase):",
+          items: [
+            "ponto final",
+            "vírgula",
+            "ponto de interrogação",
+            "ponto e vírgula",
+            "ponto de exclamação",
+            "dois-pontos",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases com o sinal de pontuação final adequado ao sentido:",
+          items: [
+            "Que susto eu levei__________",
+            "Você já terminou a lição__________",
+            "Hoje o dia está lindo__________",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual é a função da vírgula em: 'Comprei maçã, banana, pera e uva'?",
+          options: [
+            "Separar os itens de uma enumeração",
+            "Terminar a frase",
+            "Indicar uma pergunta",
+            "Indicar surpresa",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva quatro frases sobre o seu dia, usando pelo menos uma vírgula, um ponto de interrogação e um ponto de exclamação:",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Analisando as escolhas de palavras nos textos produzidos",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Em uma carta para um amigo e em uma redação escolar formal, as escolhas de palavras devem ser:",
+          options: [
+            "Diferentes, pois a linguagem se adapta ao gênero e ao destinatário",
+            "Sempre as mesmas",
+            "Sempre muito formais",
+            "Sempre muito informais",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras mais adequadas para substituir 'legal' em um texto mais formal sobre um passeio a um museu:",
+          items: [
+            "interessante",
+            "maneiro",
+            "instrutivo",
+            "massa",
+            "enriquecedor",
+            "da hora",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Reescreva a frase trocando a palavra em destaque por uma mais adequada ao contexto formal: 'O trabalho ficou **bem legal**.'",
+          items: [
+            "O trabalho ficou __________.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva a mesma informação (que você foi bem numa prova) de duas formas: uma como diria para um amigo, outra como escreveria para a diretora da escola:",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Identificando efeitos de sentido de metáfora e comparação",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Na frase 'Meu avô é um leão quando defende a família', o que está sendo usado?",
+          options: [
+            "Uma metáfora, comparando o avô a um leão sem usar 'como'",
+            "Uma pontuação incomum",
+            "Um erro de concordância",
+            "Uma pergunta retórica",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as frases que usam COMPARAÇÃO (com a palavra 'como' ou semelhante):",
+          items: [
+            "Ela é rápida como um raio.",
+            "Ela é um raio de velocidade.",
+            "Ele nada como um peixe.",
+            "Ele é um peixe na água.",
+            "O tempo voou.",
+            "O tempo passou rápido como um sopro.",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Transforme cada comparação em metáfora, retirando a palavra 'como':",
+          items: [
+            "Ele é forte como um touro. → Ele é __________.",
+            "Ela é doce como o mel. → Ela é __________.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva duas frases: uma metáfora e uma comparação, falando sobre uma pessoa que você admira:",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Explorando palavras de um mesmo campo semântico com o dicionário",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras que pertencem ao mesmo campo semântico de 'animal' (podem ser explicadas por esse hiperônimo):",
+          items: [
+            "cachorro",
+            "gato",
+            "mesa",
+            "elefante",
+            "cadeira",
+            "pardal",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Consulte o dicionário e complete com uma palavra do mesmo campo semântico:",
+          items: [
+            "Cão é um hiperônimo para: pastor-alemão, poodle e __________.",
+            "Fruta é um hiperônimo para: maçã, banana e __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Para que serve consultar o dicionário ao explorar um campo semântico?",
+          options: [
+            "Para descobrir palavras relacionadas e seus significados exatos",
+            "Para copiar o texto inteiro do dicionário",
+            "Para aprender apenas a ortografia, sem se importar com o sentido",
+            "Para substituir a necessidade de ler",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um campo semântico (por exemplo: esportes, cores, sentimentos) e escreva cinco palavras que pertencem a ele, consultando o dicionário se precisar:",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Identificando palavras polissêmicas em diferentes contextos",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "A palavra 'manga' pode significar tanto a fruta quanto a parte da camisa. Esse fenômeno é chamado de:",
+          options: [
+            "Polissemia",
+            "Sinonímia",
+            "Antonímia",
+            "Homofonia apenas",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Escreva duas frases usando a palavra 'banco' com dois sentidos diferentes:",
+          items: [
+            "1) __________.",
+            "2) __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras que são polissêmicas (têm mais de um significado, dependendo do contexto):",
+          items: [
+            "copo",
+            "manga",
+            "banco",
+            "livro (substantivo único)",
+            "letra",
+            "vela",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha a palavra 'ponto' e escreva três frases em que ela tenha significados diferentes (por exemplo: ponto de ônibus, ponto de costura, pontuação):",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Explorando recursos gráfico-textuais em materiais lidos",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque os recursos gráfico-textuais que podem aparecer em um texto impresso ou digital:",
+          items: [
+            "negrito",
+            "itálico",
+            "sublinhado",
+            "cor da letra",
+            "tamanho da fonte",
+            "som do vento",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual é o efeito de sentido de escrever uma palavra em NEGRITO dentro de um texto?",
+          options: [
+            "Chamar a atenção do leitor para uma informação importante",
+            "Indicar que a palavra está errada",
+            "Diminuir a importância da palavra",
+            "Não tem nenhum efeito",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Observe uma capa de livro ou revista e complete:",
+          items: [
+            "O título está escrito em letra __________ (tamanho) e na cor __________.",
+            "O recurso gráfico que mais chama atenção nessa capa é __________.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva um pequeno anúncio (por exemplo, de uma festa junina da escola) indicando quais palavras você colocaria em negrito, em letra maior ou em cor diferente, e por quê:",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Conhecendo as variedades linguísticas da língua portuguesa",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Uma pessoa do interior do Nordeste e uma pessoa de São Paulo podem falar português de formas diferentes (sotaque, palavras). Isso acontece porque:",
+          options: [
+            "A língua portuguesa tem variedades regionais, todas legítimas",
+            "Uma das duas formas está errada",
+            "Só existe uma forma certa de falar português",
+            "Isso nunca acontece de verdade",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os fatores que podem influenciar a variedade linguística de uma pessoa:",
+          items: [
+            "região onde mora",
+            "idade",
+            "profissão",
+            "cor da roupa que usa",
+            "grupo social",
+            "escolaridade",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com palavras equivalentes usadas em diferentes regiões do Brasil para o mesmo objeto:",
+          items: [
+            "Em algumas regiões chama-se 'mandioca', em outras chama-se __________ ou 'macaxeira'.",
+            "Em algumas regiões chama-se 'bolacha', em outras chama-se __________.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva duas formas diferentes de dizer a mesma frase: uma como você fala no seu dia a dia (variedade informal ou regional) e outra em português mais formal:",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Valorizando as variedades linguísticas e combatendo o preconceito linguístico",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Dizer que a forma de falar de uma pessoa do interior é 'errada' ou 'feia' é um exemplo de:",
+          options: [
+            "Preconceito linguístico",
+            "Uma opinião válida sobre gramática",
+            "Uma regra da língua portuguesa",
+            "Uma brincadeira sem problema",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre respeito às variedades linguísticas:",
+          items: [
+            "Toda variedade linguística tem sua __________ e deve ser respeitada.",
+            "Rir ou zombar do jeito de falar de alguém é uma forma de __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as atitudes que combatem o preconceito linguístico:",
+          items: [
+            "respeitar diferentes sotaques",
+            "valorizar o modo de falar de cada região",
+            "corrigir e rir de quem fala diferente",
+            "entender que não existe uma única forma 'certa' de falar",
+            "usar a forma de falar de alguém para diminuí-lo",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva um pequeno texto (3 a 4 frases) explicando por que nenhuma forma de falar português é 'melhor' do que outra:",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Analisando o papel dos artigos e adjetivos na caracterização dos nomes",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases com um artigo (o, a, os, as, um, uma) adequado:",
+          items: [
+            "__________ menina alegre chegou cedo.",
+            "__________ livros antigos estão na estante.",
+            "Comprei __________ presente especial.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os adjetivos presentes na frase: 'A casa grande, antiga e colorida ficava na esquina tranquila do bairro.'",
+          items: [
+            "grande",
+            "antiga",
+            "colorida",
+            "casa",
+            "esquina",
+            "tranquila",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual é a função do adjetivo em uma frase?",
+          options: [
+            "Caracterizar ou qualificar o substantivo",
+            "Substituir o verbo",
+            "Indicar o tempo da ação",
+            "Ligar duas orações",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva uma descrição de um animal de estimação (real ou imaginário) usando pelo menos três adjetivos diferentes e os artigos adequados:",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Concordância nominal entre artigos, adjetivos e substantivos",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete fazendo a concordância nominal correta entre artigo, adjetivo e substantivo:",
+          items: [
+            "As flores __________ (amarelo) enfeitavam o jardim.",
+            "O menino comprou __________ (novo) tênis __________ (branco).",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Na frase 'As meninas estudiosas terminaram a prova', por que 'estudiosas' está no feminino plural?",
+          options: [
+            "Porque concorda em gênero e número com 'meninas'",
+            "Porque é uma regra sem motivo",
+            "Porque 'meninas' está no singular",
+            "Porque o verbo exige essa forma",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as frases em que a concordância nominal está CORRETA:",
+          items: [
+            "As casas antigas foram reformadas.",
+            "As casa antiga foram reformada.",
+            "Os carros novos brilhavam ao sol.",
+            "O menina esperta resolveu o problema.",
+            "As meninas espertas resolveram o problema.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva três frases sobre a sua sala de aula, tomando cuidado para fazer a concordância nominal correta entre artigos, adjetivos e substantivos (por exemplo: 'As carteiras enfileiradas...'):",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Efeitos de sentido dos modos, tempos e formas nominais dos verbos",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Na frase 'Se eu estudasse mais, tiraria notas melhores', o verbo 'estudasse' está em qual modo verbal?",
+          options: [
+            "Subjuntivo, indicando uma condição hipotética",
+            "Indicativo, indicando certeza",
+            "Imperativo, indicando ordem",
+            "Infinitivo, sem flexão",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete identificando a forma nominal do verbo destacado:",
+          items: [
+            "'Correr é bom para a saúde.' → o verbo 'correr' está no __________.",
+            "'Estava dormindo quando o telefone tocou.' → 'dormindo' está no __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os verbos que estão no modo IMPERATIVO (dando ordem ou pedido):",
+          items: [
+            "Feche a porta!",
+            "Ele fechou a porta.",
+            "Estude para a prova!",
+            "Eu estudo todos os dias.",
+            "Beba água!",
+            "Ela bebeu água.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva duas frases no modo imperativo (dando um conselho ou instrução) e duas frases no modo indicativo (afirmando um fato):",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Identificando a sílaba tônica das palavras em textos conhecidos",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Leia as palavras em voz alta e marque as que têm a sílaba tônica na ÚLTIMA sílaba (oxítonas):",
+          items: [
+            "café",
+            "sofá",
+            "mesa",
+            "jacaré",
+            "árvore",
+            "jiló",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Separe as sílabas e indique qual é a tônica (a mais forte):",
+          items: [
+            "boneca → bo-ne-ca, a sílaba tônica é __________.",
+            "sabonete → sa-bo-ne-te, a sílaba tônica é __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "O que é a sílaba tônica de uma palavra?",
+          options: [
+            "A sílaba pronunciada com mais intensidade/força",
+            "A primeira sílaba da palavra sempre",
+            "A sílaba escrita em maiúscula",
+            "A sílaba que tem acento gráfico obrigatoriamente",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um pequeno texto que você já leu (do livro de Português, por exemplo) e escreva quatro palavras dele, separando as sílabas e destacando qual é a tônica de cada uma:",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Relacionando acentos gráficos à tonicidade e à pronúncia",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual é a diferença de pronúncia entre 'avó' e 'avô'?",
+          options: [
+            "'Avó' tem o 'o' aberto e 'avô' tem o 'o' fechado",
+            "Não existe diferença na pronúncia",
+            "'Avó' é plural e 'avô' é singular",
+            "A diferença está apenas no gênero, sem mudar o som",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras que usam acento circunflexo (som fechado):",
+          items: [
+            "avô",
+            "café",
+            "você",
+            "árvore",
+            "português",
+            "pêssego",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete indicando se o som da vogal acentuada é aberto ou fechado:",
+          items: [
+            "Em 'café', o 'é' tem som __________.",
+            "Em 'você', o 'ê' tem som __________.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva um pequeno texto usando as palavras 'avó', 'avô', 'café' e 'você', prestando atenção à pronúncia aberta ou fechada de cada acento:",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Praticando a acentuação de palavras proparoxítonas",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Todas as palavras proparoxítonas em português:",
+          options: [
+            "São sempre acentuadas graficamente",
+            "Nunca recebem acento",
+            "São acentuadas apenas às vezes",
+            "Não têm sílaba tônica definida",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras proparoxítonas (acento na antepenúltima sílaba):",
+          items: [
+            "médico",
+            "sábado",
+            "matemática",
+            "computador",
+            "lâmpada",
+            "relógio",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as palavras proparoxítonas com o acento gráfico correto:",
+          items: [
+            "mus__ca (arte dos sons)",
+            "hist__ria (relato de fatos)",
+            "ling__ística (estudo da língua)",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva quatro palavras proparoxítonas que você conhece (por exemplo: sábado, médico, lâmpada) e use cada uma em uma frase:",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Escrevendo palavras regulares contextuais (nasalidade, R/RR, O/U)",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete com M ou N, conforme o contexto (antes de P/B usa-se M; antes de outras consoantes usa-se N):",
+          items: [
+            "ca__po (lugar de plantação)",
+            "e__trada (lugar por onde se entra)",
+            "ta__bém (palavra de inclusão)",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Por que se escreve 'campo' com M e 'canto' com N?",
+          options: [
+            "Porque antes de P e B usa-se M, e antes de outras consoantes usa-se N",
+            "Porque são regras aleatórias sem explicação",
+            "Porque depende da vontade de quem escreve",
+            "Porque M e N têm o mesmo som sempre",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras em que o som do R é forte (como em 'carro'), mesmo escritas com apenas um R por estarem no início da palavra ou depois de consoante:",
+          items: [
+            "rato",
+            "carro",
+            "tênis",
+            "genro",
+            "sorriso",
+            "caro",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva quatro palavras que sigam a regra de M antes de P/B (por exemplo: campo, também, sombra, bombeiro) em frases completas:",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Comparando palavras derivadas ligadas a categorias gramaticais",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete os substantivos derivados de verbos terminados em ÊNCIA e ANÇA:",
+          items: [
+            "Do verbo 'existir' deriva o substantivo 'exist__ncia'.",
+            "Do verbo 'esperar' deriva o substantivo 'esper__nça'.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os substantivos terminados em ANÇA ou ÊNCIA:",
+          items: [
+            "esperança",
+            "paciência",
+            "lembrança",
+            "caderno",
+            "importância",
+            "janela",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Palavras como 'paciência', 'inteligência' e 'consciência' têm em comum:",
+          options: [
+            "Serem substantivos abstratos terminados em ÊNCIA",
+            "Serem verbos no infinitivo",
+            "Serem todas proparoxítonas",
+            "Não terem nenhuma relação entre si",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva três substantivos terminados em ANÇA ou ÊNCIA e o verbo do qual cada um deriva (por exemplo: 'lembrança' vem de 'lembrar'):",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Escrevendo substantivos e adjetivos com terminações regulares",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete os substantivos terminados em ICE:",
+          items: [
+            "cal__ (rua estreita para pedestres)",
+            "matr__ (documento de registro escolar)",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os adjetivos terminados em OSO/OSA:",
+          items: [
+            "cuidadoso",
+            "gostoso",
+            "amoroso",
+            "elegante",
+            "famosa",
+            "rápido",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Adjetivos que indicam o lugar de origem de uma pessoa (por exemplo, quem nasce em Portugal é 'português') costumam terminar em:",
+          options: [
+            "ês/esa",
+            "oso/osa",
+            "eza",
+            "isse",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva três adjetivos terminados em OSO ou OSA e use cada um em uma frase (por exemplo: 'cuidadoso', 'gostoso', 'famosa'):",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Escrevendo palavras irregulares com X e SC",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete com X ou CH, conforme a grafia correta de cada palavra:",
+          items: [
+            "__ícara (usada para tomar café)",
+            "__uva (água que cai do céu)",
+            "en__ergar (ver ao longe)",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras em que o X tem som de S:",
+          items: [
+            "texto",
+            "próximo",
+            "exceto",
+            "táxi",
+            "sintaxe",
+            "exagero",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Por que as palavras com X e SC são consideradas 'irregulares' na ortografia?",
+          options: [
+            "Porque não seguem uma regra fixa e precisam ser memorizadas",
+            "Porque nunca são usadas na escrita",
+            "Porque sempre têm o mesmo som em qualquer palavra",
+            "Porque são palavras inventadas",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva quatro palavras com X (com sons diferentes: de S, de Z, de CH ou de KS) e explique o som de cada uma:",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Dividindo silabicamente palavras compostas no final da linha",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Ao dividir a palavra composta 'guarda-chuva' no final de uma linha, o correto é:",
+          options: [
+            "Repetir o hífen no início da linha seguinte: guarda- / -chuva",
+            "Nunca dividir a palavra",
+            "Dividir sem repetir o hífen",
+            "Dividir apenas pela sílaba tônica",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Divida as palavras compostas abaixo como se estivessem no final de uma linha, indicando onde ficaria o hífen:",
+          items: [
+            "guarda-roupa → guarda-/ __________",
+            "beija-flor → beija-/ __________",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras compostas com hífen que seguem a regra de repetir o hífen ao dividir no final da linha:",
+          items: [
+            "guarda-chuva",
+            "girassol",
+            "pé-de-moleque",
+            "passatempo",
+            "arco-íris",
+            "beija-flor",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva três palavras compostas com hífen (por exemplo: guarda-chuva, pé-de-moleque, arco-íris) e mostre como cada uma ficaria dividida no final de uma linha:",
+          lines: 4,
         },
       ],
     },
@@ -11133,6 +17693,1343 @@ export const ACTIVITY_BANK: Record<OwnSubject | "leitura-diaria", ActivityEntry[
           kind: "lines",
           instruction: "Escreva o que você acha mais bonito: o sol ou a lua? Diga por quê.",
           lines: 2,
+        },
+      ],
+    },
+    {
+      theme: "De onde vem a água que usamos em São Paulo?",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Antes de chegar na sua torneira, de onde vem a maior parte da água que você usa em casa?",
+          options: [
+            "De rios e represas que ficam fora da cidade, tratados e enviados por encanamentos",
+            "É fabricada em uma fábrica de água",
+            "Vem direto da chuva que cai no telhado da sua casa",
+            "Nasce dentro da própria caixa d'água do prédio",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre o uso da água no seu dia a dia:",
+          items: [
+            "Usamos água para __________ os alimentos antes de comer.",
+            "A água que sai da torneira passa por um tratamento para ficar __________ para beber.",
+            "Se a água faltasse por um dia inteiro, a atividade que mais me atrapalharia seria __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque apenas as atividades do dia a dia que dependem diretamente do uso da água:",
+          items: [
+            "escovar os dentes",
+            "lavar roupa",
+            "acender a luz",
+            "cozinhar o almoço",
+            "assistir televisão",
+            "tomar banho",
+            "dar descarga",
+            "carregar o celular",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva um pequeno texto contando três momentos do seu dia em que você usa água, do momento em que acorda até a hora de dormir.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Os rios na vida das pessoas: transporte, trabalho e lazer",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Por que, no passado, muitas cidades e povoados nasceram nas margens de rios?",
+          options: [
+            "Porque o rio oferecia água, alimento e um caminho para se locomover",
+            "Porque os rios eram usados apenas para fotografias",
+            "Porque não existia outro lugar disponível para morar",
+            "Porque os rios impediam a chegada de outras pessoas",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as formas como as pessoas usam os rios até os dias de hoje:",
+          items: [
+            "pesca",
+            "transporte de barcos e balsas",
+            "passeio e lazer nas margens",
+            "construção de arranha-céus",
+            "irrigação de plantações",
+            "fabricação de roupas em fábricas",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre a relação das pessoas com os rios:",
+          items: [
+            "Comunidades ribeirinhas usam o rio para pescar e para __________.",
+            "Em algumas cidades, o rio ainda é usado para o __________ de pessoas e mercadorias em barcos.",
+            "Muitas famílias visitam as margens de um rio para __________ nos finais de semana.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma cena mostrando pessoas usando um rio: pode ser para trabalhar, se deslocar ou se divertir. Não esqueça de dar um título ao seu desenho.",
+        },
+      ],
+    },
+    {
+      theme: "Seguindo o caminho da água até a cidade",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Explique com suas palavras, em ordem, o caminho que a água percorre desde o manancial até chegar na torneira da sua casa.",
+          lines: 5,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre o caminho da água até a cidade:",
+          items: [
+            "A água que abastece São Paulo vem principalmente de __________ e represas.",
+            "Depois de captada, a água passa por uma estação de __________ antes de ser distribuída.",
+            "A água tratada chega às casas por meio de uma rede de __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras relacionadas ao abastecimento de água de uma cidade:",
+          items: [
+            "manancial",
+            "represa",
+            "encanamento",
+            "estação de tratamento",
+            "semáforo",
+            "calçada",
+            "reservatório",
+            "caminhão de lixo",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "O que é um manancial?",
+          options: [
+            "Um local, como um rio ou represa, de onde se retira água para abastecer a população",
+            "Um tipo de caminhão que entrega água",
+            "Um aparelho que limpa a água dentro de casa",
+            "Um documento que autoriza o uso de água",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Rios escondidos: por que não vemos mais alguns rios de São Paulo?",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que aconteceu com vários rios e córregos da cidade de São Paulo ao longo da sua história?",
+          options: [
+            "Foram colocados dentro de canos ou canalizados sob avenidas, ficando escondidos da vista",
+            "Secaram completamente e desapareceram sozinhos",
+            "Foram transportados para outra cidade",
+            "Nunca existiram, é apenas uma lenda",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique por que a cidade de São Paulo canalizou e cobriu vários de seus rios e córregos ao longo do tempo.",
+          lines: 4,
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os rios e córregos que fizeram parte da história da cidade de São Paulo:",
+          items: [
+            "Anhangabaú",
+            "Tamanduateí",
+            "Saracura",
+            "Sena",
+            "Pinheiros",
+            "Danúbio",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre os rios escondidos de São Paulo:",
+          items: [
+            "A avenida 23 de Maio foi construída sobre o antigo curso do rio __________.",
+            "Hoje, muitos moradores não sabem que embaixo de algumas avenidas existe um __________.",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Como São Paulo usou a água de seus rios ao longo do tempo",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Escreva um texto explicando como o uso do rio Tietê pelos moradores de São Paulo mudou ao longo do tempo, do passado até hoje.",
+          lines: 5,
+        },
+        {
+          kind: "options",
+          instruction: "No começo do século XX, como muitas famílias paulistanas usavam as águas do rio Tietê?",
+          options: [
+            "Para nadar, pescar e passear, pois as águas ainda eram limpas",
+            "Apenas para gerar energia elétrica em usinas",
+            "Somente para o transporte de navios grandes",
+            "As pessoas nunca se aproximavam do rio",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete comparando o passado e o presente do uso da água em São Paulo:",
+          items: [
+            "No passado, era comum as pessoas __________ nas águas do Tietê.",
+            "Hoje, por causa da poluição, essa mesma atividade se tornou __________.",
+            "Ao longo do tempo, o crescimento da cidade fez com que os rios passassem a ser usados também para __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os motivos que fizeram os rios de São Paulo mudarem ao longo da história da cidade:",
+          items: [
+            "crescimento da população",
+            "construção de indústrias",
+            "despejo de esgoto sem tratamento",
+            "plantio de árvores nativas",
+            "aumento de prédios e avenidas",
+            "diminuição do número de moradores",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Grandes rios do Brasil e suas histórias",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete com o nome do rio brasileiro correspondente:",
+          items: [
+            "O rio __________ é o maior rio do mundo em volume de água e corta a floresta amazônica.",
+            "O rio __________ é conhecido como 'Velho Chico' e atravessa o sertão nordestino.",
+            "O rio __________ corta a cidade de São Paulo e deu nome ao estado.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Por que o rio São Francisco é chamado de 'rio da integração nacional'?",
+          options: [
+            "Porque atravessa várias regiões do Brasil e leva água para lugares secos do sertão",
+            "Porque nasce e termina dentro da mesma cidade",
+            "Porque só existe dentro de um único estado",
+            "Porque foi construído por engenheiros no século passado",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os grandes rios brasileiros citados nesta aula:",
+          items: [
+            "Tietê",
+            "São Francisco",
+            "Amazonas",
+            "Sena",
+            "Danúbio",
+            "Tâmisa",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um grande rio brasileiro e escreva o que você sabe sobre a sua importância para as pessoas que vivem perto dele.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Tietê, São Francisco e Amazonas: ontem e hoje",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete relacionando cada rio à sua característica marcante:",
+          items: [
+            "O rio __________ hoje sofre com poluição grave dentro da cidade de São Paulo, mas no passado tinha águas limpas usadas para lazer.",
+            "O rio __________ enfrenta períodos de seca que prejudicam comunidades ribeirinhas do sertão nordestino.",
+            "O rio __________ é fundamental para os povos da floresta amazônica, que dependem dele para transporte e alimentação.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "O que esses três rios têm em comum, apesar de estarem em regiões tão diferentes do Brasil?",
+          options: [
+            "Todos são importantes para a vida e a história das pessoas que moram perto deles",
+            "Todos têm exatamente o mesmo tamanho",
+            "Todos nascem no mesmo lugar",
+            "Nenhum deles é usado pelas pessoas hoje em dia",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um desses três rios e compare como ele era no passado e como está hoje.",
+          lines: 5,
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os problemas que podem afetar rios brasileiros como o Tietê e o São Francisco:",
+          items: [
+            "poluição por esgoto",
+            "desmatamento das margens",
+            "assoreamento",
+            "excesso de chuva no oceano",
+            "seca prolongada",
+            "reflorestamento constante",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Um rio famoso do mundo",
+      exercises: [
+        {
+          kind: "draw",
+          instruction: "Escolha um rio famoso do mundo estudado em aula e desenhe uma cena representando sua importância histórica. Escreva o nome do rio embaixo do desenho.",
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva um pequeno texto contando a história de um rio famoso do mundo: onde ele fica, quais povos vivem perto dele e por que ele é importante.",
+          lines: 5,
+        },
+        {
+          kind: "options",
+          instruction: "Por que muitos rios famosos do mundo, como o Nilo, são tão importantes na história da humanidade?",
+          options: [
+            "Porque permitiram que civilizações antigas se desenvolvessem perto de suas águas",
+            "Porque foram criados pelo ser humano há poucos anos",
+            "Porque nunca tiveram nenhuma população vivendo perto deles",
+            "Porque só servem para fazer fronteira entre países",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre a importância histórica de um rio famoso:",
+          items: [
+            "Um rio famoso do mundo que eu conheço se chama __________.",
+            "Esse rio é importante porque __________.",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Rios que cruzam continentes: Tejo, Nilo e Níger",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete relacionando cada rio ao seu país ou continente:",
+          items: [
+            "O rio Tejo passa pela cidade de Lisboa, em __________.",
+            "O rio Nilo é fundamental para a história do Egito, no continente __________.",
+            "O rio Níger atravessa o Mali e outros países da região __________ da África.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Por que o rio Nilo foi tão importante para o surgimento do antigo Egito?",
+          options: [
+            "Suas cheias fertilizavam as margens, permitindo o plantio de alimentos no meio do deserto",
+            "Ele era usado apenas para construir pirâmides",
+            "Ele separava o Egito de todos os outros povos",
+            "Ele só existia durante o inverno",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os rios que cruzam continentes diferentes do Brasil, estudados nesta aula:",
+          items: [
+            "Tejo",
+            "Nilo",
+            "Níger",
+            "Tietê",
+            "São Francisco",
+            "Amazonas",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um dos rios Tejo, Nilo ou Níger e explique por que ele é importante para o país onde está localizado.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Visita a um rio ou córrego da cidade",
+      exercises: [
+        {
+          kind: "draw",
+          instruction: "Desenhe o rio, córrego, represa ou nascente que você visitou ou conhece na sua cidade, mostrando como ele é hoje.",
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva um relato sobre a visita ou observação de um rio, córrego ou represa: o que você viu, sentiu e observou sobre o local.",
+          lines: 5,
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as coisas que podem ser observadas durante a visita a um rio ou córrego da cidade:",
+          items: [
+            "cor da água",
+            "presença de lixo nas margens",
+            "plantas ao redor",
+            "animais na água",
+            "prédios ao fundo",
+            "cheiro do local",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre a observação de um rio ou córrego da cidade:",
+          items: [
+            "O nome do rio ou córrego que eu observei ou conheço é __________.",
+            "Uma coisa que me chamou atenção nesse local foi __________.",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Quem vive à beira dos rios? Conhecendo populações ribeirinhas",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que caracteriza uma população ribeirinha?",
+          options: [
+            "São pessoas que vivem às margens de rios e organizam sua vida a partir deles",
+            "São pessoas que nunca saem de casa",
+            "São pessoas que moram apenas em grandes cidades litorâneas",
+            "São pessoas que trabalham somente em fábricas",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva um texto explicando como os rios influenciam o modo de vida das populações ribeirinhas: moradia, alimentação, transporte e trabalho.",
+          lines: 5,
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os costumes e atividades comuns entre populações ribeirinhas:",
+          items: [
+            "pesca para alimentação",
+            "casas de palafita",
+            "transporte em canoas e barcos",
+            "uso do metrô todos os dias",
+            "cultivo de mandioca nas margens",
+            "trabalho em escritórios de vidro",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre populações ribeirinhas:",
+          items: [
+            "As populações ribeirinhas têm um conhecimento profundo sobre os __________ do rio, como cheias e secas.",
+            "Muitas casas ribeirinhas são construídas sobre palafitas para se proteger das __________ do rio.",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Festas e crenças ligadas à água: heranças indígenas, africanas e europeias",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete relacionando cada crença ou festa à sua herança cultural:",
+          items: [
+            "A crença em Iara, a mãe-d'água que vive nos rios, é uma herança __________.",
+            "A festa em homenagem a Iemanjá, rainha do mar, é uma herança __________.",
+            "As procissões de barcos em homenagem a santos, como Nossa Senhora dos Navegantes, são uma herança __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Por que existem tantas festas e crenças diferentes ligadas à água no Brasil?",
+          options: [
+            "Porque o Brasil reúne heranças culturais de povos indígenas, africanos e europeus que se misturaram ao longo da história",
+            "Porque a água só é importante para um único povo",
+            "Porque essas festas foram inventadas recentemente e não têm história",
+            "Porque cada estado brasileiro proíbe as festas dos outros",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque elementos ligados a festas ou crenças relacionadas à água:",
+          items: [
+            "Iemanjá",
+            "Iara",
+            "procissão de barcos",
+            "flores no mar",
+            "desfile de carros",
+            "oferendas às margens do rio",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha uma festa ou crença ligada à água e explique de qual herança cultural (indígena, africana ou europeia) ela vem e como ela é celebrada.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Rios poluídos, vidas afetadas: os problemas das águas de São Paulo",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual é uma das principais causas da poluição do rio Tietê dentro da cidade de São Paulo?",
+          options: [
+            "O despejo de esgoto doméstico e industrial sem tratamento adequado",
+            "O excesso de peixes nadando no rio",
+            "A quantidade grande de chuva na região",
+            "O plantio de árvores nas margens do rio",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os grupos de pessoas que costumam ser mais afetados pela poluição dos rios de São Paulo:",
+          items: [
+            "famílias que moram perto das margens",
+            "pescadores locais",
+            "crianças que brincam perto do rio",
+            "moradores de bairros muito distantes do rio",
+            "pessoas que dependem da pesca para se alimentar",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre os problemas das águas poluídas em São Paulo:",
+          items: [
+            "A poluição da água pode causar doenças em pessoas que têm contato __________ com o rio.",
+            "Um mau cheiro forte perto de um rio geralmente indica a presença de __________ não tratado.",
+            "Uma solução para reduzir a poluição dos rios é investir em __________ de esgoto.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva um texto explicando como a poluição de um rio pode mudar a vida das pessoas que moram perto dele.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Conviver com as diferenças: uma cidade de muitos povos",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Escreva um texto explicando por que é importante respeitar as diferentes culturas que formam a cidade de São Paulo, incluindo suas crenças e festas ligadas à água.",
+          lines: 5,
+        },
+        {
+          kind: "options",
+          instruction: "O que significa conviver com o respeito à diferença em uma sociedade formada por muitos povos?",
+          options: [
+            "Aceitar e valorizar costumes, crenças e formas de viver diferentes das nossas",
+            "Obrigar todas as pessoas a seguirem a mesma cultura",
+            "Ignorar as tradições dos outros grupos",
+            "Escolher apenas uma cultura como a mais correta",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque atitudes que demonstram respeito à diversidade cultural de uma cidade:",
+          items: [
+            "ouvir com interesse sobre uma festa de outra cultura",
+            "zombar de uma crença diferente da minha",
+            "aprender sobre costumes de outros povos",
+            "impedir uma celebração religiosa alheia",
+            "participar respeitosamente de uma tradição diferente da sua",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre a convivência entre diferentes culturas em São Paulo:",
+          items: [
+            "São Paulo é uma cidade formada por pessoas de origem __________, __________ e __________.",
+            "Respeitar a diferença significa não __________ os costumes dos outros.",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "O mesmo evento, sentidos diferentes: tempo e espaço na nossa relação com a água",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Escolha um mesmo evento relacionado à água, como uma cheia de rio ou um dia de chuva forte, e explique como ele pode ter significados diferentes para pessoas em lugares diferentes.",
+          lines: 5,
+        },
+        {
+          kind: "options",
+          instruction: "Para uma população ribeirinha da Amazônia, o que a cheia de um rio pode significar?",
+          options: [
+            "Um fenômeno natural que faz parte do ciclo de vida do rio, trazendo peixes e fertilizando o solo",
+            "Um problema causado exclusivamente por pessoas da cidade",
+            "Um evento que nunca acontece na região",
+            "Algo que não interfere na vida das pessoas",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete comparando sentidos diferentes para um mesmo evento ligado à água:",
+          items: [
+            "Para quem mora perto de um rio, uma forte chuva pode significar __________.",
+            "Para quem mora em um apartamento distante do rio, essa mesma chuva pode significar apenas __________.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe duas cenas lado a lado mostrando como um mesmo evento com água (como uma chuva forte) pode ser vivido de formas diferentes por pessoas em lugares diferentes.",
+        },
+      ],
+    },
+    {
+      theme: "Toda fonte conta uma história: quem fez, onde e quando",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Por que é importante saber quem fez uma fotografia, um texto ou um objeto antigo, além de olhar apenas para a imagem ou o texto em si?",
+          options: [
+            "Porque saber o autor, o local e a época ajuda a entender melhor a mensagem e o contexto da fonte",
+            "Porque isso não muda nada na compreensão da fonte histórica",
+            "Porque só interessa saber a cor da fonte",
+            "Porque toda fonte histórica é sempre igual, não importa quem a fez",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre como analisar uma fonte histórica:",
+          items: [
+            "Uma fotografia antiga de um rio pode nos contar sobre a __________ em que foi tirada.",
+            "Saber quem produziu um relato sobre um rio ajuda a entender seu ponto de __________.",
+            "O local onde uma fonte foi criada também influencia as informações que ela __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as informações importantes para entender uma fonte histórica, como uma foto antiga de um rio:",
+          items: [
+            "quem produziu a fonte",
+            "em que época foi produzida",
+            "em que lugar foi produzida",
+            "a cor da roupa de quem está lendo hoje",
+            "para que finalidade foi criada",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha uma imagem antiga de um rio de São Paulo que você já viu e escreva o que ela pode nos contar sobre quem a fez, onde e quando.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Um rio, muitos olhares: percepções diferentes sobre um mesmo lugar",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Escolha um rio estudado nas aulas e escreva como ele pode ser visto de formas diferentes por um pescador, um morador da cidade e um turista.",
+          lines: 5,
+        },
+        {
+          kind: "options",
+          instruction: "Por que pessoas diferentes podem ter percepções diferentes sobre o mesmo rio?",
+          options: [
+            "Porque cada pessoa tem uma experiência, uma história de vida e uma relação diferente com aquele lugar",
+            "Porque o rio muda de aparência para cada pessoa que olha",
+            "Porque só existe uma forma correta de enxergar um rio",
+            "Porque as pessoas nunca conversam sobre os rios",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque quem pode ter um olhar diferente sobre um mesmo rio:",
+          items: [
+            "pescador que vive da pesca no rio",
+            "morador que vê o rio poluído todo dia",
+            "cientista que estuda a qualidade da água",
+            "turista que visita o rio pela primeira vez",
+            "criança que brinca perto do rio",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe o mesmo rio visto por duas pessoas diferentes, como um pescador e um morador da cidade, mostrando o que cada um pode notar de diferente.",
+        },
+      ],
+    },
+    {
+      theme: "Como vivemos em São Paulo hoje",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual desses NÃO é um serviço urbano que encontramos em São Paulo hoje?",
+          options: [
+            "Coleta de lixo e saneamento básico",
+            "Transporte por metrô e ônibus",
+            "Hospitais e postos de saúde",
+            "Colheita de trigo em plantação própria",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre a rotina de quem mora em São Paulo:",
+          items: [
+            "Para ir à escola ou ao trabalho, muitas pessoas usam __________ (ônibus, metrô, carro, bicicleta).",
+            "Em prédios e casas da cidade, a água encanada e a energia elétrica chegam por meio de __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras que representam espaços comuns na vida urbana de São Paulo:",
+          items: [
+            "praça",
+            "avenida",
+            "shopping",
+            "aldeia",
+            "estação de metrô",
+            "oca",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Descreva sua rotina em um dia comum: o que você faz de manhã, à tarde e à noite, e quais espaços da cidade você usa nesse dia.",
+          lines: 5,
+          note: "Incentive o aluno a citar lugares reais do bairro, como escola, mercado, praça ou ponto de ônibus.",
+        },
+      ],
+    },
+    {
+      theme: "São Paulo ontem e hoje",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Escolha um elemento da cidade (transporte, iluminação, comunicação ou construção) e explique como ele era há 100 anos e como é hoje.",
+          lines: 5,
+        },
+        {
+          kind: "options",
+          instruction: "O que mais mudou na paisagem de São Paulo ao longo do tempo?",
+          options: [
+            "A cidade cresceu muito e ganhou prédios altos e mais ruas asfaltadas",
+            "A cidade diminuiu de tamanho",
+            "A cidade deixou de ter pessoas morando nela",
+            "Nada mudou desde a fundação da cidade",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete comparando épocas diferentes:",
+          items: [
+            "Antigamente, muitas ruas de São Paulo eram de __________, e hoje a maioria é asfaltada.",
+            "No passado, as notícias demoravam para chegar; hoje, com a internet, as informações chegam de forma __________.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe em duas partes: de um lado, como você imagina uma rua de São Paulo no passado; do outro, como essa mesma rua pode ser hoje.",
+          note: "Peça para o aluno legendar os elementos de cada época (transporte, construções, roupas).",
+        },
+      ],
+    },
+    {
+      theme: "Fontes que contam a história da cidade",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque os itens que podem ser usados como fontes históricas para estudar a cidade de São Paulo:",
+          items: [
+            "fotografia antiga",
+            "planta da cidade",
+            "carta de um morador",
+            "jogo de videogame atual",
+            "mapa antigo",
+            "propaganda de hoje",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Por que fotografias antigas são consideradas fontes históricas importantes?",
+          options: [
+            "Porque mostram como eram as ruas, roupas e construções de outra época",
+            "Porque são sempre coloridas e bonitas",
+            "Porque foram feitas no computador",
+            "Porque não têm nenhuma informação útil",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com o tipo de fonte histórica adequada:",
+          items: [
+            "Um documento que mostra como as ruas de uma cidade estavam organizadas em determinada época é chamado de __________.",
+            "Quando uma pessoa idosa conta o que viveu na infância, essa é uma fonte histórica chamada __________.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Imagine que você encontrou uma foto antiga de uma rua de São Paulo. Escreva o que você observaria nela para descobrir como era a vida naquela época.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Cidades que já foram capital do Brasil",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual é a ordem correta das cidades que já foram capital do Brasil?",
+          options: [
+            "Salvador, depois Rio de Janeiro, depois Brasília",
+            "Brasília, depois São Paulo, depois Salvador",
+            "Rio de Janeiro, depois Salvador, depois Brasília",
+            "São Paulo, depois Brasília, depois Salvador",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com o nome da cidade correspondente:",
+          items: [
+            "A primeira capital do Brasil, no período colonial, foi __________.",
+            "A capital atual do Brasil, construída no século XX, é __________.",
+          ],
+          note: "Respostas esperadas: Salvador e Brasília.",
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os bens do patrimônio histórico que podem estar ligados a essas cidades que já foram capital:",
+          items: [
+            "Pelourinho",
+            "Pão de Açúcar",
+            "Catedral de Brasília",
+            "Cristo Redentor",
+            "Estádio construído em 2020",
+            "Centro Histórico de Salvador",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha uma cidade que já foi capital do Brasil e explique por que ela foi escolhida para essa função em sua época.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Uma capital do Brasil e São Paulo",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Escolha uma cidade que já foi capital do Brasil (Salvador, Rio de Janeiro ou Brasília) e compare sua história com a história de São Paulo.",
+          lines: 5,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com semelhanças e diferenças entre as duas cidades estudadas:",
+          items: [
+            "Uma semelhança entre São Paulo e essa cidade é __________.",
+            "Uma diferença entre São Paulo e essa cidade é __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "O que significa dizer que uma cidade foi capital do Brasil?",
+          options: [
+            "Foi o local onde ficava o governo federal do país em determinada época",
+            "Foi a cidade com mais habitantes do mundo",
+            "Foi a única cidade brasileira com escolas",
+            "Foi a cidade onde o Brasil foi descoberto",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os aspectos que podem ser comparados entre duas cidades ao estudar suas histórias:",
+          items: [
+            "população",
+            "arquitetura",
+            "clima do dia de hoje",
+            "importância política",
+            "transporte",
+            "cor do céu agora",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Uma cidade da América Latina",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "A América Latina é formada por países que ficam principalmente em qual continente?",
+          options: [
+            "América",
+            "Europa",
+            "Ásia",
+            "Oceania",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com informações sobre a cidade latino-americana estudada:",
+          items: [
+            "A cidade estudada, __________, fica no país __________.",
+            "Uma característica marcante dessa cidade é __________.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Compare a cidade latino-americana estudada com São Paulo: o que elas têm em comum e o que é diferente na história de cada uma?",
+          lines: 5,
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os países que fazem parte da América Latina:",
+          items: [
+            "Argentina",
+            "México",
+            "Peru",
+            "Japão",
+            "Colômbia",
+            "Alemanha",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Uma cidade da África",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete com informações sobre a cidade africana estudada:",
+          items: [
+            "A cidade estudada, __________, fica no país __________, no continente africano.",
+            "Uma tradição ou característica importante dessa cidade é __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Por que é importante estudar a história de cidades africanas na escola?",
+          options: [
+            "Porque a África tem uma história rica e ligada à história do Brasil e do mundo",
+            "Porque a África não tem cidades importantes",
+            "Porque só existe um país na África",
+            "Porque a história africana não tem relação com o Brasil",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Compare a cidade africana estudada com São Paulo, destacando pelo menos uma semelhança e uma diferença.",
+          lines: 5,
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os países que ficam no continente africano:",
+          items: [
+            "Nigéria",
+            "Egito",
+            "Moçambique",
+            "Portugal",
+            "Quênia",
+            "Itália",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "O que as cidades têm em comum",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque os elementos que costumam existir em quase todas as cidades estudadas ao longo do ano:",
+          items: [
+            "moradias",
+            "ruas ou caminhos de circulação",
+            "locais de comércio",
+            "espaços de convivência",
+            "naves espaciais",
+            "governo ou organização social",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Pensando em todas as cidades que você estudou este ano (São Paulo, uma antiga capital do Brasil, uma cidade da América Latina e uma da África), escreva o que elas têm em comum.",
+          lines: 6,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com características gerais das cidades:",
+          items: [
+            "Toda cidade precisa organizar o transporte das pessoas e das __________.",
+            "As cidades mudam com o tempo por causa do crescimento da __________ e das novas tecnologias.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Mesmo sendo de países diferentes, por que as cidades estudadas se parecem em alguns aspectos?",
+          options: [
+            "Porque toda cidade organiza moradia, trabalho, transporte e convivência entre as pessoas",
+            "Porque todas as cidades do mundo têm o mesmo nome",
+            "Porque todas foram fundadas no mesmo ano",
+            "Porque não existem diferenças entre elas",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Povos indígenas do Xingu",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre os povos indígenas do Xingu:",
+          items: [
+            "O Parque Indígena do Xingu fica localizado no estado brasileiro do __________.",
+            "No Parque do Xingu vivem __________ povos indígenas diferentes, cada um com sua própria língua e cultura.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual afirmação está correta sobre os povos indígenas do Xingu?",
+          options: [
+            "São vários povos diferentes, cada um com língua, costumes e histórias próprias",
+            "Todos os povos indígenas do Brasil são iguais entre si",
+            "Os povos do Xingu não existem mais atualmente",
+            "Todos os povos do Xingu falam a mesma língua",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque nomes de povos indígenas que vivem no Parque do Xingu:",
+          items: [
+            "Kamaiurá",
+            "Yawalapiti",
+            "Kayabi",
+            "Vikings",
+            "Waurá",
+            "Aztecas",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva o que você aprendeu sobre onde vivem os povos indígenas do Xingu e por que eles são vários povos diferentes, e não um só.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Modo de vida no Xingu",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque elementos que fazem parte do modo de vida de povos indígenas do Xingu:",
+          items: [
+            "pesca nos rios",
+            "rituais e festas tradicionais",
+            "artesanato com materiais da natureza",
+            "shopping center",
+            "moradia comunitária (maloca)",
+            "metrô",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre o modo de vida no Xingu:",
+          items: [
+            "Os povos do Xingu retiram da natureza, como os rios e as matas, grande parte de sua __________ e de seus materiais.",
+            "As tradições, como pinturas corporais e rituais, são transmitidas de geração em geração pelos __________ e anciãos.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Descreva três aspectos do modo de vida dos povos indígenas do Xingu que você aprendeu, como moradia, alimentação ou organização social.",
+          lines: 5,
+        },
+        {
+          kind: "options",
+          instruction: "O que caracteriza a relação dos povos do Xingu com a natureza?",
+          options: [
+            "Uma relação de cuidado e uso equilibrado dos recursos naturais",
+            "Uma relação de total desinteresse pela natureza",
+            "Uma relação em que a natureza é irrelevante para a cultura",
+            "Uma relação baseada apenas em máquinas industriais",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Vida urbana e vida indígena: semelhanças e diferenças",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Compare a vida em São Paulo com o modo de vida dos povos indígenas do Xingu, apontando uma semelhança e uma diferença importantes.",
+          lines: 5,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete apontando semelhanças entre os dois modos de vida:",
+          items: [
+            "Tanto na cidade quanto no Xingu, as pessoas vivem em __________ (grupos organizados de convivência).",
+            "Em ambos os lugares existem tradições e formas próprias de comemorar, chamadas de __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os aspectos que são DIFERENTES entre a vida urbana em São Paulo e a vida em uma aldeia do Xingu:",
+          items: [
+            "tipo de moradia",
+            "forma de obter alimento",
+            "meio de transporte usado",
+            "existência de organização social",
+            "existência de família",
+            "uso de tecnologia digital no dia a dia",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual é a forma mais adequada de comparar a vida urbana e a vida indígena do Xingu?",
+          options: [
+            "Reconhecer que são modos de vida diferentes, cada um válido em seu contexto",
+            "Considerar que um modo de vida é mais avançado que o outro",
+            "Dizer que a vida indígena é atrasada em relação à vida urbana",
+            "Ignorar as diferenças entre os dois modos de vida",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Respeitando diferentes modos de vida",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que significa respeitar um modo de vida diferente do seu?",
+          options: [
+            "Reconhecer o valor da cultura do outro, mesmo sendo diferente da sua",
+            "Achar que sua cultura é a única correta",
+            "Ignorar as tradições de outros povos",
+            "Rir de costumes diferentes dos seus",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva por que é importante respeitar os diferentes povos, culturas e épocas que estudamos ao longo do ano, mesmo quando seus costumes são muito diferentes dos nossos.",
+          lines: 5,
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre respeito às diferenças:",
+          items: [
+            "Nenhuma cultura é __________ do que outra; todas merecem ser respeitadas.",
+            "Preconceito é quando julgamos alguém de forma injusta por causa de sua __________, religião ou modo de vida.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as atitudes que demonstram respeito à diversidade cultural:",
+          items: [
+            "ouvir com atenção histórias de outros povos",
+            "valorizar tradições diferentes das suas",
+            "zombar de costumes que você não conhece",
+            "aprender sobre outras culturas",
+            "excluir quem é diferente",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "São Paulo acessível",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque os itens que ajudam a tornar a cidade de São Paulo mais acessível para todas as pessoas:",
+          items: [
+            "rampas de acesso",
+            "piso tátil",
+            "ônibus com elevador",
+            "escadas sem corrimão",
+            "Libras (Língua Brasileira de Sinais)",
+            "semáforo sonoro",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre acessibilidade na cidade:",
+          items: [
+            "A Libras é a língua usada por pessoas __________ para se comunicar.",
+            "O piso tátil ajuda pessoas com deficiência __________ a se locomover pelas calçadas com segurança.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Por que a acessibilidade nas cidades é importante?",
+          options: [
+            "Porque garante que todas as pessoas, com ou sem deficiência, possam circular e participar da vida na cidade",
+            "Porque serve apenas para deixar as ruas mais bonitas",
+            "Porque é uma exigência que não beneficia ninguém",
+            "Porque só é útil para poucas pessoas",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Observe as calçadas e ônibus do seu bairro (ou pense em exemplos que você conhece) e escreva o que já é acessível e o que ainda poderia melhorar.",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Identidades plurais na cidade",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Escreva sobre a diversidade de pessoas que vivem em São Paulo: diferentes origens, religiões, culturas e famílias. Por que essa diversidade é importante?",
+          lines: 5,
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque exemplos de grupos e culturas que fazem parte da diversidade de São Paulo:",
+          items: [
+            "imigrantes de outros países",
+            "comunidades religiosas diferentes",
+            "povos indígenas",
+            "pessoas de diferentes regiões do Brasil",
+            "apenas um único grupo",
+            "famílias de diferentes formações",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre a diversidade da cidade:",
+          items: [
+            "São Paulo recebeu, ao longo da sua história, imigrantes de vários países, como __________ e __________.",
+            "Identidade plural significa que uma cidade é formada por pessoas com histórias e culturas __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "O que é uma identidade plural em uma cidade como São Paulo?",
+          options: [
+            "A convivência de pessoas com origens, culturas e histórias diferentes em um mesmo lugar",
+            "A existência de um único tipo de morador na cidade",
+            "A ausência de diferenças entre as pessoas",
+            "A proibição de culturas diferentes na cidade",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "O cotidiano muda com o tempo",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete comparando o cotidiano de antes e de agora:",
+          items: [
+            "Antigamente, para se comunicar à distância, as pessoas usavam carta ou telefone fixo; hoje usam __________.",
+            "No passado, muitas famílias buscavam água em poços ou chafarizes; hoje a água chega até as casas por meio de __________.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha uma rotina simples do dia a dia (como lavar roupa, se comunicar ou fazer compras) e explique como ela mudou ao longo do tempo.",
+          lines: 5,
+        },
+        {
+          kind: "options",
+          instruction: "Por que estudar pequenas rotinas do cotidiano ajuda a entender a história?",
+          options: [
+            "Porque essas mudanças mostram transformações na tecnologia e na forma de viver das pessoas",
+            "Porque o cotidiano nunca muda",
+            "Porque rotinas simples não têm relação com a história",
+            "Porque só fatos de guerra fazem parte da história",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque hábitos do cotidiano que mudaram bastante nas últimas décadas:",
+          items: [
+            "forma de se comunicar",
+            "forma de assistir filmes e séries",
+            "forma de fazer compras",
+            "forma de respirar",
+            "forma de estudar",
+            "forma de dormir",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Objetos e imagens contam histórias",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que podemos descobrir observando um objeto antigo, como um rádio ou um brinquedo?",
+          options: [
+            "Informações sobre a época, os materiais e os costumes de quem o usava",
+            "Nada, pois objetos não têm relação com a história",
+            "Apenas o preço do objeto hoje em dia",
+            "Somente a cor do objeto",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre o que os objetos e imagens revelam:",
+          items: [
+            "Uma fotografia antiga pode revelar como eram as __________ e os costumes de uma época.",
+            "Um objeto usado no passado, como um ferro a carvão, mostra como as pessoas faziam tarefas do dia a dia sem a __________ que temos hoje.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um objeto antigo da sua família ou que você já viu (foto, brinquedo, utensílio) e escreva o que ele revela sobre a época em que foi usado.",
+          lines: 5,
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os itens que podem ser considerados fontes históricas por meio de objetos e imagens:",
+          items: [
+            "fotografia de família",
+            "brinquedo antigo",
+            "carta escrita à mão",
+            "notícia de hoje no celular",
+            "utensílio de cozinha antigo",
+            "pintura de época",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Cada um vê a história de um jeito",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Imagine duas pessoas que vivenciaram o mesmo fato em épocas ou situações diferentes. Explique por que elas podem contar essa história de formas diferentes.",
+          lines: 5,
+        },
+        {
+          kind: "options",
+          instruction: "Por que pessoas diferentes podem ter versões diferentes sobre um mesmo acontecimento?",
+          options: [
+            "Porque cada pessoa vive a realidade a partir do seu próprio olhar, experiência e lugar social",
+            "Porque só existe uma versão correta e as outras são sempre mentiras",
+            "Porque as pessoas nunca concordam sobre nada",
+            "Porque a história não pode ser contada por mais de uma pessoa",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre os diferentes pontos de vista na história:",
+          items: [
+            "Duas pessoas que vivem no mesmo bairro, mas em condições diferentes, podem ter __________ diferentes sobre a mesma cidade.",
+            "Ouvir várias versões sobre um fato histórico ajuda a ter uma visão mais __________ do que aconteceu.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque situações em que pessoas diferentes podem ter percepções diferentes sobre o mesmo momento histórico:",
+          items: [
+            "um morador antigo e um morador novo do bairro",
+            "uma criança e um adulto na mesma época",
+            "pessoas de bairros diferentes da cidade",
+            "duas cópias idênticas do mesmo documento",
+            "pessoas de culturas diferentes",
+            "um mesmo texto lido duas vezes pela mesma pessoa",
+          ],
         },
       ],
     },
@@ -13636,6 +21533,1187 @@ export const ACTIVITY_BANK: Record<OwnSubject | "leitura-diaria", ActivityEntry[
           kind: "lines",
           instruction: "Escreva o nome de um trabalho que você já viu sendo feito perto da sua escola.",
           lines: 1,
+        },
+      ],
+    },
+    {
+      theme: "Raízes e histórias: a diversidade cultural no meu lugar de vivência",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Converse com alguém da sua família sobre a história dela: de onde veio, o que trouxe de costume, comida ou objeto que ainda existe em casa. Escreva o que você descobriu.",
+          lines: 5,
+          note: "Pode ser um objeto, uma receita, uma música, uma religião ou uma forma de falar.",
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras que representam elementos culturais que uma família pode trazer de sua origem:",
+          items: [
+            "receita de comida",
+            "carro novo",
+            "música e dança",
+            "religião",
+            "jeito de falar",
+            "boletim escolar",
+            "roupa típica",
+            "controle remoto",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Quando pessoas de diferentes origens (indígenas, afro-brasileiras, migrantes, imigrantes) vivem no mesmo bairro, o que costuma acontecer com a cultura local?",
+          options: [
+            "Ela se mistura e fica mais diversa, com comidas, festas e costumes diferentes convivendo",
+            "Ela desaparece completamente",
+            "Só uma cultura pode existir por vez",
+            "Nada muda, cada cultura fica isolada sem nenhum contato",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre diversidade cultural:",
+          items: [
+            "Uma pessoa que se muda de um país para outro é chamada de __________.",
+            "Uma pessoa que se muda de uma região do Brasil para outra é chamada de __________.",
+            "O conjunto de costumes, comidas e crenças de um povo é chamado de sua __________.",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "De onde vieram? Migrações que formaram São Paulo",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Muitas pessoas migraram para São Paulo em busca de:",
+          options: [
+            "Trabalho e melhores condições de vida",
+            "Apenas para conhecer a praia",
+            "Fugir do frio o ano todo",
+            "Nenhuma das anteriores",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com as palavras: nordestinos, imigrantes, infraestrutura, trabalho",
+          items: [
+            "Pessoas vindas de outros países são chamadas de __________.",
+            "Muitos __________ vieram para São Paulo trabalhar nas fábricas e na construção civil.",
+            "As pessoas migravam principalmente em busca de __________.",
+            "Quando muita gente chega a uma cidade rápido, pode faltar __________, como água encanada, transporte e escolas.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um mapa simples mostrando uma seta saindo de outro estado (por exemplo, Bahia, Pernambuco ou Minas Gerais) ou de outro país (por exemplo, Itália ou Japão) até a Cidade de São Paulo, representando um caminho migratório.",
+          note: "Escreva o nome do lugar de origem e o nome de São Paulo nas pontas da seta.",
+        },
+        {
+          kind: "lines",
+          instruction: "Explique com suas palavras: por que a chegada de tantos migrantes e imigrantes ajudou a formar a cidade de São Paulo como ela é hoje?",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Como se escolhe quem cuida da cidade: o processo eleitoral municipal",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Quem é a autoridade máxima do poder executivo em um município?",
+          options: [
+            "O prefeito ou a prefeita",
+            "O governador",
+            "O presidente",
+            "O diretor da escola",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com: prefeito, vereadores, votação, Câmara Municipal",
+          items: [
+            "Nas eleições municipais, os moradores escolhem o __________ e os __________ da cidade.",
+            "Os vereadores eleitos trabalham na __________, criando leis para o município.",
+            "A escolha dos representantes acontece por meio da __________, quando cada eleitor vota em um candidato.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque quais dessas funções fazem parte do poder público municipal:",
+          items: [
+            "cuidar da coleta de lixo da cidade",
+            "organizar o transporte público municipal",
+            "declarar guerra a outro país",
+            "cuidar de escolas municipais e postos de saúde",
+            "emitir passaporte",
+            "fiscalizar obras e construções na cidade",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique por que é importante que os moradores de uma cidade escolham, pelo voto, quem vai cuidar dela.",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Paisagens produtivas do Estado de São Paulo",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque as atividades produtivas que podem ser encontradas no Estado de São Paulo:",
+          items: [
+            "plantação de cana-de-açúcar",
+            "indústrias na região metropolitana",
+            "cultivo de café",
+            "extração de petróleo no deserto",
+            "criação de gado",
+            "portos e comércio no litoral",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete relacionando a paisagem produtiva à sua característica:",
+          items: [
+            "Nas áreas de plantação de __________, o solo é usado para produzir açúcar e etanol.",
+            "Na região metropolitana, predominam as __________, que empregam muitos trabalhadores.",
+            "No litoral paulista, o __________ recebe navios que transportam mercadorias para todo o país.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Por que o Estado de São Paulo apresenta paisagens produtivas tão diferentes (rural, industrial, litorânea)?",
+          options: [
+            "Porque tem regiões com relevo, clima e ocupação humana diferentes, o que favorece atividades diversas",
+            "Porque todas as cidades paulistas são exatamente iguais",
+            "Porque o estado não tem nenhuma zona rural",
+            "Porque só existe produção industrial no estado",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma paisagem produtiva do Estado de São Paulo (pode ser uma plantação, uma fábrica ou um porto) e escreva embaixo o nome da atividade representada.",
+          note: "Capriche nos detalhes que mostram o tipo de trabalho realizado ali.",
+        },
+      ],
+    },
+    {
+      theme: "Como o Brasil se organiza: distrito, município, estado e região",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete a organização político-administrativa do Brasil, da menor para a maior unidade:",
+          items: [
+            "O __________ é uma parte de um município, uma divisão local.",
+            "O __________ é administrado por um prefeito ou prefeita e tem sua própria lei (a lei orgânica).",
+            "O __________, também chamado de unidade da Federação, tem um governador.",
+            "O Brasil é dividido em cinco grandes __________: Norte, Nordeste, Centro-Oeste, Sudeste e Sul.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "A cidade de São Paulo faz parte de qual grande região do Brasil?",
+          options: [
+            "Região Sudeste",
+            "Região Nordeste",
+            "Região Norte",
+            "Região Sul",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as palavras que representam unidades político-administrativas do Brasil:",
+          items: [
+            "distrito",
+            "município",
+            "quarteirão",
+            "estado",
+            "região",
+            "avenida",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique com suas palavras a diferença entre um município e um estado.",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Aldeias indígenas e comunidades quilombolas no Estado de São Paulo",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que é uma comunidade quilombola?",
+          options: [
+            "Um território formado por descendentes de escravizados que resistiram e construíram sua própria comunidade",
+            "Um bairro criado recentemente por imigrantes europeus",
+            "Um tipo de prédio comercial na cidade",
+            "Uma escola pública indígena",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre os territórios étnico-culturais do Estado de São Paulo:",
+          items: [
+            "Os povos originários que vivem em terras demarcadas moram em __________ indígenas.",
+            "No litoral e em outras regiões do estado, existem __________, territórios de comunidades negras com história e cultura próprias.",
+            "Essas comunidades têm o direito de preservar sua __________, suas tradições e seu modo de vida.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os elementos que costumam fazer parte da cultura de aldeias indígenas e comunidades quilombolas:",
+          items: [
+            "língua e rituais próprios",
+            "shopping center",
+            "artesanato tradicional",
+            "relação de cuidado com a terra e a natureza",
+            "linha de montagem de fábrica",
+            "festas e celebrações comunitárias",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Por que é importante conhecer e respeitar as aldeias indígenas e as comunidades quilombolas que existem no Estado de São Paulo?",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Pontos cardeais: se orientando pelo Sol",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete com os pontos cardeais: Leste, Oeste, Norte, Sul",
+          items: [
+            "O Sol nasce no __________ pela manhã.",
+            "O Sol se põe no __________ ao final da tarde.",
+            "Se você fica de frente para o nascer do Sol, o __________ fica à sua esquerda.",
+            "Se você fica de frente para o nascer do Sol, o __________ fica à sua direita.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual é a forma mais simples de descobrir os pontos cardeais durante o dia, sem usar bússola?",
+          options: [
+            "Observar de que lado o Sol nasce (Leste) e de que lado ele se põe (Oeste)",
+            "Observar a cor do céu à noite",
+            "Contar o número de nuvens",
+            "Verificar a temperatura do ar",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma rosa dos ventos simples com os quatro pontos cardeais (Norte, Sul, Leste e Oeste) devidamente indicados, e desenhe o Sol nascendo do lado correto.",
+          note: "Lembre-se: o Sol nasce a Leste e se põe a Oeste.",
+        },
+        {
+          kind: "lines",
+          instruction: "Descreva um exemplo de como os pontos cardeais podem ajudar alguém a se localizar em uma paisagem rural ou urbana, indicando onde ficam prédios, ruas ou plantações.",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Tipos de mapas do Estado de São Paulo",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque os tipos de mapa que podem ser usados para representar o Estado de São Paulo:",
+          items: [
+            "mapa político",
+            "mapa de bacias hidrográficas",
+            "mapa de relevo",
+            "mapa de vegetação",
+            "cardápio de restaurante",
+            "mapa de estradas",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Relacione cada tipo de mapa à informação que ele mostra:",
+          items: [
+            "O mapa __________ mostra a divisão de cidades e seus limites.",
+            "O mapa de __________ mostra os rios e as áreas por onde a água escoa.",
+            "O mapa de __________ mostra se o terreno é plano, com morros ou montanhas.",
+            "O mapa de __________ mostra onde ficam as matas, florestas e outros tipos de cobertura vegetal.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Por que é útil comparar diferentes tipos de mapas de um mesmo lugar?",
+          options: [
+            "Porque cada mapa mostra uma informação diferente, e juntas elas ajudam a entender melhor o território",
+            "Porque todos os mapas mostram exatamente a mesma coisa",
+            "Porque só existe um tipo de mapa correto",
+            "Porque mapas não servem para estudar o território",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Escolha um tipo de mapa (político, de relevo, de vegetação ou de bacias hidrográficas) e desenhe uma versão simples dele, representando o Estado de São Paulo com uma legenda.",
+          note: "Não precisa ser exato, mas deve ter título e legenda explicando os símbolos usados.",
+        },
+      ],
+    },
+    {
+      theme: "São Paulo e suas bacias hidrográficas: como a cidade se formou",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre a formação da cidade a partir das bacias hidrográficas:",
+          items: [
+            "A Cidade de São Paulo se desenvolveu principalmente às margens do rio __________.",
+            "Uma __________ é formada por um rio principal e todos os rios menores que desaguam nele.",
+            "As cidades que ficam às margens de um mesmo rio são chamadas de cidades __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Que consequência ambiental costuma ocorrer quando a ocupação humana ao redor dos rios acontece de forma desordenada?",
+          options: [
+            "Poluição da água, enchentes e degradação das margens dos rios",
+            "Os rios ficam automaticamente mais limpos",
+            "Não existe nenhuma consequência",
+            "A quantidade de água nos rios aumenta sem nenhum problema",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os elementos que fazem parte de uma bacia hidrográfica:",
+          items: [
+            "rio principal",
+            "afluentes (rios menores)",
+            "nascente",
+            "semáforo",
+            "foz",
+            "shopping center",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique como a existência de rios e bacias hidrográficas influenciou o crescimento da Cidade de São Paulo ao longo do tempo.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Natureza no meu bairro: preservação e transformação",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Observe o bairro onde você mora ou a região da escola. Escreva quais elementos da natureza ainda existem ali (árvores, praças, córregos, animais) e quais mudanças causadas pelas pessoas você percebe.",
+          lines: 5,
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os elementos da natureza que podem existir dentro de um bairro urbano:",
+          items: [
+            "praças com árvores",
+            "córregos",
+            "canteiro central com plantas",
+            "postes de luz",
+            "pássaros e outros animais",
+            "calçadas de concreto",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual dessas ações representa uma transformação humana negativa da natureza em um bairro?",
+          options: [
+            "Despejar lixo e entulho em um córrego",
+            "Plantar árvores em uma praça",
+            "Criar uma horta comunitária",
+            "Cuidar de um jardim público",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases:",
+          items: [
+            "A ação das pessoas sobre a natureza é chamada de ação __________.",
+            "Quando uma área verde é mantida e cuidada, dizemos que ela está sendo __________.",
+            "Quando o espaço natural é destruído para dar lugar a construções, ocorre um processo de __________.",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Rios e córregos da cidade: mudanças e vulnerabilidade social",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre as mudanças nos rios e córregos urbanos:",
+          items: [
+            "Muitos córregos da cidade foram __________, ou seja, colocados dentro de tubos embaixo do asfalto.",
+            "A ocupação das margens dos rios por moradias, sem infraestrutura adequada, aumenta o risco de __________.",
+            "Famílias que moram perto de córregos poluídos ou em áreas de risco costumam ter menos acesso a __________ e saneamento básico.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "O que significa dizer que um problema ambiental está relacionado à vulnerabilidade social?",
+          options: [
+            "Que as pessoas com menos recursos financeiros costumam morar em áreas mais expostas a riscos como enchentes",
+            "Que todas as pessoas são afetadas igualmente por qualquer problema ambiental",
+            "Que apenas os rios são afetados, nunca as pessoas",
+            "Que o problema ambiental não tem relação nenhuma com onde as pessoas moram",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as consequências que podem ocorrer quando córregos urbanos são poluídos ou têm as margens ocupadas de forma desordenada:",
+          items: [
+            "enchentes",
+            "mau cheiro e poluição da água",
+            "doenças relacionadas à falta de saneamento",
+            "aumento da qualidade da água",
+            "risco de deslizamento em encostas",
+            "redução do risco para os moradores",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique por que as pessoas que moram perto de rios e córregos poluídos ou em áreas de risco costumam ser as mais afetadas em momentos de chuva forte.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Solo e água: recursos essenciais para a vida",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque os usos que as pessoas fazem do solo e da água no dia a dia:",
+          items: [
+            "plantação de alimentos",
+            "extração de areia e minerais",
+            "abastecimento de água nas casas",
+            "construção de casas e prédios",
+            "assistir televisão",
+            "irrigação de lavouras",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Por que algumas áreas não devem ser ocupadas para moradia, mesmo havendo falta de espaço na cidade?",
+          options: [
+            "Porque são áreas de risco, como encostas íngremes ou margens de rios sujeitas a enchentes",
+            "Porque são áreas proibidas sem nenhum motivo especial",
+            "Porque nelas o solo é sempre mais fértil e por isso ninguém pode morar",
+            "Porque toda área da cidade é igualmente segura para se morar",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre a importância do solo e da água:",
+          items: [
+            "O solo é usado para o __________ de alimentos, como frutas, verduras e grãos.",
+            "A água é essencial para o consumo humano, para a agricultura e para a produção de __________.",
+            "Áreas de risco, como encostas e margens de rios, precisam de __________ especial para evitar acidentes.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma paisagem que mostre pelo menos dois usos diferentes do solo e da água (por exemplo, uma plantação e uma represa, ou uma pedreira e um rio).",
+          note: "Identifique com uma legenda cada uso representado no desenho.",
+        },
+      ],
+    },
+    {
+      theme: "Impactos do uso do solo e da água no dia a dia",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual atitude do dia a dia ajuda a reduzir os impactos negativos do uso da água na cidade?",
+          options: [
+            "Evitar o desperdício de água em casa e na escola",
+            "Deixar a torneira aberta sem necessidade",
+            "Jogar lixo em rios e córregos",
+            "Usar mangueira para lavar a calçada todos os dias",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete relacionando o uso inadequado do solo e da água a suas consequências:",
+          items: [
+            "O desmatamento excessivo pode deixar o __________ mais fraco e sujeito a erosão.",
+            "O despejo de esgoto sem tratamento nos rios causa a __________ da água.",
+            "O uso exagerado de água na cidade e no campo pode levar à sua __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as atitudes responsáveis de cuidado com o solo e a água:",
+          items: [
+            "não jogar lixo em rios e córregos",
+            "reaproveitar a água da chuva",
+            "plantar árvores para proteger o solo",
+            "desperdiçar água na hora de escovar os dentes",
+            "denunciar poluição de rios",
+            "queimar o lixo em terrenos baldios",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um impacto do uso do solo ou da água que você já observou perto da sua casa ou escola e explique como ele afeta a vida das pessoas do bairro.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Trabalho no campo e na cidade: comparando realidades",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque quais trabalhos são mais comuns no campo:",
+          items: [
+            "plantio e colheita",
+            "criação de animais",
+            "trabalho em escritório de banco",
+            "ordenha de vaca leiteira",
+            "operação de caixa em loja de shopping",
+            "colheita de laranja",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete comparando o trabalho no campo e na cidade:",
+          items: [
+            "No campo, muitas pessoas trabalham com __________ e criação de animais.",
+            "Na cidade, é comum encontrar trabalhos em __________, comércio e serviços.",
+            "O trabalho no campo costuma seguir o ritmo das __________ e da colheita.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Por que o tipo de trabalho predominante muda entre o campo e a cidade?",
+          options: [
+            "Porque cada espaço tem características diferentes, como disponibilidade de terra, indústrias e serviços",
+            "Porque no campo não existe nenhum tipo de trabalho",
+            "Porque na cidade só existe trabalho agrícola",
+            "Porque o trabalho é sempre igual em qualquer lugar",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Compare um tipo de trabalho do campo com um tipo de trabalho da cidade, explicando pelo menos uma diferença entre eles.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Da matéria-prima ao consumo: o caminho dos produtos",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete as etapas do caminho de um produto até chegar ao consumidor:",
+          items: [
+            "Primeiro, a __________ é retirada da natureza, como a cana-de-açúcar ou o algodão.",
+            "Depois, ela passa por um processo de __________ em fábricas ou indústrias.",
+            "Em seguida, o produto é transportado e distribuído até chegar às __________.",
+            "Por fim, o produto chega às mãos do __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "O que é uma matéria-prima?",
+          options: [
+            "Um recurso natural usado como base para fabricar outros produtos",
+            "Um produto já pronto para o consumo",
+            "Um tipo de dinheiro usado nas fábricas",
+            "Uma máquina usada para transportar mercadorias",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque exemplos de matérias-primas produzidas no Estado de São Paulo:",
+          items: [
+            "cana-de-açúcar",
+            "laranja",
+            "notebook pronto",
+            "leite",
+            "celular pronto",
+            "algodão",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um produto que você usa no dia a dia (por exemplo, suco, roupa ou papel) e explique, em ordem, o caminho que ele percorreu desde a matéria-prima até chegar até você.",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Marcas culturais no meu bairro",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que significa dizer que um bairro tem 'marcas culturais' deixadas por diferentes grupos de pessoas?",
+          options: [
+            "Sinais como comidas, festas, línguas, religiões e construções que mostram de onde vieram os moradores",
+            "Placas de trânsito espalhadas pelas ruas",
+            "O nome do bairro no mapa da cidade",
+            "A quantidade de prédios altos que existem ali",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os exemplos que podem ser considerados marcas culturais deixadas por grupos de imigrantes ou migrantes em um bairro:",
+          items: [
+            "padaria italiana",
+            "feira nordestina",
+            "templo religioso oriental",
+            "poste de luz",
+            "restaurante japonês",
+            "semáforo",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Pense no seu bairro ou em um bairro que você conhece bem. Descreva uma marca cultural que existe ali (uma comida típica, uma festa, uma construção, um comércio) e explique de que grupo de pessoas ela pode ter vindo:",
+          lines: 4,
+          note: "Se não souber a origem, o estudante pode escrever uma hipótese e justificar.",
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um lugar do seu bairro (uma loja, uma praça, uma igreja, um mercado) que mostre a influência de um grupo cultural diferente do seu. Escreva embaixo do desenho o nome do lugar.",
+          note: "Pode ser baseado em observação real ou em pesquisa com a família.",
+        },
+      ],
+    },
+    {
+      theme: "Quem somos: pesquisa sobre grupos sociais",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre grupos sociais que formam a população brasileira:",
+          items: [
+            "Os povos __________ foram os primeiros habitantes do território que hoje é o Brasil.",
+            "A população __________ é formada por descendentes de pessoas trazidas à força da África.",
+            "Pessoas com __________ têm direito a acessibilidade e participação plena na sociedade.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual é um exemplo de contribuição dos povos indígenas para a cultura brasileira atual?",
+          options: [
+            "Palavras da língua tupi que usamos até hoje, como 'Ipiranga' e 'pipoca'",
+            "O uso do computador",
+            "A construção de arranha-céus",
+            "O sistema de metrô de São Paulo",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um grupo social (povos indígenas, população afro-brasileira ou pessoas com deficiência) e escreva o que você descobriu ou já sabia sobre a contribuição desse grupo para o lugar onde você vive:",
+          lines: 5,
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as atitudes que ajudam a garantir a participação de todos os grupos sociais na cidade:",
+          items: [
+            "rampas de acesso",
+            "respeito às diferenças",
+            "ignorar quem é diferente",
+            "línguas de sinais em eventos públicos",
+            "excluir quem tem deficiência",
+            "valorizar a cultura de todos",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Como a cidade é governada",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete com os nomes corretos das instituições que governam o município:",
+          items: [
+            "Quem administra a Prefeitura e é eleito pela população é o __________.",
+            "Os __________ são eleitos para fazer e votar as leis da cidade na Câmara Municipal.",
+            "Os Conselhos __________ são espaços onde a população pode participar das decisões sobre saúde, educação e outros temas.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual é a principal função da Câmara de Vereadores em um município como São Paulo?",
+          options: [
+            "Discutir, propor e votar leis que organizam a vida na cidade e fiscalizar a Prefeitura",
+            "Construir hospitais e escolas com as próprias mãos",
+            "Dirigir os ônibus do transporte público",
+            "Vender produtos na feira do bairro",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique com suas palavras por que é importante que os moradores participem dos Conselhos Municipais e acompanhem o que os vereadores fazem:",
+          lines: 4,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um esquema simples mostrando quem participa da gestão da cidade: o prefeito, os vereadores e a população. Use setas para mostrar como eles se relacionam.",
+          note: "O objetivo é visualizar a estrutura de participação social, não copiar um organograma pronto.",
+        },
+      ],
+    },
+    {
+      theme: "São Paulo cresceu: e agora?",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque as mudanças que costumam acontecer quando uma cidade como São Paulo cresce muito rápido:",
+          items: [
+            "aumento do trânsito",
+            "mais áreas verdes por pessoa",
+            "verticalização (mais prédios)",
+            "menos moradias populares",
+            "poluição do ar",
+            "diminuição da população",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "O que significa dizer que São Paulo teve um crescimento urbano acelerado?",
+          options: [
+            "A cidade ganhou muitos moradores e construções em pouco tempo, mudando sua paisagem e organização",
+            "A cidade diminuiu de tamanho ao longo dos anos",
+            "A cidade parou de construir novos prédios",
+            "A cidade perdeu moradores para outras cidades",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Cite uma mudança social, uma econômica e uma ambiental provocada pelo crescimento de São Paulo, explicando cada uma em uma frase:",
+          lines: 6,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe duas cenas lado a lado: como você imagina que era uma rua de São Paulo há 80 anos e como é essa mesma rua hoje, depois do crescimento da cidade.",
+          note: "Estimula comparação de paisagens antes/depois do crescimento urbano.",
+        },
+      ],
+    },
+    {
+      theme: "O que faz São Paulo ser São Paulo",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual característica é uma marca exclusiva da Cidade de São Paulo, e não de qualquer outra cidade brasileira?",
+          options: [
+            "Ser a maior cidade do Brasil em população e o principal centro financeiro do país",
+            "Ter praias e ser famosa pelo litoral",
+            "Ser a capital do Brasil",
+            "Ter menos de 100 mil habitantes",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os elementos que ajudam a identificar São Paulo como uma cidade única:",
+          items: [
+            "Avenida Paulista",
+            "grande diversidade de imigrantes",
+            "vulcão ativo",
+            "centro financeiro do país",
+            "maior metrô do Brasil",
+            "recife de corais",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre as características de São Paulo:",
+          items: [
+            "São Paulo é conhecida como a cidade que __________ (não para, funciona o tempo todo).",
+            "A cidade reúne pessoas vindas de __________ estados e países diferentes.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva um pequeno texto explicando o que você acha que faz São Paulo ser diferente de outras cidades que você conhece ou já ouviu falar:",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Ontem e hoje: paisagens paulistanas em fotos",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Para comparar como uma paisagem de São Paulo mudou ao longo do tempo, qual é a melhor estratégia?",
+          options: [
+            "Observar fotografias antigas e atuais do mesmo lugar e comparar o que mudou e o que permaneceu",
+            "Perguntar apenas para uma pessoa o que ela se lembra",
+            "Olhar somente fotos recentes, sem comparar com nada",
+            "Desenhar o lugar sem nenhuma referência",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque o que costuma aparecer em fotos antigas de bairros paulistanos que já não existe mais ou mudou muito hoje:",
+          items: [
+            "bondes",
+            "casarões",
+            "prédios altos de vidro",
+            "ruas de terra",
+            "carros elétricos modernos",
+            "chácaras e sítios",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Se você pudesse comparar uma foto antiga e uma foto atual de um lugar de São Paulo (uma rua, uma praça, um bairro), o que você imagina que teria mudado e o que teria continuado igual? Explique:",
+          lines: 5,
+        },
+        {
+          kind: "draw",
+          instruction: "Escolha um lugar conhecido de São Paulo (pode ser perto de casa) e desenhe uma linha do tempo com duas versões: 'antes' e 'depois', mostrando as transformações da paisagem.",
+          note: "Trabalha diretamente a comparação de tempos diferentes usada com fotografias e fotos aéreas.",
+        },
+      ],
+    },
+    {
+      theme: "Vendo cidades do espaço",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que é uma 'mancha urbana' em uma imagem de satélite?",
+          options: [
+            "A área ocupada por construções, ruas e bairros, que aparece diferente das áreas verdes ou de água",
+            "Uma sombra causada por nuvens na foto",
+            "Um erro na qualidade da imagem",
+            "A cor do céu vista do espaço",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre imagens de satélite:",
+          items: [
+            "Em uma imagem de satélite, a área urbana (com prédios e ruas) costuma aparecer em tons de __________.",
+            "Já as áreas de vegetação, como matas e parques, aparecem em tons de __________.",
+            "Comparando imagens de satélite de anos diferentes, é possível ver se a mancha urbana de uma cidade __________.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Imagine que você está comparando a imagem de satélite de São Paulo com a de uma cidade menor do interior do estado. Explique duas diferenças que você esperaria ver na mancha urbana de cada uma:",
+          lines: 5,
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe, como se fosse visto de cima (vista de satélite), duas cidades: uma pequena, com pouca mancha urbana, e uma grande, como São Paulo, com mancha urbana bem maior.",
+          note: "Reforça a leitura de imagens aéreas/satélite para comparar tamanho de cidades.",
+        },
+      ],
+    },
+    {
+      theme: "Minha legenda, meu mapa",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Para que serve a legenda em um mapa?",
+          options: [
+            "Explicar o que cada cor, símbolo ou desenho representa no mapa",
+            "Decorar o mapa com desenhos bonitos",
+            "Mostrar o nome de quem desenhou o mapa",
+            "Indicar apenas a data em que o mapa foi feito",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre a construção de legendas de mapas:",
+          items: [
+            "Antes de criar uma legenda, é preciso escolher quais __________ do lugar serão representadas.",
+            "Cada símbolo da legenda deve representar sempre a __________ coisa em todo o mapa.",
+            "Uma legenda bem-feita ajuda quem olha o mapa a __________ as informações rapidamente.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Crie uma legenda com pelo menos 4 símbolos ou cores para representar em um mapa: área urbana muito ocupada, área urbana pouco ocupada, área verde e rios. Depois, use essa legenda para desenhar um mapa simples de um município.",
+          note: "Atividade central do tema: elaborar legenda para representar manchas urbanas.",
+        },
+        {
+          kind: "lines",
+          instruction: "Explique por que duas pessoas diferentes, olhando o mesmo mapa com a mesma legenda, devem entender as mesmas informações:",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Crescer bem: cidade e qualidade de vida",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que significa 'qualidade de vida' em uma cidade?",
+          options: [
+            "Ter acesso a moradia digna, saúde, educação, lazer, transporte e meio ambiente equilibrado",
+            "Ter a maior quantidade de shoppings possível",
+            "Ter o maior número de carros por rua",
+            "Ter apenas prédios muito altos",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os fatores que podem melhorar a qualidade de vida das pessoas em uma cidade que cresce muito:",
+          items: [
+            "mais áreas verdes",
+            "saneamento básico",
+            "poluição sem controle",
+            "transporte público de qualidade",
+            "moradias precárias",
+            "acesso a postos de saúde",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "O crescimento das cidades pode melhorar a vida de umas pessoas e piorar a de outras. Explique um exemplo dessa diferença, pensando em bairros ricos e bairros mais pobres:",
+          lines: 5,
+        },
+        {
+          kind: "lines",
+          instruction: "Dê uma sugestão de ação que o poder público poderia tomar para melhorar a qualidade de vida em um bairro que cresceu de forma desorganizada:",
+          lines: 3,
+        },
+      ],
+    },
+    {
+      theme: "Quem cuida da nossa qualidade de vida",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete com o órgão ou canal de participação responsável por cada área:",
+          items: [
+            "Problemas de coleta de lixo e poluição são cuidados por órgãos de __________ ambiental.",
+            "Questões de ônibus, metrô e trânsito envolvem a área de __________.",
+            "Moradias irregulares e falta de casas envolvem políticas de __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual é uma forma de a população participar das decisões sobre melhorias na cidade?",
+          options: [
+            "Participar de audiências públicas e Conselhos Municipais",
+            "Esperar em silêncio sem se manifestar",
+            "Reclamar apenas com vizinhos, sem procurar os órgãos responsáveis",
+            "Ignorar os problemas do bairro",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um problema do seu bairro (mobilidade, moradia ou meio ambiente) e explique qual órgão público ou conselho poderia ajudar a resolvê-lo e como:",
+          lines: 5,
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as áreas que costumam ter órgãos públicos e conselhos voltados para melhorar a qualidade de vida na cidade:",
+          items: [
+            "meio ambiente",
+            "mobilidade urbana",
+            "moradia",
+            "moda",
+            "esportes de alto rendimento",
+            "saúde pública",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "Água limpa, água poluída",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual dessas é uma das principais causas de poluição de rios em áreas urbanas como São Paulo?",
+          options: [
+            "Despejo de esgoto sem tratamento diretamente nos rios",
+            "Chuva forte no verão",
+            "Presença de peixes no rio",
+            "Vento soprando sobre a água",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as fontes de poluição da água mencionadas quando falamos de qualidade ambiental dos rios e oceanos:",
+          items: [
+            "esgoto doméstico",
+            "efluentes industriais",
+            "lixões",
+            "água da chuva limpa",
+            "óleo de fábricas",
+            "luz do sol",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases comparando água limpa e água poluída:",
+          items: [
+            "Um rio com água __________ costuma ter cheiro forte, cor escura e pouca vida aquática.",
+            "Um rio com água __________ permite a vida de peixes e outros animais aquáticos.",
+            "O tratamento de __________ antes de chegar aos rios ajuda a diminuir a poluição da água.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique por que a poluição de um rio na cidade pode afetar até os oceanos, mesmo estando longe do litoral:",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Trabalho de ontem e de hoje",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Como a tecnologia mudou o trabalho no comércio de São Paulo nos últimos anos?",
+          options: [
+            "Muitas compras passaram a ser feitas pela internet, mudando a forma como as lojas funcionam",
+            "As lojas pararam completamente de existir",
+            "O comércio deixou de precisar de trabalhadores",
+            "Nada mudou desde o século passado",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete comparando o trabalho de antigamente com o de hoje:",
+          items: [
+            "Antigamente, muitas tarefas na indústria eram feitas à __________; hoje, várias são feitas por máquinas e robôs.",
+            "O setor de __________ cresceu muito em São Paulo, com trabalhos como educação, saúde e tecnologia.",
+            "Na agropecuária, o uso de __________ modernas aumentou a produção com menos trabalhadores no campo.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os setores de trabalho que existem na Cidade e no Estado de São Paulo:",
+          items: [
+            "indústria",
+            "comércio",
+            "serviços",
+            "agropecuária",
+            "nenhum desses",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Converse com um adulto da sua família sobre um trabalho que ele já teve ou conhece que mudou muito com o tempo. Escreva o que você descobriu:",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Como nos movemos e nos comunicamos",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque os meios de transporte que já foram ou ainda são usados na Cidade de São Paulo:",
+          items: [
+            "bonde",
+            "metrô",
+            "ônibus",
+            "carroça",
+            "trem",
+            "avião de papel",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Como os meios de comunicação mudaram ao longo do tempo na cidade?",
+          options: [
+            "De cartas e telefones fixos passamos a usar celulares e internet, tornando a comunicação mais rápida",
+            "As pessoas pararam de se comunicar",
+            "Só existiu um tipo de comunicação desde sempre",
+            "A comunicação ficou mais lenta com o tempo",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete comparando transporte e comunicação de ontem e de hoje:",
+          items: [
+            "Antes do metrô, um dos principais transportes coletivos de São Paulo era o __________.",
+            "Hoje, muitas pessoas se comunicam à distância usando o __________.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um meio de transporte ou de comunicação e explique como ele mudou desde os tempos dos seus avós até hoje:",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "De onde vem a energia que usamos",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual é a principal fonte de energia usada na indústria e no dia a dia da população paulistana?",
+          options: [
+            "Energia elétrica, produzida principalmente em usinas hidrelétricas",
+            "Energia de moinhos de vento em cada casa",
+            "Energia solar, usada em 100% das casas",
+            "Velas e lamparinas a óleo",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre energia em São Paulo:",
+          items: [
+            "A energia elétrica chega até as casas por meio de __________ elétricos.",
+            "No Brasil, boa parte da energia elétrica vem de usinas __________, que usam a força da água.",
+            "Usar energia de forma consciente ajuda a __________ os recursos naturais.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os aparelhos e situações do dia a dia que dependem de energia elétrica:",
+          items: [
+            "geladeira",
+            "semáforo",
+            "computador",
+            "livro de papel",
+            "metrô",
+            "banco de praça",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique por que é importante economizar energia elétrica no dia a dia, mesmo morando em uma cidade grande como São Paulo:",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Apresentando nossas descobertas",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Por que é importante saber apresentar um trabalho ou pesquisa para os colegas de forma clara?",
+          options: [
+            "Para que todos entendam as informações e possam aprender com o que foi descoberto",
+            "Para terminar a apresentação o mais rápido possível",
+            "Porque só o professor precisa entender",
+            "Porque não importa se os colegas entendem ou não",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as formas de expressão que podem ser usadas para apresentar um trabalho para a turma:",
+          items: [
+            "fala oral",
+            "expressão corporal (gestos, encenação)",
+            "cartazes com desenhos",
+            "silêncio total",
+            "música ou som",
+            "ignorar a plateia",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um tema de Geografia que você estudou este ano (por exemplo, crescimento da cidade, mapas ou qualidade de vida) e planeje como você apresentaria esse assunto para a turma: o que falaria primeiro, o que mostraria e como terminaria:",
+          lines: 6,
+        },
+        {
+          kind: "draw",
+          instruction: "Faça um cartaz ou esquema visual simples que resuma, com desenhos e poucas palavras, uma descoberta importante que você teve estudando a Cidade de São Paulo neste ano.",
+          note: "Serve de apoio visual para a apresentação oral do estudante.",
         },
       ],
     },
@@ -16454,6 +25532,1427 @@ export const ACTIVITY_BANK: Record<OwnSubject | "leitura-diaria", ActivityEntry[
         {
           kind: "draw",
           instruction: "Desenhe você escovando os dentes ou lavando as mãos.",
+        },
+      ],
+    },
+    {
+      theme: "Separando misturas: peneira, ímã e filtro",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Uma mistura tem areia grossa e limalha de ferro. Qual é o jeito mais rápido de separar o ferro do resto?",
+          options: [
+            "Usar um ímã",
+            "Usar uma peneira de furos grandes",
+            "Usar um filtro de papel",
+            "Colocar tudo na água",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com o nome do método de separação usado em cada situação:",
+          items: [
+            "Para separar a água suja (com terra) e deixá-la mais limpa, usamos um __________ de papel.",
+            "Para separar arroz de pedrinhas pequenas do mesmo tamanho, o jeito mais confiável é a separação __________ (catando à mão).",
+            "Para separar grãos de milho de farinha bem fina, usamos uma __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque somente as misturas que podem ser separadas com uma peneira:",
+          items: [
+            "arroz e feijão",
+            "sal dissolvido em água",
+            "cascalho e areia fina",
+            "água e óleo",
+            "farinha e grãos de milho",
+            "limalha de ferro e serragem",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe o experimento de filtragem: um copo com água suja sendo despejada em um filtro de papel dentro de um funil, caindo limpa em outro copo. Escreva onde fica a sujeira retida.",
+          note: "Se possível, peça para a turma descrever oralmente antes de desenhar.",
+        },
+      ],
+    },
+    {
+      theme: "Renovável ou não? Classificando os recursos naturais",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque apenas os recursos naturais renováveis (que se repõem na natureza em pouco tempo):",
+          items: [
+            "luz do sol",
+            "petróleo",
+            "vento",
+            "carvão mineral",
+            "água da chuva",
+            "gás natural",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Por que o petróleo é considerado um recurso natural não renovável?",
+          options: [
+            "Porque leva milhões de anos para se formar na natureza",
+            "Porque não pode ser usado para nada",
+            "Porque é encontrado só no Brasil",
+            "Porque é um recurso que nunca acaba",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases com renovável ou não renovável:",
+          items: [
+            "A energia solar é um recurso __________, pois o Sol continua brilhando todos os dias.",
+            "O carvão mineral é um recurso __________, pois demora milhões de anos para se formar.",
+            "A água doce dos rios é um recurso __________, mas pode se tornar escassa se for desperdiçada.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um recurso não renovável (como o petróleo) e explique por que é importante usá-lo com cuidado, sem desperdício.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Volta ou não volta? Mudanças reversíveis e irreversíveis",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque as mudanças que são IRREVERSÍVEIS (não é possível voltar ao estado original):",
+          items: [
+            "gelo derretendo",
+            "assar um bolo",
+            "queimar um papel",
+            "água virando vapor",
+            "fritar um ovo",
+            "congelar suco",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "A água que congela no congelador e depois derrete é um exemplo de mudança:",
+          options: [
+            "Reversível, porque a água volta ao estado líquido",
+            "Irreversível, porque a água muda de cor",
+            "Reversível, porque vira outra substância",
+            "Irreversível, porque não pode ser reaproveitada",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete indicando se a mudança é reversível ou irreversível:",
+          items: [
+            "Amassar uma folha de papel e depois desamassá-la é uma mudança __________.",
+            "Queimar uma folha de papel até virar cinza é uma mudança __________.",
+            "Derreter manteiga e depois colocá-la na geladeira para endurecer de novo é uma mudança __________.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Pense no preparo de um bolo: a massa crua vira bolo assado no forno. Explique por que essa mudança é irreversível, mesmo que o bolo esfrie depois.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "De onde vem a energia? Transformações no dia a dia",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete com o tipo de energia para a qual a energia elétrica é transformada em cada aparelho:",
+          items: [
+            "No chuveiro elétrico, a energia elétrica se transforma em energia __________.",
+            "Na lâmpada acesa, a energia elétrica se transforma em energia __________.",
+            "Na caixa de som ligada, a energia elétrica se transforma em energia __________.",
+            "No ventilador ligado, a energia elétrica se transforma em energia de __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Em um liquidificador ligado na tomada, a energia elétrica é transformada principalmente em:",
+          options: [
+            "Energia de movimento (o motor gira as lâminas)",
+            "Energia luminosa",
+            "Energia sonora apenas",
+            "Energia química",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os aparelhos que transformam energia elétrica em energia luminosa (luz):",
+          items: [
+            "lâmpada",
+            "ferro de passar",
+            "abajur",
+            "liquidificador",
+            "lanterna a pilha",
+            "ventilador",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um aparelho elétrico da sua casa e explique em quais tipos de energia a energia elétrica dele se transforma.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Comida é combustível: alimentação e energia",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Por que precisamos comer todos os dias, mesmo quando não estamos com muita fome?",
+          options: [
+            "Porque o corpo precisa de energia dos alimentos para funcionar e se manter aquecido",
+            "Porque comer é só um hábito sem função para o corpo",
+            "Porque o corpo produz energia sozinho, sem precisar de alimento",
+            "Porque comer serve apenas para crescer, não para dar energia",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre alimentação e energia:",
+          items: [
+            "Quando corremos ou praticamos esportes, o corpo gasta mais __________ do que quando estamos parados.",
+            "Alimentos como arroz, pão e massas são ricos em carboidratos, que dão __________ rápida para o corpo.",
+            "Se comermos pouco, o corpo pode ficar sem __________ suficiente para as atividades do dia.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma criança brincando de pique-pega e, ao lado, um prato de comida. Faça uma seta ligando o prato à criança, mostrando de onde vem a energia para ela correr.",
+          note: "Peça que expliquem o desenho em voz alta antes de guardar.",
+        },
+        {
+          kind: "lines",
+          instruction: "Imagine um experimento em que dois grupos de alunos fazem a mesma atividade física: um grupo tomou café da manhã e o outro não. Explique como vocês poderiam investigar se isso muda o cansaço de cada grupo.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Detetives da poluição: problemas e soluções para o ambiente",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque as ações humanas que poluem o ambiente:",
+          items: [
+            "jogar lixo no rio",
+            "reciclar embalagens",
+            "queimar lixo a céu aberto",
+            "plantar árvores",
+            "despejar esgoto sem tratamento",
+            "usar transporte a pé",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual é a principal consequência de jogar óleo de cozinha usado diretamente na pia?",
+          options: [
+            "Ele contamina a água e prejudica plantas e animais aquáticos",
+            "Ele ajuda a limpar a tubulação",
+            "Ele evapora sem causar nenhum problema",
+            "Ele se transforma em água potável",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com um agente poluidor e uma solução para o problema:",
+          items: [
+            "A fumaça de fábricas e carros polui o ar; uma solução é __________.",
+            "O lixo jogado em terrenos baldios atrai ratos e baratas; uma solução é __________.",
+            "O esgoto despejado em rios sem tratamento mata peixes; uma solução é __________.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um problema de poluição que você já observou no seu bairro ou na sua cidade e proponha uma solução possível para amenizá-lo.",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Conhecendo a Terra por mapas, globos e fotos",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual é a principal vantagem do globo terrestre em relação a um mapa plano?",
+          options: [
+            "O globo mostra a forma real e arredondada da Terra",
+            "O globo é mais fácil de dobrar e guardar",
+            "O globo mostra apenas o Brasil em detalhes",
+            "O globo não precisa de legenda",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre formas de representar a Terra:",
+          items: [
+            "As fotografias tiradas por satélites mostram a Terra vista de __________.",
+            "No mapa, as cores azuis geralmente representam __________.",
+            "No globo terrestre, as cores verdes e marrons geralmente representam __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os elementos que costumam aparecer em um mapa para ajudar a entendê-lo:",
+          items: [
+            "legenda",
+            "escala",
+            "rosa dos ventos",
+            "receita de bolo",
+            "título do mapa",
+            "lista de brincadeiras",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um mapa simples do caminho de casa até a escola, incluindo uma legenda com pelo menos três símbolos (por exemplo: árvore, semáforo, praça).",
+          note: "Incentive o uso de cores e símbolos próprios, sem se preocupar com escala exata.",
+        },
+      ],
+    },
+    {
+      theme: "As camadas da Terra: geosfera, hidrosfera e atmosfera",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete com o nome da camada da Terra correspondente:",
+          items: [
+            "A camada formada pelas rochas, o solo e o interior sólido da Terra é a __________.",
+            "A camada formada pela água em estado líquido, sólido e gasoso (rios, mares, geleiras) é a __________.",
+            "A camada de ar e gases que envolve o planeta e permite respirarmos é a __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Em qual dessas camadas da Terra o ser humano NÃO consegue viver sem equipamentos especiais?",
+          options: [
+            "No fundo do oceano, parte da hidrosfera",
+            "Na superfície da geosfera",
+            "Na camada de ar próxima ao chão, parte da atmosfera",
+            "Em nenhuma delas, pois o ser humano vive em todas sem ajuda",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os elementos que fazem parte da hidrosfera:",
+          items: [
+            "oceanos",
+            "geleiras",
+            "vulcões",
+            "rios",
+            "nuvens de chuva",
+            "montanhas rochosas",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um corte simples da Terra mostrando as três camadas: geosfera (rochas), hidrosfera (água) e atmosfera (ar), com uma legenda identificando cada uma.",
+          note: "Pode ser um desenho esquemático, sem preocupação com proporções reais.",
+        },
+      ],
+    },
+    {
+      theme: "Viagem pelo Sistema Solar: pesquisando os planetas",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual é o planeta mais próximo do Sol no Sistema Solar?",
+          options: [
+            "Mercúrio",
+            "Terra",
+            "Marte",
+            "Vênus",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Pesquise e complete com o nome do planeta correspondente:",
+          items: [
+            "É conhecido como o \"planeta vermelho\" por causa da cor de seu solo: __________.",
+            "É o maior planeta do Sistema Solar: __________.",
+            "É famoso por seus grandes anéis formados por gelo e rochas: __________.",
+            "É o único planeta do Sistema Solar onde já se comprovou a existência de vida: __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os planetas do Sistema Solar (cuidado com os nomes que não são planetas):",
+          items: [
+            "Netuno",
+            "Lua",
+            "Urano",
+            "Sol",
+            "Saturno",
+            "Cometa Halley",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha um planeta do Sistema Solar (que não seja a Terra) e escreva três informações que você descobriu sobre ele em uma pesquisa.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "As fases da Lua: por que o céu muda todo mês?",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Por que a Lua parece mudar de forma ao longo do mês, tendo fases como nova, crescente, cheia e minguante?",
+          options: [
+            "Porque vemos partes diferentes da Lua iluminadas pelo Sol, conforme ela gira ao redor da Terra",
+            "Porque a Lua muda de tamanho de verdade a cada semana",
+            "Porque nuvens cobrem partes diferentes da Lua todo mês",
+            "Porque a Lua troca de lugar com outros planetas",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com o nome da fase da Lua correspondente à descrição:",
+          items: [
+            "Quando a Lua está totalmente iluminada e visível como um círculo completo, é a fase __________.",
+            "Quando a Lua não é visível no céu porque está entre a Terra e o Sol, é a fase __________.",
+            "Quando aparece só metade da Lua iluminada, aumentando dia a dia, é a fase __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as afirmações corretas sobre as fases da Lua:",
+          items: [
+            "As fases se repetem em um ciclo de cerca de um mês",
+            "A Lua produz luz própria",
+            "A Lua reflete a luz do Sol",
+            "As fases da Lua acontecem porque ela gira ao redor da Terra",
+            "A Lua muda de tamanho de verdade",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe as quatro principais fases da Lua (nova, crescente, cheia e minguante) na ordem em que elas acontecem, com o nome de cada uma.",
+          note: "Pode ser feito como uma sequência circular, representando o ciclo lunar.",
+        },
+      ],
+    },
+    {
+      theme: "Diário do céu: observando estrelas e planetas",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Observe o céu à noite durante alguns dias (com a ajuda de um adulto) e registre o que você viu: havia estrelas, Lua, planetas? Alguma coisa mudou de posição de um dia para o outro?",
+          lines: 5,
+          note: "Se não for possível observar o céu real, pode-se usar um aplicativo de astronomia ou imagens do professor.",
+        },
+        {
+          kind: "options",
+          instruction: "Qual é a principal diferença entre uma estrela e um planeta observados no céu noturno?",
+          options: [
+            "A estrela produz luz própria; o planeta reflete a luz do Sol",
+            "O planeta é sempre maior e mais brilhante que a estrela",
+            "A estrela muda de posição rapidamente; o planeta não se move",
+            "Não existe diferença, são o mesmo tipo de corpo celeste",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete o registro de observação do céu:",
+          items: [
+            "O melhor horário para observar estrelas é durante a __________, longe de luzes fortes.",
+            "Ao observar o céu por vários dias seguidos, é possível perceber que a posição da Lua __________ em relação às estrelas.",
+            "Para registrar as observações do céu, podemos usar __________ e anotações escritas.",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe o céu noturno que você observou (ou imaginou, com base em pesquisas), indicando a posição da Lua e de pelo menos duas estrelas ou constelações.",
+          note: "Pode-se usar a Constelação do Cruzeiro do Sul como referência, comum no céu brasileiro.",
+        },
+      ],
+    },
+    {
+      theme: "Prato saudável: os efeitos da alimentação no corpo",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Por que o consumo frequente e em excesso de alimentos ultraprocessados (como salgadinhos e refrigerantes) pode prejudicar a saúde?",
+          options: [
+            "Porque têm muito açúcar, sal e gordura, e poucos nutrientes essenciais",
+            "Porque dão energia demais para o corpo usar",
+            "Porque têm excesso de vitaminas naturais",
+            "Porque são sempre mais baratos que alimentos naturais",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os alimentos que fazem parte de uma alimentação saudável e equilibrada:",
+          items: [
+            "frutas variadas",
+            "refrigerante",
+            "verduras e legumes",
+            "salgadinhos industrializados",
+            "feijão com arroz",
+            "balas e doces em excesso",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre os efeitos da alimentação no corpo:",
+          items: [
+            "Comer poucas frutas e verduras pode deixar o corpo com falta de __________.",
+            "O excesso de açúcar na alimentação pode contribuir para o desenvolvimento de __________.",
+            "Uma alimentação variada e equilibrada ajuda o corpo a crescer __________ e com mais disposição.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Compare o café da manhã de duas crianças: uma comeu apenas biscoito recheado e refrigerante; a outra comeu fruta, pão integral e leite. Explique como cada uma pode se sentir durante a manhã na escola.",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "O caminho do alimento: nutrientes e eliminação de resíduos",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete com o nome do órgão do sistema digestório correspondente:",
+          items: [
+            "O alimento é triturado pelos dentes e misturado à saliva na __________.",
+            "O alimento desce até o estômago pelo __________.",
+            "No __________, o alimento é misturado a sucos digestivos e começa a virar uma massa mais líquida.",
+            "No __________, os nutrientes são absorvidos e passam para o sangue.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Depois que os nutrientes são absorvidos pelo intestino delgado, o que acontece com os resíduos que o corpo não aproveita?",
+          options: [
+            "Seguem para o intestino grosso e são eliminados como fezes",
+            "Voltam para o estômago para serem digeridos de novo",
+            "São absorvidos totalmente pelo sangue",
+            "Desaparecem sem deixar resíduos",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os nutrientes que podemos obter dos alimentos:",
+          items: [
+            "proteínas",
+            "vitaminas",
+            "carboidratos",
+            "plástico",
+            "minerais",
+            "areia",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe o caminho do alimento pelo corpo humano, desde a boca até a eliminação dos resíduos, indicando com setas a ordem: boca, esôfago, estômago, intestino delgado, intestino grosso.",
+          note: "Vale usar uma silhueta simples do corpo humano para localizar os órgãos.",
+        },
+      ],
+    },
+    {
+      theme: "Meu corpo em movimento: batimentos e respiração",
+      exercises: [
+        {
+          kind: "lines",
+          instruction: "Conte seus batimentos cardíacos (ou peça ajuda para medir) em repouso e depois de pular corda por um minuto. Registre os dois números e explique o que aconteceu.",
+          lines: 4,
+          note: "Pode-se contar as batidas colocando a mão no pulso ou no peito durante 15 segundos e multiplicar por 4.",
+        },
+        {
+          kind: "options",
+          instruction: "Por que a frequência cardíaca e a respiração aumentam depois de correr ou pular?",
+          options: [
+            "Porque o corpo precisa levar mais oxigênio aos músculos que estão trabalhando",
+            "Porque o coração fica cansado e bate mais devagar",
+            "Porque a respiração para de funcionar por alguns minutos",
+            "Porque o corpo perde a necessidade de oxigênio durante o exercício",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre os sistemas respiratório e cardiovascular:",
+          items: [
+            "O sistema __________ é responsável por levar o ar (oxigênio) para dentro do corpo.",
+            "O sistema __________ é responsável por bombear o sangue com oxigênio para todo o corpo.",
+            "Depois de atividade física intensa, é comum sentir a respiração e o coração __________ até o corpo voltar ao normal.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os sinais que costumam aumentar logo depois de uma atividade física intensa:",
+          items: [
+            "frequência cardíaca",
+            "frequência respiratória",
+            "sono profundo",
+            "suor",
+            "cansaço muscular",
+            "altura do corpo",
+          ],
+        },
+      ],
+    },
+    {
+      theme: "A menor parte da vida: conhecendo as células",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Por que a célula é considerada a menor unidade dos seres vivos?",
+          options: [
+            "Porque é a menor estrutura capaz de realizar as funções básicas da vida",
+            "Porque não pode ser observada nem com microscópio",
+            "Porque só existe em animais grandes",
+            "Porque é maior que qualquer órgão do corpo",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre as células:",
+          items: [
+            "As células só podem ser vistas com o auxílio de um __________.",
+            "O corpo humano é formado por bilhões de __________ diferentes, como células da pele e do sangue.",
+            "Seres vivos muito pequenos, como algumas bactérias, podem ser formados por uma única __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os seres vivos que são formados por células (todos os seres vivos!):",
+          items: [
+            "uma formiga",
+            "uma árvore",
+            "uma pedra",
+            "um ser humano",
+            "uma nuvem",
+            "uma bactéria",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma célula bem grande, como se estivesse vista no microscópio, e identifique pelo menos duas partes dela (por exemplo: núcleo e membrana).",
+          note: "Pode-se usar como referência imagens de células vistas em livros didáticos ou pesquisas.",
+        },
+      ],
+    },
+    {
+      theme: "Quem come quem? Montando cadeias alimentares",
+      exercises: [
+        {
+          kind: "fill-blank",
+          instruction: "Complete a cadeia alimentar com os termos produtor, consumidor ou decompositor:",
+          items: [
+            "A planta que produz seu próprio alimento por meio da fotossíntese é chamada de __________.",
+            "O gafanhoto que come a planta é um __________.",
+            "A cobra que come o sapo, que comeu o gafanhoto, é um __________.",
+            "O fungo que decompõe os restos de um animal morto é um __________.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Em uma cadeia alimentar (capim → gafanhoto → sapo → cobra), o que acontece se todos os sapos daquele ambiente desaparecerem?",
+          options: [
+            "Os gafanhotos podem aumentar muito e as cobras podem ter menos alimento",
+            "Nada muda, pois os seres vivos não dependem uns dos outros",
+            "O capim para de crescer imediatamente",
+            "As cobras passam a comer apenas capim",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os seres vivos que podem ser considerados produtores em uma cadeia alimentar:",
+          items: [
+            "capim",
+            "árvore frutífera",
+            "leão",
+            "alga",
+            "gato",
+            "milho",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Monte uma cadeia alimentar com quatro elos (produtor, consumidor, consumidor, decompositor) e explique, em poucas linhas, qual é o papel do ser humano nessa cadeia.",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Quem vive com quem? Investigando relações entre seres vivos",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Quando a abelha visita uma flor para coletar néctar e, ao mesmo tempo, ajuda a espalhar o pólen dela, essa relação é:",
+          options: [
+            "Benéfica para os dois seres vivos envolvidos",
+            "Prejudicial apenas para a abelha",
+            "Prejudicial apenas para a flor",
+            "Uma relação em que nenhum dos dois é afetado",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases com exemplos de relações entre seres vivos:",
+          items: [
+            "O carrapato que se alimenta do sangue de um cachorro, prejudicando-o, é um exemplo de __________.",
+            "O pássaro que constrói ninho em uma árvore, sem prejudicar nem ajudar a árvore, é um exemplo de relação de __________.",
+            "As formigas que protegem certas plantas e recebem alimento delas em troca vivem em __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as situações em que há uma relação entre dois ou mais seres vivos diferentes:",
+          items: [
+            "abelha polinizando flor",
+            "pulga se alimentando de um gato",
+            "pedra rolando morro abaixo",
+            "peixe-limpador comendo parasitas de outro peixe",
+            "vento soprando folhas secas",
+            "pássaro fazendo ninho em árvore",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha uma relação entre dois seres vivos que você conhece (pode ser de um animal de estimação, de um jardim ou de um documentário) e explique se ela é boa para os dois, ruim para um deles, ou neutra.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Os pequenos recicladores: fungos e bactérias decompositores",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual é a principal função dos fungos e bactérias decompositores no ambiente?",
+          options: [
+            "Transformar restos de seres vivos mortos em nutrientes que voltam para o solo",
+            "Produzir seu próprio alimento por fotossíntese, como as plantas",
+            "Caçar e comer animais vivos",
+            "Poluir o solo e a água",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre os decompositores:",
+          items: [
+            "Fungos e bactérias decompositores são seres vivos tão pequenos que só podem ser vistos com auxílio de __________.",
+            "Sem os decompositores, os restos de plantas e animais mortos __________ na natureza.",
+            "O bolor que aparece em um pão esquecido é um exemplo de __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os exemplos que mostram a ação de fungos ou bactérias decompositores:",
+          items: [
+            "bolor em um pão velho",
+            "folhas secas se transformando em adubo",
+            "uma fruta apodrecendo",
+            "uma pedra sendo erodida pelo vento",
+            "compostagem de restos de comida",
+            "água evaporando ao sol",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Imagine uma floresta sem nenhum fungo ou bactéria decompositor. Explique o que aconteceria com as folhas e os animais mortos ao longo do tempo.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Prevenindo doenças: hábitos que protegem contra os microrganismos",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque os hábitos que ajudam a prevenir doenças causadas por microrganismos:",
+          items: [
+            "lavar as mãos antes de comer",
+            "beber água tratada ou filtrada",
+            "compartilhar escova de dente",
+            "manter a vacinação em dia",
+            "cozinhar bem os alimentos",
+            "andar descalço em terrenos sujos",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Por que lavar bem as mãos antes das refeições é uma forma eficaz de prevenir doenças?",
+          options: [
+            "Porque remove microrganismos que poderiam entrar no corpo junto com o alimento",
+            "Porque deixa as mãos com cheiro agradável",
+            "Porque impede que o alimento esfrie",
+            "Porque substitui a necessidade de vacinação",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre prevenção de doenças:",
+          items: [
+            "As __________ ajudam o corpo a criar defesas contra microrganismos causadores de doenças antes mesmo de entrarmos em contato com eles.",
+            "Beber água não tratada pode transmitir __________ causadores de doenças como a diarreia.",
+            "Cobrir a boca com o braço ao tossir ajuda a evitar a transmissão de __________ pelo ar.",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva uma lista de três hábitos de higiene que você pratica no seu dia a dia e explique como cada um ajuda a proteger sua saúde contra microrganismos.",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Como os materiais reagem a estímulos físicos?",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Um ímã foi aproximado de diferentes objetos em uma experiência de sala de aula. Qual desses objetos provavelmente será atraído pelo ímã?",
+          options: [
+            "Um clipe de metal (ferro)",
+            "Uma borracha",
+            "Um pedaço de papel",
+            "Uma tampinha de plástico",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre como os materiais reagem a estímulos físicos:",
+          items: [
+            "Quando aquecemos uma barra de metal, ela se __________ (expande/encolhe).",
+            "Um material __________ é aquele que se deixa dobrar ou moldar com facilidade, como o arame.",
+            "Materiais como o ferro e o níquel são atraídos por __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os materiais que são atraídos por um ímã:",
+          items: [
+            "prego de ferro",
+            "colher de alumínio",
+            "clipe de aço",
+            "borracha",
+            "moeda de níquel",
+            "pedaço de isopor",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Descreva um experimento que você poderia fazer para testar se um material é resistente ao calor. O que você observaria?",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Como a matéria circula entre seres vivos e o ambiente?",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que os decompositores (fungos e bactérias) fazem com os restos de seres vivos mortos?",
+          options: [
+            "Transformam a matéria em nutrientes que voltam ao solo",
+            "Fazem a matéria desaparecer para sempre",
+            "Transformam os restos em pedra",
+            "Não têm nenhuma função no ambiente",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete o ciclo da matéria na natureza:",
+          items: [
+            "As plantas retiram água e nutrientes do __________ para crescer.",
+            "Os animais se alimentam de plantas ou de outros animais, obtendo __________.",
+            "Quando um ser vivo morre, os __________ transformam seus restos em matéria que volta ao solo.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os elementos que participam da circulação da matéria entre seres vivos e ambiente:",
+          items: [
+            "fungos decompositores",
+            "solo",
+            "minhocas",
+            "controle remoto",
+            "raízes das plantas",
+            "computador",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe um ciclo mostrando como a matéria passa de uma planta para um animal, e depois para o solo através dos decompositores. Use setas para indicar o caminho.",
+        },
+      ],
+    },
+    {
+      theme: "De onde vem a energia elétrica que usamos?",
+      exercises: [
+        {
+          kind: "word-select",
+          instruction: "Marque as formas de produção de energia elétrica:",
+          items: [
+            "usina hidrelétrica",
+            "usina eólica",
+            "painel solar",
+            "usina termelétrica",
+            "forno de padaria",
+            "geladeira",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com o tipo de usina correspondente:",
+          items: [
+            "A energia __________ usa a força da água dos rios para girar turbinas.",
+            "A energia __________ usa a força do vento.",
+            "A energia __________ usa a luz do sol captada por painéis.",
+          ],
+        },
+        {
+          kind: "options",
+          instruction: "Qual é um possível impacto ambiental da construção de uma usina hidrelétrica?",
+          options: [
+            "Alagamento de grandes áreas e alteração do curso dos rios",
+            "Aumento do brilho das estrelas",
+            "Redução da força da gravidade",
+            "Nenhum impacto, pois usa apenas água",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha duas formas de produção de energia elétrica e escreva uma vantagem e uma desvantagem ambiental de cada uma.",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Combustíveis e o consumo de recursos naturais",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "De onde vem a maior parte dos combustíveis como a gasolina e o diesel?",
+          options: [
+            "Do petróleo, um recurso natural não renovável",
+            "Da água do mar",
+            "Do ar atmosférico",
+            "Da luz do sol",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre combustíveis e recursos naturais:",
+          items: [
+            "O petróleo é extraído do subsolo e é um recurso __________ (renovável/não renovável).",
+            "A extração de combustíveis pode causar __________ no solo, na água e no ar.",
+            "O etanol é um combustível produzido a partir da __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os possíveis danos ambientais ligados à extração e uso de combustíveis fósseis:",
+          items: [
+            "poluição do ar",
+            "vazamento de óleo no mar",
+            "aumento de gases que agravam o efeito estufa",
+            "purificação da água",
+            "aumento da biodiversidade",
+            "contaminação do solo",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique por que é importante economizar combustíveis fósseis no nosso dia a dia. Dê um exemplo de atitude que ajuda nessa economia.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "O que os fósseis contam sobre a história da Terra?",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que é um fóssil?",
+          options: [
+            "Um registro preservado de um ser vivo que existiu há muito tempo",
+            "Uma pedra qualquer encontrada no chão",
+            "Um animal que ainda está vivo",
+            "Um tipo de mineral usado em joias",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete as frases sobre fósseis:",
+          items: [
+            "Os fósseis podem ser ossos, __________ ou marcas de pegadas preservadas em rochas.",
+            "Estudar fósseis ajuda os cientistas a entender como era a __________ há milhões de anos.",
+            "Os cientistas que estudam fósseis são chamados de __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque o que pode se transformar em fóssil ou deixar um registro fóssil:",
+          items: [
+            "ossos de dinossauro",
+            "pegada de animal na lama endurecida",
+            "concha de um molusco antigo",
+            "uma notícia de jornal de hoje",
+            "folha de planta antiga",
+            "uma foto digital",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Imagine que você encontrou um fóssil durante uma escavação. Desenhe como ele poderia ser e escreva embaixo que tipo de ser vivo você imagina que ele representa.",
+        },
+      ],
+    },
+    {
+      theme: "Por que as estrelas parecem ter brilhos diferentes?",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Por que o Sol parece muito mais brilhante do que as outras estrelas no céu?",
+          options: [
+            "Porque o Sol está muito mais perto da Terra do que as outras estrelas",
+            "Porque o Sol é a única estrela que existe",
+            "Porque as outras estrelas não têm luz própria",
+            "Porque o Sol é feito de um material diferente",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre o brilho das estrelas:",
+          items: [
+            "Quanto mais __________ uma estrela está da Terra, mais fraco costuma parecer seu brilho.",
+            "Uma estrela pode parecer fraca no céu mesmo sendo muito grande, se estiver muito __________.",
+            "O Sol é uma __________ como as outras que vemos no céu à noite.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as afirmações corretas sobre o brilho das estrelas:",
+          items: [
+            "a distância influencia o brilho que enxergamos",
+            "todas as estrelas têm exatamente o mesmo brilho",
+            "estrelas mais próximas tendem a parecer mais brilhantes",
+            "o tamanho da estrela também pode influenciar o brilho percebido",
+            "o brilho das estrelas nunca muda por nenhum motivo",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique com suas palavras por que duas estrelas do mesmo tamanho podem parecer ter brilhos diferentes quando observadas da Terra.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Como a Terra sólida, os seres vivos e o ar se relacionam?",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que é a biosfera?",
+          options: [
+            "O conjunto de todos os seres vivos do planeta e os ambientes onde vivem",
+            "Apenas o ar que respiramos",
+            "Somente as rochas da superfície da Terra",
+            "Um tipo de nuvem",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com os nomes das camadas da Terra:",
+          items: [
+            "A __________ é a parte sólida da Terra, formada por rochas e solo.",
+            "A __________ é a camada de gases que envolve o planeta.",
+            "A __________ é o conjunto de todos os seres vivos.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque exemplos de interação entre a geosfera, a biosfera e a atmosfera:",
+          items: [
+            "raízes das árvores que fixam o solo",
+            "plantas que liberam oxigênio no ar",
+            "chuva que ajuda a formar o relevo",
+            "um carro elétrico estacionado",
+            "animais que respiram o ar da atmosfera",
+            "vulcões que alteram a paisagem e o ar",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe uma paisagem que mostre a geosfera (solo e rochas), a biosfera (plantas e animais) e a atmosfera (ar e nuvens) interagindo.",
+        },
+      ],
+    },
+    {
+      theme: "Por que ocorrem os eclipses?",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que causa um eclipse solar?",
+          options: [
+            "A Lua fica entre o Sol e a Terra, bloqueando parte da luz solar",
+            "A Terra fica entre o Sol e a Lua",
+            "O Sol se apaga por alguns minutos",
+            "As nuvens cobrem totalmente o céu",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre os tipos de eclipse:",
+          items: [
+            "No eclipse __________, a Lua fica entre o Sol e a Terra.",
+            "No eclipse __________, a Terra fica entre o Sol e a Lua.",
+            "Os eclipses acontecem quando o Sol, a Terra e a Lua ficam __________.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os astros envolvidos na formação dos eclipses solar e lunar:",
+          items: [
+            "Sol",
+            "Terra",
+            "Lua",
+            "Marte",
+            "Vênus",
+            "cometas",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique a diferença entre um eclipse solar e um eclipse lunar, indicando a posição da Terra, do Sol e da Lua em cada caso.",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Por que um ano é diferente em cada planeta?",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "O que define a duração de um ano em um planeta?",
+          options: [
+            "O tempo que o planeta leva para dar uma volta completa ao redor do Sol",
+            "O tempo que o planeta leva para girar em torno de si mesmo",
+            "A quantidade de luas que o planeta tem",
+            "A cor do planeta",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre o movimento de translação:",
+          items: [
+            "Planetas mais __________ do Sol geralmente levam mais tempo para completar sua órbita.",
+            "Mercúrio, por estar muito perto do Sol, tem o ano mais __________ do Sistema Solar.",
+            "Netuno, por estar muito distante, tem o ano mais __________ do Sistema Solar.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os planetas do Sistema Solar:",
+          items: [
+            "Mercúrio",
+            "Júpiter",
+            "Netuno",
+            "Lua",
+            "Saturno",
+            "Sol",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Se um planeta está mais distante do Sol do que a Terra, o que você espera que aconteça com a duração de um ano nele? Justifique sua resposta.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Como os órgãos internos trabalham juntos?",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual órgão é responsável por bombear o sangue para todo o corpo?",
+          options: [
+            "Coração",
+            "Estômago",
+            "Pulmão",
+            "Fígado",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete relacionando os órgãos e suas funções:",
+          items: [
+            "Os __________ são responsáveis por realizar as trocas gasosas durante a respiração.",
+            "O __________ é responsável por bombear o sangue pelo corpo.",
+            "O __________ realiza parte da digestão dos alimentos.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque os órgãos internos do corpo humano:",
+          items: [
+            "coração",
+            "pulmões",
+            "estômago",
+            "unha",
+            "rim",
+            "cabelo",
+          ],
+        },
+        {
+          kind: "draw",
+          instruction: "Desenhe o contorno de um corpo humano e localize dentro dele o coração, os pulmões e o estômago, indicando com uma seta a função de cada um.",
+        },
+      ],
+    },
+    {
+      theme: "Como o sistema nervoso comanda o corpo?",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual é a principal função do sistema nervoso?",
+          options: [
+            "Coordenar as ações do corpo e processar as informações captadas pelos sentidos",
+            "Digerir os alimentos",
+            "Bombear o sangue",
+            "Produzir hormônios do crescimento",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre o sistema nervoso:",
+          items: [
+            "O __________ é o órgão que comanda todas as ações do corpo.",
+            "A __________ é responsável por levar as informações do cérebro para o resto do corpo.",
+            "Quando tocamos algo quente, os __________ enviam rapidamente essa informação ao cérebro.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as situações em que o sistema nervoso está agindo de forma mais evidente:",
+          items: [
+            "tirar a mão rapidamente de algo quente",
+            "sentir o cheiro de comida",
+            "decidir qual caminho seguir",
+            "reconhecer um som familiar",
+            "crescimento das unhas",
+            "digestão lenta de um alimento durante o sono",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique com suas palavras como o sistema nervoso permite que você reaja rapidamente quando pisa em algo pontiagudo.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "O que muda no corpo durante a puberdade?",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "A puberdade é uma fase do desenvolvimento em que:",
+          options: [
+            "O corpo passa por mudanças naturais que preparam o organismo para a vida adulta",
+            "Apenas os meninos passam por transformações",
+            "Apenas as meninas passam por transformações",
+            "O corpo para de crescer completamente",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com as informações corretas sobre a puberdade:",
+          items: [
+            "Durante a puberdade, o corpo produz mais __________, substâncias que provocam as transformações.",
+            "É comum que meninos e meninas cresçam mais __________ durante essa fase.",
+            "Cada pessoa vive as mudanças da puberdade em um __________ diferente, e isso é normal.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as transformações que podem ocorrer no corpo durante a puberdade (tanto em meninos quanto em meninas):",
+          items: [
+            "crescimento mais rápido do corpo",
+            "mudanças na voz",
+            "crescimento de pelos em novas regiões do corpo",
+            "aumento da altura da mesa da sala",
+            "amadurecimento do sistema reprodutor",
+            "mudanças de humor mais frequentes",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escreva por que é importante tratar as mudanças da puberdade com naturalidade e respeito, tanto as suas quanto as dos colegas.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Como as ações humanas transformam o ambiente?",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual das ações a seguir é um exemplo de impacto humano negativo sobre o ambiente?",
+          options: [
+            "Desmatamento de uma área de mata nativa para construção",
+            "Reciclagem de materiais",
+            "Criação de uma área de preservação",
+            "Plantio de árvores em uma praça",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre ações humanas e o ambiente:",
+          items: [
+            "O __________ de florestas reduz o habitat de muitas espécies de animais.",
+            "A poluição da água pode prejudicar os seres vivos que dependem dela, como os __________.",
+            "O descarte incorreto do __________ pode contaminar o solo e os rios.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as ações humanas que costumam causar alterações negativas no ambiente:",
+          items: [
+            "desmatamento",
+            "queima de lixo a céu aberto",
+            "poluição de rios com esgoto",
+            "criação de áreas verdes na cidade",
+            "extração descontrolada de recursos naturais",
+            "coleta seletiva de lixo",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Escolha uma ação humana que transforma o ambiente e explique, com um argumento, se ela deveria continuar acontecendo ou ser mudada.",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Como podemos cuidar do nosso entorno?",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual atitude coletiva ajuda a conservar o entorno da escola ou da comunidade?",
+          options: [
+            "Organizar mutirões de limpeza e plantio de árvores",
+            "Jogar lixo nos terrenos vazios",
+            "Ignorar problemas ambientais do bairro",
+            "Usar mais água do que o necessário",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete com propostas de cuidado com o ambiente:",
+          items: [
+            "Separar o lixo para a __________ ajuda a reduzir o desperdício de materiais.",
+            "Plantar __________ na escola ou no bairro melhora a qualidade do ar.",
+            "Economizar __________ e energia elétrica evita o desperdício de recursos naturais.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as atitudes que ajudam a cuidar do entorno da escola ou da comunidade:",
+          items: [
+            "separar o lixo reciclável",
+            "plantar árvores e cuidar de jardins",
+            "denunciar descarte irregular de lixo",
+            "desperdiçar água nas torneiras",
+            "participar de mutirões de limpeza",
+            "jogar papel no chão",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Em grupo, vocês vão propor uma ação para cuidar do entorno da escola. Descreva a proposta e explique como ela ajudaria o ambiente.",
+          lines: 5,
+        },
+      ],
+    },
+    {
+      theme: "Qual é o papel das vacinas na prevenção de doenças?",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Qual é a principal função das vacinas?",
+          options: [
+            "Preparar o corpo para se defender de doenças antes que elas apareçam",
+            "Curar uma doença depois que ela já se instalou gravemente",
+            "Substituir uma alimentação saudável",
+            "Aumentar a altura das crianças",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre a importância das vacinas:",
+          items: [
+            "As vacinas ajudam o corpo a produzir __________, que protegem contra doenças específicas.",
+            "Quando muitas pessoas de uma comunidade são vacinadas, é mais difícil uma doença se __________.",
+            "Algumas doenças que já causaram muitas mortes foram __________ graças à vacinação em massa.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque as afirmações corretas sobre as vacinas:",
+          items: [
+            "ajudam a prevenir doenças",
+            "protegem não só quem toma, mas também a comunidade",
+            "algumas doenças graves foram praticamente eliminadas por causa delas",
+            "servem para curar uma doença já instalada há anos",
+            "fazem parte do calendário de saúde pública",
+            "são importantes desde a infância",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Explique por que é importante que todas as pessoas de uma comunidade tomem as vacinas recomendadas, e não só algumas.",
+          lines: 4,
+        },
+      ],
+    },
+    {
+      theme: "Como a tecnologia influencia o consumo de recursos naturais?",
+      exercises: [
+        {
+          kind: "options",
+          instruction: "Como a tecnologia pode ajudar a reduzir o consumo de recursos naturais?",
+          options: [
+            "Por meio de equipamentos mais eficientes, que gastam menos energia e água",
+            "Aumentando sempre o desperdício de matérias-primas",
+            "Eliminando totalmente a necessidade de recursos naturais",
+            "Não tem nenhuma relação com o consumo de recursos",
+          ],
+        },
+        {
+          kind: "fill-blank",
+          instruction: "Complete sobre tecnologia e recursos naturais:",
+          items: [
+            "A fabricação de aparelhos eletrônicos consome __________ naturais como metais e petróleo.",
+            "Painéis solares são uma tecnologia que aproveita a energia do __________ de forma mais limpa.",
+            "Descartar aparelhos eletrônicos de forma incorreta pode __________ o solo e a água.",
+          ],
+        },
+        {
+          kind: "word-select",
+          instruction: "Marque exemplos de tecnologias que podem ajudar a economizar recursos naturais:",
+          items: [
+            "lâmpadas de LED, que gastam menos energia",
+            "painéis de energia solar",
+            "torneiras com sensor que evitam desperdício de água",
+            "aparelhos que ficam ligados sem necessidade",
+            "eletrodomésticos com selo de eficiência energética",
+            "descarte de pilhas no lixo comum",
+          ],
+        },
+        {
+          kind: "lines",
+          instruction: "Cite um exemplo de tecnologia usada no seu dia a dia e explique se o uso dela consome muitos ou poucos recursos naturais.",
+          lines: 4,
         },
       ],
     },
