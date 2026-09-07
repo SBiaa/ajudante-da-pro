@@ -185,6 +185,7 @@ export default function HomeClient({
       genre: entry.genre,
       generatedAt: new Date().toISOString(),
       editedManually: false,
+      fullLessonPlan: entry.fullLessonPlan,
     };
     return plan;
   }

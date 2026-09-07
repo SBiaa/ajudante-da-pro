@@ -35,6 +35,7 @@ function normalizePlan(plan: Partial<GeneratedLessonPlan>): GeneratedLessonPlan 
     genre: plan.genre ?? "",
     generatedAt: plan.generatedAt ?? null,
     editedManually: plan.editedManually ?? false,
+    fullLessonPlan: plan.fullLessonPlan,
   };
 }
 

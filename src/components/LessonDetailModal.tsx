@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { GeneratedLessonPlan, OwnSubject, UsedExerciseEntry } from "@/types/plano";
 import { SubjectColor } from "@/lib/subjectColors";
 import { findMergedActivity, SourcedExercise } from "@/lib/mergedActivityPicker";
+import { buildFullLessonPlanText } from "@/lib/fullLessonPlan";
 import { FREE_BOOK_LINKS } from "@/data/freeBookLinks";
 import { CopyButton } from "./CopyButton";
 import { ActivitySheetModal } from "./ActivitySheetModal";
@@ -321,7 +322,7 @@ export function LessonDetailModal({
               <div className="rounded-[var(--radius-md)] bg-[var(--surface-subtle)] p-4 sm:p-5">
                 <div className="flex items-center justify-between mb-3 gap-2">
                   <div className="text-[11px] font-medium uppercase tracking-[0.22em] text-[var(--text-muted)]">
-                    Plano de aula completo — roteiro pra sala
+                    Roteiro detalhado — passo a passo pra sala
                   </div>
                   <CopyButton text={plan.classScript.join("\n\n")} label="Copiar roteiro" />
                 </div>
@@ -338,6 +339,20 @@ export function LessonDetailModal({
                     </li>
                   ))}
                 </ol>
+              </div>
+            )}
+
+            {plan.fullLessonPlan && (
+              <div className="rounded-[var(--radius-md)] bg-[var(--surface-subtle)] p-4 sm:p-5">
+                <div className="flex items-center justify-between mb-3 gap-2">
+                  <div className="text-[11px] font-medium uppercase tracking-[0.22em] text-[var(--text-muted)]">
+                    Plano de aula completo
+                  </div>
+                  <CopyButton text={buildFullLessonPlanText(plan.fullLessonPlan)} label="Copiar plano completo" />
+                </div>
+                <pre className="whitespace-pre-wrap font-sans text-[15px] leading-[1.55] text-[var(--text-body)] max-w-[62ch]">
+                  {buildFullLessonPlanText(plan.fullLessonPlan)}
+                </pre>
               </div>
             )}
 

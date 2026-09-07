@@ -102,6 +102,10 @@ export type GeneratedLessonPlan = {
   generatedAt: string | null;
   /** true se a professora editou o conteúdo depois de sorteado. */
   editedManually: boolean;
+  /** Plano de aula completo (ver FullLessonPlan), quando o banco tem essa versão mais detalhada
+   * pra esse tema. undefined quando a entrada do banco não tem (a aula funciona normalmente sem
+   * ele, usando description/materials/steps). */
+  fullLessonPlan?: FullLessonPlan;
 };
 
 /** Atividade de texto livre para horários que não são dela (Ed. Física, Artes etc.). */
@@ -159,6 +163,22 @@ export type UsedExerciseEntry = {
 // Banco de temas local (offline, sem custo — ver src/data/themeBank.ts)
 // ---------------------------------------------------------------------------
 
+/**
+ * Plano de aula completo, no nível de detalhe pedido pela Dulci (avaliadora): objetos de
+ * conhecimento, habilidades trabalhadas, objetivos de aprendizagem, desenvolvimento da aula
+ * (podendo ter várias etapas/estações/problemas) e avaliação. `skills` e `developmentMarkdown`
+ * ficam como texto livre (markdown simples: `##`/`###` pra subtítulo, `*`/`-` pra lista, `|` pra
+ * tabela) em vez de campos estruturados, porque esse conteúdo é escrito à mão por quem monta a
+ * aula — tentar fatiar cada seção em campos rígidos só atrapalha quando o formato mudar de novo
+ * (já mudou 3x nesta mesma funcionalidade, ver memória feedback_sgp_description_format).
+ */
+export type FullLessonPlan = {
+  knowledgeObjects: string[];
+  skills: string;
+  learningObjectives: string[];
+  developmentMarkdown: string;
+};
+
 /** Uma entrada do banco de temas: um tema pronto para uma matéria própria. */
 export type BankEntry = {
   theme: string;
@@ -169,6 +189,19 @@ export type BankEntry = {
   /** Roteiro detalhado da aula (ver GeneratedLessonPlan.classScript). Opcional: bancos ainda não
    * reescritos com esse campo funcionam normalmente sem ele. */
   classScript?: string[];
+  /**
+   * Texto opcional pro campo "desenvolvimento da aula" do SGP (ver src/lib/sgpDescription.ts),
+   * escrito em primeira pessoa do plural ("nós" — professora + turma), tom pessoal, parágrafo
+   * corrido (sem cabeçalhos de estágio), mostrando o que a turma fez e produziu — pedido da
+   * Dulci (avaliadora): precisa parecer que foi a própria professora que escreveu, não uma
+   * descrição impessoal da habilidade. Entradas sem `sgpDescription` preenchido continuam usando
+   * o `description` puro (formato curto/abstrato antigo) — não é obrigatório reescrever o banco
+   * inteiro de uma vez, só preencher aos poucos.
+   */
+  sgpDescription?: string;
+  /** Plano de aula completo (ver FullLessonPlan) — opcional, preenchido aos poucos. Entradas sem
+   * ele continuam funcionando com description/materials/steps normalmente. */
+  fullLessonPlan?: FullLessonPlan;
 };
 
 /**
@@ -187,6 +220,8 @@ export type ReadingBankEntry = {
   description: string;
   text: string;
   steps: string[];
+  /** Ver BankEntry.sgpDescription — mesmo formato, mesmo comportamento de fallback pro `description`. */
+  sgpDescription?: string;
 };
 
 // ---------------------------------------------------------------------------

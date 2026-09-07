@@ -30,7 +30,8 @@ export const THEME_BANK: Record<OwnSubject, BankEntry[]> = {
         "Mostrar os livros da sala e ler os títulos junto com a turma.",
         "Pedir que circulem, na lista, os nomes que começam com a mesma letra do seu.",
         "Fechar perguntando quem achou um nome parecido com o seu."
-      ]
+      ],
+      "sgpDescription": "Trabalhamos a lista com os nomes da turma e alguns livros da sala com o título visível, escrita na lousa. Lemos em voz alta os nomes e os títulos dos livros para reconhecer e localizar as palavras apresentadas. Por fim, os estudantes fizeram o registro escrito individualmente, circulando na lista os nomes que começam com a mesma letra do seu, com apoio para quem apresentou mais dificuldade na leitura e na escrita."
     },
     {
       "theme": "Organizando o cotidiano com listas",
@@ -1560,6 +1561,45 @@ export const THEME_BANK: Record<OwnSubject, BankEntry[]> = {
         "Propor 3 a 4 continhas no caderno para os alunos resolverem sozinhos.",
         "Corrigir juntos na lousa, pedindo que expliquem como chegaram ao resultado."
       ]
+    },
+    {
+      "theme": "Dobro, metade e completando 100: fatos fundamentais da adição e subtração",
+      "curriculumCode": "EF02M09",
+      "description": "Exploração e construção de fatos fundamentais da adição e da subtração, com ênfase no dobro e na metade de dezenas e centenas exatas, em adições que resultam em 100 e em cálculos de adição e subtração de 10 e 100. Resolução e elaboração de problemas do campo aditivo, utilizando diferentes estratégias de representação e cálculo.",
+      "materials": [
+        "Lousa e giz/marcador",
+        "Cartões ou fichas com os desafios das estações do circuito matemático",
+        "Cópias dos três problemas (composição, transformação e comparação)"
+      ],
+      "steps": [
+        "Iniciar com a rotina de leitura diária e propor na lousa o desafio \"quanto falta para chegar a 100?\".",
+        "Explorar o dobro e a metade de dezenas e centenas exatas com desafios na lousa, discutindo as estratégias usadas.",
+        "Propor o desafio de somar e subtrair 10 e 100 de diferentes números, explorando a regularidade dos resultados.",
+        "Dividir a turma em duplas ou grupos para o circuito matemático (estações de dobro/metade, completar 100 e cálculos rápidos).",
+        "Propor os três problemas do campo aditivo (composição, transformação, comparação), resolvendo com desenhos, palitos ou cálculos.",
+        "Pedir que, em duplas, os estudantes criem um problema de adição ou subtração para outra dupla resolver.",
+        "Fechar retomando os principais cálculos e perguntando sobre as estratégias usadas."
+      ],
+      "sgpDescription": "Trabalhamos fatos fundamentais da adição e da subtração, explorando o dobro e a metade de dezenas e centenas exatas, adições que resultam em 100 e cálculos de somar e subtrair 10 e 100. Organizamos um circuito matemático em duplas e em grupos, com desafios de cálculo, e resolvemos e elaboramos problemas do campo aditivo utilizando diferentes estratégias pessoais de representação, como desenhos, palitos e cálculos.",
+      "fullLessonPlan": {
+        "knowledgeObjects": [
+          "Fatos fundamentais da adição e da subtração.",
+          "Dobro e metade de dezenas e centenas exatas.",
+          "Adições que resultam em 100.",
+          "Adição e subtração de 10 e 100 a números naturais.",
+          "Resolução e elaboração de problemas do campo aditivo."
+        ],
+        "skills": "*Explorar e construir fatos fundamentais da adição e da subtração*, como:\n\n* Dobro e metade de dezenas e centenas exatas;\n* Adições que resultam em 100;\n* Adição de 10 e 100 a diferentes números;\n* Subtração de 10 e 100 de diferentes números;\n\nVisando à constituição de um repertório de cálculos memorizados.\n\n*EF02M09:* Solucionar problemas envolvendo os significados do campo aditivo — composição, transformação e comparação — utilizando diferentes estratégias pessoais de representação e formulando problemas em duplas ou grupos.",
+        "learningObjectives": [
+          "Identificar e calcular o dobro e a metade de dezenas e centenas exatas.",
+          "Realizar adições que completem 100.",
+          "Adicionar e subtrair 10 e 100 de diferentes números.",
+          "Utilizar estratégias pessoais para realizar cálculos.",
+          "Resolver problemas de adição e subtração.",
+          "Criar problemas matemáticos em duplas ou grupos."
+        ],
+        "developmentMarkdown": "# Desenvolvimento da aula\n\n## 1. Acolhida e leitura diária\n\nIniciar a aula com a rotina de leitura diária. Em seguida, apresentar aos estudantes o desafio:\n\n*Quanto falta para chegar a 100?*\n\nEscrever na lousa:\n\n* 10 + _ = 100\n* 20 + _ = 100\n* 30 + _ = 100\n* 40 + _ = 100\n* 50 + _ = 100\n\nConvidar os estudantes a descobrirem os números que completam cada adição.\n\n## 2. Exploração do dobro e da metade\n\nApresentar alguns desafios na lousa:\n\n| Desafio | Resposta |\n| --- | --- |\n| Dobro de 10 | __ |\n| Dobro de 20 | __ |\n| Dobro de 30 | __ |\n| Dobro de 50 | __ |\n| Metade de 20 | __ |\n| Metade de 40 | __ |\n| Metade de 60 | __ |\n| Metade de 100 | __ |\n| Metade de 200 | __ |\n\nConversar com a turma sobre as estratégias utilizadas.\n\nExemplo: *se o dobro de 30 é 60, quanto é a metade de 60?*\n\nLevar os estudantes a perceberem a relação entre dobro e metade.\n\n## 3. Desafio: mais 10, menos 10, mais 100 e menos 100\n\nEscrever os números na lousa e pedir que os estudantes completem:\n\n| Número | + 10 | - 10 | + 100 | - 100 |\n| --- | ---: | ---: | ---: | ---: |\n| 25 | __ | __ | __ | — |\n| 48 | __ | __ | __ | — |\n| 120 | __ | __ | __ | __ |\n| 235 | __ | __ | __ | __ |\n| 350 | __ | __ | __ | __ |\n\nExplorar a regularidade dos números. Por exemplo: *235 + 10 = 245*, *235 - 10 = 225*, *235 + 100 = 335*, *235 - 100 = 135*.\n\n# Atividade principal – circuito matemático\n\nDividir a turma em duplas ou pequenos grupos. Cada grupo deverá resolver os desafios.\n\n### Estação 1 – dobro e metade\n\n1. Dobro de 40 = ___\n2. Dobro de 50 = ___\n3. Metade de 80 = ___\n4. Metade de 100 = ___\n\n### Estação 2 – complete 100\n\n1. 10 + ___ = 100\n2. 25 + ___ = 100\n3. 40 + ___ = 100\n4. 55 + ___ = 100\n5. 70 + ___ = 100\n\n### Estação 3 – cálculos rápidos\n\n1. 34 + 10 = ___\n2. 78 - 10 = ___\n3. 125 + 100 = ___\n4. 246 - 100 = ___\n5. 390 + 10 = ___\n\n# Resolução de problemas – EF02M09\n\n## Problema 1 – composição\n\n*Na biblioteca da escola havia 35 livros de histórias e 24 livros de poemas. Quantos livros havia ao todo?*\n\nOs estudantes poderão resolver utilizando desenhos, palitos, cálculos ou outras estratégias.\n\n*35 + 24 = 59*\n\n*Resposta: havia 59 livros ao todo.*\n\n## Problema 2 – transformação\n\n*Em uma caixa havia 87 lápis. A professora utilizou 10 lápis para uma atividade. Quantos lápis restaram?*\n\n*87 - 10 = 77*\n\n*Resposta: restaram 77 lápis.*\n\n## Problema 3 – comparação\n\n*João tem 45 figurinhas e Ana tem 60 figurinhas. Quantas figurinhas Ana tem a mais que João?*\n\n*60 - 45 = 15*\n\n*Resposta: Ana tem 15 figurinhas a mais.*\n\n# Momento de criação de problemas\n\nEm duplas, os estudantes deverão criar um pequeno problema envolvendo:\n\n* Uma adição; ou\n* Uma subtração.\n\nCada dupla deverá escrever o problema e entregá-lo para outra dupla resolver.\n\nExemplo: *na escola havia 45 bolas. Chegaram mais 10 bolas. Quantas bolas há agora?*\n\n# Sistematização\n\nFinalizar a aula retomando os principais cálculos:\n\n*Dobro de 50 = 100*\n*Metade de 100 = 50*\n*30 + 70 = 100*\n*45 + 10 = 55*\n*145 + 100 = 245*\n*78 - 10 = 68*\n*325 - 100 = 225*\n\nPerguntar:\n\n* *Qual cálculo você conseguiu fazer mais rapidamente?*\n* *O que acontece quando adicionamos 10?*\n* *O que muda quando subtraímos 100?*\n* *Como podemos descobrir a metade de um número?*\n\n# Avaliação\n\nA avaliação será realizada de forma contínua, por meio da observação da participação dos estudantes, das estratégias utilizadas para resolver os cálculos e problemas, da capacidade de trabalhar em duplas ou grupos e da compreensão dos conceitos de dobro, metade, adição e subtração.\n\nSerão observados, principalmente, se os estudantes:\n\n* Reconhecem o dobro e a metade de dezenas e centenas exatas;\n* Completam adições que resultam em 100;\n* Realizam adições e subtrações de 10 e 100;\n* Utilizam diferentes estratégias para resolver problemas;\n* Elaboram e resolvem problemas do campo aditivo em duplas ou grupos."
+      }
     },
     {
       "theme": "Maior, menor ou igual?",

@@ -1,7 +1,8 @@
-import { OwnSubject } from "@/types/plano";
+import { FullLessonPlan, OwnSubject } from "@/types/plano";
 import { Network } from "@/types/profile";
 import { READING_BANK } from "@/data/themeBank";
 import { getThemeBank } from "@/data/curriculumBanks";
+import { buildSgpDescription } from "./sgpDescription";
 
 export type PickedEntry = {
   theme: string;
@@ -12,6 +13,7 @@ export type PickedEntry = {
   classScript: string[];
   readingText: string;
   genre: string;
+  fullLessonPlan?: FullLessonPlan;
 };
 
 const EMPTY_PICK: PickedEntry = {
@@ -73,12 +75,13 @@ export function pickThemeEntry(
     (entry): PickedEntry => ({
       theme: entry.theme,
       curriculumCode: entry.curriculumCode,
-      description: entry.description,
+      description: buildSgpDescription(entry),
       materials: entry.materials,
       steps: entry.steps,
       classScript: entry.classScript ?? [],
       readingText: "",
       genre: "",
+      fullLessonPlan: entry.fullLessonPlan,
     })
   );
 }
