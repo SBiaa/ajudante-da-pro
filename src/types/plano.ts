@@ -44,6 +44,13 @@ export const OWN_SUBJECT_LABELS: Record<OwnSubject, string> = {
   ciencias: "Ciências",
 };
 
+/** Matérias que a interface deve oferecer/mostrar para o professor: as 5 quando ele é
+ * generalista (`ownSubject` null, 1º-6º ano), ou só a matéria dele quando é especialista
+ * (7º-9º ano — ver isSpecialistGrade em src/types/profile.ts). */
+export function getAllowedSubjects(ownSubject: OwnSubject | null): OwnSubject[] {
+  return ownSubject ? [ownSubject] : OWN_SUBJECTS;
+}
+
 /**
  * Tipo de conteúdo de um horário na grade.
  * - "leitura-diaria": livro/texto do dia, sorteado do banco local; pode ser configurado em

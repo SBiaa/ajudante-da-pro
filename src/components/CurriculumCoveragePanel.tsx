@@ -1,7 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { OWN_SUBJECTS, OWN_SUBJECT_LABELS, OwnSubject, WeekPlan } from "@/types/plano";
+import { Button } from "./Button";
+import { OWN_SUBJECT_LABELS, OwnSubject, WeekPlan } from "@/types/plano";
 import { Network } from "@/types/profile";
 import { SUBJECT_COLORS } from "@/lib/subjectColors";
 import { computeCurriculumCoverage } from "@/lib/curriculumCoverage";
@@ -13,12 +14,13 @@ type Props = {
   gradeYear: string;
   onClose: () => void;
   onJumpToWeek: (weekStartDate: string) => void;
+  /** Matérias disponíveis pra trocar de aba — todas as 5 pro generalista, só 1 pro especialista
+   * do 7º-9º ano (ver getAllowedSubjects). */
+  allowedSubjects: OwnSubject[];
 };
 
 type PresetKey = "bimestre" | "semestre" | "tudo" | "personalizado";
 
-const secondaryButton =
-  "text-sm px-4 py-1.5 rounded-full border border-[var(--plum-900)] text-[var(--plum-900)] transition-colors hover:bg-[var(--plum-900)] hover:text-white";
 
 /** Adiciona canal alfa (0-1) a uma cor hex de 6 dígitos, pra criar as camadas de intensidade do
  * heatmap sem precisar de uma paleta separada por matéria. */
@@ -36,8 +38,8 @@ function todayISO(): string {
   return toISODate(new Date());
 }
 
-export function CurriculumCoveragePanel({ weeks, network, gradeYear, onClose, onJumpToWeek }: Props) {
-  const [subject, setSubject] = useState<OwnSubject>(OWN_SUBJECTS[0]);
+export function CurriculumCoveragePanel({ weeks, network, gradeYear, onClose, onJumpToWeek, allowedSubjects }: Props) {
+  const [subject, setSubject] = useState<OwnSubject>(allowedSubjects[0]);
   const [preset, setPreset] = useState<PresetKey>("bimestre");
   const [customFrom, setCustomFrom] = useState("");
   const [customTo, setCustomTo] = useState("");
@@ -74,25 +76,27 @@ export function CurriculumCoveragePanel({ weeks, network, gradeYear, onClose, on
         nenhuma aula no período.
       </p>
 
-      <div className="flex flex-wrap gap-1.5 mb-3">
-        {OWN_SUBJECTS.map((key) => (
-          <button
-            key={key}
-            onClick={() => {
-              setSubject(key);
-              setSelectedCode(null);
-            }}
-            type="button"
-            className={`text-xs px-3 py-1 rounded-full border transition-colors ${
-              subject === key
-                ? "border-[var(--plum-900)] bg-[var(--plum-900)] text-white"
-                : "border-[var(--border-subtle)] text-[var(--text-muted)] hover:border-[var(--plum-900)]"
-            }`}
-          >
-            {OWN_SUBJECT_LABELS[key]}
-          </button>
-        ))}
-      </div>
+      {allowedSubjects.length > 1 && (
+        <div className="flex flex-wrap gap-1.5 mb-3">
+          {allowedSubjects.map((key) => (
+            <button
+              key={key}
+              onClick={() => {
+                setSubject(key);
+                setSelectedCode(null);
+              }}
+              type="button"
+              className={`text-xs px-3 py-1 rounded-full border transition-colors ${
+                subject === key
+                  ? "border-[var(--plum-900)] bg-[var(--plum-900)] text-white"
+                  : "border-[var(--border-subtle)] bg-white text-[var(--text-muted)] hover:border-[var(--plum-900)]"
+              }`}
+            >
+              {OWN_SUBJECT_LABELS[key]}
+            </button>
+          ))}
+        </div>
+      )}
 
       <div className="flex flex-wrap items-center gap-1.5 mb-4">
         {(
@@ -110,7 +114,7 @@ export function CurriculumCoveragePanel({ weeks, network, gradeYear, onClose, on
             className={`text-xs px-3 py-1 rounded-full border transition-colors ${
               preset === key
                 ? "border-[var(--plum-900)] bg-[var(--plum-900)] text-white"
-                : "border-[var(--border-subtle)] text-[var(--text-muted)] hover:border-[var(--plum-900)]"
+                : "border-[var(--border-subtle)] bg-white text-[var(--text-muted)] hover:border-[var(--plum-900)]"
             }`}
           >
             {label}
@@ -213,9 +217,9 @@ export function CurriculumCoveragePanel({ weeks, network, gradeYear, onClose, on
       )}
 
       <div className="flex justify-end">
-        <button onClick={onClose} type="button" className={secondaryButton}>
-          Fechar
-        </button>
+        <Button variant="secondary" onClick={onClose}>
+          Voltar à semana
+        </Button>
       </div>
     </div>
   );

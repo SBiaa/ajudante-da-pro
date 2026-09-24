@@ -23,6 +23,7 @@ export default async function PerfilPage() {
         currentGrade={profile?.gradeYear ?? DEFAULT_GRADE}
         currentTheme={profile?.theme ?? DEFAULT_THEME}
         currentNetwork={profile?.network ?? DEFAULT_NETWORK}
+        currentOwnSubject={profile?.ownSubject ?? null}
       />
     </main>
   );

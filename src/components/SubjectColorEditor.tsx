@@ -3,21 +3,26 @@
 import { useState } from "react";
 import {
   ColorKey,
-  COLOR_KEYS,
   COLOR_KEY_LABELS,
   SUBJECT_COLORS,
   SubjectColor,
   SubjectColorOverrides,
 } from "@/lib/subjectColors";
+import { OwnSubject } from "@/types/plano";
 
 type Props = {
   overrides: SubjectColorOverrides;
   onSave: (overrides: SubjectColorOverrides) => void;
   onCancel: () => void;
+  /** Matérias próprias que aparecem na lista — todas as 5 pro generalista, só 1 pro
+   * especialista do 7º-9º ano (ver getAllowedSubjects). Leitura Diária e Externa aparecem
+   * sempre, pra qualquer professor poder personalizar a cor delas. */
+  allowedSubjects: OwnSubject[];
 };
 
-export function SubjectColorEditor({ overrides, onSave, onCancel }: Props) {
+export function SubjectColorEditor({ overrides, onSave, onCancel, allowedSubjects }: Props) {
   const [draft, setDraft] = useState<SubjectColorOverrides>(() => ({ ...overrides }));
+  const colorKeys: ColorKey[] = [...allowedSubjects, "leitura-diaria", "externa"];
 
   function colorFor(key: ColorKey): SubjectColor {
     return draft[key] ?? SUBJECT_COLORS[key];
@@ -48,7 +53,7 @@ export function SubjectColorEditor({ overrides, onSave, onCancel }: Props) {
       </p>
 
       <div className="flex flex-col gap-2">
-        {COLOR_KEYS.map((key) => {
+        {colorKeys.map((key) => {
           const color = colorFor(key);
           const isCustom = Boolean(draft[key]);
           return (
@@ -98,7 +103,7 @@ export function SubjectColorEditor({ overrides, onSave, onCancel }: Props) {
         <button
           onClick={onCancel}
           type="button"
-          className="text-sm px-4 py-1.5 rounded-full border border-[var(--plum-900)] text-[var(--plum-900)] transition-colors hover:bg-[var(--plum-900)] hover:text-white"
+          className="text-sm px-4 py-1.5 rounded-full border border-[var(--border-subtle)] bg-white text-[var(--text-body)] transition-colors hover:border-[var(--border-strong)] hover:bg-[var(--surface-subtle)]"
         >
           Cancelar
         </button>

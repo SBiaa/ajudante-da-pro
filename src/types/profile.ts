@@ -20,6 +20,14 @@ export const GRADE_OPTIONS: GradeOption[] = [
 
 export const DEFAULT_GRADE = "2-ano";
 
+/** Anos em que o Fundamental 2 é departamentalizado na prática: cada professor leciona uma
+ * única matéria (diferente do 1º-6º ano, onde o mesmo professor dá as 5 matérias próprias). */
+export const SPECIALIST_GRADES = ["7-ano", "8-ano", "9-ano"];
+
+export function isSpecialistGrade(gradeYear: string): boolean {
+  return SPECIALIST_GRADES.includes(gradeYear);
+}
+
 /** Rede de ensino — decide qual currículo oficial (e banco de conteúdo) é usado: Currículo da
  * Cidade (Prefeitura de SP) ou Currículo Paulista (Estado de SP). */
 export type Network = "prefeitura" | "estado";

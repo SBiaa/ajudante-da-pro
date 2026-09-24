@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { Button } from "./Button";
 import { OWN_SUBJECTS, OwnSubject, GeneratedLessonPlan, UsedExerciseEntry } from "@/types/plano";
 import { Network } from "@/types/profile";
 import { READING_BANK } from "@/data/themeBank";
@@ -13,8 +14,6 @@ import { SubjectIcon } from "./SubjectIcon";
 import { LessonDetailModal } from "./LessonDetailModal";
 
 type SubjectKey = OwnSubject | "leitura-diaria";
-
-const SUBJECT_FILTERS: SubjectKey[] = [...OWN_SUBJECTS, "leitura-diaria"];
 
 type ContentFilter = "" | "atividade" | "licao-de-casa";
 
@@ -38,14 +37,12 @@ function normalize(text: string): string {
     .toLowerCase();
 }
 
-const secondaryButton =
-  "text-sm px-4 py-1.5 rounded-full border border-[var(--plum-900)] text-[var(--plum-900)] transition-colors hover:bg-[var(--plum-900)] hover:text-white";
 
 const pillClass = (active: boolean) =>
   `text-xs px-3 py-1 rounded-full border transition-colors ${
     active
       ? "border-[var(--plum-900)] bg-[var(--plum-900)] text-white"
-      : "border-[var(--border-subtle)] text-[var(--text-muted)] hover:border-[var(--plum-900)]"
+      : "border-[var(--border-subtle)] bg-white text-[var(--text-muted)] hover:border-[var(--plum-900)]"
   }`;
 
 type Props = {
@@ -55,6 +52,10 @@ type Props = {
   usedExercises?: UsedExerciseEntry[];
   onMarkExercisesUsed?: (subjectKey: OwnSubject | "leitura-diaria", theme: string, exercises: SourcedExercise[]) => void;
   onClose: () => void;
+  /** Matérias que aparecem como pill de filtro — todas as 5 pro generalista, só 1 pro
+   * especialista do 7º-9º ano (ver getAllowedSubjects). O banco em si (buildRows) continua
+   * completo, isso só afeta os filtros visíveis. */
+  allowedSubjects: OwnSubject[];
 };
 
 /** Todas as entradas do banco local (temas próprios da combinação rede+ano + leitura diária,
@@ -120,7 +121,9 @@ export function ContentBankPanel({
   usedExercises,
   onMarkExercisesUsed,
   onClose,
+  allowedSubjects,
 }: Props) {
+  const subjectFilters = useMemo<SubjectKey[]>(() => [...allowedSubjects, "leitura-diaria"], [allowedSubjects]);
   const [subjectFilter, setSubjectFilter] = useState<SubjectKey | "">("");
   const [contentFilter, setContentFilter] = useState<ContentFilter>("");
   const [search, setSearch] = useState("");
@@ -160,7 +163,7 @@ export function ContentBankPanel({
         <button onClick={() => setSubjectFilter("")} type="button" className={pillClass(subjectFilter === "")}>
           Todas ({allRows.length})
         </button>
-        {SUBJECT_FILTERS.map((key) => (
+        {subjectFilters.map((key) => (
           <button
             key={key}
             onClick={() => setSubjectFilter((prev) => (prev === key ? "" : key))}
@@ -197,7 +200,7 @@ export function ContentBankPanel({
       {rows.length === 0 ? (
         <p className="text-sm text-[var(--text-muted)] py-6 text-center">Nenhum tema encontrado com esse filtro.</p>
       ) : (
-        <div className="flex flex-col divide-y divide-[var(--border-subtle)] max-h-[28rem] overflow-y-auto">
+        <div className="flex flex-col divide-y divide-[var(--border-subtle)]">
           {rows.map((row, i) => {
             const color = resolveSubjectColor(row.subjectKey, colorOverrides);
             return (
@@ -235,9 +238,9 @@ export function ContentBankPanel({
       )}
 
       <div className="mt-4 flex justify-end">
-        <button onClick={onClose} type="button" className={secondaryButton}>
-          Fechar
-        </button>
+        <Button variant="secondary" onClick={onClose}>
+          Voltar à semana
+        </Button>
       </div>
 
       {selected && (

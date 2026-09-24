@@ -2,7 +2,8 @@
 
 import { useActionState, useState } from "react";
 import Link from "next/link";
-import { GRADE_OPTIONS, THEME_OPTIONS, NETWORK_OPTIONS, Network } from "@/types/profile";
+import { GRADE_OPTIONS, THEME_OPTIONS, NETWORK_OPTIONS, Network, isSpecialistGrade } from "@/types/profile";
+import { OWN_SUBJECTS, OWN_SUBJECT_LABELS, OwnSubject } from "@/types/plano";
 import { availableGradesFor } from "@/data/curriculumBanks";
 import { logoutAction } from "@/lib/auth/actions";
 import { saveProfileAction, SaveProfileState } from "@/app/perfil/actions";
@@ -12,6 +13,7 @@ type Props = {
   currentGrade: string;
   currentTheme: string;
   currentNetwork: Network;
+  currentOwnSubject: OwnSubject | null;
 };
 
 const initialState: SaveProfileState = { error: null, saved: false };
@@ -21,12 +23,15 @@ const THEME_SWATCHES: Record<string, string[]> = {
   gatinho: ["#7a3b12", "#d16f2b", "#d9546e"],
 };
 
-export function PerfilForm({ currentGrade, currentTheme, currentNetwork }: Props) {
+export function PerfilForm({ currentGrade, currentTheme, currentNetwork, currentOwnSubject }: Props) {
   const [state, formAction, pending] = useActionState(saveProfileAction, initialState);
   const [theme, setTheme] = useState(currentTheme);
   const [network, setNetwork] = useState<Network>(currentNetwork);
+  const [gradeYear, setGradeYear] = useState(currentGrade);
+  const [ownSubject, setOwnSubject] = useState<OwnSubject | null>(currentOwnSubject);
 
   const availableGrades = new Set(availableGradesFor(network));
+  const specialist = isSpecialistGrade(gradeYear);
 
   return (
     <div className="rounded-[var(--radius-lg)] border border-[var(--border-subtle)] bg-white p-6 shadow-[var(--shadow-sm)] max-w-md">
@@ -59,7 +64,12 @@ export function PerfilForm({ currentGrade, currentTheme, currentNetwork }: Props
         <select
           id="gradeYear"
           name="gradeYear"
-          defaultValue={currentGrade}
+          value={gradeYear}
+          onChange={(e) => {
+            const value = e.target.value;
+            setGradeYear(value);
+            if (!isSpecialistGrade(value)) setOwnSubject(null);
+          }}
           className="w-full text-sm border border-[var(--border-subtle)] rounded-[var(--radius-md)] px-3 py-2 mb-3 focus:outline-none focus:ring-2 focus:ring-[var(--focus-ring)]"
         >
           {GRADE_OPTIONS.map((option) => (
@@ -69,6 +79,34 @@ export function PerfilForm({ currentGrade, currentTheme, currentNetwork }: Props
             </option>
           ))}
         </select>
+
+        {specialist && (
+          <>
+            <label htmlFor="ownSubject" className="block text-sm font-medium text-[var(--text-body)] mb-1.5">
+              Matéria que você leciona
+            </label>
+            <p className="text-xs text-[var(--text-muted)] mb-1.5 max-w-[52ch]">
+              Do 7º ao 9º ano cada professora leciona uma única matéria — escolha a sua.
+            </p>
+            <select
+              id="ownSubject"
+              name="ownSubject"
+              required
+              value={ownSubject ?? ""}
+              onChange={(e) => setOwnSubject(e.target.value as OwnSubject)}
+              className="w-full text-sm border border-[var(--border-subtle)] rounded-[var(--radius-md)] px-3 py-2 mb-3 focus:outline-none focus:ring-2 focus:ring-[var(--focus-ring)]"
+            >
+              <option value="" disabled>
+                Selecione a matéria
+              </option>
+              {OWN_SUBJECTS.map((subject) => (
+                <option key={subject} value={subject}>
+                  {OWN_SUBJECT_LABELS[subject]}
+                </option>
+              ))}
+            </select>
+          </>
+        )}
 
         <span className="block text-sm font-medium text-[var(--text-body)] mb-1.5">Tema visual</span>
         <input type="hidden" name="theme" value={theme} />
@@ -136,7 +174,7 @@ export function PerfilForm({ currentGrade, currentTheme, currentNetwork }: Props
       <form action={logoutAction} className="mt-4 pt-4 border-t border-[var(--border-subtle)]">
         <button
           type="submit"
-          className="text-sm px-4 py-1.5 rounded-full border border-[var(--plum-900)] text-[var(--plum-900)] transition-colors hover:bg-[var(--plum-900)] hover:text-white"
+          className="text-sm px-4 py-1.5 rounded-full border border-[var(--border-subtle)] bg-white text-[var(--text-body)] transition-colors hover:border-[var(--border-strong)] hover:bg-[var(--surface-subtle)]"
         >
           Sair
         </button>

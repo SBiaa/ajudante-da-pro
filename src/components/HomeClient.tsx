@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { StoredAppData } from "@/lib/db/appData";
 import {
   WEEKDAYS,
@@ -12,6 +12,7 @@ import {
   OwnSubject,
   GeneratedLessonPlan,
   WeeklyTimetable,
+  getAllowedSubjects,
 } from "@/types/plano";
 import { useAppState } from "@/hooks/useAppState";
 import { getMondayISO, getWeekId, addWeeksISO } from "@/lib/date";
@@ -24,15 +25,17 @@ import { TimetableEditor } from "@/components/TimetableEditor";
 import { WeekNav } from "@/components/WeekNav";
 import { WeekGrid } from "@/components/WeekGrid";
 import { EmptyWeekPrompt } from "@/components/EmptyWeekPrompt";
-import { AppHeader } from "@/components/AppHeader";
+import { AppHeader, AppMenuGroup } from "@/components/AppHeader";
 import { SubjectColorEditor } from "@/components/SubjectColorEditor";
 import { ThemeHistoryPanel } from "@/components/ThemeHistoryPanel";
 import { CurriculumCoveragePanel } from "@/components/CurriculumCoveragePanel";
 import { PeriodOverviewPanel } from "@/components/PeriodOverviewPanel";
 import { ContentBankPanel } from "@/components/ContentBankPanel";
-import { ConfirmModal } from "@/components/ConfirmModal";
+import { GenerateWeekModal, GenerateWeekMode } from "@/components/GenerateWeekModal";
 import { ShareModal } from "@/components/ShareModal";
 import { LoadingScreen } from "@/components/LoadingScreen";
+import { SyncIndicator } from "@/components/SyncIndicator";
+import { Toast, ToastData } from "@/components/Toast";
 import { saveStoredTimetableAction, createShareLinkAction } from "@/app/actions";
 
 type Props = {
@@ -41,10 +44,14 @@ type Props = {
   gradeLabel: string;
   gradeYear: string;
   network: Network;
+  ownSubject: OwnSubject | null;
   initialAppData: StoredAppData | null;
   isAdmin?: boolean;
   teacherName?: string;
 };
+
+/** Um painel por vez no lugar da grade — um único estado em vez de seis booleanos. */
+type Panel = "timetable" | "colors" | "history" | "coverage" | "overview" | "bank" | null;
 
 export default function HomeClient({
   userId,
@@ -52,24 +59,28 @@ export default function HomeClient({
   gradeLabel,
   gradeYear,
   network,
+  ownSubject,
   initialAppData,
   isAdmin = false,
   teacherName,
 }: Props) {
   const networkLabel = getNetworkLabel(network);
+  const allowedSubjects = useMemo(() => getAllowedSubjects(ownSubject), [ownSubject]);
   const { state, setState, hydrated } = useAppState(userId);
   const [viewedMonday, setViewedMonday] = useState(() => getMondayISO());
-  const [showTimetableEditor, setShowTimetableEditor] = useState(false);
-  const [showColorEditor, setShowColorEditor] = useState(false);
-  const [showThemeHistory, setShowThemeHistory] = useState(false);
-  const [showCoverage, setShowCoverage] = useState(false);
-  const [showPeriodOverview, setShowPeriodOverview] = useState(false);
-  const [showContentBank, setShowContentBank] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [pendingGenerateWeekCount, setPendingGenerateWeekCount] = useState<number | null>(null);
+  const [panel, setPanel] = useState<Panel>(null);
+  const [toast, setToast] = useState<ToastData | null>(null);
+  const [pendingGenerate, setPendingGenerate] = useState<{ empty: number; filled: number } | null>(null);
   const [shareState, setShareState] = useState<
     { status: "loading" } | { status: "ready"; url: string } | { status: "error"; message: string } | null
   >(null);
+  const toastId = useRef(0);
+
+  const showToast = useCallback((data: Omit<ToastData, "id">) => {
+    toastId.current += 1;
+    setToast({ id: toastId.current, ...data });
+  }, []);
+  const dismissToast = useCallback(() => setToast(null), []);
 
   const weekId = useMemo(() => getWeekId(viewedMonday), [viewedMonday]);
   const currentWeek = state.weeks[weekId];
@@ -86,14 +97,41 @@ export default function HomeClient({
     () => Object.fromEntries(Object.values(state.weeks).map((w) => [w.id, w.weekStartDate])),
     [state.weeks]
   );
-  const menuItems = useMemo(
+
+  /** Quantas aulas próprias da semana já têm tema — pra barra de progresso na WeekNav. */
+  const progress = useMemo(() => {
+    if (!currentWeek) return undefined;
+    let filled = 0;
+    let total = 0;
+    for (const day of WEEKDAYS) {
+      for (const slot of SLOT_NUMBERS) {
+        const cell = currentWeek.days[day][slot];
+        if (cell.kind === "materia-externa") continue;
+        total++;
+        if (cell.plan.theme) filled++;
+      }
+    }
+    return { filled, total };
+  }, [currentWeek]);
+
+  const menuGroups = useMemo<AppMenuGroup[]>(
     () => [
-      { label: "Editar grade fixa", onClick: () => setShowTimetableEditor(true) },
-      { label: "Cores das matérias", onClick: () => setShowColorEditor(true) },
-      { label: "Temas já dados", onClick: () => setShowThemeHistory(true) },
-      { label: "Cobertura curricular", onClick: () => setShowCoverage(true) },
-      { label: "Visão geral", onClick: () => setShowPeriodOverview(true) },
-      { label: "Banco de conteúdo", onClick: () => setShowContentBank(true) },
+      {
+        title: "Consultar",
+        items: [
+          { label: "Banco de conteúdo", onClick: () => setPanel("bank") },
+          { label: "Temas já dados", onClick: () => setPanel("history") },
+          { label: "Cobertura curricular", onClick: () => setPanel("coverage") },
+          { label: "Visão geral do período", onClick: () => setPanel("overview") },
+        ],
+      },
+      {
+        title: "Configurar",
+        items: [
+          { label: "Grade fixa semanal", onClick: () => setPanel("timetable") },
+          { label: "Cores das matérias", onClick: () => setPanel("colors") },
+        ],
+      },
     ],
     []
   );
@@ -127,7 +165,10 @@ export default function HomeClient({
 
   function saveTimetable(t: WeeklyTimetable) {
     setState((s) => ({ ...s, timetable: t, weeks: syncWeeksWithTimetable(s.weeks, t, weekId) }));
-    saveStoredTimetableAction(t).catch((err) => console.error("Falha ao sincronizar grade horária:", err));
+    saveStoredTimetableAction(t).catch((err) => {
+      console.error("Falha ao sincronizar grade horária:", err);
+      showToast({ tone: "error", message: "A grade ficou salva neste aparelho, mas não subiu pro servidor." });
+    });
   }
 
   if (!hydrated) {
@@ -136,7 +177,7 @@ export default function HomeClient({
 
   if (!state.timetable) {
     return (
-      <main className="max-w-4xl w-full mx-auto px-4 py-8">
+      <main className="max-w-4xl w-full mx-auto px-4 py-6 sm:py-8">
         <AppHeader gradeLabel={gradeLabel} networkLabel={networkLabel} isAdmin={isAdmin} teacherName={teacherName} />
         <p className="text-[var(--text-muted)] mb-6 max-w-[62ch]">
           Antes de começar, configure a grade fixa: qual matéria cai em cada horário, de segunda a sexta.
@@ -146,6 +187,7 @@ export default function HomeClient({
           canCancel={false}
           onSave={saveTimetable}
           onCancel={() => {}}
+          allowedSubjects={allowedSubjects}
         />
       </main>
     );
@@ -195,16 +237,16 @@ export default function HomeClient({
     if (!week) return;
     const cell = week.days[day][slot];
     if (cell.kind === "materia-externa") return;
-    setError(null);
 
     const subjectKey = cell.kind === "leitura-diaria" ? "leitura-diaria" : cell.subject;
     const plan = pickPlan(subjectKey, [], keyword);
     if (!plan) {
-      setError(
-        keyword.trim()
-          ? `Nenhum tema encontrado para "${keyword.trim()}". Tente outra palavra ou deixe em branco para gerar livremente.`
-          : "O banco de temas dessa matéria ainda está vazio. Preencha manualmente por enquanto."
-      );
+      showToast({
+        tone: "error",
+        message: keyword.trim()
+          ? `Nenhum tema encontrado para "${keyword.trim()}". Tente outra palavra ou deixe em branco.`
+          : "O banco de temas dessa matéria ainda está vazio. Preencha manualmente por enquanto.",
+      });
       return;
     }
 
@@ -236,27 +278,33 @@ export default function HomeClient({
   function requestGenerateWeek() {
     const week = currentWeek;
     if (!week) return;
-    let count = 0;
+    let empty = 0;
+    let filled = 0;
     for (const day of WEEKDAYS) {
       for (const slot of SLOT_NUMBERS) {
-        if (week.days[day][slot].kind !== "materia-externa") count++;
+        const cell = week.days[day][slot];
+        if (cell.kind === "materia-externa") continue;
+        if (cell.plan.theme) filled++;
+        else empty++;
       }
     }
-    if (count === 0) return;
-    setPendingGenerateWeekCount(count);
+    if (empty + filled === 0) return;
+    setPendingGenerate({ empty, filled });
   }
 
-  function generateWeek() {
+  function generateWeek(mode: GenerateWeekMode) {
     const week = currentWeek;
     if (!week) return;
     const targets: { day: Weekday; slot: SlotNumber }[] = [];
     for (const day of WEEKDAYS) {
       for (const slot of SLOT_NUMBERS) {
-        if (week.days[day][slot].kind !== "materia-externa") targets.push({ day, slot });
+        const cell = week.days[day][slot];
+        if (cell.kind === "materia-externa") continue;
+        if (mode === "empty" && cell.plan.theme) continue;
+        targets.push({ day, slot });
       }
     }
     if (targets.length === 0) return;
-    setError(null);
 
     const pickedPerSubject: Partial<Record<OwnSubject | "leitura-diaria", string[]>> = {};
     const updates: { day: Weekday; slot: SlotNumber; subjectKey: OwnSubject | "leitura-diaria"; plan: GeneratedLessonPlan }[] =
@@ -277,10 +325,14 @@ export default function HomeClient({
       updates.push({ day, slot, subjectKey, plan });
     }
 
-    if (anyEmptyBank) {
-      setError("Alguma matéria com banco de temas vazio foi pulada — preencha essas manualmente.");
+    if (updates.length === 0) {
+      if (anyEmptyBank) showToast({ tone: "error", message: "O banco de temas está vazio pra essas matérias." });
+      return;
     }
-    if (updates.length === 0) return;
+
+    // Snapshot pro "Desfazer": semana e histórico como estavam antes desta leva.
+    const previousWeekSnapshot = week;
+    const previousHistoryLength = state.themeHistory.length;
 
     setState((s) => {
       const w = s.weeks[weekId];
@@ -303,6 +355,23 @@ export default function HomeClient({
         themeHistory: newHistory,
       };
     });
+
+    const n = updates.length;
+    showToast({
+      tone: "success",
+      message: anyEmptyBank
+        ? `${n} aula${n === 1 ? "" : "s"} gerada${n === 1 ? "" : "s"}. Alguma matéria sem banco foi pulada.`
+        : `${n} aula${n === 1 ? "" : "s"} gerada${n === 1 ? "" : "s"}.`,
+      action: {
+        label: "Desfazer",
+        onClick: () =>
+          setState((s) => ({
+            ...s,
+            weeks: { ...s.weeks, [weekId]: previousWeekSnapshot },
+            themeHistory: s.themeHistory.slice(0, previousHistoryLength),
+          })),
+      },
+    });
   }
 
   function handleCreateBlankWeek() {
@@ -323,9 +392,7 @@ export default function HomeClient({
 
   function handleJumpToWeek(weekStartDate: string) {
     setViewedMonday(weekStartDate);
-    setShowThemeHistory(false);
-    setShowCoverage(false);
-    setShowPeriodOverview(false);
+    setPanel(null);
   }
 
   function handleDeleteThemeHistoryEntry(index: number) {
@@ -369,66 +436,75 @@ export default function HomeClient({
     }
   }
 
+  const closePanel = () => setPanel(null);
+
   return (
-    <main className="max-w-6xl w-full mx-auto px-4 py-8 flex-1">
+    <main className="max-w-6xl w-full mx-auto px-4 py-6 sm:py-8 flex-1">
       <AppHeader
         gradeLabel={gradeLabel}
         networkLabel={networkLabel}
-        menuItems={menuItems}
+        menuGroups={menuGroups}
         isAdmin={isAdmin}
         teacherName={teacherName}
+        status={<SyncIndicator />}
       />
 
-      {showTimetableEditor ? (
+      {panel === "timetable" ? (
         <TimetableEditor
           timetable={state.timetable}
           canCancel
           onSave={(t) => {
             saveTimetable(t);
-            setShowTimetableEditor(false);
+            closePanel();
           }}
-          onCancel={() => setShowTimetableEditor(false)}
+          onCancel={closePanel}
+          allowedSubjects={allowedSubjects}
         />
-      ) : showColorEditor ? (
+      ) : panel === "colors" ? (
         <SubjectColorEditor
           overrides={state.subjectColorOverrides}
           onSave={(overrides) => {
             setState((s) => ({ ...s, subjectColorOverrides: overrides }));
-            setShowColorEditor(false);
+            closePanel();
           }}
-          onCancel={() => setShowColorEditor(false)}
+          onCancel={closePanel}
+          allowedSubjects={allowedSubjects}
         />
-      ) : showThemeHistory ? (
+      ) : panel === "history" ? (
         <ThemeHistoryPanel
           history={state.themeHistory}
           weekStartDates={weekStartDates}
-          onClose={() => setShowThemeHistory(false)}
+          colorOverrides={state.subjectColorOverrides}
+          onClose={closePanel}
           onJumpToWeek={handleJumpToWeek}
           onDeleteEntry={handleDeleteThemeHistoryEntry}
+          allowedSubjects={allowedSubjects}
         />
-      ) : showCoverage ? (
+      ) : panel === "coverage" ? (
         <CurriculumCoveragePanel
           weeks={state.weeks}
           network={network}
           gradeYear={gradeYear}
-          onClose={() => setShowCoverage(false)}
+          onClose={closePanel}
           onJumpToWeek={handleJumpToWeek}
+          allowedSubjects={allowedSubjects}
         />
-      ) : showPeriodOverview ? (
+      ) : panel === "overview" ? (
         <PeriodOverviewPanel
           weeks={state.weeks}
           currentWeekId={weekId}
-          onClose={() => setShowPeriodOverview(false)}
+          onClose={closePanel}
           onJumpToWeek={handleJumpToWeek}
         />
-      ) : showContentBank ? (
+      ) : panel === "bank" ? (
         <ContentBankPanel
           colorOverrides={state.subjectColorOverrides}
           network={network}
           gradeYear={gradeYear}
           usedExercises={state.usedExercises}
           onMarkExercisesUsed={markExercisesUsed}
-          onClose={() => setShowContentBank(false)}
+          onClose={closePanel}
+          allowedSubjects={allowedSubjects}
         />
       ) : (
         <>
@@ -436,6 +512,7 @@ export default function HomeClient({
             weekStartDate={viewedMonday}
             weekId={weekId}
             hasSavedWeek={Boolean(currentWeek)}
+            progress={progress}
             onPrevWeek={() => setViewedMonday((d) => addWeeksISO(d, -1))}
             onNextWeek={() => setViewedMonday((d) => addWeeksISO(d, 1))}
             onGoToday={handleGoToday}
@@ -443,12 +520,6 @@ export default function HomeClient({
             savedWeeks={savedWeeks}
             onJumpToWeek={setViewedMonday}
           />
-
-          {error && (
-            <div className="print:hidden mb-4 text-sm text-[var(--red-600)] bg-[var(--red-100)] rounded-[var(--radius-md)] px-3 py-2">
-              {error}
-            </div>
-          )}
 
           {currentWeek ? (
             <WeekGrid
@@ -474,18 +545,15 @@ export default function HomeClient({
         </>
       )}
 
-      {pendingGenerateWeekCount !== null && (
-        <ConfirmModal
-          title="Gerar semana inteira?"
-          message={`Isso vai gerar um novo tema para ${pendingGenerateWeekCount} aula${
-            pendingGenerateWeekCount === 1 ? "" : "s"
-          } desta semana, substituindo o conteúdo já preenchido nelas.`}
-          confirmLabel="Gerar semana"
-          onConfirm={() => {
-            setPendingGenerateWeekCount(null);
-            generateWeek();
+      {pendingGenerate && (
+        <GenerateWeekModal
+          emptyCount={pendingGenerate.empty}
+          filledCount={pendingGenerate.filled}
+          onConfirm={(mode) => {
+            setPendingGenerate(null);
+            generateWeek(mode);
           }}
-          onCancel={() => setPendingGenerateWeekCount(null)}
+          onCancel={() => setPendingGenerate(null)}
         />
       )}
 
@@ -498,6 +566,8 @@ export default function HomeClient({
           onRetry={handleShareWeek}
         />
       )}
+
+      <Toast toast={toast} onDismiss={dismissToast} />
     </main>
   );
 }

@@ -5,7 +5,6 @@ import {
   WEEKDAYS,
   WEEKDAY_LABELS,
   SLOT_NUMBERS,
-  OWN_SUBJECTS,
   OWN_SUBJECT_LABELS,
   OwnSubject,
   WeeklyTimetable,
@@ -19,9 +18,12 @@ type Props = {
   onSave: (timetable: WeeklyTimetable) => void;
   onCancel: () => void;
   canCancel: boolean;
+  /** Matérias que o professor pode escolher para uma célula "matéria própria" — todas as 5
+   * pro generalista, só 1 pro especialista do 7º-9º ano (ver getAllowedSubjects). */
+  allowedSubjects: OwnSubject[];
 };
 
-export function TimetableEditor({ timetable, onSave, onCancel, canCancel }: Props) {
+export function TimetableEditor({ timetable, onSave, onCancel, canCancel, allowedSubjects }: Props) {
   const [grid, setGrid] = useState(() => structuredClone(timetable.grid));
 
   function setEntry(day: Weekday, slot: SlotNumber, entry: TimetableEntry) {
@@ -73,13 +75,13 @@ export function TimetableEditor({ timetable, onSave, onCancel, canCancel }: Prop
         <table className="w-full text-sm border-collapse">
           <thead>
             <tr>
-              <th className="text-left p-2 w-14 text-[11px] font-medium uppercase tracking-[0.22em] text-[var(--text-muted)]">
+              <th className="text-left p-2 w-14 text-[12px] font-medium uppercase tracking-[0.18em] text-[var(--text-muted)]">
                 Aula
               </th>
               {WEEKDAYS.map((day) => (
                 <th
                   key={day}
-                  className="text-left p-2 text-[11px] font-medium uppercase tracking-[0.22em] text-[var(--text-muted)]"
+                  className="text-left p-2 text-[12px] font-medium uppercase tracking-[0.18em] text-[var(--text-muted)]"
                 >
                   {WEEKDAY_LABELS[day]}
                 </th>
@@ -98,6 +100,14 @@ export function TimetableEditor({ timetable, onSave, onCancel, canCancel }: Prop
                       : entry.kind === "leitura-diaria"
                         ? "leitura-diaria"
                         : "externa";
+                  // Se a célula já tem uma matéria fora da lista permitida (ex.: professor
+                  // trocou de matéria/ano depois de montar a grade), mantém essa matéria como
+                  // opção só nesta célula — pra ela continuar visível e a professora poder
+                  // corrigir manualmente, em vez de sumir sem explicação.
+                  const subjectOptions =
+                    entry.kind === "materia-propria" && !allowedSubjects.includes(entry.subject)
+                      ? [...allowedSubjects, entry.subject]
+                      : allowedSubjects;
                   return (
                     <td key={day} className="p-2 align-top">
                       <select
@@ -118,7 +128,7 @@ export function TimetableEditor({ timetable, onSave, onCancel, canCancel }: Prop
                         className="w-full text-xs border border-[var(--border-subtle)] rounded-[var(--radius-md)] px-1.5 py-1 mb-1 focus:outline-none focus:ring-2 focus:ring-[var(--focus-ring)]"
                       >
                         <option value="leitura-diaria">Leitura Diária</option>
-                        {OWN_SUBJECTS.map((s) => (
+                        {subjectOptions.map((s) => (
                           <option key={s} value={s}>
                             {OWN_SUBJECT_LABELS[s]}
                           </option>
@@ -147,7 +157,7 @@ export function TimetableEditor({ timetable, onSave, onCancel, canCancel }: Prop
           <button
             onClick={onCancel}
             type="button"
-            className="text-sm px-4 py-1.5 rounded-full border border-[var(--plum-900)] text-[var(--plum-900)] transition-colors hover:bg-[var(--plum-900)] hover:text-white"
+            className="text-sm px-4 py-1.5 rounded-full border border-[var(--border-subtle)] bg-white text-[var(--text-body)] transition-colors hover:border-[var(--border-strong)] hover:bg-[var(--surface-subtle)]"
           >
             Cancelar
           </button>

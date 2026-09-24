@@ -22,6 +22,7 @@ export default async function Home() {
   const gradeLabel = getGradeLabel(profile?.gradeYear ?? DEFAULT_GRADE);
   const gradeYear = profile?.gradeYear ?? DEFAULT_GRADE;
   const network = profile?.network ?? DEFAULT_NETWORK;
+  const ownSubject = profile?.ownSubject ?? null;
   return (
     <HomeClient
       userId={userId}
@@ -29,6 +30,7 @@ export default async function Home() {
       gradeLabel={gradeLabel}
       gradeYear={gradeYear}
       network={network}
+      ownSubject={ownSubject}
       initialAppData={initialAppData}
       isAdmin={user?.isAdmin ?? false}
       teacherName={user?.username}
