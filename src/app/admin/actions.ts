@@ -2,6 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 import { requireAdmin } from "@/lib/auth/requireAdmin";
+import { deleteAccessRequest, setAccessRequestHandled } from "@/lib/db/accessRequests";
 import {
   createUser,
   deleteUser,
@@ -73,5 +74,17 @@ export async function adminDeleteUserAction(id: number): Promise<void> {
     return;
   }
   await deleteUser(id);
+  revalidatePath("/admin");
+}
+
+export async function adminSetAccessRequestHandledAction(id: number, handled: boolean): Promise<void> {
+  await requireAdmin();
+  await setAccessRequestHandled(id, handled);
+  revalidatePath("/admin");
+}
+
+export async function adminDeleteAccessRequestAction(id: number): Promise<void> {
+  await requireAdmin();
+  await deleteAccessRequest(id);
   revalidatePath("/admin");
 }

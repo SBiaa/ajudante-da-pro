@@ -469,3 +469,9 @@ a:hover {
     height: 100%;
   }
 }
+
+/* Landing pública (/bem-vindo): os links lá são botões e o logo, não texto corrido — tira o
+ * sublinhado do "a {}" global. A cor de cada link vem com "!" nas classes do próprio link. */
+.landing a {
+  border-bottom: none;
+}

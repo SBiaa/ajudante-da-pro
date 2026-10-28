@@ -2,12 +2,14 @@ import Link from "next/link";
 import { requireAdmin } from "@/lib/auth/requireAdmin";
 import { listUsersForAdmin } from "@/lib/db/users";
 import { AdminUsersPanel } from "@/components/AdminUsersPanel";
+import { AccessRequestsPanel } from "@/components/AccessRequestsPanel";
+import { listAccessRequests } from "@/lib/db/accessRequests";
 
 export const dynamic = "force-dynamic";
 
 export default async function AdminPage() {
   const { userId } = await requireAdmin();
-  const users = await listUsersForAdmin();
+  const [users, accessRequests] = await Promise.all([listUsersForAdmin(), listAccessRequests()]);
 
   const totalUsers = users.length;
   const totalAdmins = users.filter((u) => u.isAdmin).length;
@@ -49,6 +51,7 @@ export default async function AdminPage() {
         ))}
       </div>
 
+      <AccessRequestsPanel requests={accessRequests} />
       <AdminUsersPanel users={users} currentUserId={userId} />
     </main>
   );
