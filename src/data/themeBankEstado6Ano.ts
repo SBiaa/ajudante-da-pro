@@ -7,9 +7,9 @@
 // oficial. Em Língua Portuguesa e História também aparecem códigos compartilhados entre anos
 // (ex.: "EF67LP.." para habilidades comuns a 6º-7º ano, "EF69LP.." para 6º-9º ano).
 
-import { BankEntry, OwnSubject } from "@/types/plano";
+import { SubjectBank } from "@/types/plano";
 
-export const ESTADO_6_ANO_THEME_BANK: Record<OwnSubject, BankEntry[]> = {
+export const ESTADO_6_ANO_THEME_BANK: SubjectBank = {
   matematica: [
     { "theme": "Comparando e ordenando números na reta numérica", "curriculumCode": "EF06MA01", "description": "Aula que trabalha a leitura, comparação e ordenação de números naturais e decimais usando a reta numérica como ferramenta visual de apoio.", "materials": ["Reta numérica desenhada na lousa ou no chão", "Cartões com números naturais e decimais", "Fita métrica ou barbante", "Marcadores"], "steps": ["Apresentar uma reta numérica grande desenhada na lousa ou no chão da sala.", "Distribuir cartões com números naturais e decimais entre os alunos.", "Pedir que cada aluno posicione seu número na reta, um de cada vez.", "Discutir coletivamente a ordem correta, corrigindo posicionamentos.", "Propor exercícios de comparação com os números posicionados.", "Encerrar com registro individual comparando pares de números."] },
     { "theme": "Como funciona o sistema decimal: base, valor posicional e zero", "curriculumCode": "EF06MA02", "description": "Exploração histórica e estrutural do sistema de numeração decimal, destacando base 10, valor posicional e a função do zero, em comparação com outros sistemas de contagem.", "materials": ["Material dourado ou ábaco", "Cartazes com exemplos de sistemas de numeração antigos", "Quadro de valor de lugar"], "steps": ["Apresentar brevemente sistemas de numeração de outras culturas.", "Comparar esses sistemas com o sistema decimal atual, destacando a base 10.", "Usar material dourado para representar composição e decomposição de números.", "Discutir o papel do zero como marcador de posição.", "Propor atividade de decompor e compor números naturais e decimais.", "Avaliar com exercícios de registro do valor posicional de algarismos."] },

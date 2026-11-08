@@ -69,7 +69,7 @@ export function pickThemeEntry(
   if (!bank) return EMPTY_PICK;
 
   return pickFrom(
-    bank[subject],
+    bank[subject] ?? [],
     recentThemes,
     keyword,
     (entry): PickedEntry => ({

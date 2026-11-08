@@ -6,7 +6,7 @@
 import { OwnSubject } from "@/types/plano";
 import { ActivityEntry } from "@/types/activity";
 
-export const ACTIVITY_BANK: Record<OwnSubject | "leitura-diaria", ActivityEntry[]> = {
+export const ACTIVITY_BANK: Partial<Record<OwnSubject | "leitura-diaria", ActivityEntry[]>> = {
   "leitura-diaria": [
     {
       theme: "A Lebre e a Tartaruga (Fábula de Esopo - releitura)",

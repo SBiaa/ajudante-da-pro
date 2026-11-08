@@ -4,13 +4,14 @@ import { useState } from "react";
 import {
   WEEKDAYS,
   WEEKDAY_LABELS,
-  SLOT_NUMBERS,
   OWN_SUBJECT_LABELS,
   OwnSubject,
   WeeklyTimetable,
   TimetableEntry,
   SlotNumber,
   Weekday,
+  entryAt,
+  slotsFor,
 } from "@/types/plano";
 
 type Props = {
@@ -21,9 +22,22 @@ type Props = {
   /** Matérias que o professor pode escolher para uma célula "matéria própria" — todas as 5
    * pro generalista, só 1 pro especialista do 7º-9º ano (ver getAllowedSubjects). */
   allowedSubjects: OwnSubject[];
+  /** Matérias sem banco que a professora cadastrou na turma (Arte, Inglês...): viram opção direta
+   * no select, em vez de ter que digitar o nome em "Outra" toda vez. */
+  customSubjects?: string[];
+  /** Horários de aula da escola (ver School.slotsPerDay). Padrão: 6. */
+  slots?: SlotNumber[];
 };
 
-export function TimetableEditor({ timetable, onSave, onCancel, canCancel, allowedSubjects }: Props) {
+export function TimetableEditor({
+  timetable,
+  onSave,
+  onCancel,
+  canCancel,
+  allowedSubjects,
+  customSubjects = [],
+  slots = slotsFor(undefined),
+}: Props) {
   const [grid, setGrid] = useState(() => structuredClone(timetable.grid));
 
   function setEntry(day: Weekday, slot: SlotNumber, entry: TimetableEntry) {
@@ -40,8 +54,8 @@ export function TimetableEditor({ timetable, onSave, onCancel, canCancel, allowe
       for (const day of WEEKDAYS) {
         if (day === "segunda") continue;
         const updatedDay = { ...prev[day] };
-        for (const slot of SLOT_NUMBERS) {
-          updatedDay[slot] = monday[slot];
+        for (const slot of slots) {
+          updatedDay[slot] = monday[slot] ?? { kind: "materia-externa", label: "" };
         }
         next[day] = updatedDay;
       }
@@ -50,7 +64,14 @@ export function TimetableEditor({ timetable, onSave, onCancel, canCancel, allowe
   }
 
   function handleSave() {
-    onSave({ id: timetable.id, updatedAt: new Date().toISOString(), grid });
+    // Grava todos os horários visíveis, mesmo os que ficaram em branco: as semanas novas saem com
+    // o número de aulas da escola. Horários além disso (a escola reduziu as aulas) são mantidos.
+    const draft: WeeklyTimetable = { id: timetable.id, updatedAt: new Date().toISOString(), grid };
+    const full = structuredClone(grid);
+    for (const day of WEEKDAYS) {
+      for (const slot of slots) full[day] = { ...full[day], [slot]: entryAt(draft, day, slot) };
+    }
+    onSave({ ...draft, grid: full });
   }
 
   return (
@@ -89,17 +110,19 @@ export function TimetableEditor({ timetable, onSave, onCancel, canCancel, allowe
             </tr>
           </thead>
           <tbody>
-            {SLOT_NUMBERS.map((slot) => (
+            {slots.map((slot) => (
               <tr key={slot} className="border-t border-[var(--border-subtle)]">
                 <td className="p-2 font-medium text-[var(--text-muted)] align-top">{slot}ª</td>
                 {WEEKDAYS.map((day) => {
-                  const entry = grid[day][slot];
+                  const entry = grid[day]?.[slot] ?? { kind: "materia-externa" as const, label: "" };
                   const selectValue =
                     entry.kind === "materia-propria"
                       ? entry.subject
                       : entry.kind === "leitura-diaria"
                         ? "leitura-diaria"
-                        : "externa";
+                        : customSubjects.includes(entry.label)
+                          ? `custom:${entry.label}`
+                          : "externa";
                   // Se a célula já tem uma matéria fora da lista permitida (ex.: professor
                   // trocou de matéria/ano depois de montar a grade), mantém essa matéria como
                   // opção só nesta célula — pra ela continuar visível e a professora poder
@@ -116,6 +139,8 @@ export function TimetableEditor({ timetable, onSave, onCancel, canCancel, allowe
                           const value = e.target.value;
                           if (value === "leitura-diaria") {
                             setEntry(day, slot, { kind: "leitura-diaria" });
+                          } else if (value.startsWith("custom:")) {
+                            setEntry(day, slot, { kind: "materia-externa", label: value.slice("custom:".length) });
                           } else if (value === "externa") {
                             setEntry(day, slot, {
                               kind: "materia-externa",
@@ -133,9 +158,14 @@ export function TimetableEditor({ timetable, onSave, onCancel, canCancel, allowe
                             {OWN_SUBJECT_LABELS[s]}
                           </option>
                         ))}
-                        <option value="externa">Outra (Ed. Física, Artes...)</option>
+                        {customSubjects.map((label) => (
+                          <option key={label} value={`custom:${label}`}>
+                            {label}
+                          </option>
+                        ))}
+                        <option value="externa">Outra (digitar nome)</option>
                       </select>
-                      {entry.kind === "materia-externa" && (
+                      {entry.kind === "materia-externa" && !customSubjects.includes(entry.label) && (
                         <input
                           value={entry.label}
                           onChange={(e) => setEntry(day, slot, { kind: "materia-externa", label: e.target.value })}

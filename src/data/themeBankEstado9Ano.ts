@@ -16,9 +16,9 @@
 // asterisco (diferente dos anos anteriores), com "EF09HI29" e "EF09HI30" combinados em uma única
 // habilidade, exatamente como aparecem no documento oficial.
 
-import { BankEntry, OwnSubject } from "@/types/plano";
+import { SubjectBank } from "@/types/plano";
 
-export const ESTADO_9_ANO_THEME_BANK: Record<OwnSubject, BankEntry[]> = {
+export const ESTADO_9_ANO_THEME_BANK: SubjectBank = {
   matematica: [
     {"theme":"Por que a diagonal do quadrado 'não fecha conta'","curriculumCode":"EF09MA01","description":"A turma investiga, medindo lados e diagonais de figuras com uma unidade fixa, por que certos segmentos de reta não podem ser expressos por um número racional, chegando à necessidade dos números irracionais.","materials":["Régua ou barbante como unidade de medida","Cartolina com quadrados e triângulos desenhados","Calculadora","Folha para registro dos cálculos"],"steps":["Peça que os alunos meçam o lado de um quadrado e tentem calcular a diagonal usando o Teorema de Pitágoras.","Mostre que o resultado (como a raiz de 2) não corresponde a nenhuma fração exata, por mais casas decimais que se tente.","Repita o processo com a altura de um triângulo equilátero de lado unitário.","Discuta em grupo: por que esses números não são racionais?","Registre coletivamente uma definição própria da turma para 'número que foge da régua exata'.","Feche relacionando o achado com a existência dos números reais além dos racionais."]},
     {"theme":"Localizando irracionais na reta numérica","curriculumCode":"EF09MA02","description":"Aula prática para reconhecer números irracionais como aqueles de representação decimal infinita e não periódica, estimando e marcando sua posição aproximada na reta numérica.","materials":["Reta numérica desenhada no quadro ou em papel milimetrado","Calculadora","Compasso","Fita métrica"],"steps":["Relembre a diferença entre dízima periódica (racional) e decimal infinita não periódica (irracional).","Peça que a turma calcule aproximações de raiz de 2, raiz de 3 e do número pi com a calculadora.","Usando compasso, mostre como construir geometricamente a posição de raiz de 2 na reta numérica a partir da diagonal de um quadrado unitário.","Em duplas, os alunos estimam e marcam outros irracionais na reta usando aproximações decimais.","Compare as marcações feitas pelos grupos e discuta a precisão de cada estimativa."]},

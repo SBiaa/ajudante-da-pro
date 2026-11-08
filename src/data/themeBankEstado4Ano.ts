@@ -12,9 +12,9 @@
 // 100% dos códigos EF04 da BNCC) — cobre todas as habilidades que os documentos da SEDUC-SP
 // marcam como essenciais para o 4º ano nas 5 disciplinas.
 
-import { BankEntry, OwnSubject } from "@/types/plano";
+import { SubjectBank } from "@/types/plano";
 
-export const ESTADO_4_ANO_THEME_BANK: Record<OwnSubject, BankEntry[]> = {
+export const ESTADO_4_ANO_THEME_BANK: SubjectBank = {
   "lingua-portuguesa": [
     {
       "theme": "Pontuando textos: ponto final, exclamação, interrogação e reticências",

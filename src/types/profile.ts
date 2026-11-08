@@ -16,13 +16,25 @@ export const GRADE_OPTIONS: GradeOption[] = [
   { value: "7-ano", label: "7º ano" },
   { value: "8-ano", label: "8º ano" },
   { value: "9-ano", label: "9º ano" },
+  { value: "1-serie-em", label: "1ª série EM" },
+  { value: "2-serie-em", label: "2ª série EM" },
+  { value: "3-serie-em", label: "3ª série EM" },
 ];
 
 export const DEFAULT_GRADE = "2-ano";
 
-/** Anos em que o Fundamental 2 é departamentalizado na prática: cada professor leciona uma
- * única matéria (diferente do 1º-6º ano, onde o mesmo professor dá as 5 matérias próprias). */
-export const SPECIALIST_GRADES = ["7-ano", "8-ano", "9-ano"];
+/** Séries do Ensino Médio. Só ficam disponíveis para escolha quando a rede tiver banco de temas
+ * registrado para elas (ver availableGradesFor em src/data/curriculumBanks.ts). */
+export const HIGH_SCHOOL_GRADES = ["1-serie-em", "2-serie-em", "3-serie-em"];
+
+export function isHighSchoolGrade(gradeYear: string): boolean {
+  return HIGH_SCHOOL_GRADES.includes(gradeYear);
+}
+
+/** Anos em que o ensino é departamentalizado na prática: cada professor leciona uma ou poucas
+ * matérias (diferente do 1º-6º ano, onde o mesmo professor dá as 5 matérias próprias). Inclui
+ * todo o Ensino Médio. */
+export const SPECIALIST_GRADES = ["7-ano", "8-ano", "9-ano", ...HIGH_SCHOOL_GRADES];
 
 export function isSpecialistGrade(gradeYear: string): boolean {
   return SPECIALIST_GRADES.includes(gradeYear);

@@ -6,9 +6,9 @@
 // (A, B, C) e acrescenta habilidades próprias do estado marcadas com asterisco (*), preservados
 // exatamente como no documento oficial.
 
-import { BankEntry, OwnSubject } from "@/types/plano";
+import { SubjectBank } from "@/types/plano";
 
-export const ESTADO_8_ANO_THEME_BANK: Record<OwnSubject, BankEntry[]> = {
+export const ESTADO_8_ANO_THEME_BANK: SubjectBank = {
   matematica: [
     { "theme": "Notação científica: representando números muito grandes ou muito pequenos", "curriculumCode": "EF08MA01", "description": "Aula sobre cálculos com potências de expoente inteiro (positivo e negativo) e uso desse conhecimento para escrever números em notação científica.", "materials": ["Calculadora", "Cartões com números muito grandes ou muito pequenos", "Lousa", "Folha de exercícios"], "steps": ["Apresentar exemplos de números muito grandes ou muito pequenos do cotidiano.", "Relembrar as propriedades de potências com expoente inteiro positivo e negativo.", "Demonstrar coletivamente como escrever um número em notação científica.", "Propor exercícios em duplas convertendo números para notação científica e vice-versa.", "Usar a calculadora para conferir os resultados encontrados.", "Discutir a utilidade da notação científica em diferentes áreas do conhecimento."] },
     { "theme": "Raiz como potência: a relação entre radiciação e expoente fracionário", "curriculumCode": "EF08MA02", "description": "Resolução de situações-problema que exploram a relação entre potenciação e radiciação, representando uma raiz como potência de expoente fracionário.", "materials": ["Calculadora", "Lousa", "Lista de problemas", "Cartaz com propriedades de potências"], "steps": ["Retomar o conceito de raiz quadrada e cúbica com exemplos numéricos.", "Apresentar a relação entre radiciação e potenciação com expoente fracionário.", "Demonstrar coletivamente a conversão de uma raiz para potência fracionária.", "Propor exercícios em duplas de conversão nos dois sentidos.", "Resolver situações-problema que utilizem essa relação.", "Corrigir coletivamente e sistematizar a regra observada."] },

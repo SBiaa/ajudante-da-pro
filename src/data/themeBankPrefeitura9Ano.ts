@@ -9,9 +9,9 @@
 // "EF08M32" foi tratado como EF09M32, por estar contextual e numericamente entre EF09M31 e EF09M33,
 // dentro da seção do 9º ano.
 
-import { BankEntry, OwnSubject } from "@/types/plano";
+import { SubjectBank } from "@/types/plano";
 
-export const PREFEITURA_9_ANO_THEME_BANK: Record<OwnSubject, BankEntry[]> = {
+export const PREFEITURA_9_ANO_THEME_BANK: SubjectBank = {
   matematica: [
     {"theme":"Transformando dízima periódica em fração geratriz","curriculumCode":"EF09M01","description":"Aula que ensina o procedimento para descobrir a fração geradora de uma dízima periódica, retomando a ideia de número racional.","materials":["Calculadora","Fichas com dízimas periódicas variadas","Quadro para resolução coletiva"],"steps":["Apresentar uma dízima periódica simples e questionar se ela pode ser escrita como fração.","Demonstrar coletivamente o procedimento algébrico para obter a fração geratriz.","Praticar o procedimento com uma dízima periódica composta.","Organizar duplas para encontrar a fração geratriz de novas dízimas.","Conferir os resultados dividindo a fração encontrada na calculadora.","Sistematizar o procedimento no caderno com um exemplo resolvido passo a passo."]},
     {"theme":"Naturais, inteiros, racionais e irracionais: o conjunto dos reais","curriculumCode":"EF09M02","description":"Aula que relaciona os diferentes campos numéricos já estudados, levando à compreensão do conjunto dos números reais como união dos racionais e irracionais.","materials":["Cartaz com diagrama de conjuntos numéricos","Fichas com números variados (inteiros, frações, decimais, radicais)","Quadro"],"steps":["Retomar rapidamente os conjuntos numéricos já conhecidos (naturais, inteiros, racionais).","Apresentar exemplos de números que não são racionais e discutir onde eles se encaixam.","Construir coletivamente um diagrama de inclusão mostrando os reais como união de racionais e irracionais.","Organizar grupos para classificar fichas numéricas dentro do diagrama.","Corrigir coletivamente, discutindo casos que geram dúvidas.","Registrar o diagrama final no caderno com exemplos próprios."]},

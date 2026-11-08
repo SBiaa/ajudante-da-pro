@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { Button } from "./Button";
 import { WeekPlan } from "@/types/plano";
 import {
   addDaysISO,
@@ -21,8 +22,6 @@ type Props = {
 
 type PresetKey = "bimestre" | "semestre" | "personalizado";
 
-const secondaryButton =
-  "text-sm px-4 py-1.5 rounded-full border border-[var(--plum-900)] text-[var(--plum-900)] transition-colors hover:bg-[var(--plum-900)] hover:text-white";
 
 function todayMonday(): string {
   return getMondayISO(new Date(`${toISODate(new Date())}T00:00:00`));
@@ -75,7 +74,7 @@ export function PeriodOverviewPanel({ weeks, currentWeekId, onClose, onJumpToWee
             className={`text-xs px-3 py-1 rounded-full border transition-colors ${
               preset === key
                 ? "border-[var(--plum-900)] bg-[var(--plum-900)] text-white"
-                : "border-[var(--border-subtle)] text-[var(--text-muted)] hover:border-[var(--plum-900)]"
+                : "border-[var(--border-subtle)] bg-white text-[var(--text-muted)] hover:border-[var(--plum-900)]"
             }`}
           >
             {label}
@@ -109,7 +108,7 @@ export function PeriodOverviewPanel({ weeks, currentWeekId, onClose, onJumpToWee
       {rows.length === 0 ? (
         <p className="text-sm text-[var(--text-muted)] py-6 text-center">Período inválido — ajuste as datas.</p>
       ) : (
-        <div className="flex flex-col divide-y divide-[var(--border-subtle)] max-h-[28rem] overflow-y-auto">
+        <div className="flex flex-col divide-y divide-[var(--border-subtle)]">
           {rows.map((row) => {
             const isCurrent = row.weekId === currentWeekId;
             return (
@@ -140,9 +139,9 @@ export function PeriodOverviewPanel({ weeks, currentWeekId, onClose, onJumpToWee
       )}
 
       <div className="mt-4 flex justify-end">
-        <button onClick={onClose} type="button" className={secondaryButton}>
-          Fechar
-        </button>
+        <Button variant="secondary" onClick={onClose}>
+          Voltar à semana
+        </Button>
       </div>
     </div>
   );

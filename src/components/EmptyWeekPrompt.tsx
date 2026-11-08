@@ -22,7 +22,7 @@ export function EmptyWeekPrompt({ hasPreviousWeek, onCreateBlank, onDuplicatePre
           onClick={onDuplicatePrevious}
           disabled={!hasPreviousWeek}
           type="button"
-          className="text-sm px-5 py-2 rounded-full border border-[var(--plum-900)] text-[var(--plum-900)] transition-colors hover:bg-[var(--plum-900)] hover:text-white disabled:opacity-[0.38] disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-[var(--plum-900)]"
+          className="text-sm px-5 py-2 rounded-full border border-[var(--border-subtle)] bg-white text-[var(--text-body)] transition-colors hover:border-[var(--border-strong)] hover:bg-[var(--surface-subtle)] disabled:opacity-[0.5] disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:border-[var(--border-subtle)]"
           title={hasPreviousWeek ? undefined : "Não há uma semana anterior salva"}
         >
           Duplicar semana anterior

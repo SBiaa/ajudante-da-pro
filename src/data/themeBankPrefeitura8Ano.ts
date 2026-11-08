@@ -7,9 +7,9 @@
 // EF08LP12 porque os códigos EF08LP09-11 foram oficialmente excluídos desta edição do documento
 // (conteúdo passou a ser tratado na parte comum do Ciclo Autoral) — não é lacuna de pesquisa.
 
-import { BankEntry, OwnSubject } from "@/types/plano";
+import { SubjectBank } from "@/types/plano";
 
-export const PREFEITURA_8_ANO_THEME_BANK: Record<OwnSubject, BankEntry[]> = {
+export const PREFEITURA_8_ANO_THEME_BANK: SubjectBank = {
   matematica: [
     { "theme": "Juros simples e porcentagem na educação financeira", "curriculumCode": "EF08M01", "description": "Aula que aplica conceitos de juros simples e porcentagem para analisar e resolver problemas do cotidiano financeiro, como compras a prazo e rendimentos.", "materials": ["Anúncios de lojas com parcelamento", "Calculadora", "Fichas com situações-problema de juros"], "steps": ["Apresentar exemplos reais de compras parceladas com juros simples.", "Relembrar coletivamente a fórmula de juros simples e porcentagem.", "Resolver um problema modelo passo a passo no quadro.", "Organizar duplas para resolver problemas de juros e desconto com a calculadora.", "Corrigir coletivamente, discutindo a razoabilidade dos resultados.", "Encerrar com uma reflexão sobre consumo consciente e planejamento financeiro."] },
     { "theme": "Conjuntos numéricos: pertinência, inclusão e localização na reta", "curriculumCode": "EF08M02", "description": "Aula que explora as relações entre os diferentes campos numéricos (naturais, inteiros, racionais) e a localização desses números na reta numerada.", "materials": ["Cartaz com diagrama de conjuntos numéricos", "Fita métrica ou barbante para reta numérica", "Fichas com números variados"], "steps": ["Apresentar um diagrama de conjuntos mostrando a inclusão entre naturais, inteiros e racionais.", "Discutir exemplos de números que pertencem a mais de um conjunto.", "Distribuir fichas numéricas para os alunos posicionarem na reta numerada do chão.", "Propor perguntas sobre pertinência de números específicos a cada conjunto.", "Sistematizar no quadro as relações observadas.", "Registrar no caderno um resumo com exemplos próprios."] },

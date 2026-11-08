@@ -8,9 +8,9 @@
 // bancos do 1º e 2º ano. Língua Portuguesa usa o formato padrão "EF03LP..". História do 3º ano
 // segue o mesmo padrão de tema único do 1º/2º ano (aqui: espaços lúdicos da cidade).
 
-import { BankEntry, OwnSubject } from "@/types/plano";
+import { SubjectBank } from "@/types/plano";
 
-export const PREFEITURA_3_ANO_THEME_BANK: Record<OwnSubject, BankEntry[]> = {
+export const PREFEITURA_3_ANO_THEME_BANK: SubjectBank = {
   "lingua-portuguesa": [
     {
       "theme": "Roda de escuta de contos, mitos e lendas de diferentes culturas",

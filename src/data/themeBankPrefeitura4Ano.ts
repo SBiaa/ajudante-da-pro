@@ -7,9 +7,9 @@
 // ("EF04C..", "EF04G..", "EF04M.."), enquanto Língua Portuguesa usa o formato padrão "EF04LP..";
 // História também usa o formato curto "EF04H..".
 
-import { BankEntry, OwnSubject } from "@/types/plano";
+import { SubjectBank } from "@/types/plano";
 
-export const PREFEITURA_4_ANO_THEME_BANK: Record<OwnSubject, BankEntry[]> = {
+export const PREFEITURA_4_ANO_THEME_BANK: SubjectBank = {
   "lingua-portuguesa": [
     {
       "theme": "Roda de contos, mitos, lendas e fábulas de diferentes culturas",

@@ -14,9 +14,9 @@
 // Paulista dos Anos Iniciais. Os códigos foram conferidos em fontes públicas (BNCC/MEC, tudosaladeaula.com,
 // novaescola.org.br, profez.com.br) antes de escrever cada entrada; nenhum código foi inventado.
 
-import { BankEntry, OwnSubject } from "@/types/plano";
+import { SubjectBank } from "@/types/plano";
 
-export const ESTADO_5_ANO_THEME_BANK: Record<OwnSubject, BankEntry[]> = {
+export const ESTADO_5_ANO_THEME_BANK: SubjectBank = {
   "lingua-portuguesa": [
     {
       "theme": "Por que essa palavra se escreve assim? Regras e exceções",

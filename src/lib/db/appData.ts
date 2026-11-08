@@ -1,4 +1,4 @@
-import type { WeekPlan, ThemeHistoryEntry, UsedExerciseEntry } from "@/types/plano";
+import type { WeekPlan, ThemeHistoryEntry, UsedExerciseEntry, ClassWorkspace } from "@/types/plano";
 import type { SubjectColorOverrides } from "@/lib/subjectColors";
 import { sql } from "./client";
 
@@ -7,6 +7,8 @@ export type StoredAppData = {
   themeHistory: ThemeHistoryEntry[];
   usedExercises: UsedExerciseEntry[];
   subjectColorOverrides: SubjectColorOverrides;
+  /** Dados das turmas além da principal (ver ClassWorkspace). */
+  classData: Record<string, ClassWorkspace>;
   updatedAt: string;
 };
 
@@ -36,13 +38,14 @@ async function ensureTable(): Promise<void> {
   // "app_data" já existia antes da coluna used_exercises — garante que instalações antigas
   // ganhem a coluna sem precisar de um passo de migração manual.
   await sql`alter table app_data add column if not exists used_exercises jsonb not null default '[]'::jsonb`;
+  await sql`alter table app_data add column if not exists class_data jsonb not null default '{}'::jsonb`;
 }
 
 // A coluna "id" da tabela é o id do usuário (users.id) — cada professora tem uma linha só.
 export async function getStoredAppData(userId: number): Promise<StoredAppData | null> {
   await ensureTable();
   const rows = await sql`
-    select weeks, theme_history, used_exercises, subject_color_overrides, updated_at from app_data where id = ${userId}
+    select weeks, theme_history, used_exercises, class_data, subject_color_overrides, updated_at from app_data where id = ${userId}
   `;
   if (rows.length === 0) return null;
   return {
@@ -50,6 +53,7 @@ export async function getStoredAppData(userId: number): Promise<StoredAppData | 
     themeHistory: rows[0].theme_history as ThemeHistoryEntry[],
     usedExercises: rows[0].used_exercises as UsedExerciseEntry[],
     subjectColorOverrides: rows[0].subject_color_overrides as SubjectColorOverrides,
+    classData: (rows[0].class_data as Record<string, ClassWorkspace> | null) ?? {},
     updatedAt: new Date(rows[0].updated_at as string).toISOString(),
   };
 }
@@ -60,12 +64,13 @@ export async function getStoredAppData(userId: number): Promise<StoredAppData | 
 export async function saveStoredAppData(userId: number, data: StoredAppData): Promise<void> {
   await ensureTable();
   await sql`
-    insert into app_data (id, weeks, theme_history, used_exercises, subject_color_overrides, updated_at)
-    values (${userId}, ${JSON.stringify(data.weeks)}, ${JSON.stringify(data.themeHistory)}, ${JSON.stringify(data.usedExercises)}, ${JSON.stringify(data.subjectColorOverrides)}, ${data.updatedAt})
+    insert into app_data (id, weeks, theme_history, used_exercises, class_data, subject_color_overrides, updated_at)
+    values (${userId}, ${JSON.stringify(data.weeks)}, ${JSON.stringify(data.themeHistory)}, ${JSON.stringify(data.usedExercises)}, ${JSON.stringify(data.classData)}, ${JSON.stringify(data.subjectColorOverrides)}, ${data.updatedAt})
     on conflict (id) do update set
       weeks = excluded.weeks,
       theme_history = excluded.theme_history,
       used_exercises = excluded.used_exercises,
+      class_data = excluded.class_data,
       subject_color_overrides = excluded.subject_color_overrides,
       updated_at = excluded.updated_at
   `;

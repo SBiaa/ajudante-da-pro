@@ -5,9 +5,9 @@
 // curto já usado nos anos anteriores da Prefeitura ("EF07M..", "EF07C..", "EF07G..", "EF07H.."),
 // exceto Língua Portuguesa, que usa o formato padrão "EF07LP..".
 
-import { BankEntry, OwnSubject } from "@/types/plano";
+import { SubjectBank } from "@/types/plano";
 
-export const PREFEITURA_7_ANO_THEME_BANK: Record<OwnSubject, BankEntry[]> = {
+export const PREFEITURA_7_ANO_THEME_BANK: SubjectBank = {
   matematica: [
     { "theme": "Múltiplos, divisores e divisibilidade na resolução de problemas", "curriculumCode": "EF07M01", "description": "Aula que retoma as ideias de múltiplo, divisor e critérios de divisibilidade para resolver problemas práticos com números naturais.", "materials": ["Quadro ou cartaz com tabela de números de 1 a 100", "Fichas numeradas", "Lista de problemas contextualizados", "Calculadora (opcional)"], "steps": ["Retomar oralmente os conceitos de múltiplo e divisor com exemplos rápidos no quadro.", "Apresentar os critérios de divisibilidade usando a tabela numerada.", "Propor um jogo em duplas: um aluno diz um número e o outro aponta seus divisores.", "Distribuir problemas contextualizados para resolução em grupo.", "Corrigir coletivamente, destacando as estratégias usadas por cada grupo.", "Encerrar com uma síntese no caderno sobre quando usamos múltiplos e divisores no cotidiano."] },
     { "theme": "Números inteiros no cotidiano: dívidas, temperaturas e deslocamentos", "curriculumCode": "EF07M02", "description": "Aula que explora os diferentes significados dos números inteiros negativos e positivos em situações reais, como saldo devedor, variação de temperatura e posições em relação a um ponto de referência.", "materials": ["Termômetro de papel ou imagem", "Cartaz com reta numérica", "Notícias ou extratos bancários fictícios", "Fichas com situações-problema"], "steps": ["Apresentar situações do dia a dia envolvendo números negativos.", "Discutir em roda o que cada número negativo representa em cada contexto.", "Formar grupos e distribuir fichas com novas situações para classificar o significado do número inteiro.", "Socializar as respostas dos grupos, comparando os diferentes significados.", "Propor um pequeno registro escrito relacionando um número inteiro a uma situação da vida do aluno."] },

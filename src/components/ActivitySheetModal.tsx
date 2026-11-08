@@ -6,6 +6,7 @@ import { SourcedExercise } from "@/lib/mergedActivityPicker";
 import { exerciseKey } from "@/lib/usedExercises";
 import { SubjectColor } from "@/lib/subjectColors";
 import { ActivityWorksheet } from "./ActivityWorksheet";
+import { isHighSchoolGrade } from "@/types/profile";
 
 type Props = {
   subjectLabel: string;
@@ -18,6 +19,8 @@ type Props = {
   usedExerciseKeys?: Set<string>;
   /** Chamado ao clicar em "Imprimir / Exportar PDF", com as questões que saíram na folha. */
   onPrint?: (exercises: SourcedExercise[]) => void;
+  /** Série da turma: no Ensino Médio a folha sai no estilo sóbrio, com opção de gabarito. */
+  gradeYear?: string;
 };
 
 type PrintKind = "atividade" | "licao-de-casa";
@@ -31,7 +34,10 @@ export function ActivitySheetModal({
   onClose,
   usedExerciseKeys,
   onPrint,
+  gradeYear,
 }: Props) {
+  const variant = gradeYear && isHighSchoolGrade(gradeYear) ? "medio" : "infantil";
+  const [showAnswerKey, setShowAnswerKey] = useState(false);
   const hasAula = exercises.some((e) => e.source === "aula");
   const hasCasa = exercises.some((e) => e.source === "casa");
   const totalExercises = exercises.length;
@@ -50,6 +56,7 @@ export function ActivitySheetModal({
   const selectedExercises = exercises.filter((_, i) => savedSelected[i]);
   const visibleEntry: ActivityEntry = { theme, exercises: selectedExercises };
   const draftEntry: ActivityEntry = { theme, exercises: exercises.filter((_, i) => draftSelected[i]) };
+  const hasObjective = variant === "medio" && selectedExercises.some((e) => e.kind === "multiple-choice");
   const usedInSelectionCount = usedExerciseKeys
     ? selectedExercises.filter((e) => usedExerciseKeys.has(exerciseKey(e))).length
     : 0;
@@ -240,7 +247,7 @@ export function ActivitySheetModal({
               </div>
 
               <div className="min-h-0 overflow-y-auto bg-white rounded-[var(--radius-md)] border border-[var(--border-subtle)] p-4">
-                <ActivityWorksheet subjectLabel={subjectLabel} theme={theme} color={color} entry={draftEntry} kind={printKind} />
+                <ActivityWorksheet subjectLabel={subjectLabel} theme={theme} color={color} entry={draftEntry} kind={printKind} variant={variant} />
               </div>
             </div>
           </>
@@ -251,8 +258,22 @@ export function ActivitySheetModal({
                 {previewLabel}
                 {selectedCount < totalExercises && ` — ${selectedCount} de ${totalExercises} questões`}
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-2">
                 {printKindToggle}
+                {hasObjective && (
+                  <label
+                    className="flex items-center gap-1.5 text-sm text-[var(--text-body)] cursor-pointer"
+                    title="O gabarito sai numa página separada, depois da folha do aluno"
+                  >
+                    <input
+                      type="checkbox"
+                      checked={showAnswerKey}
+                      onChange={(e) => setShowAnswerKey(e.target.checked)}
+                      className="accent-[var(--action-primary)]"
+                    />
+                    Incluir gabarito
+                  </label>
+                )}
                 {totalExercises > 1 && (
                   <button
                     type="button"
@@ -294,7 +315,15 @@ export function ActivitySheetModal({
             )}
 
             <div className="activity-print-target bg-white p-4 sm:p-6 print:p-0 print:h-full">
-              <ActivityWorksheet subjectLabel={subjectLabel} theme={theme} color={color} entry={visibleEntry} kind={printKind} />
+              <ActivityWorksheet
+                subjectLabel={subjectLabel}
+                theme={theme}
+                color={color}
+                entry={visibleEntry}
+                kind={printKind}
+                variant={variant}
+                showAnswerKey={hasObjective && showAnswerKey}
+              />
             </div>
           </>
         )}

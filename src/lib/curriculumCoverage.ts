@@ -8,6 +8,9 @@ export type CodeCoverage = {
   label: string;
   /** Nº de vezes que o código foi sorteado/registrado em uma aula, no período filtrado. */
   count: number;
+  /** Quantas dessas aulas a professora marcou como dadas (GeneratedLessonPlan.givenAt). O resto
+   * só está planejado. */
+  givenCount: number;
   /** Temas distintos de fato usados sob esse código (útil quando o código do banco cobre mais de
    * uma entrada, ou quando a professora editou o tema à mão). */
   themes: string[];
@@ -31,7 +34,7 @@ function bankCodesFor(network: Network, gradeYear: string, subject: OwnSubject):
   if (!bank) return [];
   const seen = new Set<string>();
   const result: { code: string; label: string }[] = [];
-  for (const entry of bank[subject]) {
+  for (const entry of bank[subject] ?? []) {
     if (!entry.curriculumCode || seen.has(entry.curriculumCode)) continue;
     seen.add(entry.curriculumCode);
     result.push({ code: entry.curriculumCode, label: entry.theme });
@@ -52,7 +55,7 @@ export function computeCurriculumCoverage(
   subject: OwnSubject,
   range: CoverageRange = {}
 ): CodeCoverage[] {
-  const usage = new Map<string, { count: number; themes: Set<string>; weekIds: Set<string> }>();
+  const usage = new Map<string, { count: number; givenCount: number; themes: Set<string>; weekIds: Set<string> }>();
 
   for (const week of Object.values(weeks)) {
     if (!inRange(week.weekStartDate, range)) continue;
@@ -61,8 +64,9 @@ export function computeCurriculumCoverage(
         if (cell.kind !== "materia-propria" || cell.subject !== subject) continue;
         const code = cell.plan.curriculumCode.trim();
         if (!code) continue;
-        const bucket = usage.get(code) ?? { count: 0, themes: new Set<string>(), weekIds: new Set<string>() };
+        const bucket = usage.get(code) ?? { count: 0, givenCount: 0, themes: new Set<string>(), weekIds: new Set<string>() };
         bucket.count += 1;
+        if (cell.plan.givenAt) bucket.givenCount += 1;
         if (cell.plan.theme) bucket.themes.add(cell.plan.theme);
         bucket.weekIds.add(week.id);
         usage.set(code, bucket);
@@ -79,6 +83,7 @@ export function computeCurriculumCoverage(
       code,
       label,
       count: bucket?.count ?? 0,
+      givenCount: bucket?.givenCount ?? 0,
       themes: bucket ? [...bucket.themes] : [],
       weekIds: bucket ? [...bucket.weekIds] : [],
       inBank: true,
@@ -91,6 +96,7 @@ export function computeCurriculumCoverage(
       code,
       label: "Fora do banco (editado manualmente)",
       count: bucket.count,
+      givenCount: bucket.givenCount,
       themes: [...bucket.themes],
       weekIds: [...bucket.weekIds],
       inBank: false,

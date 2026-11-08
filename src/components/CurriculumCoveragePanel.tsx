@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { Button } from "./Button";
+import { CoverageBar } from "./CoverageBar";
 import { OWN_SUBJECT_LABELS, OwnSubject, WeekPlan } from "@/types/plano";
 import { Network } from "@/types/profile";
 import { SUBJECT_COLORS } from "@/lib/subjectColors";
@@ -32,8 +33,6 @@ function withAlpha(hex: string, alpha: number): string {
   return `${hex}${alphaHex}`;
 }
 
-const INTENSITY_STEPS = [0, 0.22, 0.42, 0.62, 0.85];
-
 function todayISO(): string {
   return toISODate(new Date());
 }
@@ -60,20 +59,17 @@ export function CurriculumCoveragePanel({ weeks, network, gradeYear, onClose, on
 
   const bankEntries = coverage.filter((c) => c.inBank);
   const coveredCount = bankEntries.filter((c) => c.count > 0).length;
+  const givenCount = bankEntries.filter((c) => c.givenCount > 0).length;
   const selected = coverage.find((c) => c.code === selectedCode) ?? null;
   const color = SUBJECT_COLORS[subject];
-
-  function bucketFor(count: number): number {
-    return Math.min(count, INTENSITY_STEPS.length - 1);
-  }
 
   return (
     <div className="rounded-[var(--radius-lg)] border border-[var(--border-subtle)] bg-white p-6 shadow-[var(--shadow-sm)]">
       <h2 className="text-[24px] mb-1">Cobertura curricular</h2>
       <p className="text-sm text-[var(--text-muted)] mb-4 max-w-[62ch]">
-        Cruza os códigos do Currículo da Cidade com o que já foi de fato dado em aula — quanto mais
-        escuro, mais vezes a habilidade foi trabalhada. Códigos sem cor ainda não entraram em
-        nenhuma aula no período.
+        Cruza os códigos do {network === "estado" ? "Currículo Paulista" : "Currículo da Cidade"} com as suas semanas.
+        Cor cheia com ✓ é habilidade já dada em aula (marque em cada aula, &quot;Marcar como dada&quot;); cor clara é
+        só planejada; cinza tracejado ainda não entrou em nenhuma semana do período.
       </p>
 
       {allowedSubjects.length > 1 && (
@@ -141,31 +137,39 @@ export function CurriculumCoveragePanel({ weeks, network, gradeYear, onClose, on
         )}
       </div>
 
-      <p className="text-sm text-[var(--text-body)] mb-3">
-        <strong>{coveredCount}</strong> de <strong>{bankEntries.length}</strong> habilidades
-        trabalhadas no período
-        {bankEntries.length > 0 && ` (${Math.round((coveredCount / bankEntries.length) * 100)}%)`}.
-      </p>
+      <div className="mb-4 max-w-md">
+        <p className="text-sm text-[var(--text-body)] mb-2">
+          <strong>{givenCount}</strong> de <strong>{bankEntries.length}</strong> habilidades dadas em aula
+          {bankEntries.length > 0 && ` (${Math.round((givenCount / bankEntries.length) * 100)}%)`}
+          {coveredCount > givenCount && (
+            <span className="text-[var(--text-muted)]"> · mais {coveredCount - givenCount} só planejadas</span>
+          )}
+          .
+        </p>
+        <CoverageBar given={givenCount} planned={coveredCount - givenCount} total={bankEntries.length} legend />
+      </div>
 
       <div className="flex flex-wrap gap-1.5 mb-4">
         {coverage.map((c) => {
-          const intensity = INTENSITY_STEPS[bucketFor(c.count)];
           const isSelected = c.code === selectedCode;
           return (
             <button
               key={c.code}
               onClick={() => setSelectedCode((prev) => (prev === c.code ? null : c.code))}
               type="button"
-              title={c.label}
-              style={{
-                background: c.count > 0 ? withAlpha(color.text, intensity) : "var(--ink-100)",
-                color: intensity >= 0.55 ? "#fff" : c.count > 0 ? color.text : "var(--ink-600)",
-                borderColor: isSelected ? color.text : "transparent",
-              }}
+              title={`${c.label}${c.givenCount > 0 ? ` — dada ${c.givenCount}×` : c.count > 0 ? " — só planejada" : ""}`}
+              style={
+                c.givenCount > 0
+                  ? { background: color.text, color: "#fff", borderColor: isSelected ? "var(--ink-900)" : color.text }
+                  : c.count > 0
+                    ? { background: withAlpha(color.text, 0.14), color: color.text, borderColor: isSelected ? color.text : "transparent" }
+                    : { background: "var(--ink-100)", color: "var(--ink-600)", borderColor: isSelected ? color.text : undefined }
+              }
               className={`font-mono text-xs px-2.5 py-1.5 rounded-[var(--radius-sm)] border-2 transition-transform ${
                 c.count === 0 ? "border-dashed border-[var(--border-subtle)]" : ""
               } ${isSelected ? "scale-[1.05]" : ""}`}
             >
+              {c.givenCount > 0 && <span aria-hidden="true">✓ </span>}
               {c.code}
               {c.count > 0 && <span className="ml-1 opacity-80">×{c.count}</span>}
             </button>
@@ -184,6 +188,13 @@ export function CurriculumCoveragePanel({ weeks, network, gradeYear, onClose, on
             </button>
           </div>
           <p className="text-sm text-[var(--text-body)] mb-2">{selected.label}</p>
+          {selected.count > 0 && (
+            <p className="text-xs font-medium mb-2" style={{ color: selected.givenCount > 0 ? "var(--green-600)" : "var(--plum-800)" }}>
+              {selected.givenCount > 0
+                ? `✓ Dada em ${selected.givenCount} de ${selected.count} aula${selected.count === 1 ? "" : "s"}`
+                : `Planejada em ${selected.count} aula${selected.count === 1 ? "" : "s"}, nenhuma marcada como dada`}
+            </p>
+          )}
           {selected.count === 0 ? (
             <p className="text-xs text-[var(--text-muted)]">Ainda não foi trabalhada nesse período.</p>
           ) : (

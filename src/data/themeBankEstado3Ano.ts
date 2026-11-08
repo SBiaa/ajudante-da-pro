@@ -12,9 +12,9 @@
 // prefixo EF03LP na matriz oficial do 3º ano. Alguns códigos aparecem desdobrados em A/B/C quando
 // o documento oficial os apresenta assim (ex.: "EF03HI09A", "EF03HI09B").
 
-import { BankEntry, OwnSubject } from "@/types/plano";
+import { SubjectBank } from "@/types/plano";
 
-export const ESTADO_3_ANO_THEME_BANK: Record<OwnSubject, BankEntry[]> = {
+export const ESTADO_3_ANO_THEME_BANK: SubjectBank = {
   "lingua-portuguesa": [
     {
       "theme": "Escrevendo palavras com r/rr, c/qu, g/gu sem errar",

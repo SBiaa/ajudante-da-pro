@@ -2,11 +2,12 @@
 
 import { useMemo, useState } from "react";
 import { Button } from "./Button";
-import { OWN_SUBJECTS, OwnSubject, GeneratedLessonPlan, UsedExerciseEntry } from "@/types/plano";
+import { ALL_SUBJECTS, OwnSubject, GeneratedLessonPlan, UsedExerciseEntry } from "@/types/plano";
 import { Network } from "@/types/profile";
 import { READING_BANK } from "@/data/themeBank";
 import { getThemeBank } from "@/data/curriculumBanks";
 import { ACTIVITY_BANK } from "@/data/activityBank";
+import { activitiesFor } from "@/lib/activityPicker";
 import { HOMEWORK_BANK, HomeworkSubject } from "@/data/homeworkBank";
 import { COLOR_KEY_LABELS, SubjectColorOverrides, resolveSubjectColor } from "@/lib/subjectColors";
 import { SourcedExercise } from "@/lib/mergedActivityPicker";
@@ -64,9 +65,9 @@ type Props = {
 function buildRows(network: Network, gradeYear: string): Row[] {
   const rows: Row[] = [];
   const bank = getThemeBank(network, gradeYear);
-  for (const subject of OWN_SUBJECTS) {
+  for (const subject of ALL_SUBJECTS) {
     for (const entry of bank?.[subject] ?? []) {
-      const hasActivity = ACTIVITY_BANK[subject].some((a) => a.theme === entry.theme);
+      const hasActivity = activitiesFor(subject).some((a) => a.theme === entry.theme);
       const hasHomework =
         (subject === "matematica" || subject === "lingua-portuguesa") &&
         HOMEWORK_BANK[subject as HomeworkSubject].some((h) => h.theme === entry.theme);
@@ -92,7 +93,7 @@ function buildRows(network: Network, gradeYear: string): Row[] {
   for (const entry of READING_BANK) {
     rows.push({
       subjectKey: "leitura-diaria",
-      hasActivity: ACTIVITY_BANK["leitura-diaria"].some((a) => a.theme === entry.theme),
+      hasActivity: (ACTIVITY_BANK["leitura-diaria"] ?? []).some((a) => a.theme === entry.theme),
       hasHomework: false,
       plan: {
         theme: entry.theme,

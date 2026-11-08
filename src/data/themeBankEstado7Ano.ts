@@ -7,9 +7,9 @@
 // sub-habilidades com sufixo de letra (A, B, C) e acrescenta habilidades próprias do estado
 // marcadas com asterisco (*), preservados exatamente como no documento oficial.
 
-import { BankEntry, OwnSubject } from "@/types/plano";
+import { SubjectBank } from "@/types/plano";
 
-export const ESTADO_7_ANO_THEME_BANK: Record<OwnSubject, BankEntry[]> = {
+export const ESTADO_7_ANO_THEME_BANK: SubjectBank = {
   matematica: [
     { "theme": "Múltiplos, divisores e o menor tempo em comum", "curriculumCode": "EF07MA01", "description": "Aula que explora as ideias de múltiplo e divisor de números naturais para resolver problemas do cotidiano, podendo envolver o cálculo do MDC ou do MMC por estratégias próprias, sem uso de algoritmos prontos.", "materials": ["Quadro numerado de 1 a 100", "Fichas ou botões para agrupamento", "Calculadora", "Lista de problemas contextualizados"], "steps": ["Apresentar uma situação prática, como dois eventos que se repetem em intervalos diferentes.", "Levantar coletivamente os múltiplos de cada número envolvido.", "Identificar quando os eventos coincidem, relacionando com o mínimo múltiplo comum.", "Resolver em duplas um problema semelhante envolvendo divisores comuns.", "Discutir as estratégias usadas, sem recorrer a algoritmos formais.", "Propor que cada dupla crie um novo problema para a turma resolver."] },
     { "theme": "Porcentagem no dia a dia: descontos e acréscimos", "curriculumCode": "EF07MA02", "description": "Resolução de situações-problema envolvendo porcentagem, com foco em acréscimos e decréscimos simples, usando cálculo mental, estratégias pessoais e calculadora em contextos de educação financeira.", "materials": ["Encartes de promoções ou notas fiscais", "Calculadora", "Folha de exercícios", "Cartazes com preços"], "steps": ["Apresentar exemplos reais de descontos e acréscimos percentuais em produtos.", "Discutir estratégias pessoais de cálculo mental para porcentagens comuns.", "Resolver coletivamente um problema de desconto usando calculadora para conferência.", "Propor problemas de acréscimo em duplas.", "Simular uma situação de compra parcelada com acréscimo percentual.", "Socializar as estratégias de cálculo utilizadas pela turma."] },

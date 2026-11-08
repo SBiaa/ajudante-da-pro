@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
+import { useDialog } from "@/hooks/useDialog";
+import { Button } from "./Button";
 import { CopyButton } from "./CopyButton";
 import { CatSpinner } from "./CatSpinner";
 
@@ -15,23 +16,21 @@ type Props = {
 /** Resultado de "Compartilhar semana": link público somente-leitura, sem exigir login de
  * quem recebe. Mesmo layout de modal do resto do app, para não quebrar a identidade visual. */
 export function ShareModal({ status, url, errorMessage, onClose, onRetry }: Props) {
-  useEffect(() => {
-    function handleKey(e: KeyboardEvent) {
-      if (e.key === "Escape") onClose();
-    }
-    window.addEventListener("keydown", handleKey);
-    return () => window.removeEventListener("keydown", handleKey);
-  }, [onClose]);
+  const dialogRef = useDialog<HTMLDivElement>({ onClose });
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-[var(--ink-900)]/50 p-4" onClick={onClose}>
       <div
+        ref={dialogRef}
         className="modal-card relative w-full max-w-md rounded-[var(--radius-lg)] bg-white p-6 shadow-[var(--shadow-lg)]"
         onClick={(e) => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
+        aria-labelledby="share-modal-title"
       >
-        <h3 className="text-[20px] mb-2">Compartilhar semana</h3>
+        <h3 id="share-modal-title" className="text-[20px] mb-2">
+          Compartilhar semana
+        </h3>
 
         {status === "loading" && (
           <p className="flex items-center gap-2 text-sm text-[var(--text-body)] mb-5">
@@ -46,20 +45,12 @@ export function ShareModal({ status, url, errorMessage, onClose, onRetry }: Prop
               {errorMessage ?? "Não foi possível gerar o link. Tente novamente."}
             </p>
             <div className="flex justify-end gap-2">
-              <button
-                type="button"
-                onClick={onClose}
-                className="text-sm px-4 py-1.5 rounded-full border border-[var(--border-subtle)] text-[var(--text-body)] transition-colors hover:bg-[var(--surface-subtle)]"
-              >
+              <Button variant="secondary" onClick={onClose}>
                 Fechar
-              </button>
-              <button
-                type="button"
-                onClick={onRetry}
-                className="text-sm px-4 py-1.5 rounded-full bg-[var(--action-primary)] text-white transition-colors hover:bg-[var(--action-primary-hover)]"
-              >
+              </Button>
+              <Button variant="primary" onClick={onRetry}>
                 Tentar de novo
-              </button>
+              </Button>
             </div>
           </>
         )}
@@ -75,6 +66,7 @@ export function ShareModal({ status, url, errorMessage, onClose, onRetry }: Prop
                 readOnly
                 value={url}
                 onFocus={(e) => e.currentTarget.select()}
+                aria-label="Link de compartilhamento"
                 className="flex-1 min-w-0 bg-transparent text-sm text-[var(--text-body)] focus:outline-none"
               />
               <CopyButton text={url} label="Copiar link" />
@@ -84,17 +76,13 @@ export function ShareModal({ status, url, errorMessage, onClose, onRetry }: Prop
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm px-4 py-1.5 rounded-full border border-[var(--plum-900)] text-[var(--plum-900)] transition-colors hover:bg-[var(--plum-900)] hover:text-white"
+                className="inline-flex items-center text-sm px-4 py-1.5 rounded-full border border-[var(--border-subtle)] bg-white text-[var(--text-body)] transition-colors hover:bg-[var(--surface-subtle)]"
               >
                 Abrir link
               </a>
-              <button
-                type="button"
-                onClick={onClose}
-                className="text-sm px-4 py-1.5 rounded-full bg-[var(--action-primary)] text-white transition-colors hover:bg-[var(--action-primary-hover)]"
-              >
+              <Button variant="primary" onClick={onClose} data-autofocus>
                 Fechar
-              </button>
+              </Button>
             </div>
           </>
         )}

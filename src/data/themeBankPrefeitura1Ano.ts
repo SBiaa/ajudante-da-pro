@@ -8,9 +8,9 @@
 // códigos já usados no banco do 2º ano (EF02M, EF02C, EF02G, EF02H). Língua Portuguesa usa o
 // formato "EF01LP" normalmente.
 
-import { BankEntry, OwnSubject } from "@/types/plano";
+import { SubjectBank } from "@/types/plano";
 
-export const PREFEITURA_1_ANO_THEME_BANK: Record<OwnSubject, BankEntry[]> = {
+export const PREFEITURA_1_ANO_THEME_BANK: SubjectBank = {
   "lingua-portuguesa": [
     {
       "theme": "Lista de nomes da turma e da agenda do dia",

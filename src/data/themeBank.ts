@@ -12,9 +12,9 @@
 // Fontaine, Irmãos Grimm, Andersen, Perrault, folclore brasileiro sem autoria individual). Não
 // reproduz nenhum livro infantil brasileiro contemporâneo com direitos autorais vigentes.
 
-import { BankEntry, OwnSubject, ReadingBankEntry } from "@/types/plano";
+import { ReadingBankEntry, SubjectBank } from "@/types/plano";
 
-export const THEME_BANK: Record<OwnSubject, BankEntry[]> = {
+export const THEME_BANK: SubjectBank = {
   "lingua-portuguesa": [
     {
       "theme": "Lista de nomes da turma e dos livros da sala",

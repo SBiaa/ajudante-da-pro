@@ -2,7 +2,7 @@
 // rede de ensino + ano/série. THEME_BANK (em themeBank.ts) é implicitamente "prefeitura, 2º ano" —
 // mantido com esse nome por compatibilidade com quem já importa direto de lá.
 
-import { BankEntry, OwnSubject } from "@/types/plano";
+import { OwnSubject, SubjectBank, subjectsForGrade } from "@/types/plano";
 import { Network } from "@/types/profile";
 import { THEME_BANK as PREFEITURA_2_ANO } from "./themeBank";
 import { ESTADO_2_ANO_THEME_BANK } from "./themeBankEstado2Ano";
@@ -22,8 +22,7 @@ import { ESTADO_6_ANO_THEME_BANK } from "./themeBankEstado6Ano";
 import { ESTADO_7_ANO_THEME_BANK } from "./themeBankEstado7Ano";
 import { ESTADO_8_ANO_THEME_BANK } from "./themeBankEstado8Ano";
 import { ESTADO_9_ANO_THEME_BANK } from "./themeBankEstado9Ano";
-
-type SubjectBank = Record<OwnSubject, BankEntry[]>;
+import { ESTADO_1_SERIE_EM_THEME_BANK } from "./themeBankEstado1SerieEm";
 
 const REGISTRY: Partial<Record<Network, Partial<Record<string, SubjectBank>>>> = {
   prefeitura: {
@@ -47,6 +46,8 @@ const REGISTRY: Partial<Record<Network, Partial<Record<string, SubjectBank>>>> =
     "7-ano": ESTADO_7_ANO_THEME_BANK,
     "8-ano": ESTADO_8_ANO_THEME_BANK,
     "9-ano": ESTADO_9_ANO_THEME_BANK,
+    // Ensino Médio (piloto): por enquanto só Matemática e Biologia.
+    "1-serie-em": ESTADO_1_SERIE_EM_THEME_BANK,
   },
 };
 
@@ -62,4 +63,12 @@ export function hasThemeBank(network: Network, gradeYear: string): boolean {
  * opções no seletor de ano/série do Perfil conforme a rede escolhida. */
 export function availableGradesFor(network: Network): string[] {
   return Object.keys(REGISTRY[network] ?? {});
+}
+
+/** Matérias da série que têm temas no banco dessa rede — as que fazem sentido marcar numa turma.
+ * No Fundamental são sempre as 5; no Ensino Médio, só as que já ganharam banco (o piloto da
+ * 1ª série tem Matemática e Biologia). */
+export function subjectsWithBank(network: Network, gradeYear: string): OwnSubject[] {
+  const bank = getThemeBank(network, gradeYear);
+  return subjectsForGrade(gradeYear).filter((s) => (bank?.[s]?.length ?? 0) > 0);
 }

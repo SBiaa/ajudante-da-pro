@@ -6,9 +6,9 @@
 // (ex.: "EF02LP01A/EF02LP01B") quando o documento oficial os apresenta como uma habilidade
 // essencial única desdobrada em duas partes.
 
-import { BankEntry, OwnSubject } from "@/types/plano";
+import { SubjectBank } from "@/types/plano";
 
-export const ESTADO_2_ANO_THEME_BANK: Record<OwnSubject, BankEntry[]> = {
+export const ESTADO_2_ANO_THEME_BANK: SubjectBank = {
   "lingua-portuguesa": [
     {
       "theme": "Escrita de palavras conhecidas com letra maiúscula correta",

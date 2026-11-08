@@ -69,6 +69,54 @@ export function SubjectIcon({ subjectKey, className = "w-3 h-3" }: Props) {
           <circle cx="11.5" cy="10.3" r=".5" fill="currentColor" stroke="none" />
         </svg>
       );
+    case "fisica":
+      // Átomo: núcleo e duas órbitas cruzadas.
+      return (
+        <svg {...common}>
+          <ellipse cx="10" cy="10" rx="7.5" ry="3" {...strokeProps} />
+          <ellipse cx="10" cy="10" rx="7.5" ry="3" transform="rotate(60 10 10)" {...strokeProps} />
+          <ellipse cx="10" cy="10" rx="7.5" ry="3" transform="rotate(-60 10 10)" {...strokeProps} />
+          <circle cx="10" cy="10" r="1.2" fill="currentColor" stroke="none" />
+        </svg>
+      );
+    case "quimica":
+      // Molécula: três átomos ligados.
+      return (
+        <svg {...common}>
+          <path d="M7.4 8.6 10 6.6M12.6 8.6 10 6.6M10 6.6V4.5" {...strokeProps} />
+          <circle cx="6" cy="10.5" r="2.6" {...strokeProps} />
+          <circle cx="14" cy="10.5" r="2.6" {...strokeProps} />
+          <circle cx="10" cy="15" r="2" {...strokeProps} />
+          <path d="M7.8 12.4 9 13.6M12.2 12.4 11 13.6" {...strokeProps} />
+        </svg>
+      );
+    case "biologia":
+      // Folha com nervura central.
+      return (
+        <svg {...common}>
+          <path d="M4 16C4 9 8.5 4 16 4c0 7.5-5 12-12 12Z" {...strokeProps} />
+          <path d="M4 16 11.5 8.5" {...strokeProps} />
+        </svg>
+      );
+    case "filosofia":
+      // Balão de pensamento.
+      return (
+        <svg {...common}>
+          <path d="M5 11.5c-1.4 0-2.5-1.1-2.5-2.5S3.6 6.5 5 6.5c.4-1.8 2-3 3.8-3 1.4 0 2.6.7 3.3 1.8.4-.2.9-.3 1.4-.3 1.9 0 3.5 1.6 3.5 3.5s-1.6 3-3.5 3H5Z" {...strokeProps} />
+          <circle cx="6.5" cy="14.3" r="1.1" {...strokeProps} />
+          <circle cx="4.3" cy="16.8" r=".6" fill="currentColor" stroke="none" />
+        </svg>
+      );
+    case "sociologia":
+      // Grupo de três pessoas.
+      return (
+        <svg {...common}>
+          <circle cx="10" cy="6" r="2.2" {...strokeProps} />
+          <circle cx="4.8" cy="8" r="1.7" {...strokeProps} />
+          <circle cx="15.2" cy="8" r="1.7" {...strokeProps} />
+          <path d="M6.3 16c0-2.4 1.6-4.2 3.7-4.2s3.7 1.8 3.7 4.2M2 15.5c0-1.9 1.2-3.3 2.8-3.3.5 0 1 .1 1.4.4M18 15.5c0-1.9-1.2-3.3-2.8-3.3-.5 0-1 .1-1.4.4" {...strokeProps} />
+        </svg>
+      );
     case "leitura-diaria":
       return (
         <svg {...common}>

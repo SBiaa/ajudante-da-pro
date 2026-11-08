@@ -7,7 +7,14 @@ type Props = {
   color: SubjectColor;
   entry: ActivityEntry;
   kind?: "atividade" | "licao-de-casa";
+  /** "medio": folha sóbria pro Ensino Médio (letra normal, alternativas A–E, sem enfeites).
+   * Padrão "infantil": a folha original, pensada pra alfabetização. */
+  variant?: "infantil" | "medio";
+  /** Só no estilo "medio": acrescenta o gabarito das questões objetivas numa página separada. */
+  showAnswerKey?: boolean;
 };
+
+const LETTERS = ["A", "B", "C", "D", "E", "F"];
 
 const kidFont = "'Comic Sans MS', 'Segoe Print', 'Trebuchet MS', sans-serif";
 
@@ -71,6 +78,17 @@ function ExerciseBlock({ exercise, index, color }: { exercise: ActivityExercise;
         {exercise.kind === "draw" && (
           <div className="border-2 border-dashed border-[#cdd8ef] rounded-lg h-[150px]" />
         )}
+
+        {exercise.kind === "multiple-choice" && (
+          <div className="space-y-1.5">
+            {exercise.options.map((opt, i) => (
+              <div key={i} className="flex items-start gap-2">
+                <span className="flex-none font-bold">({LETTERS[i]})</span>
+                <span>{opt}</span>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       {exercise.note && <div className="pl-8 mt-1 text-xs normal-case text-[#666]">{exercise.note}</div>}
@@ -78,8 +96,28 @@ function ExerciseBlock({ exercise, index, color }: { exercise: ActivityExercise;
   );
 }
 
-export function ActivityWorksheet({ subjectLabel, theme, color, entry, kind = "atividade" }: Props) {
+export function ActivityWorksheet({
+  subjectLabel,
+  theme,
+  color,
+  entry,
+  kind = "atividade",
+  variant = "infantil",
+  showAnswerKey = false,
+}: Props) {
   const heading = kind === "licao-de-casa" ? "Lição de Casa" : "Atividade";
+  if (variant === "medio") {
+    return (
+      <HighSchoolWorksheet
+        heading={heading}
+        subjectLabel={subjectLabel}
+        theme={theme}
+        color={color}
+        entry={entry}
+        showAnswerKey={showAnswerKey}
+      />
+    );
+  }
   return (
     <div
       style={{ fontFamily: kidFont, color: "#2d2d2d", textTransform: "uppercase", borderColor: color.text }}
@@ -112,6 +150,111 @@ export function ActivityWorksheet({ subjectLabel, theme, color, entry, kind = "a
       </div>
 
       <div className="text-center text-xs normal-case text-[#999] mt-8 print:mt-6">Atividade feita com carinho</div>
+    </div>
+  );
+}
+
+/** Folha do Ensino Médio: cabeçalho de prova, letra de texto comum (sem caixa-alta), questões
+ * objetivas com texto-base e alternativas A–E, abertas com linhas. O gabarito, quando pedido, vai
+ * numa página própria pra professora não imprimir junto das cópias dos alunos sem querer. */
+function HighSchoolWorksheet({
+  heading,
+  subjectLabel,
+  theme,
+  color,
+  entry,
+  showAnswerKey,
+}: {
+  heading: string;
+  subjectLabel: string;
+  theme: string;
+  color: SubjectColor;
+  entry: ActivityEntry;
+  showAnswerKey: boolean;
+}) {
+  const keyed = entry.exercises
+    .map((exercise, i) => ({ exercise, number: i + 1 }))
+    .filter(({ exercise }) => exercise.kind === "multiple-choice");
+
+  return (
+    <div style={{ fontFamily: "Georgia, 'Times New Roman', serif", color: "#1f1f1f" }} className="max-w-[760px] mx-auto leading-[1.55] text-[14px]">
+      <div className="border-b-2 pb-3 mb-5" style={{ borderColor: color.text }}>
+        <div className="flex flex-wrap items-baseline justify-between gap-2 mb-2">
+          <h1 className="text-[20px] font-bold" style={{ color: color.text }}>
+            {heading} — {subjectLabel}
+          </h1>
+          <span className="text-[13px] text-[#555]">{theme}</span>
+        </div>
+        <div className="flex flex-wrap gap-x-6 gap-y-1 text-[13px]">
+          <span>Nome: ______________________________________</span>
+          <span>Turma: ________</span>
+          <span>Data: ___/___/______</span>
+        </div>
+      </div>
+
+      <ol className="space-y-5">
+        {entry.exercises.map((exercise, i) => (
+          <li key={i} className="break-inside-avoid">
+            <div className="flex gap-2">
+              <span className="flex-none font-bold">{i + 1}.</span>
+              <div className="flex-1 min-w-0">
+                {exercise.kind === "multiple-choice" && exercise.context && (
+                  <p className="mb-2 pl-3 border-l-2 border-[#ccc] text-[13.5px] whitespace-pre-line">{exercise.context}</p>
+                )}
+                <p className="font-semibold mb-2">{exercise.instruction}</p>
+                {exercise.kind === "multiple-choice" && (
+                  <div className="space-y-1">
+                    {exercise.options.map((opt, j) => (
+                      <div key={j} className="flex gap-2">
+                        <span className="flex-none">({LETTERS[j]})</span>
+                        <span>{opt}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+                {exercise.kind === "lines" &&
+                  Array.from({ length: exercise.lines }).map((_, k) => (
+                    <div key={k} className="border-b border-[#bbb] h-[26px]" />
+                  ))}
+                {exercise.kind === "options" && (
+                  <div className="space-y-1">
+                    {exercise.options.map((opt, j) => (
+                      <div key={j} className="flex items-center gap-2">
+                        <span className="inline-block w-3.5 h-3.5 border border-[#777] flex-none" />
+                        {opt}
+                      </div>
+                    ))}
+                  </div>
+                )}
+                {(exercise.kind === "fill-blank" || exercise.kind === "word-select") && (
+                  <ul className="list-disc pl-5">
+                    {exercise.items.map((item, j) => (
+                      <li key={j}>{item}</li>
+                    ))}
+                  </ul>
+                )}
+                {exercise.kind === "draw" && <div className="border border-dashed border-[#bbb] h-[140px]" />}
+                {exercise.note && <p className="mt-1 text-[12px] text-[#666]">{exercise.note}</p>}
+              </div>
+            </div>
+          </li>
+        ))}
+      </ol>
+
+      {showAnswerKey && keyed.length > 0 && (
+        <div className="mt-8 pt-4 border-t-2 border-dashed border-[#999] print:mt-0 print:pt-0 print:border-0 print:break-before-page">
+          <h2 className="text-[16px] font-bold mb-2">Gabarito (para o professor) — {theme}</h2>
+          <ul className="flex flex-wrap gap-x-6 gap-y-1">
+            {keyed.map(({ exercise, number }) =>
+              exercise.kind === "multiple-choice" ? (
+                <li key={number}>
+                  {number}. <strong>{LETTERS[exercise.answer]}</strong>
+                </li>
+              ) : null
+            )}
+          </ul>
+        </div>
+      )}
     </div>
   );
 }

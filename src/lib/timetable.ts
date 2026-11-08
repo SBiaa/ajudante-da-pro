@@ -7,7 +7,10 @@ import {
   WeekPlan,
   WeekCell,
   GeneratedLessonPlan,
+  cellAt,
+  entryAt,
 } from "@/types/plano";
+import { isHighSchoolGrade } from "@/types/profile";
 
 export function emptyPlan(): GeneratedLessonPlan {
   return {
@@ -25,13 +28,16 @@ export function emptyPlan(): GeneratedLessonPlan {
 }
 
 /** Grade fixa inicial: sugestão de 1ª aula com Leitura Diária (editável), demais horários em
- * branco (a definir). */
-export function createEmptyTimetable(): WeeklyTimetable {
+ * branco (a definir). No Ensino Médio não há Leitura Diária: a grade começa toda em branco (a
+ * professora ainda pode colocar a leitura em qualquer horário, se quiser). */
+export function createEmptyTimetable(gradeYear?: string): WeeklyTimetable {
+  const withDailyReading = !(gradeYear && isHighSchoolGrade(gradeYear));
   const grid = {} as WeeklyTimetable["grid"];
   for (const day of WEEKDAYS) {
-    const dayRow = {} as Record<SlotNumber, TimetableEntry>;
+    const dayRow: Partial<Record<SlotNumber, TimetableEntry>> = {};
     for (const slot of SLOT_NUMBERS) {
-      dayRow[slot] = slot === 1 ? { kind: "leitura-diaria" } : { kind: "materia-externa", label: "" };
+      dayRow[slot] =
+        slot === 1 && withDailyReading ? { kind: "leitura-diaria" } : { kind: "materia-externa", label: "" };
     }
     grid[day] = dayRow;
   }
@@ -78,10 +84,13 @@ export function syncWeeksWithTimetable(
     let weekChanged = false;
     const days = {} as WeekPlan["days"];
     for (const day of WEEKDAYS) {
-      const dayCells = {} as Record<SlotNumber, WeekCell>;
+      const dayCells: Partial<Record<SlotNumber, WeekCell>> = {};
       for (const slot of SLOT_NUMBERS) {
-        const cell = week.days[day][slot];
-        const entry = timetable.grid[day][slot];
+        // Horário que não existe nem na semana nem na grade (ex.: 8ª aula numa escola de 6) fica
+        // de fora, em vez de gravar aulas vazias em toda semana.
+        if (!week.days[day]?.[slot] && !timetable.grid[day]?.[slot]) continue;
+        const cell = cellAt(week, day, slot);
+        const entry = entryAt(timetable, day, slot);
         if (!sameShape(cell, entry) && (force || isCellEmpty(cell))) {
           dayCells[slot] = cellFromEntry(entry);
           weekChanged = true;
@@ -105,9 +114,10 @@ export function syncWeeksWithTimetable(
 export function buildWeekPlan(timetable: WeeklyTimetable, weekId: string, weekStartDate: string): WeekPlan {
   const days = {} as WeekPlan["days"];
   for (const day of WEEKDAYS) {
-    const dayCells = {} as Record<SlotNumber, WeekCell>;
+    const dayCells: Partial<Record<SlotNumber, WeekCell>> = {};
     for (const slot of SLOT_NUMBERS) {
-      dayCells[slot] = cellFromEntry(timetable.grid[day][slot]);
+      const entry = timetable.grid[day]?.[slot];
+      if (entry) dayCells[slot] = cellFromEntry(entry);
     }
     days[day] = dayCells;
   }
@@ -125,9 +135,10 @@ export function duplicateWeekPlan(
   const now = new Date().toISOString();
   const days = {} as WeekPlan["days"];
   for (const day of WEEKDAYS) {
-    const dayCells = {} as Record<SlotNumber, WeekCell>;
+    const dayCells: Partial<Record<SlotNumber, WeekCell>> = {};
     for (const slot of SLOT_NUMBERS) {
-      const cell = source.days[day][slot];
+      const cell = source.days[day]?.[slot];
+      if (!cell) continue;
       if (keepContent) {
         dayCells[slot] = structuredClone(cell);
       } else if (cell.kind === "leitura-diaria") {
@@ -141,4 +152,33 @@ export function duplicateWeekPlan(
     days[day] = dayCells;
   }
   return { id: newWeekId, weekStartDate: newWeekStartDate, createdAt: now, updatedAt: now, days };
+}
+
+/** Copia o conteúdo planejado de `source` para `target`, só nas aulas que existem nas duas semanas
+ * com a mesma matéria (mesma Leitura Diária, ou mesma matéria própria) e que ainda estão vazias em
+ * `target` — nunca sobrescreve o que a professora já planejou naquela turma. Serve pra replicar o
+ * planejamento entre turmas paralelas (7ºA → 7ºB). Retorna a semana nova e quantas aulas copiou. */
+export function copyWeekContent(
+  source: WeekPlan,
+  target: WeekPlan
+): { week: WeekPlan; copied: { subject: string; theme: string }[] } {
+  const copied: { subject: string; theme: string }[] = [];
+  const days = {} as WeekPlan["days"];
+  for (const day of WEEKDAYS) {
+    const dayCells = { ...target.days[day] };
+    for (const slot of SLOT_NUMBERS) {
+      const from = source.days[day]?.[slot];
+      const to = target.days[day]?.[slot];
+      if (!from || !to) continue;
+      if (from.kind === "materia-externa" || to.kind === "materia-externa") continue;
+      if (from.kind !== to.kind) continue;
+      if (from.kind === "materia-propria" && to.kind === "materia-propria" && from.subject !== to.subject) continue;
+      if (!from.plan.theme || !isCellEmpty(to)) continue;
+      const plan = structuredClone(from.plan);
+      dayCells[slot] = to.kind === "leitura-diaria" ? { kind: "leitura-diaria", plan } : { ...to, plan };
+      copied.push({ subject: to.kind === "leitura-diaria" ? "leitura-diaria" : to.subject, theme: plan.theme });
+    }
+    days[day] = dayCells;
+  }
+  return { week: { ...target, updatedAt: new Date().toISOString(), days }, copied };
 }

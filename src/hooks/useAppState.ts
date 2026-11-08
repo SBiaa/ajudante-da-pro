@@ -21,16 +21,45 @@ const listeners = new Set<() => void>();
 const SYNC_DEBOUNCE_MS = 1500;
 let syncTimer: ReturnType<typeof setTimeout> | null = null;
 
+/**
+ * Situação da sincronização com o servidor, pra mostrar na tela (antes a falha só ia pro
+ * console e a professora não tinha como saber se o trabalho tinha subido).
+ * - idle: nada pendente desde que a página abriu.
+ * - pending: há alteração local ainda não enviada (debounce) ou em envio.
+ * - saved: última gravação no servidor deu certo (savedAt = quando).
+ * - error: última gravação falhou; o dado continua salvo neste aparelho.
+ */
+export type SyncStatus =
+  | { kind: "idle" }
+  | { kind: "pending" }
+  | { kind: "saved"; savedAt: string }
+  | { kind: "error" };
+
+let syncStatus: SyncStatus = { kind: "idle" };
+const syncListeners = new Set<() => void>();
+
+function setSyncStatus(next: SyncStatus) {
+  syncStatus = next;
+  syncListeners.forEach((listener) => listener());
+}
+
 function scheduleSync(state: AppState) {
   if (syncTimer) clearTimeout(syncTimer);
+  setSyncStatus({ kind: "pending" });
   syncTimer = setTimeout(() => {
     saveStoredAppDataAction({
       weeks: state.weeks,
       themeHistory: state.themeHistory,
       usedExercises: state.usedExercises,
+      classData: state.classData,
       subjectColorOverrides: state.subjectColorOverrides,
       updatedAt: state.updatedAt,
-    }).catch((err) => console.error("Falha ao sincronizar com o servidor:", err));
+    })
+      .then(() => setSyncStatus({ kind: "saved", savedAt: new Date().toISOString() }))
+      .catch((err) => {
+        console.error("Falha ao sincronizar com o servidor:", err);
+        setSyncStatus({ kind: "error" });
+      });
   }, SYNC_DEBOUNCE_MS);
 }
 
@@ -52,6 +81,31 @@ function subscribe(listener: () => void) {
 
 function getServerSnapshot(): AppState {
   return SERVER_SNAPSHOT;
+}
+
+function subscribeSync(listener: () => void) {
+  syncListeners.add(listener);
+  return () => syncListeners.delete(listener);
+}
+
+const IDLE_SYNC: SyncStatus = { kind: "idle" };
+
+function getSyncSnapshot(): SyncStatus {
+  return syncStatus;
+}
+
+function getSyncServerSnapshot(): SyncStatus {
+  return IDLE_SYNC;
+}
+
+/** Situação atual da sincronização com o servidor (ver SyncStatus). */
+export function useSyncStatus(): SyncStatus {
+  return useSyncExternalStore(subscribeSync, getSyncSnapshot, getSyncServerSnapshot);
+}
+
+/** Reenvia o estado atual pro servidor agora (botão "Tentar de novo" do indicador). */
+export function retrySync() {
+  if (cachedState) scheduleSync(cachedState);
 }
 
 type StateUpdater = AppState | ((prev: AppState) => AppState);

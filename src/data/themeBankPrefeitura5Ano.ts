@@ -6,9 +6,9 @@
 // História seguem o formato curto já usado do 1º ao 4º ano ("EF05C..", "EF05G..", "EF05M..",
 // "EF05H.."), enquanto Língua Portuguesa usa o formato padrão "EF05LP..".
 
-import { BankEntry, OwnSubject } from "@/types/plano";
+import { SubjectBank } from "@/types/plano";
 
-export const PREFEITURA_5_ANO_THEME_BANK: Record<OwnSubject, BankEntry[]> = {
+export const PREFEITURA_5_ANO_THEME_BANK: SubjectBank = {
   "lingua-portuguesa": [
     {
       "theme": "Rodas de leitura de contos, mitos, lendas e fábulas de diferentes culturas",

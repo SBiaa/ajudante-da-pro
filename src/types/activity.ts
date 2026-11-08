@@ -7,7 +7,18 @@ export type ActivityExercise =
   | { kind: "fill-blank"; instruction: string; items: string[]; note?: string }
   | { kind: "word-select"; instruction: string; items: string[]; note?: string }
   | { kind: "options"; instruction: string; options: string[]; note?: string }
-  | { kind: "draw"; instruction: string; note?: string };
+  | { kind: "draw"; instruction: string; note?: string }
+  /** Questão objetiva no estilo ENEM/SARESP (Ensino Médio): texto-base opcional, comando
+   * (`instruction`), alternativas A–E e o índice da correta (0 = A), usado só no gabarito do
+   * professor. `instruction` precisa ser único dentro do tema (identifica a questão em "já usada"). */
+  | {
+      kind: "multiple-choice";
+      instruction: string;
+      context?: string;
+      options: string[];
+      answer: number;
+      note?: string;
+    };
 
 /** Uma folha de atividade impressa para um tema específico do banco. */
 export type ActivityEntry = {

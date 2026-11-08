@@ -24,10 +24,16 @@ export async function saveStoredAppDataAction(data: StoredAppData) {
 
 /** Gera um link público (sem login) com uma cópia somente-leitura da semana — só a própria
  * professora logada pode criar um; quem recebe o link não precisa de conta. */
-export async function createShareLinkAction(week: WeekPlan, colorOverrides: SubjectColorOverrides): Promise<string> {
+export async function createShareLinkAction(
+  week: WeekPlan,
+  colorOverrides: SubjectColorOverrides,
+  /** Rótulo da turma de quem compartilha ("7ºA"). Só texto de exibição; sem ele, usa o ano do perfil. */
+  classLabel?: string
+): Promise<string> {
   const userId = await requireSession();
   const profile = await getProfile(userId);
-  const gradeLabel = getGradeLabel(profile?.gradeYear ?? DEFAULT_GRADE);
+  const label = classLabel?.trim().slice(0, 40);
+  const gradeLabel = label || getGradeLabel(profile?.gradeYear ?? DEFAULT_GRADE);
   const token = randomBytes(9).toString("base64url");
   await createSharedWeek(token, { week, colorOverrides, gradeLabel });
   return token;

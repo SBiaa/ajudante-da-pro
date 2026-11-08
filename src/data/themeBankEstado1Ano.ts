@@ -11,9 +11,9 @@
 // Ciências do 1º ano tem menos habilidades essenciais que as demais disciplinas porque é assim
 // no documento oficial (apenas 6 códigos-base, alguns desdobrados em A/B) — não foi omitido nada.
 
-import { BankEntry, OwnSubject } from "@/types/plano";
+import { SubjectBank } from "@/types/plano";
 
-export const ESTADO_1_ANO_THEME_BANK: Record<OwnSubject, BankEntry[]> = {
+export const ESTADO_1_ANO_THEME_BANK: SubjectBank = {
   "lingua-portuguesa": [
     {
       theme: "Como lemos: da esquerda para a direita, de cima para baixo",

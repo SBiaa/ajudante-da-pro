@@ -13,6 +13,7 @@ const NEVER_SYNCED = new Date(0).toISOString();
 
 export function emptyState(): AppState {
   return {
+    classData: {},
     timetable: null,
     weeks: {},
     themeHistory: [],
@@ -35,6 +36,7 @@ function normalizePlan(plan: Partial<GeneratedLessonPlan>): GeneratedLessonPlan 
     genre: plan.genre ?? "",
     generatedAt: plan.generatedAt ?? null,
     editedManually: plan.editedManually ?? false,
+    givenAt: plan.givenAt ?? null,
     fullLessonPlan: plan.fullLessonPlan,
   };
 }
@@ -45,7 +47,7 @@ function normalizeWeek(week: WeekPlan): WeekPlan {
     const dayCells = { ...days[day] };
     for (const slot of Object.keys(dayCells) as unknown as (keyof typeof dayCells)[]) {
       const cell = dayCells[slot];
-      if (cell.kind !== "materia-externa") {
+      if (cell && cell.kind !== "materia-externa") {
         dayCells[slot] = { ...cell, plan: normalizePlan(cell.plan) };
       }
     }
@@ -63,6 +65,9 @@ export function loadState(userId: number): AppState {
     const state = { ...emptyState(), ...parsed };
     for (const weekId of Object.keys(state.weeks)) {
       state.weeks[weekId] = normalizeWeek(state.weeks[weekId]);
+    }
+    for (const ws of Object.values(state.classData)) {
+      for (const weekId of Object.keys(ws.weeks)) ws.weeks[weekId] = normalizeWeek(ws.weeks[weekId]);
     }
     return state;
   } catch {
